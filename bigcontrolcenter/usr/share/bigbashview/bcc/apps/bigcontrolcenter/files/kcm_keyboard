@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+COMMENT=$"Configurações de layout, teclas de atalho e outras opções."
+CATEGORY="Hardware"
+EXEC="kcmshell5 keyboard keys standard_actions khotkeys"

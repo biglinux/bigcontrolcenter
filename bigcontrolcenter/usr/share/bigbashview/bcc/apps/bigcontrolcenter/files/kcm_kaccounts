@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+NAME=$"Integração com Google Drive e ownCloud"
+COMMENT=$"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
+ICON="icons/kcm_kaccounts.png"
+CATEGORY="Other"

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+COMMENT=$"Diversas opções, entre elas:<br>
+atalhos para telas de toque, serviços<br>
+em segundo plano, sessão no desktop..."
+CATEGORY="System"
+EXEC="kcmshell5 kwintouchscreen kwinscreenedges kcmkded kcmsmserver"
+ 

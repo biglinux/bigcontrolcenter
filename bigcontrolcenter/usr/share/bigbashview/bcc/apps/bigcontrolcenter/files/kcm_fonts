@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+CATEGORY="Design"
+EXEC="kcmshell5 kcm_fonts fontinst"

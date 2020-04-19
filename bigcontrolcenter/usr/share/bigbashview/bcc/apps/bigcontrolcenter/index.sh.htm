@@ -1,0 +1,545 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+
+mkdir -p "$HOME/.config/bigcontrolcenter"
+
+# Don't group windows
+xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
+
+
+###########################
+# Verify icon theme changed
+###########################
+# if [ ! -e "$HOME/.config/bigcontrolcenter/icon_theme" ]; then
+#     kreadconfig5 --group Icons --key Theme > "$HOME/.config/bigcontrolcenter/icon_theme"
+#     RELOAD="1"
+# else
+#     if [ "$(kreadconfig5 --group Icons --key Theme)" != "$(cat "$HOME/.config/bigcontrolcenter/icon_theme")" ]; then
+#         kreadconfig5 --group Icons --key Theme > "$HOME/.config/bigcontrolcenter/icon_theme"
+#         RELOAD="1"
+#     fi
+# fi
+
+
+####################################
+# Verify number of kcmshell5 changed
+####################################
+if [ ! -e "$HOME/.config/bigcontrolcenter/kcmshell_number" ]; then
+    grep -Rl kcmshell5 /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+    RELOAD="1"
+else
+    if [ "$(grep -Rl kcmshell5 /usr/share/kservices5/ | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/kcmshell_number")" ]; then
+        grep -Rl kcmshell5 /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+        RELOAD="1"
+    fi
+fi
+
+
+#########################
+# Verify language changed
+#########################
+if [ "$LANG" != "$(cat "$HOME/.config/bigcontrolcenter/lang")" ]; then
+    echo "$LANG" >"$HOME/.config/bigcontrolcenter/lang"
+    RELOAD="1"
+fi
+
+
+
+
+cat << EOF
+
+<body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/materialize/css/materialize.css">
+    <script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
+    <script src="/usr/share/bigbashview/bcc/materialize/js/materialize.js"></script>
+    <script src="/usr/share/bigbashview/bcc/js/big.js"></script>
+    <script src="filter.js"></script>
+</head>
+
+<style>
+.col-md-2 {
+    cursor: pointer;
+    padding: 0px;
+    margin: 14px;
+    width: 400px;
+    background-color: #00000080;
+    border-radius: 19px;
+    padding-left: 24px;
+    box-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.77);
+}
+.col-md-4 {
+    box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    background: linear-gradient(to right, #00000080, #434343b0);
+    padding: 0;
+    width: 259px;
+    flex: none;
+    position: fixed;
+    height: 100%;
+}
+
+.row {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: 280px;
+}
+
+a {
+    color: #ffffff;
+}
+
+}
+div#leftbar {
+    position: fixed;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: grid;
+}
+
+
+.btn, .btn-large {
+text-decoration: none;
+    color: #fff;
+    background-color: #393e3d00;
+    text-align: inherit;
+    padding-left: 37px;
+    height: 51px;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    color: white;
+    width: 100%;
+    /* margin-top: 159px; */
+    text-align: -webkit-center;
+    font-size: 21px;
+    margin: 29px 0 0px 0;
+    padding-bottom: 30px;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+
+.btn-success:not([disabled]):not(.disabled).active, .btn-success:not([disabled]):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #fff;
+background-color: #9a9a9a3b;
+border-color: #000000;
+}
+
+.btn:focus, .btn-large:focus, .btn-floating:focus {
+    background-color: #9a9a9a5c;
+}
+
+body {
+    margin: 0;
+    font-family: ubuntu;
+    font-size: 15px;
+    background-image: url(01.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div#total {
+    display: flex;
+    height: 100%;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.modal {
+    top: 50% !important;
+    transform: translate(0%, -50%) !important;
+    /* display: none; */
+    position: fixed;
+    left: 0;
+    background: url(01.jpg);
+    background-attachment: fixed;
+    right: 0;
+    color: white;
+    /* background-color: #7b7b7be3; */
+    padding: 0;
+    max-height: 90%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 15px;
+    will-change: top, opacity;
+}
+
+.col-md-modal {
+    cursor: pointer;
+    padding: 0px;
+    margin: auto;
+    width: 400px;
+    background-color: #00000080;
+    border-radius: 19px;
+    padding-left: 24px;
+    box-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.77);
+}
+
+div#top {
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+</style>
+
+    <title>Centro de Controle BigLinux</title>
+    <body>
+<div id=total>
+        <div class="col-md-4">
+                
+            <input type="text" id="search" class="form-control" placeholder="Pesquisar...">
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="Star" class="btn btn-success">Principais</button>
+                <button type="button" id="Design" class="btn btn-success">Design</button>
+                <button type="button" id="Hardware" class="btn btn-success">Hardware</button>
+                <button type="button" id="System" class="btn btn-success">Sistema</button>
+                <button type="button" id="Other" class="btn btn-success">Outros</button>
+                
+            </div>
+                    </div>
+        <div class="col-md-8">
+    <div class="row" id="parent">
+    
+EOF
+
+echo "<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  \$(document).ready(function(){
+    \$('.modal').modal();
+  });
+       
+</script>"
+
+#<button type="button" id="all" class="btn btn-success">All</button>
+
+
+
+OIFS=$IFS
+IFS=$'\n'
+
+######################################
+#
+#   INTERNET CONNECTION OPEN
+#
+######################################
+
+
+    NAME=$"Conectar à internet"
+    COMMENT=$"Configurações de rede em geral"
+    ICON="icons/applications-internet.png"
+    CATEGORY="Star"
+
+cat << EOF
+
+    <div class="col-md-2 box $CATEGORY"><a  href="#modal1"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"A forma mais simples de conectar à internet é utilizando o ícone localizado perto do relógio do sistema, porém, aqui você tem acesso a mais opções de configurações de rede."
+echo '</div>'
+
+######
+# 01
+######
+
+if [ -e "/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement" ]; then
+
+EXEC="plasmawindowed org.kde.plasma.networkmanagement"
+NAME=$"Gerenciador simples (Recomendado)"
+COMMENT=$"Essa é a melhor opção para quase todas as situações."
+ICON="icons/network-01.png"
+
+cat << EOF
+        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+
+######
+# 02
+######
+
+if [ -e "/usr/bin/nm-connection-editor" ]; then
+
+EXEC="nm-connection-editor"
+NAME=$"Gerenciador completo"
+COMMENT=$"Para configurações de rede mais complexas."
+ICON="icons/network-02.png"
+
+cat << EOF
+        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+
+######
+# 03
+######
+
+if [ -e "/usr/share/kservices5/kcm_networkmanagement.desktop" ]; then
+
+EXEC="kcmshell5 kcm_networkmanagement"
+NAME=$"Gerenciador alternativo"
+COMMENT=$"Caso prefira também oferecemos esse configurador."
+ICON="icons/network-03.png"
+
+cat << EOF
+        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+    
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   CONECTAR A INTERNET CLOSE
+#
+######################################
+
+
+
+
+
+
+######################################
+#
+#   AUDIO OPEN
+#
+######################################
+
+
+    NAME=$"Som e microfone"
+    COMMENT=$"Configurações áudio em geral"
+    ICON="icons/kmix.png"
+    CATEGORY="Star Hardware"
+
+cat << EOF
+
+    <div class="col-md-2 box $CATEGORY"><a  href="#modal2"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"A forma mais simples de configurar o áudio é utilizando o ícone localizado perto do relógio do sistema, porém, aqui você tem acesso a mais opções de configuração."
+echo '</div>'
+
+######
+# 01
+######
+
+if [ -e "/usr/share/plasma/plasmoids/org.kde.plasma.volume" ]; then
+
+EXEC="plasmawindowed org.kde.plasma.volume"
+NAME=$"Gerenciador simples"
+COMMENT=$"Configurações de áudio simples, mas suficiente para a maioria das situações."
+ICON="icons/audio-04.png"
+
+cat << EOF
+        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+
+######
+# 02
+######
+
+if [ -e "/usr/bin/pavucontrol-qt" ]; then
+
+EXEC="kcmshell5 kcm_pulseaudio"
+NAME=$"Gerenciador intermediário"
+COMMENT=$"Gerenciador de áudio padrão do KDE."
+ICON="icons/kmix.png"
+
+cat << EOF
+        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+
+######
+# 03
+######
+
+if [ -e "/usr/bin/pavucontrol-qt" ]; then
+
+EXEC="pavucontrol-qt"
+NAME=$"Gerenciador avançado"
+COMMENT=$"Configurações de áudio avançadas apresentadas de forma simples e objetiva."
+ICON="icons/audio-02.png"
+
+cat << EOF
+        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+######
+# 04
+######
+
+if [ -e "/usr/bin/alsamixer" ]; then
+
+EXEC="konsole -e alsamixer"
+NAME=$"Alsamixer (Muito avançado)"
+COMMENT=$"Utilize esse configurador apenas se os outros<br>
+não resolverem o que você deseja.<br><br>
+Esse é um gerenciador avançado e<br>
+é preciso configura-lo utilizando<br>
+o teclado."
+ICON="icons/audio-01.png"
+
+cat << EOF
+        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+    
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   AUDIO CLOSE
+#
+######################################
+
+
+
+
+##########################
+#
+#    ALL KCMSHELL5 OPEN
+#
+##########################
+
+if [ "$RELOAD" = "1" ]; then
+    rm -f "$HOME/.config/bigcontrolcenter/cache.html"
+
+    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve kcm_activities.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kcm_kwin_effects -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio); do
+
+
+    EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"
+    NAME="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Name)"
+    COMMENT="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Comment)"
+    ICON="icons/$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Icon).png"
+    CATEGORY=$(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)
+
+
+    filename="$(echo "$i" | sed 's|.*/||g;s|.desktop||g')"
+    . files/$filename
+
+
+       echo "<div class=\"col-md-2 box $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+            <p class=\"name\"><img src=\"$ICON\" width=48 height=48> $NAME</p>
+            </center></a>
+        </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+        
+    done
+
+
+fi
+
+cat "$HOME/.config/bigcontrolcenter/cache.html"
+
+##########################
+#
+#    ALL KCMSHELL5 CLOSE
+#
+##########################
+
+
+
+echo '</body></html>'
+
+
+IFS=$OIFS
