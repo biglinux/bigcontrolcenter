@@ -1,0 +1,253 @@
+#!/bin/bash
+
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=hardinfo-relatory
+
+FILE_TO_SAVE="$HOME/hardware-info-$(date +%Y-%m-%d_%Hh-%Mm).html"
+PROGRESS="/tmp/hardinfo-relaroty-progress"
+
+#kdialog --msgbox $"Criando um arquivo com informações do sistema.
+
+#Aguarde, esse processo pode demorar um pouco." --title $"System Info" &
+
+
+kdialog --progressbar $"Gerando o relatorio" --title $"Hardinfo Relatory" > /tmp/hardinfo-relaroty-progress
+
+PROGRESS="$(cat /tmp/hardinfo-relaroty-progress)"
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 10
+
+hardinfo -a -m computer.so -m devices.so -f html -r > "$FILE_TO_SAVE"
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 30
+
+###############################
+# lspci
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">lspci</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(lspci -nn)
+
+
+
+-------------------------
+
+Verbose mode:
+
+$(lspci -nvv)
+
+</textarea></div>
+
+EOF
+
+
+
+###############################
+# lsusb
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">lsusb</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(lsusb)
+
+
+
+-------------------------
+
+Verbose mode:
+
+$(lsusb -v)
+
+</textarea></div>
+
+EOF
+
+
+
+###############################
+# fstab
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">/etc/fstab</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(cat /etc/fstab)
+
+</textarea></div>
+
+EOF
+
+
+###############################
+# lsmod
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">lsmod</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(lsmod)
+
+</textarea></div>
+
+EOF
+
+
+
+###############################
+# ifconfig -a
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">ifconfig -a</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(ifconfig -a)
+
+</textarea></div>
+
+EOF
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 40
+
+###############################
+# ip route
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">ip route</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(ip route)
+
+</textarea></div>
+
+EOF
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 50
+
+
+###############################
+# rfkill list (Wifi and Bluetooth)
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">rfkill list (Wifi and Bluetooth)</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(rfkill list)
+
+</textarea></div>
+
+EOF
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
+
+###############################
+# nmcli network
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">nmcli network</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+nmcli general status:
+$(nmcli general status)
+
+-----------------------
+
+nmcli -w 10 d wifi
+
+$(nmcli -w 10 d wifi)
+
+-----------------------
+
+nmcli
+
+$(nmcli)
+
+
+</textarea></div>
+
+EOF
+
+
+###############################
+# iwlist scan wifi
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">iwlist scan wifi</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(iwlist scan)
+
+
+</textarea></div>
+
+EOF
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 70
+
+###############################
+# ping
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">ping route and 8.8.8.8</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+ping route:
+
+$(ping -c3 $(ip route | grep default | cut -f3 -d" "))
+
+-----------------------
+
+ping 8.8.8.8
+
+$(ping -c3 8.8.8.8)
+
+</textarea></div>
+
+EOF
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
+
+###############################
+# ubuntu-drivers
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">ubuntu-drivers devices</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
+
+$(ubuntu-drivers devices)
+
+</textarea></div>
+
+EOF
+
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.close
+
+kdialog --warningcontinuecancel $"O relatório foi salvo no arquivo $FILE_TO_SAVE
+
+Deseja visualizar o relatório agora?
+"  --continue-label $"Visualizar o relatório" --cancel-label $"Fechar" --title $"Hardinfo Relatory"
+
+if [ "$?" = 0 ]; then
+        
+    xdg-open "$FILE_TO_SAVE"
+
+fi
+
+
+echo "File saved in $FILE_TO_SAVE"

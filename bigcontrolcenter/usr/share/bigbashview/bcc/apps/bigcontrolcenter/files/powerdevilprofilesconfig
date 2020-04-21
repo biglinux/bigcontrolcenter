@@ -5,4 +5,4 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 CATEGORY="System"
-EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig"
+EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig"

@@ -4,5 +4,6 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
+NAME=$"Áreas de trabalho virtuais e atividades"
 CATEGORY="Personalization"
-EXEC="kcmshell5 formats translations"
+EXEC="kcmshell5 kcm_kwin_virtualdesktops kcm_activities"

@@ -142,7 +142,7 @@ function charToUnicode( char ) {
 
 
 $(document).ready(function(){
-    var $btns = $('.btn').hover(function() {
+    var $btns = $('.btn').click(function() {
         if (this.id == 'all') {
           $('#parent > div').fadeIn(450);
         } else {

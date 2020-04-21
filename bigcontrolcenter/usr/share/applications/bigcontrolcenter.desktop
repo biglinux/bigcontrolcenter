@@ -1,9 +1,9 @@
 [Desktop Entry]
 Categories=Settings;
-Exec=bigcontrolcenter
+Exec=QT_QUICK_BACKEND= bigcontrolcenter
 Icon=/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icon.png
-Name[pt_BR]=Centro de Controle BigLinux
-Name=BigLinux Control Center
+Name[pt_BR]=Central de Controle
+Name=Control Center
 StartupNotify=true
 Terminal=false
 Type=Application

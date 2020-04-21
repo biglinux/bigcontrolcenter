@@ -4,12 +4,13 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
+#Only to debug
+#rm -R "$HOME/.config/bigcontrolcenter/"
 
-mkdir -p "$HOME/.config/bigcontrolcenter"
+mkdir -p "$HOME/.config/bigcontrolcenter/icons"
 
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
-
 
 ###########################
 # Verify icon theme changed
@@ -23,6 +24,9 @@ xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -
 #         RELOAD="1"
 #     fi
 # fi
+
+
+
 
 
 ####################################
@@ -47,8 +51,18 @@ if [ "$LANG" != "$(cat "$HOME/.config/bigcontrolcenter/lang")" ]; then
     RELOAD="1"
 fi
 
+#################################
+# Verify bigcontrolcenter version
+#################################
+if [ "$(dpkg -s bigcontrolcenter | grep '^Version:')" != "$(cat "$HOME/.config/bigcontrolcenter/version")" ]; then
+    dpkg -s bigcontrolcenter | grep '^Version:' >"$HOME/.config/bigcontrolcenter/version"
+    RELOAD="1"
+fi
 
 
+if [ "$RELOAD" = "1" ]; then
+    rm -f "$HOME/.config/bigcontrolcenter/cache.html"
+fi
 
 cat << EOF
 
@@ -71,7 +85,7 @@ cat << EOF
     background-color: #00000080;
     border-radius: 19px;
     padding-left: 24px;
-    box-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.77);
+    box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.77);
 }
 .col-md-4 {
     box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
@@ -175,14 +189,12 @@ img {
 .modal {
     top: 50% !important;
     transform: translate(0%, -50%) !important;
-    /* display: none; */
     position: fixed;
     left: 0;
     background: url(01.jpg);
     background-attachment: fixed;
     right: 0;
     color: white;
-    /* background-color: #7b7b7be3; */
     padding: 0;
     max-height: 90%;
     margin: auto;
@@ -191,15 +203,20 @@ img {
     will-change: top, opacity;
 }
 
+#modal5, #modalAndroid {
+    width: 1000px;
+}
+
 .col-md-modal {
     cursor: pointer;
     padding: 0px;
     margin: auto;
+    margin-top: 13px;
     width: 400px;
     background-color: #00000080;
     border-radius: 19px;
     padding-left: 24px;
-    box-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.77);
+    box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.77);
 }
 
 div#top {
@@ -207,9 +224,39 @@ div#top {
     padding-bottom: 10px;
 }
 
+.btn:hover, .btn-large:hover {
+    background-color: #ffffff1f;
+}
+
+p.name {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+div#andoid-left {
+    display: flex;
+}
+
+
+div#andoid-right {
+    display: flex;
+}
+
+.waves-effect {
+    display: block;
+}
+
+.waves-light {
+        border-radius: 19px !important;
+}
+
 </style>
 
-    <title>Centro de Controle BigLinux</title>
+    <title>Central de Controle</title>
     <body>
 <div id=total>
         <div class="col-md-4">
@@ -218,9 +265,10 @@ div#top {
 
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" id="Star" class="btn btn-success">Principais</button>
-                <button type="button" id="Design" class="btn btn-success">Design</button>
+                <button type="button" id="Design" class="btn btn-success">Aparência</button>
                 <button type="button" id="Hardware" class="btn btn-success">Hardware</button>
                 <button type="button" id="System" class="btn btn-success">Sistema</button>
+                <button type="button" id="Personalization" class="btn btn-success">Personalização</button>
                 <button type="button" id="Other" class="btn btn-success">Outros</button>
                 
             </div>
@@ -230,6 +278,21 @@ div#top {
     
 EOF
 
+#########################
+#
+# Change to Star button
+#
+#########################
+echo "<script>
+\$(function() {
+   \$(\"#Star\").trigger(\"click\");});
+</script>"
+
+######################
+#
+# Modal
+#
+######################
 echo "<script>
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
@@ -265,8 +328,8 @@ IFS=$'\n'
 
 cat << EOF
 
-    <div class="col-md-2 box $CATEGORY"><a  href="#modal1"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal1"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
     </center></a>
     </div>
 
@@ -292,8 +355,8 @@ COMMENT=$"Essa é a melhor opção para quase todas as situações."
 ICON="icons/network-01.png"
 
 cat << EOF
-        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
             </center></a>
         </div>
 EOF
@@ -313,8 +376,8 @@ COMMENT=$"Para configurações de rede mais complexas."
 ICON="icons/network-02.png"
 
 cat << EOF
-        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
             </center></a>
         </div>
 EOF
@@ -334,13 +397,34 @@ COMMENT=$"Caso prefira também oferecemos esse configurador."
 ICON="icons/network-03.png"
 
 cat << EOF
-        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
             </center></a>
         </div>
 EOF
 fi
-    
+
+
+######
+# 04
+######
+
+    NAME=$"Conectar à internet utilizando o android"
+    COMMENT=$"Você pode utilizar seu smartphone ou tablet android como<br>um dispositivo wifi usb para seu computador."
+    ICON="icons/android.png"
+
+cat << EOF
+    <div class="col-md-modal waves-effect waves-light box"><a  href="#modalAndroid"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+EOF
+
+########
+# Close
+########
+
+
 cat << EOF    
     
     </div>
@@ -372,12 +456,12 @@ EOF
     NAME=$"Som e microfone"
     COMMENT=$"Configurações áudio em geral"
     ICON="icons/kmix.png"
-    CATEGORY="Star Hardware"
+    CATEGORY="Hardware"
 
 cat << EOF
 
-    <div class="col-md-2 box $CATEGORY"><a  href="#modal2"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal2"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
     </center></a>
     </div>
 
@@ -403,8 +487,8 @@ COMMENT=$"Configurações de áudio simples, mas suficiente para a maioria das s
 ICON="icons/audio-04.png"
 
 cat << EOF
-        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
             </center></a>
         </div>
 EOF
@@ -424,8 +508,8 @@ COMMENT=$"Gerenciador de áudio padrão do KDE."
 ICON="icons/kmix.png"
 
 cat << EOF
-        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
             </center></a>
         </div>
 EOF
@@ -445,8 +529,8 @@ COMMENT=$"Configurações de áudio avançadas apresentadas de forma simples e o
 ICON="icons/audio-02.png"
 
 cat << EOF
-        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
             </center></a>
         </div>
 EOF
@@ -469,8 +553,8 @@ o teclado."
 ICON="icons/audio-01.png"
 
 cat << EOF
-        <div class="col-md-modal box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=48 height=48> $NAME</p>
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
             </center></a>
         </div>
 EOF
@@ -494,6 +578,798 @@ EOF
 
 
 
+######################################
+#
+#   POWER OPEN
+#
+######################################
+
+
+    NAME=$"Economia de energia"
+    COMMENT=$"Defina quanto espearar para desligar a tela e<br>várias outras opções para economizar energia."
+    ICON="icons/power-manager2.png"
+    CATEGORY="Hardware"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal3"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Em geral o configurador de energia do usuário possui todas as opções necessárias."
+echo '</div>'
+
+######
+# 01
+######
+
+if [ -e "/usr/lib/x86_64-linux-gnu/qt5/plugins/kcm_powerdevilprofilesconfig.so" ]; then
+
+EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig"
+NAME=$"Configurações de energia do usuário"
+COMMENT=$"Defina as configurações básicas de economia de energia."
+ICON="icons/preferences-system-power-management.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+######
+# 02
+######
+
+if [ -e "/usr/bin/tlpui" ]; then
+
+EXEC="tlpui"
+NAME=$"Configurações de energia do sistema"
+COMMENT=$"Esse configurador deve ser utilizado apenas por<br>pessoas com conhecimentos mais avançados<br>sobre o sistema."
+ICON="icons/power-manager.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   POWER CLOSE
+#
+######################################
+
+
+
+
+######################################
+#
+#   HARDINFO OPEN
+#
+######################################
+
+if [ -e "/usr/bin/hardinfo" ]; then
+
+    NAME=$"Informações do sistema e hardware"
+    COMMENT=$"Veja um relatório completo sobre o computador."
+    ICON="icons/info.png"
+    CATEGORY="Star"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal4"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Tenha informações completas do hardware e software deste computador."
+echo '</div>'
+
+######
+# 01
+######
+
+
+EXEC="hardinfo"
+NAME=$"Exibir informações"
+COMMENT=$"Veja as informações e faça testes de desempenho."
+ICON="icons/hardinfo.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 02
+######
+
+
+EXEC="hardinfo-relatory"
+NAME=$"Gerar relatório com informações"
+COMMENT=$"Cria um arquivo com informações, que você pode<br>enviar a outras pessoas para que o ajudem<br>com o suporte."
+ICON="icons/relatory.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+EOF
+
+fi
+
+######################################
+#
+#   HARDINFO CLOSE
+#
+######################################
+
+
+
+
+######################################
+#
+#   ANDROID OPEN
+#
+######################################
+
+
+    NAME=$"Interação com smartphones e tablets"
+    COMMENT=$"Transfira arquivos e faça outras interações entre<br>seu smartphone ou tablet e o computador.<br><br>Algumas soluções apresentadas também podem<br>transferir arquivos entre dois computadores."
+    ICON="icons/smartphone.png"
+    CATEGORY="Star"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal5"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Alguns smartphones e tablets não transferem arquivos ao serem plugados na USB do computador, para eles a solução é utilizar um dos programas abaixo, porém, mesmo quando o uso do cabo USB funciona corretamente, as opções a seguir são mais práticas e também disponibilizam mais recursos.<br><br>Passe o mouse sobre as opções para mais detalhes sobre o funcionamento de cada programa:<br><br>* Lembre que o smartphone e o computador precisam estar conectados na mesma rede para que a comunicação ocorra."
+echo '</div>'
+
+######
+# 01
+######
+
+echo '<div id="andoid-left">'
+
+if [ -e "/usr/bin/kdeconnect-settings" ]; then
+
+EXEC="kdeconnect-settings"
+NAME=$"KDE Connect"
+COMMENT=$"Esse programa pode transferir arquivos entre smartphones,<br>tablets e outros computadores.<br><br>Com ele você pode, por exemplo, utilizar<br> seu smartphone como mouse e teclado sem fio<br>para controlar o computador, entre outros recursos.<br><br>Ele se integra melhor ao BigLinux e fica entre os applets<br>localizados perto do relógio do sistema.<br><br>Para sincronizar com o seu smartphone acesse<br>a Google Store em seu telefone e instale o Kde Connect.<br><br>Esse aplicativo não está disponível para iPhone."
+ICON="icons/preferences-kde-connect.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+
+######
+# 02
+######
+
+
+
+EXEC="xdg-open https://snapdrop.net"
+NAME=$"Snapdrop (Não precisa de aplicativo)"
+COMMENT=$"Basta abrir o site https://snapdrop.net nos dispositivos que você<br>quer transferir os arquivos, automaticamente eles serão<br>detectados e você poderá enviar os arquivos que desejar.<br><br>Utilize esse botão para abrir o site do Snapdrop nesse computador.<br><br>O Snapdrop pode ser utilizado em qualquer smartphone ou computador<br><br>Inclusive transferindo arquivos diretamente de um smartphone para outro.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
+ICON="icons/snapdrop.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+echo '</div>'
+echo '<div id="andoid-right">'
+
+
+######
+# 03
+######
+
+
+
+EXEC="xdg-open http://web.airmore.com"
+NAME=$"Airmore"
+COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.<br><br>Utilize esse botão para abrir o site do Airmore nesse computador.<br><br>Leia o QRcode que será exibido na tela do seu computador<br>utilizando o aplicativo no smartphone e tenha acesso a<br>transferência de arquivos e muito mais.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
+ICON="icons/airmore.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 04
+######
+
+
+
+EXEC="xdg-open https://web.airdroid.com"
+NAME=$"Airdroid"
+COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.<br><br>Utilize esse botão para abrir o site do Airdroid nesse computador.<br><br>Leia o QRcode que será exibido na tela do seu computador<br>utilizando o aplicativo no smartphone e tenha acesso a<br>transferência de arquivos e muito mais.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
+ICON="icons/airdroid.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+echo '</div>'
+
+
+
+######
+# 05
+######
+
+    NAME=$"Conectar à internet utilizando o android"
+    COMMENT=$"Você pode utilizar seu smartphone ou tablet android como<br>um dispositivo wifi usb para seu computador."
+    ICON="icons/android.png"
+
+cat << EOF
+    <div class="col-md-modal waves-effect waves-light box"><a  href="#modalAndroid"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+EOF
+
+########
+# Close
+########
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   ANDROID CLOSE
+#
+######################################
+
+
+
+
+
+
+######################################
+#
+#   ANDROID WIFI
+#
+######################################
+
+
+cat << EOF
+
+
+  <!-- Modal Structure -->
+  <div id="modalAndroid" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Para utilizar a internet do seu tablet ou smartphone android, plugue-o na USB do computador, acesse as configurações do seu dispositivo Android e procure pela opção \"Vínculo USB\" ou \"Ancoragem USB\" ou \"USB Tethering\". São formas diferentes que cada fabricante utiliza para o mesmo recurso.
+<br><br>
+Geralmente essas opções estão dentro da sessão \"Rede e Internet\" ou \"Conexões e compartilhamento\" nas configurações do dispositivo com Android.
+<br><br>
+Ao ativar a função o seu computador com BigLinux conectará automaticamente, então você estará utilizando a mesma conexão do seu dispositivo Android, lembre que, se estiver utilizando o plano de dados, irá consumir os dados do seu plano. Para certificar que não irá utilizar seus dados móveis, pode ser conveniente desativá-los enquanto utiliza a conexão no computador.
+<br><br>
+Esse tipo de conexão ao utilizar programas que interagem com dispositivos Android, por exemplo, o Kde Connect ou o Airmore, fará a transferência de arquivos ser mais rápida."
+echo '</div>'
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+EOF
+
+
+
+######################################
+#
+#   ANDROID WIFI CLOSE
+#
+######################################
+
+
+
+
+
+
+
+
+#########################################################
+# START CACHE
+#########################################################
+if [ "$RELOAD" = "1" ]; then
+
+########################################
+#
+#   /usr/bin/biglinux-themes-gui
+#
+########################################
+
+if [ -e "/usr/bin/biglinux-themes-gui" ]; then
+
+    EXEC="biglinux-themes-gui"
+    NAME=$"Aparência e desempenho"
+    COMMENT=$"Disponiblizamos configurações completas para<br>você selecionar de forma extremamente simples."
+    CATEGORY="Star Design"
+    ICON="/usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+
+
+
+
+########################################
+#
+#   software-properties-gtk --open-tab=4
+#
+########################################
+
+if [ -e "/usr/bin/software-properties-gtk" ]; then
+
+    EXEC="software-properties-gtk --open-tab=4"
+    NAME=$"Instalar drivers"
+    COMMENT=$"Alguns dispositivos, principalmente de Wifi ou placas de vídeo Nvidia<br>podem precisar da instalação de drivers."
+    CATEGORY="Star Hardware"
+    ICON="/icons/driver.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+########################################
+#
+#   system-config-printer
+#
+########################################
+
+
+if [ -e "/usr/bin/system-config-printer" ]; then
+
+    EXEC="system-config-printer"
+    NAME=$"Impressoras"
+    COMMENT=$"Adiconar ou configurar impressoras."
+    CATEGORY="Star Hardware"
+    ICON="icons/printer.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   gparted
+#
+########################################
+
+if [ -e "/usr/sbin/gparted" ]; then
+
+    EXEC="gparted"
+    NAME=$"Particionar ou formatar"
+    COMMENT=$"Cuidado ao utilizar esse programa, caso não saiba o que<br>está fazendo poderá apagar todos os dados do computador."
+    CATEGORY="System"
+    ICON="icons/gparted.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   mintstick-format
+#
+########################################
+
+if [ -e "/usr/bin/mintstick" ]; then
+
+    EXEC="mintstick -m format"
+    NAME=$"Formatar pen drive"
+    COMMENT=$"Uma interface simples e prática para formatar pen drive."
+    CATEGORY="System"
+    ICON="icons/pendrive.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   mintstick
+#
+########################################
+
+if [ -e "/usr/bin/mintstick" ]; then
+
+    EXEC="mintstick -m iso"
+    NAME=$"Criar pen drive de boot"
+    COMMENT=$"Para criar um pen drive de boot com o BigLinux,<br>baixe o sistema em www.biglinux.com.br e<br>utilize esse programa para grava-lo."
+    CATEGORY="System"
+    ICON="icons/mintstick.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   Timeshift
+#
+########################################
+
+if [ -e "/usr/bin/timeshift-launcher" ]; then
+
+    EXEC="timeshift-launcher"
+    NAME=$"Snapshots e backups"
+    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
+        COMMENT=$"O sistema está utilizando uma partição btrfs, isso permite<br>que sejam criados pontos de restauração muito<br>eficientes e com pouco uso de armazenamento."
+    else
+        COMMENT=$"O sistema não está utilizando uma partição btrfs no momento,<br>você ainda pode fazer backups utilizando o método rsync."
+    fi
+    
+    if [ -e "/usr/bin/timeshift-launcher" ]; then
+        COMMENT=$"O sistema está funcionando em modo live.<br><br>Utilize esse programa para restaurar pontos<br>de restauração do seu sistema instalado."
+    fi
+    CATEGORY="Star System"
+    ICON="icons/timeshift.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   Fontes Flash e Widevine
+#
+########################################
+
+if [ -e "/usr/bin/bigflash-javaws-widevine-fonts" ]; then
+
+    EXEC="bigflash-javaws-widevine-fonts"
+    NAME=$"Fontes proprietárias, flash e DRM"
+    COMMENT=$"Complementos ao sistema que não podem vir instalados,<br>mas você pode considerar úteis."
+    CATEGORY="Star System"
+    ICON="/usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/widevine.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   Firewall
+#
+########################################
+
+if [ -e "/usr/bin/gufw" ]; then
+
+    EXEC="gufw"
+    NAME=$"Firewall"
+    COMMENT=$"Configure regras de segurança para a conexão."
+    CATEGORY="System"
+    ICON="icons/gufw.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+
+########################################
+#
+#   big-reset
+#
+########################################
+
+if [ -e "/usr/bin/big-reset" ]; then
+
+    EXEC="big-reset"
+    NAME=$"Restaurar a configuração de programas"
+    COMMENT=$"Lista com alguns programas do sistema<br>que você pode restaurar a configuração com um clique."
+    CATEGORY="Star"
+    ICON="/usr/share/bigbashview/bcc/apps/big-reset/logo.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+
+########################################
+#
+#   bigapache
+#
+########################################
+
+if [ -e "/usr/bin/bigapache" ]; then
+
+    EXEC="bigapache"
+    NAME=$"Desenvolvimento WEB"
+    COMMENT=$"Instalar e configurar os servidores Apache<br> e MariaDB (Compatível com o Mysql).<br><br>Instalação do PHP, Phpmyadmin, Atom, VScode..."
+    CATEGORY="Star"
+    ICON="/usr/share/bigbashview/bcc/apps/apache/bigapache.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   bigkernel
+#
+########################################
+
+if [ -e "/usr/bin/bigkernel" ]; then
+
+    EXEC="bigsudo bigkernel"
+    NAME=$"Instalar outras versões de kernel"
+    COMMENT=$"Alguns dispositivos podem necessitar de versões<br>especificas do kernel, aqui você terá uma grande<br>quantidade de opções."
+    CATEGORY="Star"
+    ICON="/usr/share/bigbashview/bcc/apps/bigkernel/logo.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+########################################
+#
+#   /usr/bin/policytool
+#
+########################################
+
+if [ -e "/usr/bin/policytool" ]; then
+
+    EXEC="policytool"
+    NAME=$"Regras de segurança do Java"
+    COMMENT=$"OpenJDK Java 8 Policy Tool"
+    CATEGORY="System"
+    ICON="icons/openjdk.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+
+########################################
+#
+#   /usr/bin/sambasearch
+#
+########################################
+
+if [ -e "/usr/bin/sambasearch" ]; then
+
+    EXEC="sambasearch"
+    NAME=$"Procurar compartilhamentos"
+    COMMENT=$"Localiza compartilhamentos na rede (Windows ou Samba)."
+    CATEGORY="Other"
+    ICON="/usr/share/bigbashview/bcc/apps/sambasearch/sambasearch.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+
+########################################
+#
+#   /usr/bin/systemsettings5
+#
+########################################
+
+if [ -e "/usr/bin/systemsettings5" ]; then
+
+    EXEC="systemsettings5"
+    NAME=$"Centro de controle do KDE"
+    COMMENT=$"Acesse o central de controle tradicional do KDE,<br> a maior parte das opções encontradas nela estão também<br>nessa central que você está utilizando agora."
+    CATEGORY="Other"
+    ICON="icons/systemsettings.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+
+##########################
+#
+#    ALL BIGLINUX OPEN
+#
+##########################
+# 
+# if [ "$RELOAD" = "1" ]; then
+#     rm -f "$HOME/.config/bigcontrolcenter/cache.html"
+# 
+#     for i  in  $(grep -Rl KCModule /usr/share/kservices5/bigcontrolcenter/); do
+# 
+# 
+#     EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"
+#     NAME="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Name)"
+#     COMMENT="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Comment)"
+#     ICON="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Icon)"
+# #    CATEGORY=$(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)
+# 
+#     if [ ! -e "$ICON" ]; then
+#         ICON="icons/${ICON}.png"
+#     fi
+# 
+#     if [ ! -e "$ICON" ]; then
+#         ICON_ORIG="$(./desktop-file.py "$i")"
+# 
+#         if [ "$(echo "$ICON_ORIG" | grep '.svg')" != "" ]; then
+#             ksvgtopng5 128 128 "$ICON_ORIG" "$HOME/.config/bigcontrolcenter/${ICON}"
+#             ICON="$HOME/.config/bigcontrolcenter/${ICON}"
+#         else
+#             ICON="$ICON_ORIG"
+#         fi
+# 
+#         if [ "$(echo "$CATEGORY" | grep "Star\|Design\|Hardware\|System\|Other")" = "" ]; then
+#             CATEGORY="Other"
+#         fi
+# 
+#     fi
+#         
+# 
+#     
+# 
+#     filename="$(echo "$i" | sed 's|.*/||g;s|.desktop||g')"
+#     . files/$filename
+# 
+# 
+#        echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+#             <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+#             </center></a>
+#         </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+# 
+#         
+#     done
+# 
+# 
+# fi
+
+
+
 
 ##########################
 #
@@ -501,35 +1377,59 @@ EOF
 #
 ##########################
 
-if [ "$RELOAD" = "1" ]; then
-    rm -f "$HOME/.config/bigcontrolcenter/cache.html"
 
-    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve kcm_activities.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kcm_kwin_effects -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio); do
+    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kcm_kwin_effects -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kcm_desktoptheme.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop); do
 
 
     EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"
     NAME="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Name)"
     COMMENT="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Comment)"
-    ICON="icons/$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Icon).png"
-    CATEGORY=$(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)
+    CATEGORY="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)"
+    ICON="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Icon)"
 
+    if [ ! -e "$ICON" ]; then
+        ICON="icons/${ICON}.png"
+    fi
+
+
+    if [ ! -e "$ICON" ]; then
+        ICON_ORIG="$(./desktop-file.py "$i")"
+
+        if [ "$(echo "$ICON_ORIG" | grep '.svg')" != "" ]; then
+            ksvgtopng5 128 128 "$ICON_ORIG" "$HOME/.config/bigcontrolcenter/${ICON}"
+            ICON="$HOME/.config/bigcontrolcenter/${ICON}"
+        else
+            ICON="$ICON_ORIG"
+        fi
+
+    fi
+
+    if [ "$(echo "$CATEGORY" | grep -i "Star\|Design\|Hardware\|System\|Other\|Personalization")" = "" ]; then
+        CATEGORY="Other"
+    fi
 
     filename="$(echo "$i" | sed 's|.*/||g;s|.desktop||g')"
     . files/$filename
 
 
-       echo "<div class=\"col-md-2 box $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
-            <p class=\"name\"><img src=\"$ICON\" width=48 height=48> $NAME</p>
+       echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+            <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
             </center></a>
         </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
 
         
     done
 
+#########################################################
+# STOP CACHE
+#########################################################
 
 fi
 
 cat "$HOME/.config/bigcontrolcenter/cache.html"
+
+
+
 
 ##########################
 #

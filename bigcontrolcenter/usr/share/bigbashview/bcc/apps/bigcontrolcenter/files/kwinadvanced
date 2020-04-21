@@ -4,5 +4,5 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-CATEGORY="System"
+CATEGORY="Personalization"
 EXEC="kcmshell5 kwinactions kwinadvanced kwinfocus kwinmoving kwinoptions kwinrules kwinscripts kwintabbox"

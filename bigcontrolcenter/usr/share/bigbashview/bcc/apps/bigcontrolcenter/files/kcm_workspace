@@ -4,9 +4,8 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-COMMENT=$"Diversas opções, entre elas:<br>
-atalhos para telas de toque, serviços<br>
-em segundo plano, sessão no desktop..."
-CATEGORY="System"
-EXEC="kcmshell5 kwintouchscreen kwinscreenedges kcmkded kcmsmserver"
+NAME=$"Sessões (login e logout)"
+COMMENT=$"Defina configurações de login e logout"
+CATEGORY="Personalization"
+EXEC="kcmshell5 kcmsmserver"
  
