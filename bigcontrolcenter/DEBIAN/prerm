@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+package_name=bigcontrolcenter
+case "$1" in
+  remove)
+    /usr/bin/bigcontrolcenter-restore-menu 2> /dev/null
+    ;;
+  purge)
+    /usr/bin/bigcontrolcenter-restore-menu 2> /dev/null
+;;
+esac
+exit 0

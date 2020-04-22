@@ -4,25 +4,26 @@ mkdir -p /usr/share/kservices5/bigcontrolcenter/
 
 for i  in  "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "org.kde.kdeconnect.app.desktop" "tlpui.desktop"; do
 
-    if [ -e "/usr/share/applications/$i" ]; then
-        mv -f "/usr/share/applications/$i" "/usr/share/kservices5/bigcontrolcenter/$i"
-        sed -i 's|QT_QUICK_BACKEND= ||g' "/usr/share/kservices5/bigcontrolcenter/$i"
-        echo 'X-KDE-ServiceTypes=KCModule
-Type=Service' >> "/usr/share/kservices5/bigcontrolcenter/$i"
-    fi
-    
+
+if [ -e "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
+
     EXEC="$(which $(grep "Exec=" "/usr/share/kservices5/bigcontrolcenter/$i" | cut -f2 -d=))"
     
     if [ "$EXEC" = "" ]; then
         rm -f "/usr/share/kservices5/bigcontrolcenter/$i"
     fi
     
+        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "/usr/share/kservices5/bigcontrolcenter/$i"
+        mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "/usr/share/applications/$i"
+fi
 
 done
 
 
-    if [ -e "/usr/share/applications/systemsettings.desktop" ]; then
-        mv -f "/usr/share/applications/systemsettings.desktop" "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop"
-        echo 'X-KDE-ServiceTypes=KCModule
-Type=Service' >> "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop"
+    if [ -e "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop" ]; then
+        mv -f "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop" "/usr/share/applications/systemsettings.desktop"
+        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "/usr/share/applications/systemsettings.desktop"
+
     fi
+
+
