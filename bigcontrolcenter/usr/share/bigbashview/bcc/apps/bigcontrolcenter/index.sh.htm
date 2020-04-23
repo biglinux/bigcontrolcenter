@@ -12,6 +12,16 @@ mkdir -p "$HOME/.config/bigcontrolcenter/icons"
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
+CATEGORY_Star=$"Principais"
+CATEGORY_Design=$"Aparência"
+CATEGORY_Hardware=$"Hardware"
+CATEGORY_System=$"Sistema"
+CATEGORY_Personalization=$"Personalização"
+CATEGORY_Other=$"Outros"
+
+
+
+
 ###########################
 # Verify icon theme changed
 ###########################
@@ -275,12 +285,12 @@ line-height: 120%;}
             <input type="text" id="search" class="form-control" placeholder="Pesquisar...">
 
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" id="Star" class="btn btn-success">Principais</button>
-                <button type="button" id="Design" class="btn btn-success">Aparência</button>
-                <button type="button" id="Hardware" class="btn btn-success">Hardware</button>
-                <button type="button" id="System" class="btn btn-success">Sistema</button>
-                <button type="button" id="Personalization" class="btn btn-success">Personalização</button>
-                <button type="button" id="Other" class="btn btn-success">Outros</button>
+                <button type="button" id="Star" class="btn btn-success">$CATEGORY_Star</button>
+                <button type="button" id="Design" class="btn btn-success">$CATEGORY_Design</button>
+                <button type="button" id="Hardware" class="btn btn-success">$CATEGORY_Hardware</button>
+                <button type="button" id="System" class="btn btn-success">$CATEGORY_System</button>
+                <button type="button" id="Personalization" class="btn btn-success">$CATEGORY_Personalization</button>
+                <button type="button" id="Other" class="btn btn-success">CATEGORY_Other</button>
                 
             </div>
                     </div>

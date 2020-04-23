@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-21 05:05-0300\n"
-"PO-Revision-Date: 2020-04-22 15:26-0300\n"
+"POT-Creation-Date: 2020-04-23 04:18-0300\n"
+"PO-Revision-Date: 2020-04-23 04:18-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -16,10 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3\n"
 
 msgid "Áreas de trabalho virtuais e atividades"
 msgstr "Virtual workspaces and activities"
+
+msgid "Carteira de senhas do KDE"
+msgstr "KDE password wallet"
 
 msgid "Sessões (login e logout)"
 msgstr "Sessions (login and logout)"
@@ -68,6 +71,24 @@ msgid ""
 msgstr ""
 "Configurations for old music CDs use are not valid for music in MP3 format."
 
+msgid "Principais"
+msgstr "Featured"
+
+msgid "Aparência"
+msgstr "Appearance"
+
+msgid "Hardware"
+msgstr ""
+
+msgid "Sistema"
+msgstr "System"
+
+msgid "Personalização"
+msgstr "Customization"
+
+msgid "Outros"
+msgstr "Others"
+
 msgid "Configurações de rede em geral"
 msgstr "General network configurations"
 
@@ -103,7 +124,7 @@ msgstr "Connect to the internet using the Android"
 
 msgid ""
 "Você pode utilizar seu smartphone ou tablet Android como<br>um dispositivo "
-"WiFi usb para seu computador."
+"wifi usb para seu computador."
 msgstr ""
 "You can use your Android smartphone or tablet as a<br>WiFi usb device for "
 "your computer."
@@ -383,12 +404,13 @@ msgstr "Add or configure printers."
 msgid "Particionar ou formatar"
 msgstr "Partitioning or formatting"
 
+#, fuzzy
 msgid ""
 "Cuidado ao utilizar esse programa, caso não saiba o que<br>está fazendo "
 "poderá apagar todos os dados do computador."
 msgstr ""
 "Caution while using this program. If you don't know<br>what are you doing "
-"you may erase all the data of your computer!"
+"you may erase all the data of your computer."
 
 msgid "Formatar pen drive"
 msgstr "Pen drive formatting"
