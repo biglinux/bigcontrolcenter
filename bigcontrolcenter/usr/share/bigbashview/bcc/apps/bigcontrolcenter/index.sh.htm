@@ -18,7 +18,8 @@ CATEGORY_Hardware=$"Hardware"
 CATEGORY_System=$"Sistema"
 CATEGORY_Personalization=$"Personalização"
 CATEGORY_Other=$"Outros"
-
+SEARCH=$"Pesquisar..."
+TITLE=$"Central de Controle"
 
 
 
@@ -277,12 +278,12 @@ line-height: 120%;}
 
 </style>
 
-    <title>Central de Controle</title>
+    <title>$TITLE</title>
     <body>
 <div id=total>
         <div class="col-md-4">
                 
-            <input type="text" id="search" class="form-control" placeholder="Pesquisar...">
+            <input type="text" id="search" class="form-control" placeholder="$SEARCH">
 
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" id="Star" class="btn btn-success">$CATEGORY_Star</button>
@@ -290,7 +291,7 @@ line-height: 120%;}
                 <button type="button" id="Hardware" class="btn btn-success">$CATEGORY_Hardware</button>
                 <button type="button" id="System" class="btn btn-success">$CATEGORY_System</button>
                 <button type="button" id="Personalization" class="btn btn-success">$CATEGORY_Personalization</button>
-                <button type="button" id="Other" class="btn btn-success">CATEGORY_Other</button>
+                <button type="button" id="Other" class="btn btn-success">$CATEGORY_Other</button>
                 
             </div>
                     </div>
