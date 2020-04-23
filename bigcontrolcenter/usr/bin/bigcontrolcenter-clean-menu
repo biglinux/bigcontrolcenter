@@ -2,7 +2,7 @@
 
 mkdir -p /usr/share/kservices5/bigcontrolcenter/
 
-for i  in  "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "org.kde.kdeconnect.app.desktop" "tlpui.desktop"; do
+for i  in  "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "org.kde.kdeconnect.app.desktop" "tlpui.desktop" "kdesystemsettings.desktop"; do
 
     if [ -e "/usr/share/applications/$i" ]; then
         mv -f "/usr/share/applications/$i" "/usr/share/kservices5/bigcontrolcenter/$i"
@@ -19,7 +19,6 @@ Type=Service' >> "/usr/share/kservices5/bigcontrolcenter/$i"
     
 
 done
-
 
     if [ -e "/usr/share/applications/systemsettings.desktop" ]; then
         mv -f "/usr/share/applications/systemsettings.desktop" "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop"
