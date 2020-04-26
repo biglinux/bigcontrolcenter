@@ -20,6 +20,7 @@ CATEGORY_Personalization=$"Personalização"
 CATEGORY_Other=$"Outros"
 SEARCH=$"Pesquisar..."
 TITLE=$"Central de Controle"
+CLOSE=$"Fechar"
 
 
 
@@ -283,7 +284,7 @@ line-height: 120%;}
 <div id=total>
         <div class="col-md-4">
                 
-            <input type="text" id="search" class="form-control" placeholder="$SEARCH">
+            <input type="text" id="search" class="form-control" placeholder="$SEARCH" autofocus>
 
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" id="Star" class="btn btn-success">$CATEGORY_Star</button>
@@ -451,7 +452,7 @@ cat << EOF
     
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
     </div>
   </div>
 EOF
@@ -586,7 +587,7 @@ cat << EOF
     
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
     </div>
   </div>
 EOF
@@ -673,7 +674,7 @@ cat << EOF
     
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
     </div>
   </div>
 EOF
@@ -760,7 +761,7 @@ cat << EOF
     
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
     </div>
   </div>
 EOF
@@ -772,6 +773,186 @@ fi
 #   HARDINFO CLOSE
 #
 ######################################
+
+
+
+
+
+
+
+######################################
+#
+#   USERS OPEN
+#
+######################################
+
+
+    NAME=$"Gerenciador de usuários"
+    COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
+    ICON="icons/preferences-system-users.png"
+    CATEGORY="System"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal6"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as necesidades da maioria dos casos."
+echo '</div>'
+
+######
+# 01
+######
+
+
+EXEC="kcmshell5 user_manager"
+NAME=$"Gerenciador simples"
+COMMENT=$"Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
+ICON="icons/preferences-system-users.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 02
+######
+
+
+EXEC="lxqt-admin-user"
+NAME=$"Gerenciador avançado"
+COMMENT=$"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar grupos."
+ICON="icons/user.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   USERS CLOSE
+#
+######################################
+
+
+
+
+
+
+
+
+
+######################################
+#
+#   USERS OPEN
+#
+######################################
+
+
+    NAME=$"Configurações da tela"
+    COMMENT=$"Configurações gerais do monitor."
+    ICON="icons/preferences-desktop-display.png"
+    CATEGORY="Hardware"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal7"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Resolução, taxa de atualização, configurações de cores, definições de tela de toque, cor noturna..."
+echo '</div>'
+
+######
+# 01
+######
+
+
+EXEC="kcmshell5 kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
+NAME=$"Configurações gerais da tela"
+COMMENT=$"Gerenciador padrão do KDE, recomendado."
+ICON="icons/preferences-desktop-display.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 02
+######
+
+
+EXEC="lxqt-config-monitor"
+NAME=$"Gerenciador alternativo"
+COMMENT=$"Se o seu monitor utiliza taxa de atualização<br>em valores com virgula, por exemplo, 59,94 Hz,<br>utilize esse gerenciador."
+ICON="icons/screen-lxqt.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light box"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   USERS CLOSE
+#
+######################################
+
+
 
 
 
@@ -914,7 +1095,7 @@ cat << EOF
     
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
     </div>
   </div>
 EOF
@@ -962,7 +1143,7 @@ cat << EOF
     
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
     </div>
   </div>
 EOF
@@ -1400,7 +1581,7 @@ fi
 ##########################
 
 
-    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kcm_kwin_effects -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kcm_desktoptheme.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop); do
+    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kcm_kwin_effects -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kcm_desktoptheme.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop -ve user_manager.desktop -ve kcm_kscreen.desktop); do
 
 
     EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"

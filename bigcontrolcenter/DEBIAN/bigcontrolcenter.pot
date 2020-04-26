@@ -7,7 +7,7 @@
 msgid   ""
 msgstr  "Project-Id-Version: bigcontrolcenter\n"
         "Report-Msgid-Bugs-To: \n"
-        "POT-Creation-Date: 2020-04-23 04:24-0300\n"
+        "POT-Creation-Date: 2020-04-26 06:23-0300\n"
         "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
         "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,24 +16,6 @@ msgstr  "Project-Id-Version: bigcontrolcenter\n"
         "Content-Type: text/plain; charset=UTF-8\n"
         "Content-Transfer-Encoding: 8bit\n"
 
-msgid   "Áreas de trabalho virtuais e atividades"
-msgstr  ""
-
-msgid   "Carteira de senhas do KDE"
-msgstr  ""
-
-msgid   "Sessões (login e logout)"
-msgstr  ""
-
-msgid   "Defina configurações de login e logout"
-msgstr  ""
-
-msgid   "Conectar à internet"
-msgstr  ""
-
-msgid   "Configurações de layout, teclas de atalho e outras opções."
-msgstr  ""
-
 msgid   "Integração com Google Drive e ownCloud"
 msgstr  ""
 
@@ -41,14 +23,8 @@ msgid   "Acesse seus arquivos que estão no Google Drive ou ownCloud "
         "diretamente no gerenciador de arquivos."
 msgstr  ""
 
-msgid   "Ícones e emoticons"
-msgstr  ""
-
-msgid   "Lembre que ativar esse sistema de pesquisa aumenta<br>o consumo de "
-        "memória e processamento do sistema."
-msgstr  ""
-
-msgid   "Joystick"
+msgid   "Configurações de uso dos antigos CDs de música, não são válidas para "
+        "músicas em MP3."
 msgstr  ""
 
 msgid   "Bluetooth"
@@ -57,8 +33,32 @@ msgstr  ""
 msgid   "Configurações gerais de dispositivos bluetooth."
 msgstr  ""
 
-msgid   "Configurações de uso dos antigos CDs de música, não são válidas para "
-        "músicas em MP3."
+msgid   "Joystick"
+msgstr  ""
+
+msgid   "Áreas de trabalho virtuais e atividades"
+msgstr  ""
+
+msgid   "Lembre que ativar esse sistema de pesquisa aumenta<br>o consumo de "
+        "memória e processamento do sistema."
+msgstr  ""
+
+msgid   "Ícones e emoticons"
+msgstr  ""
+
+msgid   "Configurações de layout, teclas de atalho e outras opções."
+msgstr  ""
+
+msgid   "Conectar à internet"
+msgstr  ""
+
+msgid   "Sessões (login e logout)"
+msgstr  ""
+
+msgid   "Defina configurações de login e logout"
+msgstr  ""
+
+msgid   "Carteira de senhas do KDE"
 msgstr  ""
 
 msgid   "Principais"
@@ -83,6 +83,9 @@ msgid   "Pesquisar..."
 msgstr  ""
 
 msgid   "Central de Controle"
+msgstr  ""
+
+msgid   "Fechar"
 msgstr  ""
 
 msgid   "Configurações de rede em geral"
@@ -203,6 +206,44 @@ msgstr  ""
 
 msgid   "Cria um arquivo com informações, que você pode<br>enviar a outras "
         "pessoas para que o ajudem<br>com o suporte."
+msgstr  ""
+
+msgid   "Gerenciador de usuários"
+msgstr  ""
+
+msgid   "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr  ""
+
+msgid   "Gerencie os usuários e grupos do sistema, o gerenciador simples "
+        "supre as necesidades da maioria dos casos."
+msgstr  ""
+
+msgid   "Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar "
+        "grupos."
+msgstr  ""
+
+msgid   "Gerenciador padrão do LXQT, possui<br>recursos avançados para "
+        "gerenciar grupos."
+msgstr  ""
+
+msgid   "Configurações da tela"
+msgstr  ""
+
+msgid   "Configurações gerais do monitor."
+msgstr  ""
+
+msgid   "Resolução, taxa de atualização, configurações de cores, definições "
+        "de tela de toque, cor noturna..."
+msgstr  ""
+
+msgid   "Configurações gerais da tela"
+msgstr  ""
+
+msgid   "Gerenciador padrão do KDE, recomendado."
+msgstr  ""
+
+msgid   "Se o seu monitor utiliza taxa de atualização<br>em valores com "
+        "virgula, por exemplo, 59,94 Hz,<br>utilize esse gerenciador."
 msgstr  ""
 
 msgid   "Interação com smartphones e tablets"
@@ -419,7 +460,4 @@ msgid   "O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
 msgstr  ""
 
 msgid   "Visualizar o relatório"
-msgstr  ""
-
-msgid   "Fechar"
 msgstr  ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 04:24-0300\n"
+"POT-Creation-Date: 2020-04-26 06:23-0300\n"
 "PO-Revision-Date: 2020-04-23 04:25-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,24 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.3\n"
-
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "Virtual workspaces and activities"
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE password wallet"
-
-msgid "Sessões (login e logout)"
-msgstr "Sessions (login and logout)"
-
-msgid "Defina configurações de login e logout"
-msgstr "Define login and logout configurations"
-
-msgid "Conectar à internet"
-msgstr "Connect to the internet"
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Layout settings, shortkeys and other options."
 
 msgid "Integração com Google Drive e ownCloud"
 msgstr "Integration with Google Drive and ownCloud"
@@ -46,8 +28,23 @@ msgstr ""
 "Access your files that are stored in Google Drive or ownCloud directly in "
 "the file browser."
 
-msgid "Ícones e emoticons"
-msgstr "Icons and emoticons"
+msgid ""
+"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
+"em MP3."
+msgstr ""
+"Configurations for old music CDs use are not valid for music in MP3 format."
+
+msgid "Bluetooth"
+msgstr ""
+
+msgid "Configurações gerais de dispositivos bluetooth."
+msgstr "General configurations for Bluetooth devices."
+
+msgid "Joystick"
+msgstr ""
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "Virtual workspaces and activities"
 
 msgid ""
 "Lembre que ativar esse sistema de pesquisa aumenta<br>o consumo de memória e "
@@ -56,20 +53,23 @@ msgstr ""
 "Remember that the activation of this system research<br>may increase system "
 "processing and memory consumption."
 
-msgid "Joystick"
-msgstr ""
+msgid "Ícones e emoticons"
+msgstr "Icons and emoticons"
 
-msgid "Bluetooth"
-msgstr ""
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Layout settings, shortkeys and other options."
 
-msgid "Configurações gerais de dispositivos bluetooth."
-msgstr "General configurations for Bluetooth devices."
+msgid "Conectar à internet"
+msgstr "Connect to the internet"
 
-msgid ""
-"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
-"em MP3."
-msgstr ""
-"Configurations for old music CDs use are not valid for music in MP3 format."
+msgid "Sessões (login e logout)"
+msgstr "Sessions (login and logout)"
+
+msgid "Defina configurações de login e logout"
+msgstr "Define login and logout configurations"
+
+msgid "Carteira de senhas do KDE"
+msgstr "KDE password wallet"
 
 msgid "Principais"
 msgstr "Featured"
@@ -94,6 +94,9 @@ msgstr "Search..."
 
 msgid "Central de Controle"
 msgstr "Control Center"
+
+msgid "Fechar"
+msgstr "Close"
 
 msgid "Configurações de rede em geral"
 msgstr "General network configurations"
@@ -244,6 +247,52 @@ msgid ""
 msgstr ""
 "Create an information file that you can send it to<br>other people so they "
 "may help you<br>by support."
+
+#, fuzzy
+msgid "Gerenciador de usuários"
+msgstr "Intermediate manager"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr ""
+
+msgid ""
+"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as "
+"necesidades da maioria dos casos."
+msgstr ""
+
+msgid "Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
+msgstr ""
+
+msgid ""
+"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar "
+"grupos."
+msgstr ""
+
+#, fuzzy
+msgid "Configurações da tela"
+msgstr "General audio configurations"
+
+#, fuzzy
+msgid "Configurações gerais do monitor."
+msgstr "General configurations for Bluetooth devices."
+
+msgid ""
+"Resolução, taxa de atualização, configurações de cores, definições de tela "
+"de toque, cor noturna..."
+msgstr ""
+
+#, fuzzy
+msgid "Configurações gerais da tela"
+msgstr "System energy configurations"
+
+#, fuzzy
+msgid "Gerenciador padrão do KDE, recomendado."
+msgstr "Default audio manager for KDE."
+
+msgid ""
+"Se o seu monitor utiliza taxa de atualização<br>em valores com virgula, por "
+"exemplo, 59,94 Hz,<br>utilize esse gerenciador."
+msgstr ""
 
 msgid "Interação com smartphones e tablets"
 msgstr "Interaction with smartphone and tablets"
@@ -544,6 +593,3 @@ msgstr ""
 
 msgid "Visualizar o relatório"
 msgstr "View the report"
-
-msgid "Fechar"
-msgstr "Close"
