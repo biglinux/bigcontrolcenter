@@ -1,0 +1,6 @@
+#!/bin/bash
+
+kwin_x11.orig &
+cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
+
+bigbashview -b 0,0,0 -t qt -w maximized -i icon.png index.sh.htm
