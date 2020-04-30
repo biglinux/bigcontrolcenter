@@ -277,6 +277,22 @@ padding: 15px;
 box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.75);
 line-height: 120%;}
 
+div#close {
+    position: absolute;
+    bottom: 0px;
+    width: 260px;
+    height: 57px;
+    text-align-last: center;
+    background-color: #00000026;
+    padding-top: 17px;
+    text-transform: uppercase;
+}
+
+div#close:hover {
+    background-color: #b7b7b726;
+    cursor:pointer;
+}
+
 </style>
 
     <title>$TITLE</title>
@@ -295,7 +311,8 @@ line-height: 120%;}
                 <button type="button" id="Other" class="btn btn-success">$CATEGORY_Other</button>
                 
             </div>
-                    </div>
+            <a href="/execute close$"><div id=close>Fechar</div></a></div>
+                    
         <div class="col-md-8">
     <div class="row" id="parent">
     
@@ -1190,6 +1207,50 @@ if [ -e "/usr/bin/biglinux-themes-gui" ]; then
 fi
 
 
+
+########################################
+#
+#   /usr/bin/dolphin
+#
+########################################
+
+if [ -e "/usr/bin/dolphin" ]; then
+
+    EXEC="dolphin"
+    NAME=$"Gerenciar arquivos"
+    COMMENT=$"Tenha acesso a seus arquivos e pastas."
+    CATEGORY="Other"
+    ICON="icons/system-file-manager.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
+
+########################################
+#
+#   /usr/bin/konsole
+#
+########################################
+
+if [ -e "/usr/bin/konsole" ]; then
+
+    EXEC="konsole"
+    NAME=$"Terminal"
+    COMMENT=$"Acesse o terminal de comandos."
+    CATEGORY="Other"
+    ICON="icons/terminal.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
 
 
 
