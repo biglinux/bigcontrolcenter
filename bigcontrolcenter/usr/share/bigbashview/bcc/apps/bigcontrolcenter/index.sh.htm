@@ -1239,7 +1239,7 @@ fi
 
 if [ -e "/usr/bin/konsole" ]; then
 
-    EXEC="konsole"
+    EXEC="konsole --workdir $HOME"
     NAME=$"Terminal"
     COMMENT=$"Acesse o terminal de comandos."
     CATEGORY="Other"

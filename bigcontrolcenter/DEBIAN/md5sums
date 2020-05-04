@@ -7,7 +7,7 @@ a3b5380d70d4f67868f99a42ee1151ef  DEBIAN/postinst
 2223d474c7cdad5e269a3aa304e80460  DEBIAN/en.po
 082903b0157f8927b4ebbd576d50eedb  DEBIAN/en.mo
 c9e64c0fbe744c8c0107ef22f0854909  DEBIAN/bigcontrolcenter.pot
-6407a71bc31eef7a68e8e648c9f2353f  DEBIAN/control
+9bcd7d801d49171f8876f3421ad24ef1  DEBIAN/control
 4c344edb2b33bb67d00926eb53865e01  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/01example
 eccf4cf42302641bc261850eef91a5f3  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/audiocd
 7503db214561cff877b4da1161f7d447  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/autostart
@@ -26,7 +26,6 @@ d33591a351b4532f13321bc83adcbbf6  usr/share/bigbashview/bcc/apps/bigcontrolcente
 7281490611cde4995250cca70244d183  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_desktoptheme
 18baabd01d36c5b0d7c7c402d2b2ec18  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_fonts
 66bbff82ba327b48a710424db1d2b21b  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_icons
-01019f35a9e03b62eaa439c2ac3e7913  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_kaccounts
 bf6cb58115871a86d25ba2eaebf6b23e  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_keyboard
 0b84e373999d350d22dce6654825484d  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_kscreen
 37b0fc84190d2a197a275935b5016526  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_kwin_effects
@@ -51,6 +50,7 @@ d6054e5066e66cc5bf45d6fad7665554  usr/share/bigbashview/bcc/apps/bigcontrolcente
 7281490611cde4995250cca70244d183  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/screenlocker
 a4217ea95b0b978d55b87121589fddbe  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/smb
 ecf2144b2651565a3de624c7684a387a  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/user_manager
+c8c80abe4fafd80b6af705c96fad5f15  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_kaccounts
 d41d8cd98f00b204e9800998ecf8427e  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/None
 97fe1f17a4c51d66dc80ceb15ad031bd  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/airdroid.png
 5653d3b1ac0fb2069a4472fc06e62fde  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/airmore.png
