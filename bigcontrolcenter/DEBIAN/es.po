@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-21 05:05-0300\n"
+"POT-Creation-Date: 2020-05-16 13:26-0300\n"
 "PO-Revision-Date: 2020-05-10 19:37-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,21 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.3\n"
-
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "Escritorios virtuales y actividades"
-
-msgid "Sessões (login e logout)"
-msgstr "Sesiones (inicio y cierre de sesión)"
-
-msgid "Defina configurações de login e logout"
-msgstr "Configurar ajustes de inicio y cierre de sesión"
-
-msgid "Conectar à internet"
-msgstr "Conectarse a internet"
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Configuración de diseño, teclas de acceso directo y otras opciones."
 
 msgid "Integração com Google Drive e ownCloud"
 msgstr "Integración con Google Drive y ownCloud"
@@ -43,8 +28,24 @@ msgstr ""
 "Acceda a sus archivos que están en Google Drive o ownCloud directamente en "
 "el administrador de archivos."
 
-msgid "Ícones e emoticons"
-msgstr "Iconos y emoticones"
+msgid ""
+"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
+"em MP3."
+msgstr ""
+"La configuración de uso de los CD de música antiguos no es válida para la "
+"música MP3."
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Configurações gerais de dispositivos bluetooth."
+msgstr "Configuración general del dispositivo bluetooth."
+
+msgid "Joystick"
+msgstr "Joystick"
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "Escritorios virtuales y actividades"
 
 msgid ""
 "Lembre que ativar esse sistema de pesquisa aumenta<br>o consumo de memória e "
@@ -53,21 +54,56 @@ msgstr ""
 "Recuerde que habilitar este dispositivo de búsqueda aumenta la memoria del "
 "sistema y el consumo de procesamiento."
 
-msgid "Joystick"
-msgstr "Joystick"
-
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-msgid "Configurações gerais de dispositivos bluetooth."
-msgstr "Configuración general del dispositivo bluetooth."
-
-msgid ""
-"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
-"em MP3."
+msgid "Tema da Área de Trabalho"
 msgstr ""
-"La configuración de uso de los CD de música antiguos no es válida para la "
-"música MP3."
+
+msgid "Ícones e emoticons"
+msgstr "Iconos y emoticones"
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Configuración de diseño, teclas de acceso directo y otras opciones."
+
+msgid "Conectar à internet"
+msgstr "Conectarse a internet"
+
+msgid "Sessões (login e logout)"
+msgstr "Sesiones (inicio y cierre de sesión)"
+
+msgid "Defina configurações de login e logout"
+msgstr "Configurar ajustes de inicio y cierre de sesión"
+
+#, fuzzy
+msgid "Carteira de senhas do KDE"
+msgstr "Centro de control de KDE"
+
+msgid "Principais"
+msgstr ""
+
+#, fuzzy
+msgid "Aparência"
+msgstr "Apariencia y rendimiento"
+
+msgid "Hardware"
+msgstr ""
+
+msgid "Sistema"
+msgstr ""
+
+msgid "Personalização"
+msgstr ""
+
+msgid "Outros"
+msgstr ""
+
+msgid "Pesquisar..."
+msgstr ""
+
+#, fuzzy
+msgid "Central de Controle"
+msgstr "Centro de control de KDE"
+
+msgid "Fechar"
+msgstr "Cerrar"
 
 msgid "Configurações de rede em geral"
 msgstr "Configuraciones de red generales"
@@ -99,11 +135,13 @@ msgstr "Administrador alternativo"
 msgid "Caso prefira também oferecemos esse configurador."
 msgstr "Si lo prefiere, también ofrecemos este configurador."
 
-msgid "Conectar à internet utilizando o android"
+#, fuzzy
+msgid "Conectar à internet utilizando o Android"
 msgstr "Conéctate a internet con Android"
 
+#, fuzzy
 msgid ""
-"Você pode utilizar seu smartphone ou tablet android como<br>um dispositivo "
+"Você pode utilizar seu smartphone ou tablet Android como<br>um dispositivo "
 "wifi usb para seu computador."
 msgstr ""
 "Puede usar su teléfono (smartphone) o tablet Android como dispositivo wifi "
@@ -221,6 +259,61 @@ msgid ""
 msgstr ""
 "Cree un archivo con información, que puede<br>enviar a otros para "
 "ayudarlo<br>con el soporte."
+
+#, fuzzy
+msgid "Gerenciador de usuários"
+msgstr "Administrador intermedio"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr ""
+
+msgid ""
+"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as "
+"necesidades da maioria dos casos."
+msgstr ""
+
+msgid "Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
+msgstr ""
+
+msgid ""
+"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar "
+"grupos."
+msgstr ""
+
+#, fuzzy
+msgid "Configurações da tela"
+msgstr "Configuraciones de audio generales"
+
+#, fuzzy
+msgid "Configurações gerais do monitor."
+msgstr "Configuración general del dispositivo bluetooth."
+
+msgid ""
+"Resolução, taxa de atualização, configurações de cores, definições de tela "
+"de toque, cor noturna..."
+msgstr ""
+
+#, fuzzy
+msgid "Configurações gerais da tela"
+msgstr "Configuraciones de energía del sistema"
+
+#, fuzzy
+msgid "Gerenciador padrão do KDE, recomendado."
+msgstr "Administrador de audio estándar de KDE."
+
+msgid ""
+"Se o seu monitor utiliza taxa de atualização<br>em valores com virgula, por "
+"exemplo, 59,94 Hz,<br>utilize esse gerenciador."
+msgstr ""
+
+#, fuzzy
+msgid "Resetar as configurações da tela"
+msgstr "Restaurar la configuración del programa"
+
+msgid ""
+"Em alguns casos para que as configurações do monitor voltem a<br>funcionar "
+"adequedamente é necessário remover os arquivos antigos."
+msgstr ""
 
 msgid "Interação com smartphones e tablets"
 msgstr "Interacción con teléfonos y tabletas"
@@ -380,11 +473,25 @@ msgstr ""
 "Proporcionamos configuraciones completas para<br>que usted seleccione "
 "extremadamente simple."
 
+#, fuzzy
+msgid "Gerenciar arquivos"
+msgstr "Administrador alternativo"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr ""
+
+msgid "Terminal"
+msgstr ""
+
+msgid "Acesse o terminal de comandos."
+msgstr ""
+
 msgid "Instalar drivers"
 msgstr "Instalar controladores"
 
+#, fuzzy
 msgid ""
-"Alguns dispositivos, principalmente de Wifi ou placas de vídeo "
+"Alguns dispositivos, principalmente de WiFi ou placas de vídeo "
 "Nvidia<br>podem precisar da instalação de drivers."
 msgstr ""
 "Algunos dispositivos, especialmente wifi o tarjetas de video Nvidia,"
@@ -416,9 +523,10 @@ msgstr ""
 msgid "Criar pen drive de boot"
 msgstr "Crear unidad flash de arranque"
 
+#, fuzzy
 msgid ""
 "Para criar um pen drive de boot com o BigLinux,<br>baixe o sistema em www."
-"biglinux.com.br e<br>utilize esse programa para grava-lo."
+"biglinux.com.br e<br>utilize esse programa para gravá-lo."
 msgstr ""
 "Para crear una unidad de arranque con BigLinux,<br>descargue el sistema en "
 "www.biglinux.com.br y<br>use este programa para guardarlo."
@@ -518,6 +626,10 @@ msgstr ""
 "opciones encontradas también están<br>en este centro que está utilizando "
 "ahora."
 
+#, fuzzy
+msgid "As configurações da tela foram resetadas."
+msgstr "Para configuraciones de red más complejas."
+
 msgid "Gerando o relatorio"
 msgstr "Generando el informe"
 
@@ -535,6 +647,3 @@ msgstr ""
 
 msgid "Visualizar o relatório"
 msgstr "Ver el informe"
-
-msgid "Fechar"
-msgstr "Cerrar"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-26 06:23-0300\n"
+"POT-Creation-Date: 2020-05-16 13:26-0300\n"
 "PO-Revision-Date: 2020-04-23 04:25-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -52,6 +52,9 @@ msgid ""
 msgstr ""
 "Remember that the activation of this system research<br>may increase system "
 "processing and memory consumption."
+
+msgid "Tema da Área de Trabalho"
+msgstr ""
 
 msgid "Ícones e emoticons"
 msgstr "Icons and emoticons"
@@ -294,6 +297,15 @@ msgid ""
 "exemplo, 59,94 Hz,<br>utilize esse gerenciador."
 msgstr ""
 
+#, fuzzy
+msgid "Resetar as configurações da tela"
+msgstr "General audio configurations"
+
+msgid ""
+"Em alguns casos para que as configurações do monitor voltem a<br>funcionar "
+"adequedamente é necessário remover os arquivos antigos."
+msgstr ""
+
 msgid "Interação com smartphones e tablets"
 msgstr "Interaction with smartphone and tablets"
 
@@ -440,6 +452,19 @@ msgstr ""
 "We provide complete configurations for<br>you to select in an extremely "
 "simple way."
 
+#, fuzzy
+msgid "Gerenciar arquivos"
+msgstr "Alternate manager"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr ""
+
+msgid "Terminal"
+msgstr ""
+
+msgid "Acesse o terminal de comandos."
+msgstr ""
+
 msgid "Instalar drivers"
 msgstr "Install drivers"
 
@@ -575,6 +600,10 @@ msgid ""
 msgstr ""
 "Access the KDE traditional control center,<br>the bigger part of options "
 "found there are also available<br>in this center that you are using now."
+
+#, fuzzy
+msgid "As configurações da tela foram resetadas."
+msgstr "General audio configurations"
 
 msgid "Gerando o relatorio"
 msgstr "Generating report"
