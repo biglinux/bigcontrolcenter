@@ -953,6 +953,25 @@ cat << EOF
 EOF
 
 
+######
+# 02
+######
+
+
+EXEC="./kscreen_clean.sh"
+NAME=$"Resetar as configurações da tela"
+COMMENT=$"Em alguns casos para que as configurações do monitor voltem a<br>funcionar adequedamente é necessário remover os arquivos antigos."
+ICON="icons/kscreen-reset.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
 cat << EOF    
     
     </div>
@@ -1642,7 +1661,7 @@ fi
 ##########################
 
 
-    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kcm_kwin_effects -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kcm_desktoptheme.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop -ve user_manager.desktop -ve kcm_kscreen.desktop); do
+    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop -ve user_manager.desktop -ve kcm_kscreen.desktop); do
 
 
     EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"
@@ -1672,7 +1691,7 @@ fi
         CATEGORY="Other"
     fi
 
-    filename="$(echo "$i" | sed 's|.*/||g;s|.desktop||g')"
+    filename="$(echo "$i" | sed 's|.*/||g;s|\.desktop||g')"
     . files/$filename
 
 
