@@ -3,7 +3,7 @@
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=hardinfo-relatory
+export TEXTDOMAIN=bigcontrolcenter
 
 FILE_TO_SAVE="$HOME/hardware-info-$(date +%Y-%m-%d_%Hh-%Mm).html"
 PROGRESS="/tmp/hardinfo-relaroty-progress"
