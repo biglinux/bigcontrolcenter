@@ -1461,17 +1461,17 @@ fi
 
 ########################################
 #
-#   big-reset
+#   biglinux-config
 #
 ########################################
 
-if [ -e "/usr/bin/big-reset" ]; then
+if [ -e "/usr/bin/biglinux-config" ]; then
 
-    EXEC="big-reset"
+    EXEC="biglinux-config"
     NAME=$"Restaurar a configuração de programas"
     COMMENT=$"Lista com alguns programas do sistema<br>que você pode restaurar a configuração com um clique."
     CATEGORY="Star"
-    ICON="/usr/share/bigbashview/bcc/apps/big-reset/logo.png"
+    ICON="/usr/share/bigbashview/bcc/apps/biglinux-config/icon.png"
 
     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
 <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
