@@ -741,8 +741,27 @@ echo '</div>'
 ######
 
 
-EXEC="hardinfo"
+EXEC="kinfocenter"
 NAME=$"Exibir informações"
+COMMENT=$"Veja um painel com diversas informações do sistema."
+ICON="icons/kinfocenter.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 02
+######
+
+
+EXEC="hardinfo"
+NAME=$"Exibir informações complementares"
 COMMENT=$"Veja as informações e faça testes de desempenho."
 ICON="icons/hardinfo.png"
 
@@ -756,7 +775,7 @@ EOF
 
 
 ######
-# 02
+# 03
 ######
 
 
@@ -831,7 +850,7 @@ echo '</div>'
 ######
 
 
-EXEC="kcmshell5 user_manager"
+EXEC="kcmshell5 kcm_users"
 NAME=$"Gerenciador simples"
 COMMENT=$"Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
 ICON="icons/preferences-system-users.png"
@@ -1480,6 +1499,26 @@ if [ -e "/usr/bin/biglinux-config" ]; then
 
 fi
 
+########################################
+#
+#   biglinux-tweaks
+#
+########################################
+
+if [ -e "/usr/bin/biglinux-tweaks" ]; then
+
+    EXEC="biglinux-tweaks"
+    NAME=$"Scripts de automação das mais variadas tarefas"
+    COMMENT=$"Quase todas as tarefas no Linux podem ser automatizadas com scripts,<br>essa interface reúne uma lista de automações úteis.<br><br>Sinta-se a vontade para enviar seus próprios scripts para o projeto BigLinux através do nosso<br>fórum ou grupo no Telegram, para que ele apareça nessa lista."
+    CATEGORY="Star"
+    ICON="/usr/share/bigbashview/bcc/apps/biglinux-tweaks/icon.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"50\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
 
 
 ########################################

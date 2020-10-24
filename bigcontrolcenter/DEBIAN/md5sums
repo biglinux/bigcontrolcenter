@@ -3,11 +3,11 @@
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 a3b5380d70d4f67868f99a42ee1151ef  DEBIAN/postinst
 5316d00cf17bac7ca8a997a2f56ca4e0  DEBIAN/prerm
-b95dcb625467e39fbe0a03d48174df20  DEBIAN/pt.po
-ef3dafb2f35b14347ccb969a3b432b8c  DEBIAN/en.po
-21a4f54e573768c148437bb91c8712b9  DEBIAN/bigcontrolcenter.pot
-a57952fc828c1e2ea24d32f183969a42  DEBIAN/es.po
-0d47a803e8b0f6240019f5dc260b4bd0  DEBIAN/control
+c84f650054281a6b49363512ece9d502  DEBIAN/pt.po
+4dbf106841a8b37a654870b0b7919f3e  DEBIAN/en.po
+b86a9411fbd12bde9a6521bb4a0ec8a5  DEBIAN/es.po
+b561a99b79064baf42f08105f3686f46  DEBIAN/bigcontrolcenter.pot
+589e5e47d80bb47b447ed9c8d55fe7b1  DEBIAN/control
 4cd3da9690bbda491f52a56d74306af8  etc/apt/apt.conf.d/98biglinux-bigcontrolcenter
 4c344edb2b33bb67d00926eb53865e01  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/01example
 eccf4cf42302641bc261850eef91a5f3  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/audiocd
@@ -49,7 +49,7 @@ a4217ea95b0b978d55b87121589fddbe  usr/share/bigbashview/bcc/apps/bigcontrolcente
 d6054e5066e66cc5bf45d6fad7665554  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kwindecoration
 5eb59b2d48a63992075dc493d9bc28f0  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/mouse
 23605407ad103f7b8494808e96b047ce  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/powerdevilprofilesconfig
-7281490611cde4995250cca70244d183  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/screenlocker
+20d3250a9b5ab153e51a1081b663f3e7  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/screenlocker
 a4217ea95b0b978d55b87121589fddbe  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/smb
 ecf2144b2651565a3de624c7684a387a  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/user_manager
 d41d8cd98f00b204e9800998ecf8427e  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/None
@@ -151,6 +151,7 @@ fbcacb2828af79987062c0ff97c71280  usr/share/bigbashview/bcc/apps/bigcontrolcente
 d5dee9bfe0d3a4d497078b19ced0f0ce  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/tools-check-spelling.png
 e38afdcf1c9429072f3aa0463c759c71  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/user.png
 78ea88b8495f96f18a35082894c1b8f4  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/kscreen-reset.png
+243b93b834745fe4e954a45fe5fa0315  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/kinfocenter.png
 16018628db2f2fa641ea3216a2d1dfc2  usr/share/bigbashview/bcc/apps/bigcontrolcenter/xdg/__pycache__/DesktopEntry.cpython-38.pyc
 5b90a4f416531a141e38014fc0f076a9  usr/share/bigbashview/bcc/apps/bigcontrolcenter/xdg/__pycache__/Exceptions.cpython-38.pyc
 cd2d4f4410b3be3cef8472a624fe4e0d  usr/share/bigbashview/bcc/apps/bigcontrolcenter/xdg/__pycache__/IniFile.cpython-38.pyc
@@ -168,11 +169,11 @@ f0050848fa9fae30a577156e1bd45498  usr/share/bigbashview/bcc/apps/bigcontrolcente
 3b7b73755d4d8444c29a988b8fa79765  usr/share/bigbashview/bcc/apps/bigcontrolcenter/01.jpg
 5c6e806e0dcb483a4d211025e429f628  usr/share/bigbashview/bcc/apps/bigcontrolcenter/bootstrap.min.css
 be630779a63e891f8369ddcfb695a045  usr/share/bigbashview/bcc/apps/bigcontrolcenter/desktop-file.py
-2d6329ba724e4e416460d332535d9aa2  usr/share/bigbashview/bcc/apps/bigcontrolcenter/filter.js
 4e11d2e7db7d91da81563ee94e425274  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icon.png
-01d79791d1ca4b72195b161e045ae576  usr/share/bigbashview/bcc/apps/bigcontrolcenter/index.sh.htm
-aa51b42f797b7ae59afac141039191e4  usr/share/bigbashview/bcc/apps/bigcontrolcenter/kscreen_clean.sh
 14914b0198ca5c311c26af8ad5d5cf83  usr/share/bigbashview/bcc/apps/bigcontrolcenter/run.run
+aa51b42f797b7ae59afac141039191e4  usr/share/bigbashview/bcc/apps/bigcontrolcenter/kscreen_clean.sh
+c9c7d0762d607b6a1a40270632c1c2e9  usr/share/bigbashview/bcc/apps/bigcontrolcenter/filter.js
+1a9d154f9e68039fcef2fc8cce521fe9  usr/share/bigbashview/bcc/apps/bigcontrolcenter/index.sh.htm
 5ac3411b4e9e73128f3a0581886aeaef  usr/share/applications/bigcontrolcenter.desktop
 666a20463a03bc56302fc627b5d5f6d1  usr/share/locale/pt/LC_MESSAGES/bigcontrolcenter.mo
 4c1f70a8d9771d792290ca1c7b7c16d9  usr/share/locale/es/LC_MESSAGES/bigcontrolcenter.mo
@@ -180,6 +181,6 @@ aa51b42f797b7ae59afac141039191e4  usr/share/bigbashview/bcc/apps/bigcontrolcente
 6744e461704a68683832e3068863aced  usr/share/xsessions/bigcontrolcenter.desktop
 cdca91623759e0c18155e6b2dc1eb62a  usr/bin/hardinfo-relatory
 99982c8124afbdececd49a83f465674e  usr/bin/bigcontrolcenter
-fe3b657a5ebd7554841bb0dc4706d757  usr/bin/bigcontrolcenter-clean-menu
-e5761ce1c07058acb6416fc8ae9c90b2  usr/bin/bigcontrolcenter-restore-menu
 eef375e3a3867b26ab2086f1235b5750  usr/bin/bigcontrolcenter-session
+12a263f7ef9d9e622f2653e7afeaed11  usr/bin/bigcontrolcenter-clean-menu
+dde2457573600229100186b20a56a1dd  usr/bin/bigcontrolcenter-restore-menu

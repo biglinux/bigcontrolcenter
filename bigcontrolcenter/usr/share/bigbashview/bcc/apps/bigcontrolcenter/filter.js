@@ -161,5 +161,12 @@ $(document).ready(function(){
         $('.box').show().not(function(){
             return matcher.test(removeDiacritics($(this).find('.name, .sku').text()))
         }).hide();
+        
+        var empty_search = $(this).val();
+        if (empty_search == '') {
+            $('#Star').trigger('click');
+        }
     })
+    
+    
 })
