@@ -14,4 +14,4 @@ fi
 
 cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
 
-LANGUAGE=$BIGBASHVIEW_LANG bigbashview -t qt -s 1160x640 -i icon.png index.sh.htm
+LANGUAGE=$BIGBASHVIEW_LANG bigbashview -t qt -s 1200x640 -i icon.png index.sh.htm

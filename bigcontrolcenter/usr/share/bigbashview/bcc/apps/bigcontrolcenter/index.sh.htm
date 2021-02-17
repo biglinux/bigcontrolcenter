@@ -45,11 +45,11 @@ CLOSE=$"Fechar"
 # Verify number of kcmshell5 changed
 ####################################
 if [ ! -e "$HOME/.config/bigcontrolcenter/kcmshell_number" ]; then
-    grep -Rl kcmshell5 /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+    grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
     RELOAD="1"
 else
-    if [ "$(grep -Rl kcmshell5 /usr/share/kservices5/ | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/kcmshell_number")" ]; then
-        grep -Rl kcmshell5 /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+    if [ "$(grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/kcmshell_number")" ]; then
+        grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
         RELOAD="1"
     fi
 fi
@@ -92,8 +92,8 @@ cat << EOF
 .col-md-2 {
     cursor: pointer;
     padding: 0px;
-    margin: 14px;
-    width: 400px;
+    margin: 11px;
+    width: 430px;
     background-color: #00000080;
     border-radius: 19px;
     padding-left: 24px;
@@ -263,7 +263,7 @@ div#andoid-right {
 }
 
 .waves-light {
-        border-radius: 19px !important;
+        border-radius: 12px !important;
 }
 
 .backdrop {
@@ -1700,10 +1700,15 @@ fi
 ##########################
 
 
-    for i  in  $(grep -Rl kcmshell5 /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop -ve user_manager.desktop -ve kcm_kscreen.desktop); do
+    for i  in  $(grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop -ve user_manager.desktop -ve kcm_kscreen.desktop -ve kcm_feedback.desktop -ve kcm_users.desktop); do
 
 
     EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"
+
+    if [ "$EXEC" = "" ]; then
+        EXEC="kcmshell5 $(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-Library)"
+    fi
+    EXEC="$(echo "$EXEC" | sed 's|kcm_||g')"
     NAME="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Name)"
     COMMENT="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Comment)"
     CATEGORY="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)"

@@ -1,6 +1,6 @@
 Package: bigcontrolcenter
-Version: 1.0.5-1big4
-Depends: bigbashview, lxqt-admin, lxqt-admin-l10n, lxqt-config, lxqt-config-l10n, biglinux-tweaks
+Version: 1.0.6-1big1
+Depends: bigbashview, lxqt-admin, lxqt-admin-l10n, lxqt-config, lxqt-config-l10n, biglinux-tweaks, python3-pyside2.qtwebenginewidgets
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Section: admin

@@ -4,8 +4,8 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-# NAME=$"Sessões (login e logout)"
-# COMMENT=$"Defina configurações de login e logout"
+NAME=$"Sessões (login e logout)"
+COMMENT=$"Defina configurações de login e logout"
 CATEGORY="Personalization"
-# EXEC="kcmshell5 kcm_smserver"
+EXEC="kcmshell5 kcm_smserver"
  
