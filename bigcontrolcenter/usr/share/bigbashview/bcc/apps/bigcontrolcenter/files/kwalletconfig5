@@ -6,3 +6,4 @@ export TEXTDOMAIN=bigcontrolcenter
 
 NAME=$"Carteira de senhas do KDE"
 CATEGORY="Personalization"
+EXEC="kcmshell5 kwalletconfig5"

@@ -6,4 +6,4 @@ export TEXTDOMAIN=bigcontrolcenter
 
 
 CATEGORY="Hardware"
-EXEC="kcmshell5 kcm_workspace mouse"
+EXEC="kcmshell5 mouse kcm_workspace"
