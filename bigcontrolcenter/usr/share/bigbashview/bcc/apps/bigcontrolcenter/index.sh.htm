@@ -913,7 +913,7 @@ fi
 
 ######################################
 #
-#   USERS OPEN
+#   SCREEN OPEN
 #
 ######################################
 
@@ -1008,7 +1008,7 @@ EOF
 
 ######################################
 #
-#   USERS CLOSE
+#   SCREEN CLOSE
 #
 ######################################
 
@@ -1339,27 +1339,106 @@ if [ -e "/usr/share/kservices5/msm_mhwd.desktop" ]; then
 
 fi
 
-########################################
+######################################
 #
-#   system-config-printer
+#   PRINTER OPEN
 #
-########################################
+######################################
 
 
-if [ -e "/usr/bin/system-config-printer" ]; then
-
-    EXEC="system-config-printer"
-    NAME=$"Impressoras"
-    COMMENT=$"Adiconar ou configurar impressoras."
-    CATEGORY="Star Hardware"
+    NAME=$"Impressora e scanner"
+    COMMENT=$"Adiconar ou configurar impressoras ou scanner."
     ICON="icons/printer.png"
+    CATEGORY="Star Hardware"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal7"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+
+EOF
+
+
+######
+# 01
+######
+
+
+EXEC="system-config-printer"
+NAME=$"Adicionar ou remover impressoras"
+COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
+ICON="icons/printer.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 02
+######
+
+if [ -e "/usr/bin/hp-toolbox" ]; then
+
+EXEC="hp-toolbox"
+NAME=$"Configurações para impressoras HP"
+COMMENT=$"Se a sua impressora for da marca HP e não funcionou corretamente com o gerênciador acima, utilize esta opção."
+ICON="/usr/share/hplip/data/images/128x128/hp_logo.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
 
 fi
+
+######
+# 03
+######
+
+if [ -e "/usr/bin/hp-uiscan" ]; then
+
+EXEC="hp-uiscan"
+NAME=$"Configurar scanner HP"
+COMMENT=$"Em geral basta plugar o scanner na porta USB e utilizar, mas se estiver utilizando um scanner da marca HP, essa opção pode ser útil."
+ICON="icons/scanner.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+fi
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   PRINTER CLOSE
+#
+######################################
 
 
 ########################################
