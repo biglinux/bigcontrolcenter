@@ -2,12 +2,13 @@
 
 mkdir -p /usr/share/kservices5/bigcontrolcenter/
 
-for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "org.kde.kdeconnect.app.desktop" "tlpui.desktop" "kdesystemsettings.desktop" "org.kde.kinfocenter.desktop" "grub-customizer.desktop" "biglinux-tweaks.desktop"; do
+for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "org.kde.kdeconnect.app.desktop" "tlpui.desktop" "kdesystemsettings.desktop" "org.kde.kinfocenter.desktop" "grub-customizer.desktop" "biglinux-tweaks.desktop" "kvantummanager.desktop" "manjaro-settings-manager.desktop" "msm_kde_notifier_settings.desktop" "designer.desktop" "linguist.desktop" "qdbusviewer.desktop" "assistant.desktop" "UserFeedbackConsole.desktop" "cmake-gui.desktop" "avahi-discover.desktop" "bssh.desktop" "bvnc.desktop" "htop.desktop" "lstopo.desktop" "cups.desktop" "org.gnome.baobab.desktop" "qv4l2.desktop" "qvidcap.desktop" "mpv.desktop"; do
+
 
 
 if [ -e "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
 
-    EXEC="$(which $(grep "Exec=" "/usr/share/kservices5/bigcontrolcenter/$i" | cut -f2 -d=))"
+    EXEC="$(which $(grep -m1 "Exec=" "/usr/share/kservices5/bigcontrolcenter/$i" | cut -f2 -d= | cut -f1 -d" "))"
     
     if [ "$EXEC" = "" ]; then
         rm -f "/usr/share/kservices5/bigcontrolcenter/$i"

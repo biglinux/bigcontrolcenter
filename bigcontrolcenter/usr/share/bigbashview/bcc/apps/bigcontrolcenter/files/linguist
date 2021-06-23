@@ -4,6 +4,4 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-CATEGORY="Personalization"
-EXEC="kcmshell5 msm_language_packages formats translations"
-
+EXEC="linguist"

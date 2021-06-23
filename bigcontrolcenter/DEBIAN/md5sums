@@ -7,7 +7,7 @@ c84f650054281a6b49363512ece9d502  DEBIAN/pt.po
 4dbf106841a8b37a654870b0b7919f3e  DEBIAN/en.po
 b86a9411fbd12bde9a6521bb4a0ec8a5  DEBIAN/es.po
 b561a99b79064baf42f08105f3686f46  DEBIAN/bigcontrolcenter.pot
-c104f789b72c271c94d0a32265ae227b  DEBIAN/control
+9c8acadcbfe93fd5670896a21aa57f59  DEBIAN/control
 4cd3da9690bbda491f52a56d74306af8  etc/apt/apt.conf.d/98biglinux-bigcontrolcenter
 4c344edb2b33bb67d00926eb53865e01  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/01example
 a70285d313e5d536a56b3920e903b141  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_wacomtablet
@@ -23,10 +23,8 @@ c128ffb864696ef0a231a3574cac43dd  usr/share/bigbashview/bcc/apps/bigcontrolcente
 def7dda6ace9e1348564ef62813043fd  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_nightcolor
 7281490611cde4995250cca70244d183  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_splashscreen
 d6054e5066e66cc5bf45d6fad7665554  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_style
-def7dda6ace9e1348564ef62813043fd  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_touchpad
 a4217ea95b0b978d55b87121589fddbe  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcmaccess
 bf6cb58115871a86d25ba2eaebf6b23e  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_keyboard
-5eb59b2d48a63992075dc493d9bc28f0  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/mouse
 8cb94de95ddd3ef5cf572e5c8ee43c2f  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/device_automounter_kcm
 d6054e5066e66cc5bf45d6fad7665554  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kwindecoration
 37b0fc84190d2a197a275935b5016526  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_kwin_effects
@@ -47,13 +45,15 @@ ecf2144b2651565a3de624c7684a387a  usr/share/bigbashview/bcc/apps/bigcontrolcente
 7503db214561cff877b4da1161f7d447  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/autostart
 23605407ad103f7b8494808e96b047ce  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/powerdevilprofilesconfig
 d33591a351b4532f13321bc83adcbbf6  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_activities
-3dbbad7d7c2b1e3badb4c382ed29814e  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kwalletconfig5
 c8c80abe4fafd80b6af705c96fad5f15  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_kaccounts
 618f8cd617af02daa06495c5b55a7f86  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_desktoptheme
 20d3250a9b5ab153e51a1081b663f3e7  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/screenlocker
 0dda49b49c517a3475f8f404484dbafc  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_smserver
 90becafd0c28715d00d174c19b364f94  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_workspace
 a4217ea95b0b978d55b87121589fddbe  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_firewall
+b4dbcab295e14b08d65de6e733060b4f  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kcm_touchpad
+66bd9e3ddec7a0e7619842f5de6ae5b5  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/mouse
+6ce7ae54af0a2bd79f0340bd29ee8d0d  usr/share/bigbashview/bcc/apps/bigcontrolcenter/files/kwalletconfig5
 d41d8cd98f00b204e9800998ecf8427e  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/None
 97fe1f17a4c51d66dc80ceb15ad031bd  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/airdroid.png
 5653d3b1ac0fb2069a4472fc06e62fde  usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/airmore.png

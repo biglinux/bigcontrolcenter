@@ -1,0 +1,52 @@
+[Trigger]
+Type = Path
+Operation = Remove
+
+Target = usr/share/applications/biglinux-config.desktop
+Target = usr/share/applications/big-reset.desktop
+Target = usr/share/applications/system-config-printer.desktop
+Target = usr/share/applications/openjdk-8-policytool.desktop
+Target = usr/share/applications/pavucontrol-qt.desktop
+Target = usr/share/applications/bigkernel.desktop
+Target = usr/share/applications/gufw.desktop
+Target = usr/share/applications/gparted.desktop
+Target = usr/share/applications/hardinfo.desktop
+Target = usr/share/applications/bigapache.desktop
+Target = usr/share/applications/timeshift-gtk.desktop
+Target = usr/share/applications/mintstick-kde.desktop
+Target = usr/share/applications/mintstick-format-kde.desktop
+Target = usr/share/applications/biglinux-themes-gui.desktop
+Target = usr/share/applications/sambasearch.desktop
+Target = usr/share/applications/org.kde.kwalletmanager5.desktop
+Target = usr/share/applications/bigflash-javaws-widevine-fonts.desktop
+Target = usr/share/applications/org.kde.kdeconnect.app.desktop
+Target = usr/share/applications/tlpui.desktop
+Target = usr/share/applications/kdesystemsettings.desktop
+Target = usr/share/applications/org.kde.kinfocenter.desktop
+Target = usr/share/applications/grub-customizer.desktop
+Target = usr/share/applications/biglinux-tweaks.desktop
+Target = usr/share/applications/kvantummanager.desktop
+Target = usr/share/applications/manjaro-settings-manager.desktop
+Target = usr/share/applications/msm_kde_notifier_settings.desktop
+Target = usr/share/applications/designer.desktop
+Target = usr/share/applications/linguist.desktop
+Target = usr/share/applications/qdbusviewer.desktop
+Target = usr/share/applications/assistant.desktop
+Target = usr/share/applications/UserFeedbackConsole.desktop
+Target = usr/share/applications/cmake-gui.desktop
+Target = usr/share/applications/avahi-discover.desktop
+Target = usr/share/applications/bssh.desktop
+Target = usr/share/applications/bvnc.desktop
+Target = usr/share/applications/htop.desktop
+Target = usr/share/applications/lstopo.desktop
+Target = usr/share/applications/cups.desktop
+Target = usr/share/applications/org.gnome.baobab.desktop
+Target = usr/share/applications/qv4l2.desktop
+Target = usr/share/applications/qvidcap.desktop
+Target = usr/share/applications/mpv.desktop"
+
+
+[Action]
+Description = Automatic hide apps
+When = PostTransaction
+Exec = bigcontrolcenter-restore-menu

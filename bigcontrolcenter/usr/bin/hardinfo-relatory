@@ -102,37 +102,37 @@ EOF
 
 
 
-###############################
-# ifconfig -a
-###############################
-cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">ifconfig -a</td></tr></table>
-<div style="float:left;width:100%;">
-<textarea style="width:100%;" rows="20">
+# ###############################
+# # ip address
+# ###############################
+# cat << EOF >> "$FILE_TO_SAVE"
+# <table><tr><td colspan="2" class="stitle">ip address</td></tr></table>
+# <div style="float:left;width:100%;">
+# <textarea style="width:100%;" rows="20">
+# 
+# $(ip address)
+# 
+# </textarea></div>
+# 
+# EOF
+# 
+# qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 40
 
-$(ifconfig -a)
-
-</textarea></div>
-
-EOF
-
-qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 40
-
-###############################
-# ip route
-###############################
-cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">ip route</td></tr></table>
-<div style="float:left;width:100%;">
-<textarea style="width:100%;" rows="20">
-
-$(ip route)
-
-</textarea></div>
-
-EOF
-
-qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 50
+# ###############################
+# # ip route
+# ###############################
+# cat << EOF >> "$FILE_TO_SAVE"
+# <table><tr><td colspan="2" class="stitle">ip route</td></tr></table>
+# <div style="float:left;width:100%;">
+# <textarea style="width:100%;" rows="20">
+# 
+# $(ip route)
+# 
+# </textarea></div>
+# 
+# EOF
+# 
+# qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 50
 
 
 ###############################
@@ -151,29 +151,99 @@ EOF
 
 qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 
+# ###############################
+# # nmcli network
+# ###############################
+# cat << EOF >> "$FILE_TO_SAVE"
+# <table><tr><td colspan="2" class="stitle">nmcli network</td></tr></table>
+# <div style="float:left;width:100%;">
+# <textarea style="width:100%;" rows="20">
+# 
+# nmcli general status:
+# $(nmcli general status)
+# 
+# -----------------------
+# 
+# nmcli -w 10 d wifi
+# 
+# $(nmcli -w 10 d wifi)
+# 
+# -----------------------
+# 
+# nmcli
+# 
+# $(nmcli)
+# 
+# 
+# </textarea></div>
+# 
+# EOF
+
+
+# ###############################
+# # iwlist scan wifi
+# ###############################
+# cat << EOF >> "$FILE_TO_SAVE"
+# <table><tr><td colspan="2" class="stitle">iwlist scan wifi</td></tr></table>
+# <div style="float:left;width:100%;">
+# <textarea style="width:100%;" rows="20">
+# 
+# $(iwlist scan)
+# 
+# 
+# </textarea></div>
+# 
+# EOF
+# 
+# qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 70
+
+# ###############################
+# # ping
+# ###############################
+# cat << EOF >> "$FILE_TO_SAVE"
+# <table><tr><td colspan="2" class="stitle">ping route and 8.8.8.8</td></tr></table>
+# <div style="float:left;width:100%;">
+# <textarea style="width:100%;" rows="20">
+# 
+# ping route:
+# 
+# $(ping -c3 $(ip route | grep default | cut -f3 -d" "))
+# 
+# -----------------------
+# 
+# ping 8.8.8.8
+# 
+# $(ping -c3 8.8.8.8)
+# 
+# </textarea></div>
+# 
+# EOF
+# 
+# qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
+
 ###############################
-# nmcli network
+# mhwd -l
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">nmcli network</td></tr></table>
+<table><tr><td colspan="2" class="stitle">mhwd -l</td></tr></table>
 <div style="float:left;width:100%;">
 <textarea style="width:100%;" rows="20">
 
-nmcli general status:
-$(nmcli general status)
+$(mhwd -l)
 
------------------------
+</textarea></div>
 
-nmcli -w 10 d wifi
+EOF
 
-$(nmcli -w 10 d wifi)
+###############################
+# mhwd -li
+###############################
+cat << EOF >> "$FILE_TO_SAVE"
+<table><tr><td colspan="2" class="stitle">mhwd -li</td></tr></table>
+<div style="float:left;width:100%;">
+<textarea style="width:100%;" rows="20">
 
------------------------
-
-nmcli
-
-$(nmcli)
-
+$(mhwd -li)
 
 </textarea></div>
 
@@ -181,60 +251,49 @@ EOF
 
 
 ###############################
-# iwlist scan wifi
+# mhwd -lh
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">iwlist scan wifi</td></tr></table>
+<table><tr><td colspan="2" class="stitle">mhwd -lh</td></tr></table>
 <div style="float:left;width:100%;">
 <textarea style="width:100%;" rows="20">
 
-$(iwlist scan)
-
+$(mhwd -lh)
 
 </textarea></div>
 
 EOF
 
-qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 70
+
 
 ###############################
-# ping
+# mhwd-kernel -l
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">ping route and 8.8.8.8</td></tr></table>
+<table><tr><td colspan="2" class="stitle">mhwd-kernel -l</td></tr></table>
 <div style="float:left;width:100%;">
 <textarea style="width:100%;" rows="20">
 
-ping route:
-
-$(ping -c3 $(ip route | grep default | cut -f3 -d" "))
-
------------------------
-
-ping 8.8.8.8
-
-$(ping -c3 8.8.8.8)
+$(mhwd-kernel -l)
 
 </textarea></div>
 
 EOF
 
-qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 
 ###############################
-# ubuntu-drivers
+# mhwd-kernel -li
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">ubuntu-drivers devices</td></tr></table>
+<table><tr><td colspan="2" class="stitle">mhwd-kernel -li</td></tr></table>
 <div style="float:left;width:100%;">
 <textarea style="width:100%;" rows="20">
 
-$(ubuntu-drivers devices)
+$(mhwd-kernel -li)
 
 </textarea></div>
 
 EOF
-
 
 qdbus $PROGRESS org.kde.kdialog.ProgressDialog.close
 

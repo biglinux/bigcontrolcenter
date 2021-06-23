@@ -5,3 +5,4 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 CATEGORY="Personalization"
+EXEC="kcmshell5 desktoppath"

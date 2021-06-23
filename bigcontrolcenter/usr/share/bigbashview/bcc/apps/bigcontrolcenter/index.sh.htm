@@ -66,14 +66,19 @@ fi
 #################################
 # Verify bigcontrolcenter version
 #################################
-if [ "$(dpkg -s bigcontrolcenter | grep '^Version:')" != "$(cat "$HOME/.config/bigcontrolcenter/version")" ]; then
-    dpkg -s bigcontrolcenter | grep '^Version:' >"$HOME/.config/bigcontrolcenter/version"
+if [ "$(pacman -Q bigcontrolcenter | cut -f2 -d" ")" != "$(cat "$HOME/.config/bigcontrolcenter/version")" ]; then
+    pacman -Q bigcontrolcenter | cut -f2 -d" " >"$HOME/.config/bigcontrolcenter/version"
     RELOAD="1"
 fi
 
 
 if [ "$RELOAD" = "1" ]; then
     rm -f "$HOME/.config/bigcontrolcenter/cache.html"
+
+	#########################################################
+	# START CACHE 1
+	#########################################################
+	./loop-search.sh &
 fi
 
 cat << EOF
@@ -540,7 +545,7 @@ fi
 # 02
 ######
 
-if [ -e "/usr/bin/pavucontrol-qt" ]; then
+if [ -e "/usr/lib/qt/plugins/kcms/kcm_pulseaudio.so" ]; then
 
 EXEC="kcmshell5 kcm_pulseaudio"
 NAME=$"Gerenciador intermediário"
@@ -651,9 +656,9 @@ echo '</div>'
 # 01
 ######
 
-if [ -e "/usr/lib/x86_64-linux-gnu/qt5/plugins/kcm_powerdevilprofilesconfig.so" ]; then
+if [ -e "/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so" ]; then
 
-EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig"
+EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
 NAME=$"Configurações de energia do usuário"
 COMMENT=$"Defina as configurações básicas de economia de energia."
 ICON="icons/preferences-system-power-management.png"
@@ -821,76 +826,76 @@ fi
 #   USERS OPEN
 #
 ######################################
-
-
-    NAME=$"Gerenciador de usuários"
-    COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
-    ICON="icons/preferences-system-users.png"
-    CATEGORY="System"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal6"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal6" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as necesidades da maioria dos casos."
-echo '</div>'
-
-######
-# 01
-######
-
-
-EXEC="kcmshell5 kcm_users"
-NAME=$"Gerenciador simples"
-COMMENT=$"Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
-ICON="icons/preferences-system-users.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-
-######
-# 02
-######
-
-
-EXEC="lxqt-admin-user"
-NAME=$"Gerenciador avançado"
-COMMENT=$"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar grupos."
-ICON="icons/user.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
+# 
+# 
+#     NAME=$"Gerenciador de usuários"
+#     COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
+#     ICON="icons/preferences-system-users.png"
+#     CATEGORY="System"
+# 
+# cat << EOF
+# 
+#     <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal6"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+#     <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+#     </center></a>
+#     </div>
+# 
+#   <!-- Modal Structure -->
+#   <div id="modal6" class="modal">
+#     <div class="modal-content">
+# 
+# EOF
+# 
+# echo '<div id=top>'
+# echo $"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as necesidades da maioria dos casos."
+# echo '</div>'
+# 
+# ######
+# # 01
+# ######
+# 
+# 
+# EXEC="kcmshell5 kcm_users"
+# NAME=$"Gerenciador simples"
+# COMMENT=$"Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
+# ICON="icons/preferences-system-users.png"
+# 
+# cat << EOF
+#         <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+#             <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+#             </center></a>
+#         </div>
+# EOF
+# 
+# 
+# 
+# ######
+# # 02
+# ######
+# 
+# 
+# EXEC="lxqt-admin-user"
+# NAME=$"Gerenciador avançado"
+# COMMENT=$"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar grupos."
+# ICON="icons/user.png"
+# 
+# cat << EOF
+#         <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+#             <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+#             </center></a>
+#         </div>
+# EOF
+# 
+# 
+# cat << EOF    
+#     
+#     </div>
+#     <div class="modal-footer">
+#       <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+#     </div>
+#   </div>
+# EOF
+# 
 
 ######################################
 #
@@ -940,7 +945,7 @@ echo '</div>'
 ######
 
 
-EXEC="kcmshell5 kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
+EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
 NAME=$"Configurações gerais da tela"
 COMMENT=$"Gerenciador padrão do KDE, recomendado."
 ICON="icons/preferences-desktop-display.png"
@@ -1219,9 +1224,10 @@ EOF
 
 
 #########################################################
-# START CACHE
+# START CACHE 2
 #########################################################
 if [ "$RELOAD" = "1" ]; then
+
 
 ########################################
 #
@@ -1244,7 +1250,26 @@ if [ -e "/usr/bin/biglinux-themes-gui" ]; then
 
 fi
 
+########################################
+#
+#   kvantummanager
+#
+########################################
 
+if [ -e "/usr/bin/kvantummanager" ]; then
+
+    EXEC="kvantummanager"
+    NAME=$"Configuções do estilo do aplicativo Kvantum"
+    COMMENT=$"Utilize essa opção para configurar o estilo Kvantum, lembre que é preciso utilizar a outra opção de Estilo do aplicativo para selecionar o tema Kvantum."
+    CATEGORY="Design"
+    ICON="icons/kvantum.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
 
 ########################################
 #
@@ -1295,13 +1320,13 @@ fi
 
 ########################################
 #
-#   software-properties-gtk --open-tab=4
+#   kcmshell5 msm_mhwd
 #
 ########################################
 
-if [ -e "/usr/bin/software-properties-gtk" ]; then
+if [ -e "/usr/share/kservices5/msm_mhwd.desktop" ]; then
 
-    EXEC="software-properties-gtk --open-tab=4"
+    EXEC="kcmshell5 msm_mhwd"
     NAME=$"Instalar drivers"
     COMMENT=$"Alguns dispositivos, principalmente de WiFi ou placas de vídeo Nvidia<br>podem precisar da instalação de drivers."
     CATEGORY="Star Hardware"
@@ -1411,7 +1436,7 @@ fi
 
 if [ -e "/usr/bin/timeshift-launcher" ]; then
 
-    EXEC="timeshift-launcher"
+    EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
     NAME=$"Snapshots e backups"
     if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
         COMMENT=$"O sistema está utilizando uma partição btrfs, isso permite<br>que sejam criados pontos de restauração muito<br>eficientes e com pouco uso de armazenamento."
@@ -1543,19 +1568,21 @@ if [ -e "/usr/bin/bigapache" ]; then
 fi
 
 
+
+
 ########################################
 #
 #   bigkernel
 #
 ########################################
 
-if [ -e "/usr/bin/bigkernel" ]; then
+if [ -e "/usr/share/kservices5/msm_kernel.desktop" ]; then
 
-    EXEC="bigsudo bigkernel"
+    EXEC="kcmshell5 msm_kernel"
     NAME=$"Instalar outras versões de kernel"
-    COMMENT=$"Alguns dispositivos podem necessitar de versões<br>especificas do kernel, aqui você terá uma grande<br>quantidade de opções."
+    COMMENT=$"Alguns dispositivos podem necessitar de versões<br>especificas do kernel, aqui você terá algumas opções."
     CATEGORY="Star"
-    ICON="/usr/share/bigbashview/bcc/apps/bigkernel/logo.png"
+    ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/cpu.png"
 
     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
 <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
@@ -1691,69 +1718,12 @@ fi
 # fi
 
 
-
-
-##########################
-#
-#    ALL KCMSHELL5 OPEN
-#
-##########################
-
-
-    for i  in  $(grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kwinscripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_networkmanagement.desktop -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop -ve user_manager.desktop -ve kcm_kscreen.desktop -ve kcm_feedback.desktop -ve kcm_users.desktop); do
-
-
-    EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"
-
-    if [ "$EXEC" = "" ]; then
-        EXEC="kcmshell5 $(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-Library)"
-    fi
-    EXEC="$(echo "$EXEC" | sed 's|kcm_||g')"
-    NAME="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Name)"
-    COMMENT="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Comment)"
-    CATEGORY="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)"
-    ICON="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Icon)"
-
-    if [ ! -e "$ICON" ]; then
-        ICON="icons/${ICON}.png"
-    fi
-
-
-    if [ ! -e "$ICON" ]; then
-        ICON_ORIG="$(./desktop-file.py "$i")"
-
-        if [ "$(echo "$ICON_ORIG" | grep '.svg')" != "" ]; then
-            ksvgtopng5 128 128 "$ICON_ORIG" "$HOME/.config/bigcontrolcenter/${ICON}"
-            ICON="$HOME/.config/bigcontrolcenter/${ICON}"
-        else
-            ICON="$ICON_ORIG"
-        fi
-
-    fi
-
-    if [ "$(echo "$CATEGORY" | grep -i "Star\|Design\|Hardware\|System\|Other\|Personalization")" = "" ]; then
-        CATEGORY="Other"
-    fi
-
-    filename="$(echo "$i" | sed 's|.*/||g;s|\.desktop||g')"
-    . files/$filename
-
-
-       echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-            <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
-        
-    done
-
-#########################################################
-# STOP CACHE
-#########################################################
-
 fi
 
+wait
 cat "$HOME/.config/bigcontrolcenter/cache.html"
+cat ~/.config/bigcontrolcenter/cache-*.html
+
 
 
 

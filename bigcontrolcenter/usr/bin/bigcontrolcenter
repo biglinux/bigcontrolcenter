@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+
+TITLE=$"Central de Controle"
+
 if [ "${LANG:0:2}" = "pt" ]
 then
     BIGBASHVIEW_LANG="pt"
@@ -14,4 +21,4 @@ fi
 
 cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
 
-LANGUAGE=$BIGBASHVIEW_LANG bigbashview -t qt -s 1200x640 -i icon.png index.sh.htm
+LANGUAGE=$BIGBASHVIEW_LANG bigbashview -t qt -n "$TITLE" -s 1200x640 -i icon.png index.sh.htm
