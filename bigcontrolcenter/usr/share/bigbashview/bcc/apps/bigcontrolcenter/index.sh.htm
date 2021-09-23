@@ -10,7 +10,7 @@ export TEXTDOMAIN=bigcontrolcenter
 mkdir -p "$HOME/.config/bigcontrolcenter/icons"
 
 # Don't group windows
-xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
+#xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
 CATEGORY_Star=$"Principais"
 CATEGORY_Design=$"Aparência"
@@ -73,7 +73,7 @@ fi
 
 
 if [ "$RELOAD" = "1" ]; then
-    rm -f "$HOME/.config/bigcontrolcenter/cache.html"
+    rm -f ~/.config/bigcontrolcenter/cache*html
 
 	#########################################################
 	# START CACHE 1
@@ -978,7 +978,7 @@ EOF
 
 
 ######
-# 02
+# 03
 ######
 
 
@@ -1072,19 +1072,18 @@ fi
 # 02
 ######
 
-
-
-EXEC="xdg-open https://snapdrop.net"
-NAME=$"Snapdrop (Não precisa de aplicativo)"
-COMMENT=$"Basta abrir o site https://snapdrop.net nos dispositivos que você<br>quer transferir os arquivos, automaticamente eles serão<br>detectados e você poderá enviar os arquivos que desejar.<br><br>Utilize esse botão para abrir o site do Snapdrop nesse computador.<br><br>O Snapdrop pode ser utilizado em qualquer smartphone ou computador<br><br>Inclusive transferindo arquivos diretamente de um smartphone para outro.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
-ICON="icons/snapdrop.png"
+    NAME=$"Conectar à internet utilizando o Android"
+    COMMENT=$"Você pode utilizar seu smartphone ou tablet Android como<br>um dispositivo wifi usb para seu computador."
+    ICON="icons/android.png"
 
 cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
+    <div class="col-md-modal waves-effect waves-light"><a  href="#modalAndroid"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
 EOF
+
+
 
 echo '</div>'
 echo '<div id="andoid-right">'
@@ -1092,6 +1091,26 @@ echo '<div id="andoid-right">'
 
 ######
 # 03
+######
+
+
+if [ -e "/usr/bin/idevice-mounter" ]; then
+
+EXEC="idevice-mounter"
+NAME=$"Montar dispositivos Apple"
+COMMENT=$"Com esse programa você pode acessar os programas do seu iPhone ou tablet Apple de forma similar ao acesso de arquivos em um pendrive."
+ICON="icons/idevice.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+fi
+
+######
+# 04
 ######
 
 
@@ -1108,10 +1127,11 @@ cat << EOF
         </div>
 EOF
 
-
+echo '</div>'
+echo '<div id="andoid-left">'
 
 ######
-# 04
+# 05
 ######
 
 
@@ -1127,25 +1147,25 @@ cat << EOF
             </center></a>
         </div>
 EOF
-echo '</div>'
 
-
-
-######
-# 05
-######
-
-    NAME=$"Conectar à internet utilizando o Android"
-    COMMENT=$"Você pode utilizar seu smartphone ou tablet Android como<br>um dispositivo wifi usb para seu computador."
-    ICON="icons/android.png"
+EXEC="xdg-open https://snapdrop.net"
+NAME=$"Snapdrop (Não precisa de aplicativo)"
+COMMENT=$"Basta abrir o site https://snapdrop.net nos dispositivos que você<br>quer transferir os arquivos, automaticamente eles serão<br>detectados e você poderá enviar os arquivos que desejar.<br><br>Utilize esse botão para abrir o site do Snapdrop nesse computador.<br><br>O Snapdrop pode ser utilizado em qualquer smartphone ou computador<br><br>Inclusive transferindo arquivos diretamente de um smartphone para outro.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
+ICON="icons/snapdrop.png"
 
 cat << EOF
-    <div class="col-md-modal waves-effect waves-light"><a  href="#modalAndroid"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
 EOF
 
+######
+# 06
+######
+
+
+echo '</div>'
 ########
 # Close
 ########
@@ -1238,7 +1258,7 @@ if [ "$RELOAD" = "1" ]; then
 if [ -e "/usr/bin/biglinux-themes-gui" ]; then
 
     EXEC="biglinux-themes-gui"
-    NAME=$"Aparência e desempenho"
+    NAME=$"Aparência, desempenho e usabilidade"
     COMMENT=$"Disponiblizamos configurações completas para<br>você selecionar de forma extremamente simples."
     CATEGORY="Star Design"
     ICON="/usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png"
@@ -1353,13 +1373,13 @@ fi
 
 cat << EOF
 
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal7"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal8"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
     <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
     </center></a>
     </div>
 
   <!-- Modal Structure -->
-  <div id="modal7" class="modal">
+  <div id="modal8" class="modal">
     <div class="modal-content">
 
 EOF
@@ -1543,20 +1563,20 @@ fi
 #
 ########################################
 
-if [ -e "/usr/bin/bigflash-javaws-widevine-fonts" ]; then
-
-    EXEC="bigflash-javaws-widevine-fonts"
-    NAME=$"Fontes proprietárias, flash e DRM"
-    COMMENT=$"Complementos ao sistema que não podem vir instalados,<br>mas você pode considerar úteis."
-    CATEGORY="Star System"
-    ICON="/usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/widevine.png"
-
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
-fi
+# if [ -e "/usr/bin/bigflash-javaws-widevine-fonts" ]; then
+# 
+#     EXEC="bigflash-javaws-widevine-fonts"
+#     NAME=$"Fontes proprietárias, flash e DRM"
+#     COMMENT=$"Complementos ao sistema que não podem vir instalados,<br>mas você pode considerar úteis."
+#     CATEGORY="Star System"
+#     ICON="/usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/widevine.png"
+# 
+#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
+# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+# </center></a>
+# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+# 
+# fi
 
 
 ########################################
@@ -1609,20 +1629,20 @@ fi
 #
 ########################################
 
-if [ -e "/usr/bin/biglinux-tweaks" ]; then
-
-    EXEC="biglinux-tweaks"
-    NAME=$"Scripts de automação das mais variadas tarefas"
-    COMMENT=$"Quase todas as tarefas no Linux podem ser automatizadas com scripts,<br>essa interface reúne uma lista de automações úteis.<br><br>Sinta-se a vontade para enviar seus próprios scripts para o projeto BigLinux através do nosso<br>fórum ou grupo no Telegram, para que ele apareça nessa lista."
-    CATEGORY="Star"
-    ICON="/usr/share/bigbashview/bcc/apps/biglinux-tweaks/icon.png"
-
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
-fi
+# if [ -e "/usr/bin/biglinux-tweaks" ]; then
+# 
+#     EXEC="biglinux-tweaks"
+#     NAME=$"Scripts de automação das mais variadas tarefas"
+#     COMMENT=$"Quase todas as tarefas no Linux podem ser automatizadas com scripts,<br>essa interface reúne uma lista de automações úteis.<br><br>Sinta-se a vontade para enviar seus próprios scripts para o projeto BigLinux através do nosso<br>fórum ou grupo no Telegram, para que ele apareça nessa lista."
+#     CATEGORY="Star"
+#     ICON="/usr/share/bigbashview/bcc/apps/biglinux-tweaks/icon.png"
+# 
+#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
+# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+# </center></a>
+# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+# 
+# fi
 
 
 ########################################
@@ -1631,27 +1651,27 @@ fi
 #
 ########################################
 
-if [ -e "/usr/bin/bigapache" ]; then
-
-    EXEC="bigapache"
-    NAME=$"Desenvolvimento WEB"
-    COMMENT=$"Instalar e configurar os servidores Apache<br> e MariaDB (Compatível com o Mysql).<br><br>Instalação do PHP, Phpmyadmin, Atom, VScode..."
-    CATEGORY="Star"
-    ICON="/usr/share/bigbashview/bcc/apps/apache/bigapache.png"
-
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
-fi
+# if [ -e "/usr/bin/bigapache" ]; then
+# 
+#     EXEC="bigapache"
+#     NAME=$"Desenvolvimento WEB"
+#     COMMENT=$"Instalar e configurar os servidores Apache<br> e MariaDB (Compatível com o Mysql).<br><br>Instalação do PHP, Phpmyadmin, Atom, VScode..."
+#     CATEGORY="Star"
+#     ICON="/usr/share/bigbashview/bcc/apps/apache/bigapache.png"
+# 
+#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
+# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+# </center></a>
+# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+# 
+# fi
 
 
 
 
 ########################################
 #
-#   bigkernel
+#   kernel
 #
 ########################################
 
@@ -1700,20 +1720,20 @@ fi
 #
 ########################################
 
-if [ -e "/usr/bin/sambasearch" ]; then
-
-    EXEC="sambasearch"
-    NAME=$"Procurar compartilhamentos"
-    COMMENT=$"Localiza compartilhamentos na rede (Windows ou Samba)."
-    CATEGORY="Other"
-    ICON="/usr/share/bigbashview/bcc/apps/sambasearch/sambasearch.png"
-
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
-fi
+# if [ -e "/usr/bin/sambasearch" ]; then
+# 
+#     EXEC="sambasearch"
+#     NAME=$"Procurar compartilhamentos"
+#     COMMENT=$"Localiza compartilhamentos na rede (Windows ou Samba)."
+#     CATEGORY="Other"
+#     ICON="/usr/share/bigbashview/bcc/apps/sambasearch/sambasearch.png"
+# 
+#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
+# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+# </center></a>
+# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+# 
+# fi
 
 
 
@@ -1737,6 +1757,219 @@ if [ -e "/usr/bin/systemsettings5" ]; then
 </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
 
 fi
+
+
+
+######################################
+#
+#   AVAHI OPEN
+#
+######################################
+
+
+    NAME=$"Avahi"
+    COMMENT=$"Procurar servidores utilizando Avahi."
+    ICON="icons/network-01.png"
+    CATEGORY="Other"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal9"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal9" class="modal">
+    <div class="modal-content">
+
+EOF
+
+
+
+######
+# 01
+######
+
+
+EXEC="bssh"
+NAME=$"Procurar servidores SSH"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 02
+######
+
+
+EXEC="bvnc"
+NAME=$"Procurar servidores VNC"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+######
+# 03
+######
+
+
+EXEC="avahi-discover"
+NAME=$"Procurar servidores Zeroconf"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   AVAHI CLOSE
+#
+######################################
+
+
+
+
+
+
+######################################
+#
+#   QT OPEN
+#
+######################################
+
+
+    NAME=$"Desenvolvimento QT"
+    COMMENT=$"Programas de desenvolvimento para QT."
+    ICON="icons/QtProject-designer.png"
+    CATEGORY="Other"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal10"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal10" class="modal">
+    <div class="modal-content">
+
+EOF
+
+
+
+######
+# 01
+######
+
+
+EXEC="assistant"
+NAME=$"Qt Assistant"
+ICON="icons/assistant.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+######
+# 02
+######
+
+
+EXEC="designer"
+NAME=$"Qt Designer"
+ICON="icons/QtProject-designer.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+######
+# 03
+######
+
+
+EXEC="linguist"
+NAME=$"Qt Linguist"
+ICON="icons/linguist.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+######
+# 04
+######
+
+
+EXEC="qdbusviewer"
+NAME=$"Qt QDBusViewer "
+ICON="icons/qdbusviewer.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   QT CLOSE
+#
+######################################
 
 
 

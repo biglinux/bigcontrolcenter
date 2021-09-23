@@ -1,6 +1,7 @@
 #!/bin/bash
 
-kwin_x11.orig &
+/usr/lib/polkit-kde-authentication-agent-1 &
+kwin_x11 &
 cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
 
-bigbashview -b -t qt -w maximized -i icon.png index.sh.htm
+bigbashview -c black -t qt -w maximized -i icon.png index.sh.htm
