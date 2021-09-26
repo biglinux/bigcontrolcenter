@@ -71,7 +71,7 @@ if [ "$(pacman -Q bigcontrolcenter | cut -f2 -d" ")" != "$(cat "$HOME/.config/bi
     RELOAD="1"
 fi
 
-
+RELOAD=1
 if [ "$RELOAD" = "1" ]; then
     rm -f ~/.config/bigcontrolcenter/cache*html
 
@@ -1622,6 +1622,31 @@ if [ -e "/usr/bin/biglinux-config" ]; then
 </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
 
 fi
+
+
+
+########################################
+#
+#   tts-biglinux
+#
+########################################
+
+if [ -e "/usr/bin/tts-config" ]; then
+
+    EXEC="tts-config"
+    NAME=$"Configurações de texto para voz"
+    COMMENT=$"Você pode utilizar o atalho com a tecla [Meta] + V ou então o ícone no menu do sistema para que textos escritos sejam falados."
+    CATEGORY="Star"
+    ICON="/usr/share/bigbashview/bcc/apps/tts/icon.png"
+
+    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+fi
+
+
 
 ########################################
 #
