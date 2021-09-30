@@ -1,0 +1,3 @@
+#!/bin/bash
+
+inxi -c 2 -C -d -D -E -G -I -j -J -l -L -m -M -o -p -P -r -R -s -S -t -u -xx | ansi2html -f 18px -l | sed 's|^<span|<br><br><hr><br><span|i;s|#AAAAAA|#FFFFFF|g' > /tmp/inxi.tmp

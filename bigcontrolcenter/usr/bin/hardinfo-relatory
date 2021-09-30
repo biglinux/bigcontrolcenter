@@ -19,9 +19,23 @@ PROGRESS="$(cat /tmp/hardinfo-relaroty-progress)"
 
 qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 10
 
-hardinfo -a -m computer.so -m devices.so -f html -r > "$FILE_TO_SAVE"
+#################
+#   inxi
+#################
+
+
+bigsudo urxvt -geometry 200x1 -e "/usr/share/bigbashview/bcc/apps/bigcontrolcenter/inxi" 
+
+cat /tmp/inxi.tmp > "$FILE_TO_SAVE"
+rm -f /tmp/inxi.tmp
+
 
 qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 30
+
+
+hardinfo -a -m computer.so -m devices.so -f html -r >> "$FILE_TO_SAVE"
+
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 
 ###############################
 # lspci
@@ -149,7 +163,7 @@ $(rfkill list)
 
 EOF
 
-qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
+qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 
 # ###############################
 # # nmcli network
