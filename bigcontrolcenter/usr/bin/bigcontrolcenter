@@ -21,4 +21,4 @@ fi
 
 cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
 
-QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 LANGUAGE=$BIGBASHVIEW_LANG bigbashview -t qt -n "$TITLE" -s 1200x640 -i icon.png index.sh.htm
+QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bigbashview -n "$TITLE" -s 1200x640 index.sh.htm -i icon.png
