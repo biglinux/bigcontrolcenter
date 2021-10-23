@@ -7,18 +7,6 @@ export TEXTDOMAIN=bigcontrolcenter
 
 TITLE=$"Central de Controle"
 
-if [ "${LANG:0:2}" = "pt" ]
-then
-    BIGBASHVIEW_LANG="pt"
-    
-elif [ "${LANG:0:2}" = "es" ]
-then
-    BIGBASHVIEW_LANG="es"
-    
-else
-    BIGBASHVIEW_LANG="en"
-fi
 
 cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
-
-QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bigbashview -n "$TITLE" -s 1200x640 index.sh.htm -i icon.png
+(QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x640 index.sh.htm -i icon.png)
