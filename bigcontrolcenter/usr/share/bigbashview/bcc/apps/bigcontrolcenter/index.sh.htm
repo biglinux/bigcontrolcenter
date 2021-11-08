@@ -1191,7 +1191,6 @@ EOF
 
 
 
-
 ######################################
 #
 #   ANDROID WIFI
@@ -1269,6 +1268,20 @@ if [ -e "/usr/bin/biglinux-themes-gui" ]; then
 </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
 
 fi
+
+
+EXEC="waydroid-gui-big"
+NAME=$"Suporte a aplicativos Android"
+COMMENT=$"Utilize programas feitos para Android no seu BigLinux.<br><br>* Este recurso ainda está em fase experimental."
+CATEGORY="Star"
+ICON="icons/waydroid.png"
+
+echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
+<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
+</center></a>
+</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+
+
 
 ########################################
 #
