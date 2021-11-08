@@ -7,40 +7,6 @@ export TEXTDOMAIN=waydroid-biglinux
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
-
-
-RATE="$(cat ${FOLDER_CONFIG}/rate)"
-PITCH="$(cat ${FOLDER_CONFIG}/pitch)"
-VOLUME="$(cat ${FOLDER_CONFIG}/volume)"
-VOICE="$(cat ${FOLDER_CONFIG}/voice)"
-
-if [ "$RATE" = "" ]; then
-    RATE="-25"
-    echo "$RATE" > ${FOLDER_CONFIG}/rate
-fi
-
-if [ "$PITCH" = "" ]; then
-    PITCH="-25"
-    echo "$PITCH" > ${FOLDER_CONFIG}/pitch
-fi
-
-if [ "$VOLUME" = "" ]; then
-    VOLUME="0"
-    echo "$VOLUME" > ${FOLDER_CONFIG}/volume
-fi
-
-if [ "$VOICE" = "" ]; then
-
-    if ["$(echo "$LANG" | grep pt)" != "" ]; then
-        VOICE="Letícia-F123"
-    else
-        VOICE="Evgeniy-Eng"
-    fi
-
-    echo "$VOICE" > ${FOLDER_CONFIG}/voice
-fi
-
-
 # Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
 # That's include jquery and materialize / Isso inclui o jquery e o materialize
 # http://materializecss.com/
@@ -78,7 +44,6 @@ echo "<div id=buttons>"
 
 if [ -e "/usr/bin/waydroid-big" ]; then
 
-    tooltipinstall=$"A instalação pode ser um pouco demorada"
     tooltiprun=$"O Waydroid também pode ser iniciado utilizando o menu do sistema"
     tooltipgpu=$"Se a aceleração 3D estiver ativada em um hardware incompatível
     <br> o android não passará da tela de loading"
@@ -105,7 +70,7 @@ if [ -e "/usr/bin/waydroid-big" ]; then
     fi
 
 else
-    echo "<div id=theme2-2 class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"250\" data-tooltip=\"$tooltipinstall\">
+    echo "<div id=theme2-2>
     <a class=\"waves-effect waves-light btn-large\" href=\"make.sh.htm?install=1\">" $"Instalar o Waydroid" '</a>'
 fi
 
