@@ -84,7 +84,8 @@ SERVICES="$(grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | grep -ve kcm
 /usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop
 /usr/share/kservices5/bigcontrolcenter/qv4l2.desktop
 /usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop
-/usr/share/kservices5/bigcontrolcenter/org.gnome.baobab.desktop"); do
+/usr/share/kservices5/bigcontrolcenter/org.gnome.baobab.desktop
+/usr/share/kservices5/bigcontrolcenter/biglinux-grub-restore.desktop"); do
 
         if [ -e "$i" ]; then
             parallel_search "$i" &
