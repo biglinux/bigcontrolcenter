@@ -71,7 +71,7 @@ if [ "$(pacman -Q bigcontrolcenter | cut -f2 -d" ")" != "$(cat "$HOME/.config/bi
     RELOAD="1"
 fi
 
-RELOAD=1
+#RELOAD=1
 if [ "$RELOAD" = "1" ]; then
     rm -f ~/.config/bigcontrolcenter/cache*html
 
