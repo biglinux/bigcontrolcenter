@@ -826,47 +826,47 @@ fi
 #   USERS OPEN
 #
 ######################################
-# 
-# 
-#     NAME=$"Gerenciador de usuários"
-#     COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
-#     ICON="icons/preferences-system-users.png"
-#     CATEGORY="System"
-# 
-# cat << EOF
-# 
-#     <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal6"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-#     <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-#     </center></a>
-#     </div>
-# 
-#   <!-- Modal Structure -->
-#   <div id="modal6" class="modal">
-#     <div class="modal-content">
-# 
-# EOF
-# 
-# echo '<div id=top>'
-# echo $"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as necesidades da maioria dos casos."
-# echo '</div>'
-# 
+
+
+    NAME=$"Gerenciador de usuários"
+    COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
+    ICON="icons/preferences-system-users.png"
+    CATEGORY="Star System"
+
+cat << EOF
+
+    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal6"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as necesidades da maioria dos casos."
+echo '</div>'
+
 # ######
 # # 01
 # ######
 # 
 # 
-# EXEC="kcmshell5 kcm_users"
-# NAME=$"Gerenciador simples"
-# COMMENT=$"Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
-# ICON="icons/preferences-system-users.png"
-# 
-# cat << EOF
-#         <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-#             <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-#             </center></a>
-#         </div>
-# EOF
-# 
+EXEC="kcmshell5 kcm_users"
+NAME=$"Gerenciador simples"
+COMMENT=$"Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
+ICON="icons/preferences-system-users.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
 # 
 # 
 # ######
@@ -874,28 +874,28 @@ fi
 # ######
 # 
 # 
-# EXEC="lxqt-admin-user"
-# NAME=$"Gerenciador avançado"
-# COMMENT=$"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar grupos."
-# ICON="icons/user.png"
-# 
-# cat << EOF
-#         <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-#             <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-#             </center></a>
-#         </div>
-# EOF
-# 
-# 
-# cat << EOF    
-#     
-#     </div>
-#     <div class="modal-footer">
-#       <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-#     </div>
-#   </div>
-# EOF
-# 
+EXEC="lxqt-admin-user"
+NAME=$"Gerenciador avançado"
+COMMENT=$"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar grupos."
+ICON="icons/user.png"
+
+cat << EOF
+        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
+            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
+            </center></a>
+        </div>
+EOF
+
+
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+    </div>
+  </div>
+EOF
+
 
 ######################################
 #
