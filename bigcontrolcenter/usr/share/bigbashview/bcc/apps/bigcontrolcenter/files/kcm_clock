@@ -4,5 +4,6 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-CATEGORY="System"
 EXEC="kcmshell5 msm_timedate clock"
+CATEGORY="Language"
+COMMENT=$"Ajuste a data, hora e fuso horário."

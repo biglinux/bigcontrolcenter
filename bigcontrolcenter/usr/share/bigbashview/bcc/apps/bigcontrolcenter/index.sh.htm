@@ -1,5 +1,16 @@
 #!/bin/bash
 
+
+##################################
+#  Author1: Bruno Goncalves (www.biglinux.com.br) 
+#  Author2: Rafael Ruscher (rruscher@gmail.com)  
+#  Date:    2022/02/28 
+#  
+#  Description: Control Center to help usage of BigLinux 
+#  
+# Licensed by GPL V2 or greater
+##################################
+
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
@@ -12,34 +23,34 @@ mkdir -p "$HOME/.config/bigcontrolcenter/icons"
 # Don't group windows
 #xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
+CATEGORY=$"Categorias"
 CATEGORY_Star=$"Principais"
-CATEGORY_Design=$"Aparência"
-CATEGORY_Hardware=$"Hardware"
 CATEGORY_System=$"Sistema"
-CATEGORY_Personalization=$"Personalização"
-CATEGORY_Other=$"Outros"
-SEARCH=$"Pesquisar..."
+
+#NEW
+CATEGORY_Design=$"Aparência" # Aparência
+CATEGORY_Hardware=$"Dispositivos" #Hardware
+CATEGORY_Personalization=$"Personalizar" #Personalização
+
+#ADD
+CATEGORY_Phone=$"Telefone"
+CATEGORY_Multimedia=$"Multimídia"
+CATEGORY_Network=$"Rede e Internet"
+CATEGORY_Account=$"Contas"
+CATEGORY_Language=$"Região e Idioma"
+CATEGORY_Privacy=$"Privacidade"
+CATEGORY_Server=$"Servidor"
+
+CATEGORY_Desenv=$"Desenvolvimento"
+CATEGORY_About=$"Sobre"
+
+#OLD
+CATEGORY_Other=$"Outros" #Desativado
+SEARCH=$"Pesquisar Central de Controle"
+SEARCH_Result=$"Resultado da pesquisa"
+
 TITLE=$"Central de Controle"
 CLOSE=$"Fechar"
-
-
-
-###########################
-# Verify icon theme changed
-###########################
-# if [ ! -e "$HOME/.config/bigcontrolcenter/icon_theme" ]; then
-#     kreadconfig5 --group Icons --key Theme > "$HOME/.config/bigcontrolcenter/icon_theme"
-#     RELOAD="1"
-# else
-#     if [ "$(kreadconfig5 --group Icons --key Theme)" != "$(cat "$HOME/.config/bigcontrolcenter/icon_theme")" ]; then
-#         kreadconfig5 --group Icons --key Theme > "$HOME/.config/bigcontrolcenter/icon_theme"
-#         RELOAD="1"
-#     fi
-# fi
-
-
-
-
 
 ####################################
 # Verify number of kcmshell5 changed
@@ -53,7 +64,6 @@ else
         RELOAD="1"
     fi
 fi
-
 
 #########################
 # Verify language changed
@@ -71,7 +81,13 @@ if [ "$(pacman -Q bigcontrolcenter | cut -f2 -d" ")" != "$(cat "$HOME/.config/bi
     RELOAD="1"
 fi
 
-#RELOAD=1
+
+#################
+# Desativar Cache 
+#################
+
+RELOAD=1 # Desativado RELOAD=1
+
 if [ "$RELOAD" = "1" ]; then
     rm -f ~/.config/bigcontrolcenter/cache*html
 
@@ -82,250 +98,352 @@ if [ "$RELOAD" = "1" ]; then
 fi
 
 cat << EOF
-
-<body>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/materialize/css/materialize.css">
+  <meta charset="UTF-8">
+  <title>$TITLE</title>
+
+  <link rel="stylesheet" href="style.css">
     <script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
-    <script src="/usr/share/bigbashview/bcc/materialize/js/materialize.js"></script>
-    <script src="/usr/share/bigbashview/bcc/js/big.js"></script>
-    <script src="filter.js"></script>
+  <script src="./filter.js"></script>
+  
 </head>
+<body>
+<div class="dark-light">
+  <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+  </svg>
+</div>
+<div class="app">
+  <div class="header">
+    <div class="search-bar">
+      <input type="text" id="search" class="custom-search-input form-control" placeholder="$SEARCH" autofocus>
+      <!-- <button class="custom-search-botton" type="submit">← Enter </button> -->
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="left-side">
+      <div class="side-wrapper">
 
-<style>
-.col-md-2 {
-    cursor: pointer;
-    padding: 0px;
-    margin: 11px;
-    width: 430px;
-    background-color: #00000080;
-    border-radius: 19px;
-    padding-left: 24px;
-    box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.77);
-}
-.col-md-4 {
-    box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.3);
-    margin: 0;
-    background: linear-gradient(to right, #00000080, #434343b0);
-    padding: 0;
-    width: 259px;
-    flex: none;
-    position: fixed;
-    height: 100%;
-}
+        <div class="side-menu">
+          <a href="#" id="Star" class="btn">
+            <svg viewBox="0 0 512 512">
+              <g fill="currentColor">
+                <path d="M0 0h128v128H0zm0 0M192 0h128v128H192zm0 0M384 0h128v128H384zm0 0M0 192h128v128H0zm0 0" data-original="#bfc9d1" />
+              </g>
+              <path d="M192 192h128v128H192zm0 0" fill="currentColor" data-original="#82b1ff" />
+              <path d="M384 192h128v128H384zm0 0M0 384h128v128H0zm0 0M192 384h128v128H192zm0 0M384 384h128v128H384zm0 0" fill="currentColor" data-original="#bfc9d1" />
+            </svg>
+            <span>$CATEGORY_Star</span>
+          </a>
 
-.row {
-    margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: 280px;
-}
+        </div>
+      </div>
+      <div class="side-wrapper">
+        <!-- <div class="side-title">$CATEGORY</div> -->
+        <div class="side-menu">
+          <a href="#" id="Network" class="btn">
+            <svg viewBox="0 0 640 512">
+              <path fill="currentColor" d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z" />
+            </svg>
+            <span>$CATEGORY_Network</span>
+          </a>
+          
+          <a href="#" id="Phone" class="btn">
+            <svg viewBox="0 0 320 512">
+              <path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z" />
+            </svg>
+            <span>$CATEGORY_Phone</span>
+          </a>
+          
+          <a href="#" id="Personalization" class="btn">
+            <svg viewBox="0 0 512 512">
+              <path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+            </svg>
+            <span>$CATEGORY_Personalization</span>
+          </a>
+          
+          <a href="#" id="Language" class="btn">
+            <svg viewBox="0 0 496 512">
 
-a {
-    color: #ffffff;
-}
-
-}
-div#leftbar {
-    position: fixed;
-}
-
-.btn-group, .btn-group-vertical {
-    position: relative;
-    display: -ms-inline-flexbox;
-    display: grid;
-}
-
-
-.btn, .btn-large {
-text-decoration: none;
-    color: #fff;
-    background-color: #393e3d00;
-    text-align: inherit;
-    padding-left: 37px;
-    height: 51px;
-    letter-spacing: .5px;
-    transition: .2s ease-out;
-    cursor: pointer;
-}
-
-input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #9e9e9e;
-    border-radius: 0;
-    outline: none;
-    height: 3rem;
-    color: white;
-    width: 100%;
-    /* margin-top: 159px; */
-    text-align: -webkit-center;
-    font-size: 21px;
-    margin: 29px 0 0px 0;
-    padding-bottom: 30px;
-    box-shadow: none;
-    box-sizing: content-box;
-    transition: all 0.3s;
-}
-
-.btn-success:not([disabled]):not(.disabled).active, .btn-success:not([disabled]):not(.disabled):active, .show>.btn-success.dropdown-toggle {
-    color: #fff;
-background-color: #9a9a9a3b;
-border-color: #000000;
-}
-
-.btn:focus, .btn-large:focus, .btn-floating:focus {
-    background-color: #9a9a9a5c;
-}
-
-body {
-    margin: 0;
-    font-family: ubuntu;
-    font-size: 15px;
-    background-image: url(01.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-div#total {
-    display: flex;
-    height: 100%;
-}
-
-img {
-    border: 0;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.modal {
-    top: 50% !important;
-    transform: translate(0%, -50%) !important;
-    position: fixed;
-    left: 0;
-    background: url(01.jpg);
-    background-attachment: fixed;
-    right: 0;
-    color: white;
-    padding: 0;
-    max-height: 90%;
-    margin: auto;
-    overflow-y: auto;
-    border-radius: 15px;
-    will-change: top, opacity;
-}
-
-#modal5, #modalAndroid {
-    width: 1000px;
-}
-
-.col-md-modal {
-    cursor: pointer;
-    padding: 0px;
-    margin: auto;
-    margin-top: 13px;
-    width: 400px;
-    background-color: #00000080;
-    border-radius: 19px;
-    padding-left: 24px;
-    box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.77);
-}
-
-div#top {
-    font-size: 17px;
-    padding-bottom: 10px;
-}
-
-.btn:hover, .btn-large:hover {
-    background-color: #ffffff1f;
-}
-
-p.name {
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-
-div#andoid-left {
-    display: flex;
-}
-
-
-div#andoid-right {
-    display: flex;
-}
-
-.waves-effect {
-    display: block;
-}
-
-.waves-light {
-        border-radius: 12px !important;
-}
-
-.backdrop {
-background-color: rgba(101, 101, 101, 1);
-}
-
-.material-tooltip {font-family:ubuntu;
-font-weight:400;font-size:16px;
-border-radius: 15px;
-padding: 15px;
-box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.75);
-line-height: 120%;}
-
-div#close {
-    position: absolute;
-    bottom: 0px;
-    width: 260px;
-    height: 57px;
-    text-align-last: center;
-    background-color: #00000026;
-    padding-top: 17px;
-    text-transform: uppercase;
-}
-
-div#close:hover {
-    background-color: #b7b7b726;
-    cursor:pointer;
-}
-
-</style>
-
-    <title>$TITLE</title>
-    <body>
-<div id=total>
-        <div class="col-md-4">
-                
-            <input type="text" id="search" class="form-control" placeholder="$SEARCH" autofocus>
-
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" id="Star" class="btn btn-success">$CATEGORY_Star</button>
-                <button type="button" id="Design" class="btn btn-success">$CATEGORY_Design</button>
-                <button type="button" id="Hardware" class="btn btn-success">$CATEGORY_Hardware</button>
-                <button type="button" id="System" class="btn btn-success">$CATEGORY_System</button>
-                <button type="button" id="Personalization" class="btn btn-success">$CATEGORY_Personalization</button>
-                <button type="button" id="Other" class="btn btn-success">$CATEGORY_Other</button>
-                
-            </div>
-            <a href="/execute close$"><div id=close>Fechar</div></a></div>
+              <path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z" />
+            </svg>
+            <span>$CATEGORY_Language</span>
+          </a>
+          
+          <a href="#" id="Multimedia" class="btn">
+            <svg viewBox="0 0 496 512">
+              <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM88 256H56c0-105.9 86.1-192 192-192v32c-88.2 0-160 71.8-160 160zm160 96c-53 0-96-43-96-96s43-96 96-96 96 43 96 96-43 96-96 96zm0-128c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z" />
+            </svg>
+            <span>$CATEGORY_Multimedia</span>
+          </a>
                     
-        <div class="col-md-8">
-    <div class="row" id="parent">
-    
+          <a href="#" id="Account" class="btn">
+            <svg viewBox="0 0 640 512">
+
+              <path fill="currentColor" d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z" />
+            </svg>
+            <span>$CATEGORY_Account</span>
+          </a>
+          
+          <a href="#" id="Privacy" class="btn">
+            <svg viewBox="0 0 640 512">
+
+              <path fill="currentColor" d="M224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128zm96 64a63.08 63.08 0 0 1 8.1-30.5c-4.8-.5-9.5-1.5-14.5-1.5h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h280.9a63.54 63.54 0 0 1-8.9-32zm288-32h-32v-80a80 80 0 0 0-160 0v80h-32a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h224a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32zM496 432a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm32-144h-64v-80a32 32 0 0 1 64 0z" />
+            </svg>
+            <span>$CATEGORY_Privacy</span>
+          </a>
+          
+          <a href="#" id="Server" class="btn">
+            <svg viewBox="0 0 512 512">
+               <path fill="currentColor" d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z"/></svg>          
+            <span>$CATEGORY_Server</span>
+          </a>
+          
+          <a href="#" id="Hardware" class="btn">
+            <svg viewBox="0 0 512 512">
+              <path fill="currentColor" d="M416 48v416c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h224c26.51 0 48 21.49 48 48zm96 58v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42V88h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zM30 376h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6z" />
+            </svg>
+            <span>$CATEGORY_Hardware</span>
+          </a>
+          
+          <a href="#" id="System" class="btn">
+            <svg viewBox="0 0 576 512">
+              <path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z" />
+            </svg>
+            </svg>
+            <span>$CATEGORY_System</span>
+          </a>
+          
+          <a href="#" id="Desenv" class="btn">
+            <svg viewBox="0 0 512 512">
+              <path fill="currentColor" d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z" />
+            </svg>
+            <span>$CATEGORY_Desenv</span>
+          </a>
+          <a href="#" id="Other" class="btn" style="display:none;">
+          
+            <svg viewBox="0 0 512 512">
+              <path fill="currentColor" d="M27.5 162.2L9 187.1h90.5l6.9-130.7-78.9 105.8zM396.3 45.7L267.7 32l135.7 147.2-7.1-133.5zM112.2 218.3l-11.2-22H9.9L234.8 458zm2-31.2h284l-81.5-88.5L256.3 33zm297.3 9.1L277.6 458l224.8-261.7h-90.9zM415.4 69L406 56.4l.9 17.3 6.1 113.4h90.3zM113.5 93.5l-4.6 85.6L244.7 32 116.1 45.7zm287.7 102.7h-290l42.4 82.9L256.3 480l144.9-283.8z"/>
+            </svg>
+
+            <span>$CATEGORY_Other</span>
+          </a>
+          <a href="#" id="About" class="btn">
+            <svg viewBox="0 0 512 512">
+                <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/>
+            </svg>          
+            <span>$CATEGORY_About</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container" style="overflow: auto;">
+
+      <!-- PRINCIPAIS -->
+
+        <div class="content-wrapper" style="overflow-x: hidden;">
+          <div id="welcome" class="content-wrapper-header Star Staritem">
+            <div class="content-wrapper-context">
+              <h3 class="img-content">
+                <img src="icon-controlcenter.png" style="width: 48px; margin: 0 10px 0 0;">
+                Bem vindo ao Central de Controle
+              </h3>
+              <div class="content-text Star">Usado para configurar todo o sistema do BigLinux o Central de Controle é simples e intuitivo com programas e scripts pré-instalados.</div>
+              <!-- <button class="content-button">Conheça</button> -->
+            </div>
+            <img class="content-wrapper-img" src="bigpc.png" alt="">
+            
+            <span class="welcome-close"><svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M15 9l-6 6M9 9l6 6" />
+              </svg></span>
+            
+          </div>
+
+
+            <div class="content-section-title Star"></div>
+            <div class="apps-card">
+            <div class="apps-card-flex Star">
 EOF
+    EXEC="biglinux-themes-gui"
+    NAME=$"Aparência, desempenho e usabilidade"
+    COMMENT=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+cat << EOF
+              <div class="app-card">
+                <span><svg viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+                  </svg>
+                  $NAME
+                </span>
+                <div class="app-card__subtext">$COMMENT</div>
+                <div class="app-card-buttons">
+                  <button class="content-button status-button" onclick="_run('./run.run $EXEC')">Abrir</button>
+
+                </div>
+              </div>
+              
+
+            
+EOF
+EXEC="biglinux-config"
+NAME=$"Restaurar a configuração de programas"
+COMMENT=$"Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
+cat << EOF
+              <div class="app-card">
+                <span><svg viewBox="0 0 640 512">
+                    <path fill="currentColor" d="M256.47 216.77l86.73 109.18s-16.6 102.36-76.57 150.12C206.66 523.85 0 510.19 0 510.19s3.8-23.14 11-55.43l94.62-112.17c3.97-4.7-.87-11.62-6.65-9.5l-60.4 22.09c14.44-41.66 32.72-80.04 54.6-97.47 59.97-47.76 163.3-40.94 163.3-40.94zM636.53 31.03l-19.86-25c-5.49-6.9-15.52-8.05-22.41-2.56l-232.48 177.8-34.14-42.97c-5.09-6.41-15.14-5.21-18.59 2.21l-25.33 54.55 86.73 109.18 58.8-12.45c8-1.69 11.42-11.2 6.34-17.6l-34.09-42.92 232.48-177.8c6.89-5.48 8.04-15.53 2.55-22.44z" />
+                  </svg>
+                  $NAME
+                </span>
+                <div class="app-card__subtext">$COMMENT</div>
+                <div class="app-card-buttons">
+                  <button class="content-button status-button" onclick="_run('./run.run $EXEC')">Abrir</button>
+
+                </div>
+              </div>
+
+              
+EOF
+EXEC="hardinfo-relatory"
+NAME=$"Gerar relatório com informações"
+COMMENT=$"Cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com o suporte."
+cat << EOF
+              <div class="app-card">
+                <span><svg aria-hidden="true" focusable="false" data-prefix="far" viewBox="0 0 496 512" class="far fa-info-circle">
+
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" />
+                  </svg>
+                  $NAME
+                </span>
+                <div class="app-card__subtext">$COMMENT</div>
+                <div class="app-card-buttons">
+                  <button class="content-button status-button" onclick="_run('./run.run $EXEC')">Abrir</button>
+                </div>
+              </div>
+              
+              
+              </div>
+              <div class="main-header Star">
+                <a class="menu-link-main">$CATEGORY_Star</a>
+              </div>
+          
+<!-- COMMENT CATEGORIAS -->
+        <div class="main-header Network">
+          <a class="menu-link-main">$CATEGORY_Network</a>
+        </div>
+        <div class="main-header Phone">
+          <a class="menu-link-main">$CATEGORY_Phone</a>
+        </div>
+        <div class="main-header Personalization">
+          <a class="menu-link-main">$CATEGORY_Personalization</a>
+        </div>
+        <div class="main-header Language">
+          <a class="menu-link-main">$CATEGORY_Language</a>
+        </div>
+        <div class="main-header Multimedia">
+          <a class="menu-link-main">$CATEGORY_Multimedia</a>
+        </div>        
+        <div class="main-header Account">
+          <a class="menu-link-main">$CATEGORY_Account</a>
+        </div>        
+        <div class="main-header Privacy">
+          <a class="menu-link-main">$CATEGORY_Privacy</a>
+        </div>         
+        <div class="main-header Server">
+          <a class="menu-link-main">$CATEGORY_Server</a>
+        </div>
+        <div class="main-header Hardware">
+          <a class="menu-link-main">$CATEGORY_Hardware</a>
+        </div>
+        <div class="main-header System">
+          <a class="menu-link-main">$CATEGORY_System</a>
+        </div>         
+        <div class="main-header Desenv">
+          <a class="menu-link-main">$CATEGORY_Desenv</a>
+        </div>
+        <div class="main-header About">
+          <a class="menu-link-main">$CATEGORY_About</a>
+        </div>
+        <div class="main-header Other">
+          <a class="menu-link-main">$CATEGORY_Other</a>
+        </div>
+        <div class="main-header search">
+          <a class="menu-link-main">$SEARCH_Result</a>
+        </div>
+<!-- FIM COMMENT CATEGORIAS -->
+EOF
+
+
+OIFS=$IFS
+IFS=$'\n'
+
+
+SHOW_ICON() {
+# $1 CATEGORY
+# $2 COMMENT
+# $3 EXEC 
+# $4 ICON 
+# $6 NAME
+cat << EOF
+<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+        <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
+        </div>
+        <button onclick="_run('./run.run $EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button">
+            <div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON"></div>
+            <div class="box-titulo">$NAME</div>
+        </button>
+    </div>
+EOF
+}
+
+SHOW_MODAL_ICON() {
+# $1 CATEGORY
+# $2 COMMENT
+# $3 EXEC 
+# $4 ICON 
+# $6 NAME
+cat << EOF
+<!--    <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+        <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
+        </div>
+        <button id="box-subtitle" class="box-geral-icons box-geral-button content-button status-button"> <!-- status-button CHAMA MODAL (POP-UP)-->
+<!--            <div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON"></div>
+            <div class="box-titulo">$NAME</div>
+        </button>
+    </div>
+-->
+EOF
+}
+
+
+
+
+CACHE_ICON() {
+# $1 CATEGORY
+# $2 COMMENT
+# $3 EXEC 
+# $4 ICON 
+# $6 NAME
+cat << EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
+<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+        <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
+        </div>
+        <button onclick="_run('./run.run $EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button">
+            <div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON"></div>
+            <div class="box-titulo">$NAME</div>
+        </button>
+    </div>
+EOF
+
+}
+
 
 #########################
 #
-# Change to Star button
+# Change to "Principais" in start
 #
 #########################
 echo "<script>
@@ -333,31 +451,6 @@ echo "<script>
    \$(\"#Star\").trigger(\"click\");});
 </script>"
 
-######################
-#
-# Modal
-#
-######################
-echo "<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  \$(document).ready(function(){
-    \$('.modal').modal();
-  });
-       
-</script>"
-
-#<button type="button" id="all" class="btn btn-success">All</button>
-
-
-
-OIFS=$IFS
-IFS=$'\n'
 
 ######################################
 #
@@ -365,28 +458,17 @@ IFS=$'\n'
 #
 ######################################
 
-
-    NAME=$"Conectar à internet"
-    COMMENT=$"Configurações de rede em geral"
-    ICON="icons/applications-internet.png"
-    CATEGORY="Star"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal1"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"A forma mais simples de conectar à internet é utilizando o ícone localizado perto do relógio do sistema, porém, aqui você tem acesso a mais opções de configurações de rede."
-echo '</div>'
+# NAME=$"Conectar à internet"
+# COMMENT=$"Configurações de rede em geral"
+# ICON="icons/applications-internet.png"
+# DESCRIPTION=$"A forma mais simples de conectar à internet é utilizando o ícone localizado perto do relógio do sistema, porém, aqui você tem acesso a mais opções de configurações de rede."
+# CATEGORY="Star Network"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+# 
+# cat << EOF
+#  
+# EOF
 
 ######
 # 01
@@ -395,40 +477,30 @@ echo '</div>'
 if [ -e "/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement" ]; then
 
 EXEC="plasmawindowed org.kde.plasma.networkmanagement"
-NAME=$"Gerenciador simples (Recomendado)"
-COMMENT=$"Essa é a melhor opção para quase todas as situações."
-ICON="icons/network-01.png"
+NAME=$"Conectar à internet"
+COMMENT=$"Conecte na internet por cabo de rede ou wifi."
+ICON="icons/icon_conectar-internet.png"
+CATEGORY="Network"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
-
-
 
 ######
 # 02
 ######
 
-if [ -e "/usr/bin/nm-connection-editor" ]; then
-
-EXEC="nm-connection-editor"
-NAME=$"Gerenciador completo"
-COMMENT=$"Para configurações de rede mais complexas."
-ICON="icons/network-02.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-fi
-
-
+# if [ -e "/usr/bin/nm-connection-editor" ]; then
+# 
+# EXEC="nm-connection-editor"
+# NAME=$"Gerenciador completo"
+# COMMENT=$"Para configurações de rede mais complexas."
+# ICON="icons/network-02.png"
+# CATEGORY="Network"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+# 
+# fi
 
 ######
 # 03
@@ -437,48 +509,64 @@ fi
 if [ -e "/usr/share/kservices5/kcm_networkmanagement.desktop" ]; then
 
 EXEC="kcmshell5 kcm_networkmanagement"
-NAME=$"Gerenciador alternativo"
-COMMENT=$"Caso prefira também oferecemos esse configurador."
-ICON="icons/network-03.png"
+NAME=$"Gerenciar conexões"
+COMMENT=$"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga móvel e outros)."
+ICON="icons/icon_gerenciar-conexoes.png"
+CATEGORY="Network"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
-
 
 ######
 # 04
 ######
+EXEC=""
+NAME=$"Conectar à internet utilizando o Android"
+COMMENT=$"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu computador."
+ICON="icons/icon_android-connect.png"
+CATEGORY="Phone Network"
 
-    NAME=$"Conectar à internet utilizando o Android"
-    COMMENT=$"Você pode utilizar seu smartphone ou tablet Android como<br>um dispositivo wifi usb para seu computador."
-    ICON="icons/android.png"
+ANDROID_TEXT="Como utilizar a internet do seu tablet ou  smartphone Android:
+<br><br>
+1. Plugue o dispositivo na USB do computador;
+<br>
+2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.
+<br>
+São formas diferentes que cada fabricante utiliza para o mesmo recurso.
+<br><br>
+*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.
+<br><br>
+Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu dispositivo Android.
+<br>
+*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
 
+#SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 cat << EOF
-    <div class="col-md-modal waves-effect waves-light"><a  href="#modalAndroid"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
+
+<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+        <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
+        </div>
+        <button onclick="openModal('modalA')" id="box-subtitle" class="box-geral-icons box-geral-button">
+            <div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON"></div>
+            <div class="box-titulo">$NAME</div>
+        </button>
     </div>
+
+<div id="modalA" class="modal">
+                    <div class="modalContent">
+                        <div class="pop-up__title">$NAME
+                        </div>
+                        <div class="pop-up__subtitle">
+                        $ANDROID_TEXT
+                        </div>
+
+                        <div class="content-button-wrapper" style="text-align: right;">
+                          <button class="modalClose">Fechar</button>
+                        </div>
+                    </div>
+                  </div>
 EOF
-
-########
-# Close
-########
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
 
 ######################################
 #
@@ -486,9 +574,60 @@ EOF
 #
 ######################################
 
+######################################
+#
+#   HARDINFO OPEN
+#
+######################################
 
+#if [ -e "/usr/bin/hardinfo" ]; then
 
+#     NAME=$"Informações do sistema e hardware"
+#     COMMENT=$"Veja um relatório completo sobre o computador."
+#     ICON="icons/info.png"
+#     CATEGORY="Star"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
+######
+# 01
+######
+
+# EXEC="kinfocenter"
+# NAME=$"Exibir informações"
+# COMMENT=$"Veja um painel com diversas informações do sistema."
+# ICON="icons/kinfocenter.png"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+######
+# 02
+######
+
+# EXEC="bigsudo hardinfo"
+# NAME=$"Exibir informações complementares"
+# COMMENT=$"Veja as informações e faça testes de desempenho."
+# ICON="icons/hardinfo.png"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+######
+# 03
+######
+
+EXEC="hardinfo-relatory"
+NAME=$"Gerar relatório com informações"
+COMMENT=$"Cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com o suporte."
+ICON="icons/relatory.png"
+CATEGORY="About"
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+#fi
+######################################
+#
+#   HARDINFO CLOSE
+#
+######################################
 
 
 ######################################
@@ -497,90 +636,17 @@ EOF
 #
 ######################################
 
-
-    NAME=$"Som e microfone"
-    COMMENT=$"Configurações áudio em geral"
-    ICON="icons/kmix.png"
-    CATEGORY="Hardware"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal2"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"A forma mais simples de configurar o áudio é utilizando o ícone localizado perto do relógio do sistema, porém, aqui você tem acesso a mais opções de configuração."
-echo '</div>'
-
-######
-# 01
-######
-
-if [ -e "/usr/share/plasma/plasmoids/org.kde.plasma.volume" ]; then
-
-EXEC="plasmawindowed org.kde.plasma.volume"
-NAME=$"Gerenciador simples"
-COMMENT=$"Configurações de áudio simples, mas suficiente para a maioria das situações."
-ICON="icons/audio-04.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-fi
-
-
-
-######
-# 02
-######
-
-if [ -e "/usr/lib/qt/plugins/kcms/kcm_pulseaudio.so" ]; then
-
-EXEC="kcmshell5 kcm_pulseaudio"
-NAME=$"Gerenciador intermediário"
-COMMENT=$"Gerenciador de áudio padrão do KDE."
-ICON="icons/kmix.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-fi
-
-
-
-######
-# 03
-######
-
 if [ -e "/usr/bin/pavucontrol-qt" ]; then
 
 EXEC="pavucontrol-qt"
-NAME=$"Gerenciador avançado"
-COMMENT=$"Configurações de áudio avançadas apresentadas de forma simples e objetiva."
-ICON="icons/audio-02.png"
+NAME=$"Som e microfone"
+COMMENT=$"Configure o áudio ou altere dispositivos de entrada e saída de som. (Ex: HDMI)"
+ICON="icons/kmix.png"
+CATEGORY="Star Multimedia"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
-
 
 ######
 # 04
@@ -588,69 +654,33 @@ fi
 
 if [ -e "/usr/bin/alsamixer" ]; then
 
-EXEC="konsole -e alsamixer"
-NAME=$"Alsamixer (Muito avançado)"
-COMMENT=$"Utilize esse configurador apenas se os outros<br>
-não resolverem o que você deseja.<br><br>
-Esse é um gerenciador avançado e<br>
-é preciso configura-lo utilizando<br>
-o teclado."
+EXEC="gnome-alsamixer"
+NAME=$"Gerenciador de áudio avançado - Alsamixer"
+COMMENT=$"Utilize esse controlador de áudio caso esteja sem som."
 ICON="icons/audio-01.png"
+CATEGORY="Multimedia"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
     
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
-
 ######################################
 #
 #   AUDIO CLOSE
 #
 ######################################
-
-
-
 ######################################
 #
 #   POWER OPEN
 #
 ######################################
 
-
-    NAME=$"Economia de energia"
-    COMMENT=$"Defina quanto espearar para desligar a tela e<br>várias outras opções para economizar energia."
-    ICON="icons/power-manager2.png"
-    CATEGORY="Hardware"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal3"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"Em geral o configurador de energia do usuário possui todas as opções necessárias."
-echo '</div>'
+# NAME=$"Economia de energia"
+# COMMENT=$"Defina quanto espearar para desligar a tela e várias outras opções para economizar energia."
+# ICON="icons/power-manager2.png"
+# CATEGORY="Hardware"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 01
@@ -659,18 +689,14 @@ echo '</div>'
 if [ -e "/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so" ]; then
 
 EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
-NAME=$"Configurações de energia do usuário"
+NAME=$"Economia de energia"
 COMMENT=$"Defina as configurações básicas de economia de energia."
 ICON="icons/preferences-system-power-management.png"
+CATEGORY="Hardware"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
-
 
 ######
 # 02
@@ -680,27 +706,13 @@ if [ -e "/usr/bin/tlpui" ]; then
 
 EXEC="tlpui"
 NAME=$"Configurações de energia do sistema"
-COMMENT=$"Esse configurador deve ser utilizado apenas por<br>pessoas com conhecimentos mais avançados<br>sobre o sistema."
+COMMENT=$"Esse configurador deve ser utilizado apenas por pessoas com conhecimentos mais avançados sobre o sistema."
 ICON="icons/power-manager.png"
+CATEGORY="Hardware"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
 
 ######################################
 #
@@ -709,314 +721,93 @@ EOF
 ######################################
 
 
-
-
-######################################
-#
-#   HARDINFO OPEN
-#
-######################################
-
-if [ -e "/usr/bin/hardinfo" ]; then
-
-    NAME=$"Informações do sistema e hardware"
-    COMMENT=$"Veja um relatório completo sobre o computador."
-    ICON="icons/info.png"
-    CATEGORY="Star"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal4"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal4" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"Tenha informações completas do hardware e software deste computador."
-echo '</div>'
-
-######
-# 01
-######
-
-
-EXEC="kinfocenter"
-NAME=$"Exibir informações"
-COMMENT=$"Veja um painel com diversas informações do sistema."
-ICON="icons/kinfocenter.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-
-######
-# 02
-######
-
-
-EXEC="bigsudo hardinfo"
-NAME=$"Exibir informações complementares"
-COMMENT=$"Veja as informações e faça testes de desempenho."
-ICON="icons/hardinfo.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-
-######
-# 03
-######
-
-
-EXEC="hardinfo-relatory"
-NAME=$"Gerar relatório com informações"
-COMMENT=$"Cria um arquivo com informações, que você pode<br>enviar a outras pessoas para que o ajudem<br>com o suporte."
-ICON="icons/relatory.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
-fi
-
-######################################
-#
-#   HARDINFO CLOSE
-#
-######################################
-
-
-
-
-
-
-
 ######################################
 #
 #   USERS OPEN
 #
 ######################################
-
-
-    NAME=$"Gerenciador de usuários"
-    COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
-    ICON="icons/preferences-system-users.png"
-    CATEGORY="Star System"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal6"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal6" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"Gerencie os usuários e grupos do sistema, o gerenciador simples supre as necesidades da maioria dos casos."
-echo '</div>'
+ 
+# NAME=$"Gerenciador de usuários"
+# COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
+# ICON="icons/preferences-system-users.png"
+# CATEGORY="System"
+#  
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 # ######
 # # 01
 # ######
-# 
-# 
-EXEC="kcmshell5 kcm_users"
-NAME=$"Gerenciador simples"
-COMMENT=$"Gerenciador padrão do KDE, não<br>possui recursos pra gerenciar grupos."
-ICON="icons/preferences-system-users.png"
+if [ -e "/usr/bin/manjaro-settings-manager" ]; then
+ EXEC="manjaro-settings-manager -m msm_users"
+ NAME=$"Adicionar ou Remover Usuários"
+ COMMENT=$"Criar ou remover contas de usuários."
+ ICON="icons/icon_useraccount.png"
+ CATEGORY="Account"
+   
+ SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+fi
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-# 
-# 
+# EXEC="kcmshell5 kcm_users"
+# NAME=$"Gerenciador simples"
+# COMMENT=$"Gerenciador padrão do KDE, não possui recursos pra gerenciar grupos."
+# ICON="icons/preferences-system-users.png"
+#  
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+ 
 # ######
 # # 02
 # ######
-# 
-# 
-EXEC="lxqt-admin-user"
-NAME=$"Gerenciador avançado"
-COMMENT=$"Gerenciador padrão do LXQT, possui<br>recursos avançados para gerenciar grupos."
-ICON="icons/user.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
+ 
+# EXEC="lxqt-admin-user"
+# NAME=$"Gerenciador avançado"
+# COMMENT=$"Gerenciador padrão do LXQT, possui recursos avançados para gerenciar grupos."
+# ICON="icons/user.png"
+#  
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######################################
 #
 #   USERS CLOSE
 #
-######################################
-
-
-
-
-
-
-
-
-
+###################################### 
 ######################################
 #
 #   SCREEN OPEN
 #
 ######################################
-
-
-    NAME=$"Configurações da tela"
-    COMMENT=$"Configurações gerais do monitor."
-    ICON="icons/preferences-desktop-display.png"
-    CATEGORY="Hardware"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal7"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal7" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"Resolução, taxa de atualização, configurações de cores, definições de tela de toque, cor noturna..."
-echo '</div>'
+# NAME=$"Configurações da tela"
+# COMMENT=$"Configurações gerais do monitor."
+# ICON="icons/preferences-desktop-display.png"
+# CATEGORY="Hardware"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 01
 ######
 
-
 EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
-NAME=$"Configurações gerais da tela"
-COMMENT=$"Gerenciador padrão do KDE, recomendado."
+NAME=$"Monitores e Telas"
+COMMENT=$"Configurações de resolução, cor, frequência, dpi, escala, cor noturna, etc."
 ICON="icons/preferences-desktop-display.png"
+CATEGORY="Star Hardware"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-
-######
-# 02
-######
-
-
-EXEC="lxqt-config-monitor"
-NAME=$"Gerenciador alternativo"
-COMMENT=$"Se o seu monitor utiliza taxa de atualização<br>em valores com virgula, por exemplo, 59,94 Hz,<br>utilize esse gerenciador."
-ICON="icons/screen-lxqt.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-######
-# 03
-######
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 
 EXEC="./kscreen_clean.sh"
 NAME=$"Resetar as configurações da tela"
-COMMENT=$"Em alguns casos para que as configurações do monitor voltem a<br>funcionar adequedamente é necessário remover os arquivos antigos."
-ICON="icons/kscreen-reset.png"
+COMMENT=$"Em alguns casos para que as configurações do monitor voltem a funcionar adequedamente é necessário remover os arquivos antigos."
+ICON="icons/icon_reset-screen.png"
+CATEGORY="Hardware"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######################################
 #
 #   SCREEN CLOSE
 #
 ######################################
-
-
-
-
-
-
 ######################################
 #
 #   ANDROID OPEN
@@ -1024,224 +815,89 @@ EOF
 ######################################
 
 
-    NAME=$"Interação com smartphones e tablets"
-    COMMENT=$"Transfira arquivos e faça outras interações entre<br>seu smartphone ou tablet e o computador.<br><br>Algumas soluções apresentadas também podem<br>transferir arquivos entre dois computadores."
-    ICON="icons/smartphone.png"
-    CATEGORY="Star"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal5"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal5" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"Alguns smartphones e tablets não transferem arquivos ao serem plugados na USB do computador, para eles a solução é utilizar um dos programas abaixo, porém, mesmo quando o uso do cabo USB funciona corretamente, as opções a seguir são mais práticas e também disponibilizam mais recursos.<br><br>Passe o mouse sobre as opções para mais detalhes sobre o funcionamento de cada programa:<br><br>* Lembre que o smartphone e o computador precisam estar conectados na mesma rede para que a comunicação ocorra."
-echo '</div>'
+# NAME=$"Interação com smartphones e tablets"
+# COMMENT=$"Transfira arquivos e faça outras interações entre seu smartphone ou tablet e o computador.  Algumas soluções apresentadas também podem transferir arquivos entre dois computadores."
+# ICON="icons/smartphone.png"
+# CATEGORY="Star"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 01
 ######
 
-echo '<div id="andoid-left">'
-
 if [ -e "/usr/bin/kdeconnect-settings" ]; then
 
 EXEC="kdeconnect-settings"
 NAME=$"KDE Connect"
-COMMENT=$"Esse programa pode transferir arquivos entre smartphones,<br>tablets e outros computadores.<br><br>Com ele você pode, por exemplo, utilizar<br> seu smartphone como mouse e teclado sem fio<br>para controlar o computador, entre outros recursos.<br><br>Ele se integra melhor ao BigLinux e fica entre os applets<br>localizados perto do relógio do sistema.<br><br>Para sincronizar com o seu smartphone acesse<br>a Google Store em seu telefone e instale o Kde Connect.<br><br>Esse aplicativo não está disponível para iPhone."
+COMMENT=$"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets localizados perto do relógio do sistema.  Para sincronizar com o seu smartphone acesse a Google Store em seu telefone e instale o Kde Connect.  Esse aplicativo não está disponível para iPhone."
 ICON="icons/preferences-kde-connect.png"
+CATEGORY="Phone"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
-
-
-######
-# 02
-######
-
-    NAME=$"Conectar à internet utilizando o Android"
-    COMMENT=$"Você pode utilizar seu smartphone ou tablet Android como<br>um dispositivo wifi usb para seu computador."
-    ICON="icons/android.png"
-
-cat << EOF
-    <div class="col-md-modal waves-effect waves-light"><a  href="#modalAndroid"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-EOF
-
-
-
-echo '</div>'
-echo '<div id="andoid-right">'
 
 
 ######
 # 03
 ######
 
-
 if [ -e "/usr/bin/idevice-mounter" ]; then
 
 EXEC="idevice-mounter"
-NAME=$"Montar dispositivos Apple"
-COMMENT=$"Com esse programa você pode acessar os programas do seu iPhone ou tablet Apple de forma similar ao acesso de arquivos em um pendrive."
+NAME=$"Montar Hardware Apple"
+COMMENT=$"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao acesso de arquivos em um pendrive."
 ICON="icons/idevice.png"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
 fi
 
 ######
 # 04
 ######
-
-
-
-EXEC="xdg-open http://web.airmore.com"
+#WEBAPP
+EXEC="xdg-open https://web.airmore.com"
 NAME=$"Airmore"
-COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.<br><br>Utilize esse botão para abrir o site do Airmore nesse computador.<br><br>Leia o QRcode que será exibido na tela do seu computador<br>utilizando o aplicativo no smartphone e tenha acesso a<br>transferência de arquivos e muito mais.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
+COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 ICON="icons/airmore.png"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-echo '</div>'
-echo '<div id="andoid-left">'
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 05
 ######
 
-
-
+#WEBAPP
 EXEC="xdg-open https://web.airdroid.com"
 NAME=$"Airdroid"
-COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.<br><br>Utilize esse botão para abrir o site do Airdroid nesse computador.<br><br>Leia o QRcode que será exibido na tela do seu computador<br>utilizando o aplicativo no smartphone e tenha acesso a<br>transferência de arquivos e muito mais.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
+COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 ICON="icons/airdroid.png"
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
+#WEBAPP
 EXEC="xdg-open https://snapdrop.net"
 NAME=$"Snapdrop (Não precisa de aplicativo)"
-COMMENT=$"Basta abrir o site https://snapdrop.net nos dispositivos que você<br>quer transferir os arquivos, automaticamente eles serão<br>detectados e você poderá enviar os arquivos que desejar.<br><br>Utilize esse botão para abrir o site do Snapdrop nesse computador.<br><br>O Snapdrop pode ser utilizado em qualquer smartphone ou computador<br><br>Inclusive transferindo arquivos diretamente de um smartphone para outro.<br><br>Você também pode utilizar nosso gerenciador de<br>Web apps para facilitar o uso desse site."
+COMMENT=$"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 ICON="icons/snapdrop.png"
-
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-######
-# 06
-######
-
-
-echo '</div>'
-########
-# Close
-########
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######################################
 #
 #   ANDROID CLOSE
 #
 ######################################
-
-
-
-
-
 ######################################
 #
 #   ANDROID WIFI
 #
 ######################################
-
-
-cat << EOF
-
-
-  <!-- Modal Structure -->
-  <div id="modalAndroid" class="modal">
-    <div class="modal-content">
-
-EOF
-
-echo '<div id=top>'
-echo $"Para utilizar a internet do seu tablet ou smartphone android, plugue-o na USB do computador, acesse as configurações do seu dispositivo Android e procure pela opção \"Vínculo USB\" ou \"Ancoragem USB\" ou \"USB Tethering\". São formas diferentes que cada fabricante utiliza para o mesmo recurso.
-<br><br>
-Geralmente essas opções estão dentro da sessão \"Rede e Internet\" ou \"Conexões e compartilhamento\" nas configurações do dispositivo com Android.
-<br><br>
-Ao ativar a função o seu computador com BigLinux conectará automaticamente, então você estará utilizando a mesma conexão do seu dispositivo Android, lembre que, se estiver utilizando o plano de dados, irá consumir os dados do seu plano. Para certificar que não irá utilizar seus dados móveis, pode ser conveniente desativá-los enquanto utiliza a conexão no computador.
-<br><br>
-Esse tipo de conexão ao utilizar programas que interagem com dispositivos Android, por exemplo, o Kde Connect ou o Airmore, fará a transferência de arquivos ser mais rápida."
-echo '</div>'
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
-
-
 ######################################
 #
 #   ANDROID WIFI CLOSE
 #
 ######################################
-
-
-
-
-
-
-
-
 #########################################################
 # START CACHE 2
 #########################################################
@@ -1250,7 +906,7 @@ if [ "$RELOAD" = "1" ]; then
 
 ########################################
 #
-#   /usr/bin/biglinux-themes-gui
+#   biglinux-themes-gui
 #
 ########################################
 
@@ -1258,30 +914,22 @@ if [ -e "/usr/bin/biglinux-themes-gui" ]; then
 
     EXEC="biglinux-themes-gui"
     NAME=$"Aparência, desempenho e usabilidade"
-    COMMENT=$"Disponiblizamos configurações completas para<br>você selecionar de forma extremamente simples."
-    CATEGORY="Star Design"
-    ICON="/usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png"
+    COMMENT=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+    CATEGORY="Design"
+    ICON="icons/icon-aparencia-desempenho-usabilidade.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+   
 fi
 
-
+#VERIFICAR FUNCIONANEMTO
 EXEC="waydroid-gui-big"
 NAME=$"Suporte a aplicativos Android"
-COMMENT=$"Utilize programas feitos para Android no seu BigLinux.<br><br>* Este recurso ainda está em fase experimental."
-CATEGORY="Star"
+COMMENT=$"Utilize programas feitos para Android no seu BigLinux.  * Este recurso ainda está em fase experimental."
+CATEGORY="Phone"
 ICON="icons/waydroid.png"
 
-echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
-
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ########################################
 #
@@ -1291,65 +939,51 @@ echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=
 
 if [ -e "/usr/bin/kvantummanager" ]; then
 
-    EXEC="kvantummanager"
-    NAME=$"Configuções do estilo do aplicativo Kvantum"
-    COMMENT=$"Utilize essa opção para configurar o estilo Kvantum, lembre que é preciso utilizar a outra opção de Estilo do aplicativo para selecionar o tema Kvantum."
-    CATEGORY="Design"
-    ICON="icons/kvantum.png"
+EXEC="kvantummanager"
+NAME=$"Configurações do estilo do aplicativo Kvantum"
+COMMENT=$"Utilize essa opção para configurar o estilo Kvantum, lembre que é preciso utilizar a outra opção de Estilo do aplicativo para selecionar o tema Kvantum."
+CATEGORY="Design"
+ICON="icons/kvantum.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
 ########################################
 #
-#   /usr/bin/dolphin
+#   dolphin
 #
 ########################################
 
 if [ -e "/usr/bin/dolphin" ]; then
 
-    EXEC="dolphin"
-    NAME=$"Gerenciar arquivos"
-    COMMENT=$"Tenha acesso a seus arquivos e pastas."
-    CATEGORY="Other"
-    ICON="icons/system-file-manager.png"
+EXEC="dolphin"
+NAME=$"Gerenciar arquivos"
+COMMENT=$"Tenha acesso a seus arquivos e pastas."
+CATEGORY="System"
+ICON="icons/system-file-manager.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
-
-
 ########################################
 #
-#   /usr/bin/konsole
+#   konsole
 #
 ########################################
 
 if [ -e "/usr/bin/konsole" ]; then
 
-    EXEC="konsole --workdir $HOME"
-    NAME=$"Terminal"
-    COMMENT=$"Acesse o terminal de comandos."
-    CATEGORY="Other"
-    ICON="icons/terminal.png"
+EXEC="konsole --workdir $HOME"
+NAME=$"Terminal"
+COMMENT=$"Acesse o terminal de comandos."
+CATEGORY="System"
+ICON="icons/terminal.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
-
-
 
 ########################################
 #
@@ -1359,16 +993,13 @@ fi
 
 if [ -e "/usr/share/kservices5/msm_mhwd.desktop" ]; then
 
-    EXEC="kcmshell5 msm_mhwd"
-    NAME=$"Instalar drivers"
-    COMMENT=$"Alguns dispositivos, principalmente de WiFi ou placas de vídeo Nvidia<br>podem precisar da instalação de drivers."
-    CATEGORY="Star Hardware"
-    ICON="/icons/driver.png"
+EXEC="kcmshell5 msm_mhwd"
+NAME=$"Instalar drivers"
+COMMENT=$"Alguns Hardware, principalmente de WiFi ou placas de vídeo Nvidia podem precisar da instalação de drivers."
+CATEGORY="Star Hardware"
+ICON="/icons/driver.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
@@ -1378,44 +1009,36 @@ fi
 #
 ######################################
 
+# if [ -e "/usr/bin/kde-add-printer" ]; then
+# 
+# EXEC="kcmshell5 kcm_printer_manager"
+# NAME=$"Impressoras"
+# COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
+# ICON="icons/printer.png"
+# CATEGORY="Star Hardware"
+# 
+# CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+# 
+# fi
 
-    NAME=$"Impressora e scanner"
-    COMMENT=$"Adiconar ou configurar impressoras ou scanner."
-    ICON="icons/printer.png"
-    CATEGORY="Star Hardware"
-
-cat << EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal8"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal8" class="modal">
-    <div class="modal-content">
-
-EOF
-
+# NAME=$"Impressora e scanner"
+# COMMENT=$"Adiconar ou configurar impressoras ou scanner."
+# ICON="icons/printer.png"
+# CATEGORY="Star Hardware"
+# 
+# CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 01
 ######
 
-
-EXEC="system-config-printer"
-NAME=$"Adicionar ou remover impressoras"
-COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
-ICON="icons/printer.png"
-
-cat << EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
+# EXEC="system-config-printer"
+# NAME=$"Adicionar ou remover impressoras"
+# COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
+# ICON="icons/printer.png"
+# CATEGORY="Star Hardware"
+# 
+# CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 02
@@ -1424,16 +1047,12 @@ EOF
 if [ -e "/usr/bin/hp-toolbox" ]; then
 
 EXEC="hp-toolbox"
-NAME=$"Configurações para impressoras HP"
+NAME=$"Impressoras HP"
 COMMENT=$"Se a sua impressora for da marca HP e não funcionou corretamente com o gerênciador acima, utilize esta opção."
-ICON="/usr/share/hplip/data/images/128x128/hp_logo.png"
+ICON="icons/icon_print-HP.png"
+CATEGORY="Hardware"
 
-cat << EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
@@ -1444,28 +1063,13 @@ fi
 if [ -e "/usr/bin/hp-uiscan" ]; then
 
 EXEC="hp-uiscan"
-NAME=$"Configurar scanner HP"
+NAME=$"Scanners HP"
 COMMENT=$"Em geral basta plugar o scanner na porta USB e utilizar, mas se estiver utilizando um scanner da marca HP, essa opção pode ser útil."
 ICON="icons/scanner.png"
 
-cat << EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')" class="tooltipped with-gap" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
-cat << EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
 
 ######################################
 #
@@ -1482,19 +1086,15 @@ EOF
 
 if [ -e "/usr/sbin/gparted" ]; then
 
-    EXEC="gparted"
-    NAME=$"Particionar ou formatar"
-    COMMENT=$"Cuidado ao utilizar esse programa, caso não saiba o que<br>está fazendo poderá apagar todos os dados do computador."
-    CATEGORY="System"
-    ICON="icons/gparted.png"
+EXEC="gparted"
+NAME=$"Particionar ou formatar"
+COMMENT=$"Cuidado ao utilizar esse programa, caso não saiba o que está fazendo poderá apagar todos os dados do computador."
+CATEGORY="System"
+ICON="icons/gparted.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
 
 ########################################
 #
@@ -1504,19 +1104,15 @@ fi
 
 if [ -e "/usr/bin/mintstick" ]; then
 
-    EXEC="mintstick -m format"
-    NAME=$"Formatar pen drive"
-    COMMENT=$"Uma interface simples e prática para formatar pen drive."
-    CATEGORY="System"
-    ICON="icons/pendrive.png"
+EXEC="mintstick -m format"
+NAME=$"Formatar pen drive"
+COMMENT=$"Uma interface simples e prática para formatar pen drive."
+CATEGORY="System"
+ICON="icons/pendrive.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
 
 ########################################
 #
@@ -1526,19 +1122,15 @@ fi
 
 if [ -e "/usr/bin/mintstick" ]; then
 
-    EXEC="mintstick -m iso"
-    NAME=$"Criar pen drive de boot"
-    COMMENT=$"Para criar um pen drive de boot com o BigLinux,<br>baixe o sistema em www.biglinux.com.br e<br>utilize esse programa para gravá-lo."
-    CATEGORY="System"
-    ICON="icons/mintstick.png"
+EXEC="mintstick -m iso"
+NAME=$"Criar pen drive de boot"
+COMMENT=$"Para criar um pen drive de boot com o BigLinux, baixe o sistema em www.biglinux.com.br e utilize esse programa para gravá-lo."
+CATEGORY="System"
+ICON="icons/mintstick.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
 
 ########################################
 #
@@ -1548,49 +1140,23 @@ fi
 
 if [ -e "/usr/bin/timeshift-launcher" ]; then
 
-    EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
-    NAME=$"Snapshots e backups"
-    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
-        COMMENT=$"O sistema está utilizando uma partição btrfs, isso permite<br>que sejam criados pontos de restauração muito<br>eficientes e com pouco uso de armazenamento."
-    else
-        COMMENT=$"O sistema não está utilizando uma partição btrfs no momento,<br>você ainda pode fazer backups utilizando o método rsync."
-    fi
-    
-    if [ -e "/usr/bin/timeshift-launcher" ]; then
-        COMMENT=$"O sistema está funcionando em modo live.<br><br>Utilize esse programa para restaurar pontos<br>de restauração do seu sistema instalado."
-    fi
-    CATEGORY="Star System"
-    ICON="icons/timeshift.png"
-
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-
+EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
+NAME=$"Snapshots e backups"
+if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
+    COMMENT=$"O sistema está utilizando uma partição btrfs, isso permite que sejam criados pontos de restauração muito eficientes e com pouco uso de armazenamento."
+else
+    COMMENT=$"O sistema não está utilizando uma partição btrfs no momento, você ainda pode fazer backups utilizando o método rsync."
 fi
 
+if [ -e "/usr/bin/timeshift-launcher" ]; then
+    COMMENT=$"O sistema está funcionando em modo live. Utilize esse programa para restaurar pontos de restauração do seu sistema instalado."
+fi
+CATEGORY="Star System"
+ICON="icons/timeshift.png"
 
-########################################
-#
-#   Fontes Flash e Widevine
-#
-########################################
-
-# if [ -e "/usr/bin/bigflash-javaws-widevine-fonts" ]; then
-# 
-#     EXEC="bigflash-javaws-widevine-fonts"
-#     NAME=$"Fontes proprietárias, flash e DRM"
-#     COMMENT=$"Complementos ao sistema que não podem vir instalados,<br>mas você pode considerar úteis."
-#     CATEGORY="Star System"
-#     ICON="/usr/share/bigbashview/bcc/apps/flash-javaws-widevine-fonts/widevine.png"
-# 
-#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-# </center></a>
-# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-# 
-# fi
-
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+    
+fi
 
 ########################################
 #
@@ -1600,20 +1166,15 @@ fi
 
 if [ -e "/usr/bin/gufw" ]; then
 
-    EXEC="gufw"
-    NAME=$"Firewall"
-    COMMENT=$"Configure regras de segurança para a conexão."
-    CATEGORY="System"
-    ICON="icons/gufw.png"
+EXEC="gufw"
+NAME=$"Firewall"
+COMMENT=$"Configure regras de segurança para a conexão."
+CATEGORY="Privacy"
+ICON="icons/gufw.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
-
 
 ########################################
 #
@@ -1623,20 +1184,15 @@ fi
 
 if [ -e "/usr/bin/biglinux-config" ]; then
 
-    EXEC="biglinux-config"
-    NAME=$"Restaurar a configuração de programas"
-    COMMENT=$"Lista com alguns programas do sistema<br>que você pode restaurar a configuração com um clique."
-    CATEGORY="Star"
-    ICON="/usr/share/bigbashview/bcc/apps/biglinux-config/icon.png"
+EXEC="biglinux-config"
+NAME=$"Restaurar a configuração de programas"
+COMMENT=$"Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
+CATEGORY="System"
+ICON="icons/icon-restaurar-configuracoes.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
-
 
 ########################################
 #
@@ -1646,66 +1202,15 @@ fi
 
 if [ -e "/usr/bin/tts-config" ]; then
 
-    EXEC="tts-config"
-    NAME=$"Configurações de texto para voz"
-    COMMENT=$"Você pode utilizar o atalho com a tecla [Meta] + V ou então o ícone no menu do sistema para que textos escritos sejam falados."
-    CATEGORY="Star"
-    ICON="/usr/share/bigbashview/bcc/apps/tts/icon.png"
+EXEC="tts-config"
+NAME=$"Configurações de Fala Texto (TTS)"
+COMMENT=$"Você pode utilizar o atalho com a tecla [Meta] + V ou então o ícone no menu do sistema para que textos escritos sejam falados."
+CATEGORY="Multimedia"
+ICON="icons/icon-grid-texto-fala-tts.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
-
-
-
-########################################
-#
-#   biglinux-tweaks
-#
-########################################
-
-# if [ -e "/usr/bin/biglinux-tweaks" ]; then
-# 
-#     EXEC="biglinux-tweaks"
-#     NAME=$"Scripts de automação das mais variadas tarefas"
-#     COMMENT=$"Quase todas as tarefas no Linux podem ser automatizadas com scripts,<br>essa interface reúne uma lista de automações úteis.<br><br>Sinta-se a vontade para enviar seus próprios scripts para o projeto BigLinux através do nosso<br>fórum ou grupo no Telegram, para que ele apareça nessa lista."
-#     CATEGORY="Star"
-#     ICON="/usr/share/bigbashview/bcc/apps/biglinux-tweaks/icon.png"
-# 
-#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-# </center></a>
-# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-# 
-# fi
-
-
-########################################
-#
-#   bigapache
-#
-########################################
-
-# if [ -e "/usr/bin/bigapache" ]; then
-# 
-#     EXEC="bigapache"
-#     NAME=$"Desenvolvimento WEB"
-#     COMMENT=$"Instalar e configurar os servidores Apache<br> e MariaDB (Compatível com o Mysql).<br><br>Instalação do PHP, Phpmyadmin, Atom, VScode..."
-#     CATEGORY="Star"
-#     ICON="/usr/share/bigbashview/bcc/apps/apache/bigapache.png"
-# 
-#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-# </center></a>
-# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-# 
-# fi
-
-
-
 
 ########################################
 #
@@ -1715,23 +1220,19 @@ fi
 
 if [ -e "/usr/share/kservices5/msm_kernel.desktop" ]; then
 
-    EXEC="kcmshell5 msm_kernel"
-    NAME=$"Instalar outras versões de kernel"
-    COMMENT=$"Alguns dispositivos podem necessitar de versões<br>especificas do kernel, aqui você terá algumas opções."
-    CATEGORY="Star"
-    ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/cpu.png"
+EXEC="kcmshell5 msm_kernel"
+NAME=$"Instalar versões de kernel"
+COMMENT=$"Alguns Hardware podem necessitar de versões especificas do kernel, aqui você terá algumas opções."
+CATEGORY="Star System"
+ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/cpu.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
-
 ########################################
 #
-#   /usr/bin/policytool
+#   policytool
 #
 ########################################
 
@@ -1740,59 +1241,28 @@ if [ -e "/usr/bin/policytool" ]; then
     EXEC="policytool"
     NAME=$"Regras de segurança do Java"
     COMMENT=$"OpenJDK Java 8 Policy Tool"
-    CATEGORY="System"
+    CATEGORY="Privacy"
     ICON="icons/openjdk.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
-
-
 ########################################
 #
-#   /usr/bin/sambasearch
-#
-########################################
-
-# if [ -e "/usr/bin/sambasearch" ]; then
-# 
-#     EXEC="sambasearch"
-#     NAME=$"Procurar compartilhamentos"
-#     COMMENT=$"Localiza compartilhamentos na rede (Windows ou Samba)."
-#     CATEGORY="Other"
-#     ICON="/usr/share/bigbashview/bcc/apps/sambasearch/sambasearch.png"
-# 
-#     echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-# <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-# </center></a>
-# </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-# 
-# fi
-
-
-
-########################################
-#
-#   /usr/bin/systemsettings5
+#   systemsettings5
 #
 ########################################
 
 if [ -e "/usr/bin/systemsettings5" ]; then
 
-    EXEC="systemsettings5"
-    NAME=$"Centro de controle do KDE"
-    COMMENT=$"Acesse o central de controle tradicional do KDE,<br> a maior parte das opções encontradas nela estão também<br>nessa central que você está utilizando agora."
-    CATEGORY="Other"
-    ICON="icons/systemsettings.png"
+EXEC="systemsettings5"
+NAME=$"Centro de controle do KDE"
+COMMENT=$"Acesse o central de controle tradicional do KDE, a maior parte das opções encontradas nela estão também nessa central que você está utilizando agora."
+CATEGORY="System"
+ICON="icons/systemsettings.png"
 
-    echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-<p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-</center></a>
-</div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
+CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
@@ -1805,97 +1275,52 @@ fi
 ######################################
 
 
-    NAME=$"Avahi"
-    COMMENT=$"Procurar servidores utilizando Avahi."
-    ICON="icons/network-01.png"
-    CATEGORY="Other"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal9"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal9" class="modal">
-    <div class="modal-content">
-
-EOF
-
-
+# NAME=$"Avahi"
+# COMMENT=$"Procurar servidores utilizando Avahi."
+# ICON="icons/network-01.png"
+# CATEGORY="Server"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 01
 ######
-
-
+if [ -e "/usr/bin/bssh" ]; then
 EXEC="bssh"
 NAME=$"Procurar servidores SSH"
+ICON="icons/icon_find-server-SSH.png"
+CATEGORY="Server"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 02
 ######
 
-
 EXEC="bvnc"
 NAME=$"Procurar servidores VNC"
+ICON="icons/icon_find-server-VNC.png"
+CATEGORY="Server"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 03
 ######
 
-
 EXEC="avahi-discover"
-NAME=$"Procurar servidores Zeroconf"
+NAME=$"Procurar servidores (zeroconf)"
+COMMENT=$"Uma rede de configuração zero é uma rede IP configurada sem usar nenhuma configuração manual ou servidores de configuração."
+ICON="icons/icon_find-server-zeroconf.png"
+CATEGORY="Server"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+fi
 ######################################
 #
 #   AVAHI CLOSE
 #
 ######################################
-
-
-
-
-
-
 ######################################
 #
 #   QT OPEN
@@ -1903,106 +1328,57 @@ EOF
 ######################################
 
 
-    NAME=$"Desenvolvimento QT"
-    COMMENT=$"Programas de desenvolvimento para QT."
-    ICON="icons/QtProject-designer.png"
-    CATEGORY="Other"
-
-cat << EOF
-
-    <div class="col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal10"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="400" data-tooltip="$COMMENT">
-    <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-    </center></a>
-    </div>
-
-  <!-- Modal Structure -->
-  <div id="modal10" class="modal">
-    <div class="modal-content">
-
-EOF
-
-
+# NAME=$"Desenvolvimento QT"
+# COMMENT=$"Programas de desenvolvimento para QT."
+# ICON="icons/QtProject-designer.png"
+# CATEGORY="Desenv"
+# 
+# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 01
 ######
-
-
+if [ -e "/usr/bin/assistant" ]; then
 EXEC="assistant"
 NAME=$"Qt Assistant"
+COMMENT=$"Programas de desenvolvimento para QT."
 ICON="icons/assistant.png"
+CATEGORY="Desenv"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 ######
 # 02
 ######
-
-
 EXEC="designer"
 NAME=$"Qt Designer"
+COMMENT=$"Programas de desenvolvimento para QT."
 ICON="icons/QtProject-designer.png"
+CATEGORY="Desenv"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 ######
 # 03
 ######
-
-
 EXEC="linguist"
 NAME=$"Qt Linguist"
+COMMENT=$"Programas de desenvolvimento para QT."
 ICON="icons/linguist.png"
+CATEGORY="Desenv"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
-
-
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 ######
 # 04
 ######
-
-
 EXEC="qdbusviewer"
 NAME=$"Qt QDBusViewer "
+COMMENT=$"Programas de desenvolvimento para QT."
 ICON="icons/qdbusviewer.png"
+CATEGORY="Desenv"
 
-cat << EOF
-        <div class="col-md-modal waves-effect waves-light"><a onclick="_run('./run.run $EXEC')">
-            <p class="name"><img src="$ICON" width=38 height=38> $NAME</p>
-            </center></a>
-        </div>
-EOF
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-
-
-cat << EOF    
-    
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
-    </div>
-  </div>
-EOF
-
-
+fi
 ######################################
 #
 #   QT CLOSE
@@ -2016,77 +1392,46 @@ EOF
 #    ALL BIGLINUX OPEN
 #
 ##########################
-# 
-# if [ "$RELOAD" = "1" ]; then
-#     rm -f "$HOME/.config/bigcontrolcenter/cache.html"
-# 
-#     for i  in  $(grep -Rl KCModule /usr/share/kservices5/bigcontrolcenter/); do
-# 
-# 
-#     EXEC="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Exec)"
-#     NAME="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Name)"
-#     COMMENT="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Comment)"
-#     ICON="$(kreadconfig5 --file "$i" --group "Desktop Entry" --key Icon)"
-# #    CATEGORY=$(kreadconfig5 --file "$i" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)
-# 
-#     if [ ! -e "$ICON" ]; then
-#         ICON="icons/${ICON}.png"
-#     fi
-# 
-#     if [ ! -e "$ICON" ]; then
-#         ICON_ORIG="$(./desktop-file.py "$i")"
-# 
-#         if [ "$(echo "$ICON_ORIG" | grep '.svg')" != "" ]; then
-#             ksvgtopng5 128 128 "$ICON_ORIG" "$HOME/.config/bigcontrolcenter/${ICON}"
-#             ICON="$HOME/.config/bigcontrolcenter/${ICON}"
-#         else
-#             ICON="$ICON_ORIG"
-#         fi
-# 
-#         if [ "$(echo "$CATEGORY" | grep "Star\|Design\|Hardware\|System\|Other")" = "" ]; then
-#             CATEGORY="Other"
-#         fi
-# 
-#     fi
-#         
-# 
-#     
-# 
-#     filename="$(echo "$i" | sed 's|.*/||g;s|.desktop||g')"
-#     . files/$filename
-# 
-# 
-#        echo "<div class=\"col-md-2 box waves-effect waves-light $CATEGORY\"><a onclick=\"_run('./run.run $EXEC')\" class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"400\" data-tooltip=\"$COMMENT\">
-#             <p class=\"name\"><img src=\"$ICON\" width=38 height=38> $NAME</p>
-#             </center></a>
-#         </div>" >> "$HOME/.config/bigcontrolcenter/cache.html"
-# 
-#         
-#     done
-# 
-# 
-# fi
-
 
 fi
 
 wait
+
+
+
+
+
 cat "$HOME/.config/bigcontrolcenter/cache.html"
 cat ~/.config/bigcontrolcenter/cache-*.html
 
+cat << EOF
+
+    </div>
+            </div>
+  </div>
+  
+        </div>
+      </div>
+  <div class="desenvolvidopor">
+    Desenvolvido por BigLinux 2022.
+  </div>
+  <div class="logo">
+    <a href="#"><img src="logo.png" class="logo-biglinux"></a>
+  </div>
+EOF
 
 
+if [ -e "$HOME/.config/bigcontrolcenter/show_other" ]; then
 
+  echo '<style>#Other{display: block !important;}</style>'
 
-##########################
-#
-#    ALL KCMSHELL5 CLOSE
-#
-##########################
+fi
 
-
-
-echo '</body></html>'
-
-
+cat << EOF
+<!-- partial -->
+  <script src="./script.js"></script>
+</body>
+</html>
+EOF
 IFS=$OIFS
+

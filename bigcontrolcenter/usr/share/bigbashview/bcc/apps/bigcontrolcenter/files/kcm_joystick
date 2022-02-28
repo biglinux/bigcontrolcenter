@@ -4,6 +4,5 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-
+NAME=$"Joystick"
 CATEGORY="Hardware"
-EXEC="kcmshell5 mouse kcm_workspace"

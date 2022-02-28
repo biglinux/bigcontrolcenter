@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+#COMMENT=$"Instale ou remova programas de forma simples e rápida."
+CATEGORY="System"

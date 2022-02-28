@@ -143,11 +143,18 @@ function charToUnicode( char ) {
 
 $(document).ready(function(){
     var $btns = $('.btn').click(function() {
-        if (this.id == 'all') {
-          $('#parent > div').fadeIn(450);
+        document.getElementById("search").value=""
+        if (this.id == 'Star') {
+          var $el = $('.' + this.id).fadeIn(450);
+          $('.apps-card > div').not($el).hide();
+        $btns.removeClass('active');
+        $(this).addClass('active');
+            $('.search').hide();        
         } else {
           var $el = $('.' + this.id).fadeIn(450);
-          $('#parent > div').not($el).hide();
+          $('.apps-card > div').not($el).hide();
+        $('.Staritem').hide();
+
         }
         $btns.removeClass('active');
         $(this).addClass('active');
@@ -156,14 +163,21 @@ $(document).ready(function(){
     var bigSearchInput=$("#search").on('input');
     
     var $search = $("#search").on('input',function(){
-        $btns.removeClass('active');
+            $('#search').trigger('click');
+        $('.Star').hide();
+        $('.content-section-star').hide();
+        $('.main-header').hide();
+        $('.search').show();
         var matcher = new RegExp(removeDiacritics($(this).val()), 'gi');
-        $('.box').show().not(function(){
-            return matcher.test(removeDiacritics($(this).find('.name, .sku').text()))
+        $('.box-items').show().not(function(){
+            return matcher.test(removeDiacritics($(this).find('.box-titulo, #tit-status-bar').text()))
         }).hide();
         
         var empty_search = $(this).val();
         if (empty_search == '') {
+            $('.main-header').show();
+            $('.content-section-star').show();   
+            $('.search').hide();
             $('#Star').trigger('click');
         }
     })

@@ -4,5 +4,5 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-CATEGORY="System"
+CATEGORY="Network"
 EXEC="kcmshell5 smb"

@@ -1,3 +1,7 @@
 #!/bin/bash
 
-inxi -c 2 -C -d -D -E -G -I -j -J -l -L -m -M -o -p -P -r -R -s -S -t -u -xx | ansi2html -f 18px -l | sed 's|^<span|<br><br><hr><br><span|i;s|#AAAAAA|#FFFFFF|g' > /tmp/inxi.tmp
+inxi -c 2 -C -d -D -E -G -I -j -J -l -L -m -M -o -p -P -r -R -s -S -t -u -xx | ansi2html -f 18px -l | sed 's|^<span|<br><br><span|i;s|#AAAAAA|#FFFFFF|g;s|<br><br><span class="|<br><br><span class="ansititle |g;s|<br><br><span class="|<br><br><span class="ansititle|g;s|span|div|g;s|<br><br>|</div><div class=content>|g;s|:</div>$|</div>|g' > /tmp/inxi.tmp
+
+#inxi -c 2 -C -d -D -E -G -I -j -J -l -L -m -M -o -p -P -r -R -s -S -t -u -xx | ansi2html -f 18px -l | sed 's|^<span|<br><br><span|i;s|#AAAAAA|#FFFFFF|g;s|<br><br><span class="|<br><br><span class="ansititle |g;s|<br><br><span class="|<br><br><span class="ansititle|g;s|span|div|g;s|<br><br>|</div><div class=content>|g;s|:</div>$|</div>|g' > /tmp/inxi.tmp
+
+#inxi -c 2 -C -d -D -E -G -i -I -j -J -f -F -l -L -m -M -m -o -p -P -r -R -s -S -t -u -a -xx | ansi2html -f 18px -l | sed 's|^<span|<br><br><span|i;s|#AAAAAA|#FFFFFF|g;s|<br><br><span class="|<br><br><span class="ansititle|g;s|<br><br><span class="|<br><br><span class="ansititle|g' > teste.html

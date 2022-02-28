@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+EXEC="kcmshell5 kcm_printer_manager"
+NAME=$"Impressoras"
+COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
+ICON="icons/icon_print.png"
+CATEGORY="Star Hardware"

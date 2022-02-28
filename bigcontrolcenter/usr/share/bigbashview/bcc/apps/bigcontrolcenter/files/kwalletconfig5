@@ -5,5 +5,5 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 NAME=$"Carteira de senhas do KDE"
-CATEGORY="Personalization"
+CATEGORY="Privacy"
 EXEC="kcmshell5 kwalletconfig5"

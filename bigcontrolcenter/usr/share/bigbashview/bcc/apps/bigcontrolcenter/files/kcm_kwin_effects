@@ -5,5 +5,5 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 
-CATEGORY="Design"
+CATEGORY="Personalization"
 EXEC="kcmshell5 kwincompositing kcm_kwin_effects"
