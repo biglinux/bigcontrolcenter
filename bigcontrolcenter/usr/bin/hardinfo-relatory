@@ -13,11 +13,13 @@ PROGRESS="/tmp/hardinfo-relaroty-progress"
 #Aguarde, esse processo pode demorar um pouco." --title $"System Info" &
 
 
-kdialog --progressbar $"Gerando o relatorio" --title $"Hardinfo Relatory" > /tmp/hardinfo-relaroty-progress
-
-PROGRESS="$(cat /tmp/hardinfo-relaroty-progress)"
+# kdialog --progressbar $"Gerando o relatorio" --title $"Hardinfo Relatory" > /tmp/hardinfo-relaroty-progress
+# 
+# PROGRESS="$(cat /tmp/hardinfo-relaroty-progress)"
 
 qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 10
+
+
 
 #################
 #   inxi
@@ -26,14 +28,210 @@ qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 10
 
 bigsudo urxvt -geometry 200x1 -e "/usr/share/bigbashview/bcc/apps/bigcontrolcenter/inxi" 
 
-cat /tmp/inxi.tmp > "$FILE_TO_SAVE"
+echo '<style>
+* {
+    font-family: 'ubuntu mono', monospace;
+    font-size: 17px;
+}
+
+.content {
+    background-color: #505050;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 16px;
+    color: #ffffff;
+}
+
+.ansi1 {
+    font-weight: bold;
+}
+.ansi34 {
+    color: #afe1ff !important;
+    display: inline;
+    line-height: 26px;
+}
+.ansititleansititle {
+    text-align-last: center;
+    /* padding-top: 15px; */
+    display: block !important;
+    color: #afe1ff !important;
+}
+
+textarea {
+    background-color: #505050;
+    color: white;
+    border: 0;
+    line-height: 26px;
+}
+
+.body_background {
+background: linear-gradient(to bottom, #414345, #232526);
+
+}
+</style>' > "$FILE_TO_SAVE"
+
+
+
+###########################
+# lspci special
+##########################
+
+OIFS=$IFS
+IFS=$'\n'
+
+
+echo '<style>
+table {
+    width: 100%;
+}
+th {
+    background: #dfdfdf;
+    border-radius: 16px;
+    padding: 3px;
+}
+td {
+    line-height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+};
+.color1 {
+ background: white;
+}
+.color2 {
+ background: red;
+}
+
+.color1 {
+    background: #505050;
+    color: white;
+}
+
+.color2 {
+    background: #404244;
+    color: #76f2ff;
+}
+a {
+    font-weight: bold;
+    color: #afe1ff;
+}
+td.search {
+    text-align: center;
+}
+</style>' >> "$FILE_TO_SAVE"
+
+
+################
+# PCI DEVICES
+################
+cat << EOF >> "$FILE_TO_SAVE"
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+PCI Devices
+</div>
+EOF
+
+echo '<table><tr><th>' >> "$FILE_TO_SAVE"
+echo $"Category" >> "$FILE_TO_SAVE"
+echo '</th><th>' >> "$FILE_TO_SAVE"
+echo $"Name" >> "$FILE_TO_SAVE"
+echo '</th><th>' >> "$FILE_TO_SAVE"
+echo $"ID" >> "$FILE_TO_SAVE"
+echo '</th><th>' >> "$FILE_TO_SAVE"
+echo $"Info" >> "$FILE_TO_SAVE"
+echo '</th></tr>' >> "$FILE_TO_SAVE"
+
+line=color1
+
+for i  in  $(lspci -nn); do
+
+if [ "$line" = "color2" ]; then
+    line=color1
+else
+    line=color2
+fi
+
+    echo "<tr class=$line><td>" >> "$FILE_TO_SAVE"
+    #Category
+    echo "$i" | cut -f2 -d: | cut -f2- -d" " | cut -f1 -d[ >> "$FILE_TO_SAVE"
+    echo '</td><td>' >> "$FILE_TO_SAVE"
+    #Name
+    echo "$i" | cut -f3 -d: | rev | cut -f2- -d[ | rev >> "$FILE_TO_SAVE"
+    echo '</td><td class=search>' >> "$FILE_TO_SAVE"
+    #ID
+    echo "$i" | rev | cut -f1 -d[ | rev | cut -f1 -d] >> "$FILE_TO_SAVE"
+    echo '</td><td class=search>' >> "$FILE_TO_SAVE"
+    #Search
+    ID_SEARCH="$(echo "$i" | rev | cut -f1 -d[ | rev | cut -f1 -d] | sed 's|:|-|g')" >> "$FILE_TO_SAVE"
+    echo "<a href=\"https://linux-hardware.org/?id=pci:${ID_SEARCH}\">" >> "$FILE_TO_SAVE"
+    echo "Info" >> "$FILE_TO_SAVE"
+    echo "</a>" >> "$FILE_TO_SAVE"
+    echo '</td></tr>' >> "$FILE_TO_SAVE"
+
+done
+
+echo '</table></div>' >> "$FILE_TO_SAVE"
+
+
+################
+# USB DEVICES
+################
+cat << EOF >> "$FILE_TO_SAVE"
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+USB Devices
+</div>
+EOF
+
+echo '<table><tr><th>' >> "$FILE_TO_SAVE"
+echo $"Name" >> "$FILE_TO_SAVE"
+echo '</th><th>' >> "$FILE_TO_SAVE"
+echo $"ID" >> "$FILE_TO_SAVE"
+echo '</th><th>' >> "$FILE_TO_SAVE"
+echo $"Info" >> "$FILE_TO_SAVE"
+echo '</th></tr>' >> "$FILE_TO_SAVE"
+
+line=color1
+
+for i  in  $(lsusb); do
+
+if [ "$line" = "color2" ]; then
+    line=color1
+else
+    line=color2
+fi
+
+    echo "<tr class=$line><td>" >> "$FILE_TO_SAVE"
+    #Name
+    echo "$i" | cut -f7- -d" " >> "$FILE_TO_SAVE"
+    echo '</td><td class=search>' >> "$FILE_TO_SAVE"
+    #ID
+    echo "$i" | cut -f6 -d" " >> "$FILE_TO_SAVE"
+    echo '</td><td class=search>' >> "$FILE_TO_SAVE"
+    #Search
+    ID_SEARCH="$(echo "$i" | cut -f6 -d" " | sed 's|:|-|g')" >> "$FILE_TO_SAVE"
+    echo "<a href=\"https://linux-hardware.org/?id=usb:${ID_SEARCH}\">" >> "$FILE_TO_SAVE"
+    echo "Info" >> "$FILE_TO_SAVE"
+    echo "</a>" >> "$FILE_TO_SAVE"
+    echo '</td></tr>' >> "$FILE_TO_SAVE"
+done
+
+echo '</table></div>' >> "$FILE_TO_SAVE"
+
+IFS=$OIFS
+
+
+
+
+
+
+cat /tmp/inxi.tmp >> "$FILE_TO_SAVE"
 rm -f /tmp/inxi.tmp
 
 
 qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 30
 
 
-hardinfo -a -m computer.so -m devices.so -f html -r >> "$FILE_TO_SAVE"
+#hardinfo -a -m computer.so -m devices.so -f html -r >> "$FILE_TO_SAVE"
 
 qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 
@@ -41,12 +239,14 @@ qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 # lspci
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">lspci</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+lspci
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(lspci -nn)
-
 
 
 -------------------------
@@ -55,7 +255,7 @@ Verbose mode:
 
 $(lspci -nvv)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -65,8 +265,11 @@ EOF
 # lsusb
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">lsusb</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+lsusb
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(lsusb)
@@ -79,7 +282,7 @@ Verbose mode:
 
 $(lsusb -v)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -89,13 +292,16 @@ EOF
 # fstab
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">/etc/fstab</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+/etc/fstab
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(cat /etc/fstab)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -104,13 +310,16 @@ EOF
 # lsmod
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">lsmod</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+lsmod
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(lsmod)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -120,8 +329,8 @@ EOF
 # # ip address
 # ###############################
 # cat << EOF >> "$FILE_TO_SAVE"
-# <table><tr><td colspan="2" class="stitle">ip address</td></tr></table>
-# <div style="float:left;width:100%;">
+# <div class="content">ip address</div>
+# <div class="text_area">
 # <textarea style="width:100%;" rows="20">
 # 
 # $(ip address)
@@ -136,8 +345,8 @@ EOF
 # # ip route
 # ###############################
 # cat << EOF >> "$FILE_TO_SAVE"
-# <table><tr><td colspan="2" class="stitle">ip route</td></tr></table>
-# <div style="float:left;width:100%;">
+# <div class="content">ip route</div>
+# <div class="text_area">
 # <textarea style="width:100%;" rows="20">
 # 
 # $(ip route)
@@ -153,13 +362,16 @@ EOF
 # rfkill list (Wifi and Bluetooth)
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">rfkill list (Wifi and Bluetooth)</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+rfkill list (Wifi and Bluetooth)
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(rfkill list)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -169,8 +381,8 @@ qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 # # nmcli network
 # ###############################
 # cat << EOF >> "$FILE_TO_SAVE"
-# <table><tr><td colspan="2" class="stitle">nmcli network</td></tr></table>
-# <div style="float:left;width:100%;">
+# <div class="content">nmcli network</div>
+# <div class="text_area">
 # <textarea style="width:100%;" rows="20">
 # 
 # nmcli general status:
@@ -198,8 +410,8 @@ qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 # # iwlist scan wifi
 # ###############################
 # cat << EOF >> "$FILE_TO_SAVE"
-# <table><tr><td colspan="2" class="stitle">iwlist scan wifi</td></tr></table>
-# <div style="float:left;width:100%;">
+# <div class="content">iwlist scan wifi</div>
+# <div class="text_area">
 # <textarea style="width:100%;" rows="20">
 # 
 # $(iwlist scan)
@@ -215,8 +427,8 @@ qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 # # ping
 # ###############################
 # cat << EOF >> "$FILE_TO_SAVE"
-# <table><tr><td colspan="2" class="stitle">ping route and 8.8.8.8</td></tr></table>
-# <div style="float:left;width:100%;">
+# <div class="content">ping route and 8.8.8.8</div>
+# <div class="text_area">
 # <textarea style="width:100%;" rows="20">
 # 
 # ping route:
@@ -239,13 +451,16 @@ qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 # mhwd -l
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">mhwd -l</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+mhwd -l
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(mhwd -l)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -253,13 +468,16 @@ EOF
 # mhwd -li
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">mhwd -li</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+mhwd -li
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(mhwd -li)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -268,13 +486,16 @@ EOF
 # mhwd -lh
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">mhwd -lh</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+mhwd -lh
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(mhwd -lh)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -284,13 +505,16 @@ EOF
 # mhwd-kernel -l
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">mhwd-kernel -l</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+mhwd-kernel -l
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(mhwd-kernel -l)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
@@ -299,13 +523,16 @@ EOF
 # mhwd-kernel -li
 ###############################
 cat << EOF >> "$FILE_TO_SAVE"
-<table><tr><td colspan="2" class="stitle">mhwd-kernel -li</td></tr></table>
-<div style="float:left;width:100%;">
+<div class="content">
+<div class="ansititleansititle ansi1 ansi34">
+mhwd-kernel -li
+</div>
+<div class="text_area">
 <textarea style="width:100%;" rows="20">
 
 $(mhwd-kernel -li)
 
-</textarea></div>
+</textarea></div></div>
 
 EOF
 
