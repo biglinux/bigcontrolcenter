@@ -1,28 +1,57 @@
 #!/bin/bash
 
-mkdir -p /usr/share/kservices5/bigcontrolcenter/
+#diretorio onde vão estar os arquivos ocultos do menu
+bigdir=/usr/share/applications/bigcontrolcenter
 
-for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "tlpui.desktop" "kdesystemsettings.desktop" "org.kde.kinfocenter.desktop" "grub-customizer.desktop" "biglinux-tweaks.desktop" "kvantummanager.desktop" "manjaro-settings-manager.desktop" "msm_kde_notifier_settings.desktop" "designer.desktop" "linguist.desktop" "qdbusviewer.desktop" "assistant.desktop" "UserFeedbackConsole.desktop" "cmake-gui.desktop" "avahi-discover.desktop" "bssh.desktop" "bvnc.desktop" "htop.desktop" "lstopo.desktop" "cups.desktop" "org.gnome.baobab.desktop" "qv4l2.desktop" "qvidcap.desktop" "mpv.desktop" "hplip.desktop" "hp-uiscan.desktop"; do
+#criar o diretorio 
+mkdir -p $bigdir
 
+#lista dos arquivos a serem desocultados
+for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "tlpui.desktop" "kdesystemsettings.desktop" "org.kde.kinfocenter.desktop" "grub-customizer.desktop" "biglinux-tweaks.desktop" "kvantummanager.desktop" "manjaro-settings-manager.desktop" "msm_kde_notifier_settings.desktop" "designer.desktop" "linguist.desktop" "qdbusviewer.desktop" "assistant.desktop" "UserFeedbackConsole.desktop" "cmake-gui.desktop" "avahi-discover.desktop" "bssh.desktop" "bvnc.desktop" "htop.desktop" "lstopo.desktop" "cups.desktop" "org.gnome.baobab.desktop" "qv4l2.desktop" "qvidcap.desktop" "mpv.desktop" "hplip.desktop" "hp-uiscan.desktop" "systemsettings.desktop" "kdesettings.desktop" "org.kde.kuserfeedback-console.desktop"; do
 
+#add /usr/share/kservices5/kcm_kscreen.desktop
+
+    #remover as entradas do KCModulee Type=Service e desocultar a categoria
     if [ -e "/usr/share/applications/$i" ]; then
-        mv -f "/usr/share/applications/$i" "/usr/share/kservices5/bigcontrolcenter/$i"
-        sed -i 's|QT_QUICK_BACKEND= ||g' "/usr/share/kservices5/bigcontrolcenter/$i"
-        echo 'X-KDE-ServiceTypes=KCModule
-Type=Service' >> "/usr/share/kservices5/bigcontrolcenter/$i"
+        mv -f "/usr/share/applications/$i" "$bigdir/$i"
+        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i"
+#         sed -i '/X-KDE-ServiceTypes=KCModule/d' "$bigdir/$i"
+#         sed -i '/Type=Service/d' "$bigdir/$i"
+        sed -i '/Categories/s/^/#/' "$bigdir/$i" 
+        
+    elif [ -e "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
+        mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "$bigdir/$i"
+        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i"
+        sed -i '/Categories/s/^/#/' "$bigdir/$i" 
+    
+        
+#         sed -i 's|QT_QUICK_BACKEND= ||g' "$bigdir/$i"
+#         echo 'X-KDE-ServiceTypes=KCModule
+# Type=Service' >> "$bigdir/$i"
+
+#         if [ -n "$(grep StartupNotify $bigdir/$i)" ]; then
+#             sed -i 's/StartupNotify=.*/StartupNotify=true/' "$bigdir/$i"
+#         else
+#             echo StartupNotify=true >> "$bigdir/$i"
+#         fi
     fi
 
     if [ -e "/usr/share/applications/$i" ]; then
-		EXEC="$(which $(grep -m1 "Exec=" "/usr/share/kservices5/bigcontrolcenter/$i" | cut -f2 -d= | cut -f1 -d" "))"
+		EXEC="$(which $(grep -m1 "Exec=" "$bigdir/$i" | cut -f2 -d= | cut -f1 -d" "))"
 		if [ "$EXEC" = "" ]; then
-			rm -f "/usr/share/kservices5/bigcontrolcenter/$i"
+			rm -f "$bigdir/$i"
 		fi
     fi
 
 done
+if [ -z "$(grep NoDisplay=true /usr/share/desktop-directories/kf5-unknown.directory  )" ]; then 
+    echo "NoDisplay=true" | tee -a /usr/share/desktop-directories/kf5-unknown.directory
+fi
 
-    if [ -e "/usr/share/applications/systemsettings.desktop" ]; then
-        mv -f "/usr/share/applications/systemsettings.desktop" "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop"
-        echo 'X-KDE-ServiceTypes=KCModule
-Type=Service' >> "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop"
-    fi
+update-desktop-database
+
+#     if [ -e "/usr/share/applications/systemsettings.desktop" ]; then
+#         mv -f "/usr/share/applications/systemsettings.desktop" "$bigdir/kdesettings.desktop"
+#         echo 'X-KDE-ServiceTypes=KCModule
+# Type=Service' >> "$bigdir/kdesettings.desktop"
+#     fi
