@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+EXEC="idevice-mounter"
+NAME=$"Montar Hardware Apple"
+COMMENT=$"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao acesso de arquivos em um pendrive."
+CATEGORY="Phone"

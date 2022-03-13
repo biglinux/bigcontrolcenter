@@ -4,5 +4,5 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-EXEC="kcmshell5 kwindecoration classikdecorationconfig"
-CATEGORY="Personalization"
+
+CATEGORY="About" 

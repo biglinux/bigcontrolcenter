@@ -4,7 +4,8 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-NAME=$"Qt Designer"
+
+NAME=$"Qt QDBusViewer "
 COMMENT=$"Programas de desenvolvimento para QT."
-ICON="icons/QtProject-designer.png"
+ICON="icons/qdbusviewer.png"
 CATEGORY="Desenv"

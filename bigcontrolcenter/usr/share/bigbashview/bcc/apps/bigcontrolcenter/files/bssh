@@ -4,4 +4,6 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-ICON="icons/network-01.png"
+NAME=$"Procurar servidores SSH"
+ICON="icons/icon_find-server-SSH.png"
+CATEGORY="Server"

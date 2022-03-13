@@ -4,5 +4,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-EXEC="kcmshell5 kwindecoration classikdecorationconfig"
-CATEGORY="Personalization"
+#NAME=$"Criar pen drive de boot"
+COMMENT=""
+CATEGORY="System"
+ICON="icons/mintstick.png"

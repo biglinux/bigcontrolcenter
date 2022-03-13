@@ -1,7 +1,12 @@
+#tit-status-bar:empty{
+  display:none;
+}
 
 .hide {
   display: none;
 }
+
+
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type=checkbox],
@@ -711,6 +716,11 @@ body.light-mode .video-bg:before {
   margin-right: 14px;
 }
 
+.img-content .img {
+  width: 64px; 
+  margin: 0 10px 0 0;
+}
+
 .content-text {
   font-weight: 400;
   font-size: 14px;
@@ -1052,9 +1062,7 @@ body.light-mode .video-bg:before {
   margin-right: 12px;
   flex-shrink: 0;
 }
-.app-card + .app-card {
-  margin-left: 20px;
-}
+
 .app-card span {
   display: flex;
   align-items: center;
@@ -1275,6 +1283,9 @@ display: -webkit-box;
   left: 240px;
 }
 
+#tit-status-bar:empty{
+display:none;
+}
 
 #tit-status-bar {
   position: static;

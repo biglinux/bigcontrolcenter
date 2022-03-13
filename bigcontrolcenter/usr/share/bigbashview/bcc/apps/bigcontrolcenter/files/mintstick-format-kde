@@ -4,5 +4,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-EXEC="kcmshell5 kwindecoration classikdecorationconfig"
-CATEGORY="Personalization"
+#NAME=$"Formatar pen drive"
+COMMENT=""
+CATEGORY="System"
+ICON="icons/pendrive.png"

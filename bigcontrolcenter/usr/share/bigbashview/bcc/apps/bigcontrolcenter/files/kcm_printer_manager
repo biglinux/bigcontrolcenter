@@ -6,6 +6,6 @@ export TEXTDOMAIN=bigcontrolcenter
 
 EXEC="kcmshell5 kcm_printer_manager"
 NAME=$"Impressoras"
-COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
+COMMENT=$"Instalar, configurar ou remover impressoras."
 ICON="icons/icon_print.png"
 CATEGORY="Star Hardware"

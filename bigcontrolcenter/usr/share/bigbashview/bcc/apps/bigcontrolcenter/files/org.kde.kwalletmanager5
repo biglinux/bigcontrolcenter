@@ -4,5 +4,6 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-EXEC="kcmshell5 kwindecoration classikdecorationconfig"
-CATEGORY="Personalization"
+NAME=$"Gerenciar senhas salvas"
+CATEGORY="Privacy"
+COMMENT=""

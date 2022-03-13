@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+EXEC="pavucontrol-qt"
+NAME=$"Som e microfone"
+COMMENT=$"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+ICON="icons/kmix.png"
+CATEGORY="Star Multimedia"

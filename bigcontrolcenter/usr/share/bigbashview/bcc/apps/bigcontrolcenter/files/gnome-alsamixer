@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+EXEC="gnome-alsamixer"
+NAME=$"Gerenciador de áudio avançado - Alsamixer"
+COMMENT=$"Controlador de áudio em caso de ausência som."
+ICON="icons/audio-01.png"
+CATEGORY="Multimedia"

@@ -4,4 +4,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-EXEC="Dev"
+NAME=$"Qt Linguist"
+COMMENT=$"Programas de desenvolvimento para QT."
+ICON="icons/linguist.png"
+CATEGORY="Desenv"

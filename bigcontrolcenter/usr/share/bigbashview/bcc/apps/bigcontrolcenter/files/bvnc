@@ -4,5 +4,6 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-ICON="icons/network-01.png"
-CATEGORY="Network"
+NAME=$"Procurar servidores VNC"
+ICON="icons/icon_find-server-VNC.png"
+CATEGORY="Server"

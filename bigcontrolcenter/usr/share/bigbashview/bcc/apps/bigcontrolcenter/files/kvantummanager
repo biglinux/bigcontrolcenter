@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+NAME=$"Configurar o tema Kvantum"
+COMMENT=$"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
+CATEGORY="Personalization"
+ICON="icons/kvantum.png"

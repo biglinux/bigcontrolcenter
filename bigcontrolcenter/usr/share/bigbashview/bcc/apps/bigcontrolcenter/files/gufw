@@ -4,7 +4,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-NAME=$"Carteira de senhas do KDE"
+NAME=$"Firewall"
+COMMENT=$"Configurar regras de segurança para a conexão com a internet."
 CATEGORY="Privacy"
-EXEC="kcmshell5 kwalletconfig5"
-COMMENT=""
+ICON="icons/gufw.png"

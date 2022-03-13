@@ -4,6 +4,8 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-COMMENT=$"Instalar ou remover programas."
+EXEC="systemsettings"
+NAME=$"Centro de controle do KDE"
+COMMENT=""
 CATEGORY="System"
-ICOSN="icons/icon-big-store.png"
+ICON="icons/systemsettings.png"

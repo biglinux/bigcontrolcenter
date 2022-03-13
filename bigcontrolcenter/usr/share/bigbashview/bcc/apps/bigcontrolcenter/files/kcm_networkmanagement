@@ -4,5 +4,8 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-NAME=$"Conectar à internet"
-CATEGORY="Network Star"
+EXEC="kcmshell5 kcm_networkmanagement"
+NAME=$"Gerenciar conexões"
+COMMENT=$"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga móvel e outros)."
+ICON="icons/icon_gerenciar-conexoes.png"
+CATEGORY="Network"

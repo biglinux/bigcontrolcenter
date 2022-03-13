@@ -4,5 +4,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-EXEC="kcmshell5 kwindecoration classikdecorationconfig"
-CATEGORY="Personalization"
+NAME=$"Scanners HP"
+COMMENT=""
+ICON="icons/icon_scanner-HP.png"
+CATEGORY="Hardware"

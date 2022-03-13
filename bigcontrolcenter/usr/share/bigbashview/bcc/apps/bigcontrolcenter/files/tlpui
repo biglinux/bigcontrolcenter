@@ -5,6 +5,7 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 
-CATEGORY="System"
-NAME="Gerenciar serviços (Systemd)"
+NAME=$"Configurador avançado de energia"
 COMMENT=""
+ICON="icons/power-manager.png"
+CATEGORY="Hardware"

@@ -52,15 +52,17 @@ SEARCH_Result=$"Resultado da pesquisa"
 TITLE=$"Central de Controle"
 CLOSE=$"Fechar"
 
+RELOAD="0"
+
 ####################################
 # Verify number of kcmshell5 changed
 ####################################
 if [ ! -e "$HOME/.config/bigcontrolcenter/kcmshell_number" ]; then
-    grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+    grep -Rl 'kcm_' /usr/share/applications/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
     RELOAD="1"
 else
-    if [ "$(grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/kcmshell_number")" ]; then
-        grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+    if [ "$(grep -Rl 'kcm_' /usr/share/applications/ | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/kcmshell_number")" ]; then
+        grep -Rl 'kcm_' /usr/share/applications/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
         RELOAD="1"
     fi
 fi
@@ -86,11 +88,11 @@ fi
 # Desativar Cache 
 #################
 
-RELOAD=1 # Desativado RELOAD=1
+#RELOAD=1 # Desativado RELOAD=1
 
 if [ "$RELOAD" = "1" ]; then
-    rm -f ~/.config/bigcontrolcenter/cache*html
-
+    rm -f ~/.config/bigcontrolcenter/cache*
+    rm -f ~/.config/bigcontrolcenter/icons/*
 	#########################################################
 	# START CACHE 1
 	#########################################################
@@ -109,7 +111,12 @@ cat << EOF
   <script src="./filter.js"></script>
   
 </head>
-<body>
+EOF
+
+# Get body tag with color light or not
+/usr/share/bigbashview/bcc/shell/getbgcolor.sh
+
+cat <<EOF
 <div class="dark-light">
   <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
@@ -248,8 +255,8 @@ cat << EOF
           <div id="welcome" class="content-wrapper-header Star Staritem">
             <div class="content-wrapper-context">
               <h3 class="img-content">
-                <img src="icon.png" style="width: 48px; margin: 0 10px 0 0;">
-                Bem vindo ao Central de Controle
+                <img class="img-content img" src="icon.png">
+                Bem-Vindo(a) ao Central de Controle
               </h3>
               <div class="content-text Star">Usado para configurar todo o sistema do BigLinux o Central de Controle é simples e intuitivo com programas e scripts pré-instalados.</div>
               <!-- <button class="content-button">Conheça</button> -->
@@ -272,7 +279,7 @@ EOF
     NAME=$"Aparência, desempenho e usabilidade"
     COMMENT=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
 cat << EOF
-              <div class="app-card">
+              <div class="app-card" onclick="_run('./run.run $EXEC')">
                 <span><svg viewBox="0 0 512 512">
                     <path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
                   </svg>
@@ -290,9 +297,9 @@ cat << EOF
 EOF
 EXEC="biglinux-config"
 NAME=$"Restaurar a configuração de programas"
-COMMENT=$"Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
+COMMENT="Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
 cat << EOF
-              <div class="app-card">
+              <div class="app-card" onclick="_run('./run.run $EXEC')">
                 <span><svg viewBox="0 0 640 512">
                     <path fill="currentColor" d="M256.47 216.77l86.73 109.18s-16.6 102.36-76.57 150.12C206.66 523.85 0 510.19 0 510.19s3.8-23.14 11-55.43l94.62-112.17c3.97-4.7-.87-11.62-6.65-9.5l-60.4 22.09c14.44-41.66 32.72-80.04 54.6-97.47 59.97-47.76 163.3-40.94 163.3-40.94zM636.53 31.03l-19.86-25c-5.49-6.9-15.52-8.05-22.41-2.56l-232.48 177.8-34.14-42.97c-5.09-6.41-15.14-5.21-18.59 2.21l-25.33 54.55 86.73 109.18 58.8-12.45c8-1.69 11.42-11.2 6.34-17.6l-34.09-42.92 232.48-177.8c6.89-5.48 8.04-15.53 2.55-22.44z" />
                   </svg>
@@ -311,7 +318,7 @@ EXEC="hardinfo-relatory"
 NAME=$"Gerar relatório com informações"
 COMMENT=$"Cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com o suporte."
 cat << EOF
-              <div class="app-card">
+              <div class="app-card" onclick="_run('./run.run $EXEC')">
                 <span><svg aria-hidden="true" focusable="false" data-prefix="far" viewBox="0 0 496 512" class="far fa-info-circle">
 
                     <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" />
@@ -458,22 +465,6 @@ echo "<script>
 #
 ######################################
 
-# NAME=$"Conectar à internet"
-# COMMENT=$"Configurações de rede em geral"
-# ICON="icons/applications-internet.png"
-# DESCRIPTION=$"A forma mais simples de conectar à internet é utilizando o ícone localizado perto do relógio do sistema, porém, aqui você tem acesso a mais opções de configurações de rede."
-# CATEGORY="Star Network"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-# 
-# cat << EOF
-#  
-# EOF
-
-######
-# 01
-######
-
 if [ -e "/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement" ]; then
 
 EXEC="plasmawindowed org.kde.plasma.networkmanagement"
@@ -486,41 +477,6 @@ SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 fi
 
-######
-# 02
-######
-
-# if [ -e "/usr/bin/nm-connection-editor" ]; then
-# 
-# EXEC="nm-connection-editor"
-# NAME=$"Gerenciador completo"
-# COMMENT=$"Para configurações de rede mais complexas."
-# ICON="icons/network-02.png"
-# CATEGORY="Network"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-# 
-# fi
-
-######
-# 03
-######
-
-if [ -e "/usr/share/kservices5/kcm_networkmanagement.desktop" ]; then
-
-EXEC="kcmshell5 kcm_networkmanagement"
-NAME=$"Gerenciar conexões"
-COMMENT=$"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga móvel e outros)."
-ICON="icons/icon_gerenciar-conexoes.png"
-CATEGORY="Network"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######
-# 04
-######
 EXEC=""
 NAME=$"Conectar à internet utilizando o Android"
 COMMENT=$"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu computador."
@@ -568,52 +524,6 @@ cat << EOF
                   </div>
 EOF
 
-######################################
-#
-#   CONECTAR A INTERNET CLOSE
-#
-######################################
-
-######################################
-#
-#   HARDINFO OPEN
-#
-######################################
-
-#if [ -e "/usr/bin/hardinfo" ]; then
-
-#     NAME=$"Informações do sistema e hardware"
-#     COMMENT=$"Veja um relatório completo sobre o computador."
-#     ICON="icons/info.png"
-#     CATEGORY="Star"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 01
-######
-
-# EXEC="kinfocenter"
-# NAME=$"Exibir informações"
-# COMMENT=$"Veja um painel com diversas informações do sistema."
-# ICON="icons/kinfocenter.png"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 02
-######
-
-# EXEC="bigsudo hardinfo"
-# NAME=$"Exibir informações complementares"
-# COMMENT=$"Veja as informações e faça testes de desempenho."
-# ICON="icons/hardinfo.png"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 03
-######
 
 EXEC="hardinfo-relatory"
 NAME=$"Gerar relatório com informações"
@@ -622,768 +532,202 @@ ICON="icons/relatory.png"
 CATEGORY="About"
 SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-#fi
-######################################
-#
-#   HARDINFO CLOSE
-#
-######################################
-
-
-######################################
-#
-#   AUDIO OPEN
-#
-######################################
-
-if [ -e "/usr/bin/pavucontrol-qt" ]; then
-
-EXEC="pavucontrol-qt"
-NAME=$"Som e microfone"
-COMMENT=$"Configure o áudio ou altere dispositivos de entrada e saída de som. (Ex: HDMI)"
-ICON="icons/kmix.png"
-CATEGORY="Star Multimedia"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######
-# 04
-######
-
-if [ -e "/usr/bin/alsamixer" ]; then
-
-EXEC="gnome-alsamixer"
-NAME=$"Gerenciador de áudio avançado - Alsamixer"
-COMMENT=$"Utilize esse controlador de áudio caso esteja sem som."
-ICON="icons/audio-01.png"
-CATEGORY="Multimedia"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-    
-######################################
-#
-#   AUDIO CLOSE
-#
-######################################
-######################################
-#
-#   POWER OPEN
-#
-######################################
-
-# NAME=$"Economia de energia"
-# COMMENT=$"Defina quanto espearar para desligar a tela e várias outras opções para economizar energia."
-# ICON="icons/power-manager2.png"
-# CATEGORY="Hardware"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 01
-######
-
-if [ -e "/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so" ]; then
-
-EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
-NAME=$"Economia de energia"
-COMMENT=$"Defina as configurações básicas de economia de energia."
-ICON="icons/preferences-system-power-management.png"
-CATEGORY="Hardware"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######
-# 02
-######
-
-if [ -e "/usr/bin/tlpui" ]; then
-
-EXEC="tlpui"
-NAME=$"Configurações de energia do sistema"
-COMMENT=$"Esse configurador deve ser utilizado apenas por pessoas com conhecimentos mais avançados sobre o sistema."
-ICON="icons/power-manager.png"
-CATEGORY="Hardware"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######################################
-#
-#   POWER CLOSE
-#
-######################################
-
-
-######################################
-#
-#   USERS OPEN
-#
-######################################
- 
-# NAME=$"Gerenciador de usuários"
-# COMMENT=$"Adiciona, remove ou edita usuários e grupos do sistema."
-# ICON="icons/preferences-system-users.png"
-# CATEGORY="System"
-#  
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-# ######
-# # 01
-# ######
 if [ -e "/usr/bin/manjaro-settings-manager" ]; then
  EXEC="manjaro-settings-manager -m msm_users"
  NAME=$"Adicionar ou Remover Usuários"
- COMMENT=$"Criar ou remover contas de usuários."
+ COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
  ICON="icons/icon_useraccount.png"
  CATEGORY="Account"
    
  SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 fi
 
-# EXEC="kcmshell5 kcm_users"
-# NAME=$"Gerenciador simples"
-# COMMENT=$"Gerenciador padrão do KDE, não possui recursos pra gerenciar grupos."
-# ICON="icons/preferences-system-users.png"
-#  
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
- 
-# ######
-# # 02
-# ######
- 
-# EXEC="lxqt-admin-user"
-# NAME=$"Gerenciador avançado"
-# COMMENT=$"Gerenciador padrão do LXQT, possui recursos avançados para gerenciar grupos."
-# ICON="icons/user.png"
-#  
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######################################
-#
-#   USERS CLOSE
-#
-###################################### 
-######################################
-#
-#   SCREEN OPEN
-#
-######################################
-# NAME=$"Configurações da tela"
-# COMMENT=$"Configurações gerais do monitor."
-# ICON="icons/preferences-desktop-display.png"
-# CATEGORY="Hardware"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 01
-######
-
-EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
-NAME=$"Monitores e Telas"
-COMMENT=$"Configurações de resolução, cor, frequência, dpi, escala, cor noturna, etc."
-ICON="icons/preferences-desktop-display.png"
-CATEGORY="Star Hardware"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-
-EXEC="./kscreen_clean.sh"
-NAME=$"Resetar as configurações da tela"
-COMMENT=$"Em alguns casos para que as configurações do monitor voltem a funcionar adequedamente é necessário remover os arquivos antigos."
-ICON="icons/icon_reset-screen.png"
-CATEGORY="Hardware"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######################################
-#
-#   SCREEN CLOSE
-#
-######################################
-######################################
-#
-#   ANDROID OPEN
-#
-######################################
-
-
-# NAME=$"Interação com smartphones e tablets"
-# COMMENT=$"Transfira arquivos e faça outras interações entre seu smartphone ou tablet e o computador.  Algumas soluções apresentadas também podem transferir arquivos entre dois computadores."
-# ICON="icons/smartphone.png"
-# CATEGORY="Star"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 01
-######
-
-if [ -e "/usr/bin/kdeconnect-settings" ]; then
-
-EXEC="kdeconnect-settings"
-NAME=$"KDE Connect"
-COMMENT=$"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets localizados perto do relógio do sistema.  Para sincronizar com o seu smartphone acesse a Google Store em seu telefone e instale o Kde Connect.  Esse aplicativo não está disponível para iPhone."
-ICON="icons/preferences-kde-connect.png"
-CATEGORY="Phone"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-
-######
-# 03
-######
-
-if [ -e "/usr/bin/idevice-mounter" ]; then
-
-EXEC="idevice-mounter"
-NAME=$"Montar Hardware Apple"
-COMMENT=$"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao acesso de arquivos em um pendrive."
-ICON="icons/idevice.png"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######
-# 04
-######
-#WEBAPP
-EXEC="xdg-open https://web.airmore.com"
-NAME=$"Airmore"
-COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-ICON="icons/airmore.png"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 05
-######
-
-#WEBAPP
-EXEC="xdg-open https://web.airdroid.com"
-NAME=$"Airdroid"
-COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-ICON="icons/airdroid.png"
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-#WEBAPP
-EXEC="xdg-open https://snapdrop.net"
-NAME=$"Snapdrop (Não precisa de aplicativo)"
-COMMENT=$"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-ICON="icons/snapdrop.png"
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######################################
-#
-#   ANDROID CLOSE
-#
-######################################
-######################################
-#
-#   ANDROID WIFI
-#
-######################################
-######################################
-#
-#   ANDROID WIFI CLOSE
-#
-######################################
-#########################################################
-# START CACHE 2
-#########################################################
 if [ "$RELOAD" = "1" ]; then
 
+    if [ -e "/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so" ]; then
 
-########################################
-#
-#   biglinux-themes-gui
-#
-########################################
+    EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
+    NAME=$"Economia de energia"
+    COMMENT=""
+    ICON="icons/preferences-system-power-management.png"
+    CATEGORY="Hardware"
 
-if [ -e "/usr/bin/biglinux-themes-gui" ]; then
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    EXEC="biglinux-themes-gui"
-    NAME=$"Aparência, desempenho e usabilidade"
-    COMMENT=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-    CATEGORY="Design"
-    ICON="icons/icon-aparencia-desempenho-usabilidade.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-   
-fi
-
-#VERIFICAR FUNCIONANEMTO
-EXEC="waydroid-gui-big"
-NAME=$"Suporte a aplicativos Android"
-COMMENT=$"Utilize programas feitos para Android no seu BigLinux.  * Este recurso ainda está em fase experimental."
-CATEGORY="Phone"
-ICON="icons/waydroid.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-########################################
-#
-#   kvantummanager
-#
-########################################
-
-if [ -e "/usr/bin/kvantummanager" ]; then
-
-EXEC="kvantummanager"
-NAME=$"Configurações do estilo do aplicativo Kvantum"
-COMMENT=$"Utilize essa opção para configurar o estilo Kvantum, lembre que é preciso utilizar a outra opção de Estilo do aplicativo para selecionar o tema Kvantum."
-CATEGORY="Design"
-ICON="icons/kvantum.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   dolphin
-#
-########################################
-
-if [ -e "/usr/bin/dolphin" ]; then
-
-EXEC="dolphin"
-NAME=$"Gerenciar arquivos"
-COMMENT=$"Tenha acesso a seus arquivos e pastas."
-CATEGORY="System"
-ICON="icons/system-file-manager.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   konsole
-#
-########################################
-
-if [ -e "/usr/bin/konsole" ]; then
-
-EXEC="konsole --workdir $HOME"
-NAME=$"Terminal"
-COMMENT=$"Acesse o terminal de comandos."
-CATEGORY="System"
-ICON="icons/terminal.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   kcmshell5 msm_mhwd
-#
-########################################
-
-if [ -e "/usr/share/kservices5/msm_mhwd.desktop" ]; then
-
-EXEC="kcmshell5 msm_mhwd"
-NAME=$"Instalar drivers"
-COMMENT=$"Alguns Hardware, principalmente de WiFi ou placas de vídeo Nvidia podem precisar da instalação de drivers."
-CATEGORY="Star Hardware"
-ICON="/icons/driver.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######################################
-#
-#   PRINTER OPEN
-#
-######################################
-
-# if [ -e "/usr/bin/kde-add-printer" ]; then
-# 
-# EXEC="kcmshell5 kcm_printer_manager"
-# NAME=$"Impressoras"
-# COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
-# ICON="icons/printer.png"
-# CATEGORY="Star Hardware"
-# 
-# CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-# 
-# fi
-
-# NAME=$"Impressora e scanner"
-# COMMENT=$"Adiconar ou configurar impressoras ou scanner."
-# ICON="icons/printer.png"
-# CATEGORY="Star Hardware"
-# 
-# CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 01
-######
-
-# EXEC="system-config-printer"
-# NAME=$"Adicionar ou remover impressoras"
-# COMMENT=$"Se precisar instalar, configurar ou remover uma impressora, utilize essa opção."
-# ICON="icons/printer.png"
-# CATEGORY="Star Hardware"
-# 
-# CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 02
-######
-
-if [ -e "/usr/bin/hp-toolbox" ]; then
-
-EXEC="hp-toolbox"
-NAME=$"Impressoras HP"
-COMMENT=$"Se a sua impressora for da marca HP e não funcionou corretamente com o gerênciador acima, utilize esta opção."
-ICON="icons/icon_print-HP.png"
-CATEGORY="Hardware"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######
-# 03
-######
-
-if [ -e "/usr/bin/hp-uiscan" ]; then
-
-EXEC="hp-uiscan"
-NAME=$"Scanners HP"
-COMMENT=$"Em geral basta plugar o scanner na porta USB e utilizar, mas se estiver utilizando um scanner da marca HP, essa opção pode ser útil."
-ICON="icons/icon_scanner-HP.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-######################################
-#
-#   PRINTER CLOSE
-#
-######################################
+    fi
 
 
-########################################
-#
-#   gparted
-#
-########################################
+    ######
 
-if [ -e "/usr/sbin/gparted" ]; then
+    EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
+    NAME=$"Monitores e Telas"
+    COMMENT=$"Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
+    ICON="icons/preferences-desktop-display.png"
+    CATEGORY="Star Hardware"
 
-EXEC="gparted"
-NAME=$"Particionar ou formatar"
-COMMENT=$"Cuidado ao utilizar esse programa, caso não saiba o que está fazendo poderá apagar todos os dados do computador."
-CATEGORY="System"
-ICON="icons/gparted.png"
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    EXEC="./kscreen_clean.sh"
+    NAME=$"Resetar as configurações da tela"
+    COMMENT=$"Restaurar a configuração padrão do monitor."
+    ICON="icons/icon_reset-screen.png"
+    CATEGORY="Hardware"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    ######################################
+    #
+    #   SCREEN CLOSE
+    #
+    ######################################
+    ######################################
+    #
+    #   ANDROID OPEN
+    #
+    ######################################
+
+
+    #WEBAPP
+    EXEC="xdg-open https://web.airmore.com"
+    NAME=$"Airmore"
+    CATEGORY="Phone"
+    COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+    ICON="icons/airmore.png"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    #WEBAPP
+    EXEC="xdg-open https://web.airdroid.com"
+    NAME=$"Airdroid"
+    CATEGORY="Phone"
+    COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+    ICON="icons/airdroid.png"
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    #WEBAPP
+    EXEC="xdg-open https://snapdrop.net"
+    CATEGORY="Phone"
+    NAME=$"Snapdrop (Não precisa de aplicativo)"
+    COMMENT=$"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+    ICON="icons/snapdrop.png"
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+
+
+
+
+    #VERIFICAR FUNCIONANEMTO
+    EXEC="waydroid-gui-big"
+    NAME=$"Suporte a aplicativos Android"
+    COMMENT=$"Utilize programas feitos para Android no seu BigLinux.  * Este recurso ainda está em fase experimental."
+    CATEGORY="Phone"
+    ICON="icons/waydroid.png"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+
+
+
+    ########################################
+    #
+    #   kcmshell5 msm_mhwd
+    #
+    ########################################
+
+    if [ -e "/usr/share/kservices5/msm_mhwd.desktop" ]; then
+
+    EXEC="kcmshell5 msm_mhwd"
+    NAME=$"Instalar drivers e firmwares"
+    COMMENT=""
+    CATEGORY="Star Hardware"
+    ICON="/icons/driver.png"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    fi
+
+
+
+
+
+    ########################################
+    #
+    #   Timeshift
+    #
+    ########################################
+
+    if [ -e "/usr/bin/timeshift-launcher" ]; then
+
+    EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
+    NAME=$"Snapshots e backups"
+    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
+        COMMENT=$"Gerenciar pontos de restauração."
+    else
+        COMMENT=$"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer backups utilizando o método rsync."
+    fi
+
+    if [ -e "/run/miso/bootmnt" ]; then
+        COMMENT=$"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+    fi
+    CATEGORY="Star System"
+    ICON="icons/timeshift.png"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+        
+    fi
+
+
+    ########################################
+    #
+    #   tts-biglinux
+    #
+    ########################################
+
+    if [ -e "/usr/bin/tts-config" ]; then
+
+    EXEC="tts-config"
+    NAME=$"Configurar a voz do sistema (TTS)"
+    COMMENT=$"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema para que textos escritos sejam falados."
+    CATEGORY="Multimedia"
+    ICON="icons/icon-grid-texto-fala-tts.png"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    fi
+
+    ########################################
+    #
+    #   kernel
+    #
+    ########################################
+
+    if [ -e "/usr/share/kservices5/msm_kernel.desktop" ]; then
+
+    EXEC="kcmshell5 msm_kernel"
+    NAME=$"Instalar versões de kernel"
+    COMMENT=""
+    CATEGORY="Star System"
+    ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/cpu.png"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    fi
+
+
+    if [ -e "/usr/bin/policytool" ]; then
+
+        EXEC="policytool"
+        NAME=$"Regras de segurança do Java"
+        COMMENT=$"OpenJDK Java 8 Policy Tool"
+        CATEGORY="Privacy"
+        ICON="icons/openjdk.png"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+    fi
 
 fi
-
-########################################
-#
-#   mintstick-format
-#
-########################################
-
-if [ -e "/usr/bin/mintstick" ]; then
-
-EXEC="mintstick -m format"
-NAME=$"Formatar pen drive"
-COMMENT=$"Uma interface simples e prática para formatar pen drive."
-CATEGORY="System"
-ICON="icons/pendrive.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   mintstick
-#
-########################################
-
-if [ -e "/usr/bin/mintstick" ]; then
-
-EXEC="mintstick -m iso"
-NAME=$"Criar pen drive de boot"
-COMMENT=$"Para criar um pen drive de boot com o BigLinux, baixe o sistema em www.biglinux.com.br e utilize esse programa para gravá-lo."
-CATEGORY="System"
-ICON="icons/mintstick.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   Timeshift
-#
-########################################
-
-if [ -e "/usr/bin/timeshift-launcher" ]; then
-
-EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
-NAME=$"Snapshots e backups"
-if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
-    COMMENT=$"O sistema está utilizando uma partição btrfs, isso permite que sejam criados pontos de restauração muito eficientes e com pouco uso de armazenamento."
-else
-    COMMENT=$"O sistema não está utilizando uma partição btrfs no momento, você ainda pode fazer backups utilizando o método rsync."
-fi
-
-if [ -e "/usr/bin/timeshift-launcher" ]; then
-    COMMENT=$"O sistema está funcionando em modo live. Utilize esse programa para restaurar pontos de restauração do seu sistema instalado."
-fi
-CATEGORY="Star System"
-ICON="icons/timeshift.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-    
-fi
-
-########################################
-#
-#   Firewall
-#
-########################################
-
-if [ -e "/usr/bin/gufw" ]; then
-
-EXEC="gufw"
-NAME=$"Firewall"
-COMMENT=$"Configure regras de segurança para a conexão."
-CATEGORY="Privacy"
-ICON="icons/gufw.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   biglinux-config
-#
-########################################
-
-if [ -e "/usr/bin/biglinux-config" ]; then
-
-EXEC="biglinux-config"
-NAME=$"Restaurar a configuração de programas"
-COMMENT=$"Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
-CATEGORY="System"
-ICON="icons/icon-restaurar-configuracoes.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   tts-biglinux
-#
-########################################
-
-if [ -e "/usr/bin/tts-config" ]; then
-
-EXEC="tts-config"
-NAME=$"Configurações de Fala Texto (TTS)"
-COMMENT=$"Você pode utilizar o atalho com a tecla [Meta] + V ou então o ícone no menu do sistema para que textos escritos sejam falados."
-CATEGORY="Multimedia"
-ICON="icons/icon-grid-texto-fala-tts.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   kernel
-#
-########################################
-
-if [ -e "/usr/share/kservices5/msm_kernel.desktop" ]; then
-
-EXEC="kcmshell5 msm_kernel"
-NAME=$"Instalar versões de kernel"
-COMMENT=$"Alguns Hardware podem necessitar de versões especificas do kernel, aqui você terá algumas opções."
-CATEGORY="Star System"
-ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/cpu.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   policytool
-#
-########################################
-
-if [ -e "/usr/bin/policytool" ]; then
-
-    EXEC="policytool"
-    NAME=$"Regras de segurança do Java"
-    COMMENT=$"OpenJDK Java 8 Policy Tool"
-    CATEGORY="Privacy"
-    ICON="icons/openjdk.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-########################################
-#
-#   systemsettings5
-#
-########################################
-
-if [ -e "/usr/bin/systemsettings5" ]; then
-
-EXEC="systemsettings5"
-NAME=$"Centro de controle do KDE"
-COMMENT=$"Acesse o central de controle tradicional do KDE, a maior parte das opções encontradas nela estão também nessa central que você está utilizando agora."
-CATEGORY="System"
-ICON="icons/systemsettings.png"
-
-CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-
-
-
-######################################
-#
-#   AVAHI OPEN
-#
-######################################
-
-
-# NAME=$"Avahi"
-# COMMENT=$"Procurar servidores utilizando Avahi."
-# ICON="icons/network-01.png"
-# CATEGORY="Server"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 01
-######
-if [ -e "/usr/bin/bssh" ]; then
-EXEC="bssh"
-NAME=$"Procurar servidores SSH"
-ICON="icons/icon_find-server-SSH.png"
-CATEGORY="Server"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 02
-######
-
-EXEC="bvnc"
-NAME=$"Procurar servidores VNC"
-ICON="icons/icon_find-server-VNC.png"
-CATEGORY="Server"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 03
-######
-
-EXEC="avahi-discover"
-NAME=$"Procurar servidores (zeroconf)"
-COMMENT=$"Uma rede de configuração zero é uma rede IP configurada sem usar nenhuma configuração manual ou servidores de configuração."
-ICON="icons/icon_find-server-zeroconf.png"
-CATEGORY="Server"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-fi
-######################################
-#
-#   AVAHI CLOSE
-#
-######################################
-######################################
-#
-#   QT OPEN
-#
-######################################
-
-
-# NAME=$"Desenvolvimento QT"
-# COMMENT=$"Programas de desenvolvimento para QT."
-# ICON="icons/QtProject-designer.png"
-# CATEGORY="Desenv"
-# 
-# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 01
-######
-if [ -e "/usr/bin/assistant" ]; then
-EXEC="assistant"
-NAME=$"Qt Assistant"
-COMMENT=$"Programas de desenvolvimento para QT."
-ICON="icons/assistant.png"
-CATEGORY="Desenv"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-######
-# 02
-######
-EXEC="designer"
-NAME=$"Qt Designer"
-COMMENT=$"Programas de desenvolvimento para QT."
-ICON="icons/QtProject-designer.png"
-CATEGORY="Desenv"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-######
-# 03
-######
-EXEC="linguist"
-NAME=$"Qt Linguist"
-COMMENT=$"Programas de desenvolvimento para QT."
-ICON="icons/linguist.png"
-CATEGORY="Desenv"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-######
-# 04
-######
-EXEC="qdbusviewer"
-NAME=$"Qt QDBusViewer "
-COMMENT=$"Programas de desenvolvimento para QT."
-ICON="icons/qdbusviewer.png"
-CATEGORY="Desenv"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-fi
-######################################
-#
-#   QT CLOSE
-#
-######################################
 
 
 
@@ -1393,7 +737,6 @@ fi
 #
 ##########################
 
-fi
 
 wait
 
@@ -1406,10 +749,9 @@ cat ~/.config/bigcontrolcenter/cache-*.html
 
 cat << EOF
 
-    </div>
+              </div>
             </div>
-  </div>
-  
+          </div>
         </div>
       </div>
   <div class="desenvolvidopor">
@@ -1428,7 +770,6 @@ if [ -e "$HOME/.config/bigcontrolcenter/show_other" ]; then
 fi
 
 cat << EOF
-<!-- partial -->
   <script src="./script.js"></script>
 </body>
 </html>
