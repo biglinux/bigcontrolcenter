@@ -2,45 +2,118 @@
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
+export TEXTDOMAIN=tts-biglinux
 
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
+FOLDER_CONFIG="$HOME/.config/tts-biglinux"
+mkdir -p ~/.config/tts-biglinux
+
+
+RATE="$(cat ${FOLDER_CONFIG}/rate)"
+PITCH="$(cat ${FOLDER_CONFIG}/pitch)"
+VOLUME="$(cat ${FOLDER_CONFIG}/volume)"
+VOICE="$(cat ${FOLDER_CONFIG}/voice)"
+
+if [ "$RATE" = "" ]; then
+    RATE="-25"
+    echo "$RATE" > ${FOLDER_CONFIG}/rate
+fi
+
+if [ "$PITCH" = "" ]; then
+    PITCH="-25"
+    echo "$PITCH" > ${FOLDER_CONFIG}/pitch
+fi
+
+if [ "$VOLUME" = "" ]; then
+    VOLUME="0"
+    echo "$VOLUME" > ${FOLDER_CONFIG}/volume
+fi
+
+if [ "$VOICE" = "" ]; then
+
+    if ["$(echo "$LANG" | grep pt)" != "" ]; then
+        VOICE="Letícia-F123"
+    else
+        VOICE="Evgeniy-Eng"
+    fi
+
+    echo "$VOICE" > ${FOLDER_CONFIG}/voice
+fi
+
+
 # Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
 # That's include jquery and materialize / Isso inclui o jquery e o materialize
 # http://materializecss.com/
-. /usr/share/bigbashview/bcc/shell/base.sh
-
-  echo '
-  <body>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/materialize/css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
-    <script src="/usr/share/bigbashview/bcc/materialize/js/materialize.js"></script>
-    <script src="/usr/share/bigbashview/bcc/js/big.js"></script>
-  </head>'
-  echo '<title>' $"Waydroid" '</title>'
-  echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
 
 
+cat << EOF
 
-echo '<div id=page2>'
-echo '<div id="middle" class="bar"><h1>'
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
 
-echo $"Com o Waydroid podemos utilizar um sistema Android dentro do BigLinux, com melhor desempenho e integração do que utilizando sistemas de virtualização, porém ainda está em fase experimental e alguns programas podem não funcionar.
-<br><br>
-Com placas de vídeo Intel e AMD é possível ter aceleração 3D, com outras placas de vídeo a aceleração 3D deve ficar desativada.
-<br><br>
+EOF
+ 
+    echo '<title>' $"Waydroid" '</title>'
+
+cat << EOF
+    <script type="text/javascript" src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
+  <link rel="stylesheet" href="./style2.css">
+</head>
+EOF
+
+# Get body tag with color light or not
+/usr/share/bigbashview/bcc/shell/getbgcolor.sh
+
+OIFS=$IFS
+IFS=$'\n'
+
+cat << EOF
+
+<div class="dark-light">
+  <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+  </svg>
+</div>
+<div class="login">
+  <div class="wrap">
+    <div class="user">
+
+      <div class="logo">
+        <a href="#"><img src="logo-big-trans-branco.png" alt=""></a>
+      </div>
+
+      <div class="user">
+        <div class="form-wrap"> 
+          <div class="form-wrap tabs-content">
+          
+EOF
+  echo '<h2>'
+  echo $"Waydroid"
+  echo '</h2>'
+cat << EOF   
+          
+          </div>
+          <!-- TABS CONTENT -->
+          <div class="tabs-content">
+            <!-- INICIO TABS CONTENT LIST -->
+            <div id="list-tab-content" class="fc-card active">
+
+              <div class="centretext" style="margin-bottom: 30px;">
+                <div id="desc"><h5>
+EOF
+
+echo $"Utilize programas para android no seu computador, porém ainda está em fase experimental e alguns programas podem não funcionar.
+<br>
+Em placas de vídeo Intel e AMD é possível ter aceleração 3D, com outras placas de vídeo a aceleração 3D deve ficar desativada.
+<br>
 A instalação irá fazer quase 1 GB de Download.
-<br><br>
+<br>
 Com o Wayland instalado é possível instalar programas no formato .apk clicando duas vezes no arquivo, utilizando o gerenciador de arquivos do BigLinux."
-  
 
-echo "<div id=buttons>"
 
 if [ -e "/usr/bin/waydroid-big" ]; then
 
@@ -48,54 +121,139 @@ if [ -e "/usr/bin/waydroid-big" ]; then
     tooltipgpu=$"Se a aceleração 3D estiver ativada em um hardware incompatível
     <br> o android não passará da tela de loading"
 
+STOP_WAYDROID=$"Parar o Waydroid"
+START_WAYDROID=$"Iniciar o Waydroid"
+
+echo '<br><br>'
+echo '<div class=apps-card>'
+echo '<div class=app-card>'
     if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
 
-        echo "<div id=theme2-2 class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"250\" data-tooltip=\"$tooltiprun\">
-        <a class=\"waves-effect waves-light btn-large\" href=\"make.sh.htm?stop=1\">" $"Parar o Waydroid" '</a></div>'
+
+cat << EOF
+        <input id="s0" type="checkbox" onclick="location.href='make.sh.htm?stop=1';" class="switch" checked>
+        <label for="s0" onclick="location.href='make.sh.htm?stop=1">$STOP_WAYDROID</label>
+EOF
+
     else
 
-        echo "<div id=theme2-2 class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"250\" data-tooltip=\"$tooltiprun\">
-        <a class=\"waves-effect waves-light btn-large\" href=\"make.sh.htm?start=1\">" $"Iniciar o Waydroid" '</a></div>'
+cat << EOF
+        <input id="s0" type="checkbox" onclick="location.href='make.sh.htm?start=1';" class="switch">
+        <label for="s0" onclick="location.href='make.sh.htm?start=1">$START_WAYDROID</label>
+EOF
+
     fi
+echo '</div><div class=app-card>'
 
+ENABLE_GPU=$"Ativar a aceleração 3D"
+DISABLE_GPU=$"Desativar a aceleração 3D"
 
+echo '<div class=app-card>'
 
     if [ "$(waydroid-big-3d | grep DISABLED)" != "" ]; then
 
-        echo "<div id=theme2-2 class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"250\" data-tooltip=\"$tooltipgpu\">
-        <a class=\"waves-effect waves-light btn-large\" href=\"make.sh.htm?gpu=1\">" $"Ativar a aceleração 3D" '</a></div>'
-    else
-        echo "<div id=theme2-2 class=\"tooltipped with-gap\" data-position=\"top\" data-delay=\"250\" data-tooltip=\"$tooltipgpu\">
-        <a class=\"waves-effect waves-light btn-large\" href=\"make.sh.htm?gpu=0\">" $"Desativar a aceleração 3D" '</a></div>'
-    fi
-
-else
-    echo "<div id=theme2-2>
-    <a class=\"waves-effect waves-light btn-large\" href=\"make.sh.htm?install=1\">" $"Instalar o Waydroid" '</a>'
-fi
-
-# run bash scripts
 cat << EOF
-<script>
-\$('#PITCH').on('change', function() {
-    _run('./pitch.run ' + \$(this).find(":selected").val());
-});
-
-\$('#RATE').on('change', function() {
-    _run('./rate.run ' + \$(this).find(":selected").val());
-});
-
-\$('#VOLUME').on('change', function() {
-    _run('./volume.run ' + \$(this).find(":selected").val());
-});
-
-\$('#VOICE').on('change', function() {
-    _run('./voice.run ' + \$(this).find(":selected").val());
-});
-
-</script>
+        <input id="s1" type="checkbox" onclick="location.href='make.sh.htm?gpu=1';" class="switch">
+        <label for="s1" onclick="location.href='make.sh.htm?gpu=1">$ENABLE_GPU</label>
 EOF
 
 
+    else
+
+cat << EOF
+        <input id="s1" type="checkbox" onclick="location.href='make.sh.htm?gpu=0';" class="switch" checked>
+        <label for="s1" onclick="location.href='make.sh.htm?gpu=0">$DISABLE_GPU</label>
+EOF
+
+    fi
+echo '</div>'
+
+else
+
+INSTALL_WAYDROID=$"Instalar Waydroid"
+
+echo '<br><br><br><br>'
+echo '<div class=apps-card>'
+
+cat << EOF
+        <div class=app-card>
+        <a class="content-button status-button" href="make.sh.htm?install=1">$INSTALL_WAYDROID</a>
+        </div>
+EOF
+
+INSTALL_WAYDROID_WITH_GAPPS=$"Instalar Waydroid com Google Apps"
+
+cat << EOF
+        <div class=app-card>
+        <a class="content-button status-button" href="make.sh.htm?install_with_gapps=1">$INSTALL_WAYDROID_WITH_GAPPS</a>
+        </div>
+EOF
+
+
+fi
+
+
+    if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
+
+    SHOW_ID=$"Exibir id do android"
+
+    echo '</div></div><br><div class=apps-card>'
+
+cat << EOF
+        
+        <div class=app-card>
+        <button class="content-button status-button" onclick="_run('./number.run')">$SHOW_ID</button>
+        </div>
+EOF
+
+ACTIVATE=$"Ativar Google Apps"
+
+cat << EOF
+        <div class=app-card>
+        <button class="content-button status-button" onclick="_run('./activate.run')">$ACTIVATE</button>
+        </div>
+EOF
+
+
+    fi
+
+echo '</div>'
+
 echo "</div></div>"
+  
+
+
+
+
+cat << EOF
+
+</li>                          
+                        </ul>                          
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <br style="clear: left;" />
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+EOF
+
+cat << EOF
+<!-- partial -->
+  <script  src="./script.js"></script>
+  
+</body>
+</html>
+EOF
+
 IFS=$OIFS

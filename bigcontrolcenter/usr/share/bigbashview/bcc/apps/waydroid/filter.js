@@ -146,19 +146,13 @@ $(document).ready(function(){
         document.getElementById("search").value=""
         if (this.id == 'Star') {
           var $el = $('.' + this.id).fadeIn(450);
-          $('.icons-show > div').not($el).hide();
-          $('.main-header').not($el).hide();
-          $('.app-card').not($el).hide();
-
+          $('.apps-card > div').not($el).hide();
         $btns.removeClass('active');
         $(this).addClass('active');
             $('.search').hide();        
         } else {
           var $el = $('.' + this.id).fadeIn(450);
-          $('.icons-show > div').not($el).hide();
-
-          $('.main-header').not($el).hide();
-          $('.app-card').not($el).hide();
+          $('.apps-card > div').not($el).hide();
         $('.Staritem').hide();
 
         }
@@ -175,8 +169,8 @@ $(document).ready(function(){
         $('.main-header').hide();
         $('.search').show();
         var matcher = new RegExp(removeDiacritics($(this).val()), 'gi');
-        $('.box-items').show().not(function(){
-            return matcher.test(removeDiacritics($(this).find('.box-titulo, #tit-status-bar').text()))
+        $('.app-card').show().not(function(){
+            return matcher.test(removeDiacritics($(this).find('.app-card__subtext, .titlespan, .app-card__title, .hardwareSpace').text()))
         }).hide();
         
         var empty_search = $(this).val();
