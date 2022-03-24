@@ -496,9 +496,9 @@ cat << EOF
 EOF
 
 
-EXEC="hardinfo-relatory"
-NAME=$"Gerar relatório com informações"
-COMMENT=$"Cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com o suporte."
+EXEC="big-hardware-info"
+NAME=$"Visualizar informações do sistema e hardware"
+COMMENT=$"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com o suporte."
 ICON="icons/relatory.png"
 CATEGORY="About"
 SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
@@ -602,13 +602,13 @@ if [ "$RELOAD" = "1" ]; then
 
     ########################################
     #
-    #   kcmshell5 msm_mhwd
+    #   big-driver-manager
     #
     ########################################
 
-    if [ -e "/usr/share/kservices5/msm_mhwd.desktop" ]; then
+    if [ -e "/usr/bin/big-driver-manager" ]; then
 
-    EXEC="kcmshell5 msm_mhwd"
+    EXEC="big-driver-manager"
     NAME=$"Instalar drivers e firmwares"
     COMMENT=""
     CATEGORY="Star Hardware"
