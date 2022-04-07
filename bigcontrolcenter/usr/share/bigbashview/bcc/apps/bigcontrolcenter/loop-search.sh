@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
