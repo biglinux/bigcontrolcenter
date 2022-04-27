@@ -471,23 +471,27 @@ a.button:hover {
 }
 
 /* LOGO */
+.logo-biglinux {
+    filter: var(--logo-big);
+}
 .logo {
     z-index: 2;
-    position: absolute;
-    bottom: 60px;
-    left: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 40px;
-    height: 40px;
+    height: 100%;
+    display: block;
 }
 
 .logo img {
   position: absolute;
-  margin: auto;
+  margin-top: auto;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
-  width: 30px;
+  bottom: 20px;
+  left: 20px;
+  width: 40px
 }
 
 .logo a {
@@ -1006,8 +1010,8 @@ input {
 }
 
 .form-wrap a {
-  color: var(--text-a-color);
-  padding-bottom: 4px;
+  color: #fff;
+  padding: 15px;
   /* border-bottom: 1px solid #5c9fed; */
 }
 
@@ -1816,7 +1820,7 @@ li img {
 }
 
 .content-button:not(.open):hover {
-  background: #1e59f1;
+  background: #5c9fed;
 }
 
 .menu {

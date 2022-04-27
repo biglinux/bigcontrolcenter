@@ -83,7 +83,7 @@ cat << EOF
     <div class="user">
 
       <div class="logo">
-        <a href="#"><img src="logo-big-trans-branco.png" alt=""></a>
+        <a href="#"><img src="logo-big-trans-branco.png" class="logo-biglinux"></a>
       </div>
 
       <div class="user">
@@ -91,7 +91,7 @@ cat << EOF
           <div class="form-wrap tabs-content">
           
 EOF
-  echo '<h2>'
+  echo '<h2><img src="icon.png" style="width: 64px;"><br>'
   echo $"Waydroid"
   echo '</h2>'
 cat << EOF   
@@ -104,16 +104,40 @@ cat << EOF
 
               <div class="centretext" style="margin-bottom: 30px;">
                 <div id="desc"><h5>
+                
+EOF
+echo $"Utilize programas para Android no seu computador, está em fase experimental, alguns programas podem não funcionar.<br>"
+echo $"Com o Wayland instalado é possível abrir programas no formato .apk, abra pelo gerenciador de arquivos do BigLinux.<br>"
+
+
+if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
+cat << EOF
+
+<div class="help-action">
+  <p style='color: #00ffff;'>
+EOF
+    echo $"<b>ATIVE</b> aceleração em placas de vídeo Intel e AMD, outras como Nvidia <b>DESATIVE</b>."
+cat << EOF
+  </p>
+</div>
+<br>
 EOF
 
-echo $"Utilize programas para android no seu computador, porém ainda está em fase experimental e alguns programas podem não funcionar.
-<br>
-Em placas de vídeo Intel e AMD é possível ter aceleração 3D, com outras placas de vídeo a aceleração 3D deve ficar desativada.
-<br>
-A instalação irá fazer quase 1 GB de Download.
-<br>
-Com o Wayland instalado é possível instalar programas no formato .apk clicando duas vezes no arquivo, utilizando o gerenciador de arquivos do BigLinux."
+else
 
+cat << EOF
+<div class="help-action">
+  <p style='color: #00ffff;'>
+EOF
+
+echo $"Download próximo de 1 GB, pode demorar muito."
+
+cat << EOF
+  </p>
+</div>
+<br>
+EOF
+fi
 
 if [ -e "/usr/bin/waydroid-big" ]; then
 
@@ -124,10 +148,10 @@ if [ -e "/usr/bin/waydroid-big" ]; then
 STOP_WAYDROID=$"Parar o Waydroid"
 START_WAYDROID=$"Iniciar o Waydroid"
 
-echo '<br><br>'
 echo '<div class=apps-card>'
 echo '<div class=app-card>'
-    if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
+
+if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
 
 
 cat << EOF
@@ -135,14 +159,14 @@ cat << EOF
         <label for="s0" onclick="location.href='make.sh.htm?stop=1">$STOP_WAYDROID</label>
 EOF
 
-    else
+else
 
 cat << EOF
         <input id="s0" type="checkbox" onclick="location.href='make.sh.htm?start=1';" class="switch">
         <label for="s0" onclick="location.href='make.sh.htm?start=1">$START_WAYDROID</label>
 EOF
 
-    fi
+fi
 echo '</div><div class=app-card>'
 
 ENABLE_GPU=$"Ativar a aceleração 3D"
@@ -171,21 +195,20 @@ echo '</div>'
 else
 
 INSTALL_WAYDROID=$"Instalar Waydroid"
+INSTALL_WAYDROID_WITH_GAPPS=$"Instalar Waydroid com Google Apps"
 
 echo '<br><br><br><br>'
 echo '<div class=apps-card>'
 
 cat << EOF
         <div class=app-card>
-        <a class="content-button status-button" href="make.sh.htm?install=1">$INSTALL_WAYDROID</a>
+          <a class="content-button status-button" href="make.sh.htm?install_with_gapps=1">$INSTALL_WAYDROID_WITH_GAPPS</a>
         </div>
 EOF
 
-INSTALL_WAYDROID_WITH_GAPPS=$"Instalar Waydroid com Google Apps"
-
 cat << EOF
         <div class=app-card>
-        <a class="content-button status-button" href="make.sh.htm?install_with_gapps=1">$INSTALL_WAYDROID_WITH_GAPPS</a>
+          <a class="content-button status-button" href="make.sh.htm?install=1">$INSTALL_WAYDROID</a>
         </div>
 EOF
 
@@ -195,9 +218,23 @@ fi
 
     if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
 
-    SHOW_ID=$"Exibir id do android"
+    echo '</div></div><br>'
+    
+cat << EOF
 
-    echo '</div></div><br><div class=apps-card>'
+<div class="help-action">
+  <p style='color: #00ffff;'>
+EOF
+    echo $"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+cat << EOF
+  </p>
+</div>
+<br>
+EOF
+    
+    SHOW_ID=$"Exibir ID do Android"
+
+    echo '<div class=apps-card>'
 
 cat << EOF
         
@@ -206,7 +243,7 @@ cat << EOF
         </div>
 EOF
 
-ACTIVATE=$"Ativar Google Apps"
+    ACTIVATE=$"Ativar Google Apps"
 
 cat << EOF
         <div class=app-card>
