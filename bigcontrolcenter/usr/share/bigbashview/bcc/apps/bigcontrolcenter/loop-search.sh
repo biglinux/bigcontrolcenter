@@ -89,7 +89,6 @@ SERVICES3="$(ls /usr/share/applications/bigcontrolcenter/* | grep -ve timeshift-
 /usr/share/kservices5/bigcontrolcenter/qv4l2.desktop
 /usr/share/kservices5/bigcontrolcenter/org.gnome.baobab.desktop
 /usr/share/kservices5/bigcontrolcenter/biglinux-grub-restore.desktop
-/usr/share/applications/bootsplash-manager.desktop
 /usr/share/applications/gsmartcontrol.desktop
 $SERVICES2
 $SERVICES3"); do
