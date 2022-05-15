@@ -2,7 +2,7 @@
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=waydroid
+export TEXTDOMAIN=biglinux-waydroid
 
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
@@ -10,10 +10,11 @@ xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -
 FOLDER_CONFIG="$HOME/.config/waydroid"
 mkdir -p ~/.config/waydroid
 
+MAXIMIZED=$"Maximizado"
 RESOLUTION="$(cat ${FOLDER_CONFIG}/resolution)"
 
 if [ "$RESOLUTION" = "" ]; then
-    RESOLUTION="--width=1920 --height=1080"
+    RESOLUTION="0"
     echo "$RESOLUTION" > ${FOLDER_CONFIG}/resolution
 fi
 
@@ -154,16 +155,23 @@ EOF
 #################
 
 #echo "" $"Resolução" ""
-echo "<p><label for=\"s0\" style=\"margin:0px; padding:0px; width: 100%; text-align:right;\">Resolução"
+echo '<p><label for="RESOLUTION" style="margin:0px; padding:0px; width: 100%; text-align:right;">' $"Resolução"
 
-echo "<select class=browser-default id=RESOLUTION name=RESOLUTION>"
+echo "<select class=RESOLUTION id=RESOLUTION name=RESOLUTION>"
 
-for i  in "800x600" "1920x1080"; do
+for i  in "640x360" "640x480" "800x480" "854x480" "800x600" "960x540" "960x640" "1024x600" "1280x720" "1920x1080" ""; do
 
+
+    if [ "$i" = "" ]; then
+      name="$MAXIMIZED"
+    else
+      name="$i"
+    fi
+		
 	if [ "$i" = "$RESOLUTION" ]; then
-		    echo "<option value=\"$i\" selected>$i</option>"
+		    echo "<option value=\"$i\" selected>$name</option>"
 	else
-	    echo "<option value=\"$i\">$i</option>"
+	    echo "<option value=\"$i\">$name</option>"
 	fi
 
 done
