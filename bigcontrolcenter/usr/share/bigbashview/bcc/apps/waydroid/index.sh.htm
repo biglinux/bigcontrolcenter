@@ -2,46 +2,20 @@
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=tts-biglinux
+export TEXTDOMAIN=waydroid
 
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
-FOLDER_CONFIG="$HOME/.config/tts-biglinux"
-mkdir -p ~/.config/tts-biglinux
+FOLDER_CONFIG="$HOME/.config/waydroid"
+mkdir -p ~/.config/waydroid
 
+RESOLUTION="$(cat ${FOLDER_CONFIG}/resolution)"
 
-RATE="$(cat ${FOLDER_CONFIG}/rate)"
-PITCH="$(cat ${FOLDER_CONFIG}/pitch)"
-VOLUME="$(cat ${FOLDER_CONFIG}/volume)"
-VOICE="$(cat ${FOLDER_CONFIG}/voice)"
-
-if [ "$RATE" = "" ]; then
-    RATE="-25"
-    echo "$RATE" > ${FOLDER_CONFIG}/rate
+if [ "$RESOLUTION" = "" ]; then
+    RESOLUTION="--width=1920 --height=1080"
+    echo "$RESOLUTION" > ${FOLDER_CONFIG}/resolution
 fi
-
-if [ "$PITCH" = "" ]; then
-    PITCH="-25"
-    echo "$PITCH" > ${FOLDER_CONFIG}/pitch
-fi
-
-if [ "$VOLUME" = "" ]; then
-    VOLUME="0"
-    echo "$VOLUME" > ${FOLDER_CONFIG}/volume
-fi
-
-if [ "$VOICE" = "" ]; then
-
-    if ["$(echo "$LANG" | grep pt)" != "" ]; then
-        VOICE="Letícia-F123"
-    else
-        VOICE="Evgeniy-Eng"
-    fi
-
-    echo "$VOICE" > ${FOLDER_CONFIG}/voice
-fi
-
 
 # Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
 # That's include jquery and materialize / Isso inclui o jquery e o materialize
@@ -116,7 +90,7 @@ cat << EOF
 <div class="help-action">
   <p style='color: #00ffff;'>
 EOF
-    echo $"<b>ATIVE</b> aceleração em placas de vídeo Intel e AMD, outras como Nvidia <b>DESATIVE</b>."
+    echo $"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como Nvidia <b>DESATIVE</b>."
 cat << EOF
   </p>
 </div>
@@ -126,20 +100,26 @@ EOF
 else
 
 cat << EOF
-<div class="help-action">
-  <p style='color: #00ffff;'>
+  <div class="help-action">
+    <p style='color: #00ffff;'>
 EOF
-
-echo $"Download próximo de 1 GB, pode demorar muito."
-
+  if [ -e "/usr/bin/waydroid-big" != "" ]; then
+    echo $"Download próximo de 1 GB, pode demorar muito."
+  fi
 cat << EOF
-  </p>
-</div>
-<br>
+    </p>
+  </div>
+  <br>
 EOF
+
 fi
 
 if [ -e "/usr/bin/waydroid-big" ]; then
+
+
+
+
+
 
     tooltiprun=$"O Waydroid também pode ser iniciado utilizando o menu do sistema"
     tooltipgpu=$"Se a aceleração 3D estiver ativada em um hardware incompatível
@@ -149,10 +129,12 @@ STOP_WAYDROID=$"Parar o Waydroid"
 START_WAYDROID=$"Iniciar o Waydroid"
 
 echo '<div class=apps-card>'
+
 echo '<div class=app-card>'
 
-if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
 
+
+if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
 
 cat << EOF
         <input id="s0" type="checkbox" onclick="location.href='make.sh.htm?stop=1';" class="switch" checked>
@@ -165,6 +147,27 @@ cat << EOF
         <input id="s0" type="checkbox" onclick="location.href='make.sh.htm?start=1';" class="switch">
         <label for="s0" onclick="location.href='make.sh.htm?start=1">$START_WAYDROID</label>
 EOF
+
+    
+#################
+# Resolução
+#################
+
+#echo "" $"Resolução" ""
+echo "<p><label for=\"s0\" style=\"margin:0px; padding:0px; width: 100%; text-align:right;\">Resolução"
+
+echo "<select class=browser-default id=RESOLUTION name=RESOLUTION>"
+
+for i  in "800x600" "1920x1080"; do
+
+	if [ "$i" = "$RESOLUTION" ]; then
+		    echo "<option value=\"$i\" selected>$i</option>"
+	else
+	    echo "<option value=\"$i\">$i</option>"
+	fi
+
+done
+echo '</select></label></p>'
 
 fi
 echo '</div><div class=app-card>'
@@ -190,6 +193,11 @@ cat << EOF
 EOF
 
     fi
+    
+
+    
+    
+    
 echo '</div>'
 
 else
@@ -288,6 +296,13 @@ EOF
 cat << EOF
 <!-- partial -->
   <script  src="./script.js"></script>
+  <script>
+
+\$('#RESOLUTION').on('change', function() {
+    _run('./resolution.run ' + \$(this).find(":selected").val());
+});
+
+  </script>
   
 </body>
 </html>
