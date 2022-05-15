@@ -279,6 +279,12 @@ echo "</div></div>"
 
 
 cat << EOF
+  <script  src="./script.js"></script>
+  <script>
+\$('#RESOLUTION').on('change', function() {
+    _run('./resolution.run ' + \$(this).find(":selected").val());
+});
+  </script>
 
 </li>                          
                         </ul>                          
