@@ -159,10 +159,10 @@ echo '<p><label for="RESOLUTION" style="margin:0px; padding:0px; width: 100%; te
 
 echo "<select class=RESOLUTION id=RESOLUTION name=RESOLUTION>"
 
-for i  in "640x360" "640x480" "800x480" "854x480" "800x600" "960x540" "960x640" "1024x600" "1280x720" "1920x1080" ""; do
+for i  in "360x640" "640x360" "640x480" "800x480" "854x480" "800x600" "960x540" "960x640" "600x1024" "1024x600" "1024x768" "1280x720" "1920x1080" "6000x6000"; do
 
 
-    if [ "$i" = "" ]; then
+    if [ "$i" = "6000x6000" ]; then
       name="$MAXIMIZED"
     else
       name="$i"
@@ -301,19 +301,6 @@ cat << EOF
 
 EOF
 
-cat << EOF
-<!-- partial -->
-  <script  src="./script.js"></script>
-  <script>
 
-\$('#RESOLUTION').on('change', function() {
-    _run('./resolution.run ' + \$(this).find(":selected").val());
-});
-
-  </script>
-  
-</body>
-</html>
-EOF
 
 IFS=$OIFS

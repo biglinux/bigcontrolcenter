@@ -1033,3 +1033,19 @@ li img {
     display: -webkit-inline-box;
     margin-bottom: 18px;
 }
+
+.content-button {
+    background-color: #3a6df0;
+    border: none;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.content-button:not(.open):hover {
+    background: #5c9fed;
+}
