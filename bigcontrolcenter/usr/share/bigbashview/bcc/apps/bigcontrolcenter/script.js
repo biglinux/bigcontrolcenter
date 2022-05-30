@@ -81,11 +81,3 @@ window.onclick = function(event) {
   }
 }
 
-
-//Fecha welcome
-$(function () {
-  $(".content-wrapper-header .close").click(function () {
-    $("#welcome").css("display", "none");
-  }); 
-});
-

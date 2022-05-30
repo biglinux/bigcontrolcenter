@@ -147,7 +147,6 @@ cat <<EOF
                 </div>
             </div>
             <div class="side-wrapper">
-                <!-- <div class="side-title">$CATEGORY</div> -->
                 <div class="side-menu">
                     <a href="#" id="Network" class="btn">
                         <svg viewBox="0 0 640 512">
@@ -246,7 +245,7 @@ cat <<EOF
                 <div class="apps-card Star">
 EOF
     EXEC="biglinux-themes-gui"
-    NAME=$"Aparência, desempenho e usabilidade"
+    NAME=$"Temas, desktop e ajustes"
     COMMENT=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
 cat << EOF
               <div class="app-card Star" onclick="_run('./run.run $EXEC')">
@@ -259,9 +258,6 @@ cat << EOF
                       <button class="content-button status-button">Abrir</button>
                   </div>
               </div>
-              
-
-            
 EOF
 EXEC="biglinux-config"
 NAME=$"Restaurar a configuração de programas"
@@ -279,7 +275,6 @@ cat << EOF
 
                 </div>
               </div>
-
               
 EOF
 EXEC="big-hardware-info"
@@ -299,8 +294,6 @@ cat << EOF
                 </div>
               </div>
 
-
-          
 <!-- COMMENT CATEGORIAS -->
         </div>
         <div class="main-header Star">
@@ -354,10 +347,8 @@ cat << EOF
 <div class="icons-show"> 
 EOF
 
-
 OIFS=$IFS
 IFS=$'\n'
-
 
 SHOW_ICON() {
 # $1 CATEGORY
@@ -376,28 +367,6 @@ cat << EOF
     </div>
 EOF
 }
-
-SHOW_MODAL_ICON() {
-# $1 CATEGORY
-# $2 COMMENT
-# $3 EXEC 
-# $4 ICON 
-# $6 NAME
-cat << EOF
-<!--    <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
-        <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
-        </div>
-        <button id="box-subtitle" class="box-geral-icons box-geral-button content-button status-button"> <!-- status-button CHAMA MODAL (POP-UP)-->
-<!--            <div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON"></div>
-            <div class="box-titulo">$NAME</div>
-        </button>
-    </div>
--->
-EOF
-}
-
-
-
 
 CACHE_ICON() {
 # $1 CATEGORY
@@ -418,7 +387,6 @@ EOF
 
 }
 
-
 #########################
 #
 # Change to "Principais" in start
@@ -428,7 +396,6 @@ echo "<script>
 \$(function() {
    \$(\"#Star\").trigger(\"click\");});
 </script>"
-
 
 ######################################
 #
@@ -481,20 +448,19 @@ cat << EOF
     </div>
 
 <div id="modalA" class="modal">
-                    <div class="modalContent">
-                        <div class="pop-up__title">$NAME
-                        </div>
-                        <div class="pop-up__subtitle">
-                        $ANDROID_TEXT
-                        </div>
+    <div class="modalContent">
+        <div class="pop-up__title">$NAME
+        </div>
+        <div class="pop-up__subtitle">
+        $ANDROID_TEXT
+        </div>
 
-                        <div class="content-button-wrapper" style="text-align: right;">
-                          <button class="modalClose">Fechar</button>
-                        </div>
-                    </div>
-                  </div>
+        <div class="content-button-wrapper" style="text-align: right;">
+            <button class="modalClose">Fechar</button>
+        </div>
+    </div>
+</div>
 EOF
-
 
 EXEC="big-hardware-info"
 NAME=$"Visualizar informações do sistema e hardware"
@@ -509,7 +475,6 @@ if [ -e "/usr/bin/manjaro-settings-manager" ]; then
  COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
  ICON="icons/icon_useraccount.png"
  CATEGORY="Account"
-   
  SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 fi
 
@@ -527,7 +492,6 @@ if [ "$RELOAD" = "1" ]; then
 
     fi
 
-
     ######
 
     EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
@@ -537,7 +501,6 @@ if [ "$RELOAD" = "1" ]; then
     CATEGORY="Star Hardware"
 
     CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
 
     EXEC="./kscreen_clean.sh"
     NAME=$"Resetar as configurações da tela"
@@ -557,7 +520,6 @@ if [ "$RELOAD" = "1" ]; then
     #   ANDROID OPEN
     #
     ######################################
-
 
     #WEBAPP
     EXEC="xdg-open https://web.airmore.com"
@@ -584,10 +546,6 @@ if [ "$RELOAD" = "1" ]; then
     ICON="icons/snapdrop.png"
     CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-
-
-
-
     #VERIFICAR FUNCIONANEMTO
     EXEC="waydroid-gui-big"
     NAME=$"Suporte a aplicativos Android"
@@ -596,9 +554,6 @@ if [ "$RELOAD" = "1" ]; then
     ICON="icons/waydroid.png"
 
     CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-
-
 
     ########################################
     #
@@ -617,10 +572,6 @@ if [ "$RELOAD" = "1" ]; then
     CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
     fi
-
-
-
-
 
     ########################################
     #
@@ -647,7 +598,6 @@ if [ "$RELOAD" = "1" ]; then
     CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
         
     fi
-
 
     ########################################
     #
@@ -700,20 +650,13 @@ if [ "$RELOAD" = "1" ]; then
 
 fi
 
-
-
 ##########################
 #
 #    ALL BIGLINUX OPEN
 #
 ##########################
 
-
 wait
-
-
-
-
 
 cat "$HOME/.config/bigcontrolcenter/cache.html"
 cat ~/.config/bigcontrolcenter/cache-*.html
@@ -732,7 +675,6 @@ cat << EOF
   </div>
 EOF
 
-
 if [ -e "$HOME/.config/bigcontrolcenter/show_other" ]; then
 
   echo '<style>#Other{display: flex !important;}</style>'
@@ -745,4 +687,3 @@ cat << EOF
 </html>
 EOF
 IFS=$OIFS
-

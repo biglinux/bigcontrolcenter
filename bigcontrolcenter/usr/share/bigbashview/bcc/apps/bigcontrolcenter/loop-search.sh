@@ -91,6 +91,8 @@ SERVICES3="$(ls /usr/share/applications/bigcontrolcenter/* | grep -ve timeshift-
 /usr/share/kservices5/bigcontrolcenter/biglinux-grub-restore.desktop
 /usr/share/applications/gsmartcontrol.desktop
 /usr/share/applications/org.kde.kdeconnect-settings.desktop
+/usr/share/applications/org.kde.dolphin.desktop
+/usr/share/applications/org.kde.konsole.desktop
 $SERVICES2
 $SERVICES3"); do
 
