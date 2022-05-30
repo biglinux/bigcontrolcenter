@@ -65,7 +65,7 @@ cat << EOF >> "$HOME/.config/bigcontrolcenter/cache-$filename.html"
         <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
         <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
         </div>
-        <button onclick="_run('./run.run $EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button"> <!-- class="status-button" CHAMA MODAL (POP-UP) -->
+        <button onclick="_run('$EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button"> <!-- class="status-button" CHAMA MODAL (POP-UP) -->
             <div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON" title="$NAME" alt="$NAME"></div>
             <div class="box-titulo">$NAME</div>
             <!--<div class="box-comentario">$COMMENT</div>-->
