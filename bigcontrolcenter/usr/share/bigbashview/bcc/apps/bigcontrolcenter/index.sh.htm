@@ -474,7 +474,7 @@ if [ -e "/usr/bin/manjaro-settings-manager" ]; then
  NAME=$"Adicionar ou Remover Usuários"
  COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
  ICON="icons/icon_useraccount.png"
- CATEGORY="Account"
+ CATEGORY="Star Account"
  SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 fi
 
@@ -538,13 +538,7 @@ if [ "$RELOAD" = "1" ]; then
     ICON="icons/airdroid.png"
     CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    #WEBAPP
-    EXEC="xdg-open https://snapdrop.net"
-    CATEGORY="Phone"
-    NAME=$"Snapdrop (Não precisa de aplicativo)"
-    COMMENT=$"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-    ICON="icons/snapdrop.png"
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+    
 
     #VERIFICAR FUNCIONANEMTO
     EXEC="waydroid-gui-big"
@@ -650,6 +644,8 @@ if [ "$RELOAD" = "1" ]; then
 
 fi
 
+
+
 ##########################
 #
 #    ALL BIGLINUX OPEN
@@ -660,6 +656,22 @@ wait
 
 cat "$HOME/.config/bigcontrolcenter/cache.html"
 cat ~/.config/bigcontrolcenter/cache-*.html
+
+#WEBAPP
+EXEC="xdg-open https://snapdrop.net"
+CATEGORY="Star Phone"
+NAME=$"Snapdrop (Não precisa de aplicativo)"
+COMMENT=$"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+ICON="icons/snapdrop.png"
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+
+#WELCOME
+EXEC="big-welcome"
+NAME=$"Introdução"
+COMMENT=$"Introdução ao BigLinux."
+ICON="/usr/share/bigbashview/bcc/apps/big-welcome/big-logo.png"
+CATEGORY="Star"
+SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 cat << EOF
 
