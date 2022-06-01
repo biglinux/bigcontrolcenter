@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=big-welcome
+
+cd /usr/share/bigbashview/bcc/apps/big-welcome/
+
+bigbashview -s 1000x660 index.sh.htm -n $"Iniciando no BigLinux" -i big-logo.png
