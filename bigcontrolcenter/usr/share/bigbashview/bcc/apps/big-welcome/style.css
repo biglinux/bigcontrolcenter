@@ -41,6 +41,75 @@
   margin-top: -26px;
   margin-left: 122px;
 }
+#myDivchromium{
+  position: absolute;
+  margin-top: -26px;
+  margin-left: 122px;
+}
+#myDivvivaldi{
+  position: absolute;
+  margin-top: -26px;
+  margin-left: 122px;
+}
+#myDivopera{
+  position: absolute;
+  margin-top: -26px;
+  margin-left: 122px;
+}
+
+.biglinux-dashboard {
+  margin-top: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.biglinux-center-panel {
+    background-color: var(--theme-bg-color);
+    border-radius: 10px;
+    /* width: 100%; */
+    padding: 1rem;
+    /* margin-right: 1rem; */
+    flex-shrink: 0;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.biglinux-center-panel h4 {
+  color: var(--text-a-color);
+  margin: 1rem 1rem 0;
+}
+
+.biglinux-left-panel {
+  background-color: var(--theme-bg-color);
+  border-radius: 10px;
+  width: 49%;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.biglinux-left-panel h4 {
+  color: var(--text-a-color);
+  margin: 1rem 1rem 0;
+}
+
+.biglinux-card-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.biglinux-card-list-item {
+  padding: 0.75rem;
+  transition: background-color 64ms ease-out;
+}
+.biglinux-card-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.biglinux-card-list-item:not(:last-child) {
+  border-bottom: solid 1px #f2f2f2;
+}
 
 .box-items {
     align-items: center;
