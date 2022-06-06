@@ -5,6 +5,6 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 CATEGORY="Hardware"
-NAME=$"Testar webcam ou placa de captura"
+NAME=$"Configurar webcam ou placa de captura"
 ICON="icons/icon_webcam.png"
 COMMENT=""

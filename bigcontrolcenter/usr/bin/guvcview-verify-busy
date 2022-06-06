@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+WEBCAM_BUSY="$(ps ax | grep $(fuser /dev/video0 2> /dev/null) | grep -v grep | awk '{print $5}')"
+
+if [ "$WEBCAM_BUSY" = "" ]; then
+    guvcview
+else
+kdialog --msgbox $"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY
+
+Abrirei em modo de configuração.
+As alterações feitas podem ser vistas
+na imagem da sua webcam em outros programas." --title $"Webcam"
+    guvcview -z
+fi
+
+
