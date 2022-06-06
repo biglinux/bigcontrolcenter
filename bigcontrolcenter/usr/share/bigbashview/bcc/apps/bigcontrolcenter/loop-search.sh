@@ -93,6 +93,7 @@ SERVICES3="$(ls /usr/share/applications/bigcontrolcenter/* | grep -ve timeshift-
 /usr/share/applications/org.kde.kdeconnect-settings.desktop
 /usr/share/applications/org.kde.dolphin.desktop
 /usr/share/applications/org.kde.konsole.desktop
+/usr/share/applications/guvcview.desktop
 $SERVICES2
 $SERVICES3"); do
 
