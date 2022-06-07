@@ -18,11 +18,13 @@ for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.
 #         sed -i '/X-KDE-ServiceTypes=KCModule/d' "$bigdir/$i"
 #         sed -i '/Type=Service/d' "$bigdir/$i"
         sed -i '/Categories/s/^/#/' "$bigdir/$i" 
+        sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i" 
         
     elif [ -e "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
         mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "$bigdir/$i"
         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i"
         sed -i '/Categories/s/^/#/' "$bigdir/$i" 
+        sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i" 
     
         
 #         sed -i 's|QT_QUICK_BACKEND= ||g' "$bigdir/$i"

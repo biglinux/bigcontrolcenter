@@ -18,6 +18,7 @@ if [ -e "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
     
         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "/usr/share/kservices5/bigcontrolcenter/$i"
         sed -i '/Categories/s/#//' "/usr/share/kservices5/bigcontrolcenter/$i"
+        sed -i '/DBusActivatable/s/#//' "/usr/share/kservices5/bigcontrolcenter/$i"
         mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "/usr/share/applications/$i"
 
 elif [ -e "$bigdir/$i" ]; then
@@ -29,6 +30,7 @@ elif [ -e "$bigdir/$i" ]; then
     
         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i"
         sed -i '/Categories/s/#//' "$bigdir/$i"
+        sed -i '/DBusActivatable/s/#//' "$bigdir/$i"
         mv -f "$bigdir/$i" "/usr/share/applications/$i"
 
 fi
