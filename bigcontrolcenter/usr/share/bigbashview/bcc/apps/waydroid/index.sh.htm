@@ -89,29 +89,29 @@ if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | 
 cat << EOF
 
 <div class="help-action">
-  <p style='color: #00ffff;'>
+  <p style='color: #00ffff;font-size:18px;'>
 EOF
     echo $"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como Nvidia <b>DESATIVE</b>."
 cat << EOF
   </p>
 </div>
-<br>
 EOF
 
 else
 
+if [ ! -e "/usr/bin/waydroid-big" ]; then
 cat << EOF
-  <div class="help-action">
-    <p style='color: #00ffff;'>
+  <div class="help-action"><br>
+    <p style='color: #00ffff;font-size:18px;'>
 EOF
-  if [ -e "/usr/bin/waydroid-big" != "" ]; then
+
     echo $"Download próximo de 1 GB, pode demorar muito."
-  fi
+
 cat << EOF
     </p>
   </div>
-  <br>
 EOF
+fi
 
 fi
 
@@ -119,12 +119,37 @@ if [ -e "/usr/bin/waydroid-big" ]; then
 
 
 
+#################
+# Resolução
+#################
+
+#echo "" $"Resolução" ""
+echo '<br><p><label for="RESOLUTION" style="margin:0px; padding:0px; width: 100%; text-align:right;">' $"Resolução: "
+
+echo "<select class=RESOLUTION id=RESOLUTION name=RESOLUTION>"
+
+for i  in "360x640" "640x360" "640x480" "800x480" "854x480" "800x600" "960x540" "960x640" "600x1024" "1024x600" "1024x768" "1280x720" "1920x1080" "6000x6000"; do
 
 
+    if [ "$i" = "6000x6000" ]; then
+      name="$MAXIMIZED"
+    else
+      name="$i"
+    fi
+		
+	if [ "$i" = "$RESOLUTION" ]; then
+		    echo "<option value=\"$i\" selected>$name</option>"
+	else
+	    echo "<option value=\"$i\">$name</option>"
+	fi
 
-    tooltiprun=$"O Waydroid também pode ser iniciado utilizando o menu do sistema"
-    tooltipgpu=$"Se a aceleração 3D estiver ativada em um hardware incompatível
-    <br> o android não passará da tela de loading"
+done
+echo '</select></label></p><br>'
+
+
+tooltiprun=$"O Waydroid também pode ser iniciado utilizando o menu do sistema"
+tooltipgpu=$"Se a aceleração 3D estiver ativada em um hardware incompatível
+<br> o android não passará da tela de loading"
 
 STOP_WAYDROID=$"Parar o Waydroid"
 START_WAYDROID=$"Iniciar o Waydroid"
@@ -150,32 +175,7 @@ cat << EOF
 EOF
 
     
-#################
-# Resolução
-#################
 
-#echo "" $"Resolução" ""
-echo '<p><label for="RESOLUTION" style="margin:0px; padding:0px; width: 100%; text-align:right;">' $"Resolução"
-
-echo "<select class=RESOLUTION id=RESOLUTION name=RESOLUTION>"
-
-for i  in "360x640" "640x360" "640x480" "800x480" "854x480" "800x600" "960x540" "960x640" "600x1024" "1024x600" "1024x768" "1280x720" "1920x1080" "6000x6000"; do
-
-
-    if [ "$i" = "6000x6000" ]; then
-      name="$MAXIMIZED"
-    else
-      name="$i"
-    fi
-		
-	if [ "$i" = "$RESOLUTION" ]; then
-		    echo "<option value=\"$i\" selected>$name</option>"
-	else
-	    echo "<option value=\"$i\">$name</option>"
-	fi
-
-done
-echo '</select></label></p>'
 
 fi
 echo '</div><div class=app-card>'
@@ -213,7 +213,7 @@ else
 INSTALL_WAYDROID=$"Instalar Waydroid"
 INSTALL_WAYDROID_WITH_GAPPS=$"Instalar Waydroid com Google Apps"
 
-echo '<br><br><br><br>'
+echo '<br><br>'
 echo '<div class=apps-card>'
 
 cat << EOF

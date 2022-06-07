@@ -5,6 +5,6 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 NAME=$"KDE Connect"
-COMMENT=$"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets localizados perto do relógio do sistema.  Para sincronizar com o seu smartphone acesse a Google Store em seu telefone e instale o Kde Connect.  Esse aplicativo não está disponível para iPhone."
+COMMENT=$"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google Store ou Apple Store e instale o Kde Connect."
 ICON="icons/preferences-kde-connect.png"
 CATEGORY="Phone"
