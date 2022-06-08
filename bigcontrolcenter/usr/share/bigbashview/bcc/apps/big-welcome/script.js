@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-var pageRefresh = 5000; //5 s
+var pageRefresh = 9000; //9 s
     setInterval(function() {
         refresh();
     }, pageRefresh);
