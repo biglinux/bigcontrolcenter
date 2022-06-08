@@ -2,7 +2,7 @@
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=biglinux-waydroid
+export TEXTDOMAIN=bigcontrolcenter
 
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
@@ -148,8 +148,7 @@ echo '</select></label></p><br>'
 
 
 tooltiprun=$"O Waydroid também pode ser iniciado utilizando o menu do sistema"
-tooltipgpu=$"Se a aceleração 3D estiver ativada em um hardware incompatível
-<br> o android não passará da tela de loading"
+tooltipgpu=$"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de loading"
 
 STOP_WAYDROID=$"Parar o Waydroid"
 START_WAYDROID=$"Iniciar o Waydroid"
