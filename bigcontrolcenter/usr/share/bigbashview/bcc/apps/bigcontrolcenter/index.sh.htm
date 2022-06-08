@@ -53,6 +53,7 @@ CONTROLCENTER=$"Central de Controle"
 
 TITLE=$"Central de Controle"
 CLOSE=$"Fechar"
+OPEN=$"Abrir"
 
 RELOAD="0"
 
@@ -256,13 +257,13 @@ cat << EOF
                       </svg> $NAME </span>
                   <div class="app-card__subtext">$COMMENT</div>
                   <div class="app-card-buttons">
-                      <button class="content-button status-button">Abrir</button>
+                      <button class="content-button status-button">$OPEN</button>
                   </div>
               </div>
 EOF
 EXEC="biglinux-config"
 NAME=$"Restaurar a configuração de programas"
-COMMENT="Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
+COMMENT=$"Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
 cat << EOF
               <div class="app-card Star" onclick="_run('$EXEC')">
                 <span><svg viewBox="0 0 640 512">
@@ -272,7 +273,7 @@ cat << EOF
                 </span>
                 <div class="app-card__subtext">$COMMENT</div>
                 <div class="app-card-buttons">
-                  <button class="content-button status-button">Abrir</button>
+                  <button class="content-button status-button">$OPEN</button>
 
                 </div>
               </div>
@@ -291,7 +292,7 @@ cat << EOF
                 </span>
                 <div class="app-card__subtext">$COMMENT</div>
                 <div class="app-card-buttons">
-                  <button class="content-button status-button">Abrir</button>
+                  <button class="content-button status-button">$OPEN</button>
                 </div>
               </div>
 
@@ -457,7 +458,7 @@ cat << EOF
         </div>
 
         <div class="content-button-wrapper" style="text-align: right;">
-            <button class="modalClose">Fechar</button>
+            <button class="modalClose">$CLOSE</button>
         </div>
     </div>
 </div>
