@@ -31,16 +31,18 @@ parallel_search () {
     ICON="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key Icon)"
 
     if [ ! -e "$ICON" ]; then
+        ICON_ORIG1="$ICON"
         ICON="icons/${ICON}.png"
     fi
-
-
     if [ ! -e "$ICON" ]; then
-        ICON_ORIG="$(./desktop-file.py "$1")"
-
-        if [ "$(echo "$ICON_ORIG" | grep '.svg')" != "" ]; then
-            ksvgtopng5 128 128 "$ICON_ORIG" "$HOME/.config/bigcontrolcenter/${ICON}"
-            ICON="$HOME/.config/bigcontrolcenter/${ICON}"
+        ICON_ORIG="$(geticons "$ICON_ORIG1")"
+        ICON_ORIG_PNG="$(grep -i -m 1 "64x64.*png" <<< "$ICON_ORIG")"
+        if [ ! -e "$ICON_ORIG_PNG" ]; then
+            ICON_ORIG_SVG="$(grep -i ".svg" <<< "$ICON_ORIG" | tail -1)"
+        fi
+        if [ -e "$ICON_ORIG_SVG" ]; then
+            ksvgtopng5 64 64 "$ICON_ORIG_SVG" "$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png" &
+            ICON="$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png"
         else
             ICON="$ICON_ORIG"
         fi
