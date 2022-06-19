@@ -6,4 +6,4 @@ export TEXTDOMAIN=big-welcome
 
 cd /usr/share/bigbashview/bcc/apps/big-welcome/
 
-bigbashview -s 1000x660 index.sh.htm -n $"Iniciando no BigLinux" -i big-logo.png
+bigbashview -s 1000x660 main.sh.htm -n $"Introdução ao BigLinux" -i big-logo.png
