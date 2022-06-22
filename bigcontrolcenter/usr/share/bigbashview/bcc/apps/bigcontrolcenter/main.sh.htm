@@ -16,7 +16,6 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 cat << EOF
-<meta http-equiv="refresh" content="0; URL='index.sh.htm'"/>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -98,13 +97,18 @@ cat << EOF
   <div class="app">
     <div class="header"></div>
     <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-    <div class=footer-message>$MSG$USUARIO!</div>
+    <div class=footer-message>$MSG$USUARIO!<br>$TXT</div>
   </div>
 
   <div class="footer"></div>
   <div class="logo">
     <img src="logo.png" class="logo-biglinux">
   </div>
+  <script type="text/javascript">
+     window.location = "index.sh.htm";
+  </script>
+  <!-- <meta http-equiv="refresh" content="0; URL='index.sh.htm'"/> -->
+  <script src="./script.js"></script>
 </body>
 </html>
 EOF
