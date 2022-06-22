@@ -1,6 +1,0 @@
-#!/bin/bash
-
-
-kdialog --msgbox "Resolução: $1" --title "Resolução"
-kdialog --title "Waydroid configurado para resolução $1" --passivepopup \
-"Desaparece em cerca de 10 segundos" 10
