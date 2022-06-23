@@ -1,8 +1,0 @@
-######################
-# Tweaks for apt
-# by Bruno Gonçalves Araujo <bigbruno@gmail.com>
-# licensed under GPLv2 or greater.
-# released in 19/04/2020
-
-
-DPkg::Post-Invoke {"/usr/bin/bigcontrolcenter-clean-menu 2> /dev/null";};
