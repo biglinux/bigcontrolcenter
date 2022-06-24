@@ -281,6 +281,8 @@ body.light-mode:before {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
+    padding-top: 6px;
+    padding-bottom: 6px;    
 }
 
 .side-menu a {
@@ -293,6 +295,7 @@ body.light-mode:before {
     font-size: var(--text-size-small);
     border-radius: 6px;
     transition: 0.3s;
+    border: 1px solid rgb(255 255 255 / 0%);
 }
 
 @media all and (max-width: 1000px) {
@@ -311,6 +314,11 @@ body.light-mode:before {
 
 .side-menu a:hover {
     background-color: var(--hover-menu-bg);
+}
+
+.side-menu a:active {
+    background-color: var(--popup-bg);
+    border: 1px solid var(--search-color);
 }
 
 .side-menu svg {
@@ -467,22 +475,6 @@ body.light-mode:before {
     grid-row-gap: 1em;
 }
 
-.app-card {
-    display: none;
-    max-height: 40vh;
-    font-size: var(--text-size-big);
-    background-color: var(--content-bg);
-    border-radius: 14px;
-    border: 1px solid var(--border-card-color);
-    padding: 20px;
-    transition: 0.3s ease;
-    padding-bottom: 60px;
-    position: relative;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    fill: var(--text-a-color);
-}
-
 .icons-show {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
@@ -491,9 +483,33 @@ body.light-mode:before {
     justify-items: center;
 }
 
+.app-card {
+    display: none;
+    max-height: 40vh;
+    font-size: var(--text-size-big);
+    background-color: var(--content-bg);  
+    padding: 20px;
+    transition: 0.3s ease;
+    padding-bottom: 60px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    fill: var(--text-a-color);
+    border-radius: 14px;
+    border: 1px solid var(--border-card-color);
+    /*border: 2px solid rgb(255 255 255 / 0%);*/
+}
+
 .app-card:hover {
     transform: scale(1.02);
     background-color: var(--theme-bg-color);
+    border: 1px solid rgb(--border-card-color);
+}
+
+.app-card:active {
+    transform: scale(1.02);
+    background-color: var(--popup-bg);
+    border: 1px solid var(--search-color);
 }
 
 .app-card svg {
@@ -621,6 +637,12 @@ body.light-mode:before {
 .box-items .box-geral-icons:hover:hover {
     transform: scale(1.02);
     background-color: var(--theme-bg-color);
+}
+
+.box-items .box-geral-icons:active:active {
+    transform: scale(1.02);
+    background-color: var(--popup-bg);
+    border: 2px solid var(--search-color);
 }
 
 .box-imagem-icon {
