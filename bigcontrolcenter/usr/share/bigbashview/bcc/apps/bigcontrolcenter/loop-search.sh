@@ -38,7 +38,9 @@ parallel_search () {
         ICON_ORIG="$(geticons "$ICON_ORIG1")"
         ICON_ORIG_PNG="$(grep -i -m 1 "64x64.*png" <<< "$ICON_ORIG")"
         if [ ! -e "$ICON_ORIG_PNG" ]; then
-            ICON_ORIG_SVG="$(grep -i ".svg" <<< "$ICON_ORIG" | tail -1)"
+            ICON_ORIG_SVG="$(grep -i -m 1 ".svg" <<< "$ICON_ORIG" | tail -1)"
+            else
+            ICON_ORIG="$ICON_ORIG_PNG"
         fi
         if [ -e "$ICON_ORIG_SVG" ]; then
             ksvgtopng5 64 64 "$ICON_ORIG_SVG" "$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png" &

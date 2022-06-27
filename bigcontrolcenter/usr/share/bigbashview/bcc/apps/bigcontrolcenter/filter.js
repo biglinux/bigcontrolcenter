@@ -142,6 +142,17 @@ function charToUnicode( char ) {
 
 
 $(document).ready(function(){
+
+
+$('.box-items').sort(function(a, b) {
+  if (removeDiacritics(a.innerText) < removeDiacritics(b.innerText)) {
+    return -1;
+  } else {
+    return 1;
+  }
+}).appendTo('.icons-show');
+
+
     var $btns = $('.btn').click(function() {
         document.getElementById("search").value=""
         if (this.id == 'Star') {
