@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sed -i '/BorderlessMaximizedWindows=true/d' ~/.config/kwinrc
 /usr/lib/polkit-kde-authentication-agent-1 &
 kwin_x11 &
 cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
