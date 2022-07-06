@@ -4,8 +4,7 @@ After=plasma-ksmserver.service plasma-kcminit.service
 PartOf=graphical-session.target
 
 [Service]
-ExecStart=sleep 10
-ExecStart=/usr/bin/big-welcome
+ExecStart=/usr/bin/big-welcome-systemd
 Type=simple
 Slice=session.slice
 
