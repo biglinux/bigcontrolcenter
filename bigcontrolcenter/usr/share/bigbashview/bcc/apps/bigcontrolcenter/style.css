@@ -843,6 +843,10 @@ body.light-mode:before {
   /* ------------------------ */
  /*     OPEN WELCOME DIV     */
 /* ------------------------ */
+div#welcome {
+    display: none !important;
+}
+
 .welcome-close {
     position: absolute;
     top: 10px;
