@@ -4,7 +4,9 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-NAME=$"Gerenciar senhas salvas"
+NAME=$"Gerenciador de senhas"
 CATEGORY="Privacy"
 COMMENT=""
 EXEC="kwalletmanager5"
+ICON="icons/icone_password-manager.svg"
+

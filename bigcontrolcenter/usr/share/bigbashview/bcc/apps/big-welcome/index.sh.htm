@@ -259,7 +259,7 @@ echo '<!DOCTYPE html>
           <p class="panel__subheading">'$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."'</p>
         </header>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./run.run biglinux-themes-gui`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`biglinux-themes-gui`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-aparencia-desempenho-usabilidade.png"></div>
               <div class="box-titulo">'$"Temas, Desktop e Ajustes"'</div>
           </button>
@@ -270,10 +270,15 @@ echo '<!DOCTYPE html>
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_useraccount.png"></div>
               <div class="box-titulo">'$"Escolha seu Avatar"'</div>
           </button>
+        </div>    
+        
+        <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+          <button onclick="_run(`kcmshell5 msm_language_packages`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-multiple-language.svg"></div>
+              <div class="box-titulo">'$"Pacotes de Idioma"'</div>
+          </button>
         </div>          
-
-        
-        
+       
       </div>          
 <!-- BIG LINUX 01 -->
       <div id="DivBrowserRefresh" class="panel">

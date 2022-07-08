@@ -1,7 +1,5 @@
 #!/bin/bash
-
-
-##################################
+grep ##################################
 #  Author1: Bruno Goncalves (www.biglinux.com.br) 
 #  Author2: Rafael Ruscher (rruscher@gmail.com)  
 #  Date:    2022/02/28 
@@ -244,9 +242,9 @@ cat << EOF
         </div>
         <div class="main-container" style="overflow: auto;">
             <!-- PRINCIPAIS -->
-            <div class="content-wrapper" style="overflow-x: hidden;">
             <a name="topo"></a>
-                <div id="welcome" class="content-wrapper-header Star Staritem">
+            <div class="content-wrapper" style="overflow-x: hidden;">
+                <div id="welcome" class="content-wrapper-header Staritem">
                     <div class="content-wrapper-context">
                         <h3 class="img-content">
                             <img class="img-content img" src="icon.png">$CONTROLCENTER
@@ -696,7 +694,7 @@ cat << EOF
   <div class="footer">
   </div>
   <div class="logo">
-    <img src="logo.png" class="logo-biglinux">
+      <img id="btn-big" src="logo.png" class="logo-biglinux" onclick="biglinux();">
   </div>
 EOF
 
