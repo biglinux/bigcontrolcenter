@@ -342,9 +342,9 @@ body.light-mode:before {
 .menu-link-main {
     text-decoration: none;
     color: var(--theme-color);
-    padding: 0 30px;
+    /*padding: 0 30px;*/
+    padding: 0 0px;
 }
-
 
 .content-wrapper {
     border-radius: 15px;
@@ -843,6 +843,10 @@ body.light-mode:before {
   /* ------------------------ */
  /*     OPEN WELCOME DIV     */
 /* ------------------------ */
+#welcome {
+    display: none;
+}
+
 .welcome-close {
     position: absolute;
     top: 10px;
@@ -861,9 +865,6 @@ body.light-mode:before {
   background-color: #dd0000;
 }
 
-#welcome {
-    display: none;
-}
 
 .disabled {
     background-color: #777777;
