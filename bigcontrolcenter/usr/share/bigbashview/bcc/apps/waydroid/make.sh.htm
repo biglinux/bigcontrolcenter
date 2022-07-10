@@ -11,11 +11,13 @@ xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -
 if [ "$install" = "1" ]; then
     pamac-installer --build waydroid waydroid-image
     pamac-installer waydroid-meta-x11
+    pkexec ./install.sh
 fi
 
 if [ "$install_with_gapps" = "1" ]; then
     pamac-installer --build waydroid waydroid-image-gapps
     pamac-installer waydroid-meta-x11
+    pkexec ./install_with_gapps.sh
 fi
 
 if [ "$gpu" = "1" ]; then
