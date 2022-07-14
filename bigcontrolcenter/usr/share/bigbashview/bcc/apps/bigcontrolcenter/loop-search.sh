@@ -24,7 +24,7 @@ parallel_search () {
     if [ "$EXEC" = "" ]; then
         EXEC="kcmshell5 $(kreadconfig5 --file "$1" --group "Desktop Entry" --key X-KDE-Library)"
     fi
-    EXEC="$(echo "$EXEC" | sed 's|kcm_||g;s|systemsettings|kcmshell5|g')"
+    EXEC="$(echo "$EXEC" | sed 's|kcm_||g;s|systemsettings|kcmshell5|g;s|%.*||g')"
     NAME="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key Name)"
     COMMENT="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key Comment)"
     CATEGORY="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)"
