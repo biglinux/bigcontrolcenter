@@ -4,7 +4,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-EXEC="kcmshell5 kcm_printer_manager"
+EXEC="system-config-printer"
 NAME=$"Impressoras"
 COMMENT=$"Instalar, configurar ou remover impressoras."
 ICON="icons/icon_print.png"
