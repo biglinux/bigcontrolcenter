@@ -88,6 +88,40 @@ echo $"Utilize programas para Android no BigLinux."
 echo $"Abra programas no formato .apk, abra pelo gerenciador de arquivos.<br><br>"
 
 
+
+if [ ! -e "/usr/bin/waydroid-big" ]; then
+cat << EOF
+  <div class="help-action"><br>
+    <p style='color: #00ffff;font-size:18px;'>
+EOF
+
+  echo $"Este download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+    
+    
+INSTALL_WAYDROID=$"Instalar Waydroid"
+INSTALL_WAYDROID_WITH_GAPPS=$"Instalar Waydroid com Google Apps"
+
+echo '<br><br>'
+echo '<div class="apps-card" style="margin-left: 10px; margin-right: 10px; display: inline-flex;">'
+
+cat << EOF
+        <div class=app-card>
+          <a class="content-button status-button" style="margin-left: 10px; margin-right: 10px;" href="make.sh.htm?install_with_gapps=1">$INSTALL_WAYDROID_WITH_GAPPS</a>
+        </div>
+EOF
+
+cat << EOF
+        <div class=app-card>
+          <a class="content-button status-button" style="margin-left: 10px; margin-right: 10px;" href="make.sh.htm?install=1">$INSTALL_WAYDROID</a>
+        </div>
+EOF
+
+cat << EOF
+    </p>
+  </div>
+EOF
+else
+
 cat << EOF
 <div class="content-section" style="margin-top: 0px;">               
   <ul style="margin-top: 0px;">
@@ -122,7 +156,7 @@ for i  in "640x360" "640x480" "800x480" "854x480" "800x600" "960x540" "960x640" 
     fi
 		
 	if [ "$i" = "$RESOLUTION" ]; then
-		    echo "<option value=\"$i\" selected>$name</option>"
+        echo "<option value=\"$i\" selected>$name</option>"
 	else
 	    echo "<option value=\"$i\">$name</option>"
 	fi
@@ -139,7 +173,7 @@ for i  in "360x640" "600x1024" "640x1136" "960x1704" "1080x1920" "6000x6000"; do
     fi
 		
 	if [ "$i" = "$RESOLUTION" ]; then
-		    echo "<option value=\"$i\" selected>$name</option>"
+        echo "<option value=\"$i\" selected>$name</option>"
 	else
 	    echo "<option value=\"$i\">$name</option>"
 	fi
@@ -205,7 +239,9 @@ cat << EOF
       </div>
     </li>
 EOF
-if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
+if [ "$(pacman -Q waydroid-image-gapps 2> /dev/null)" != "" ]; then #START Checks if the waydroid-image-gapps package is installed.
+
+  if [ "$(waydroid status | grep Session | grep RUNNING)" != "" ] || [ "$(ps -e | grep waydroid-big)" != "" ]; then
 
 SHOW_ID=$"Exibir ID do Android"
 ACTIVATE=$"Ativar Google Apps"
@@ -246,8 +282,7 @@ cat << EOF
 
     <div class="pop-up__subtitle" style="text-align: justify;">
 EOF
-#Registre seu ID do Android em Ativar Google Apps. Após o registro aguarde alguns minuto ou reinice o Waydroid.
-    
+   
 echo $'Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!'
 
 cat << EOF
@@ -269,8 +304,29 @@ cat << EOF
 
 
 EOF
-fi   
+  fi
+  
+fi #END Checks if the waydroid-image-gapps package is installed.
 cat << EOF
+
+  <li>
+    <div class="products">
+      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="chrome" role="img" viewBox="0 0 448 512" class="svg-inline--fa fa-chrome fa-w-16 fa-3x"><path fill="currentColor" d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z"></path></svg>
+EOF
+    echo $"Remover Configurações"
+cat << EOF      
+    </div>
+    
+    <div class="button-wrapper">
+        <div class=app-card>
+            <a class="content-button status-button" href="make.sh.htm?remove=1">Remover</a>
+        </div> 
+    </div>
+    </div>
+
+  </li>
+
+
   </ul>
 </div>
 <br>
@@ -287,23 +343,6 @@ cat << EOF
   </p>
 </div>
 EOF
-
-else
-
-if [ ! -e "/usr/bin/waydroid-big" ]; then
-cat << EOF
-  <div class="help-action"><br>
-    <p style='color: #00ffff;font-size:18px;'>
-EOF
-
-    echo $"Este download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-
-cat << EOF
-    </p>
-  </div>
-EOF
-fi
-
 fi
 cat << EOF
 <br>
@@ -331,6 +370,7 @@ EOF
             </div>
 EOF
     fi
+fi    
 cat << EOF
 </div>                
   <script  src="./script.js"></script>
