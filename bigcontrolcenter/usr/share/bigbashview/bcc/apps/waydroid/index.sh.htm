@@ -253,60 +253,44 @@ cat << EOF
     PlayStore
   </div>
   
-<div class="txt">
-
-<a href="#" class="status-remove"><svg viewBox="0 0 512 512" style="width: 16px; border-radius: 0px; margin: 0px; position: relative; top: -11px;"><path fill="currentcolor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg></a>
-
-</div>
-
-  
-  <div class="button-wrapper">
-        <ul>
-          <li style="font-size: 14px; cursor: pointer;" onclick="_run('./number.run')"><svg viewBox="0 0 384 512" style="width: 12px; border-radius: 0px; margin: 0px 5px -5px 0px;"><path fill="currentcolor" d="M336 0h-288c-26.51 0-48 21.49-48 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48v-416C384 21.49 362.5 0 336 0zM192 128c35.35 0 64 28.65 64 64s-28.65 64-64 64S128 227.3 128 192S156.7 128 192 128zM288 384H96c-8.836 0-16-7.164-16-16C80 323.8 115.8 288 160 288h64c44.18 0 80 35.82 80 80C304 376.8 296.8 384 288 384z"/></svg> $SHOW_ID</li>
-          <li style="font-size: 14px; cursor: pointer;" onclick="_run('./activate.run')"><svg viewBox="0 0 488 512" style="width: 12px; border-radius: 0px; margin: 0px 5px -3px 0px;"><path fill="currentcolor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg> $ACTIVATE</li>
-        </ul>  
-    </div>
+  <div class="txt">
+    <a href="#" class="status-remove"><svg viewBox="0 0 512 512" style="width: 16px; border-radius: 0px; margin: 0px; position: relative; top: -11px;"><path fill="currentcolor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg></a>
   </div>
 
+    
+  <div class="button-wrapper">
+      <ul>
+        <li style="font-size: 14px; cursor: pointer;" onclick="_run('./number.run')"><svg viewBox="0 0 384 512" style="width: 12px; border-radius: 0px; margin: 0px 5px -5px 0px;"><path fill="currentcolor" d="M336 0h-288c-26.51 0-48 21.49-48 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48v-416C384 21.49 362.5 0 336 0zM192 128c35.35 0 64 28.65 64 64s-28.65 64-64 64S128 227.3 128 192S156.7 128 192 128zM288 384H96c-8.836 0-16-7.164-16-16C80 323.8 115.8 288 160 288h64c44.18 0 80 35.82 80 80C304 376.8 296.8 384 288 384z"/></svg> $SHOW_ID</li>
+        <li style="font-size: 14px; cursor: pointer;" onclick="_run('./activate.run')"><svg viewBox="0 0 488 512" style="width: 12px; border-radius: 0px; margin: 0px 5px -3px 0px;"><path fill="currentcolor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg> $ACTIVATE</li>
+      </ul>  
+  </div>
+  <div class="pop-up">
+      <div class="pop-up__title">Ajuda - Habilitar PlayStore
+        <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M15 9l-6 6M9 9l6 6" />
+        </svg>
+
+      </div>
+
+      <div class="pop-up__subtitle" style="text-align: justify;">
+EOF
+  echo $'Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!'
+cat << EOF
+      </div>
+  </div> 
 </li>
 
 
-<div class="pop-up">
-    <div class="pop-up__title">Ajuda - Habilitar PlayStore
-      <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M15 9l-6 6M9 9l6 6" />
-      </svg>
 
-    </div>
-
-    <div class="pop-up__subtitle" style="text-align: justify;">
-EOF
-   
-echo $'Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!'
-
-cat << EOF
-    </div>
-<!--  <div id="desc">
-    <ul id="menu">
-      <li>
-        <div class="checkbox-wrapper">
-          <input id="s0" type="checkbox" class="switch" style="display: inline-block; float: left;">
-          <span for="check1">Exemplo de checkbox</span>
-        </div>
-      </li>
-    </ul>
-  </div>              
-  <div class="content-button-wrapper">
-    <button class="content-button status-button2 open close">Fechar</button>
-  </div> -->
-</div> 
 
 
 EOF
   fi
   
 fi #END Checks if the waydroid-image-gapps package is installed.
+
+if [ -e "$HOME/.local/share/waydroid" ]; then
 cat << EOF
 
   <li>
@@ -322,10 +306,10 @@ cat << EOF
             <a class="content-button status-button" href="make.sh.htm?remove=1">Remover</a>
         </div> 
     </div>
-    </div>
-
   </li>
-
+EOF
+fi
+cat << EOF
 
   </ul>
 </div>
