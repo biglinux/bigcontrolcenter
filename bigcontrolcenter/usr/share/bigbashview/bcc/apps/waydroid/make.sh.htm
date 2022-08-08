@@ -14,6 +14,15 @@ if [ "$install" = "1" ]; then
     pkexec ./install.sh
 fi
 
+if [ "$remove" = "1" ]; then
+    if [ -e "$HOME/.local/share/waydroid" ]; then
+        pkexec rm -R "$HOME/.local/share/waydroid"
+        kdialog --title $"Waydroid" --msgbox $"Configurações foram removidas com sucesso! Inicie novamente!"
+    else
+        kdialog --title $"Waydroid" --msgbox $"Não exitem configurações para serem removidas."
+    fi
+fi
+
 if [ "$install_with_gapps" = "1" ]; then
     pamac-installer --build waydroid waydroid-image-gapps
     pamac-installer waydroid-meta-x11
@@ -21,7 +30,16 @@ if [ "$install_with_gapps" = "1" ]; then
 fi
 
 if [ "$gpu" = "1" ]; then
-    pkexec waydroid-big-3d 1
+
+    if [ "$(lsmod | grep nvidia_drm)" != "" ]; then
+        pkexec waydroid-big-3d 0
+        kdialog --title $"Waydroid" --msgbox $"Aceleração 3D não é compatível com placa de vídeo da Nvidia"
+        #exit
+    else
+        pkexec waydroid-big-3d 1
+    fi
+
+    
 fi
 
 if [ "$gpu" = "0" ]; then
@@ -36,6 +54,7 @@ fi
 if [ "$stop" = "1" ]; then
     waydroid session stop
     killall weston
+    #killall waydroid-gui-bi
 fi
 
 
