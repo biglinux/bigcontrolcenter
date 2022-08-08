@@ -21,7 +21,16 @@ if [ "$install_with_gapps" = "1" ]; then
 fi
 
 if [ "$gpu" = "1" ]; then
-    pkexec waydroid-big-3d 1
+
+    if [ "$(lsmod | grep nvidia_drm)" != "" ]; then
+        pkexec waydroid-big-3d 0
+        kdialog --title $"Waydroid" --msgbox $"Aceleração 3D não é compatível com placa de vídeo da Nvidia"
+        #exit
+    else
+        pkexec waydroid-big-3d 1
+    fi
+
+    
 fi
 
 if [ "$gpu" = "0" ]; then
