@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pamac-installer --build waydroid waydroid-image
-pamac-installer waydroid-meta-x11
+pamac-installer --build waydroid-image
+pamac-installer waydroid waydroid-meta-x11
 
 if [ "$(lsmod | grep nvidia_drm)" != "" ]; then
     waydroid-big-3d 0

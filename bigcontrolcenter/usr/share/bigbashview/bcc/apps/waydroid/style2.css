@@ -879,6 +879,7 @@ div#add-tab-content {
 div#list-tab-content {
   width: 100%;
   text-align: center;
+  padding-top: 15px;
 }
 
 ul#menu-lista {
@@ -931,7 +932,7 @@ input {
 
 .form-wrap {
   width: 100%;
-  margin: 1.5em auto 0;
+  margin: 10px auto 0;
 }
 
 .form-wrap a {
@@ -972,10 +973,12 @@ input {
   align-items: center;
 }
 
+
 .help-action {
-  padding: 0.4em 0 0;
-  font-size: 0.93em;
-  text-align: center;
+    padding: 0px 0 0;
+    margin: -9px;
+    font-size: 0.93em;
+    text-align: center;
 }
 
 .form-wrap .tabs-content div[id$=tab-content] {
@@ -1618,7 +1621,7 @@ li img {
   border-top: 1px solid var(--border-box);  
 }
 .content-section ul svg {
-  width: 25px;
+  width: 28px;
   /*border-radius: 6px;*/
   margin-right: 16px;
   flex-shrink: 0;
@@ -1661,7 +1664,6 @@ li img {
 @media screen and (max-width: 1200px) {
   .txt {
     width: 120%;
-    font-size: 1.3vw;
   }
 }
 @media screen and (max-width: 680px) {
@@ -1721,6 +1723,8 @@ li img {
   font-size: 15px;
   margin-top: 0;
   padding: 6px 24px;
+  color: var(--text-button-color) !important;
+
 }
 @media screen and (max-width: 390px) {
   .status-button {
@@ -1837,6 +1841,8 @@ li img {
   --footer-bg-color: #2a303a;
   --box-color-shadow-01: rgba(0, 0, 0, 0.2);
   --text-a-color: #ccc;
+  --text-button-color: #fff;
+
 }
 
 .light-mode {
@@ -1866,6 +1872,7 @@ li img {
   --footer-bg-color: #6c6d6d;
   --box-color-shadow-01: rgba(0, 0, 0, 0.2);
   --text-a-color: #444;
+  --text-button-color: #fff;
 }
 
 input[type=button] {

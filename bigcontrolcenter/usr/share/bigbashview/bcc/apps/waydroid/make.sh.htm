@@ -7,54 +7,111 @@ export TEXTDOMAIN=bigcontrolcenter
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
+windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 
-if [ "$install" = "1" ]; then
-    pamac-installer --build waydroid waydroid-image
-    pamac-installer waydroid-meta-x11
-    pkexec ./install.sh
-fi
 
+##############
+# REMOVE
+##############
 if [ "$remove" = "1" ]; then
     if [ -e "$HOME/.local/share/waydroid" ]; then
-        pkexec rm -R "$HOME/.local/share/waydroid"
-        kdialog --title $"Waydroid" --msgbox $"Configurações foram removidas com sucesso! Inicie novamente!"
+
+
+        kdialog --attach="$windowID" --title $"Waydroid" \
+                --yesno $"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão perdidas.
+
+Realmente deseja remover?"
+
+        if [ "$?" = "0" ]; then
+
+            pkexec rm -R "$HOME/.local/share/waydroid"
+            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
+        else
+            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Nenhuma configuração foi removida!"
+        fi
     else
-        kdialog --title $"Waydroid" --msgbox $"Não exitem configurações para serem removidas."
+        kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Não existem configurações para remover."
     fi
 fi
 
+
+##############
+# INSTALL
+##############
+if [ "$install" = "1" ]; then
+    pamac-installer --build waydroid-image
+    pamac-installer waydroid waydroid-meta-x11
+fi
+
+
+###############
+# INSTALL GAPPS
+###############
 if [ "$install_with_gapps" = "1" ]; then
-    pamac-installer --build waydroid waydroid-image-gapps
-    pamac-installer waydroid-meta-x11
-    pkexec ./install_with_gapps.sh
+    pamac-installer --build waydroid-image-gapps
+    pamac-installer waydroid waydroid-meta-x11
 fi
 
-if [ "$gpu" = "1" ]; then
 
-    if [ "$(lsmod | grep nvidia_drm)" != "" ]; then
-        pkexec waydroid-big-3d 0
-        kdialog --title $"Waydroid" --msgbox $"Aceleração 3D não é compatível com placa de vídeo da Nvidia"
-        #exit
-    else
-        pkexec waydroid-big-3d 1
+##############
+# UNINSTALL
+##############
+if [ "$uninstall" = "1" ]; then
+
+
+    if [ -e "$HOME/.local/share/waydroid" ]; then
+        kdialog --attach="$windowID" --title $"Waydroid" \
+                --yesno $"Deseja remover também os arquivos de configuração e programas instalados dentro do Waydroid?"
+
+        if [ "$?" = "0" ]; then
+
+            pkexec rm -R "$HOME/.local/share/waydroid"
+            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
+        else
+            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Nenhuma configuração foi removida!"
+        fi
     fi
 
-    
+    if [ "$(pacman -Q waydroid-image-gapps 2> /dev/null)" != "" ]; then #START Checks if the waydroid-image-gapps package is installed.
+        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux
+    else
+        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image waydroid-biglinux
+    fi
+
 fi
 
+
+###############
+# ENABLE 3D
+###############
+if [ "$gpu" = "1" ]; then
+    pkexec waydroid-big-3d 1
+fi
+
+
+###############
+# DISABLE 3D
+###############
 if [ "$gpu" = "0" ]; then
     pkexec waydroid-big-3d 0
 fi
 
+
+################
+# START WAYDROID
+################
 if [ "$start" = "1" ]; then
     waydroid-big </dev/null &>/dev/null &
     sleep 1
 fi
 
+
+###############
+# STOP WAYDROID
+###############
 if [ "$stop" = "1" ]; then
     waydroid session stop
     killall weston
-    #killall waydroid-gui-bi
 fi
 
 
