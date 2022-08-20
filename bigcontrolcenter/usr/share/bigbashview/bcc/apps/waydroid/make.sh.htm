@@ -39,8 +39,7 @@ fi
 # INSTALL
 ##############
 if [ "$install" = "1" ]; then
-    pamac-installer --build waydroid-image
-    pamac-installer waydroid waydroid-meta-x11
+    ./install.sh waydroid-image
 fi
 
 
@@ -48,8 +47,7 @@ fi
 # INSTALL GAPPS
 ###############
 if [ "$install_with_gapps" = "1" ]; then
-    pamac-installer --build waydroid-image-gapps
-    pamac-installer waydroid waydroid-meta-x11
+    ./install.sh waydroid-image-gapps
 fi
 
 
@@ -73,9 +71,9 @@ if [ "$uninstall" = "1" ]; then
     fi
 
     if [ "$(pacman -Q waydroid-image-gapps 2> /dev/null)" != "" ]; then #START Checks if the waydroid-image-gapps package is installed.
-        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux
+        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder 
     else
-        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image waydroid-biglinux
+        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image waydroid-biglinux libgbinder
     fi
 
 fi
