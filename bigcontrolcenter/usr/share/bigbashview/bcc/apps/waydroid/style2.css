@@ -976,7 +976,7 @@ input {
 
 .help-action {
     padding: 0px 0 0;
-    margin: -9px;
+    /*margin: -9px;*/
     font-size: 0.93em;
     text-align: center;
 }
@@ -2073,3 +2073,16 @@ hr {
     font-weight: bold;
     font-style: italic;
 }
+
+.img-waydroid {
+  width: 60%;
+  filter: drop-shadow(2px 5px 4px rgb(0 0 0 / 30%));
+}
+
+#img-waydroid {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align-last: center;
+  padding: 30px;
+}  

@@ -6,9 +6,7 @@ export TEXTDOMAIN=bigcontrolcenter
 
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
-
 windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
-
 
 ##############
 # REMOVE
@@ -16,9 +14,9 @@ windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 if [ "$remove" = "1" ]; then
     if [ -e "$HOME/.local/share/waydroid" ]; then
 
-
-        kdialog --attach="$windowID" --title $"Waydroid" \
-                --yesno $"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão perdidas.
+    kdialog --attach="$windowID" --title $"Waydroid" \
+--yesno $"Ao remover as configurações os programas instalados 
+dentro do Waydroid e suas configurações serão perdidas.
 
 Realmente deseja remover?"
 
@@ -59,7 +57,8 @@ if [ "$uninstall" = "1" ]; then
 
     if [ -e "$HOME/.local/share/waydroid" ]; then
         kdialog --attach="$windowID" --title $"Waydroid" \
-                --yesno $"Deseja remover também os arquivos de configuração e programas instalados dentro do Waydroid?"
+--yesno $"Deseja remover também os arquivos de configuração 
+e programas instalados dentro do Waydroid?"
 
         if [ "$?" = "0" ]; then
 
