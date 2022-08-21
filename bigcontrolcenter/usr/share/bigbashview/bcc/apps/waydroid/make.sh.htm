@@ -71,9 +71,9 @@ if [ "$uninstall" = "1" ]; then
     fi
 
     if [ "$(pacman -Q waydroid-image-gapps 2> /dev/null)" != "" ]; then #START Checks if the waydroid-image-gapps package is installed.
-        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder 
+        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
     else
-        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image waydroid-biglinux libgbinder
+        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image waydroid-biglinux libgbinder python-gbinder
     fi
 
 fi
