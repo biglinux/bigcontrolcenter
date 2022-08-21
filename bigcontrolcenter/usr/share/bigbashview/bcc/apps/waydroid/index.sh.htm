@@ -230,7 +230,7 @@ else
   if [ "$(lsmod | grep nvidia_drm)" != "" ]; then
     echo '<div class='txt'>'$tooltipnvidia'</div>'
   else
-    echo '<div class="txt">$tooltipgpu</div>'
+    echo '<div class='txt'>'$tooltipgpu'</div>'
   fi
   
 cat << EOF
