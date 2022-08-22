@@ -7,12 +7,20 @@
 msgid   ""
 msgstr  "Project-Id-Version: bigcontrolcenter\n"
         "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2022-08-01 06:12-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
         "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
         "Language: \n"
         "MIME-Version: 1.0\n"
         "Content-Type: text/plain; charset=UTF-8\n"
         "Content-Transfer-Encoding: 8bit\n"
+
+msgid   "Introdução ao BigLinux"
+msgstr  ""
+
+msgid   "Central de Controle"
+msgstr  ""
 
 msgid   "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
         "\n"
@@ -22,12 +30,6 @@ msgid   "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
 msgstr  ""
 
 msgid   "Webcam"
-msgstr  ""
-
-msgid   "Introdução ao BigLinux"
-msgstr  ""
-
-msgid   "Central de Controle"
 msgstr  ""
 
 msgid   "Category"
@@ -175,100 +177,209 @@ msgstr  ""
 msgid   "Aguarde, carregando..."
 msgstr  ""
 
-msgid   "Remover"
+msgid   "Integração com Google Drive e ownCloud"
 msgstr  ""
 
-msgid   "Maximizado"
+msgid   "Acesse seus arquivos que estão no Google Drive ou ownCloud "
+        "diretamente no gerenciador de arquivos."
 msgstr  ""
 
-msgid   "Desinstalar"
+msgid   "Configurar o AppimageLauncher"
 msgstr  ""
 
-msgid   "Waydroid"
+msgid   "Escolher o comportamento dos programas disponibilizados em .appimage"
 msgstr  ""
 
-msgid   "Utilize programas para Android no BigLinux."
+msgid   "Qt Assistant"
 msgstr  ""
 
-msgid   "Instalar o Waydroid"
+msgid   "Programas de desenvolvimento para QT."
 msgstr  ""
 
-msgid   "Instalar o Waydroid com Google Apps"
+msgid   "Configurações de uso dos antigos CDs de música, não são válidas para "
+        "músicas em MP3."
 msgstr  ""
 
-msgid   "O download tem aproximadamente 1 GB, dependendo da sua conexão pode "
-        "demorar."
+msgid   "Procurar servidores (zeroconf)"
 msgstr  ""
 
-msgid   "Paisagem"
+msgid   "Instalar ou remover programas."
 msgstr  ""
 
-msgid   "Retrato"
+msgid   "Restaurar a configuração de programas"
 msgstr  ""
 
-msgid   "Desativado"
+msgid   "Utilitário que facilita a restauração do sistema instalado,\n"
+        "<br>\n"
+        "principalmente a restauração do boot do sistema (Grub).\n"
+        "<br><br>\n"
+        "Também pode ser utilizado para acessar o gerenciador\n"
+        "<br>\n"
+        "de pacotes e o terminal do sistema instalado."
 msgstr  ""
 
-msgid   "Ativado"
+msgid   "Temas do Bootsplash"
 msgstr  ""
 
-msgid   "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgid   "Controle o brilho e as cores"
 msgstr  ""
 
-msgid   "Se a aceleração 3D estiver ativada em um hardware incompatível o "
-        "android não passará da tela de loading"
+msgid   "Brilho e cor"
 msgstr  ""
 
-msgid   "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o "
-        "driver proprietário."
+msgid   "Procurar servidores SSH"
 msgstr  ""
 
-msgid   "Exibir ID do Android"
+msgid   "Procurar servidores VNC"
 msgstr  ""
 
-msgid   "Ativar Google Apps"
+msgid   "Configurar este tema de borda de janelas"
 msgstr  ""
 
-msgid   "Remover Configurações"
+msgid   "Configurar este tema de janelas."
 msgstr  ""
 
-msgid   "Desinstalar o Waydroid"
+msgid   "Qt Designer"
 msgstr  ""
 
-msgid   "Se a aceleração 3D estiver ativada em um hardware incompatível<br> o "
-        "android não passará da tela de loading"
+msgid   "Gerenciador de áudio avançado - Alsamixer"
 msgstr  ""
 
-msgid   "Parar o Waydroid"
+msgid   "Controlador de áudio em caso de ausência som."
 msgstr  ""
 
-msgid   "Iniciar o Waydroid"
+msgid   "Particionar ou formatar"
 msgstr  ""
 
-msgid   "ID do Android:"
+msgid   "Cuidado, este programa poderá apagar todos os dados do computador."
 msgstr  ""
 
-msgid   "Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid "
-        "precisa estar aberto."
+msgid   "Informações de armazenamento (SMART)"
 msgstr  ""
 
-msgid   "Ao remover as configurações os programas instalados \n"
-        "dentro do Waydroid e suas configurações serão perdidas.\n"
-        "\n"
-        "Realmente deseja remover?"
+msgid   "Firewall"
 msgstr  ""
 
-msgid   "Configurações removidas com sucesso!"
+msgid   "Configurar regras de segurança para a conexão com a internet."
 msgstr  ""
 
-msgid   "Nenhuma configuração foi removida!"
+msgid   "Configurar webcam ou placa de captura"
 msgstr  ""
 
-msgid   "Não existem configurações para remover."
+msgid   "Scanners HP"
 msgstr  ""
 
-msgid   "Deseja remover também os arquivos de configuração \n"
-        "e programas instalados dentro do Waydroid?"
+msgid   "Impressoras HP"
+msgstr  ""
+
+msgid   "Verificar o status, nível de tinta e manutenção."
+msgstr  ""
+
+msgid   "Montar Hardware Apple"
+msgstr  ""
+
+msgid   "Com esse programa você pode acessar os programas do seu iPhone ou "
+        "iPad Apple de forma similar ao acesso de arquivos em um pendrive."
+msgstr  ""
+
+msgid   "Equalizador (DSP)"
+msgstr  ""
+
+msgid   "Áreas de trabalho virtuais e atividades"
+msgstr  ""
+
+msgid   "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr  ""
+
+msgid   "Ativar a pesquisa aumenta o consumo de memória e processamento do "
+        "sistema."
+msgstr  ""
+
+msgid   "Ajuste a data, hora e fuso horário."
+msgstr  ""
+
+msgid   "Tema da Área de Trabalho"
+msgstr  ""
+
+msgid   "Ícones e emoticons"
+msgstr  ""
+
+msgid   "Joystick"
+msgstr  ""
+
+msgid   "Configurações de layout, teclas de atalho e outras opções."
+msgstr  ""
+
+msgid   "Gerenciar conexões"
+msgstr  ""
+
+msgid   "Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, "
+        "ADSL, rede com fio, banda larga móvel e outros)."
+msgstr  ""
+
+msgid   "Instalar, configurar ou remover impressoras."
+msgstr  ""
+
+msgid   "Gerenciar serviços (Systemd)"
+msgstr  ""
+
+msgid   "Configurar o tema Kvantum"
+msgstr  ""
+
+msgid   "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em "
+        "'Estilo do aplicativo'."
+msgstr  ""
+
+msgid   "Carteira de senhas do KDE"
+msgstr  ""
+
+msgid   "Qt Linguist"
+msgstr  ""
+
+msgid   "Gerenciador de usuários"
+msgstr  ""
+
+msgid   "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr  ""
+
+msgid   "Gerenciar arquivos"
+msgstr  ""
+
+msgid   "Tenha acesso a seus arquivos e pastas."
+msgstr  ""
+
+msgid   "Esse programa pode transferir arquivos entre smartphones, tablets e "
+        "outros computadores.  Com ele você pode, por exemplo, utilizar  seu "
+        "smartphone como mouse e teclado sem fio para controlar o computador, "
+        "entre outros recursos.  Ele se integra melhor ao BigLinux e fica "
+        "entre os applets localizados perto do relógio do sistema. Para "
+        "sincronizar com o seu smartphone acesse a Google Store ou Apple "
+        "Store e instale o Kde Connect."
+msgstr  ""
+
+msgid   "Terminal"
+msgstr  ""
+
+msgid   "Acesse o terminal de comandos."
+msgstr  ""
+
+msgid   "Gerenciador de senhas"
+msgstr  ""
+
+msgid   "Som e microfone"
+msgstr  ""
+
+msgid   "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: "
+        "HDMI)"
+msgstr  ""
+
+msgid   "Qt QDBusViewer "
+msgstr  ""
+
+msgid   "Centro de controle do KDE"
+msgstr  ""
+
+msgid   "Configurador avançado de energia"
 msgstr  ""
 
 msgid   "Categorias"
@@ -329,9 +440,6 @@ msgid   "Abrir"
 msgstr  ""
 
 msgid   "Temas, desktop e ajustes"
-msgstr  ""
-
-msgid   "Restaurar a configuração de programas"
 msgstr  ""
 
 msgid   "Lista com alguns programas do sistema que você pode restaurar a "
@@ -479,208 +587,6 @@ msgid   "Basta abrir o site https://snapdrop.net nos Hardware que você quer "
         "uso desse site."
 msgstr  ""
 
-msgid   "Instalar ou remover programas."
-msgstr  ""
-
-msgid   "Gerenciar conexões"
-msgstr  ""
-
-msgid   "Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, "
-        "ADSL, rede com fio, banda larga móvel e outros)."
-msgstr  ""
-
-msgid   "Procurar servidores VNC"
-msgstr  ""
-
-msgid   "Utilitário que facilita a restauração do sistema instalado,\n"
-        "<br>\n"
-        "principalmente a restauração do boot do sistema (Grub).\n"
-        "<br><br>\n"
-        "Também pode ser utilizado para acessar o gerenciador\n"
-        "<br>\n"
-        "de pacotes e o terminal do sistema instalado."
-msgstr  ""
-
-msgid   "Tema da Área de Trabalho"
-msgstr  ""
-
-msgid   "Montar Hardware Apple"
-msgstr  ""
-
-msgid   "Com esse programa você pode acessar os programas do seu iPhone ou "
-        "iPad Apple de forma similar ao acesso de arquivos em um pendrive."
-msgstr  ""
-
-msgid   "Integração com Google Drive e ownCloud"
-msgstr  ""
-
-msgid   "Acesse seus arquivos que estão no Google Drive ou ownCloud "
-        "diretamente no gerenciador de arquivos."
-msgstr  ""
-
-msgid   "Scanners HP"
-msgstr  ""
-
-msgid   "Qt Designer"
-msgstr  ""
-
-msgid   "Programas de desenvolvimento para QT."
-msgstr  ""
-
-msgid   "Firewall"
-msgstr  ""
-
-msgid   "Configurar regras de segurança para a conexão com a internet."
-msgstr  ""
-
-msgid   "Centro de controle do KDE"
-msgstr  ""
-
-msgid   "Informações de armazenamento (SMART)"
-msgstr  ""
-
-msgid   "Qt QDBusViewer "
-msgstr  ""
-
-msgid   "Ícones e emoticons"
-msgstr  ""
-
-msgid   "Qt Linguist"
-msgstr  ""
-
-msgid   "Instalar, configurar ou remover impressoras."
-msgstr  ""
-
-msgid   "Temas do Bootsplash"
-msgstr  ""
-
-msgid   "Carteira de senhas do KDE"
-msgstr  ""
-
-msgid   "Joystick"
-msgstr  ""
-
-msgid   "Configurar o tema Kvantum"
-msgstr  ""
-
-msgid   "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em "
-        "'Estilo do aplicativo'."
-msgstr  ""
-
-msgid   "Procurar servidores SSH"
-msgstr  ""
-
-msgid   "Terminal"
-msgstr  ""
-
-msgid   "Acesse o terminal de comandos."
-msgstr  ""
-
-msgid   "Controle o brilho e as cores"
-msgstr  ""
-
-msgid   "Brilho e cor"
-msgstr  ""
-
-msgid   "Particionar ou formatar"
-msgstr  ""
-
-msgid   "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr  ""
-
-msgid   "Configurar este tema de borda de janelas"
-msgstr  ""
-
-msgid   "Configurações de uso dos antigos CDs de música, não são válidas para "
-        "músicas em MP3."
-msgstr  ""
-
-msgid   "Procurar servidores (zeroconf)"
-msgstr  ""
-
-msgid   "Gerenciar arquivos"
-msgstr  ""
-
-msgid   "Tenha acesso a seus arquivos e pastas."
-msgstr  ""
-
-msgid   "Esse programa pode transferir arquivos entre smartphones, tablets e "
-        "outros computadores.  Com ele você pode, por exemplo, utilizar  seu "
-        "smartphone como mouse e teclado sem fio para controlar o computador, "
-        "entre outros recursos.  Ele se integra melhor ao BigLinux e fica "
-        "entre os applets localizados perto do relógio do sistema. Para "
-        "sincronizar com o seu smartphone acesse a Google Store ou Apple "
-        "Store e instale o Kde Connect."
-msgstr  ""
-
-msgid   "Impressoras HP"
-msgstr  ""
-
-msgid   "Verificar o status, nível de tinta e manutenção."
-msgstr  ""
-
-msgid   "Configurar o AppimageLauncher"
-msgstr  ""
-
-msgid   "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr  ""
-
-msgid   "Configurador avançado de energia"
-msgstr  ""
-
-msgid   "Configurar webcam ou placa de captura"
-msgstr  ""
-
-msgid   "Equalizador (DSP)"
-msgstr  ""
-
-msgid   "Som e microfone"
-msgstr  ""
-
-msgid   "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: "
-        "HDMI)"
-msgstr  ""
-
-msgid   "Gerenciar serviços (Systemd)"
-msgstr  ""
-
-msgid   "Configurar este tema de janelas."
-msgstr  ""
-
-msgid   "Ativar a pesquisa aumenta o consumo de memória e processamento do "
-        "sistema."
-msgstr  ""
-
-msgid   "Gerenciador de áudio avançado - Alsamixer"
-msgstr  ""
-
-msgid   "Controlador de áudio em caso de ausência som."
-msgstr  ""
-
-msgid   "Gerenciador de usuários"
-msgstr  ""
-
-msgid   "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr  ""
-
-msgid   "Gerenciador de senhas"
-msgstr  ""
-
-msgid   "Ajuste a data, hora e fuso horário."
-msgstr  ""
-
-msgid   "Qt Assistant"
-msgstr  ""
-
-msgid   "Áreas de trabalho virtuais e atividades"
-msgstr  ""
-
-msgid   "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr  ""
-
-msgid   "Configurações de layout, teclas de atalho e outras opções."
-msgstr  ""
-
 msgid   "As configurações da tela foram resetadas."
 msgstr  ""
 
@@ -688,4 +594,74 @@ msgid   "Configurações da tela"
 msgstr  ""
 
 msgid   "Aguarde, criando arquivos de cache..."
+msgstr  ""
+
+msgid   "Maximizado"
+msgstr  ""
+
+msgid   "Waydroid"
+msgstr  ""
+
+msgid   "Utilize programas para Android no seu computador, está em fase "
+        "experimental, alguns programas podem não funcionar.<br>"
+msgstr  ""
+
+msgid   "Com o Wayland instalado é possível abrir programas no formato .apk, "
+        "abra pelo gerenciador de arquivos do BigLinux.<br>"
+msgstr  ""
+
+msgid   "<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras "
+        "como Nvidia <b>DESATIVE</b>."
+msgstr  ""
+
+msgid   "Download próximo de 1 GB, pode demorar muito."
+msgstr  ""
+
+msgid   "Resolução: "
+msgstr  ""
+
+msgid   "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr  ""
+
+msgid   "Se a aceleração 3D estiver ativada em um hardware incompatível<br> o "
+        "android não passará da tela de loading"
+msgstr  ""
+
+msgid   "Parar o Waydroid"
+msgstr  ""
+
+msgid   "Iniciar o Waydroid"
+msgstr  ""
+
+msgid   "Ativar a aceleração 3D"
+msgstr  ""
+
+msgid   "Desativar a aceleração 3D"
+msgstr  ""
+
+msgid   "Instalar Waydroid"
+msgstr  ""
+
+msgid   "Instalar Waydroid com Google Apps"
+msgstr  ""
+
+msgid   "Para ativar a PlayStore é necessário clicar em (Exibir ID do "
+        "Android) e copiar o ID do Android, em seguida clique em (Ativar "
+        "Google Apps) para abrir a página de Registro do dispositivo, precisa "
+        "estar logado na sua conta Google, insira seu ID do Android e faça o "
+        "registro. Pode demorar alguns minutos para ativar no seu Waydroid. "
+        "Feche e abra novamente. Pronto!"
+msgstr  ""
+
+msgid   "Exibir ID do Android"
+msgstr  ""
+
+msgid   "Ativar Google Apps"
+msgstr  ""
+
+msgid   "ID do Android:"
+msgstr  ""
+
+msgid   "Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid "
+        "precisa estar aberto."
 msgstr  ""
