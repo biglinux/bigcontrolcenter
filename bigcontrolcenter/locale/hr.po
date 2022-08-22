@@ -2,34 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-01 06:12-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-msgid ""
-"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
-"Nvidia <b>DESATIVE</b>."
-msgstr ""
-"<b>Uključite</b> 3D ubrzanje na Intel i AMD grafičkim karticama, drugi poput "
-"Nvidia<b>DISABLE</b> ."
-
-msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas "
-"é possível fazer backups utilizando o método rsync."
-msgstr ""
-"Particija na kojoj je sustav instaliran nema točke vraćanja, ali sigurnosne "
-"kopije mogu se napraviti pomoću rsync metode."
+"X-Generator: attranslate\n"
 
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
@@ -44,492 +29,26 @@ msgstr ""
 "Promjene koje su napravljene mogu se vidjeti\n"
 "na vašoj web kameri sliku u drugim programima."
 
-msgid "Abrir"
-msgstr "Otvori"
-
-msgid "Acesse o terminal de comandos."
-msgstr "Idite na naredbeni terminal."
-
-msgid ""
-"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
-"gerenciador de arquivos."
-msgstr ""
-"Pristupite datotekama koje se nalaze na Google disku ili OwnCloud izravno iz "
-"upravitelja datoteka."
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "Dodaje, uklanja ili uređuje korisnike i grupe iz sustava."
-
-msgid "Adicionar ou Remover Usuários"
-msgstr "Dodavanje ili uklanjanje korisnika"
-
-msgid "Aguarde, carregando..."
-msgstr "Čekaj, utovar..."
-
-msgid "Aguarde, criando arquivos de cache..."
-msgstr "Pričekajte, kreirajte datoteke predmemorije..."
-
-msgid "Airdroid"
-msgstr "Airdroid"
-
-msgid "Airmore"
-msgstr "Airmore"
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "Podesite datum, vrijeme i vremensku zonu."
-
-msgid "Ajustes iniciais"
-msgstr "Početne prilagodbe"
-
-msgid ""
-"Além de visualizar as informações é possível salvar em um arquivo e "
-"compartilhar na internet."
-msgstr ""
-"Osim pregledavanja informacija, moguće je spremiti ih u datoteku i "
-"podijeliti na internetu."
-
-msgid "Aparência"
-msgstr "Izgled"
-
-msgid "As configurações da tela foram resetadas."
-msgstr "Postavke zaslona su resetirane."
-
-msgid "Ativar Google Apps"
-msgstr "Aktivirajte Google Apps"
-
-msgid "Ativar a aceleração 3D"
-msgstr "Aktivirajte 3D ubrzanje"
-
-msgid ""
-"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-msgstr ""
-"Omogućavanje pretraživanja povećava memoriju sustava i potrošnju obrade."
-
-msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
-"transferir os arquivos, automaticamente eles serão detectados e você poderá "
-"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
-"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
-"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
-"apps para facilitar o uso desse site."
-msgstr ""
-"Samo otvorite web mjesto https://snapdrop.net ispod hardvera na koji želite "
-"prenijeti datoteke, automatski će se otkriti i možete poslati datoteke koje "
-"želite. Pomoću ovog gumba otvorite Snapdrop web mjesto na tom računalu. "
-"Snapdrop se može koristiti na bilo kojem pametnom telefonu ili računalu, "
-"uključujući prijenos datoteka izravno s jednog pametnog telefona na drugi. "
-"Također možete koristiti naš upravitelj web aplikacija kako biste olakšali "
-"korištenje ove stranice."
-
-msgid "Bem vindo ao BigLinux"
-msgstr "Dobrodošli u BigLinux"
-
-msgid "Big Store"
-msgstr "Velika trgovina"
-
-msgid "Boa noite"
-msgstr "Laku noć"
-
-msgid "Boa tarde"
-msgstr "Dobar dan"
-
-msgid "Bom dia"
-msgstr "Salaam"
-
-msgid "Brilho e cor"
-msgstr "Svjetlina i boja"
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE novčanik lozinke"
-
-msgid "Categorias"
-msgstr "Kategorije"
-
-msgid "Category"
-msgstr "Kategorija"
-
-msgid "Central de Controle"
-msgstr "Kontrolni centar"
-
-msgid "Centro de controle do KDE"
-msgstr "KDE kontrolni centar"
-
-msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
-"de forma similar ao acesso de arquivos em um pendrive."
-msgstr ""
-"Pomoću ovog programa možete pristupiti programima na Apple iPhoneu ili iPadu "
-"na sličan način kao i pristup datotekama na pendriveu."
-
-msgid ""
-"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
-"pelo gerenciador de arquivos do BigLinux.<br>"
-msgstr ""
-"S instaliranim Waylandom moguće je otvoriti programe u .apk formatu, "
-"otvoriti putem BigLinux upravitelja datoteka. <br>"
-
-msgid "Comece com algumas etapas simples."
-msgstr "Počnite s nekoliko jednostavnih koraka."
-
-msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>\n"
-"1. Plugue o dispositivo na USB do computador;\n"
-"<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
-"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>\n"
-"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
-"compartilhamento'.\n"
-"<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
-"conexão do seu dispositivo Android.\n"
-"<br>\n"
-"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
-msgstr ""
-"Kako koristiti internet sa svog Android tableta ili pametnog telefona:\n"
-"<br><br>\n"
-"Jedan. Priključite uređaj u USB računala;\n"
-"<br>\n"
-"2. Idite na Postavke vašeg Android uređaja i potražite neke od opcija: \"USB "
-"veza\", \"USB priključivanje\" ili \"USB povezivanje\".\n"
-"<br>\n"
-"Oni su različiti načini koje svaki proizvođač koristi za isti resurs.\n"
-"<br><br>\n"
-"*Ove opcije nalaze se u odjeljku \"Mreža i internet\" ili \"Veze i "
-"dijeljenje\".\n"
-"<br><br>\n"
-"Kada ga aktivirate, automatski ćete se povezati i koristit ćete istu vezu "
-"kao i vaš Android uređaj.\n"
-"<br>\n"
-"*Ako koristite mobilne podatke, potrošit će se iz vašeg podatkovnog plana."
-
-msgid "Conectar à internet"
-msgstr "Povežite se s internetom"
-
-msgid "Conectar à internet utilizando o Android"
-msgstr "Povežite se s internetom pomoću Androida"
-
-msgid "Conecte na internet por cabo de rede ou wifi."
-msgstr "Povežite se s internetom putem mrežnog kabela ili WiFi-a."
-
-msgid "Configurador avançado de energia"
-msgstr "Napredni konfigurator napajanja"
-
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Postavljanje glasovnog sustava (TTS)"
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "Konfigurirajte ovu temu obruba prozora"
-
-msgid "Configurar este tema de janelas."
-msgstr "Konfigurirajte ovu temu prozora."
-
-msgid "Configurar o AppimageLauncher"
-msgstr "Konfigurirajte aplikaciju ImageLauncher"
-
-msgid "Configurar o tema Kvantum"
-msgstr "Postavljanje teme Kvantum"
-
-msgid ""
-"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr "Postavite ili promijenite audio ulazne i izlazne uređaje. (Izv: HDMI)"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "Postavite sigurnosna pravila za internetsku vezu."
-
-msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-msgstr ""
-"Konfigurirajte razlučivost, boju, frekvenciju, dpi, mjerilo, noćnu boju itd."
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "Postavite web kameru ili karticu za snimanje"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
-"rede com fio, banda larga móvel e outros)."
-msgstr ""
-"Napredna mrežna konfiguracija (VPN, WiFi, žičani, fiksni IP, PPPoE, ADSL, "
-"žičana mreža, mobilna širokopojasna mreža i drugi)."
-
-msgid "Configurações da tela"
-msgstr "Postavke zaslona"
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Postavke izgleda, hotkeys i druge opcije."
-
-msgid ""
-"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
-"em MP3."
-msgstr "Postavke za korištenje starih glazbenih CD-a ne vrijede za MP3 pjesme."
-
-msgid "Conheça alguns recursos"
-msgstr "Saznajte više o nekim resursima"
-
-msgid "Contas"
-msgstr "računi"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "Audio kontroler u slučaju da nema zvuka."
-
-msgid "Controle o brilho e as cores"
-msgstr "Kontrola svjetline i boja"
-
-msgid "Criar, remover e gerenciar contas e grupos de usuários."
-msgstr "Stvaranje, uklanjanje i upravljanje korisničkim računima i grupama."
-
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr "Stvorite više virtualnih radnih prostora prebacivanjem između njih."
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr ""
-"Budite oprezni, ovaj program može izbrisati sve podatke s vašeg računala."
-
-msgid "Defina seus programas padrões."
-msgstr "Postavite zadane programe."
-
-msgid "Desativar a aceleração 3D"
-msgstr "Isključite 3D ubrzanje"
-
-msgid "Desenvolvimento"
-msgstr "Razvoj"
-
-msgid ""
-"Disponiblizamos configurações completas para você selecionar de forma "
-"extremamente simples."
-msgstr ""
-"Kompletne konfiguracije dostupne su za odabir na izuzetno jednostavan način."
-
-msgid "Dispositivos"
-msgstr "Uređaji"
-
-msgid "Doação"
-msgstr "Donacija"
-
-msgid "Doação e Redes sociais"
-msgstr "Donacija i društvene mreže"
-
-msgid "Download próximo de 1 GB, pode demorar muito."
-msgstr "Preuzmite blizu 1 GB, može potrajati dugo."
-
-msgid "Economia de energia"
-msgstr "Ušteda energije"
-
-msgid "Equalizador (DSP)"
-msgstr "Ekvilajzer (DSP)"
-
-msgid "Escolha seu Avatar"
-msgstr "Odaberite svoj Avatar"
-
-msgid "Escolha seu navegador padrão"
-msgstr "Odaberite svoj zadani preglednik"
-
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr "Odaberite ponašanje programa dostupnih u .appimage"
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
-"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
-"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
-"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
-"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"Ovaj program može prenositi datoteke između pametnih telefona, tableta i "
-"drugih računala. Pomoću nje možete, na primjer, koristiti svoj pametni "
-"telefon kao bežični miš i tipkovnicu za upravljanje računalom, između "
-"ostalih značajki. Bolje se integrira s BigLinuxom i nalazi se među apletima "
-"koji se nalaze u blizini sistemskog sata. Da biste se sinkronizirali s "
-"pametnim telefonom, idite na Google Store ili Apple Store i instalirajte Kde "
-"Connect."
-
-msgid "Exibir ID do Android"
-msgstr "Prikaz Android ID-a"
-
-msgid "Facebook"
-msgstr "Facebook"
-
-msgid "Fechar"
-msgstr "Zatvoriti"
-
-msgid "Firewall"
-msgstr "Vatrozid"
-
-msgid "Fórum"
-msgstr "Forum"
-
-msgid "Gerenciador de senhas"
-msgstr "Upravitelj lozinki"
-
-msgid "Gerenciador de usuários"
-msgstr "Upravitelj korisnika"
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "Napredni audio menadžer - Alsamixer"
-
-msgid "Gerenciar arquivos"
-msgstr "Upravljanje datotekama"
-
-msgid "Gerenciar conexões"
-msgstr "Upravljanje vezama"
-
-msgid "Gerenciar pontos de restauração."
-msgstr "Upravljajte točkama vraćanja."
-
-msgid "Gerenciar serviços (Systemd)"
-msgstr "Upravljanje uslugama (Systemd)"
-
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo izvještaj"
-
-msgid "ID"
-msgstr "OSOBNA ISKAZNICA"
-
-msgid "ID do Android:"
-msgstr "Android ID:"
-
-msgid "Impressoras"
-msgstr "Pisači"
-
-msgid "Impressoras HP"
-msgstr "HP pisači"
-
-msgid "Info"
-msgstr "Informacije"
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "Informacije za pohranu (SMART)"
-
-msgid "Informações do sistema e hardware"
-msgstr "Informacije o sustavu i hardveru"
-
-msgid "Iniciar o Waydroid"
-msgstr "Pokrenite Waydroid"
-
-msgid "Instagram"
-msgstr "Instagram"
-
-msgid "Instalar Waydroid"
-msgstr "Instalirajte Waydroid"
-
-msgid "Instalar Waydroid com Google Apps"
-msgstr "Instalirajte Waydroid s Google Apps"
-
-msgid "Instalar drivers e firmwares"
-msgstr "Instalirajte upravljačke programe i firmwares"
-
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr ""
-"Instalirajte ili uklonite upravljačke programe i firmwares na jednostavan "
-"način."
-
-msgid "Instalar ou remover programas."
-msgstr "Instalirajte ili uklonite programe."
-
-msgid "Instalar versões de kernel"
-msgstr "Instalirajte verzije kernela"
-
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "Instalirajte, konfigurirajte ili uklonite pisače."
-
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Informacije o instalaciji vozača i hardveru"
-
-msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
-msgstr ""
-"Instalirajte aplikaciju Airdroid iz trgovine aplikacija vašeg pametnog "
-"telefona. Pomoću ovog gumba otvorite web stranicu Airdroid na tom računalu. "
-"Pročitajte QRcode koji će se prikazati na zaslonu računala pomoću aplikacije "
-"na pametnom telefonu i imati pristup prijenosima datoteka i još mnogo toga. "
-"Također možete koristiti naš upravitelj web aplikacija kako biste olakšali "
-"korištenje ove stranice."
-
-msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
-msgstr ""
-"Instalirajte aplikaciju Airmore iz trgovine aplikacija na pametnom telefonu. "
-"Pomoću ovog gumba otvorite web stranicu Airmore na tom računalu. Pročitajte "
-"QRcode koji će se prikazati na zaslonu računala pomoću aplikacije na "
-"pametnom telefonu i imati pristup prijenosima datoteka i još mnogo toga. "
-"Također možete koristiti naš upravitelj web aplikacija kako biste olakšali "
-"korištenje ove stranice."
-
-msgid "Integração com Google Drive e ownCloud"
-msgstr "Integracija s Google diskom i OwnCloud"
+msgid "Webcam"
+msgstr "web kamera"
 
 msgid "Introdução ao BigLinux"
 msgstr "Uvod u BigLinux"
 
-msgid "Joystick"
-msgstr "džojstik"
+msgid "Central de Controle"
+msgstr "Kontrolni centar"
 
-msgid "KDE Connect"
-msgstr "KDE Connect"
-
-msgid ""
-"Lista com alguns programas do sistema que você pode restaurar a configuração "
-"com um clique."
-msgstr ""
-"Popis s nekim programima sustava koje možete vratiti konfiguraciju jednim "
-"klikom."
-
-msgid "Maximizado"
-msgstr "Maksimizirano"
-
-msgid "Monitores e Telas"
-msgstr "Monitori i zasloni"
-
-msgid "Montar Hardware Apple"
-msgstr "Sastavite Apple hardver"
-
-msgid "Mostrar na inicialização"
-msgstr "Prikaži na pokretanju"
-
-msgid "Multimídia"
-msgstr "Multimedija"
+msgid "Category"
+msgstr "Kategorija"
 
 msgid "Name"
 msgstr "Ime"
 
-msgid ""
-"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
-"novidades!"
-msgstr ""
-"Naš sustav je suradnički, dođite i budite dio ove evolucije. Pogledajte "
-"vijesti!"
+msgid "ID"
+msgstr "OSOBNA ISKAZNICA"
 
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
-"estar aberto."
-msgstr ""
-"Nije moguće iskoristiti Android ID.\\ n\\ nUpozorenje: Waydroid mora biti "
-"otvoren."
-
-msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
-"transferência de dados entre dispositivos em redes locais. Disponível na "
-"Google Play Store para Android e Apple Store para iPhone."
-msgstr ""
-"KDE Connect je aplikacija koja olakšava bežičnu komunikaciju i prijenos "
-"podataka između uređaja na lokalnim mrežama. Dostupno u trgovini Google Play "
-"za Android i Apple Store za iPhone."
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid se također može pokrenuti pomoću izbornika sustava"
+msgid "Info"
+msgstr "Informacije"
 
 msgid ""
 "O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
@@ -540,196 +59,497 @@ msgstr ""
 "\n"
 "Želite li sada pogledati izvještaj?\n"
 
-msgid "OCR para PDF"
-msgstr "OCR do PDF"
+msgid "Visualizar o relatório"
+msgstr "Pregled izvješća"
+
+msgid "Fechar"
+msgstr "Zatvoriti"
+
+msgid "Hardinfo Relatory"
+msgstr "Hardinfo izvještaj"
+
+msgid "Bem vindo ao BigLinux"
+msgstr "Dobrodošli u BigLinux"
+
+msgid "Comece com algumas etapas simples."
+msgstr "Počnite s nekoliko jednostavnih koraka."
+
+msgid "Mostrar na inicialização"
+msgstr "Prikaži na pokretanju"
 
 msgid "Olá"
 msgstr "Hiya"
 
-msgid "OpenJDK Java 8 Policy Tool"
-msgstr "OpenJDK Java 8 Alat za politiku"
+msgid "Ajustes iniciais"
+msgstr "Početne prilagodbe"
 
-msgid "Outros"
-msgstr "Ostalo"
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+msgstr "Kompletne konfiguracije dostupne su za odabir na izuzetno jednostavan način."
 
-msgid "Outros navegadores"
-msgstr "Ostali preglednici"
+msgid "Temas, Desktop e Ajustes"
+msgstr "Teme, radna površina i prilagodbe"
+
+msgid "Escolha seu Avatar"
+msgstr "Odaberite svoj Avatar"
 
 msgid "Pacotes de Idioma"
 msgstr "Jezični paketi"
 
-msgid ""
-"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
-"do aplicativo'."
-msgstr ""
-"Da bi Kvantum konfiguracija funkcionirala, primijenite temu Kvantum pod "
-"'Stil aplikacije'."
+msgid "Escolha seu navegador padrão"
+msgstr "Odaberite svoj zadani preglednik"
+
+msgid "Defina seus programas padrões."
+msgstr "Postavite zadane programe."
+
+msgid "Outros navegadores"
+msgstr "Ostali preglednici"
+
+msgid "KDE Connect"
+msgstr "KDE Connect"
 
 msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
-"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
-"a página de Registro do dispositivo, precisa estar logado na sua conta "
-"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
+"iPhone."
 msgstr ""
-"Da biste aktivirali PlayStore, morate kliknuti (Prikaži Android ID) i "
-"kopirati Android ID, a zatim kliknite (Aktiviraj Google Apps) da biste "
-"otvorili stranicu za registraciju uređaja, morate biti prijavljeni na svoj "
-"Google račun, unijeti svoj Android ID i registrirati se. Aktiviranje na "
-"vašem Waydroidu može potrajati nekoliko minuta. Zatvori i otvori opet. "
-"Spremni!"
+"KDE Connect je aplikacija koja olakšava bežičnu komunikaciju i prijenos podataka između uređaja na "
+"lokalnim mrežama. Dostupno u trgovini Google Play za Android i Apple Store za iPhone."
 
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Čestitamo, dovršili ste prve korake za korištenje BigLinuxa."
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Informacije o instalaciji vozača i hardveru"
 
-msgid "Parar o Waydroid"
-msgstr "Zaustavi Waydroid"
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Instalirajte ili uklonite upravljačke programe i firmwares na jednostavan način."
 
-msgid "Particionar ou formatar"
-msgstr "Particija ili format"
+msgid "Impressoras"
+msgstr "Pisači"
 
-msgid "Personalizar"
-msgstr "personalizirati"
+msgid "Conheça alguns recursos"
+msgstr "Saznajte više o nekim resursima"
 
-msgid "Pesquisar..."
-msgstr "Pretraga..."
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "Naš sustav je suradnički, dođite i budite dio ove evolucije. Pogledajte vijesti!"
 
-msgid "Principais"
-msgstr "Glavni"
+msgid "Big Store"
+msgstr "Velika trgovina"
 
-msgid "Privacidade"
-msgstr "Privatnost"
-
-msgid "Procurar servidores (zeroconf)"
-msgstr "Traži poslužitelje (zeroconf)"
-
-msgid "Procurar servidores SSH"
-msgstr "Potražite SSH poslužitelje"
-
-msgid "Procurar servidores VNC"
-msgstr "Potražite VNC poslužitelje"
-
-msgid "Programas de desenvolvimento para QT."
-msgstr "Razvojni programi za QT."
-
-msgid "Qt Assistant"
-msgstr "Qt pomoćnik"
-
-msgid "Qt Designer"
-msgstr "Qt Dizajner"
-
-msgid "Qt Linguist"
-msgstr "Qt lingvist"
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDBusViewer "
-
-msgid "Rede e Internet"
-msgstr "Mreža i Internet"
+msgid "Web Apps"
+msgstr "Web aplikacije"
 
 msgid "Redutor de Ruídos"
 msgstr "Reduktor buke"
 
-msgid "Região e Idioma"
-msgstr "Regija i jezik"
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Postavljanje glasovnog sustava (TTS)"
 
-msgid "Regras de segurança do Java"
-msgstr "Java sigurnosna pravila"
+msgid "OCR para PDF"
+msgstr "OCR do PDF"
 
-msgid "Resetar as configurações da tela"
-msgstr "Ponovno postavljanje postavki zaslona"
+msgid "Doação e Redes sociais"
+msgstr "Donacija i društvene mreže"
 
-msgid "Resolução: "
-msgstr "Rezolucija: "
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr "Vaša donacija je vrlo važna za projekt i pratite društvene medije."
 
-msgid "Restaurar a configuração de programas"
-msgstr "Vraćanje postavki programa"
+msgid "Doação"
+msgstr "Donacija"
 
-msgid "Restaurar a configuração padrão do monitor."
-msgstr "Vratite monitor na zadanu postavku."
+msgid "Fórum"
+msgstr "Forum"
 
-msgid "Resultado da pesquisa"
-msgstr "Rezultati pretrage"
+msgid "YouTube"
+msgstr "YouTube"
 
-msgid "Scanners HP"
-msgstr "HP skeneri"
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Telegram"
+msgstr "Brzojav"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "Čestitamo, dovršili ste prve korake za korištenje BigLinuxa."
+
+msgid "Bom dia"
+msgstr "Salaam"
+
+msgid "Boa tarde"
+msgstr "Dobar dan"
+
+msgid "Boa noite"
+msgstr "Laku noć"
+
+msgid "Aguarde, carregando..."
+msgstr "Čekaj, utovar..."
+
+msgid "Remover"
+msgstr "Odstraniti"
+
+msgid "Maximizado"
+msgstr "Maksimizirano"
+
+msgid "Desinstalar"
+msgstr "Deinstalirati"
+
+msgid "Waydroid"
+msgstr "Waydroid"
+
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Koristite Android programe na BigLinuxu."
+
+msgid "Instalar o Waydroid"
+msgstr "Instaliraj Waydroid"
+
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Instalirajte Waydroid pomoću Google aplikacija"
+
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "Preuzimanje je otprilike 1 GB, ovisno o vašoj vezi."
+
+msgid "Paisagem"
+msgstr "Krajolik"
+
+msgid "Retrato"
+msgstr "Portret"
+
+msgid "Desativado"
+msgstr "Deaktiviran"
+
+msgid "Ativado"
+msgstr "Aktiviran"
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid se također može pokrenuti pomoću izbornika sustava"
 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
-"não passará da tela de loading"
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
 msgstr ""
-"Ako je omogućeno 3D ubrzanje na nekompatibilnom hardveru, <br>Android se "
-"neće pomaknuti izvan zaslona za učitavanje"
+"Ako je 3D ubrzanje omogućeno na nekompatibilnom hardveru android se neće pomaknuti sa zaslona za "
+"učitavanje"
+
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D ubrzanje nije kompatibilno na Nvidia grafičkim karticama pomoću vlasničkog upravljačkog programa."
+
+msgid "Exibir ID do Android"
+msgstr "Prikaz Android ID-a"
+
+msgid "Ativar Google Apps"
+msgstr "Aktivirajte Google Apps"
+
+msgid "Remover Configurações"
+msgstr "Ukloni postavke"
+
+msgid "Desinstalar o Waydroid"
+msgstr "Deinstaliraj Waydroid"
 
 msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
-"ícone no menu do sistema para que textos escritos sejam falados."
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
 msgstr ""
-"Odaberite željeni tekst i upotrijebite prečac s tipkom [Meta] +V ili ikonom "
-"u izborniku sustava kako biste pisani tekstovi izgovorili."
+"Ako je omogućeno 3D ubrzanje na nekompatibilnom hardveru, <br>Android se neće pomaknuti izvan "
+"zaslona za učitavanje"
 
-msgid "Servidor"
-msgstr "mainframe"
+msgid "Parar o Waydroid"
+msgstr "Zaustavi Waydroid"
+
+msgid "Iniciar o Waydroid"
+msgstr "Pokrenite Waydroid"
+
+msgid "ID do Android:"
+msgstr "Android ID:"
+
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr "Nije moguće iskoristiti Android ID.\\ n\\ nUpozorenje: Waydroid mora biti otvoren."
+
+msgid ""
+"Ao remover as configurações os programas instalados \n"
+"dentro do Waydroid e suas configurações serão perdidas.\n"
+"\n"
+"Realmente deseja remover?"
+msgstr ""
+"Uklanjanjem postavki instalirani programi \n"
+"unutar Waydroida i vaše postavke će biti izgubljene.\n"
+"\n"
+"Stvarno želite ukloniti?"
+
+msgid "Configurações removidas com sucesso!"
+msgstr "Postavke su uspješno uklonjene!"
+
+msgid "Nenhuma configuração foi removida!"
+msgstr "Konfiguracija nije uklonjena!"
+
+msgid "Não existem configurações para remover."
+msgstr "Nema postavki za uklanjanje."
+
+msgid ""
+"Deseja remover também os arquivos de configuração \n"
+"e programas instalados dentro do Waydroid?"
+msgstr ""
+"Također želite ukloniti konfiguracijske datoteke \n"
+"i programi instalirani unutar waydroida?"
+
+msgid "Categorias"
+msgstr "Kategorije"
+
+msgid "Principais"
+msgstr "Glavni"
 
 msgid "Sistema"
 msgstr "Sustav"
 
-msgid ""
-"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
-msgstr ""
-"Sustav u načinu rada uživo. Vraćanje točaka vraćanja za instalirani sustav."
+msgid "Aparência"
+msgstr "Izgled"
 
-msgid "Snapdrop (Não precisa de aplicativo)"
-msgstr "Snapdrop (nije potrebna aplikacija)"
+msgid "Dispositivos"
+msgstr "Uređaji"
 
-msgid "Snapshots e backups"
-msgstr "Snimke i sigurnosne kopije"
+msgid "Personalizar"
+msgstr "personalizirati"
+
+msgid "Telefone"
+msgstr "telefon"
+
+msgid "Multimídia"
+msgstr "Multimedija"
+
+msgid "Rede e Internet"
+msgstr "Mreža i Internet"
+
+msgid "Contas"
+msgstr "računi"
+
+msgid "Região e Idioma"
+msgstr "Regija i jezik"
+
+msgid "Privacidade"
+msgstr "Privatnost"
+
+msgid "Servidor"
+msgstr "mainframe"
+
+msgid "Desenvolvimento"
+msgstr "Razvoj"
 
 msgid "Sobre"
 msgstr "O"
 
-msgid "Som e microfone"
-msgstr "Zvuk i mikrofon"
+msgid "Outros"
+msgstr "Ostalo"
 
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "Vaša donacija je vrlo važna za projekt i pratite društvene medije."
+msgid "Pesquisar..."
+msgstr "Pretraga..."
+
+msgid "Resultado da pesquisa"
+msgstr "Rezultati pretrage"
+
+msgid "Abrir"
+msgstr "Otvori"
+
+msgid "Temas, desktop e ajustes"
+msgstr "Teme, radna površina i ugađanje"
+
+msgid "Restaurar a configuração de programas"
+msgstr "Vraćanje postavki programa"
+
+msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
+msgstr "Popis s nekim programima sustava koje možete vratiti konfiguraciju jednim klikom."
+
+msgid "Informações do sistema e hardware"
+msgstr "Informacije o sustavu i hardveru"
+
+msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
+msgstr "Osim pregledavanja informacija, moguće je spremiti ih u datoteku i podijeliti na internetu."
+
+msgid "Conectar à internet"
+msgstr "Povežite se s internetom"
+
+msgid "Conecte na internet por cabo de rede ou wifi."
+msgstr "Povežite se s internetom putem mrežnog kabela ili WiFi-a."
+
+msgid "Conectar à internet utilizando o Android"
+msgstr "Povežite se s internetom pomoću Androida"
+
+msgid ""
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
+"computador."
+msgstr "Svoj Android pametni telefon ili tablet možete koristiti kao usb wifi uređaj za vaše računalo."
+
+msgid ""
+"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
+"<br><br>\n"
+"1. Plugue o dispositivo na USB do computador;\n"
+"<br>\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
+"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"<br>\n"
+"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
+"<br><br>\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
+"<br><br>\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
+"dispositivo Android.\n"
+"<br>\n"
+"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+msgstr ""
+"Kako koristiti internet sa svog Android tableta ili pametnog telefona:\n"
+"<br><br>\n"
+"Jedan. Priključite uređaj u USB računala;\n"
+"<br>\n"
+"2. Idite na Postavke vašeg Android uređaja i potražite neke od opcija: \"USB veza\", \"USB "
+"priključivanje\" ili \"USB povezivanje\".\n"
+"<br>\n"
+"Oni su različiti načini koje svaki proizvođač koristi za isti resurs.\n"
+"<br><br>\n"
+"*Ove opcije nalaze se u odjeljku \"Mreža i internet\" ili \"Veze i dijeljenje\".\n"
+"<br><br>\n"
+"Kada ga aktivirate, automatski ćete se povezati i koristit ćete istu vezu kao i vaš Android uređaj.\n"
+"<br>\n"
+"*Ako koristite mobilne podatke, potrošit će se iz vašeg podatkovnog plana."
+
+msgid "Visualizar informações do sistema e hardware"
+msgstr "Pregled informacija o sustavu i hardveru"
+
+msgid ""
+"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
+"o suporte."
+msgstr "Također stvara datoteku s informacijama koje možete poslati drugima kako bi vam pomogli u podršci."
+
+msgid "Adicionar ou Remover Usuários"
+msgstr "Dodavanje ili uklanjanje korisnika"
+
+msgid "Criar, remover e gerenciar contas e grupos de usuários."
+msgstr "Stvaranje, uklanjanje i upravljanje korisničkim računima i grupama."
+
+msgid "Economia de energia"
+msgstr "Ušteda energije"
+
+msgid "Monitores e Telas"
+msgstr "Monitori i zasloni"
+
+msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
+msgstr "Konfigurirajte razlučivost, boju, frekvenciju, dpi, mjerilo, noćnu boju itd."
+
+msgid "Resetar as configurações da tela"
+msgstr "Ponovno postavljanje postavki zaslona"
+
+msgid "Restaurar a configuração padrão do monitor."
+msgstr "Vratite monitor na zadanu postavku."
+
+msgid "Airmore"
+msgstr "Airmore"
+
+msgid ""
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
+"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+msgstr ""
+"Instalirajte aplikaciju Airmore iz trgovine aplikacija na pametnom telefonu. Pomoću ovog gumba "
+"otvorite web stranicu Airmore na tom računalu. Pročitajte QRcode koji će se prikazati na zaslonu "
+"računala pomoću aplikacije na pametnom telefonu i imati pristup prijenosima datoteka i još mnogo "
+"toga. Također možete koristiti naš upravitelj web aplikacija kako biste olakšali korištenje ove "
+"stranice."
+
+msgid "Airdroid"
+msgstr "Airdroid"
+
+msgid ""
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
+"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
+"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+msgstr ""
+"Instalirajte aplikaciju Airdroid iz trgovine aplikacija vašeg pametnog telefona. Pomoću ovog gumba "
+"otvorite web stranicu Airdroid na tom računalu. Pročitajte QRcode koji će se prikazati na zaslonu "
+"računala pomoću aplikacije na pametnom telefonu i imati pristup prijenosima datoteka i još mnogo "
+"toga. Također možete koristiti naš upravitelj web aplikacija kako biste olakšali korištenje ove "
+"stranice."
 
 msgid "Suporte a aplicativos Android"
 msgstr "Podrška za Android aplikaciju"
 
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras "
-"pessoas para que o ajudem com o suporte."
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
+"experimental."
 msgstr ""
-"Također stvara datoteku s informacijama koje možete poslati drugima kako bi "
-"vam pomogli u podršci."
+"Koristeći Waydroid otvorite Android programe na BigLinuxu. *Ova značajka je još uvijek u "
+"eksperimentalnoj fazi."
 
-msgid "Telefone"
-msgstr "telefon"
+msgid "Instalar drivers e firmwares"
+msgstr "Instalirajte upravljačke programe i firmwares"
 
-msgid "Telegram"
-msgstr "Brzojav"
+msgid "Snapshots e backups"
+msgstr "Snimke i sigurnosne kopije"
 
-msgid "Tema da Área de Trabalho"
-msgstr "Desktop tema"
+msgid "Gerenciar pontos de restauração."
+msgstr "Upravljajte točkama vraćanja."
 
-msgid "Temas do Bootsplash"
-msgstr "Bootsplash teme"
+msgid ""
+"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
+"backups utilizando o método rsync."
+msgstr ""
+"Particija na kojoj je sustav instaliran nema točke vraćanja, ali sigurnosne kopije mogu se "
+"napraviti pomoću rsync metode."
 
-msgid "Temas, Desktop e Ajustes"
-msgstr "Teme, radna površina i prilagodbe"
+msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr "Sustav u načinu rada uživo. Vraćanje točaka vraćanja za instalirani sustav."
 
-msgid "Temas, desktop e ajustes"
-msgstr "Teme, radna površina i ugađanje"
+msgid ""
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
+"para que textos escritos sejam falados."
+msgstr ""
+"Odaberite željeni tekst i upotrijebite prečac s tipkom [Meta] +V ili ikonom u izborniku sustava "
+"kako biste pisani tekstovi izgovorili."
 
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "Pristupite datotekama i mapama."
+msgid "Instalar versões de kernel"
+msgstr "Instalirajte verzije kernela"
 
-msgid "Terminal"
-msgstr "Terminal"
+msgid "Regras de segurança do Java"
+msgstr "Java sigurnosna pravila"
 
-msgid "Twitter"
-msgstr "Twitter"
+msgid "OpenJDK Java 8 Policy Tool"
+msgstr "OpenJDK Java 8 Alat za politiku"
+
+msgid "Snapdrop (Não precisa de aplicativo)"
+msgstr "Snapdrop (nije potrebna aplikacija)"
+
+msgid ""
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
+"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
+"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+msgstr ""
+"Samo otvorite web mjesto https://snapdrop.net ispod hardvera na koji želite prenijeti datoteke, "
+"automatski će se otkriti i možete poslati datoteke koje želite. Pomoću ovog gumba otvorite Snapdrop "
+"web mjesto na tom računalu. Snapdrop se može koristiti na bilo kojem pametnom telefonu ili "
+"računalu, uključujući prijenos datoteka izravno s jednog pametnog telefona na drugi. Također možete "
+"koristiti naš upravitelj web aplikacija kako biste olakšali korištenje ove stranice."
+
+msgid "Instalar ou remover programas."
+msgstr "Instalirajte ili uklonite programe."
+
+msgid "Gerenciar conexões"
+msgstr "Upravljanje vezama"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
+"móvel e outros)."
+msgstr ""
+"Napredna mrežna konfiguracija (VPN, WiFi, žičani, fiksni IP, PPPoE, ADSL, žičana mreža, mobilna "
+"širokopojasna mreža i drugi)."
+
+msgid "Procurar servidores VNC"
+msgstr "Potražite VNC poslužitelje"
 
 msgid ""
 "Utilitário que facilita a restauração do sistema instalado,\n"
@@ -748,50 +568,193 @@ msgstr ""
 "<br>\n"
 "paketa i terminala instaliranog sustava."
 
-msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
-"ainda está em fase experimental."
-msgstr ""
-"Koristeći Waydroid otvorite Android programe na BigLinuxu. *Ova značajka je "
-"još uvijek u eksperimentalnoj fazi."
+msgid "Tema da Área de Trabalho"
+msgstr "Desktop tema"
+
+msgid "Montar Hardware Apple"
+msgstr "Sastavite Apple hardver"
 
 msgid ""
-"Utilize programas para Android no seu computador, está em fase experimental, "
-"alguns programas podem não funcionar.<br>"
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
+"acesso de arquivos em um pendrive."
 msgstr ""
-"Koristite Android programe na računalu, to je u eksperimentalnoj fazi, neki "
-"programi možda neće raditi. <br>"
+"Pomoću ovog programa možete pristupiti programima na Apple iPhoneu ili iPadu na sličan način kao i "
+"pristup datotekama na pendriveu."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "Integracija s Google diskom i OwnCloud"
+
+msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
+msgstr "Pristupite datotekama koje se nalaze na Google disku ili OwnCloud izravno iz upravitelja datoteka."
+
+msgid "Scanners HP"
+msgstr "HP skeneri"
+
+msgid "Qt Designer"
+msgstr "Qt Dizajner"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "Razvojni programi za QT."
+
+msgid "Firewall"
+msgstr "Vatrozid"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "Postavite sigurnosna pravila za internetsku vezu."
+
+msgid "Centro de controle do KDE"
+msgstr "KDE kontrolni centar"
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "Informacije za pohranu (SMART)"
+
+msgid "Qt QDBusViewer "
+msgstr "Qt QDBusViewer "
+
+msgid "Ícones e emoticons"
+msgstr "Ikone i emotikoni"
+
+msgid "Qt Linguist"
+msgstr "Qt lingvist"
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "Instalirajte, konfigurirajte ili uklonite pisače."
+
+msgid "Temas do Bootsplash"
+msgstr "Bootsplash teme"
+
+msgid "Carteira de senhas do KDE"
+msgstr "KDE novčanik lozinke"
+
+msgid "Joystick"
+msgstr "džojstik"
+
+msgid "Configurar o tema Kvantum"
+msgstr "Postavljanje teme Kvantum"
+
+msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
+msgstr "Da bi Kvantum konfiguracija funkcionirala, primijenite temu Kvantum pod 'Stil aplikacije'."
+
+msgid "Procurar servidores SSH"
+msgstr "Potražite SSH poslužitelje"
+
+msgid "Terminal"
+msgstr "Terminal"
+
+msgid "Acesse o terminal de comandos."
+msgstr "Idite na naredbeni terminal."
+
+msgid "Controle o brilho e as cores"
+msgstr "Kontrola svjetline i boja"
+
+msgid "Brilho e cor"
+msgstr "Svjetlina i boja"
+
+msgid "Particionar ou formatar"
+msgstr "Particija ili format"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr "Budite oprezni, ovaj program može izbrisati sve podatke s vašeg računala."
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "Konfigurirajte ovu temu obruba prozora"
+
+msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
+msgstr "Postavke za korištenje starih glazbenih CD-a ne vrijede za MP3 pjesme."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "Traži poslužitelje (zeroconf)"
+
+msgid "Gerenciar arquivos"
+msgstr "Upravljanje datotekama"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "Pristupite datotekama i mapama."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
+"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
+"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
+"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"Ovaj program može prenositi datoteke između pametnih telefona, tableta i drugih računala. Pomoću "
+"nje možete, na primjer, koristiti svoj pametni telefon kao bežični miš i tipkovnicu za upravljanje "
+"računalom, između ostalih značajki. Bolje se integrira s BigLinuxom i nalazi se među apletima koji "
+"se nalaze u blizini sistemskog sata. Da biste se sinkronizirali s pametnim telefonom, idite na "
+"Google Store ili Apple Store i instalirajte Kde Connect."
+
+msgid "Impressoras HP"
+msgstr "HP pisači"
 
 msgid "Verificar o status, nível de tinta e manutenção."
 msgstr "Provjerite status, razinu tinte i održavanje."
 
-msgid "Visualizar informações do sistema e hardware"
-msgstr "Pregled informacija o sustavu i hardveru"
+msgid "Configurar o AppimageLauncher"
+msgstr "Konfigurirajte aplikaciju ImageLauncher"
 
-msgid "Visualizar o relatório"
-msgstr "Pregled izvješća"
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr "Odaberite ponašanje programa dostupnih u .appimage"
 
-msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
-"usb para seu computador."
-msgstr ""
-"Svoj Android pametni telefon ili tablet možete koristiti kao usb wifi uređaj "
-"za vaše računalo."
+msgid "Configurador avançado de energia"
+msgstr "Napredni konfigurator napajanja"
 
-msgid "Waydroid"
-msgstr "Waydroid"
+msgid "Configurar webcam ou placa de captura"
+msgstr "Postavite web kameru ili karticu za snimanje"
 
-msgid "Web Apps"
-msgstr "Web aplikacije"
+msgid "Equalizador (DSP)"
+msgstr "Ekvilajzer (DSP)"
 
-msgid "Webcam"
-msgstr "web kamera"
+msgid "Som e microfone"
+msgstr "Zvuk i mikrofon"
 
-msgid "YouTube"
-msgstr "YouTube"
+msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr "Postavite ili promijenite audio ulazne i izlazne uređaje. (Izv: HDMI)"
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "Upravljanje uslugama (Systemd)"
+
+msgid "Configurar este tema de janelas."
+msgstr "Konfigurirajte ovu temu prozora."
+
+msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr "Omogućavanje pretraživanja povećava memoriju sustava i potrošnju obrade."
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "Napredni audio menadžer - Alsamixer"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "Audio kontroler u slučaju da nema zvuka."
+
+msgid "Gerenciador de usuários"
+msgstr "Upravitelj korisnika"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr "Dodaje, uklanja ili uređuje korisnike i grupe iz sustava."
+
+msgid "Gerenciador de senhas"
+msgstr "Upravitelj lozinki"
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "Podesite datum, vrijeme i vremensku zonu."
+
+msgid "Qt Assistant"
+msgstr "Qt pomoćnik"
 
 msgid "Áreas de trabalho virtuais e atividades"
 msgstr "Virtualni radni prostori i aktivnosti"
 
-msgid "Ícones e emoticons"
-msgstr "Ikone i emotikoni"
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "Stvorite više virtualnih radnih prostora prebacivanjem između njih."
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Postavke izgleda, hotkeys i druge opcije."
+
+msgid "As configurações da tela foram resetadas."
+msgstr "Postavke zaslona su resetirane."
+
+msgid "Configurações da tela"
+msgstr "Postavke zaslona"
+
+msgid "Aguarde, criando arquivos de cache..."
+msgstr "Pričekajte, kreirajte datoteke predmemorije..."

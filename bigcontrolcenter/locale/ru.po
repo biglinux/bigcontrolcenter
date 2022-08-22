@@ -2,34 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-01 06:12-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-msgid ""
-"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
-"Nvidia <b>DESATIVE</b>."
-msgstr ""
-"<b>Включите</b> 3D-ускорение на видеокартах Intel и AMD, на других "
-"видеокартах Nvidia - <b>ВЫКЛЮЧИТЕ</b>."
-
-msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas "
-"é possível fazer backups utilizando o método rsync."
-msgstr ""
-"Раздел, на котором была установлена система, не имеет точек восстановления, "
-"но можно сделать резервные копии с помощью метода rsync."
+"X-Generator: attranslate\n"
 
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
@@ -44,497 +29,26 @@ msgstr ""
 "Внесенные изменения можно увидеть\n"
 "в изображении вашей веб-камеры в других программах."
 
-msgid "Abrir"
-msgstr "Открытым"
-
-msgid "Acesse o terminal de comandos."
-msgstr "Войдите в командный терминал."
-
-msgid ""
-"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
-"gerenciador de arquivos."
-msgstr ""
-"Доступ к файлам, находящимся в Google Drive или ownCloud, непосредственно из "
-"файлового менеджера."
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "Добавление, удаление или редактирование пользователей и групп системы."
-
-msgid "Adicionar ou Remover Usuários"
-msgstr "Добавление или удаление пользователей"
-
-msgid "Aguarde, carregando..."
-msgstr "Приготовьтесь, загрузка..."
-
-msgid "Aguarde, criando arquivos de cache..."
-msgstr "Приготовьтесь, создаем кэш-файлы..."
-
-msgid "Airdroid"
-msgstr "Airdroid"
-
-msgid "Airmore"
-msgstr "Эйрмор"
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "Установите дату, время и часовой пояс."
-
-msgid "Ajustes iniciais"
-msgstr "Первоначальные корректировки"
-
-msgid ""
-"Além de visualizar as informações é possível salvar em um arquivo e "
-"compartilhar na internet."
-msgstr ""
-"Помимо просмотра информации, ее можно сохранить в файл и поделиться ею в "
-"Интернете."
-
-msgid "Aparência"
-msgstr "Внешний вид"
-
-msgid "As configurações da tela foram resetadas."
-msgstr "Настройки экрана были сброшены."
-
-msgid "Ativar Google Apps"
-msgstr "Включить Google Apps"
-
-msgid "Ativar a aceleração 3D"
-msgstr "Включить 3D-ускорение"
-
-msgid ""
-"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-msgstr ""
-"Активация поиска увеличивает потребление системной памяти и вычислительных "
-"ресурсов."
-
-msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
-"transferir os arquivos, automaticamente eles serão detectados e você poderá "
-"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
-"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
-"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
-"apps para facilitar o uso desse site."
-msgstr ""
-"Просто откройте сайт https://snapdrop.net на аппаратном обеспечении, на "
-"которое вы хотите передать файлы, автоматически они будут обнаружены, и вы "
-"сможете отправить нужные вам файлы.  Используйте эту кнопку, чтобы открыть "
-"веб-сайт Snapdrop на этом компьютере.  Snapdrop можно использовать на любом "
-"смартфоне или компьютере, включая передачу файлов непосредственно с одного "
-"смартфона на другой.  Вы также можете воспользоваться нашим менеджером веб-"
-"приложений, чтобы упростить использование этого сайта."
-
-msgid "Bem vindo ao BigLinux"
-msgstr "Добро пожаловать в BigLinux"
-
-msgid "Big Store"
-msgstr "Big Store"
-
-msgid "Boa noite"
-msgstr "Доброй ночи"
-
-msgid "Boa tarde"
-msgstr "Добрый день"
-
-msgid "Bom dia"
-msgstr "Доброе утро"
-
-msgid "Brilho e cor"
-msgstr "Блеск и цвет"
-
-msgid "Carteira de senhas do KDE"
-msgstr "Кошелек для паролей KDE"
-
-msgid "Categorias"
-msgstr "Категории"
-
-msgid "Category"
-msgstr "Категория"
-
-msgid "Central de Controle"
-msgstr "Центр управления"
-
-msgid "Centro de controle do KDE"
-msgstr "Центр управления KDE"
-
-msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
-"de forma similar ao acesso de arquivos em um pendrive."
-msgstr ""
-"С помощью этой программы вы можете получить доступ к программам на вашем "
-"Apple iPhone или iPad аналогично доступу к файлам на USB-накопителе."
-
-msgid ""
-"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
-"pelo gerenciador de arquivos do BigLinux.<br>"
-msgstr ""
-"С установленным Wayland вы можете открывать программы в формате .apk, "
-"открывая их из файлового менеджера BigLinux.<br>"
-
-msgid "Comece com algumas etapas simples."
-msgstr "Начните с нескольких простых шагов."
-
-msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>\n"
-"1. Plugue o dispositivo na USB do computador;\n"
-"<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
-"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>\n"
-"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
-"compartilhamento'.\n"
-"<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
-"conexão do seu dispositivo Android.\n"
-"<br>\n"
-"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
-msgstr ""
-"Как пользоваться Интернетом с планшета или смартфона Android:\n"
-"<br><br>\n"
-"1. Подключите устройство к USB-порту компьютера;\n"
-"<br>\n"
-"2. Зайдите в Настройки вашего Android-устройства и найдите некоторые из "
-"опций: \"USB-связь\", \"USB tethering\" или \"USB Tethering\".\n"
-"<br>\n"
-"Это разные способы, которые каждый производитель использует для обозначения "
-"одной и той же функции.\n"
-"<br><br>\n"
-"*Эти опции находятся в разделе \"Сеть и Интернет\" или \"Подключения и общий "
-"доступ\".\n"
-"<br><br>\n"
-"При активации подключение произойдет автоматически, и вы будете использовать "
-"то же соединение, что и ваше устройство Android.\n"
-"<br>\n"
-"*Если вы используете мобильные данные, они будут расходоваться из вашего "
-"тарифного плана."
-
-msgid "Conectar à internet"
-msgstr "Подключение к Интернету"
-
-msgid "Conectar à internet utilizando o Android"
-msgstr "Подключение к Интернету с помощью Android"
-
-msgid "Conecte na internet por cabo de rede ou wifi."
-msgstr "Подключитесь к Интернету с помощью сетевого кабеля или Wi-Fi."
-
-msgid "Configurador avançado de energia"
-msgstr "Расширенный конфигуратор питания"
-
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Настройка системного голоса (TTS)"
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "Настройте эту тему границ окон"
-
-msgid "Configurar este tema de janelas."
-msgstr "Настройте эту тему окон."
-
-msgid "Configurar o AppimageLauncher"
-msgstr "Настройка AppimageLauncher"
-
-msgid "Configurar o tema Kvantum"
-msgstr "Настройка темы Kvantum"
-
-msgid ""
-"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr ""
-"Настройка или изменение устройств ввода и вывода звука (например, HDMI)"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "Настройте правила безопасности для интернет-соединения."
-
-msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-msgstr "Настройте разрешение, цвет, частоту, dpi, масштаб, ночной цвет и т.д."
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "Настройте веб-камеру или карту захвата"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
-"rede com fio, banda larga móvel e outros)."
-msgstr ""
-"Расширенная настройка сети (VPN, Wi-Fi, проводная сеть, фиксированный IP, "
-"PPPoE, ADSL, проводная сеть, мобильная широкополосная сеть и другие)."
-
-msgid "Configurações da tela"
-msgstr "Настройки экрана"
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Настройки макета, клавиши быстрого доступа и другие параметры."
-
-msgid ""
-"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
-"em MP3."
-msgstr ""
-"Настройки использования для старых музыкальных компакт-дисков не действуют "
-"для музыки MP3."
-
-msgid "Conheça alguns recursos"
-msgstr "Познакомьтесь с некоторыми ресурсами"
-
-msgid "Contas"
-msgstr "Счета"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "Аудиоконтроллер в случае отсутствия звука."
-
-msgid "Controle o brilho e as cores"
-msgstr "Управление яркостью и цветами"
-
-msgid "Criar, remover e gerenciar contas e grupos de usuários."
-msgstr ""
-"Создание, удаление и управление учетными записями и группами пользователей."
-
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr ""
-"Создайте несколько виртуальных рабочих столов, переключаясь между ними."
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr ""
-"Остерегайтесь, эта программа может стереть все данные на вашем компьютере."
-
-msgid "Defina seus programas padrões."
-msgstr "Установите программы по умолчанию."
-
-msgid "Desativar a aceleração 3D"
-msgstr "Отключить 3D-ускорение"
-
-msgid "Desenvolvimento"
-msgstr "Разработка"
-
-msgid ""
-"Disponiblizamos configurações completas para você selecionar de forma "
-"extremamente simples."
-msgstr ""
-"Мы предоставляем полные конфигурации, из которых вы можете выбрать очень "
-"простой способ."
-
-msgid "Dispositivos"
-msgstr "Устройства"
-
-msgid "Doação"
-msgstr "Пожертвование"
-
-msgid "Doação e Redes sociais"
-msgstr "Пожертвования и социальные сети"
-
-msgid "Download próximo de 1 GB, pode demorar muito."
-msgstr "Загрузка размером около 1 ГБ может занять много времени."
-
-msgid "Economia de energia"
-msgstr "Энергосбережение"
-
-msgid "Equalizador (DSP)"
-msgstr "Эквалайзер (DSP)"
-
-msgid "Escolha seu Avatar"
-msgstr "Выберите свой Аватар"
-
-msgid "Escolha seu navegador padrão"
-msgstr "Выберите браузер по умолчанию"
-
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr "Выберите поведение программ, доступных в .appimage"
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
-"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
-"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
-"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
-"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"Эта программа может передавать файлы между смартфонами, планшетами и другими "
-"компьютерами.  С его помощью вы можете, например, использовать свой смартфон "
-"в качестве беспроводной мыши и клавиатуры для управления компьютером, среди "
-"других функций.  Он лучше интегрируется с BigLinux и входит в число "
-"апплетов, расположенных рядом с системными часами. Для синхронизации с "
-"телефоном зайдите в Google Store или Apple Store и установите Kde Connect."
-
-msgid "Exibir ID do Android"
-msgstr "Отображение идентификатора Android"
-
-msgid "Facebook"
-msgstr "Facebook"
-
-msgid "Fechar"
-msgstr "Закрыть"
-
-msgid "Firewall"
-msgstr "Брандмауэр"
-
-msgid "Fórum"
-msgstr "Форум"
-
-msgid "Gerenciador de senhas"
-msgstr "Менеджер паролей"
-
-msgid "Gerenciador de usuários"
-msgstr "Менеджер пользователей"
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "Advanced Audio Manager - Alsamixer"
-
-msgid "Gerenciar arquivos"
-msgstr "Управление файлами"
-
-msgid "Gerenciar conexões"
-msgstr "Управление соединениями"
-
-msgid "Gerenciar pontos de restauração."
-msgstr "Управление точками восстановления."
-
-msgid "Gerenciar serviços (Systemd)"
-msgstr "Управление службами (Systemd)"
-
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo Relatory"
-
-msgid "ID"
-msgstr "ID"
-
-msgid "ID do Android:"
-msgstr "Android ID:"
-
-msgid "Impressoras"
-msgstr "Принтеры"
-
-msgid "Impressoras HP"
-msgstr "Принтеры HP"
-
-msgid "Info"
-msgstr "Информация"
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "Информация о хранении (SMART)"
-
-msgid "Informações do sistema e hardware"
-msgstr "Информация о системе и оборудовании"
-
-msgid "Iniciar o Waydroid"
-msgstr "Запустить Waydroid"
-
-msgid "Instagram"
-msgstr "Instagram"
-
-msgid "Instalar Waydroid"
-msgstr "Установите Waydroid"
-
-msgid "Instalar Waydroid com Google Apps"
-msgstr "Установите Waydroid с помощью Google Apps"
-
-msgid "Instalar drivers e firmwares"
-msgstr "Установите драйверы и встроенное ПО"
-
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "Легко устанавливайте и удаляйте драйверы и микропрограммы."
-
-msgid "Instalar ou remover programas."
-msgstr "Установка или удаление программ."
-
-msgid "Instalar versões de kernel"
-msgstr "Установка версий ядра"
-
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "Установка, настройка или удаление принтеров."
-
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Установка драйверов и информация об оборудовании"
-
-msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
-msgstr ""
-"Установите приложение Airdroid из магазина приложений вашего смартфона.  "
-"Используйте эту кнопку, чтобы открыть веб-сайт Airdroid на этом компьютере.  "
-"Считайте QR-код, который появится на экране вашего компьютера, используя "
-"приложение на смартфоне, и получите доступ к передаче файлов и многому "
-"другому.  Вы также можете воспользоваться нашим менеджером веб-приложений, "
-"чтобы облегчить использование этого сайта."
-
-msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
-msgstr ""
-"Установите приложение Airmore из магазина приложений вашего смартфона.  "
-"Используйте эту кнопку, чтобы открыть веб-сайт Airmore на этом компьютере.  "
-"Считайте QR-код, который появится на экране вашего компьютера, используя "
-"приложение на смартфоне, и получите доступ к передаче файлов и многому "
-"другому.  Вы также можете воспользоваться нашим менеджером веб-приложений, "
-"чтобы облегчить использование этого сайта."
-
-msgid "Integração com Google Drive e ownCloud"
-msgstr "Интеграция с Google Drive и ownCloud"
+msgid "Webcam"
+msgstr "Веб-камера"
 
 msgid "Introdução ao BigLinux"
 msgstr "Введение в BigLinux"
 
-msgid "Joystick"
-msgstr "Джойстик"
+msgid "Central de Controle"
+msgstr "Центр управления"
 
-msgid "KDE Connect"
-msgstr "KDE Connect"
-
-msgid ""
-"Lista com alguns programas do sistema que você pode restaurar a configuração "
-"com um clique."
-msgstr ""
-"Список с некоторыми системными программами, которые вы можете восстановить "
-"конфигурацию одним щелчком мыши."
-
-msgid "Maximizado"
-msgstr "Максимизация"
-
-msgid "Monitores e Telas"
-msgstr "Мониторы и экраны"
-
-msgid "Montar Hardware Apple"
-msgstr "Сборка оборудования Apple"
-
-msgid "Mostrar na inicialização"
-msgstr "Показывать при запуске"
-
-msgid "Multimídia"
-msgstr "Мультимедиа"
+msgid "Category"
+msgstr "Категория"
 
 msgid "Name"
 msgstr "Имя"
 
-msgid ""
-"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
-"novidades!"
-msgstr ""
-"Наша система основана на сотрудничестве, присоединяйтесь к этой эволюции. "
-"Смотрите новости!"
+msgid "ID"
+msgstr "ID"
 
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
-"estar aberto."
-msgstr ""
-"Невозможно получить идентификатор Android. \\Warning: Waydroid должен быть "
-"открыт."
-
-msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
-"transferência de dados entre dispositivos em redes locais. Disponível na "
-"Google Play Store para Android e Apple Store para iPhone."
-msgstr ""
-"KDE Connect - это приложение, облегчающее беспроводную связь и передачу "
-"данных между устройствами в локальных сетях. Доступно в Google Play Store "
-"для Android и Apple Store для iPhone."
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid также можно запустить с помощью системного меню"
+msgid "Info"
+msgstr "Информация"
 
 msgid ""
 "O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
@@ -545,197 +59,505 @@ msgstr ""
 "\n"
 "Хотите просмотреть отчет сейчас?\n"
 
-msgid "OCR para PDF"
-msgstr "OCR для PDF"
+msgid "Visualizar o relatório"
+msgstr "Посмотреть отчет"
+
+msgid "Fechar"
+msgstr "Закрыть"
+
+msgid "Hardinfo Relatory"
+msgstr "Hardinfo Relatory"
+
+msgid "Bem vindo ao BigLinux"
+msgstr "Добро пожаловать в BigLinux"
+
+msgid "Comece com algumas etapas simples."
+msgstr "Начните с нескольких простых шагов."
+
+msgid "Mostrar na inicialização"
+msgstr "Показывать при запуске"
 
 msgid "Olá"
 msgstr "Здравствуйте"
 
-msgid "OpenJDK Java 8 Policy Tool"
-msgstr "OpenJDK Java 8 Policy Tool"
+msgid "Ajustes iniciais"
+msgstr "Первоначальные корректировки"
 
-msgid "Outros"
-msgstr "Другое"
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+msgstr "Мы предоставляем полные конфигурации, из которых вы можете выбрать очень простой способ."
 
-msgid "Outros navegadores"
-msgstr "Другие браузеры"
+msgid "Temas, Desktop e Ajustes"
+msgstr "Темы, рабочий стол и настройки"
+
+msgid "Escolha seu Avatar"
+msgstr "Выберите свой Аватар"
 
 msgid "Pacotes de Idioma"
 msgstr "Языковые пакеты"
 
-msgid ""
-"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
-"do aplicativo'."
-msgstr ""
-"Чтобы конфигурация Kvantum работала, примените тему Kvantum в разделе "
-"\"Стиль приложения\"."
+msgid "Escolha seu navegador padrão"
+msgstr "Выберите браузер по умолчанию"
+
+msgid "Defina seus programas padrões."
+msgstr "Установите программы по умолчанию."
+
+msgid "Outros navegadores"
+msgstr "Другие браузеры"
+
+msgid "KDE Connect"
+msgstr "KDE Connect"
 
 msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
-"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
-"a página de Registro do dispositivo, precisa estar logado na sua conta "
-"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
+"iPhone."
 msgstr ""
-"Чтобы активировать PlayStore, нужно нажать (Display Android ID) и "
-"скопировать Android ID, затем нажать (Activate Google Apps), чтобы открыть "
-"страницу регистрации устройства, нужно войти в свой аккаунт Google, ввести "
-"Android ID и зарегистрироваться. Активация на вашем Waydroid может занять "
-"несколько минут. Закройте и откройте его снова. Готово!"
+"KDE Connect - это приложение, облегчающее беспроводную связь и передачу данных между устройствами в "
+"локальных сетях. Доступно в Google Play Store для Android и Apple Store для iPhone."
 
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Поздравляем, вы сделали первые шаги по использованию BigLinux."
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Установка драйверов и информация об оборудовании"
 
-msgid "Parar o Waydroid"
-msgstr "Остановите Waydroid"
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Легко устанавливайте и удаляйте драйверы и микропрограммы."
 
-msgid "Particionar ou formatar"
-msgstr "Разбиение или форматирование"
+msgid "Impressoras"
+msgstr "Принтеры"
 
-msgid "Personalizar"
-msgstr "Настроить"
+msgid "Conheça alguns recursos"
+msgstr "Познакомьтесь с некоторыми ресурсами"
 
-msgid "Pesquisar..."
-msgstr "Поиск..."
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "Наша система основана на сотрудничестве, присоединяйтесь к этой эволюции. Смотрите новости!"
 
-msgid "Principais"
-msgstr "Главная"
+msgid "Big Store"
+msgstr "Big Store"
 
-msgid "Privacidade"
-msgstr "Конфиденциальность"
-
-msgid "Procurar servidores (zeroconf)"
-msgstr "Поисковые серверы (zeroconf)"
-
-msgid "Procurar servidores SSH"
-msgstr "Просмотр серверов SSH"
-
-msgid "Procurar servidores VNC"
-msgstr "Поиск серверов VNC"
-
-msgid "Programas de desenvolvimento para QT."
-msgstr "Программы развития для QT."
-
-msgid "Qt Assistant"
-msgstr "Qt Assistant"
-
-msgid "Qt Designer"
-msgstr "Qt Designer"
-
-msgid "Qt Linguist"
-msgstr "Qt-лингвист"
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDBusViewer "
-
-msgid "Rede e Internet"
-msgstr "Сеть и Интернет"
+msgid "Web Apps"
+msgstr "Веб-приложения"
 
 msgid "Redutor de Ruídos"
 msgstr "Шумоподавитель"
 
-msgid "Região e Idioma"
-msgstr "Регион и язык"
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Настройка системного голоса (TTS)"
 
-msgid "Regras de segurança do Java"
-msgstr "Правила безопасности Java"
+msgid "OCR para PDF"
+msgstr "OCR для PDF"
 
-msgid "Resetar as configurações da tela"
-msgstr "Сброс настроек экрана"
+msgid "Doação e Redes sociais"
+msgstr "Пожертвования и социальные сети"
 
-msgid "Resolução: "
-msgstr "Resolução: "
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr "Ваше пожертвование очень важно для проекта и следите за социальными сетями."
 
-msgid "Restaurar a configuração de programas"
-msgstr "Восстановление конфигурации программы"
+msgid "Doação"
+msgstr "Пожертвование"
 
-msgid "Restaurar a configuração padrão do monitor."
-msgstr "Восстановите конфигурацию монитора по умолчанию."
+msgid "Fórum"
+msgstr "Форум"
 
-msgid "Resultado da pesquisa"
-msgstr "Результат поиска"
+msgid "YouTube"
+msgstr "YouTube"
 
-msgid "Scanners HP"
-msgstr "Сканеры HP"
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "Поздравляем, вы сделали первые шаги по использованию BigLinux."
+
+msgid "Bom dia"
+msgstr "Доброе утро"
+
+msgid "Boa tarde"
+msgstr "Добрый день"
+
+msgid "Boa noite"
+msgstr "Доброй ночи"
+
+msgid "Aguarde, carregando..."
+msgstr "Приготовьтесь, загрузка..."
+
+msgid "Remover"
+msgstr "Убирать"
+
+msgid "Maximizado"
+msgstr "Максимизация"
+
+msgid "Desinstalar"
+msgstr "Удалить"
+
+msgid "Waydroid"
+msgstr "Waydroid"
+
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Используйте программы Android на BigLinux."
+
+msgid "Instalar o Waydroid"
+msgstr "Установить Waydroid"
+
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Установка Waydroid с помощью Google Apps"
+
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "Загрузка составляет примерно 1 ГБ, в зависимости от вашего подключения."
+
+msgid "Paisagem"
+msgstr "Ландшафт"
+
+msgid "Retrato"
+msgstr "Портрет"
+
+msgid "Desativado"
+msgstr "Отключить"
+
+msgid "Ativado"
+msgstr "Активированный"
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid также можно запустить с помощью системного меню"
 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
-"não passará da tela de loading"
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
 msgstr ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
-"não passará da tela de loading"
+"Если 3D ускорение включено на несовместимом оборудовании android не будет перемещаться с экрана "
+"загрузки"
+
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D-ускорение несовместимо на видеокартах Nvidia с использованием фирменного драйвера."
+
+msgid "Exibir ID do Android"
+msgstr "Отображение идентификатора Android"
+
+msgid "Ativar Google Apps"
+msgstr "Включить Google Apps"
+
+msgid "Remover Configurações"
+msgstr "Удаление настроек"
+
+msgid "Desinstalar o Waydroid"
+msgstr "Удалить Waydroid"
 
 msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
-"ícone no menu do sistema para que textos escritos sejam falados."
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
 msgstr ""
-"Выберите нужный текст и используйте сочетание клавиш [Meta] + V или значок в "
-"системном меню для озвучивания написанных текстов."
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
 
-msgid "Servidor"
-msgstr "Сервер"
+msgid "Parar o Waydroid"
+msgstr "Остановите Waydroid"
+
+msgid "Iniciar o Waydroid"
+msgstr "Запустить Waydroid"
+
+msgid "ID do Android:"
+msgstr "Android ID:"
+
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr "Невозможно получить идентификатор Android. \\Warning: Waydroid должен быть открыт."
+
+msgid ""
+"Ao remover as configurações os programas instalados \n"
+"dentro do Waydroid e suas configurações serão perdidas.\n"
+"\n"
+"Realmente deseja remover?"
+msgstr ""
+"Удалив настройки установленных программ \n"
+"внутри Waydroid и ваши настройки будут потеряны.\n"
+"\n"
+"Неужели хотите удалить?"
+
+msgid "Configurações removidas com sucesso!"
+msgstr "Настройки успешно удалены!"
+
+msgid "Nenhuma configuração foi removida!"
+msgstr "Ни одна конфигурация не была удалена!"
+
+msgid "Não existem configurações para remover."
+msgstr "Нет настроек для удаления."
+
+msgid ""
+"Deseja remover também os arquivos de configuração \n"
+"e programas instalados dentro do Waydroid?"
+msgstr ""
+"Вы также хотите удалить файлы конфигурации \n"
+"и программы, установленные в waydroid?"
+
+msgid "Categorias"
+msgstr "Категории"
+
+msgid "Principais"
+msgstr "Главная"
 
 msgid "Sistema"
 msgstr "Система"
 
-msgid ""
-"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
-msgstr ""
-"Система в режиме реального времени. Восстановление точек восстановления "
-"установленной системы."
+msgid "Aparência"
+msgstr "Внешний вид"
 
-msgid "Snapdrop (Não precisa de aplicativo)"
-msgstr "Snapdrop (приложение не требуется)"
+msgid "Dispositivos"
+msgstr "Устройства"
 
-msgid "Snapshots e backups"
-msgstr "Снимки и резервное копирование"
+msgid "Personalizar"
+msgstr "Настроить"
+
+msgid "Telefone"
+msgstr "Телефон"
+
+msgid "Multimídia"
+msgstr "Мультимедиа"
+
+msgid "Rede e Internet"
+msgstr "Сеть и Интернет"
+
+msgid "Contas"
+msgstr "Счета"
+
+msgid "Região e Idioma"
+msgstr "Регион и язык"
+
+msgid "Privacidade"
+msgstr "Конфиденциальность"
+
+msgid "Servidor"
+msgstr "Сервер"
+
+msgid "Desenvolvimento"
+msgstr "Разработка"
 
 msgid "Sobre"
 msgstr "О сайте"
 
-msgid "Som e microfone"
-msgstr "Звук и микрофон"
+msgid "Outros"
+msgstr "Другое"
 
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgid "Pesquisar..."
+msgstr "Поиск..."
+
+msgid "Resultado da pesquisa"
+msgstr "Результат поиска"
+
+msgid "Abrir"
+msgstr "Открытым"
+
+msgid "Temas, desktop e ajustes"
+msgstr "Темы, рабочий стол и настройки"
+
+msgid "Restaurar a configuração de programas"
+msgstr "Восстановление конфигурации программы"
+
+msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
 msgstr ""
-"Ваше пожертвование очень важно для проекта и следите за социальными сетями."
+"Список с некоторыми системными программами, которые вы можете восстановить конфигурацию одним "
+"щелчком мыши."
+
+msgid "Informações do sistema e hardware"
+msgstr "Информация о системе и оборудовании"
+
+msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
+msgstr "Помимо просмотра информации, ее можно сохранить в файл и поделиться ею в Интернете."
+
+msgid "Conectar à internet"
+msgstr "Подключение к Интернету"
+
+msgid "Conecte na internet por cabo de rede ou wifi."
+msgstr "Подключитесь к Интернету с помощью сетевого кабеля или Wi-Fi."
+
+msgid "Conectar à internet utilizando o Android"
+msgstr "Подключение к Интернету с помощью Android"
+
+msgid ""
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
+"computador."
+msgstr ""
+"Вы можете использовать свой смартфон или планшет Android в качестве устройства wifi usb для "
+"компьютера."
+
+msgid ""
+"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
+"<br><br>\n"
+"1. Plugue o dispositivo na USB do computador;\n"
+"<br>\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
+"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"<br>\n"
+"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
+"<br><br>\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
+"<br><br>\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
+"dispositivo Android.\n"
+"<br>\n"
+"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+msgstr ""
+"Как пользоваться Интернетом с планшета или смартфона Android:\n"
+"<br><br>\n"
+"1. Подключите устройство к USB-порту компьютера;\n"
+"<br>\n"
+"2. Зайдите в Настройки вашего Android-устройства и найдите некоторые из опций: \"USB-связь\", \"USB "
+"tethering\" или \"USB Tethering\".\n"
+"<br>\n"
+"Это разные способы, которые каждый производитель использует для обозначения одной и той же функции.\n"
+"<br><br>\n"
+"*Эти опции находятся в разделе \"Сеть и Интернет\" или \"Подключения и общий доступ\".\n"
+"<br><br>\n"
+"При активации подключение произойдет автоматически, и вы будете использовать то же соединение, что "
+"и ваше устройство Android.\n"
+"<br>\n"
+"*Если вы используете мобильные данные, они будут расходоваться из вашего тарифного плана."
+
+msgid "Visualizar informações do sistema e hardware"
+msgstr "Просмотр информации о системе и оборудовании"
+
+msgid ""
+"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
+"o suporte."
+msgstr ""
+"Он также создает файл с информацией, который вы можете отправить другим людям для оказания вам "
+"поддержки."
+
+msgid "Adicionar ou Remover Usuários"
+msgstr "Добавление или удаление пользователей"
+
+msgid "Criar, remover e gerenciar contas e grupos de usuários."
+msgstr "Создание, удаление и управление учетными записями и группами пользователей."
+
+msgid "Economia de energia"
+msgstr "Энергосбережение"
+
+msgid "Monitores e Telas"
+msgstr "Мониторы и экраны"
+
+msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
+msgstr "Настройте разрешение, цвет, частоту, dpi, масштаб, ночной цвет и т.д."
+
+msgid "Resetar as configurações da tela"
+msgstr "Сброс настроек экрана"
+
+msgid "Restaurar a configuração padrão do monitor."
+msgstr "Восстановите конфигурацию монитора по умолчанию."
+
+msgid "Airmore"
+msgstr "Эйрмор"
+
+msgid ""
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
+"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+msgstr ""
+"Установите приложение Airmore из магазина приложений вашего смартфона.  Используйте эту кнопку, "
+"чтобы открыть веб-сайт Airmore на этом компьютере.  Считайте QR-код, который появится на экране "
+"вашего компьютера, используя приложение на смартфоне, и получите доступ к передаче файлов и многому "
+"другому.  Вы также можете воспользоваться нашим менеджером веб-приложений, чтобы облегчить "
+"использование этого сайта."
+
+msgid "Airdroid"
+msgstr "Airdroid"
+
+msgid ""
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
+"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
+"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+msgstr ""
+"Установите приложение Airdroid из магазина приложений вашего смартфона.  Используйте эту кнопку, "
+"чтобы открыть веб-сайт Airdroid на этом компьютере.  Считайте QR-код, который появится на экране "
+"вашего компьютера, используя приложение на смартфоне, и получите доступ к передаче файлов и многому "
+"другому.  Вы также можете воспользоваться нашим менеджером веб-приложений, чтобы облегчить "
+"использование этого сайта."
 
 msgid "Suporte a aplicativos Android"
 msgstr "Поддержка приложений Android"
 
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras "
-"pessoas para que o ajudem com o suporte."
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
+"experimental."
 msgstr ""
-"Он также создает файл с информацией, который вы можете отправить другим "
-"людям для оказания вам поддержки."
+"Использование Waydroid для открытия программ Android на BigLinux. *Эта функция все еще находится на "
+"экспериментальной стадии."
 
-msgid "Telefone"
-msgstr "Телефон"
+msgid "Instalar drivers e firmwares"
+msgstr "Установите драйверы и встроенное ПО"
 
-msgid "Telegram"
-msgstr "Telegram"
+msgid "Snapshots e backups"
+msgstr "Снимки и резервное копирование"
 
-msgid "Tema da Área de Trabalho"
-msgstr "Тема рабочего пространства"
+msgid "Gerenciar pontos de restauração."
+msgstr "Управление точками восстановления."
 
-msgid "Temas do Bootsplash"
-msgstr "Темы Bootsplash"
+msgid ""
+"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
+"backups utilizando o método rsync."
+msgstr ""
+"Раздел, на котором была установлена система, не имеет точек восстановления, но можно сделать "
+"резервные копии с помощью метода rsync."
 
-msgid "Temas, Desktop e Ajustes"
-msgstr "Темы, рабочий стол и настройки"
+msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr "Система в режиме реального времени. Восстановление точек восстановления установленной системы."
 
-msgid "Temas, desktop e ajustes"
-msgstr "Темы, рабочий стол и настройки"
+msgid ""
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
+"para que textos escritos sejam falados."
+msgstr ""
+"Выберите нужный текст и используйте сочетание клавиш [Meta] + V или значок в системном меню для "
+"озвучивания написанных текстов."
 
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "Получите доступ к своим файлам и папкам."
+msgid "Instalar versões de kernel"
+msgstr "Установка версий ядра"
 
-msgid "Terminal"
-msgstr "Терминал"
+msgid "Regras de segurança do Java"
+msgstr "Правила безопасности Java"
 
-msgid "Twitter"
-msgstr "Twitter"
+msgid "OpenJDK Java 8 Policy Tool"
+msgstr "OpenJDK Java 8 Policy Tool"
+
+msgid "Snapdrop (Não precisa de aplicativo)"
+msgstr "Snapdrop (приложение не требуется)"
+
+msgid ""
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
+"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
+"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+msgstr ""
+"Просто откройте сайт https://snapdrop.net на аппаратном обеспечении, на которое вы хотите передать "
+"файлы, автоматически они будут обнаружены, и вы сможете отправить нужные вам файлы.  Используйте "
+"эту кнопку, чтобы открыть веб-сайт Snapdrop на этом компьютере.  Snapdrop можно использовать на "
+"любом смартфоне или компьютере, включая передачу файлов непосредственно с одного смартфона на "
+"другой.  Вы также можете воспользоваться нашим менеджером веб-приложений, чтобы упростить "
+"использование этого сайта."
+
+msgid "Instalar ou remover programas."
+msgstr "Установка или удаление программ."
+
+msgid "Gerenciar conexões"
+msgstr "Управление соединениями"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
+"móvel e outros)."
+msgstr ""
+"Расширенная настройка сети (VPN, Wi-Fi, проводная сеть, фиксированный IP, PPPoE, ADSL, проводная "
+"сеть, мобильная широкополосная сеть и другие)."
+
+msgid "Procurar servidores VNC"
+msgstr "Поиск серверов VNC"
 
 msgid ""
 "Utilitário que facilita a restauração do sistema instalado,\n"
@@ -754,50 +576,193 @@ msgstr ""
 "<br>\n"
 "менеджер и терминал установленной системы."
 
-msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
-"ainda está em fase experimental."
-msgstr ""
-"Использование Waydroid для открытия программ Android на BigLinux. *Эта "
-"функция все еще находится на экспериментальной стадии."
+msgid "Tema da Área de Trabalho"
+msgstr "Тема рабочего пространства"
+
+msgid "Montar Hardware Apple"
+msgstr "Сборка оборудования Apple"
 
 msgid ""
-"Utilize programas para Android no seu computador, está em fase experimental, "
-"alguns programas podem não funcionar.<br>"
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
+"acesso de arquivos em um pendrive."
 msgstr ""
-"Используйте программы Android на компьютере, он находится на "
-"экспериментальной стадии, некоторые программы могут не работать.<br>"
+"С помощью этой программы вы можете получить доступ к программам на вашем Apple iPhone или iPad "
+"аналогично доступу к файлам на USB-накопителе."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "Интеграция с Google Drive и ownCloud"
+
+msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
+msgstr "Доступ к файлам, находящимся в Google Drive или ownCloud, непосредственно из файлового менеджера."
+
+msgid "Scanners HP"
+msgstr "Сканеры HP"
+
+msgid "Qt Designer"
+msgstr "Qt Designer"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "Программы развития для QT."
+
+msgid "Firewall"
+msgstr "Брандмауэр"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "Настройте правила безопасности для интернет-соединения."
+
+msgid "Centro de controle do KDE"
+msgstr "Центр управления KDE"
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "Информация о хранении (SMART)"
+
+msgid "Qt QDBusViewer "
+msgstr "Qt QDBusViewer "
+
+msgid "Ícones e emoticons"
+msgstr "Иконки и смайлики"
+
+msgid "Qt Linguist"
+msgstr "Qt-лингвист"
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "Установка, настройка или удаление принтеров."
+
+msgid "Temas do Bootsplash"
+msgstr "Темы Bootsplash"
+
+msgid "Carteira de senhas do KDE"
+msgstr "Кошелек для паролей KDE"
+
+msgid "Joystick"
+msgstr "Джойстик"
+
+msgid "Configurar o tema Kvantum"
+msgstr "Настройка темы Kvantum"
+
+msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
+msgstr "Чтобы конфигурация Kvantum работала, примените тему Kvantum в разделе \"Стиль приложения\"."
+
+msgid "Procurar servidores SSH"
+msgstr "Просмотр серверов SSH"
+
+msgid "Terminal"
+msgstr "Терминал"
+
+msgid "Acesse o terminal de comandos."
+msgstr "Войдите в командный терминал."
+
+msgid "Controle o brilho e as cores"
+msgstr "Управление яркостью и цветами"
+
+msgid "Brilho e cor"
+msgstr "Блеск и цвет"
+
+msgid "Particionar ou formatar"
+msgstr "Разбиение или форматирование"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr "Остерегайтесь, эта программа может стереть все данные на вашем компьютере."
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "Настройте эту тему границ окон"
+
+msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
+msgstr "Настройки использования для старых музыкальных компакт-дисков не действуют для музыки MP3."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "Поисковые серверы (zeroconf)"
+
+msgid "Gerenciar arquivos"
+msgstr "Управление файлами"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "Получите доступ к своим файлам и папкам."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
+"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
+"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
+"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"Эта программа может передавать файлы между смартфонами, планшетами и другими компьютерами.  С его "
+"помощью вы можете, например, использовать свой смартфон в качестве беспроводной мыши и клавиатуры "
+"для управления компьютером, среди других функций.  Он лучше интегрируется с BigLinux и входит в "
+"число апплетов, расположенных рядом с системными часами. Для синхронизации с телефоном зайдите в "
+"Google Store или Apple Store и установите Kde Connect."
+
+msgid "Impressoras HP"
+msgstr "Принтеры HP"
 
 msgid "Verificar o status, nível de tinta e manutenção."
 msgstr "Проверьте состояние, уровень чернил и техническое обслуживание."
 
-msgid "Visualizar informações do sistema e hardware"
-msgstr "Просмотр информации о системе и оборудовании"
+msgid "Configurar o AppimageLauncher"
+msgstr "Настройка AppimageLauncher"
 
-msgid "Visualizar o relatório"
-msgstr "Посмотреть отчет"
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr "Выберите поведение программ, доступных в .appimage"
 
-msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
-"usb para seu computador."
-msgstr ""
-"Вы можете использовать свой смартфон или планшет Android в качестве "
-"устройства wifi usb для компьютера."
+msgid "Configurador avançado de energia"
+msgstr "Расширенный конфигуратор питания"
 
-msgid "Waydroid"
-msgstr "Waydroid"
+msgid "Configurar webcam ou placa de captura"
+msgstr "Настройте веб-камеру или карту захвата"
 
-msgid "Web Apps"
-msgstr "Веб-приложения"
+msgid "Equalizador (DSP)"
+msgstr "Эквалайзер (DSP)"
 
-msgid "Webcam"
-msgstr "Веб-камера"
+msgid "Som e microfone"
+msgstr "Звук и микрофон"
 
-msgid "YouTube"
-msgstr "YouTube"
+msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr "Настройка или изменение устройств ввода и вывода звука (например, HDMI)"
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "Управление службами (Systemd)"
+
+msgid "Configurar este tema de janelas."
+msgstr "Настройте эту тему окон."
+
+msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr "Активация поиска увеличивает потребление системной памяти и вычислительных ресурсов."
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "Advanced Audio Manager - Alsamixer"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "Аудиоконтроллер в случае отсутствия звука."
+
+msgid "Gerenciador de usuários"
+msgstr "Менеджер пользователей"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr "Добавление, удаление или редактирование пользователей и групп системы."
+
+msgid "Gerenciador de senhas"
+msgstr "Менеджер паролей"
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "Установите дату, время и часовой пояс."
+
+msgid "Qt Assistant"
+msgstr "Qt Assistant"
 
 msgid "Áreas de trabalho virtuais e atividades"
 msgstr "Виртуальные рабочие места и деятельность"
 
-msgid "Ícones e emoticons"
-msgstr "Иконки и смайлики"
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "Создайте несколько виртуальных рабочих столов, переключаясь между ними."
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Настройки макета, клавиши быстрого доступа и другие параметры."
+
+msgid "As configurações da tela foram resetadas."
+msgstr "Настройки экрана были сброшены."
+
+msgid "Configurações da tela"
+msgstr "Настройки экрана"
+
+msgid "Aguarde, criando arquivos de cache..."
+msgstr "Приготовьтесь, создаем кэш-файлы..."
