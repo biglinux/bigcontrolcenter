@@ -1,0 +1,814 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bigcontrolcenter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bigcontrolcenter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-01 06:12-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Introdução ao BigLinux"
+msgstr "Présentation de BigLinux"
+
+msgid "Central de Controle"
+msgstr "Centre de contrôle"
+
+msgid ""
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
+msgstr ""
+"La webcam est déjà utilisée par le programme : $WEBCAM_BUSY\n"
+"\n"
+"Je vais l'ouvrir en mode configuration.\n"
+"Les modifications apportées sont visibles\n"
+"dans l'image de votre webcam dans d'autres programmes."
+
+msgid "Webcam"
+msgstr "Webcam"
+
+msgid "Category"
+msgstr "Catégorie"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Info"
+msgstr "Info"
+
+msgid ""
+"O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
+"\n"
+"Deseja visualizar o relatório agora?\n"
+msgstr ""
+"Le rapport a été enregistré dans le fichier $FILE_TO_SAVE\n"
+"\n"
+"Voulez-vous consulter le rapport maintenant ?\n"
+
+msgid "Visualizar o relatório"
+msgstr "Voir le rapport"
+
+msgid "Fechar"
+msgstr "Fermer"
+
+msgid "Hardinfo Relatory"
+msgstr "Hardinfo Relatoire"
+
+msgid "Bem vindo ao BigLinux"
+msgstr "Bienvenue à BigLinux"
+
+msgid "Comece com algumas etapas simples."
+msgstr "Commencez par quelques étapes simples."
+
+msgid "Mostrar na inicialização"
+msgstr "Afficher au démarrage"
+
+msgid "Olá"
+msgstr "Bonjour"
+
+msgid "Ajustes iniciais"
+msgstr "Ajustements initiaux"
+
+msgid ""
+"Disponiblizamos configurações completas para você selecionar de forma "
+"extremamente simples."
+msgstr ""
+"Nous vous proposons des configurations complètes parmi lesquelles vous "
+"pouvez choisir de manière très simple."
+
+msgid "Temas, Desktop e Ajustes"
+msgstr "Thèmes, bureau et paramètres"
+
+msgid "Escolha seu Avatar"
+msgstr "Choisissez votre avatar"
+
+msgid "Pacotes de Idioma"
+msgstr "Packs de langues"
+
+msgid "Escolha seu navegador padrão"
+msgstr "Choisissez votre navigateur par défaut"
+
+msgid "Defina seus programas padrões."
+msgstr "Définissez vos programmes par défaut."
+
+msgid "Outros navegadores"
+msgstr "Autres navigateurs"
+
+msgid "KDE Connect"
+msgstr "KDE Connect"
+
+msgid ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
+"transferência de dados entre dispositivos em redes locais. Disponível na "
+"Google Play Store para Android e Apple Store para iPhone."
+msgstr ""
+"KDE Connect est une application qui facilite les communications sans fil et "
+"le transfert de données entre les appareils sur les réseaux locaux. "
+"Disponible sur le Google Play Store pour Android et l'Apple Store pour "
+"iPhone."
+
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Installation du pilote et informations sur le matériel"
+
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Installez ou supprimez facilement les pilotes et les microprogrammes."
+
+msgid "Impressoras"
+msgstr "Imprimantes"
+
+msgid "Conheça alguns recursos"
+msgstr "Apprenez à connaître certaines ressources"
+
+msgid ""
+"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
+"novidades!"
+msgstr ""
+"Notre système est collaboratif, venez faire partie de cette évolution. "
+"Découvrez les nouvelles !"
+
+msgid "Big Store"
+msgstr "Grand magasin"
+
+msgid "Web Apps"
+msgstr "Applications Web"
+
+msgid "Redutor de Ruídos"
+msgstr "Réducteur de bruit"
+
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Réglage de la voix du système (TTS)"
+
+msgid "OCR para PDF"
+msgstr "OCR pour PDF"
+
+msgid "Doação e Redes sociais"
+msgstr "Donation et réseaux sociaux"
+
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr ""
+"Votre don est très important pour le projet et le suivi des réseaux sociaux."
+
+msgid "Doação"
+msgstr "Donation"
+
+msgid "Fórum"
+msgstr "Forum"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Telegram"
+msgstr "Télégramme"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr ""
+"Félicitations, vous avez terminé les premières étapes pour utiliser BigLinux."
+
+msgid "Bom dia"
+msgstr "Bonjour"
+
+msgid "Boa tarde"
+msgstr "Bon après-midi"
+
+msgid "Boa noite"
+msgstr "Bonsoir"
+
+msgid "Aguarde, carregando..."
+msgstr "Stand by, chargement..."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "Intégration avec Google Drive et ownCloud"
+
+msgid ""
+"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
+"gerenciador de arquivos."
+msgstr ""
+"Accédez à vos fichiers qui se trouvent dans Google Drive ou ownCloud "
+"directement à partir du gestionnaire de fichiers."
+
+msgid "Configurar o AppimageLauncher"
+msgstr "Configuration de l'AppimageLauncher"
+
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr "Choisissez le comportement des programmes disponibles dans .appimage"
+
+msgid "Qt Assistant"
+msgstr "Assistant Qt"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "Programmes de développement pour QT."
+
+msgid ""
+"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
+"em MP3."
+msgstr ""
+"Les paramètres d'utilisation des anciens CD de musique ne sont pas valables "
+"pour la musique MP3."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "Serveurs de recherche (zeroconf)"
+
+msgid "Instalar ou remover programas."
+msgstr "Installer ou supprimer des programmes."
+
+msgid "Restaurar a configuração de programas"
+msgstr "Restaurer la configuration du programme"
+
+msgid ""
+"Utilitário que facilita a restauração do sistema instalado,\n"
+"<br>\n"
+"principalmente a restauração do boot do sistema (Grub).\n"
+"<br><br>\n"
+"Também pode ser utilizado para acessar o gerenciador\n"
+"<br>\n"
+"de pacotes e o terminal do sistema instalado."
+msgstr ""
+"Utilitaire qui facilite la restauration du système installé,\n"
+"<br>\n"
+"principalement la restauration du système de démarrage (Grub).\n"
+"<br><br>\n"
+"Il peut également être utilisé pour accéder au gestionnaire\n"
+"<br>\n"
+"et le terminal du système installé."
+
+msgid "Temas do Bootsplash"
+msgstr "Thèmes de Bootsplash"
+
+msgid "Controle o brilho e as cores"
+msgstr "Contrôlez la luminosité et les couleurs"
+
+msgid "Brilho e cor"
+msgstr "Brillance et couleur"
+
+msgid "Procurar servidores SSH"
+msgstr "Parcourir les serveurs SSH"
+
+msgid "Procurar servidores VNC"
+msgstr "Recherche de serveurs VNC"
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "Configurer ce thème de bordure de fenêtre"
+
+msgid "Configurar este tema de janelas."
+msgstr "Configurez ce thème de fenêtre."
+
+msgid "Qt Designer"
+msgstr "Qt Designer"
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "Gestionnaire audio avancé - Alsamixer"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "Contrôleur audio en cas d'absence de son."
+
+msgid "Particionar ou formatar"
+msgstr "Partitionnement ou formatage"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr ""
+"Attention, ce programme peut effacer toutes les données de votre ordinateur."
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "Informations sur le stockage (SMART)"
+
+msgid "Firewall"
+msgstr "Pare-feu"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "Configurer les règles de sécurité pour la connexion Internet."
+
+msgid "Configurar webcam ou placa de captura"
+msgstr "Configurer une webcam ou une carte de capture"
+
+msgid "Scanners HP"
+msgstr "Scanners HP"
+
+msgid "Impressoras HP"
+msgstr "Imprimantes HP"
+
+msgid "Verificar o status, nível de tinta e manutenção."
+msgstr "Vérifiez l'état, le niveau d'encre et la maintenance."
+
+msgid "Montar Hardware Apple"
+msgstr "Assemblage de matériel Apple"
+
+msgid ""
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
+"de forma similar ao acesso de arquivos em um pendrive."
+msgstr ""
+"Grâce à ce programme, vous pouvez accéder aux programmes de votre iPhone ou "
+"iPad d'Apple de la même manière que vous accédez aux fichiers d'une clé USB."
+
+msgid "Equalizador (DSP)"
+msgstr "Égaliseur (DSP)"
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "Espaces de travail et activités virtuels"
+
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "Créez plus d'un bureau virtuel en passant de l'un à l'autre."
+
+msgid ""
+"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr ""
+"L'activation de la recherche augmente la mémoire du système et la "
+"consommation de traitement."
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "Réglez la date, l'heure et le fuseau horaire."
+
+msgid "Tema da Área de Trabalho"
+msgstr "Thème de l'espace de travail"
+
+msgid "Ícones e emoticons"
+msgstr "Icônes et émoticônes"
+
+msgid "Joystick"
+msgstr "Joystick"
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Paramètres de mise en page, touches de raccourci et autres options."
+
+msgid "Gerenciar conexões"
+msgstr "Gérer les connexions"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
+"rede com fio, banda larga móvel e outros)."
+msgstr ""
+"Configuration réseau avancée (VPN, wifi, filaire, IP fixe, PPPoE, ADSL, "
+"réseau filaire, haut débit mobile et autres)."
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "Installer, configurer ou supprimer des imprimantes."
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "Gérer les services (Systemd)"
+
+msgid "Configurar o tema Kvantum"
+msgstr "Configurer le thème Kvantum"
+
+msgid ""
+"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
+"do aplicativo'."
+msgstr ""
+"Pour que la configuration Kvantum fonctionne, appliquez le thème Kvantum "
+"sous \"Style d'application\"."
+
+msgid "Carteira de senhas do KDE"
+msgstr "Portefeuille de mots de passe KDE"
+
+msgid "Qt Linguist"
+msgstr "Linguiste Qt"
+
+msgid "Gerenciador de usuários"
+msgstr "Gestionnaire des utilisateurs"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr ""
+"Ajouter, supprimer ou modifier les utilisateurs et les groupes du système."
+
+msgid "Gerenciar arquivos"
+msgstr "Gérer les fichiers"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "Accédez à vos fichiers et dossiers."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
+"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
+"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
+"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
+"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"Ce programme peut transférer des fichiers entre smartphones, tablettes et "
+"autres ordinateurs. Avec lui, vous pouvez, par exemple, utiliser votre "
+"smartphone comme souris et clavier sans fil pour contrôler votre ordinateur, "
+"entre autres fonctionnalités. Il s'intègre mieux à BigLinux et fait partie "
+"des applets situés à proximité de l'horloge système. Pour synchroniser avec "
+"votre smartphone, rendez-vous sur Google Store ou Apple Store et installez "
+"Kde Connect."
+
+msgid "Terminal"
+msgstr "Terminal"
+
+msgid "Acesse o terminal de comandos."
+msgstr "Accédez au terminal de commande."
+
+msgid "Gerenciador de senhas"
+msgstr "Gestionnaire de mots de passe"
+
+msgid "Som e microfone"
+msgstr "Son et microphone"
+
+msgid ""
+"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr ""
+"Configurer ou modifier les périphériques d'entrée et de sortie audio (ex : "
+"HDMI)"
+
+msgid "Qt QDBusViewer "
+msgstr "Visualiseur Qt QDBus "
+
+msgid "Centro de controle do KDE"
+msgstr "Centre de contrôle KDE"
+
+msgid "Configurador avançado de energia"
+msgstr "Configurateur de puissance avancé"
+
+msgid "Categorias"
+msgstr "Catégories"
+
+msgid "Principais"
+msgstr "Principal"
+
+msgid "Sistema"
+msgstr "Système"
+
+msgid "Aparência"
+msgstr "Apparition"
+
+msgid "Dispositivos"
+msgstr "Dispositifs"
+
+msgid "Personalizar"
+msgstr "Personnalisez"
+
+msgid "Telefone"
+msgstr "Téléphone"
+
+msgid "Multimídia"
+msgstr "Multimédia"
+
+msgid "Rede e Internet"
+msgstr "Réseau et Internet"
+
+msgid "Contas"
+msgstr "Comptes"
+
+msgid "Região e Idioma"
+msgstr "Région et langue"
+
+msgid "Privacidade"
+msgstr "Vie privée"
+
+msgid "Servidor"
+msgstr "Serveur"
+
+msgid "Desenvolvimento"
+msgstr "Développement"
+
+msgid "Sobre"
+msgstr "À propos de"
+
+msgid "Outros"
+msgstr "Autre"
+
+msgid "Pesquisar..."
+msgstr "Recherche..."
+
+msgid "Resultado da pesquisa"
+msgstr "Résultat de la recherche"
+
+msgid "Abrir"
+msgstr "Ouvert"
+
+msgid "Temas, desktop e ajustes"
+msgstr "Thèmes, bureau et paramètres"
+
+msgid ""
+"Lista com alguns programas do sistema que você pode restaurar a configuração "
+"com um clique."
+msgstr ""
+"Liste avec certains programmes système que vous pouvez restaurer la "
+"configuration en un seul clic."
+
+msgid "Informações do sistema e hardware"
+msgstr "Informations sur le système et le matériel"
+
+msgid ""
+"Além de visualizar as informações é possível salvar em um arquivo e "
+"compartilhar na internet."
+msgstr ""
+"Outre la visualisation des informations, il est possible de les enregistrer "
+"dans un fichier et de les partager sur Internet."
+
+msgid "Conectar à internet"
+msgstr "Se connecter à l'internet"
+
+msgid "Conecte na internet por cabo de rede ou wifi."
+msgstr "Se connecter à l'internet par câble réseau ou wifi."
+
+msgid "Conectar à internet utilizando o Android"
+msgstr "Se connecter à Internet avec Android"
+
+msgid ""
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
+"usb para seu computador."
+msgstr ""
+"Vous pouvez utiliser votre smartphone ou votre tablette Android comme un "
+"périphérique wifi usb pour votre ordinateur."
+
+msgid ""
+"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
+"<br><br>\n"
+"1. Plugue o dispositivo na USB do computador;\n"
+"<br>\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
+"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"<br>\n"
+"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
+"<br><br>\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
+"compartilhamento'.\n"
+"<br><br>\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
+"conexão do seu dispositivo Android.\n"
+"<br>\n"
+"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+msgstr ""
+"Comment utiliser l'internet à partir de votre tablette ou smartphone "
+"Android :\n"
+"<br><br>\n"
+"1. Branchez l'appareil sur le port USB de l'ordinateur ;\n"
+"<br>\n"
+"2. Allez dans les paramètres de votre appareil Android et recherchez "
+"certaines des options : \" USB bonding \", \" USB tethering \" ou \" USB "
+"Tethering \".\n"
+"<br>\n"
+"Ce sont des moyens différents que chaque fabricant utilise pour la même "
+"fonction.\n"
+"<br><br>\n"
+"*Ces options se trouvent dans la section \"Réseau et Internet\" ou "
+"\"Connexions et partage\".\n"
+"<br><br>\n"
+"En l'activant, il sera connecté automatiquement, et vous utiliserez la même "
+"connexion que votre appareil Android.\n"
+"<br>\n"
+"*Si vous utilisez des données mobiles, il sera consommé à partir de votre "
+"plan de données."
+
+msgid "Visualizar informações do sistema e hardware"
+msgstr "Afficher les informations sur le système et le matériel"
+
+msgid ""
+"Também cria um arquivo com informações, que você pode enviar a outras "
+"pessoas para que o ajudem com o suporte."
+msgstr ""
+"Il crée également un fichier contenant des informations, que vous pouvez "
+"envoyer à d'autres personnes pour vous aider."
+
+msgid "Adicionar ou Remover Usuários"
+msgstr "Ajouter ou supprimer des utilisateurs"
+
+msgid "Criar, remover e gerenciar contas e grupos de usuários."
+msgstr "Créer, supprimer et gérer les comptes et groupes d'utilisateurs."
+
+msgid "Economia de energia"
+msgstr "Économie d'énergie"
+
+msgid "Monitores e Telas"
+msgstr "Moniteurs et écrans"
+
+msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
+msgstr ""
+"Configurez la résolution, la couleur, la fréquence, les ppp, l'échelle, la "
+"couleur de nuit, etc."
+
+msgid "Resetar as configurações da tela"
+msgstr "Réinitialisation des paramètres de l'écran"
+
+msgid "Restaurar a configuração padrão do monitor."
+msgstr "Restaure la configuration par défaut du moniteur."
+
+msgid "Airmore"
+msgstr "Airmore"
+
+msgid ""
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
+"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
+"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
+"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
+"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
+"desse site."
+msgstr ""
+"Installez l'application Airmore depuis la boutique d'applications de votre "
+"smartphone.  Utilisez ce bouton pour ouvrir le site Web d'Airmore sur cet "
+"ordinateur.  Lisez le code QR qui s'affichera sur l'écran de votre "
+"ordinateur en utilisant l'application sur votre smartphone et accédez au "
+"transfert de fichiers et plus encore.  Vous pouvez également utiliser notre "
+"gestionnaire d'applications web pour faciliter l'utilisation de ce site."
+
+msgid "Airdroid"
+msgstr "Airdroid"
+
+msgid ""
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
+"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
+"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
+"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
+"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
+"desse site."
+msgstr ""
+"Installez l'application Airdroid depuis la boutique d'applications de votre "
+"smartphone.  Utilisez ce bouton pour ouvrir le site web d'Airdroid sur cet "
+"ordinateur.  Lisez le code QR qui s'affichera sur l'écran de votre "
+"ordinateur en utilisant l'application sur votre smartphone et accédez aux "
+"transferts de fichiers et plus encore.  Vous pouvez également utiliser notre "
+"gestionnaire d'applications Web pour faciliter l'utilisation de ce site."
+
+msgid "Suporte a aplicativos Android"
+msgstr "Support des applications Android"
+
+msgid ""
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
+"ainda está em fase experimental."
+msgstr ""
+"Utilisation de Waydroid pour ouvrir des programmes Android sur BigLinux. "
+"*Cette fonctionnalité est encore au stade expérimental."
+
+msgid "Instalar drivers e firmwares"
+msgstr "Installer les pilotes et les micrologiciels"
+
+msgid "Snapshots e backups"
+msgstr "Instantanés et sauvegardes"
+
+msgid "Gerenciar pontos de restauração."
+msgstr "Gérer les points de restauration."
+
+msgid ""
+"A partição que o sistema foi instalado não possui pontos de restauração, mas "
+"é possível fazer backups utilizando o método rsync."
+msgstr ""
+"La partition où le système a été installé ne dispose pas de points de "
+"restauration, mais il est possible de faire des sauvegardes en utilisant la "
+"méthode rsync."
+
+msgid ""
+"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr ""
+"Système en mode direct. Restaurer les points de restauration du système "
+"installé."
+
+msgid ""
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
+"ícone no menu do sistema para que textos escritos sejam falados."
+msgstr ""
+"Sélectionnez le texte souhaité et utilisez le raccourci avec la touche "
+"[Meta] + V ou l'icône dans le menu système pour faire prononcer les textes "
+"écrits."
+
+msgid "Instalar versões de kernel"
+msgstr "Installation des versions du noyau"
+
+msgid "Regras de segurança do Java"
+msgstr "Règles de sécurité de Java"
+
+msgid "OpenJDK Java 8 Policy Tool"
+msgstr "Outil de politique Java 8 d'OpenJDK"
+
+msgid "Snapdrop (Não precisa de aplicativo)"
+msgstr "Snapdrop (aucune application requise)"
+
+msgid ""
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
+"transferir os arquivos, automaticamente eles serão detectados e você poderá "
+"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
+"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
+"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
+"apps para facilitar o uso desse site."
+msgstr ""
+"Il suffit d'ouvrir le site web https://snapdrop.net sur le matériel que vous "
+"voulez transférer les fichiers, automatiquement ils seront détectés et vous "
+"pouvez envoyer les fichiers que vous voulez.  Utilisez ce bouton pour ouvrir "
+"le site web de Snapdrop sur cet ordinateur.  Snapdrop peut être utilisé sur "
+"n'importe quel smartphone ou ordinateur, y compris pour transférer des "
+"fichiers directement d'un smartphone à un autre.  Vous pouvez également "
+"utiliser notre gestionnaire d'applications web pour faciliter l'utilisation "
+"de ce site web."
+
+msgid "As configurações da tela foram resetadas."
+msgstr "Les paramètres de l'écran ont été réinitialisés."
+
+msgid "Configurações da tela"
+msgstr "Paramètres de l'écran"
+
+msgid "Aguarde, criando arquivos de cache..."
+msgstr "En attente, création de fichiers de cache..."
+
+msgid "Maximizado"
+msgstr "Maximisé"
+
+msgid "Waydroid"
+msgstr "Waydroid"
+
+msgid ""
+"Utilize programas para Android no seu computador, está em fase experimental, "
+"alguns programas podem não funcionar.<br>"
+msgstr ""
+"Utilisez les programmes Android sur votre ordinateur, il est en phase "
+"expérimentale, certains programmes peuvent ne pas fonctionner.<br>"
+
+msgid ""
+"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
+"pelo gerenciador de arquivos do BigLinux.<br>"
+msgstr ""
+"Avec Wayland installé, vous pouvez ouvrir des programmes au format .apk, les "
+"ouvrir à partir du gestionnaire de fichiers de BigLinux.<br>"
+
+msgid ""
+"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
+"Nvidia <b>DESATIVE</b>."
+msgstr ""
+"<b>ACTIVEZ l'</b> accélération 3D sur les cartes vidéo Intel et AMD, "
+"d'autres comme Nvidia <b>la désactivent</b>."
+
+msgid "Download próximo de 1 GB, pode demorar muito."
+msgstr "Si vous téléchargez près de 1 Go, cela peut prendre beaucoup de temps."
+
+msgid "Resolução: "
+msgstr "Résolution:"
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid peut également être lancé en utilisant le menu système"
+
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
+"não passará da tela de loading"
+msgstr ""
+"Si l'accélération 3D est activée sur un matériel incompatible<br> Android ne "
+"dépassera pas l'écran de chargement"
+
+msgid "Parar o Waydroid"
+msgstr "Arrêtez le Waydroid"
+
+msgid "Iniciar o Waydroid"
+msgstr "Démarrer Waydroid"
+
+msgid "Ativar a aceleração 3D"
+msgstr "Activer l'accélération 3D"
+
+msgid "Desativar a aceleração 3D"
+msgstr "Désactiver l'accélération 3D"
+
+msgid "Instalar Waydroid"
+msgstr "Installer Waydroid"
+
+msgid "Instalar Waydroid com Google Apps"
+msgstr "Installer Waydroid avec Google Apps"
+
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
+"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
+"a página de Registro do dispositivo, precisa estar logado na sua conta "
+"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"Pour activer PlayStore, vous devez cliquer sur (Afficher l'ID Android) et "
+"copier l'ID Android, puis cliquer sur (Activer Google Apps) pour ouvrir la "
+"page d'enregistrement de l'appareil, vous devez être connecté à votre compte "
+"Google, entrer votre ID Android et vous enregistrer. Il peut prendre "
+"quelques minutes pour s'activer sur votre Waydroid. Fermez et ouvrez-le à "
+"nouveau. C'est fait !"
+
+msgid "Exibir ID do Android"
+msgstr "Afficher Android ID"
+
+msgid "Ativar Google Apps"
+msgstr "Activer Google Apps"
+
+msgid "ID do Android:"
+msgstr "ID Android :"
+
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
+"estar aberto."
+msgstr ""
+"Impossible de récupérer l'ID Android. \\Avertissement : Waydroid doit être "
+"ouvert."

@@ -1,0 +1,793 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bigcontrolcenter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bigcontrolcenter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-01 06:12-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Introdução ao BigLinux"
+msgstr "Úvod do systému BigLinux"
+
+msgid "Central de Controle"
+msgstr "Řídicí centrum"
+
+msgid ""
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
+msgstr ""
+"Program již webovou kameru používá: $WEBCAM_BUSY\n"
+"\n"
+"Otevřu ji v režimu konfigurace.\n"
+"Provedené změny jsou patrné\n"
+"v obraze webové kamery v jiných programech."
+
+msgid "Webcam"
+msgstr "Webová kamera"
+
+msgid "Category"
+msgstr "Kategorie"
+
+msgid "Name"
+msgstr "Název"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Info"
+msgstr "Informace"
+
+msgid ""
+"O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
+"\n"
+"Deseja visualizar o relatório agora?\n"
+msgstr ""
+"Zpráva byla uložena do souboru $FILE_TO_SAVE\n"
+"\n"
+"Chcete si zprávu prohlédnout nyní?\n"
+
+msgid "Visualizar o relatório"
+msgstr "Zobrazit zprávu"
+
+msgid "Fechar"
+msgstr "Zavřít"
+
+msgid "Hardinfo Relatory"
+msgstr "Hardinfo Relatory"
+
+msgid "Bem vindo ao BigLinux"
+msgstr "Vítejte v systému BigLinux"
+
+msgid "Comece com algumas etapas simples."
+msgstr "Začněte několika jednoduchými kroky."
+
+msgid "Mostrar na inicialização"
+msgstr "Zobrazit při spuštění"
+
+msgid "Olá"
+msgstr "Dobrý den,"
+
+msgid "Ajustes iniciais"
+msgstr "Počáteční úpravy"
+
+msgid ""
+"Disponiblizamos configurações completas para você selecionar de forma "
+"extremamente simples."
+msgstr ""
+"Nabízíme kompletní konfigurace, ze kterých si můžete velmi jednoduše vybrat."
+
+msgid "Temas, Desktop e Ajustes"
+msgstr "Motivy, plocha a nastavení"
+
+msgid "Escolha seu Avatar"
+msgstr "Vyberte si svůj avatar"
+
+msgid "Pacotes de Idioma"
+msgstr "Jazykové balíčky"
+
+msgid "Escolha seu navegador padrão"
+msgstr "Zvolte výchozí prohlížeč"
+
+msgid "Defina seus programas padrões."
+msgstr "Nastavte výchozí programy."
+
+msgid "Outros navegadores"
+msgstr "Ostatní prohlížeče"
+
+msgid "KDE Connect"
+msgstr "KDE Connect"
+
+msgid ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
+"transferência de dados entre dispositivos em redes locais. Disponível na "
+"Google Play Store para Android e Apple Store para iPhone."
+msgstr ""
+"KDE Connect je aplikace, která usnadňuje bezdrátovou komunikaci a přenos dat "
+"mezi zařízeními v místních sítích. K dispozici je v obchodě Google Play pro "
+"Android a Apple Store pro iPhone."
+
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Instalace ovladače a informace o hardwaru"
+
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Snadná instalace nebo odebrání ovladačů a firmwaru."
+
+msgid "Impressoras"
+msgstr "Tiskárny"
+
+msgid "Conheça alguns recursos"
+msgstr "Seznamte se s některými zdroji"
+
+msgid ""
+"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
+"novidades!"
+msgstr ""
+"Náš systém je založen na spolupráci, pojďte se stát součástí tohoto vývoje. "
+"Podívejte se na novinky!"
+
+msgid "Big Store"
+msgstr "Velký obchod"
+
+msgid "Web Apps"
+msgstr "Webové aplikace"
+
+msgid "Redutor de Ruídos"
+msgstr "Redukce hluku"
+
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Nastavení systémového hlasu (TTS)"
+
+msgid "OCR para PDF"
+msgstr "OCR pro PDF"
+
+msgid "Doação e Redes sociais"
+msgstr "Dárcovství a sociální sítě"
+
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr "Váš příspěvek je pro projekt velmi důležitý a sledujte sociální sítě."
+
+msgid "Doação"
+msgstr "Dary"
+
+msgid "Fórum"
+msgstr "Fórum"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "Gratulujeme, dokončili jste první kroky k používání systému BigLinux."
+
+msgid "Bom dia"
+msgstr "Dobré ráno"
+
+msgid "Boa tarde"
+msgstr "Dobré odpoledne"
+
+msgid "Boa noite"
+msgstr "Dobrý večer"
+
+msgid "Aguarde, carregando..."
+msgstr "Připravte se, načítání..."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "Integrace s Google Drive a ownCloud"
+
+msgid ""
+"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
+"gerenciador de arquivos."
+msgstr ""
+"Přístup k souborům uloženým na Disku Google nebo ownCloudu můžete získat "
+"přímo ze správce souborů."
+
+msgid "Configurar o AppimageLauncher"
+msgstr "Konfigurace nástroje AppimageLauncher"
+
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr "Zvolte chování programů dostupných v souboru .appimage"
+
+msgid "Qt Assistant"
+msgstr "Qt Assistant"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "Vývojové programy pro QT."
+
+msgid ""
+"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
+"em MP3."
+msgstr "Nastavení použití starých hudebních CD neplatí pro hudbu MP3."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "Vyhledávací servery (zeroconf)"
+
+msgid "Instalar ou remover programas."
+msgstr "Instalace nebo odebrání programů."
+
+msgid "Restaurar a configuração de programas"
+msgstr "Obnovení konfigurace programu"
+
+msgid ""
+"Utilitário que facilita a restauração do sistema instalado,\n"
+"<br>\n"
+"principalmente a restauração do boot do sistema (Grub).\n"
+"<br><br>\n"
+"Também pode ser utilizado para acessar o gerenciador\n"
+"<br>\n"
+"de pacotes e o terminal do sistema instalado."
+msgstr ""
+"Nástroj, který usnadňuje obnovu nainstalovaného systému,\n"
+"<br>\n"
+"především obnovení spouštění systému (Grub).\n"
+"<br><br>\n"
+"Lze jej také použít pro přístup ke správci\n"
+"<br>\n"
+"správce a terminál nainstalovaného systému."
+
+msgid "Temas do Bootsplash"
+msgstr "Témata Bootsplash"
+
+msgid "Controle o brilho e as cores"
+msgstr "Ovládání jasu a barev"
+
+msgid "Brilho e cor"
+msgstr "Lesk a barva"
+
+msgid "Procurar servidores SSH"
+msgstr "Procházení serverů SSH"
+
+msgid "Procurar servidores VNC"
+msgstr "Hledání serverů VNC"
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "Konfigurace tohoto motivu okrajů oken"
+
+msgid "Configurar este tema de janelas."
+msgstr "Konfigurace tohoto motivu okna."
+
+msgid "Qt Designer"
+msgstr "Qt Designer"
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "Advanced Audio Manager - Alsamixer"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "Ovladač zvuku v případě absence zvuku."
+
+msgid "Particionar ou formatar"
+msgstr "Rozdělení nebo formátování"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr "Pozor, tento program může vymazat všechna data v počítači."
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "Informace o skladování (SMART)"
+
+msgid "Firewall"
+msgstr "Brána firewall"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "Konfigurace pravidel zabezpečení pro připojení k internetu."
+
+msgid "Configurar webcam ou placa de captura"
+msgstr "Nastavení webové kamery nebo karty pro snímání"
+
+msgid "Scanners HP"
+msgstr "Skenery HP"
+
+msgid "Impressoras HP"
+msgstr "Tiskárny HP"
+
+msgid "Verificar o status, nível de tinta e manutenção."
+msgstr "Kontrola stavu, hladiny inkoustu a údržby."
+
+msgid "Montar Hardware Apple"
+msgstr "Montáž hardwaru Apple"
+
+msgid ""
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
+"de forma similar ao acesso de arquivos em um pendrive."
+msgstr ""
+"Pomocí tohoto programu můžete přistupovat k programům v zařízení Apple "
+"iPhone nebo iPad podobně jako k souborům na USB flash disku."
+
+msgid "Equalizador (DSP)"
+msgstr "Ekvalizér (DSP)"
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "Virtuální pracovní prostory a aktivity"
+
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "Vytvoření více než jedné virtuální plochy přepínáním mezi nimi."
+
+msgid ""
+"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr "Aktivace vyhledávání zvyšuje spotřebu systémové paměti a zpracování."
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "Nastavení data, času a časového pásma."
+
+msgid "Tema da Área de Trabalho"
+msgstr "Téma pracovního prostoru"
+
+msgid "Ícones e emoticons"
+msgstr "Ikony a emotikony"
+
+msgid "Joystick"
+msgstr "Joystick"
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Nastavení rozložení, klávesové zkratky a další možnosti."
+
+msgid "Gerenciar conexões"
+msgstr "Správa připojení"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
+"rede com fio, banda larga móvel e outros)."
+msgstr ""
+"Pokročilá konfigurace sítě (VPN, wifi, kabelové připojení, pevná IP, PPPoE, "
+"ADSL, kabelová síť, mobilní širokopásmové připojení a další)."
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "Instalace, konfigurace nebo odebrání tiskáren."
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "Správa služeb (Systemd)"
+
+msgid "Configurar o tema Kvantum"
+msgstr "Konfigurace tématu Kvantum"
+
+msgid ""
+"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
+"do aplicativo'."
+msgstr ""
+"Aby konfigurace Kvantum fungovala, použijte téma Kvantum v části \"Styl "
+"aplikace\"."
+
+msgid "Carteira de senhas do KDE"
+msgstr "Peněženka s hesly KDE"
+
+msgid "Qt Linguist"
+msgstr "Qt Linguist"
+
+msgid "Gerenciador de usuários"
+msgstr "Správce uživatelů"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr "Přidávat, odebírat nebo upravovat systémové uživatele a skupiny."
+
+msgid "Gerenciar arquivos"
+msgstr "Správa souborů"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "Získejte přístup ke svým souborům a složkám."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
+"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
+"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
+"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
+"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"Tento program dokáže přenášet soubory mezi chytrými telefony, tablety a "
+"jinými počítači.  Pomocí něj můžete například používat chytrý telefon jako "
+"myš a bezdrátovou klávesnici k ovládání počítače a další funkce.  Lépe se "
+"integruje do systému BigLinux a patří mezi applety umístěné v blízkosti "
+"systémových hodin. Chcete-li synchronizovat s chytrým telefonem, přejděte do "
+"obchodu Google Store nebo Apple Store a nainstalujte aplikaci Kde Connect."
+
+msgid "Terminal"
+msgstr "Terminál"
+
+msgid "Acesse o terminal de comandos."
+msgstr "Přístup k příkazovému terminálu."
+
+msgid "Gerenciador de senhas"
+msgstr "Správce hesel"
+
+msgid "Som e microfone"
+msgstr "Zvuk a mikrofon"
+
+msgid ""
+"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr ""
+"Konfigurace nebo změna vstupních a výstupních zvukových zařízení. (Např.: "
+"HDMI)"
+
+msgid "Qt QDBusViewer "
+msgstr "Qt QDBusViewer "
+
+msgid "Centro de controle do KDE"
+msgstr "Ovládací centrum KDE"
+
+msgid "Configurador avançado de energia"
+msgstr "Pokročilý konfigurátor napájení"
+
+msgid "Categorias"
+msgstr "Kategorie"
+
+msgid "Principais"
+msgstr "Hlavní stránka"
+
+msgid "Sistema"
+msgstr "Systém"
+
+msgid "Aparência"
+msgstr "Vzhled"
+
+msgid "Dispositivos"
+msgstr "Zařízení"
+
+msgid "Personalizar"
+msgstr "Přizpůsobení"
+
+msgid "Telefone"
+msgstr "Telefon"
+
+msgid "Multimídia"
+msgstr "Multimédia"
+
+msgid "Rede e Internet"
+msgstr "Síť a internet"
+
+msgid "Contas"
+msgstr "Účty"
+
+msgid "Região e Idioma"
+msgstr "Region a jazyk"
+
+msgid "Privacidade"
+msgstr "Ochrana osobních údajů"
+
+msgid "Servidor"
+msgstr "Server"
+
+msgid "Desenvolvimento"
+msgstr "Vývoj"
+
+msgid "Sobre"
+msgstr "O stránkách"
+
+msgid "Outros"
+msgstr "Další"
+
+msgid "Pesquisar..."
+msgstr "Vyhledávání..."
+
+msgid "Resultado da pesquisa"
+msgstr "Výsledek hledání"
+
+msgid "Abrir"
+msgstr "Otevřít"
+
+msgid "Temas, desktop e ajustes"
+msgstr "Motivy, plocha a nastavení"
+
+msgid ""
+"Lista com alguns programas do sistema que você pode restaurar a configuração "
+"com um clique."
+msgstr ""
+"Seznam s některými systémovými programy, které můžete obnovit konfiguraci "
+"jedním kliknutím."
+
+msgid "Informações do sistema e hardware"
+msgstr "Informace o systému a hardwaru"
+
+msgid ""
+"Além de visualizar as informações é possível salvar em um arquivo e "
+"compartilhar na internet."
+msgstr ""
+"Kromě prohlížení informací je možné je uložit do souboru a sdílet je na "
+"internetu."
+
+msgid "Conectar à internet"
+msgstr "Připojení k internetu"
+
+msgid "Conecte na internet por cabo de rede ou wifi."
+msgstr "Připojení k internetu pomocí síťového kabelu nebo wifi."
+
+msgid "Conectar à internet utilizando o Android"
+msgstr "Připojení k internetu pomocí systému Android"
+
+msgid ""
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
+"usb para seu computador."
+msgstr ""
+"Smartphone nebo tablet se systémem Android můžete použít jako zařízení wifi "
+"usb pro počítač."
+
+msgid ""
+"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
+"<br><br>\n"
+"1. Plugue o dispositivo na USB do computador;\n"
+"<br>\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
+"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"<br>\n"
+"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
+"<br><br>\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
+"compartilhamento'.\n"
+"<br><br>\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
+"conexão do seu dispositivo Android.\n"
+"<br>\n"
+"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+msgstr ""
+"Jak používat internet z tabletu nebo smartphonu se systémem Android:\n"
+"<br><br>\n"
+"1. Připojte zařízení k portu USB počítače;\n"
+"<br>\n"
+"2. Přejděte do nastavení zařízení se systémem Android a vyhledejte některou "
+"z možností: \"USB bonding\", \"USB tethering\" nebo \"USB Tethering\".\n"
+"<br>\n"
+"Jedná se o různé způsoby, které každý výrobce používá pro stejnou funkci.\n"
+"<br><br>\n"
+"*Tyto možnosti se nacházejí v části \"Síť a Internet\" nebo \"Připojení a "
+"sdílení\".\n"
+"<br><br>\n"
+"Po aktivaci se automaticky připojí a vy budete používat stejné připojení "
+"jako zařízení se systémem Android.\n"
+"<br>\n"
+"*Pokud používáte mobilní data, budou čerpána z vašeho datového tarifu."
+
+msgid "Visualizar informações do sistema e hardware"
+msgstr "Zobrazení informací o systému a hardwaru"
+
+msgid ""
+"Também cria um arquivo com informações, que você pode enviar a outras "
+"pessoas para que o ajudem com o suporte."
+msgstr ""
+"Vytvoří také soubor s informacemi, který můžete poslat ostatním, aby vám "
+"pomohli s podporou."
+
+msgid "Adicionar ou Remover Usuários"
+msgstr "Přidání nebo odebrání uživatelů"
+
+msgid "Criar, remover e gerenciar contas e grupos de usuários."
+msgstr "Vytváření, odebírání a správa uživatelských účtů a skupin."
+
+msgid "Economia de energia"
+msgstr "Úspora energie"
+
+msgid "Monitores e Telas"
+msgstr "Monitory a obrazovky"
+
+msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
+msgstr ""
+"Konfigurace rozlišení, barev, frekvence, dpi, měřítka, noční barvy atd."
+
+msgid "Resetar as configurações da tela"
+msgstr "Obnovení nastavení obrazovky"
+
+msgid "Restaurar a configuração padrão do monitor."
+msgstr "Obnovení výchozí konfigurace monitoru."
+
+msgid "Airmore"
+msgstr "Airmore"
+
+msgid ""
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
+"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
+"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
+"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
+"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
+"desse site."
+msgstr ""
+"Nainstalujte si aplikaci Airmore z obchodu s aplikacemi ve svém chytrém "
+"telefonu.  Pomocí tohoto tlačítka otevřete webovou stránku společnosti "
+"Airmore v daném počítači.  Pomocí aplikace v chytrém telefonu přečtěte kód "
+"QR, který se zobrazí na obrazovce počítače, a získejte přístup k přenosu "
+"souborů a dalším funkcím.  Můžete také použít našeho správce webových "
+"aplikací, který vám usnadní používání těchto stránek."
+
+msgid "Airdroid"
+msgstr "Airdroid"
+
+msgid ""
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
+"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
+"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
+"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
+"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
+"desse site."
+msgstr ""
+"Nainstalujte aplikaci Airdroid z obchodu s aplikacemi ve svém smartphonu.  "
+"Pomocí tohoto tlačítka otevřete webovou stránku Airdroid v daném počítači.  "
+"Pomocí aplikace v chytrém telefonu přečtěte kód QR, který se zobrazí na "
+"obrazovce počítače, a získejte přístup k přenosům souborů a dalším "
+"možnostem.  Můžete také použít našeho správce webových aplikací, který vám "
+"usnadní používání tohoto webu."
+
+msgid "Suporte a aplicativos Android"
+msgstr "Podpora aplikací pro Android"
+
+msgid ""
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
+"ainda está em fase experimental."
+msgstr ""
+"Použití Waydroidu k otevírání programů pro Android v systému BigLinux. *Tato "
+"funkce je zatím v experimentální fázi."
+
+msgid "Instalar drivers e firmwares"
+msgstr "Instalace ovladačů a firmwaru"
+
+msgid "Snapshots e backups"
+msgstr "Snímky a zálohy"
+
+msgid "Gerenciar pontos de restauração."
+msgstr "Správa bodů obnovení."
+
+msgid ""
+"A partição que o sistema foi instalado não possui pontos de restauração, mas "
+"é possível fazer backups utilizando o método rsync."
+msgstr ""
+"Oddíl, na kterém byl systém nainstalován, nemá body obnovení, ale je možné "
+"vytvořit zálohy pomocí metody rsync."
+
+msgid ""
+"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr ""
+"Systém v režimu živého vysílání. Obnovení bodů obnovení nainstalovaného "
+"systému."
+
+msgid ""
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
+"ícone no menu do sistema para que textos escritos sejam falados."
+msgstr ""
+"Vyberte požadovaný text a pomocí klávesové zkratky [Meta] + V nebo ikony v "
+"systémové nabídce nechte napsané texty namluvit."
+
+msgid "Instalar versões de kernel"
+msgstr "Instalace verzí jádra"
+
+msgid "Regras de segurança do Java"
+msgstr "Bezpečnostní pravidla jazyka Java"
+
+msgid "OpenJDK Java 8 Policy Tool"
+msgstr "OpenJDK Java 8 Policy Tool"
+
+msgid "Snapdrop (Não precisa de aplicativo)"
+msgstr "Snapdrop (není nutná žádná aplikace)"
+
+msgid ""
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
+"transferir os arquivos, automaticamente eles serão detectados e você poderá "
+"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
+"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
+"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
+"apps para facilitar o uso desse site."
+msgstr ""
+"Stačí otevřít webovou stránku https://snapdrop.net na hardwaru, na který "
+"chcete soubory přenést, automaticky se zjistí a můžete odeslat požadované "
+"soubory.  Pomocí tohoto tlačítka otevřete webovou stránku Snapdrop v daném "
+"počítači.  Aplikaci Snapdrop lze používat v jakémkoli smartphonu nebo "
+"počítači, včetně přenosu souborů přímo z jednoho smartphonu do druhého.  "
+"Můžete také použít našeho správce webových aplikací, který vám usnadní "
+"používání těchto webových stránek."
+
+msgid "As configurações da tela foram resetadas."
+msgstr "Nastavení obrazovky bylo resetováno."
+
+msgid "Configurações da tela"
+msgstr "Nastavení obrazovky"
+
+msgid "Aguarde, criando arquivos de cache..."
+msgstr "Připravte se na vytváření souborů mezipaměti..."
+
+msgid "Maximizado"
+msgstr "Maximalizováno"
+
+msgid "Waydroid"
+msgstr "Waydroid"
+
+msgid ""
+"Utilize programas para Android no seu computador, está em fase experimental, "
+"alguns programas podem não funcionar.<br>"
+msgstr ""
+"Používejte programy pro Android v počítači, je to v experimentální fázi, "
+"některé programy nemusí fungovat.<br>"
+
+msgid ""
+"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
+"pelo gerenciador de arquivos do BigLinux.<br>"
+msgstr ""
+"S nainstalovaným systémem Wayland můžete otevírat programy ve formátu .apk, "
+"otevřete je ze správce souborů BigLinuxu.<br>"
+
+msgid ""
+"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
+"Nvidia <b>DESATIVE</b>."
+msgstr ""
+"<b>POVOLTE</b> 3D akceleraci na grafických kartách Intel a AMD, ostatní jako "
+"Nvidia <b>VYPNUTO</b>."
+
+msgid "Download próximo de 1 GB, pode demorar muito."
+msgstr "Stáhnout téměř 1 GB může trvat dlouho."
+
+msgid "Resolução: "
+msgstr "Usnesení "
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Aplikaci Waydroid lze spustit také pomocí systémové nabídky"
+
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
+"não passará da tela de loading"
+msgstr ""
+"Pokud je 3D akcelerace povolena na nekompatibilním hardwaru,<br>android "
+"neprojde načítací obrazovkou"
+
+msgid "Parar o Waydroid"
+msgstr "Zastavit Waydroid"
+
+msgid "Iniciar o Waydroid"
+msgstr "Spuštění aplikace Waydroid"
+
+msgid "Ativar a aceleração 3D"
+msgstr "Povolení 3D akcelerace"
+
+msgid "Desativar a aceleração 3D"
+msgstr "Zakázat 3D akceleraci"
+
+msgid "Instalar Waydroid"
+msgstr "Instalace aplikace Waydroid"
+
+msgid "Instalar Waydroid com Google Apps"
+msgstr "Instalace Waydroidu pomocí Google Apps"
+
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
+"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
+"a página de Registro do dispositivo, precisa estar logado na sua conta "
+"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"Chcete-li aktivovat PlayStore, musíte kliknout na (Zobrazit ID Androidu) a "
+"zkopírovat ID Androidu, poté kliknutím na (Aktivovat aplikace Google) "
+"otevřete stránku Registrace zařízení, musíte být přihlášeni ke svému účtu "
+"Google, zadat své ID Androidu a zaregistrovat se. Aktivace ve Waydroidu může "
+"trvat několik minut. Zavřete ji a znovu otevřete. Hotovo!"
+
+msgid "Exibir ID do Android"
+msgstr "Zobrazení ID systému Android"
+
+msgid "Ativar Google Apps"
+msgstr "Povolení aplikace Google Apps"
+
+msgid "ID do Android:"
+msgstr "ID systému Android:"
+
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
+"estar aberto."
+msgstr ""
+"Nelze načíst ID systému Android. \\Upozornění: Waydroid musí být otevřený."

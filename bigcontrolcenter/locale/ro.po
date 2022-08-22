@@ -1,0 +1,805 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bigcontrolcenter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bigcontrolcenter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-01 06:12-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Introdução ao BigLinux"
+msgstr "Introducere în BigLinux"
+
+msgid "Central de Controle"
+msgstr "Centrul de control"
+
+msgid ""
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
+msgstr ""
+"Camera web este deja utilizată de program: $WEBCAM_BUSY\n"
+"\n"
+"Îl voi deschide în modul de configurare.\n"
+"Modificările efectuate pot fi observate\n"
+"în imaginea camerei web în alte programe."
+
+msgid "Webcam"
+msgstr "Webcam"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Name"
+msgstr "Nume"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Info"
+msgstr "Informații"
+
+msgid ""
+"O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
+"\n"
+"Deseja visualizar o relatório agora?\n"
+msgstr ""
+"Raportul a fost salvat în fișierul $FILE_TO_SAVE\n"
+"\n"
+"Doriți să vizualizați raportul acum?\n"
+
+msgid "Visualizar o relatório"
+msgstr "Vizualizați raportul"
+
+msgid "Fechar"
+msgstr "Închideți"
+
+msgid "Hardinfo Relatory"
+msgstr "Hardinfo Relator"
+
+msgid "Bem vindo ao BigLinux"
+msgstr "Bine ați venit la BigLinux"
+
+msgid "Comece com algumas etapas simples."
+msgstr "Începeți cu câțiva pași simpli."
+
+msgid "Mostrar na inicialização"
+msgstr "Afișare la pornire"
+
+msgid "Olá"
+msgstr "Bună ziua"
+
+msgid "Ajustes iniciais"
+msgstr "Ajustări inițiale"
+
+msgid ""
+"Disponiblizamos configurações completas para você selecionar de forma "
+"extremamente simples."
+msgstr ""
+"Vă punem la dispoziție configurații complete din care puteți alege într-un "
+"mod foarte simplu."
+
+msgid "Temas, Desktop e Ajustes"
+msgstr "Teme, desktop și setări"
+
+msgid "Escolha seu Avatar"
+msgstr "Alege-ți Avatarul"
+
+msgid "Pacotes de Idioma"
+msgstr "Pachete de limbi străine"
+
+msgid "Escolha seu navegador padrão"
+msgstr "Alegeți browserul dvs. implicit"
+
+msgid "Defina seus programas padrões."
+msgstr "Setați programele implicite."
+
+msgid "Outros navegadores"
+msgstr "Alte browsere"
+
+msgid "KDE Connect"
+msgstr "KDE Connect"
+
+msgid ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
+"transferência de dados entre dispositivos em redes locais. Disponível na "
+"Google Play Store para Android e Apple Store para iPhone."
+msgstr ""
+"KDE Connect este o aplicație care facilitează comunicațiile fără fir și "
+"transferul de date între dispozitivele din rețelele locale. Disponibil în "
+"Google Play Store pentru Android și în Apple Store pentru iPhone."
+
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Instalarea driverului și informații despre hardware"
+
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Instalați sau eliminați cu ușurință drivere și firmware-uri."
+
+msgid "Impressoras"
+msgstr "Imprimante"
+
+msgid "Conheça alguns recursos"
+msgstr "Cunoașteți câteva resurse"
+
+msgid ""
+"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
+"novidades!"
+msgstr ""
+"Sistemul nostru este unul colaborativ, veniți să luați parte la această "
+"evoluție. Vezi știrile!"
+
+msgid "Big Store"
+msgstr "Magazin mare"
+
+msgid "Web Apps"
+msgstr "Aplicații web"
+
+msgid "Redutor de Ruídos"
+msgstr "Reductor de zgomot"
+
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Setarea vocii sistemului (TTS)"
+
+msgid "OCR para PDF"
+msgstr "OCR pentru PDF"
+
+msgid "Doação e Redes sociais"
+msgstr "Donația și rețelele sociale"
+
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr ""
+"Donația ta este foarte importantă pentru proiect și urmărește rețelele "
+"sociale."
+
+msgid "Doação"
+msgstr "Donație"
+
+msgid "Fórum"
+msgstr "Forum"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Telegram"
+msgstr "Telegrama"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "Felicitări, ați finalizat primii pași pentru a utiliza BigLinux."
+
+msgid "Bom dia"
+msgstr "Bună dimineața"
+
+msgid "Boa tarde"
+msgstr "Bună ziua"
+
+msgid "Boa noite"
+msgstr "Bună seara"
+
+msgid "Aguarde, carregando..."
+msgstr "Așteptați, se încarcă..."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "Integrare cu Google Drive și ownCloud"
+
+msgid ""
+"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
+"gerenciador de arquivos."
+msgstr ""
+"Accesați fișierele care se află în Google Drive sau ownCloud direct din "
+"managerul de fișiere."
+
+msgid "Configurar o AppimageLauncher"
+msgstr "Configurarea AppimageLauncher"
+
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr "Alegeți comportamentul programelor disponibile în .appimage"
+
+msgid "Qt Assistant"
+msgstr "Asistent Qt"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "Programe de dezvoltare pentru QT."
+
+msgid ""
+"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
+"em MP3."
+msgstr ""
+"Setările de utilizare pentru vechile CD-uri de muzică nu sunt valabile "
+"pentru muzica MP3."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "Servere de căutare (zeroconf)"
+
+msgid "Instalar ou remover programas."
+msgstr "Instalarea sau eliminarea programelor."
+
+msgid "Restaurar a configuração de programas"
+msgstr "Restabilirea configurației programului"
+
+msgid ""
+"Utilitário que facilita a restauração do sistema instalado,\n"
+"<br>\n"
+"principalmente a restauração do boot do sistema (Grub).\n"
+"<br><br>\n"
+"Também pode ser utilizado para acessar o gerenciador\n"
+"<br>\n"
+"de pacotes e o terminal do sistema instalado."
+msgstr ""
+"Utilitar care facilitează restaurarea sistemului instalat,\n"
+"<br>\n"
+"în principal, restaurarea sistemului de pornire (Grub).\n"
+"<br><br>\n"
+"De asemenea, poate fi utilizat pentru a accesa managerul\n"
+"<br>\n"
+"manager și terminalul sistemului instalat."
+
+msgid "Temas do Bootsplash"
+msgstr "Teme Bootsplash"
+
+msgid "Controle o brilho e as cores"
+msgstr "Controlați luminozitatea și culorile"
+
+msgid "Brilho e cor"
+msgstr "Strălucire și culoare"
+
+msgid "Procurar servidores SSH"
+msgstr "Răsfoiți serverele SSH"
+
+msgid "Procurar servidores VNC"
+msgstr "Căutați servere VNC"
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "Configurați această temă de frontieră pentru ferestre"
+
+msgid "Configurar este tema de janelas."
+msgstr "Configurați această temă pentru ferestre."
+
+msgid "Qt Designer"
+msgstr "Qt Designer"
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "Manager audio avansat - Alsamixer"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "Controler audio în caz de absență a sunetului."
+
+msgid "Particionar ou formatar"
+msgstr "Partiționare sau formatare"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr ""
+"Atenție, acest program poate șterge toate datele de pe computerul "
+"dumneavoastră."
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "Informații privind stocarea (SMART)"
+
+msgid "Firewall"
+msgstr "Firewall"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "Configurați regulile de securitate pentru conexiunea la internet."
+
+msgid "Configurar webcam ou placa de captura"
+msgstr "Configurați o cameră web sau o placă de captură"
+
+msgid "Scanners HP"
+msgstr "Scanere HP"
+
+msgid "Impressoras HP"
+msgstr "Imprimante HP"
+
+msgid "Verificar o status, nível de tinta e manutenção."
+msgstr "Verificați starea, nivelul cernelii și întreținerea."
+
+msgid "Montar Hardware Apple"
+msgstr "Montarea hardware-ului Apple"
+
+msgid ""
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
+"de forma similar ao acesso de arquivos em um pendrive."
+msgstr ""
+"Cu acest program puteți accesa programele de pe Apple iPhone sau iPad într-"
+"un mod similar cu accesarea fișierelor de pe un stick USB."
+
+msgid "Equalizador (DSP)"
+msgstr "Egalizator (DSP)"
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "Spații de lucru și activități virtuale"
+
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "Creați mai multe birouri virtuale, trecând de la unul la altul."
+
+msgid ""
+"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr ""
+"Activarea căutării crește consumul de memorie și de procesare a sistemului."
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "Setați data, ora și fusul orar."
+
+msgid "Tema da Área de Trabalho"
+msgstr "Tema spațiului de lucru"
+
+msgid "Ícones e emoticons"
+msgstr "Icoane și emoticoane"
+
+msgid "Joystick"
+msgstr "Joystick"
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Setări de aspect, taste de comandă rapidă și alte opțiuni."
+
+msgid "Gerenciar conexões"
+msgstr "Gestionați conexiunile"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
+"rede com fio, banda larga móvel e outros)."
+msgstr ""
+"Configurare avansată a rețelei (VPN, wifi, prin cablu, IP fix, PPPoE, ADSL, "
+"rețea cu fir, bandă largă mobilă și altele)."
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "Instalarea, configurarea sau eliminarea imprimantelor."
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "Gestionarea serviciilor (Systemd)"
+
+msgid "Configurar o tema Kvantum"
+msgstr "Configurați tema Kvantum"
+
+msgid ""
+"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
+"do aplicativo'."
+msgstr ""
+"Pentru ca configurația Kvantum să funcționeze, aplicați tema Kvantum în "
+"\"Application Style\"."
+
+msgid "Carteira de senhas do KDE"
+msgstr "Portofelul de parole KDE"
+
+msgid "Qt Linguist"
+msgstr "Lingvist Qt"
+
+msgid "Gerenciador de usuários"
+msgstr "Manager de utilizator"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr "Adăugați, eliminați sau modificați utilizatori și grupuri de sistem."
+
+msgid "Gerenciar arquivos"
+msgstr "Gestionați fișierele"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "Obțineți acces la fișierele și folderele dvs."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
+"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
+"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
+"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
+"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"Acest program poate transfera fișiere între smartphone-uri, tablete și alte "
+"computere.  De exemplu, puteți utiliza smartphone-ul ca mouse și tastatură "
+"fără fir pentru a controla computerul, printre alte funcții.  Se integrează "
+"mai bine cu BigLinux și se află printre applet-urile situate lângă ceasul de "
+"sistem. Pentru a sincroniza cu smartphone-ul, accesați Google Store sau "
+"Apple Store și instalați Kde Connect."
+
+msgid "Terminal"
+msgstr "Terminal"
+
+msgid "Acesse o terminal de comandos."
+msgstr "Accesați terminalul de comandă."
+
+msgid "Gerenciador de senhas"
+msgstr "Manager de parole"
+
+msgid "Som e microfone"
+msgstr "Sunet și microfon"
+
+msgid ""
+"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr ""
+"Configurați sau modificați dispozitivele de intrare și ieșire audio (de "
+"exemplu, HDMI)"
+
+msgid "Qt QDBusViewer "
+msgstr "Qt QDBusViewer Qt "
+
+msgid "Centro de controle do KDE"
+msgstr "Centrul de control KDE"
+
+msgid "Configurador avançado de energia"
+msgstr "Configurator de putere avansat"
+
+msgid "Categorias"
+msgstr "Categorii"
+
+msgid "Principais"
+msgstr "Principal"
+
+msgid "Sistema"
+msgstr "Sistem"
+
+msgid "Aparência"
+msgstr "Aspect"
+
+msgid "Dispositivos"
+msgstr "Dispozitive"
+
+msgid "Personalizar"
+msgstr "Personalizați"
+
+msgid "Telefone"
+msgstr "Telefon"
+
+msgid "Multimídia"
+msgstr "Multimedia"
+
+msgid "Rede e Internet"
+msgstr "Rețea și Internet"
+
+msgid "Contas"
+msgstr "Conturi"
+
+msgid "Região e Idioma"
+msgstr "Regiune și limbă"
+
+msgid "Privacidade"
+msgstr "Confidențialitate"
+
+msgid "Servidor"
+msgstr "Server"
+
+msgid "Desenvolvimento"
+msgstr "Dezvoltare"
+
+msgid "Sobre"
+msgstr "Despre"
+
+msgid "Outros"
+msgstr "Altele"
+
+msgid "Pesquisar..."
+msgstr "Căutare..."
+
+msgid "Resultado da pesquisa"
+msgstr "Rezultatul căutării"
+
+msgid "Abrir"
+msgstr "Deschideți"
+
+msgid "Temas, desktop e ajustes"
+msgstr "Teme, desktop și setări"
+
+msgid ""
+"Lista com alguns programas do sistema que você pode restaurar a configuração "
+"com um clique."
+msgstr ""
+"Lista cu unele programe de sistem cu care puteți restabili configurația cu "
+"un singur clic."
+
+msgid "Informações do sistema e hardware"
+msgstr "Informații despre sistem și hardware"
+
+msgid ""
+"Além de visualizar as informações é possível salvar em um arquivo e "
+"compartilhar na internet."
+msgstr ""
+"Pe lângă vizualizarea informațiilor, este posibil să le salvați într-un "
+"fișier și să le partajați pe internet."
+
+msgid "Conectar à internet"
+msgstr "Conectarea la internet"
+
+msgid "Conecte na internet por cabo de rede ou wifi."
+msgstr "Conectați-vă la internet prin cablu de rețea sau Wi-Fi."
+
+msgid "Conectar à internet utilizando o Android"
+msgstr "Conectați-vă la internet utilizând Android"
+
+msgid ""
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
+"usb para seu computador."
+msgstr ""
+"Puteți utiliza smartphone-ul sau tableta Android ca dispozitiv USB Wi-Fi "
+"pentru computerul dumneavoastră."
+
+msgid ""
+"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
+"<br><br>\n"
+"1. Plugue o dispositivo na USB do computador;\n"
+"<br>\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
+"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"<br>\n"
+"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
+"<br><br>\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
+"compartilhamento'.\n"
+"<br><br>\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
+"conexão do seu dispositivo Android.\n"
+"<br>\n"
+"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+msgstr ""
+"Cum să folosești internetul de pe tableta sau smartphone-ul tău Android:\n"
+"<br><br>\n"
+"1. Conectați dispozitivul la portul USB al computerului;\n"
+"<br>\n"
+"2. Accesați setările dispozitivului Android și căutați unele dintre "
+"opțiunile: \"USB bonding\", \"USB tethering\" sau \"USB Tethering\".\n"
+"<br>\n"
+"Acestea sunt moduri diferite pe care fiecare producător le folosește pentru "
+"aceeași funcție.\n"
+"<br><br>\n"
+"*Aceste opțiuni se găsesc în secțiunea \"Network and Internet\" (Rețea și "
+"internet) sau \"Connections and Sharing\" (Conexiuni și partajare).\n"
+"<br><br>\n"
+"Prin activare, acesta va fi conectat automat și veți utiliza aceeași "
+"conexiune ca și dispozitivul Android.\n"
+"<br>\n"
+"*Dacă utilizați date mobile, acestea vor fi consumate din planul de date."
+
+msgid "Visualizar informações do sistema e hardware"
+msgstr "Vizualizați informații despre sistem și hardware"
+
+msgid ""
+"Também cria um arquivo com informações, que você pode enviar a outras "
+"pessoas para que o ajudem com o suporte."
+msgstr ""
+"De asemenea, se creează un fișier cu informații pe care îl puteți trimite "
+"altor persoane pentru a vă ajuta cu asistență."
+
+msgid "Adicionar ou Remover Usuários"
+msgstr "Adăugarea sau eliminarea utilizatorilor"
+
+msgid "Criar, remover e gerenciar contas e grupos de usuários."
+msgstr "Creați, eliminați și gestionați conturi și grupuri de utilizatori."
+
+msgid "Economia de energia"
+msgstr "Economie de energie"
+
+msgid "Monitores e Telas"
+msgstr "Monitoare și ecrane"
+
+msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
+msgstr ""
+"Configurați rezoluția, culoarea, frecvența, dpi, scala, culoarea de noapte "
+"etc."
+
+msgid "Resetar as configurações da tela"
+msgstr "Resetarea setărilor ecranului"
+
+msgid "Restaurar a configuração padrão do monitor."
+msgstr "Restaurați configurația implicită a monitorului."
+
+msgid "Airmore"
+msgstr "Airmore"
+
+msgid ""
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
+"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
+"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
+"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
+"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
+"desse site."
+msgstr ""
+"Instalați aplicația Airmore din magazinul de aplicații al smartphone-ului "
+"dumneavoastră.  Utilizați acest buton pentru a deschide site-ul web Airmore "
+"pe acel computer.  Citiți codul QR care va fi afișat pe ecranul computerului "
+"dvs. utilizând aplicația de pe smartphone și obțineți acces la transferul de "
+"fișiere și multe altele.  De asemenea, puteți utiliza managerul nostru de "
+"aplicații web pentru a facilita utilizarea acestui site."
+
+msgid "Airdroid"
+msgstr "Airdroid"
+
+msgid ""
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
+"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
+"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
+"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
+"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
+"desse site."
+msgstr ""
+"Instalați aplicația Airdroid din magazinul de aplicații al smartphone-ului "
+"dumneavoastră.  Utilizați acest buton pentru a deschide site-ul web Airdroid "
+"pe calculatorul respectiv.  Citiți codul QR care va fi afișat pe ecranul "
+"computerului dvs. utilizând aplicația de pe smartphone și obțineți acces la "
+"transferuri de fișiere și multe altele.  De asemenea, puteți utiliza "
+"managerul nostru de aplicații web pentru a facilita utilizarea acestui site."
+
+msgid "Suporte a aplicativos Android"
+msgstr "Suport pentru aplicații Android"
+
+msgid ""
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
+"ainda está em fase experimental."
+msgstr ""
+"Utilizarea Waydroid pentru a deschide programe Android pe BigLinux. *Această "
+"funcție este încă în fază experimentală."
+
+msgid "Instalar drivers e firmwares"
+msgstr "Instalați driverele și firmware-ul"
+
+msgid "Snapshots e backups"
+msgstr "Instantanee și copii de rezervă"
+
+msgid "Gerenciar pontos de restauração."
+msgstr "Gestionați punctele de restaurare."
+
+msgid ""
+"A partição que o sistema foi instalado não possui pontos de restauração, mas "
+"é possível fazer backups utilizando o método rsync."
+msgstr ""
+"Partiția pe care a fost instalat sistemul nu are puncte de restaurare, dar "
+"este posibil să se facă copii de rezervă folosind metoda rsync."
+
+msgid ""
+"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr ""
+"Sistem în modul live. Restaurați punctele de restaurare a sistemului "
+"instalat."
+
+msgid ""
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
+"ícone no menu do sistema para que textos escritos sejam falados."
+msgstr ""
+"Selectați textul dorit și utilizați comanda rapidă cu tasta [Meta] + V sau "
+"pictograma din meniul de sistem pentru ca textele scrise să fie rostite."
+
+msgid "Instalar versões de kernel"
+msgstr "Instalarea versiunilor de kernel"
+
+msgid "Regras de segurança do Java"
+msgstr "Reguli de siguranță Java"
+
+msgid "OpenJDK Java 8 Policy Tool"
+msgstr "Instrumentul de politici OpenJDK Java 8"
+
+msgid "Snapdrop (Não precisa de aplicativo)"
+msgstr "Snapdrop (Nu este necesară nicio aplicație)"
+
+msgid ""
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
+"transferir os arquivos, automaticamente eles serão detectados e você poderá "
+"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
+"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
+"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
+"apps para facilitar o uso desse site."
+msgstr ""
+"Trebuie doar să deschideți site-ul https://snapdrop.net pe Hardware-ul pe "
+"care doriți să transferați fișierele, acestea vor fi detectate automat și "
+"puteți trimite fișierele dorite.  Utilizați acest buton pentru a deschide "
+"site-ul web Snapdrop pe calculatorul respectiv.  Snapdrop poate fi folosit "
+"pe orice smartphone sau computer, inclusiv pentru a transfera fișiere direct "
+"de pe un smartphone pe altul.  De asemenea, puteți utiliza managerul nostru "
+"de aplicații web pentru a facilita utilizarea acestui site web."
+
+msgid "As configurações da tela foram resetadas."
+msgstr "Setările ecranului au fost resetate."
+
+msgid "Configurações da tela"
+msgstr "Setări ecran"
+
+msgid "Aguarde, criando arquivos de cache..."
+msgstr "Așteptați, creăm fișiere cache..."
+
+msgid "Maximizado"
+msgstr "Maximizat"
+
+msgid "Waydroid"
+msgstr "Waydroid"
+
+msgid ""
+"Utilize programas para Android no seu computador, está em fase experimental, "
+"alguns programas podem não funcionar.<br>"
+msgstr ""
+"Utilizați programele Android pe computerul dvs., este în fază experimentală, "
+"este posibil ca unele programe să nu funcționeze.<br>"
+
+msgid ""
+"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
+"pelo gerenciador de arquivos do BigLinux.<br>"
+msgstr ""
+"Cu Wayland instalat puteți deschide programe în format .apk, deschideți-le "
+"din managerul de fișiere BigLinux.<br>"
+
+msgid ""
+"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
+"Nvidia <b>DESATIVE</b>."
+msgstr ""
+"<b>Activează</b> accelerarea 3D pe plăcile video Intel și AMD, altele, cum "
+"ar fi Nvidia, sunt <b>dezactivate</b>."
+
+msgid "Download próximo de 1 GB, pode demorar muito."
+msgstr "Dacă descărcați aproape 1 GB, poate dura mult timp."
+
+msgid "Resolução: "
+msgstr "Rezoluție "
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid poate fi pornit și prin intermediul meniului de sistem"
+
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
+"não passará da tela de loading"
+msgstr ""
+"Dacă accelerarea 3D este activată pe un hardware incompatibil,<br>android nu "
+"va trece de ecranul de încărcare"
+
+msgid "Parar o Waydroid"
+msgstr "Opriți Waydroid"
+
+msgid "Iniciar o Waydroid"
+msgstr "Începeți Waydroid"
+
+msgid "Ativar a aceleração 3D"
+msgstr "Activați accelerarea 3D"
+
+msgid "Desativar a aceleração 3D"
+msgstr "Dezactivați accelerarea 3D"
+
+msgid "Instalar Waydroid"
+msgstr "Instalați Waydroid"
+
+msgid "Instalar Waydroid com Google Apps"
+msgstr "Instalați Waydroid cu Google Apps"
+
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
+"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
+"a página de Registro do dispositivo, precisa estar logado na sua conta "
+"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"Pentru a activa PlayStore, trebuie să faceți clic pe (Afișare ID Android) și "
+"să copiați ID-ul Android, apoi faceți clic pe (Activare Google Apps) pentru "
+"a deschide pagina de înregistrare a dispozitivului, trebuie să fiți conectat "
+"la contul Google, introduceți ID-ul Android și înregistrați-vă. Este posibil "
+"să dureze câteva minute pentru a se activa pe Waydroid. Închideți-o și "
+"deschideți-o din nou. Gata!"
+
+msgid "Exibir ID do Android"
+msgstr "Afișați ID-ul Android"
+
+msgid "Ativar Google Apps"
+msgstr "Activați Google Apps"
+
+msgid "ID do Android:"
+msgstr "Android ID:"
+
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
+"estar aberto."
+msgstr ""
+"Nu se poate prelua ID-ul Android. \\Avertizare: Waydroid trebuie să fie "
+"deschis."
