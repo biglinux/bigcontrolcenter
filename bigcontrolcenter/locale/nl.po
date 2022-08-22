@@ -2,26 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-01 06:12-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-msgid "Introdução ao BigLinux"
-msgstr "Inleiding tot BigLinux"
-
-msgid "Central de Controle"
-msgstr "Controlecentrum"
+"X-Generator: attranslate\n"
 
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
@@ -38,6 +31,12 @@ msgstr ""
 
 msgid "Webcam"
 msgstr "Webcam"
+
+msgid "Introdução ao BigLinux"
+msgstr "Inleiding tot BigLinux"
+
+msgid "Central de Controle"
+msgstr "Controlecentrum"
 
 msgid "Category"
 msgstr "Categorie"
@@ -84,12 +83,8 @@ msgstr "Hallo"
 msgid "Ajustes iniciais"
 msgstr "Eerste aanpassingen"
 
-msgid ""
-"Disponiblizamos configurações completas para você selecionar de forma "
-"extremamente simples."
-msgstr ""
-"Wij bieden complete configuraties waaruit u op een heel eenvoudige manier "
-"kunt kiezen."
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+msgstr "Wij bieden complete configuraties waaruit u op een heel eenvoudige manier kunt kiezen."
 
 msgid "Temas, Desktop e Ajustes"
 msgstr "Thema's, Bureaublad en Instellingen"
@@ -113,14 +108,13 @@ msgid "KDE Connect"
 msgstr "KDE Verbinden"
 
 msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
-"transferência de dados entre dispositivos em redes locais. Disponível na "
-"Google Play Store para Android e Apple Store para iPhone."
-msgstr ""
-"KDE Connect is een toepassing die draadloze communicatie en "
-"gegevensoverdracht tussen apparaten op lokale netwerken vergemakkelijkt. "
-"Verkrijgbaar in de Google Play Store voor Android en in de Apple Store voor "
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
 "iPhone."
+msgstr ""
+"KDE Connect is een toepassing die draadloze communicatie en gegevensoverdracht tussen apparaten op "
+"lokale netwerken vergemakkelijkt. Verkrijgbaar in de Google Play Store voor Android en in de Apple "
+"Store voor iPhone."
 
 msgid "Instalação de Driver e Informações de Hardware"
 msgstr "Installatie van stuurprogramma's en hardware-informatie"
@@ -134,12 +128,8 @@ msgstr "Printers"
 msgid "Conheça alguns recursos"
 msgstr "Leer enkele hulpbronnen kennen"
 
-msgid ""
-"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
-"novidades!"
-msgstr ""
-"Ons systeem werkt samen, kom deel uitmaken van deze evolutie. Kijk eens naar "
-"het nieuws!"
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "Ons systeem werkt samen, kom deel uitmaken van deze evolutie. Kijk eens naar het nieuws!"
 
 msgid "Big Store"
 msgstr "Grote winkel"
@@ -160,8 +150,7 @@ msgid "Doação e Redes sociais"
 msgstr "Donatie en sociale netwerken"
 
 msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr ""
-"Uw donatie is heel belangrijk voor het project en volg de sociale netwerken."
+msgstr "Uw donatie is heel belangrijk voor het project en volg de sociale netwerken."
 
 msgid "Doação"
 msgstr "Donatie"
@@ -185,9 +174,7 @@ msgid "Facebook"
 msgstr "Facebook"
 
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr ""
-"Gefeliciteerd, u hebt de eerste stappen naar het gebruik van BigLinux "
-"voltooid."
+msgstr "Gefeliciteerd, u hebt de eerste stappen naar het gebruik van BigLinux voltooid."
 
 msgid "Bom dia"
 msgstr "Goede morgen"
@@ -201,244 +188,115 @@ msgstr "Goedenavond"
 msgid "Aguarde, carregando..."
 msgstr "Stand by, laden..."
 
-msgid "Integração com Google Drive e ownCloud"
-msgstr "Integratie met Google Drive en ownCloud"
+msgid "Remover"
+msgstr "Verwijderen"
+
+msgid "Maximizado"
+msgstr "Gemaximaliseerd"
+
+msgid "Desinstalar"
+msgstr "Verwijderen"
+
+msgid "Waydroid"
+msgstr "Waydroid"
+
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Gebruik Android-programma's op BigLinux."
+
+msgid "Instalar o Waydroid"
+msgstr "Waydroid installeren"
+
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Waydroid installeren met Google Apps"
+
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "De download is ongeveer 1 GB, afhankelijk van uw verbinding."
+
+msgid "Paisagem"
+msgstr "Landschap"
+
+msgid "Retrato"
+msgstr "Portret"
+
+msgid "Desativado"
+msgstr "Gedeactiveerd"
+
+msgid "Ativado"
+msgstr "Geactiveerd"
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid kan ook worden gestart via het systeemmenu"
 
 msgid ""
-"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
-"gerenciador de arquivos."
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
 msgstr ""
-"Toegang tot uw bestanden die in Google Drive of ownCloud staan, rechtstreeks "
-"vanuit het bestandsbeheer."
+"Als 3D-versnelling is ingeschakeld op incompatibele hardware android zal niet bewegen van het "
+"laadscherm"
 
-msgid "Configurar o AppimageLauncher"
-msgstr "De AppimageLauncher configureren"
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D-versnelling is niet compatibel op Nvidia-videokaarten met behulp van het eigen stuurprogramma."
 
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr "Kies het gedrag van de programma's die beschikbaar zijn in .appimage"
+msgid "Exibir ID do Android"
+msgstr "Android ID weergeven"
 
-msgid "Qt Assistant"
-msgstr "Qt assistent"
+msgid "Ativar Google Apps"
+msgstr "Google Apps inschakelen"
 
-msgid "Programas de desenvolvimento para QT."
-msgstr "Ontwikkelingsprogramma's voor QT."
+msgid "Remover Configurações"
+msgstr "Instellingen verwijderen"
+
+msgid "Desinstalar o Waydroid"
+msgstr "Waydroid verwijderen"
 
 msgid ""
-"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
-"em MP3."
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
 msgstr ""
-"De gebruiksinstellingen voor de oude muziek-CD's zijn niet geldig voor MP3-"
-"muziek."
+"Als 3D-versnelling is ingeschakeld op incompatibele hardware<br>zal android niet door het "
+"laadscherm komen"
 
-msgid "Procurar servidores (zeroconf)"
-msgstr "Zoekservers (zeroconf)"
+msgid "Parar o Waydroid"
+msgstr "Stop de Waydroid"
 
-msgid "Instalar ou remover programas."
-msgstr "Programma's installeren of verwijderen."
+msgid "Iniciar o Waydroid"
+msgstr "Start Waydroid"
 
-msgid "Restaurar a configuração de programas"
-msgstr "Programmaconfiguratie herstellen"
+msgid "ID do Android:"
+msgstr "Android ID:"
 
 msgid ""
-"Utilitário que facilita a restauração do sistema instalado,\n"
-"<br>\n"
-"principalmente a restauração do boot do sistema (Grub).\n"
-"<br><br>\n"
-"Também pode ser utilizado para acessar o gerenciador\n"
-"<br>\n"
-"de pacotes e o terminal do sistema instalado."
-msgstr ""
-"Hulpprogramma dat het herstel van het geïnstalleerde systeem "
-"vergemakkelijkt,\n"
-"<br>\n"
-"vooral het herstarten van het systeem (Grub).\n"
-"<br><br>\n"
-"Het kan ook gebruikt worden om toegang te krijgen tot de manager\n"
-"<br>\n"
-"manager en de terminal van het geïnstalleerde systeem."
-
-msgid "Temas do Bootsplash"
-msgstr "Bootsplash thema's"
-
-msgid "Controle o brilho e as cores"
-msgstr "Helderheid en kleuren regelen"
-
-msgid "Brilho e cor"
-msgstr "Glans en kleur"
-
-msgid "Procurar servidores SSH"
-msgstr "Bladeren door SSH-servers"
-
-msgid "Procurar servidores VNC"
-msgstr "Zoeken naar VNC-servers"
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "Configureer dit vensterrandthema"
-
-msgid "Configurar este tema de janelas."
-msgstr "Configureer dit vensterthema."
-
-msgid "Qt Designer"
-msgstr "Qt Ontwerper"
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "Geavanceerd audiobeheer - Alsamixer"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "Geluidsregelaar in geval van afwezigheid van geluid."
-
-msgid "Particionar ou formatar"
-msgstr "Partitioneren of formatteren"
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr "Pas op, dit programma kan alle gegevens op uw computer wissen."
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "Opslaginformatie (SMART)"
-
-msgid "Firewall"
-msgstr "Firewall"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "Configureer beveiligingsregels voor de internetverbinding."
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "Stel een webcam of capture card in"
-
-msgid "Scanners HP"
-msgstr "HP scanners"
-
-msgid "Impressoras HP"
-msgstr "HP printers"
-
-msgid "Verificar o status, nível de tinta e manutenção."
-msgstr "Controleer de status, het inktniveau en het onderhoud."
-
-msgid "Montar Hardware Apple"
-msgstr "Montage van Apple hardware"
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr "Kan Android ID niet ophalen. \\Waarschuwing: Waydroid moet open zijn."
 
 msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
-"de forma similar ao acesso de arquivos em um pendrive."
+"Ao remover as configurações os programas instalados \n"
+"dentro do Waydroid e suas configurações serão perdidas.\n"
+"\n"
+"Realmente deseja remover?"
 msgstr ""
-"Met dit programma kunt u toegang krijgen tot de programma's op uw Apple "
-"iPhone of iPad, op een vergelijkbare manier als toegang tot bestanden op een "
-"USB-stick."
+"Door de instellingen van de geïnstalleerde programma's te verwijderen \n"
+"in de Waydroid en uw instellingen gaan verloren.\n"
+"\n"
+"Echt willen verwijderen?"
 
-msgid "Equalizador (DSP)"
-msgstr "Equalizer (DSP)"
+msgid "Configurações removidas com sucesso!"
+msgstr "Instellingen succesvol verwijderd!"
 
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "Virtuele werkruimten en activiteiten"
+msgid "Nenhuma configuração foi removida!"
+msgstr "Er is geen configuratie verwijderd!"
 
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr "Maak meer dan één virtueel bureaublad door ertussen te schakelen."
+msgid "Não existem configurações para remover."
+msgstr "Er zijn geen instellingen om te verwijderen."
 
 msgid ""
-"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+"Deseja remover também os arquivos de configuração \n"
+"e programas instalados dentro do Waydroid?"
 msgstr ""
-"Het activeren van het zoeken verhoogt het geheugen- en verwerkingsverbruik "
-"van het systeem."
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "Stel de datum, tijd en tijdzone in."
-
-msgid "Tema da Área de Trabalho"
-msgstr "Thema Werkruimte"
-
-msgid "Ícones e emoticons"
-msgstr "Pictogrammen en emoticons"
-
-msgid "Joystick"
-msgstr "Joystick"
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Lay-out instellingen, sneltoetsen en andere opties."
-
-msgid "Gerenciar conexões"
-msgstr "Verbindingen beheren"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
-"rede com fio, banda larga móvel e outros)."
-msgstr ""
-"Geavanceerde netwerkconfiguratie (VPN, wifi, bedraad, vaste IP, PPPoE, ADSL, "
-"bekabeld netwerk, mobiele breedband en andere)."
-
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "Printers installeren, configureren of verwijderen."
-
-msgid "Gerenciar serviços (Systemd)"
-msgstr "Diensten beheren (Systemd)"
-
-msgid "Configurar o tema Kvantum"
-msgstr "Configureer het Kvantum-thema"
-
-msgid ""
-"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
-"do aplicativo'."
-msgstr ""
-"Om de Kvantum configuratie te laten werken, moet u het Kvantum thema "
-"toepassen onder \"Application Style\"."
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE wachtwoord portemonnee"
-
-msgid "Qt Linguist"
-msgstr "Qt Taalkundige"
-
-msgid "Gerenciador de usuários"
-msgstr "Gebruikersmanager"
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "Systeemgebruikers en groepen toevoegen, verwijderen of bewerken."
-
-msgid "Gerenciar arquivos"
-msgstr "Bestanden beheren"
-
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "Krijg toegang tot uw bestanden en mappen."
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
-"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
-"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
-"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
-"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"Dit programma kan bestanden overzetten tussen smartphones, tablets en andere "
-"computers.  Daarmee kunt u bijvoorbeeld uw smartphone gebruiken als muis en "
-"draadloos toetsenbord om de computer te bedienen, naast andere functies.  "
-"Het integreert beter met BigLinux en is een van de applets die zich bij de "
-"systeemklok bevinden. Om met uw smartphone te synchroniseren gaat u naar de "
-"Google Store of Apple Store en installeert u Kde Connect."
-
-msgid "Terminal"
-msgstr "Terminal"
-
-msgid "Acesse o terminal de comandos."
-msgstr "Ga naar de opdrachtterminal."
-
-msgid "Gerenciador de senhas"
-msgstr "Wachtwoordbeheer"
-
-msgid "Som e microfone"
-msgstr "Geluid en microfoon"
-
-msgid ""
-"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr ""
-"Audio ingangs- en uitgangsapparatuur configureren of veranderen. (Ex: HDMI)"
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDBusViewer "
-
-msgid "Centro de controle do KDE"
-msgstr "KDE Controlecentrum"
-
-msgid "Configurador avançado de energia"
-msgstr "Geavanceerde vermogensconfigurator"
+"U wilt ook de configuratiebestanden verwijderen \n"
+"en programma's geïnstalleerd binnen waydroid?"
 
 msgid "Categorias"
 msgstr "Categorieën"
@@ -500,22 +358,19 @@ msgstr "Open"
 msgid "Temas, desktop e ajustes"
 msgstr "Thema's, bureaublad en instellingen"
 
-msgid ""
-"Lista com alguns programas do sistema que você pode restaurar a configuração "
-"com um clique."
-msgstr ""
-"Lijst met sommige systeemprogramma's waarmee u de configuratie met één klik "
-"kunt herstellen."
+msgid "Restaurar a configuração de programas"
+msgstr "Programmaconfiguratie herstellen"
+
+msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
+msgstr "Lijst met sommige systeemprogramma's waarmee u de configuratie met één klik kunt herstellen."
 
 msgid "Informações do sistema e hardware"
 msgstr "Systeem- en hardware-informatie"
 
-msgid ""
-"Além de visualizar as informações é possível salvar em um arquivo e "
-"compartilhar na internet."
+msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
 msgstr ""
-"Behalve de informatie bekijken, is het ook mogelijk ze op te slaan in een "
-"bestand en ze op het internet te delen."
+"Behalve de informatie bekijken, is het ook mogelijk ze op te slaan in een bestand en ze op het "
+"internet te delen."
 
 msgid "Conectar à internet"
 msgstr "Verbinding maken met het internet"
@@ -527,27 +382,24 @@ msgid "Conectar à internet utilizando o Android"
 msgstr "Verbinding maken met het internet via Android"
 
 msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
-"usb para seu computador."
-msgstr ""
-"U kunt uw Android smartphone of tablet gebruiken als een wifi usb apparaat "
-"voor uw computer."
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
+"computador."
+msgstr "U kunt uw Android smartphone of tablet gebruiken als een wifi usb apparaat voor uw computer."
 
 msgid ""
 "Como utilizar a internet do seu tablet ou  smartphone Android:\n"
 "<br><br>\n"
 "1. Plugue o dispositivo na USB do computador;\n"
 "<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
-"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
+"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
 "<br>\n"
 "São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
 "<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
-"compartilhamento'.\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
 "<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
-"conexão do seu dispositivo Android.\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
+"dispositivo Android.\n"
 "<br>\n"
 "*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
 msgstr ""
@@ -555,30 +407,27 @@ msgstr ""
 "<br><br>\n"
 "1. Steek het apparaat in de USB-poort van de computer;\n"
 "<br>\n"
-"2. Ga naar de Instellingen van uw Android toestel en zoek enkele van de "
-"opties: \"USB bonding\", \"USB tethering\" of \"USB Tethering\".\n"
+"2. Ga naar de Instellingen van uw Android toestel en zoek enkele van de opties: \"USB bonding\", "
+"\"USB tethering\" of \"USB Tethering\".\n"
 "<br>\n"
-"Dit zijn verschillende manieren die elke fabrikant gebruikt voor hetzelfde "
-"kenmerk.\n"
+"Dit zijn verschillende manieren die elke fabrikant gebruikt voor hetzelfde kenmerk.\n"
 "<br><br>\n"
-"*Deze opties staan in de sectie \"Netwerk en Internet\" of \"Verbindingen en "
-"Delen\".\n"
+"*Deze opties staan in de sectie \"Netwerk en Internet\" of \"Verbindingen en Delen\".\n"
 "<br><br>\n"
-"Door het te activeren zal het automatisch verbonden worden, en u zult "
-"dezelfde verbinding gebruiken als uw Android toestel.\n"
+"Door het te activeren zal het automatisch verbonden worden, en u zult dezelfde verbinding gebruiken "
+"als uw Android toestel.\n"
 "<br>\n"
-"*Als u mobiele gegevens gebruikt, zullen die van uw gegevensplan worden "
-"verbruikt."
+"*Als u mobiele gegevens gebruikt, zullen die van uw gegevensplan worden verbruikt."
 
 msgid "Visualizar informações do sistema e hardware"
 msgstr "Systeem- en hardware-informatie bekijken"
 
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras "
-"pessoas para que o ajudem com o suporte."
+"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
+"o suporte."
 msgstr ""
-"Het maakt ook een bestand met informatie aan, dat u naar anderen kunt sturen "
-"om u te helpen met ondersteuning."
+"Het maakt ook een bestand met informatie aan, dat u naar anderen kunt sturen om u te helpen met "
+"ondersteuning."
 
 msgid "Adicionar ou Remover Usuários"
 msgstr "Gebruikers toevoegen of verwijderen"
@@ -593,8 +442,7 @@ msgid "Monitores e Telas"
 msgstr "Monitors en Schermen"
 
 msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-msgstr ""
-"Configureer resolutie, kleur, frequentie, dpi, schaal, nachtkleur, enz."
+msgstr "Configureer resolutie, kleur, frequentie, dpi, schaal, nachtkleur, enz."
 
 msgid "Resetar as configurações da tela"
 msgstr "Resetten van de scherminstellingen"
@@ -606,45 +454,39 @@ msgid "Airmore"
 msgstr "Airmore"
 
 msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
+"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"Installeer de Airmore app in de app-shop van uw smartphone.  Gebruik deze "
-"knop om de Airmore website op die computer te openen.  Lees de QR-code die "
-"op uw computerscherm verschijnt met de app op uw smartphone en krijg toegang "
-"tot bestandsoverdracht en meer.  U kunt ook onze web app manager gebruiken "
-"om het gebruik van deze site te vergemakkelijken."
+"Installeer de Airmore app in de app-shop van uw smartphone.  Gebruik deze knop om de Airmore "
+"website op die computer te openen.  Lees de QR-code die op uw computerscherm verschijnt met de app "
+"op uw smartphone en krijg toegang tot bestandsoverdracht en meer.  U kunt ook onze web app manager "
+"gebruiken om het gebruik van deze site te vergemakkelijken."
 
 msgid "Airdroid"
 msgstr "Airdroid"
 
 msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
+"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
+"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"Installeer de Airdroid app uit de app-shop van uw smartphone.  Gebruik deze "
-"knop om de Airdroid website op die computer te openen.  Lees de QR-code die "
-"op uw computerscherm verschijnt met de app op uw smartphone en krijg toegang "
-"tot bestandsoverdracht en meer.  U kunt ook onze Web app manager gebruiken "
-"om het gebruik van deze site te vergemakkelijken."
+"Installeer de Airdroid app uit de app-shop van uw smartphone.  Gebruik deze knop om de Airdroid "
+"website op die computer te openen.  Lees de QR-code die op uw computerscherm verschijnt met de app "
+"op uw smartphone en krijg toegang tot bestandsoverdracht en meer.  U kunt ook onze Web app manager "
+"gebruiken om het gebruik van deze site te vergemakkelijken."
 
 msgid "Suporte a aplicativos Android"
 msgstr "Ondersteuning van Android-toepassingen"
 
 msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
-"ainda está em fase experimental."
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
+"experimental."
 msgstr ""
-"Waydroid gebruiken om Android programma's op BigLinux te openen. *Deze "
-"functie verkeert nog in het experimentele stadium."
+"Waydroid gebruiken om Android programma's op BigLinux te openen. *Deze functie verkeert nog in het "
+"experimentele stadium."
 
 msgid "Instalar drivers e firmwares"
 msgstr "Stuurprogramma's en firmware installeren"
@@ -656,24 +498,21 @@ msgid "Gerenciar pontos de restauração."
 msgstr "Herstelpunten beheren."
 
 msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas "
-"é possível fazer backups utilizando o método rsync."
+"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
+"backups utilizando o método rsync."
 msgstr ""
-"De partitie waar het systeem geïnstalleerd is heeft geen herstelpunten, maar "
-"het is mogelijk om back-ups te maken met de rsync methode."
+"De partitie waar het systeem geïnstalleerd is heeft geen herstelpunten, maar het is mogelijk om "
+"back-ups te maken met de rsync methode."
+
+msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr "Systeem in live modus. Herstelpunten van het geïnstalleerde systeem herstellen."
 
 msgid ""
-"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
+"para que textos escritos sejam falados."
 msgstr ""
-"Systeem in live modus. Herstelpunten van het geïnstalleerde systeem "
-"herstellen."
-
-msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
-"ícone no menu do sistema para que textos escritos sejam falados."
-msgstr ""
-"Kies de gewenste tekst en gebruik de sneltoets met de toets [Meta] + V of "
-"het pictogram in het systeemmenu om geschreven teksten te laten uitspreken."
+"Kies de gewenste tekst en gebruik de sneltoets met de toets [Meta] + V of het pictogram in het "
+"systeemmenu om geschreven teksten te laten uitspreken."
 
 msgid "Instalar versões de kernel"
 msgstr "Installeren van kernelversies"
@@ -688,21 +527,237 @@ msgid "Snapdrop (Não precisa de aplicativo)"
 msgstr "Snapdrop (Geen app nodig)"
 
 msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
-"transferir os arquivos, automaticamente eles serão detectados e você poderá "
-"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
-"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
-"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
-"apps para facilitar o uso desse site."
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
+"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
+"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"Open gewoon de website https://snapdrop.net op de Hardware waarvan u de "
-"bestanden wilt overbrengen, automatisch worden ze gedetecteerd en kunt u de "
-"bestanden verzenden die u wilt.  Gebruik deze knop om de Snapdrop website op "
-"die computer te openen.  Snapdrop kan op elke smartphone of computer "
-"gebruikt worden, inclusief het rechtstreeks overbrengen van bestanden van de "
-"ene smartphone naar de andere.  U kunt ook onze web app manager gebruiken om "
-"het gebruik van deze website te vergemakkelijken."
+"Open gewoon de website https://snapdrop.net op de Hardware waarvan u de bestanden wilt overbrengen, "
+"automatisch worden ze gedetecteerd en kunt u de bestanden verzenden die u wilt.  Gebruik deze knop "
+"om de Snapdrop website op die computer te openen.  Snapdrop kan op elke smartphone of computer "
+"gebruikt worden, inclusief het rechtstreeks overbrengen van bestanden van de ene smartphone naar de "
+"andere.  U kunt ook onze web app manager gebruiken om het gebruik van deze website te "
+"vergemakkelijken."
+
+msgid "Instalar ou remover programas."
+msgstr "Programma's installeren of verwijderen."
+
+msgid "Gerenciar conexões"
+msgstr "Verbindingen beheren"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
+"móvel e outros)."
+msgstr ""
+"Geavanceerde netwerkconfiguratie (VPN, wifi, bedraad, vaste IP, PPPoE, ADSL, bekabeld netwerk, "
+"mobiele breedband en andere)."
+
+msgid "Procurar servidores VNC"
+msgstr "Zoeken naar VNC-servers"
+
+msgid ""
+"Utilitário que facilita a restauração do sistema instalado,\n"
+"<br>\n"
+"principalmente a restauração do boot do sistema (Grub).\n"
+"<br><br>\n"
+"Também pode ser utilizado para acessar o gerenciador\n"
+"<br>\n"
+"de pacotes e o terminal do sistema instalado."
+msgstr ""
+"Hulpprogramma dat het herstel van het geïnstalleerde systeem vergemakkelijkt,\n"
+"<br>\n"
+"vooral het herstarten van het systeem (Grub).\n"
+"<br><br>\n"
+"Het kan ook gebruikt worden om toegang te krijgen tot de manager\n"
+"<br>\n"
+"manager en de terminal van het geïnstalleerde systeem."
+
+msgid "Tema da Área de Trabalho"
+msgstr "Thema Werkruimte"
+
+msgid "Montar Hardware Apple"
+msgstr "Montage van Apple hardware"
+
+msgid ""
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
+"acesso de arquivos em um pendrive."
+msgstr ""
+"Met dit programma kunt u toegang krijgen tot de programma's op uw Apple iPhone of iPad, op een "
+"vergelijkbare manier als toegang tot bestanden op een USB-stick."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "Integratie met Google Drive en ownCloud"
+
+msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
+msgstr ""
+"Toegang tot uw bestanden die in Google Drive of ownCloud staan, rechtstreeks vanuit het "
+"bestandsbeheer."
+
+msgid "Scanners HP"
+msgstr "HP scanners"
+
+msgid "Qt Designer"
+msgstr "Qt Ontwerper"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "Ontwikkelingsprogramma's voor QT."
+
+msgid "Firewall"
+msgstr "Firewall"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "Configureer beveiligingsregels voor de internetverbinding."
+
+msgid "Centro de controle do KDE"
+msgstr "KDE Controlecentrum"
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "Opslaginformatie (SMART)"
+
+msgid "Qt QDBusViewer "
+msgstr "Qt QDBusViewer "
+
+msgid "Ícones e emoticons"
+msgstr "Pictogrammen en emoticons"
+
+msgid "Qt Linguist"
+msgstr "Qt Taalkundige"
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "Printers installeren, configureren of verwijderen."
+
+msgid "Temas do Bootsplash"
+msgstr "Bootsplash thema's"
+
+msgid "Carteira de senhas do KDE"
+msgstr "KDE wachtwoord portemonnee"
+
+msgid "Joystick"
+msgstr "Joystick"
+
+msgid "Configurar o tema Kvantum"
+msgstr "Configureer het Kvantum-thema"
+
+msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
+msgstr ""
+"Om de Kvantum configuratie te laten werken, moet u het Kvantum thema toepassen onder \"Application "
+"Style\"."
+
+msgid "Procurar servidores SSH"
+msgstr "Bladeren door SSH-servers"
+
+msgid "Terminal"
+msgstr "Terminal"
+
+msgid "Acesse o terminal de comandos."
+msgstr "Ga naar de opdrachtterminal."
+
+msgid "Controle o brilho e as cores"
+msgstr "Helderheid en kleuren regelen"
+
+msgid "Brilho e cor"
+msgstr "Glans en kleur"
+
+msgid "Particionar ou formatar"
+msgstr "Partitioneren of formatteren"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr "Pas op, dit programma kan alle gegevens op uw computer wissen."
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "Configureer dit vensterrandthema"
+
+msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
+msgstr "De gebruiksinstellingen voor de oude muziek-CD's zijn niet geldig voor MP3-muziek."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "Zoekservers (zeroconf)"
+
+msgid "Gerenciar arquivos"
+msgstr "Bestanden beheren"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "Krijg toegang tot uw bestanden en mappen."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
+"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
+"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
+"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"Dit programma kan bestanden overzetten tussen smartphones, tablets en andere computers.  Daarmee "
+"kunt u bijvoorbeeld uw smartphone gebruiken als muis en draadloos toetsenbord om de computer te "
+"bedienen, naast andere functies.  Het integreert beter met BigLinux en is een van de applets die "
+"zich bij de systeemklok bevinden. Om met uw smartphone te synchroniseren gaat u naar de Google "
+"Store of Apple Store en installeert u Kde Connect."
+
+msgid "Impressoras HP"
+msgstr "HP printers"
+
+msgid "Verificar o status, nível de tinta e manutenção."
+msgstr "Controleer de status, het inktniveau en het onderhoud."
+
+msgid "Configurar o AppimageLauncher"
+msgstr "De AppimageLauncher configureren"
+
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr "Kies het gedrag van de programma's die beschikbaar zijn in .appimage"
+
+msgid "Configurador avançado de energia"
+msgstr "Geavanceerde vermogensconfigurator"
+
+msgid "Configurar webcam ou placa de captura"
+msgstr "Stel een webcam of capture card in"
+
+msgid "Equalizador (DSP)"
+msgstr "Equalizer (DSP)"
+
+msgid "Som e microfone"
+msgstr "Geluid en microfoon"
+
+msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr "Audio ingangs- en uitgangsapparatuur configureren of veranderen. (Ex: HDMI)"
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "Diensten beheren (Systemd)"
+
+msgid "Configurar este tema de janelas."
+msgstr "Configureer dit vensterthema."
+
+msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr "Het activeren van het zoeken verhoogt het geheugen- en verwerkingsverbruik van het systeem."
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "Geavanceerd audiobeheer - Alsamixer"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "Geluidsregelaar in geval van afwezigheid van geluid."
+
+msgid "Gerenciador de usuários"
+msgstr "Gebruikersmanager"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr "Systeemgebruikers en groepen toevoegen, verwijderen of bewerken."
+
+msgid "Gerenciador de senhas"
+msgstr "Wachtwoordbeheer"
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "Stel de datum, tijd en tijdzone in."
+
+msgid "Qt Assistant"
+msgstr "Qt assistent"
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "Virtuele werkruimten en activiteiten"
+
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "Maak meer dan één virtueel bureaublad door ertussen te schakelen."
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Lay-out instellingen, sneltoetsen en andere opties."
 
 msgid "As configurações da tela foram resetadas."
 msgstr "De scherminstellingen zijn opnieuw ingesteld."
@@ -712,91 +767,3 @@ msgstr "Scherminstellingen"
 
 msgid "Aguarde, criando arquivos de cache..."
 msgstr "Sta klaar, om cache-bestanden te maken..."
-
-msgid "Maximizado"
-msgstr "Gemaximaliseerd"
-
-msgid "Waydroid"
-msgstr "Waydroid"
-
-msgid ""
-"Utilize programas para Android no seu computador, está em fase experimental, "
-"alguns programas podem não funcionar.<br>"
-msgstr ""
-"Gebruik Android programma's op uw computer, het is in experimentele fase, "
-"sommige programma's zullen misschien niet werken.<br>"
-
-msgid ""
-"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
-"pelo gerenciador de arquivos do BigLinux.<br>"
-msgstr ""
-"Met Wayland geïnstalleerd kunt u programma's in .apk formaat openen, open ze "
-"vanuit de BigLinux bestandsbeheerder.<br>"
-
-msgid ""
-"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
-"Nvidia <b>DESATIVE</b>."
-msgstr ""
-"3D-versnelling<b>INSCHAKELEN</b> op videokaarten van Intel en AMD, andere "
-"zoals Nvidia <b>UIT</b>."
-
-msgid "Download próximo de 1 GB, pode demorar muito."
-msgstr "Als u bijna 1 GB downloadt, kan dat lang duren."
-
-msgid "Resolução: "
-msgstr "Resolutie "
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid kan ook worden gestart via het systeemmenu"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
-"não passará da tela de loading"
-msgstr ""
-"Als 3D-versnelling is ingeschakeld op incompatibele hardware<br>zal android "
-"niet door het laadscherm komen"
-
-msgid "Parar o Waydroid"
-msgstr "Stop de Waydroid"
-
-msgid "Iniciar o Waydroid"
-msgstr "Start Waydroid"
-
-msgid "Ativar a aceleração 3D"
-msgstr "3D-versnelling inschakelen"
-
-msgid "Desativar a aceleração 3D"
-msgstr "3D-versnelling uitschakelen"
-
-msgid "Instalar Waydroid"
-msgstr "Waydroid installeren"
-
-msgid "Instalar Waydroid com Google Apps"
-msgstr "Installeer Waydroid met Google Apps"
-
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
-"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
-"a página de Registro do dispositivo, precisa estar logado na sua conta "
-"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
-msgstr ""
-"Om PlayStore te activeren, moet u klikken op (Geef Android ID weer) en de "
-"Android ID kopiëren, dan klikken op (Activeer Google Apps) om de Apparaat "
-"Registratie pagina te openen, u moet ingelogd zijn op uw Google account, uw "
-"Android ID invoeren en registreren. Het kan een paar minuten duren voordat "
-"het op uw Waydroid geactiveerd is. Sluit het en open het opnieuw. Klaar!"
-
-msgid "Exibir ID do Android"
-msgstr "Android ID weergeven"
-
-msgid "Ativar Google Apps"
-msgstr "Google Apps inschakelen"
-
-msgid "ID do Android:"
-msgstr "Android ID:"
-
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
-"estar aberto."
-msgstr "Kan Android ID niet ophalen. \\Waarschuwing: Waydroid moet open zijn."

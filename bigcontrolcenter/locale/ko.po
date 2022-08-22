@@ -2,26 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-01 06:12-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-msgid "Introdução ao BigLinux"
-msgstr "빅리눅스 소개"
-
-msgid "Central de Controle"
-msgstr "제어 센터"
+"X-Generator: attranslate\n"
 
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
@@ -38,6 +31,12 @@ msgstr ""
 
 msgid "Webcam"
 msgstr "웹캠"
+
+msgid "Introdução ao BigLinux"
+msgstr "빅리눅스 소개"
+
+msgid "Central de Controle"
+msgstr "제어 센터"
 
 msgid "Category"
 msgstr "카테고리"
@@ -84,9 +83,7 @@ msgstr "안녕"
 msgid "Ajustes iniciais"
 msgstr "초기 조정"
 
-msgid ""
-"Disponiblizamos configurações completas para você selecionar de forma "
-"extremamente simples."
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
 msgstr "매우 간단한 방법으로 전체 구성을 선택할 수 있습니다."
 
 msgid "Temas, Desktop e Ajustes"
@@ -111,13 +108,12 @@ msgid "KDE Connect"
 msgstr "KDE 커넥트"
 
 msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
-"transferência de dados entre dispositivos em redes locais. Disponível na "
-"Google Play Store para Android e Apple Store para iPhone."
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
+"iPhone."
 msgstr ""
-"KDE Connect는 근거리 통신망의 장치 간 무선 통신 및 데이터 전송을 용이하게 해"
-"주는 응용 프로그램입니다.안드로이드용 구글 플레이 스토어와 아이폰용 애플 스토"
-"어에서 이용할 수 있습니다."
+"KDE Connect는 근거리 통신망의 장치 간 무선 통신 및 데이터 전송을 용이하게 해주는 응용 프로그램입니다.안드로이드용 구글 플레이 스토어와 아이폰용 애플 스토어에서 이용할 "
+"수 있습니다."
 
 msgid "Instalação de Driver e Informações de Hardware"
 msgstr "드라이버 설치 및 하드웨어 정보"
@@ -131,12 +127,8 @@ msgstr "프린터"
 msgid "Conheça alguns recursos"
 msgstr "일부 리소스에 대해 알아보기"
 
-msgid ""
-"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
-"novidades!"
-msgstr ""
-"우리의 시스템은 협력적이며, 와서 이러한 진화의 일부가 됩니다.뉴스를 확인해 보"
-"세요!"
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "우리의 시스템은 협력적이며, 와서 이러한 진화의 일부가 됩니다.뉴스를 확인해 보세요!"
 
 msgid "Big Store"
 msgstr "빅 스토어"
@@ -195,236 +187,111 @@ msgstr "안녕히 주무세요"
 msgid "Aguarde, carregando..."
 msgstr "잠깐, 불러오는 중..."
 
-msgid "Integração com Google Drive e ownCloud"
-msgstr "구글 드라이브 및 자체 클라우드와의 통합"
+msgid "Remover"
+msgstr "제거하다"
+
+msgid "Maximizado"
+msgstr "최대화"
+
+msgid "Desinstalar"
+msgstr "제거"
+
+msgid "Waydroid"
+msgstr "웨이드로이드"
+
+msgid "Utilize programas para Android no BigLinux."
+msgstr "BigLinux에서 안드로이드 프로그램을 사용하십시오."
+
+msgid "Instalar o Waydroid"
+msgstr "웨이드로이드 설치"
+
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Google Apps로 Waydroid 설치"
+
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "다운로드는 약 1GB이며, 연결에 따라 달라질 수 있습니다."
+
+msgid "Paisagem"
+msgstr "풍경화"
+
+msgid "Retrato"
+msgstr "초상"
+
+msgid "Desativado"
+msgstr "비활성화"
+
+msgid "Ativado"
+msgstr "활성화"
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "시스템 메뉴를 사용하여 Waydroid를 시작할 수도 있습니다"
 
 msgid ""
-"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
-"gerenciador de arquivos."
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
+msgstr "호환되지 않는 하드웨어에서 3D 가속이 활성화되면 안드로이드가로드 화면에서 움직이지 않습니다."
+
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D 가속은 독점 드라이버를 사용하는 Nvidia 비디오 카드에서 호환되지 않습니다."
+
+msgid "Exibir ID do Android"
+msgstr "안드로이드 ID 표시"
+
+msgid "Ativar Google Apps"
+msgstr "구글 앱스 활성화"
+
+msgid "Remover Configurações"
+msgstr "설정 제거"
+
+msgid "Desinstalar o Waydroid"
+msgstr "웨이드로이드 제거"
+
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
+msgstr "호환되지 않는 하드웨어에서 3D 가속이 사용 설정된 경우 <br>Android가 로딩 화면 밖으로 이동하지 않습니다."
+
+msgid "Parar o Waydroid"
+msgstr "스탑 웨이드로이드"
+
+msgid "Iniciar o Waydroid"
+msgstr "스타트 웨이드로이드"
+
+msgid "ID do Android:"
+msgstr "안드로이드 ID:"
+
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr "안드로이드 ID를 사용할 수 없습니다.\\ n\\ n경고: 웨이드로이드가 열려 있어야 합니다."
+
+msgid ""
+"Ao remover as configurações os programas instalados \n"
+"dentro do Waydroid e suas configurações serão perdidas.\n"
+"\n"
+"Realmente deseja remover?"
 msgstr ""
-"파일 관리자에서 직접 Google 드라이브 또는 ownCloud에 있는 파일에 액세스합니"
-"다."
+"설치된 프로그램을 설정을 제거하여 \n"
+"Waydroid 내부에서는 설정이 손실됩니다.\n"
+"\n"
+"정말로 제거하고 싶습니까?"
 
-msgid "Configurar o AppimageLauncher"
-msgstr "이미지 런처 앱 구성"
+msgid "Configurações removidas com sucesso!"
+msgstr "설정이 성공적으로 제거되었습니다!"
 
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr ".appimage에서 사용할 수 있는 프로그램의 동작을 선택합니다."
+msgid "Nenhuma configuração foi removida!"
+msgstr "제거된 구성이 없습니다!"
 
-msgid "Qt Assistant"
-msgstr "Qt 도우미"
-
-msgid "Programas de desenvolvimento para QT."
-msgstr "QT를 위한 개발 프로그램"
-
-msgid ""
-"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
-"em MP3."
-msgstr "오래된 음악 CD를 사용하기 위한 설정은 MP3 곡에는 유효하지 않습니다."
-
-msgid "Procurar servidores (zeroconf)"
-msgstr "서버 검색 (제로컨프)"
-
-msgid "Instalar ou remover programas."
-msgstr "프로그램을 설치 또는 제거합니다."
-
-msgid "Restaurar a configuração de programas"
-msgstr "프로그램 설정 복원"
+msgid "Não existem configurações para remover."
+msgstr "제거할 설정이 없습니다."
 
 msgid ""
-"Utilitário que facilita a restauração do sistema instalado,\n"
-"<br>\n"
-"principalmente a restauração do boot do sistema (Grub).\n"
-"<br><br>\n"
-"Também pode ser utilizado para acessar o gerenciador\n"
-"<br>\n"
-"de pacotes e o terminal do sistema instalado."
+"Deseja remover também os arquivos de configuração \n"
+"e programas instalados dentro do Waydroid?"
 msgstr ""
-"설치된 시스템의 복원을 용이하게하는 유틸리티,\n"
-"<br>\n"
-"특히 시스템 부팅 복원 (Grub).\n"
-"<br><br>\n"
-"관리자에 액세스하는 데 사용할 수도 있습니다.\n"
-"<br>\n"
-"패키지 및 설치된 시스템의 터미널"
-
-msgid "Temas do Bootsplash"
-msgstr "부트스플래시 테마"
-
-msgid "Controle o brilho e as cores"
-msgstr "밝기 및 색상 제어"
-
-msgid "Brilho e cor"
-msgstr "밝기 및 색상"
-
-msgid "Procurar servidores SSH"
-msgstr "SSH 서버 검색"
-
-msgid "Procurar servidores VNC"
-msgstr "VNC 서버 검색"
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "이 창 테두리 테마 구성"
-
-msgid "Configurar este tema de janelas."
-msgstr "이 창 테마를 구성합니다."
-
-msgid "Qt Designer"
-msgstr "Qt 디자이너"
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "고급 오디오 매니저 - 알사믹서"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "소리가 나지 않을 경우 오디오 컨트롤러."
-
-msgid "Particionar ou formatar"
-msgstr "파티션 또는 형식"
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr "이 프로그램은 컴퓨터에서 모든 데이터를 지울 수 있습니다."
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "스토리지 정보 (스마트)"
-
-msgid "Firewall"
-msgstr "방화벽"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "인터넷 연결에 대한 보안 규칙을 설정합니다."
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "웹캠 또는 캡처 카드 설정"
-
-msgid "Scanners HP"
-msgstr "HP 스캐너"
-
-msgid "Impressoras HP"
-msgstr "HP 프린터"
-
-msgid "Verificar o status, nível de tinta e manutenção."
-msgstr "상태, 잉크 잔량 및 유지 관리를 확인합니다."
-
-msgid "Montar Hardware Apple"
-msgstr "애플 하드웨어 조립"
-
-msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
-"de forma similar ao acesso de arquivos em um pendrive."
-msgstr ""
-"이 프로그램을 사용하면 펜 드라이브의 파일에 액세스하는 것과 유사한 방식으로 "
-"Apple iPhone 또는 iPad의 프로그램에 액세스 할 수 있습니다."
-
-msgid "Equalizador (DSP)"
-msgstr "이퀄라이저 (DSP)"
-
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "가상 작업 공간 및 활동"
-
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr "가상 작업 공간 사이를 전환하여 둘 이상의 가상 작업 공간을 만듭니다."
-
-msgid ""
-"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-msgstr "검색을 활성화하면 시스템 메모리와 처리 소비가 증가합니다."
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "날짜, 시간 및 시간대를 조정합니다."
-
-msgid "Tema da Área de Trabalho"
-msgstr "데스크톱 테마"
-
-msgid "Ícones e emoticons"
-msgstr "아이콘 및 이모티콘"
-
-msgid "Joystick"
-msgstr "조이스틱"
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "레이아웃 설정, 핫키 및 기타 옵션"
-
-msgid "Gerenciar conexões"
-msgstr "연결 관리"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
-"rede com fio, banda larga móvel e outros)."
-msgstr ""
-"고급 네트워크 구성 (VPN, 와이파이, 유선, 고정 IP, PPPoE, ADSL, 유선 네트워"
-"크, 모바일 광대역 및 기타)."
-
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "프린터를 설치, 구성 또는 제거합니다."
-
-msgid "Gerenciar serviços (Systemd)"
-msgstr "서비스 관리 (시스템)"
-
-msgid "Configurar o tema Kvantum"
-msgstr "크반텀 테마 설정"
-
-msgid ""
-"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
-"do aplicativo'."
-msgstr ""
-"Kvantum 구성이 작동하려면 '응용 프로그램 스타일'에서 Kvantum 테마를 적용하십"
-"시오."
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE 비밀번호 지갑"
-
-msgid "Qt Linguist"
-msgstr "Qt 언어학자"
-
-msgid "Gerenciador de usuários"
-msgstr "유저 매니저"
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "시스템에서 사용자 및 그룹을 추가, 제거 또는 편집합니다."
-
-msgid "Gerenciar arquivos"
-msgstr "파일 관리"
-
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "파일 및 폴더에 액세스할 수 있습니다."
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
-"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
-"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
-"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
-"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"이 프로그램은 스마트 폰, 태블릿 및 기타 컴퓨터간에 파일을 전송할 수 있습니다."
-"예를 들어 스마트 폰을 무선 마우스 및 키보드로 사용하여 컴퓨터를 제어 할 수 있"
-"습니다.BigLinux와 더 잘 통합되며 시스템 시계 근처에 위치한 애플릿 중 하나입니"
-"다.스마트폰과 동기화하려면 구글 스토어 또는 애플 스토어로 이동하여 Kde "
-"Connect를 설치합니다."
-
-msgid "Terminal"
-msgstr "터미널"
-
-msgid "Acesse o terminal de comandos."
-msgstr "커맨드 터미널로 이동합니다."
-
-msgid "Gerenciador de senhas"
-msgstr "비밀번호 관리자"
-
-msgid "Som e microfone"
-msgstr "사운드 및 마이크"
-
-msgid ""
-"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr "오디오 입력 및 출력 장치를 설정하거나 변경합니다.(예: HDMI)"
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDB 버스 뷰어 "
-
-msgid "Centro de controle do KDE"
-msgstr "KDE 컨트롤 센터"
-
-msgid "Configurador avançado de energia"
-msgstr "고급 전원 구성기"
+"구성 파일도 제거하려고 합니다. \n"
+"그리고 waydroid에 설치된 프로그램?"
 
 msgid "Categorias"
 msgstr "카테고리"
@@ -486,18 +353,16 @@ msgstr "오픈"
 msgid "Temas, desktop e ajustes"
 msgstr "테마, 데스크톱 및 조정"
 
-msgid ""
-"Lista com alguns programas do sistema que você pode restaurar a configuração "
-"com um clique."
-msgstr ""
-"클릭 한 번으로 구성을 복원할 수 있는 일부 시스템 프로그램을 나열합니다."
+msgid "Restaurar a configuração de programas"
+msgstr "프로그램 설정 복원"
+
+msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
+msgstr "클릭 한 번으로 구성을 복원할 수 있는 일부 시스템 프로그램을 나열합니다."
 
 msgid "Informações do sistema e hardware"
 msgstr "시스템 및 하드웨어 정보"
 
-msgid ""
-"Além de visualizar as informações é possível salvar em um arquivo e "
-"compartilhar na internet."
+msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
 msgstr "정보를 보는 것 외에도 파일에 저장하여 인터넷에서 공유 할 수 있습니다."
 
 msgid "Conectar à internet"
@@ -510,26 +375,24 @@ msgid "Conectar à internet utilizando o Android"
 msgstr "안드로이드를 사용하여 인터넷에 연결"
 
 msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
-"usb para seu computador."
-msgstr ""
-"Android 스마트 폰 또는 태블릿을 컴퓨터의 USB Wi-Fi 장치로 사용할 수 있습니다."
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
+"computador."
+msgstr "Android 스마트 폰 또는 태블릿을 컴퓨터의 USB Wi-Fi 장치로 사용할 수 있습니다."
 
 msgid ""
 "Como utilizar a internet do seu tablet ou  smartphone Android:\n"
 "<br><br>\n"
 "1. Plugue o dispositivo na USB do computador;\n"
 "<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
-"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
+"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
 "<br>\n"
 "São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
 "<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
-"compartilhamento'.\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
 "<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
-"conexão do seu dispositivo Android.\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
+"dispositivo Android.\n"
 "<br>\n"
 "*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
 msgstr ""
@@ -537,8 +400,7 @@ msgstr ""
 "<br><br>\n"
 "하나.장치를 컴퓨터의 USB에 꽂습니다.\n"
 "<br>\n"
-"2.Android 기기의 설정으로 이동하여 'USB 링크', 'USB 도킹' 또는 'USB 테더"
-"링'과 같은 몇 가지 옵션을 찾습니다.\n"
+"2.Android 기기의 설정으로 이동하여 'USB 링크', 'USB 도킹' 또는 'USB 테더링'과 같은 몇 가지 옵션을 찾습니다.\n"
 "<br>\n"
 "각 제조업체가 동일한 리소스에 사용하는 방식이 다릅니다.\n"
 "<br><br>\n"
@@ -552,10 +414,9 @@ msgid "Visualizar informações do sistema e hardware"
 msgstr "시스템 및 하드웨어 정보 보기"
 
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras "
-"pessoas para que o ajudem com o suporte."
-msgstr ""
-"또한 정보가 포함된 파일을 만들어 다른 사람에게 보내 지원을 받을 수 있습니다."
+"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
+"o suporte."
+msgstr "또한 정보가 포함된 파일을 만들어 다른 사람에게 보내 지원을 받을 수 있습니다."
 
 msgid "Adicionar ou Remover Usuários"
 msgstr "사용자 추가 또는 제거"
@@ -582,43 +443,33 @@ msgid "Airmore"
 msgstr "에어모어"
 
 msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
+"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"스마트폰의 앱 스토어에서 Airmore 앱을 설치합니다.이 버튼을 사용하여 해당 컴퓨"
-"터에서 Airmore 웹 사이트를 엽니 다.스마트폰의 앱을 사용하여 컴퓨터 화면에 표"
-"시되는 QRcode를 읽고 파일 전송 등에 액세스할 수 있습니다.웹 앱 관리자를 사용"
-"하여 이 사이트를 쉽게 사용할 수도 있습니다."
+"스마트폰의 앱 스토어에서 Airmore 앱을 설치합니다.이 버튼을 사용하여 해당 컴퓨터에서 Airmore 웹 사이트를 엽니 다.스마트폰의 앱을 사용하여 컴퓨터 화면에 표시되는 "
+"QRcode를 읽고 파일 전송 등에 액세스할 수 있습니다.웹 앱 관리자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
 
 msgid "Airdroid"
 msgstr "에어드로이드"
 
 msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
+"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
+"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"스마트폰의 앱 스토어에서 Airdroid 앱을 설치합니다.이 버튼을 사용하여 해당 컴"
-"퓨터에서 Airdroid 웹 사이트를 열 수 있습니다.스마트폰의 앱을 사용하여 컴퓨터 "
-"화면에 표시되는 QRcode를 읽고 파일 전송 등에 액세스할 수 있습니다.웹 앱 관리"
-"자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
+"스마트폰의 앱 스토어에서 Airdroid 앱을 설치합니다.이 버튼을 사용하여 해당 컴퓨터에서 Airdroid 웹 사이트를 열 수 있습니다.스마트폰의 앱을 사용하여 컴퓨터 화면에 "
+"표시되는 QRcode를 읽고 파일 전송 등에 액세스할 수 있습니다.웹 앱 관리자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
 
 msgid "Suporte a aplicativos Android"
 msgstr "안드로이드 앱 지원"
 
 msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
-"ainda está em fase experimental."
-msgstr ""
-"웨이드로이드를 사용하면 BigLinux에서 안드로이드 프로그램을 엽니다.*이 기능은 "
-"아직 실험 단계에 있습니다."
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
+"experimental."
+msgstr "웨이드로이드를 사용하면 BigLinux에서 안드로이드 프로그램을 엽니다.*이 기능은 아직 실험 단계에 있습니다."
 
 msgid "Instalar drivers e firmwares"
 msgstr "드라이버 및 펌웨어 설치"
@@ -630,23 +481,17 @@ msgid "Gerenciar pontos de restauração."
 msgstr "복구 지점을 관리합니다."
 
 msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas "
-"é possível fazer backups utilizando o método rsync."
-msgstr ""
-"시스템이 설치된 파티션에는 복원 지점이 없지만 rsync 방법을 사용하여 백업을 만"
-"들 수 있습니다."
+"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
+"backups utilizando o método rsync."
+msgstr "시스템이 설치된 파티션에는 복원 지점이 없지만 rsync 방법을 사용하여 백업을 만들 수 있습니다."
+
+msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr "시스템이 라이브 모드에 있습니다.설치된 시스템의 복원 지점을 복원합니다."
 
 msgid ""
-"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
-msgstr ""
-"시스템이 라이브 모드에 있습니다.설치된 시스템의 복원 지점을 복원합니다."
-
-msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
-"ícone no menu do sistema para que textos escritos sejam falados."
-msgstr ""
-"원하는 텍스트를 선택하고 [Meta] +V 키 또는 시스템 메뉴의 아이콘으로 단축키를 "
-"사용하여 작성된 텍스트를 음성으로 만듭니다."
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
+"para que textos escritos sejam falados."
+msgstr "원하는 텍스트를 선택하고 [Meta] +V 키 또는 시스템 메뉴의 아이콘으로 단축키를 사용하여 작성된 텍스트를 음성으로 만듭니다."
 
 msgid "Instalar versões de kernel"
 msgstr "커널 버전 설치"
@@ -661,19 +506,224 @@ msgid "Snapdrop (Não precisa de aplicativo)"
 msgstr "스냅드롭 (앱 필요 없음)"
 
 msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
-"transferir os arquivos, automaticamente eles serão detectados e você poderá "
-"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
-"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
-"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
-"apps para facilitar o uso desse site."
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
+"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
+"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"파일을 전송하려는 하드웨어 아래에서 https://snapdrop.net 사이트를 열면 자동으"
-"로 감지되고 원하는 파일을 보낼 수 있습니다.이 버튼을 사용하여 해당 컴퓨터에"
-"서 Snapdrop 웹 사이트를 엽니다.Snapdrop은 한 스마트 폰에서 다른 스마트 폰으"
-"로 직접 파일을 전송하는 것을 포함하여 모든 스마트 폰 또는 컴퓨터에서 사용할 "
-"수 있습니다.웹 앱 관리자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
+"파일을 전송하려는 하드웨어 아래에서 https://snapdrop.net 사이트를 열면 자동으로 감지되고 원하는 파일을 보낼 수 있습니다.이 버튼을 사용하여 해당 컴퓨터에서 "
+"Snapdrop 웹 사이트를 엽니다.Snapdrop은 한 스마트 폰에서 다른 스마트 폰으로 직접 파일을 전송하는 것을 포함하여 모든 스마트 폰 또는 컴퓨터에서 사용할 수 "
+"있습니다.웹 앱 관리자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
+
+msgid "Instalar ou remover programas."
+msgstr "프로그램을 설치 또는 제거합니다."
+
+msgid "Gerenciar conexões"
+msgstr "연결 관리"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
+"móvel e outros)."
+msgstr "고급 네트워크 구성 (VPN, 와이파이, 유선, 고정 IP, PPPoE, ADSL, 유선 네트워크, 모바일 광대역 및 기타)."
+
+msgid "Procurar servidores VNC"
+msgstr "VNC 서버 검색"
+
+msgid ""
+"Utilitário que facilita a restauração do sistema instalado,\n"
+"<br>\n"
+"principalmente a restauração do boot do sistema (Grub).\n"
+"<br><br>\n"
+"Também pode ser utilizado para acessar o gerenciador\n"
+"<br>\n"
+"de pacotes e o terminal do sistema instalado."
+msgstr ""
+"설치된 시스템의 복원을 용이하게하는 유틸리티,\n"
+"<br>\n"
+"특히 시스템 부팅 복원 (Grub).\n"
+"<br><br>\n"
+"관리자에 액세스하는 데 사용할 수도 있습니다.\n"
+"<br>\n"
+"패키지 및 설치된 시스템의 터미널"
+
+msgid "Tema da Área de Trabalho"
+msgstr "데스크톱 테마"
+
+msgid "Montar Hardware Apple"
+msgstr "애플 하드웨어 조립"
+
+msgid ""
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
+"acesso de arquivos em um pendrive."
+msgstr "이 프로그램을 사용하면 펜 드라이브의 파일에 액세스하는 것과 유사한 방식으로 Apple iPhone 또는 iPad의 프로그램에 액세스 할 수 있습니다."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "구글 드라이브 및 자체 클라우드와의 통합"
+
+msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
+msgstr "파일 관리자에서 직접 Google 드라이브 또는 ownCloud에 있는 파일에 액세스합니다."
+
+msgid "Scanners HP"
+msgstr "HP 스캐너"
+
+msgid "Qt Designer"
+msgstr "Qt 디자이너"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "QT를 위한 개발 프로그램"
+
+msgid "Firewall"
+msgstr "방화벽"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "인터넷 연결에 대한 보안 규칙을 설정합니다."
+
+msgid "Centro de controle do KDE"
+msgstr "KDE 컨트롤 센터"
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "스토리지 정보 (스마트)"
+
+msgid "Qt QDBusViewer "
+msgstr "Qt QDB 버스 뷰어 "
+
+msgid "Ícones e emoticons"
+msgstr "아이콘 및 이모티콘"
+
+msgid "Qt Linguist"
+msgstr "Qt 언어학자"
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "프린터를 설치, 구성 또는 제거합니다."
+
+msgid "Temas do Bootsplash"
+msgstr "부트스플래시 테마"
+
+msgid "Carteira de senhas do KDE"
+msgstr "KDE 비밀번호 지갑"
+
+msgid "Joystick"
+msgstr "조이스틱"
+
+msgid "Configurar o tema Kvantum"
+msgstr "크반텀 테마 설정"
+
+msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
+msgstr "Kvantum 구성이 작동하려면 '응용 프로그램 스타일'에서 Kvantum 테마를 적용하십시오."
+
+msgid "Procurar servidores SSH"
+msgstr "SSH 서버 검색"
+
+msgid "Terminal"
+msgstr "터미널"
+
+msgid "Acesse o terminal de comandos."
+msgstr "커맨드 터미널로 이동합니다."
+
+msgid "Controle o brilho e as cores"
+msgstr "밝기 및 색상 제어"
+
+msgid "Brilho e cor"
+msgstr "밝기 및 색상"
+
+msgid "Particionar ou formatar"
+msgstr "파티션 또는 형식"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr "이 프로그램은 컴퓨터에서 모든 데이터를 지울 수 있습니다."
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "이 창 테두리 테마 구성"
+
+msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
+msgstr "오래된 음악 CD를 사용하기 위한 설정은 MP3 곡에는 유효하지 않습니다."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "서버 검색 (제로컨프)"
+
+msgid "Gerenciar arquivos"
+msgstr "파일 관리"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "파일 및 폴더에 액세스할 수 있습니다."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
+"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
+"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
+"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"이 프로그램은 스마트 폰, 태블릿 및 기타 컴퓨터간에 파일을 전송할 수 있습니다.예를 들어 스마트 폰을 무선 마우스 및 키보드로 사용하여 컴퓨터를 제어 할 수 "
+"있습니다.BigLinux와 더 잘 통합되며 시스템 시계 근처에 위치한 애플릿 중 하나입니다.스마트폰과 동기화하려면 구글 스토어 또는 애플 스토어로 이동하여 Kde Connect를 "
+"설치합니다."
+
+msgid "Impressoras HP"
+msgstr "HP 프린터"
+
+msgid "Verificar o status, nível de tinta e manutenção."
+msgstr "상태, 잉크 잔량 및 유지 관리를 확인합니다."
+
+msgid "Configurar o AppimageLauncher"
+msgstr "이미지 런처 앱 구성"
+
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr ".appimage에서 사용할 수 있는 프로그램의 동작을 선택합니다."
+
+msgid "Configurador avançado de energia"
+msgstr "고급 전원 구성기"
+
+msgid "Configurar webcam ou placa de captura"
+msgstr "웹캠 또는 캡처 카드 설정"
+
+msgid "Equalizador (DSP)"
+msgstr "이퀄라이저 (DSP)"
+
+msgid "Som e microfone"
+msgstr "사운드 및 마이크"
+
+msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr "오디오 입력 및 출력 장치를 설정하거나 변경합니다.(예: HDMI)"
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "서비스 관리 (시스템)"
+
+msgid "Configurar este tema de janelas."
+msgstr "이 창 테마를 구성합니다."
+
+msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr "검색을 활성화하면 시스템 메모리와 처리 소비가 증가합니다."
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "고급 오디오 매니저 - 알사믹서"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "소리가 나지 않을 경우 오디오 컨트롤러."
+
+msgid "Gerenciador de usuários"
+msgstr "유저 매니저"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr "시스템에서 사용자 및 그룹을 추가, 제거 또는 편집합니다."
+
+msgid "Gerenciador de senhas"
+msgstr "비밀번호 관리자"
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "날짜, 시간 및 시간대를 조정합니다."
+
+msgid "Qt Assistant"
+msgstr "Qt 도우미"
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "가상 작업 공간 및 활동"
+
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "가상 작업 공간 사이를 전환하여 둘 이상의 가상 작업 공간을 만듭니다."
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "레이아웃 설정, 핫키 및 기타 옵션"
 
 msgid "As configurações da tela foram resetadas."
 msgstr "화면 설정이 재설정되었습니다."
@@ -683,92 +733,3 @@ msgstr "화면 설정"
 
 msgid "Aguarde, criando arquivos de cache..."
 msgstr "잠시 기다려 주십시오. 캐시 파일을 생성하는 중"
-
-msgid "Maximizado"
-msgstr "최대화"
-
-msgid "Waydroid"
-msgstr "웨이드로이드"
-
-msgid ""
-"Utilize programas para Android no seu computador, está em fase experimental, "
-"alguns programas podem não funcionar.<br>"
-msgstr ""
-"컴퓨터에서 Android 프로그램을 사용하십시오. 실험 단계에 있으며 일부 프로그램"
-"이 작동하지 않을 수 있습니다.<br>"
-
-msgid ""
-"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
-"pelo gerenciador de arquivos do BigLinux.<br>"
-msgstr ""
-"Wayland가 설치되면 BigLinux 파일 관리자를 통해 열린.apk 형식의 프로그램을 열 "
-"수 있습니다.<br>"
-
-msgid ""
-"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
-"Nvidia <b>DESATIVE</b>."
-msgstr ""
-"인텔 및 AMD 그래픽 카드에서 3D 가속을 <b>켜고</b> Nvidia와 같은 다른 그래픽 "
-"카드는 <b>비활성화합니다</b>."
-
-msgid "Download próximo de 1 GB, pode demorar muito."
-msgstr "1GB에 가깝게 다운로드하면 시간이 오래 걸릴 수 있습니다."
-
-msgid "Resolução: "
-msgstr "해상도: "
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "시스템 메뉴를 사용하여 Waydroid를 시작할 수도 있습니다"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
-"não passará da tela de loading"
-msgstr ""
-"호환되지 않는 하드웨어에서 3D 가속이 사용 설정된 경우 <br>Android가 로딩 화"
-"면 밖으로 이동하지 않습니다."
-
-msgid "Parar o Waydroid"
-msgstr "스탑 웨이드로이드"
-
-msgid "Iniciar o Waydroid"
-msgstr "스타트 웨이드로이드"
-
-msgid "Ativar a aceleração 3D"
-msgstr "3D 가속 활성화"
-
-msgid "Desativar a aceleração 3D"
-msgstr "3D 가속 끄기"
-
-msgid "Instalar Waydroid"
-msgstr "웨이드로이드 설치"
-
-msgid "Instalar Waydroid com Google Apps"
-msgstr "Google 앱으로 웨이드로이드 설치하기"
-
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
-"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
-"a página de Registro do dispositivo, precisa estar logado na sua conta "
-"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
-msgstr ""
-"PlayStore를 활성화하려면 (Android ID 보기) 를 클릭하고 Android ID를 복사한 다"
-"음 (Google Apps 활성화) 를 클릭하여 기기 등록 페이지를 열고 Google 계정에 로"
-"그인하고 Android ID를 입력하고 등록해야 합니다.Waydroid에서 활성화하는 데 몇 "
-"분 정도 걸릴 수 있습니다.닫았다가 다시 엽니다.준비 완료!"
-
-msgid "Exibir ID do Android"
-msgstr "안드로이드 ID 표시"
-
-msgid "Ativar Google Apps"
-msgstr "구글 앱스 활성화"
-
-msgid "ID do Android:"
-msgstr "안드로이드 ID:"
-
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
-"estar aberto."
-msgstr ""
-"안드로이드 ID를 사용할 수 없습니다.\\ n\\ n경고: 웨이드로이드가 열려 있어야 "
-"합니다."

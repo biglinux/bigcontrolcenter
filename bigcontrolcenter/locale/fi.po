@@ -2,26 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-01 06:12-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-msgid "Introdução ao BigLinux"
-msgstr "Johdanto BigLinuxiin"
-
-msgid "Central de Controle"
-msgstr "Valvontakeskus"
+"X-Generator: attranslate\n"
 
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
@@ -38,6 +31,12 @@ msgstr ""
 
 msgid "Webcam"
 msgstr "Webkamera"
+
+msgid "Introdução ao BigLinux"
+msgstr "Johdanto BigLinuxiin"
+
+msgid "Central de Controle"
+msgstr "Valvontakeskus"
 
 msgid "Category"
 msgstr "Luokka"
@@ -84,12 +83,8 @@ msgstr "Hei"
 msgid "Ajustes iniciais"
 msgstr "Alkuperäiset säädöt"
 
-msgid ""
-"Disponiblizamos configurações completas para você selecionar de forma "
-"extremamente simples."
-msgstr ""
-"Tarjoamme täydellisiä kokoonpanoja, joista voit valita hyvin "
-"yksinkertaisella tavalla."
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+msgstr "Tarjoamme täydellisiä kokoonpanoja, joista voit valita hyvin yksinkertaisella tavalla."
 
 msgid "Temas, Desktop e Ajustes"
 msgstr "Teemat, työpöytä ja asetukset"
@@ -113,13 +108,12 @@ msgid "KDE Connect"
 msgstr "KDE Connect"
 
 msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
-"transferência de dados entre dispositivos em redes locais. Disponível na "
-"Google Play Store para Android e Apple Store para iPhone."
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
+"iPhone."
 msgstr ""
-"KDE Connect on sovellus, joka helpottaa langatonta viestintää ja "
-"tiedonsiirtoa lähiverkon laitteiden välillä. Saatavilla Google Play Storesta "
-"Androidille ja Apple Storesta iPhonelle."
+"KDE Connect on sovellus, joka helpottaa langatonta viestintää ja tiedonsiirtoa lähiverkon "
+"laitteiden välillä. Saatavilla Google Play Storesta Androidille ja Apple Storesta iPhonelle."
 
 msgid "Instalação de Driver e Informações de Hardware"
 msgstr "Ohjaimen asennus ja laitteistotiedot"
@@ -133,12 +127,8 @@ msgstr "Tulostimet"
 msgid "Conheça alguns recursos"
 msgstr "Tutustu joihinkin resursseihin"
 
-msgid ""
-"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
-"novidades!"
-msgstr ""
-"Järjestelmämme on yhteistyöhön perustuva, tule mukaan tähän kehitykseen. "
-"Katso uutiset!"
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "Järjestelmämme on yhteistyöhön perustuva, tule mukaan tähän kehitykseen. Katso uutiset!"
 
 msgid "Big Store"
 msgstr "Big Store"
@@ -159,9 +149,7 @@ msgid "Doação e Redes sociais"
 msgstr "Lahjoitukset ja sosiaaliset verkostot"
 
 msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr ""
-"Lahjoituksesi on erittäin tärkeä projektille ja seuraa sosiaalisia "
-"verkostoja."
+msgstr "Lahjoituksesi on erittäin tärkeä projektille ja seuraa sosiaalisia verkostoja."
 
 msgid "Doação"
 msgstr "Lahjoitus"
@@ -185,8 +173,7 @@ msgid "Facebook"
 msgstr "Facebook"
 
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr ""
-"Onneksi olkoon, olet suorittanut BigLinuxin käytön ensimmäiset vaiheet."
+msgstr "Onneksi olkoon, olet suorittanut BigLinuxin käytön ensimmäiset vaiheet."
 
 msgid "Bom dia"
 msgstr "Hyvää huomenta"
@@ -200,241 +187,111 @@ msgstr "Hyvää iltaa"
 msgid "Aguarde, carregando..."
 msgstr "Valmistautukaa, lastaus..."
 
-msgid "Integração com Google Drive e ownCloud"
-msgstr "Integrointi Google Driven ja ownCloudin kanssa"
+msgid "Remover"
+msgstr "Poistaa"
+
+msgid "Maximizado"
+msgstr "Maksimoitu"
+
+msgid "Desinstalar"
+msgstr "Poista asennus"
+
+msgid "Waydroid"
+msgstr "Waydroid"
+
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Käytä Android-ohjelmia BigLinux'ssa."
+
+msgid "Instalar o Waydroid"
+msgstr "Asenna Waydroid"
+
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Asenna Waydroid Google Appsin avulla"
+
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "Lataus on noin 1 Gt, riippuen yhteydestäsi."
+
+msgid "Paisagem"
+msgstr "Maisema"
+
+msgid "Retrato"
+msgstr "Muotokuva"
+
+msgid "Desativado"
+msgstr "Poistettu käytöstä"
+
+msgid "Ativado"
+msgstr "Aktivoitu"
+
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid voidaan käynnistää myös järjestelmävalikon kautta"
 
 msgid ""
-"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no "
-"gerenciador de arquivos."
-msgstr ""
-"Pääset Google Drivessa tai ownCloudissa oleviin tiedostoihisi suoraan "
-"tiedostonhallinnasta."
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
+msgstr "Jos 3D-kiihdytys on käytössä yhteensopimattomassa laitteistossa, Android ei siirry latausnäytöstä"
 
-msgid "Configurar o AppimageLauncher"
-msgstr "AppimageLauncherin määrittäminen"
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D-kiihdytys ei ole yhteensopiva Nvidia-videokorteilla, joissa käytetään omaa ohjainta."
 
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr ""
-"Valitse .appimage-tiedostossa käytettävissä olevien ohjelmien käyttäytyminen"
+msgid "Exibir ID do Android"
+msgstr "Näytä Android ID"
 
-msgid "Qt Assistant"
-msgstr "Qt Assistant"
+msgid "Ativar Google Apps"
+msgstr "Ota Google Apps käyttöön"
 
-msgid "Programas de desenvolvimento para QT."
-msgstr "QT:n kehittämisohjelmat."
+msgid "Remover Configurações"
+msgstr "Poista asetukset"
 
-msgid ""
-"Configurações de uso dos antigos CDs de música, não são válidas para músicas "
-"em MP3."
-msgstr ""
-"Vanhojen musiikki-CD-levyjen käyttöasetukset eivät päde MP3-musiikille."
-
-msgid "Procurar servidores (zeroconf)"
-msgstr "Hakupalvelimet (zeroconf)"
-
-msgid "Instalar ou remover programas."
-msgstr "Asenna tai poista ohjelmia."
-
-msgid "Restaurar a configuração de programas"
-msgstr "Ohjelman kokoonpanon palauttaminen"
+msgid "Desinstalar o Waydroid"
+msgstr "Poista Waydroid"
 
 msgid ""
-"Utilitário que facilita a restauração do sistema instalado,\n"
-"<br>\n"
-"principalmente a restauração do boot do sistema (Grub).\n"
-"<br><br>\n"
-"Também pode ser utilizado para acessar o gerenciador\n"
-"<br>\n"
-"de pacotes e o terminal do sistema instalado."
-msgstr ""
-"Apuohjelma, joka helpottaa asennetun järjestelmän palauttamista,\n"
-"<br>\n"
-"pääasiassa järjestelmän käynnistyksen (Grub) palauttaminen.\n"
-"<br><br>\n"
-"Sitä voidaan käyttää myös managerin\n"
-"<br>\n"
-"manager ja asennetun järjestelmän päätelaite."
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
+msgstr "Jos 3D-kiihdytys on käytössä epäyhteensopivalla laitteistolla,<br>android ei pääse latausnäytön läpi"
 
-msgid "Temas do Bootsplash"
-msgstr "Bootsplash-teemat"
+msgid "Parar o Waydroid"
+msgstr "Pysäytä Waydroid"
 
-msgid "Controle o brilho e as cores"
-msgstr "Säädä kirkkautta ja värejä"
+msgid "Iniciar o Waydroid"
+msgstr "Aloita Waydroid"
 
-msgid "Brilho e cor"
-msgstr "Kiilto ja väri"
-
-msgid "Procurar servidores SSH"
-msgstr "Selaa SSH-palvelimia"
-
-msgid "Procurar servidores VNC"
-msgstr "Etsi VNC-palvelimia"
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "Määritä tämä ikkunoiden reunusteema"
-
-msgid "Configurar este tema de janelas."
-msgstr "Määritä tämä ikkunateema."
-
-msgid "Qt Designer"
-msgstr "Qt-suunnittelija"
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "Advanced Audio Manager - Alsamixer"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "Äänenohjain äänen puuttuessa."
-
-msgid "Particionar ou formatar"
-msgstr "Osioinnin tai alustuksen tekeminen"
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr "Varo, että tämä ohjelma voi poistaa kaikki tietokoneen tiedot."
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "Varastointitiedot (SMART)"
-
-msgid "Firewall"
-msgstr "Palomuuri"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "Määritä internet-yhteyden suojaussäännöt."
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "Aseta verkkokamera tai kaappauskortti"
-
-msgid "Scanners HP"
-msgstr "HP-skannerit"
-
-msgid "Impressoras HP"
-msgstr "HP-tulostimet"
-
-msgid "Verificar o status, nível de tinta e manutenção."
-msgstr "Tarkista tila, mustetaso ja huolto."
-
-msgid "Montar Hardware Apple"
-msgstr "Applen laitteiston kokoaminen"
+msgid "ID do Android:"
+msgstr "Android ID:"
 
 msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple "
-"de forma similar ao acesso de arquivos em um pendrive."
-msgstr ""
-"Tämän ohjelman avulla voit käyttää Apple iPhonen tai iPadin ohjelmia samalla "
-"tavalla kuin USB-tikulla olevia tiedostoja."
-
-msgid "Equalizador (DSP)"
-msgstr "Equalizer (DSP)"
-
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "Virtuaaliset työtilat ja toiminnot"
-
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr ""
-"Luo useampi kuin yksi virtuaalinen työpöytä vaihtamalla niiden välillä."
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr "Android-tunnusta ei pystytä hakemaan. \\ Varoitus: Waydroidin on oltava auki."
 
 msgid ""
-"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-msgstr "Haun aktivoiminen lisää järjestelmän muistin ja prosessorin kulutusta."
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "Aseta päivämäärä, kellonaika ja aikavyöhyke."
-
-msgid "Tema da Área de Trabalho"
-msgstr "Työtila-teema"
-
-msgid "Ícones e emoticons"
-msgstr "Kuvakkeet ja hymiöt"
-
-msgid "Joystick"
-msgstr "Joystick"
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Asetteluasetukset, pikanäppäimet ja muut vaihtoehdot."
-
-msgid "Gerenciar conexões"
-msgstr "Yhteyksien hallinta"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, "
-"rede com fio, banda larga móvel e outros)."
+"Ao remover as configurações os programas instalados \n"
+"dentro do Waydroid e suas configurações serão perdidas.\n"
+"\n"
+"Realmente deseja remover?"
 msgstr ""
-"Edistynyt verkon konfigurointi (VPN, wlan, langallinen verkko, kiinteä IP, "
-"PPPoE, ADSL, langallinen verkko, mobiililaajakaista ja muut)."
+"Poistamalla asetukset asennetut ohjelmat \n"
+"Waydroidin sisällä ja asetuksesi menetetään.\n"
+"\n"
+"Haluatko todella poistaa?"
 
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "Asenna, määritä tai poista tulostimia."
+msgid "Configurações removidas com sucesso!"
+msgstr "Asetukset poistettu onnistuneesti!"
 
-msgid "Gerenciar serviços (Systemd)"
-msgstr "Palveluiden hallinta (Systemd)"
+msgid "Nenhuma configuração foi removida!"
+msgstr "Kokoonpanoa ei ole poistettu!"
 
-msgid "Configurar o tema Kvantum"
-msgstr "Kvantum-teeman määrittäminen"
+msgid "Não existem configurações para remover."
+msgstr "Poistettavia asetuksia ei ole."
 
 msgid ""
-"Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo "
-"do aplicativo'."
+"Deseja remover também os arquivos de configuração \n"
+"e programas instalados dentro do Waydroid?"
 msgstr ""
-"Jotta Kvantum-konfiguraatio toimisi, käytä Kvantum-teemaa kohdassa "
-"'Application Style'."
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE-salasanalompakko"
-
-msgid "Qt Linguist"
-msgstr "Qt kielitieteilijä"
-
-msgid "Gerenciador de usuários"
-msgstr "User Manager"
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "Lisää, poista tai muokkaa järjestelmän käyttäjiä ja ryhmiä."
-
-msgid "Gerenciar arquivos"
-msgstr "Hallitse tiedostoja"
-
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "Pääset käsiksi tiedostoihin ja kansioihin."
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros "
-"computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como "
-"mouse e teclado sem fio para controlar o computador, entre outros recursos.  "
-"Ele se integra melhor ao BigLinux e fica entre os applets localizados perto "
-"do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"Tämä ohjelma voi siirtää tiedostoja älypuhelinten, tablettien ja muiden "
-"tietokoneiden välillä.  Sen avulla voit esimerkiksi käyttää älypuhelinta "
-"hiirenä ja langatonta näppäimistöä tietokoneen ohjaamiseen, muiden "
-"ominaisuuksien ohella.  Se integroituu paremmin BigLinuxiin ja on yksi "
-"sovelluksista, jotka sijaitsevat lähellä järjestelmäkelloa. Voit synkronoida "
-"älypuhelimen kanssa Google Storesta tai Apple Storesta ja asentaa Kde "
-"Connectin."
-
-msgid "Terminal"
-msgstr "Terminaali"
-
-msgid "Acesse o terminal de comandos."
-msgstr "Siirry komentoterminaaliin."
-
-msgid "Gerenciador de senhas"
-msgstr "Salasananhallinta"
-
-msgid "Som e microfone"
-msgstr "Ääni ja mikrofoni"
-
-msgid ""
-"Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr "Määritä tai muuta äänen tulo- ja lähtölaitteita (esim. HDMI)"
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDBusViewer "
-
-msgid "Centro de controle do KDE"
-msgstr "KDE-ohjauskeskus"
-
-msgid "Configurador avançado de energia"
-msgstr "Kehittynyt tehon konfiguraattori"
+"Haluat myös poistaa määritystiedostot \n"
+"ja waydroidiin asennetut ohjelmat?"
 
 msgid "Categorias"
 msgstr "Kategoriat"
@@ -496,22 +353,19 @@ msgstr "Avaa"
 msgid "Temas, desktop e ajustes"
 msgstr "Teemat, työpöytä ja asetukset"
 
-msgid ""
-"Lista com alguns programas do sistema que você pode restaurar a configuração "
-"com um clique."
+msgid "Restaurar a configuração de programas"
+msgstr "Ohjelman kokoonpanon palauttaminen"
+
+msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
 msgstr ""
-"Luettelo joidenkin järjestelmäohjelmien kanssa, joilla voit palauttaa "
-"kokoonpanon yhdellä napsautuksella."
+"Luettelo joidenkin järjestelmäohjelmien kanssa, joilla voit palauttaa kokoonpanon yhdellä "
+"napsautuksella."
 
 msgid "Informações do sistema e hardware"
 msgstr "Järjestelmä- ja laitteistotiedot"
 
-msgid ""
-"Além de visualizar as informações é possível salvar em um arquivo e "
-"compartilhar na internet."
-msgstr ""
-"Tietojen tarkastelun lisäksi ne on mahdollista tallentaa tiedostoon ja jakaa "
-"internetissä."
+msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
+msgstr "Tietojen tarkastelun lisäksi ne on mahdollista tallentaa tiedostoon ja jakaa internetissä."
 
 msgid "Conectar à internet"
 msgstr "Yhdistä internetiin"
@@ -523,27 +377,24 @@ msgid "Conectar à internet utilizando o Android"
 msgstr "Muodosta yhteys internetiin Androidin avulla"
 
 msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi "
-"usb para seu computador."
-msgstr ""
-"Voit käyttää Android-älypuhelinta tai -tablettia tietokoneen wlan-usb-"
-"laitteena."
+"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
+"computador."
+msgstr "Voit käyttää Android-älypuhelinta tai -tablettia tietokoneen wlan-usb-laitteena."
 
 msgid ""
 "Como utilizar a internet do seu tablet ou  smartphone Android:\n"
 "<br><br>\n"
 "1. Plugue o dispositivo na USB do computador;\n"
 "<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas "
-"das opções: 'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
+"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
+"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
 "<br>\n"
 "São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
 "<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e "
-"compartilhamento'.\n"
+"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
 "<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma "
-"conexão do seu dispositivo Android.\n"
+"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
+"dispositivo Android.\n"
 "<br>\n"
 "*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
 msgstr ""
@@ -551,17 +402,14 @@ msgstr ""
 "<br><br>\n"
 "1. Kytke laite tietokoneen USB-porttiin;\n"
 "<br>\n"
-"2. Mene Android-laitteesi asetuksiin ja etsi seuraavat vaihtoehdot: \"USB-"
-"liitäntä\", \"USB-tethering\" tai \"USB-tethering\".\n"
+"2. Mene Android-laitteesi asetuksiin ja etsi seuraavat vaihtoehdot: \"USB-liitäntä\", "
+"\"USB-tethering\" tai \"USB-tethering\".\n"
 "<br>\n"
-"Nämä ovat eri tapoja, joita kukin valmistaja käyttää samasta "
-"ominaisuudesta.\n"
+"Nämä ovat eri tapoja, joita kukin valmistaja käyttää samasta ominaisuudesta.\n"
 "<br><br>\n"
-"*Nämä vaihtoehdot ovat kohdassa 'Verkko ja Internet' tai 'Yhteydet ja "
-"jakaminen'.\n"
+"*Nämä vaihtoehdot ovat kohdassa 'Verkko ja Internet' tai 'Yhteydet ja jakaminen'.\n"
 "<br><br>\n"
-"Aktivoimalla se kytkeytyy automaattisesti, ja käytät samaa yhteyttä kuin "
-"Android-laitteesi.\n"
+"Aktivoimalla se kytkeytyy automaattisesti, ja käytät samaa yhteyttä kuin Android-laitteesi.\n"
 "<br>\n"
 "*Jos käytät mobiilidataa, se kuluu datasopimuksestasi."
 
@@ -569,11 +417,11 @@ msgid "Visualizar informações do sistema e hardware"
 msgstr "Näytä järjestelmä- ja laitteistotiedot"
 
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras "
-"pessoas para que o ajudem com o suporte."
+"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
+"o suporte."
 msgstr ""
-"Se luo myös tiedoston, jossa on tietoja, jotka voit lähettää muille, jotka "
-"voivat auttaa sinua tuen kanssa."
+"Se luo myös tiedoston, jossa on tietoja, jotka voit lähettää muille, jotka voivat auttaa sinua tuen "
+"kanssa."
 
 msgid "Adicionar ou Remover Usuários"
 msgstr "Lisää tai poista käyttäjiä"
@@ -600,45 +448,39 @@ msgid "Airmore"
 msgstr "Airmore"
 
 msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
+"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
+"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"Asenna Airmore-sovellus älypuhelimesi sovelluskaupasta.  Käytä tätä "
-"painiketta avataksesi Airmoren verkkosivuston kyseisellä tietokoneella.  Lue "
-"QR-koodi, joka näkyy tietokoneen näytölläsi älypuhelimesi sovelluksen "
-"avulla, ja pääset käyttämään tiedostonsiirtoa ja muuta.  Voit myös käyttää "
-"verkkosovellusten hallintaa helpottaaksesi tämän sivuston käyttöä."
+"Asenna Airmore-sovellus älypuhelimesi sovelluskaupasta.  Käytä tätä painiketta avataksesi Airmoren "
+"verkkosivuston kyseisellä tietokoneella.  Lue QR-koodi, joka näkyy tietokoneen näytölläsi "
+"älypuhelimesi sovelluksen avulla, ja pääset käyttämään tiedostonsiirtoa ja muuta.  Voit myös "
+"käyttää verkkosovellusten hallintaa helpottaaksesi tämän sivuston käyttöä."
 
 msgid "Airdroid"
 msgstr "Airdroid"
 
 msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  "
-"Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o "
-"QRcode que será exibido na tela do seu computador utilizando o aplicativo no "
-"smartphone e tenha acesso a transferência de arquivos e muito mais.  Você "
-"também pode utilizar nosso gerenciador de Web apps para facilitar o uso "
-"desse site."
+"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
+"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
+"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
+"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"Asenna Airdroid-sovellus älypuhelimesi sovelluskaupasta.  Tällä painikkeella "
-"voit avata Airdroidin verkkosivuston kyseisellä tietokoneella.  Lue "
-"tietokoneen näytöllä näkyvä QR-koodi älypuhelimesi sovelluksen avulla ja "
-"pääset käsiksi tiedostojen siirtoon ja muuhun.  Voit myös käyttää "
+"Asenna Airdroid-sovellus älypuhelimesi sovelluskaupasta.  Tällä painikkeella voit avata Airdroidin "
+"verkkosivuston kyseisellä tietokoneella.  Lue tietokoneen näytöllä näkyvä QR-koodi älypuhelimesi "
+"sovelluksen avulla ja pääset käsiksi tiedostojen siirtoon ja muuhun.  Voit myös käyttää "
 "verkkosovellusten hallintaa helpottaaksesi tämän sivuston käyttöä."
 
 msgid "Suporte a aplicativos Android"
 msgstr "Android-sovellusten tuki"
 
 msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso "
-"ainda está em fase experimental."
+"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
+"experimental."
 msgstr ""
-"Waydroidin käyttäminen Android-ohjelmien avaamiseen BigLinuxissa. *Tämä "
-"ominaisuus on vielä kokeiluvaiheessa."
+"Waydroidin käyttäminen Android-ohjelmien avaamiseen BigLinuxissa. *Tämä ominaisuus on vielä "
+"kokeiluvaiheessa."
 
 msgid "Instalar drivers e firmwares"
 msgstr "Asenna ohjaimet ja laiteohjelmisto"
@@ -650,24 +492,21 @@ msgid "Gerenciar pontos de restauração."
 msgstr "Hallitse palautuspisteitä."
 
 msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas "
-"é possível fazer backups utilizando o método rsync."
+"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
+"backups utilizando o método rsync."
 msgstr ""
-"Osiossa, johon järjestelmä asennettiin, ei ole palautuspisteitä, mutta "
-"varmuuskopiot on mahdollista tehdä rsync-menetelmällä."
+"Osiossa, johon järjestelmä asennettiin, ei ole palautuspisteitä, mutta varmuuskopiot on mahdollista "
+"tehdä rsync-menetelmällä."
+
+msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+msgstr "Järjestelmä live-tilassa. Asennetun järjestelmän palautuspisteiden palauttaminen."
 
 msgid ""
-"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
+"para que textos escritos sejam falados."
 msgstr ""
-"Järjestelmä live-tilassa. Asennetun järjestelmän palautuspisteiden "
-"palauttaminen."
-
-msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o "
-"ícone no menu do sistema para que textos escritos sejam falados."
-msgstr ""
-"Valitse haluamasi teksti ja käytä pikavalintaa [Meta]+V-näppäimellä tai "
-"järjestelmävalikon kuvaketta, jotta kirjoitetut tekstit puhutaan."
+"Valitse haluamasi teksti ja käytä pikavalintaa [Meta]+V-näppäimellä tai järjestelmävalikon "
+"kuvaketta, jotta kirjoitetut tekstit puhutaan."
 
 msgid "Instalar versões de kernel"
 msgstr "Ytimen versioiden asentaminen"
@@ -682,21 +521,233 @@ msgid "Snapdrop (Não precisa de aplicativo)"
 msgstr "Snapdrop (sovellusta ei tarvita)"
 
 msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer "
-"transferir os arquivos, automaticamente eles serão detectados e você poderá "
-"enviar os arquivos que desejar.  Utilize esse botão para abrir o site do "
-"Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um "
-"smartphone para outro.  Você também pode utilizar nosso gerenciador de Web "
-"apps para facilitar o uso desse site."
+"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
+"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
+"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
+"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
+"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
 msgstr ""
-"Avaa vain verkkosivusto https://snapdrop.net sen laitteiston kohdalla, jonka "
-"haluat siirtää tiedostot, ne havaitaan automaattisesti ja voit lähettää "
-"haluamasi tiedostot.  Tällä painikkeella voit avata Snapdrop-sivuston "
-"kyseisellä tietokoneella.  Snapdropia voi käyttää millä tahansa "
-"älypuhelimella tai tietokoneella, mukaan lukien tiedostojen siirtäminen "
-"suoraan älypuhelimesta toiseen.  Voit myös käyttää verkkosovellusten "
-"hallintaa, joka helpottaa tämän verkkosivuston käyttöä."
+"Avaa vain verkkosivusto https://snapdrop.net sen laitteiston kohdalla, jonka haluat siirtää "
+"tiedostot, ne havaitaan automaattisesti ja voit lähettää haluamasi tiedostot.  Tällä painikkeella "
+"voit avata Snapdrop-sivuston kyseisellä tietokoneella.  Snapdropia voi käyttää millä tahansa "
+"älypuhelimella tai tietokoneella, mukaan lukien tiedostojen siirtäminen suoraan älypuhelimesta "
+"toiseen.  Voit myös käyttää verkkosovellusten hallintaa, joka helpottaa tämän verkkosivuston "
+"käyttöä."
+
+msgid "Instalar ou remover programas."
+msgstr "Asenna tai poista ohjelmia."
+
+msgid "Gerenciar conexões"
+msgstr "Yhteyksien hallinta"
+
+msgid ""
+"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
+"móvel e outros)."
+msgstr ""
+"Edistynyt verkon konfigurointi (VPN, wlan, langallinen verkko, kiinteä IP, PPPoE, ADSL, langallinen "
+"verkko, mobiililaajakaista ja muut)."
+
+msgid "Procurar servidores VNC"
+msgstr "Etsi VNC-palvelimia"
+
+msgid ""
+"Utilitário que facilita a restauração do sistema instalado,\n"
+"<br>\n"
+"principalmente a restauração do boot do sistema (Grub).\n"
+"<br><br>\n"
+"Também pode ser utilizado para acessar o gerenciador\n"
+"<br>\n"
+"de pacotes e o terminal do sistema instalado."
+msgstr ""
+"Apuohjelma, joka helpottaa asennetun järjestelmän palauttamista,\n"
+"<br>\n"
+"pääasiassa järjestelmän käynnistyksen (Grub) palauttaminen.\n"
+"<br><br>\n"
+"Sitä voidaan käyttää myös managerin\n"
+"<br>\n"
+"manager ja asennetun järjestelmän päätelaite."
+
+msgid "Tema da Área de Trabalho"
+msgstr "Työtila-teema"
+
+msgid "Montar Hardware Apple"
+msgstr "Applen laitteiston kokoaminen"
+
+msgid ""
+"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
+"acesso de arquivos em um pendrive."
+msgstr ""
+"Tämän ohjelman avulla voit käyttää Apple iPhonen tai iPadin ohjelmia samalla tavalla kuin "
+"USB-tikulla olevia tiedostoja."
+
+msgid "Integração com Google Drive e ownCloud"
+msgstr "Integrointi Google Driven ja ownCloudin kanssa"
+
+msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
+msgstr "Pääset Google Drivessa tai ownCloudissa oleviin tiedostoihisi suoraan tiedostonhallinnasta."
+
+msgid "Scanners HP"
+msgstr "HP-skannerit"
+
+msgid "Qt Designer"
+msgstr "Qt-suunnittelija"
+
+msgid "Programas de desenvolvimento para QT."
+msgstr "QT:n kehittämisohjelmat."
+
+msgid "Firewall"
+msgstr "Palomuuri"
+
+msgid "Configurar regras de segurança para a conexão com a internet."
+msgstr "Määritä internet-yhteyden suojaussäännöt."
+
+msgid "Centro de controle do KDE"
+msgstr "KDE-ohjauskeskus"
+
+msgid "Informações de armazenamento (SMART)"
+msgstr "Varastointitiedot (SMART)"
+
+msgid "Qt QDBusViewer "
+msgstr "Qt QDBusViewer "
+
+msgid "Ícones e emoticons"
+msgstr "Kuvakkeet ja hymiöt"
+
+msgid "Qt Linguist"
+msgstr "Qt kielitieteilijä"
+
+msgid "Instalar, configurar ou remover impressoras."
+msgstr "Asenna, määritä tai poista tulostimia."
+
+msgid "Temas do Bootsplash"
+msgstr "Bootsplash-teemat"
+
+msgid "Carteira de senhas do KDE"
+msgstr "KDE-salasanalompakko"
+
+msgid "Joystick"
+msgstr "Joystick"
+
+msgid "Configurar o tema Kvantum"
+msgstr "Kvantum-teeman määrittäminen"
+
+msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
+msgstr "Jotta Kvantum-konfiguraatio toimisi, käytä Kvantum-teemaa kohdassa 'Application Style'."
+
+msgid "Procurar servidores SSH"
+msgstr "Selaa SSH-palvelimia"
+
+msgid "Terminal"
+msgstr "Terminaali"
+
+msgid "Acesse o terminal de comandos."
+msgstr "Siirry komentoterminaaliin."
+
+msgid "Controle o brilho e as cores"
+msgstr "Säädä kirkkautta ja värejä"
+
+msgid "Brilho e cor"
+msgstr "Kiilto ja väri"
+
+msgid "Particionar ou formatar"
+msgstr "Osioinnin tai alustuksen tekeminen"
+
+msgid "Cuidado, este programa poderá apagar todos os dados do computador."
+msgstr "Varo, että tämä ohjelma voi poistaa kaikki tietokoneen tiedot."
+
+msgid "Configurar este tema de borda de janelas"
+msgstr "Määritä tämä ikkunoiden reunusteema"
+
+msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
+msgstr "Vanhojen musiikki-CD-levyjen käyttöasetukset eivät päde MP3-musiikille."
+
+msgid "Procurar servidores (zeroconf)"
+msgstr "Hakupalvelimet (zeroconf)"
+
+msgid "Gerenciar arquivos"
+msgstr "Hallitse tiedostoja"
+
+msgid "Tenha acesso a seus arquivos e pastas."
+msgstr "Pääset käsiksi tiedostoihin ja kansioihin."
+
+msgid ""
+"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
+"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
+"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
+"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
+"Store ou Apple Store e instale o Kde Connect."
+msgstr ""
+"Tämä ohjelma voi siirtää tiedostoja älypuhelinten, tablettien ja muiden tietokoneiden välillä.  Sen "
+"avulla voit esimerkiksi käyttää älypuhelinta hiirenä ja langatonta näppäimistöä tietokoneen "
+"ohjaamiseen, muiden ominaisuuksien ohella.  Se integroituu paremmin BigLinuxiin ja on yksi "
+"sovelluksista, jotka sijaitsevat lähellä järjestelmäkelloa. Voit synkronoida älypuhelimen kanssa "
+"Google Storesta tai Apple Storesta ja asentaa Kde Connectin."
+
+msgid "Impressoras HP"
+msgstr "HP-tulostimet"
+
+msgid "Verificar o status, nível de tinta e manutenção."
+msgstr "Tarkista tila, mustetaso ja huolto."
+
+msgid "Configurar o AppimageLauncher"
+msgstr "AppimageLauncherin määrittäminen"
+
+msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
+msgstr "Valitse .appimage-tiedostossa käytettävissä olevien ohjelmien käyttäytyminen"
+
+msgid "Configurador avançado de energia"
+msgstr "Kehittynyt tehon konfiguraattori"
+
+msgid "Configurar webcam ou placa de captura"
+msgstr "Aseta verkkokamera tai kaappauskortti"
+
+msgid "Equalizador (DSP)"
+msgstr "Equalizer (DSP)"
+
+msgid "Som e microfone"
+msgstr "Ääni ja mikrofoni"
+
+msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
+msgstr "Määritä tai muuta äänen tulo- ja lähtölaitteita (esim. HDMI)"
+
+msgid "Gerenciar serviços (Systemd)"
+msgstr "Palveluiden hallinta (Systemd)"
+
+msgid "Configurar este tema de janelas."
+msgstr "Määritä tämä ikkunateema."
+
+msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
+msgstr "Haun aktivoiminen lisää järjestelmän muistin ja prosessorin kulutusta."
+
+msgid "Gerenciador de áudio avançado - Alsamixer"
+msgstr "Advanced Audio Manager - Alsamixer"
+
+msgid "Controlador de áudio em caso de ausência som."
+msgstr "Äänenohjain äänen puuttuessa."
+
+msgid "Gerenciador de usuários"
+msgstr "User Manager"
+
+msgid "Adiciona, remove ou edita usuários e grupos do sistema."
+msgstr "Lisää, poista tai muokkaa järjestelmän käyttäjiä ja ryhmiä."
+
+msgid "Gerenciador de senhas"
+msgstr "Salasananhallinta"
+
+msgid "Ajuste a data, hora e fuso horário."
+msgstr "Aseta päivämäärä, kellonaika ja aikavyöhyke."
+
+msgid "Qt Assistant"
+msgstr "Qt Assistant"
+
+msgid "Áreas de trabalho virtuais e atividades"
+msgstr "Virtuaaliset työtilat ja toiminnot"
+
+msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
+msgstr "Luo useampi kuin yksi virtuaalinen työpöytä vaihtamalla niiden välillä."
+
+msgid "Configurações de layout, teclas de atalho e outras opções."
+msgstr "Asetteluasetukset, pikanäppäimet ja muut vaihtoehdot."
 
 msgid "As configurações da tela foram resetadas."
 msgstr "Näytön asetukset on nollattu."
@@ -706,93 +757,3 @@ msgstr "Näytön asetukset"
 
 msgid "Aguarde, criando arquivos de cache..."
 msgstr "Valmiina, luodaan välimuistitiedostoja..."
-
-msgid "Maximizado"
-msgstr "Maksimoitu"
-
-msgid "Waydroid"
-msgstr "Waydroid"
-
-msgid ""
-"Utilize programas para Android no seu computador, está em fase experimental, "
-"alguns programas podem não funcionar.<br>"
-msgstr ""
-"Käytä Android-ohjelmia tietokoneellasi, se on kokeiluvaiheessa, jotkin "
-"ohjelmat eivät ehkä toimi.<br>"
-
-msgid ""
-"Com o Wayland instalado é possível abrir programas no formato .apk, abra "
-"pelo gerenciador de arquivos do BigLinux.<br>"
-msgstr ""
-"Kun Wayland on asennettu, voit avata .apk-muotoisia ohjelmia BigLinuxin "
-"tiedostonhallinnasta.<br>"
-
-msgid ""
-"<b>ATIVAR</b> a aceleração 3D em placas de vídeo Intel e AMD, outras como "
-"Nvidia <b>DESATIVE</b>."
-msgstr ""
-"3D-kiihdytyksen<b>ottaminen käyttöön</b> Intelin ja AMD:n näytönohjaimissa, "
-"muut kuten Nvidia <b>OFF</b>."
-
-msgid "Download próximo de 1 GB, pode demorar muito."
-msgstr "Jos lataat lähes 1 Gt, se voi kestää kauan."
-
-msgid "Resolução: "
-msgstr "Päätöslauselma "
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid voidaan käynnistää myös järjestelmävalikon kautta"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android "
-"não passará da tela de loading"
-msgstr ""
-"Jos 3D-kiihdytys on käytössä epäyhteensopivalla laitteistolla,<br>android ei "
-"pääse latausnäytön läpi"
-
-msgid "Parar o Waydroid"
-msgstr "Pysäytä Waydroid"
-
-msgid "Iniciar o Waydroid"
-msgstr "Aloita Waydroid"
-
-msgid "Ativar a aceleração 3D"
-msgstr "Ota 3D-kiihdytys käyttöön"
-
-msgid "Desativar a aceleração 3D"
-msgstr "Poista 3D-kiihdytys käytöstä"
-
-msgid "Instalar Waydroid"
-msgstr "Asenna Waydroid"
-
-msgid "Instalar Waydroid com Google Apps"
-msgstr "Asenna Waydroid Google Appsin avulla"
-
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e "
-"copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir "
-"a página de Registro do dispositivo, precisa estar logado na sua conta "
-"Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
-msgstr ""
-"PlayStoren aktivoimiseksi sinun on napsautettava (Näytä Android-tunnus) ja "
-"kopioitava Android-tunnus, napsautettava (Aktivoi Google Apps) avataksesi "
-"laitteen rekisteröintisivun, sinun on kirjauduttava Google-tilillesi, "
-"syötettävä Android-tunnuksesi ja rekisteröidyttävä. Aktivoituminen Waydroid-"
-"laitteessasi voi kestää muutaman minuutin. Sulje ja avaa se uudelleen. "
-"Valmis!"
-
-msgid "Exibir ID do Android"
-msgstr "Näytä Android ID"
-
-msgid "Ativar Google Apps"
-msgstr "Ota Google Apps käyttöön"
-
-msgid "ID do Android:"
-msgstr "Android ID:"
-
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
-"estar aberto."
-msgstr ""
-"Android-tunnusta ei pystytä hakemaan. \\ Varoitus: Waydroidin on oltava auki."
