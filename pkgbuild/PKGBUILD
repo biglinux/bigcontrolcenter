@@ -1,7 +1,7 @@
 # Maintainer: Bruno Goncalves <bigbruno@gmail.com>
 
 pkgname=bigcontrolcenter
-pkgver=$(date +%y.%m.%d)
+pkgver=$(date +%Y_%m_%d)
 pkgrel=$(date +%H%M)
 arch=('any')
 license=('GPL')
