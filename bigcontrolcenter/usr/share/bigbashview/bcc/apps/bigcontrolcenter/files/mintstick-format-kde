@@ -4,7 +4,6 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-#NAME=$"Formatar pen drive"
 COMMENT=""
 CATEGORY="System"
-ICON="icons/pendrive.png"
+ICON="icons/pendrive-format.svg"

@@ -4,7 +4,6 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-#NAME=$"Criar pen drive de boot"
 COMMENT=""
 CATEGORY="System"
-ICON="icons/mintstick.png"
+ICON="icons/pendrive-image-recorder.svg"

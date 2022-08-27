@@ -6,3 +6,4 @@ export TEXTDOMAIN=bigcontrolcenter
 
 EXEC="kcmshell5 kcm_device_automounter kamera kcm_solid_actions"
 CATEGORY="Hardware"
+ICON="icons/pendrive.svg"

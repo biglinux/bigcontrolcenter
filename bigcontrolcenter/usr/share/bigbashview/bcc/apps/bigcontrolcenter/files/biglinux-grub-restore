@@ -4,11 +4,5 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-COMMENT=$"Utilitário que facilita a restauração do sistema instalado,
-<br>
-principalmente a restauração do boot do sistema (Grub).
-<br><br>
-Também pode ser utilizado para acessar o gerenciador
-<br>
-de pacotes e o terminal do sistema instalado."
+COMMENT=$"Utilitário que facilita a restauração do sistema instalado, principalmente a restauração do boot do sistema (Grub). Também pode ser utilizado para acessar o gerenciador de pacotes e o terminal do sistema instalado."
 CATEGORY="System Star"
