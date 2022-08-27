@@ -5,4 +5,7 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 CATEGORY="System"
+NAME=$"Lixeira"
+COMMENT=""
+ICON="icons/user-trash.svg"
 
