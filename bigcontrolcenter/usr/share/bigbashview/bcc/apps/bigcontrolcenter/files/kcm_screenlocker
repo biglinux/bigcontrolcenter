@@ -5,5 +5,5 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 CATEGORY="Personalization"
-EXEC="kcmshell5 screenlocker"
+EXEC="kcmshell5 kcm_screenlocker"
 COMMENT=""
