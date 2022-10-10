@@ -20,6 +20,12 @@ if [ "$RESOLUTION" = "" ]; then
     echo "$RESOLUTION" > ${FOLDER_CONFIG}/resolution
 fi
 
+WITHOUT_VT=""
+if [ "$(systemd-detect-virt)" = "none" ] && [ "$(grep -E "vmx|svm" /proc/cpuinfo)" = "" ]; then
+    WITHOUT_VT=$"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção na BIOS do computador."
+fi
+
+
 # Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
 # That's include jquery and materialize / Isso inclui o jquery e o materialize
 # http://materializecss.com/
@@ -100,7 +106,6 @@ cat << EOF
   </div>
 
 </div>
-
   <div class="help-action">
     <p style='font-size:14px;'>
 EOF
@@ -362,16 +367,18 @@ cat << EOF
     </li>                          
   </ul>                          
 </div>
+EOF
+
+
+    echo "<br>" "$WITHOUT_VT"
                       
-            </div>
+echo '</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 </body>
-</html>
-EOF
+</html>'
 IFS=$OIFS
