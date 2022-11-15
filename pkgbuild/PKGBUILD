@@ -7,7 +7,7 @@ arch=('any')
 license=('GPL')
 url="https://github.com/biglinux/bigcontrolcenter"
 pkgdesc="Complete control center to use in BigLinux with KDE"
-depends=('bigbashview' 'kdialog' 'print-manager' 'gnome-alsamixer' 'inxi' 'biglinux-driver-manager' 'geticons')
+depends=('bigbashview' 'kdialog' 'print-manager' 'gnome-alsamixer' 'inxi' 'biglinux-driver-manager' 'geticons' 'biglinux-session-and-themes')
 source=("git+https://github.com/biglinux/bigcontrolcenter.git")
 md5sums=(SKIP)
 
