@@ -5,6 +5,6 @@ export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
 CATEGORY="Language"
-EXEC="kcmshell5 msm_language_packages formats translations"
+EXEC="kcmshell5 regionandlang msm_language_packages formats translations"
 ICON="icons/icon-multiple-language.svg"
 
