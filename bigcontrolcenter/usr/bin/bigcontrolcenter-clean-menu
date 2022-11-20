@@ -25,7 +25,6 @@ for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.
         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i" 2> /dev/null
         sed -i '/Categories/s/^/#/' "$bigdir/$i"  2> /dev/null
         sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i"  2> /dev/null
-    
         
 #         sed -i 's|QT_QUICK_BACKEND= ||g' "$bigdir/$i"
 #         echo 'X-KDE-ServiceTypes=KCModule
@@ -50,7 +49,18 @@ if [ -z "$(grep NoDisplay=true /usr/share/desktop-directories/kf5-unknown.direct
     echo "NoDisplay=true" | tee -a /usr/share/desktop-directories/kf5-unknown.directory 2> /dev/null
 fi
 
+# Fix permissions
+cd "$bigdir"
+chmod 644 *.desktop 2> /dev/null
+
+
+if [ -e "/usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop" ]; then
+    sed -i 's|X-KDE-SubstituteUID=true|X-KDE-SubstituteUID=false|g' /usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop
+fi
+
 update-desktop-database 2> /dev/null
+
+
 
 #     if [ -e "/usr/share/applications/systemsettings.desktop" ]; then
 #         mv -f "/usr/share/applications/systemsettings.desktop" "$bigdir/kdesettings.desktop"
