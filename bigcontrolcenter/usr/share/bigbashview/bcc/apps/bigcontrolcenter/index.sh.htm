@@ -637,8 +637,9 @@ if [ "$RELOAD" = "1" ]; then
 
     if [ -e "/usr/share/kservices5/msm_kernel.desktop" ]; then
 
-    EXEC="kcmshell5 msm_kernel"
-    NAME=$"Instalar versões de kernel"
+    #EXEC="kcmshell5 msm_kernel"
+    EXEC="big-kernel-manager"
+    NAME=$"Instalar versões de kernel e mesa"
     COMMENT=""
     CATEGORY="Star System"
     ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/icon-kernel.svg"
