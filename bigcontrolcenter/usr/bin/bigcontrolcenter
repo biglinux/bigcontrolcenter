@@ -26,6 +26,17 @@ else
     fi
 fi
 
+####################################
+# Verify number of files in bigcontrolcenter applications
+####################################
+if [ "$(ls /usr/share/applications/bigcontrolcenter | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/bccapps_number")" ]; then
+    ls /usr/share/applications/bigcontrolcenter | wc -l > "$HOME/.config/bigcontrolcenter/bccapps_number"
+    RELOAD="1"
+fi
+
+
+
+
 #########################
 # Verify language changed
 #########################
