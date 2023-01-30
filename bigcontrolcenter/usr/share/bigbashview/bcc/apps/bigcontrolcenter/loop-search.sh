@@ -14,8 +14,7 @@ IFS=$'\n'
 ##########################
 
 
-rm -f "$HOME/.config/bigcontrolcenter/cache-.*.html"
-rm -f "$HOME/.config/bigcontrolcenter/show_other"
+
 
 parallel_search () {
 
@@ -77,6 +76,7 @@ cat << EOF >> "$HOME/.config/bigcontrolcenter/cache-$filename.html"
     </div>
 EOF
 
+wait
 }
 
 SERVICES="$(grep -Rl 'kcmshell5\|kcontrol' /usr/share/kservices5/ | grep -ve kcmdolphingeneral.desktop -ve kcmdolphinnavigation.desktop -ve kcmdolphinservices.desktop -ve kcmdolphinviewmodes.desktop -ve cache.desktop -ve cookies.desktop -ve kcmtrash.desktop -ve netpref.desktop -ve proxy.desktop -ve useragent.desktop -ve webshortcuts.desktop -ve kcm_ssl.desktop -ve bluedevildevices.desktop -ve bluedevilglobal.desktop -ve formats.desktop -ve camera.desktop -ve fontinst.desktop -ve powerdevilactivitiesconfig.desktop -ve kcm_plasmasearch.desktop -ve kcm_kdeconnect -ve kwinscreenedges.desktop -ve kwintouchscreen.desktop -ve keys.desktop -ve standard_actions.desktop -ve khotkeys.desktop -ve qtquicksettings.desktop -ve solid-actions -ve spellchecking.desktop -ve kwinactions.desktop -ve kwinfocus.desktop -ve kwinmoving.desktop -ve kwinoptions.desktop -ve kwinrules.desktop -ve kcm_kwin_scripts.desktop -ve kwintabbox.desktop -ve breezestyleconfig.desktop -ve breezedecorationconfig.desktop -ve oxygenstyleconfig.desktop -ve oxygendecorationconfig -ve kcm_pulseaudio -ve emoticons.desktop -ve kcm_nightcolor -ve kgamma.desktop -ve powerdevilglobalconfig.desktop -ve kwincompositing.desktop -ve kcmsmserver.desktop -ve kcmkded.desktop -ve kamera.desktop -ve kcm_kwin_virtualdesktops.desktop -ve powerdevilprofilesconfig.desktop -ve kcmperformance.desktop -ve kcmkonqyperformance.desktop -ve bookmarks.desktop -ve msm_user.desktop -ve kcm_kscreen.desktop -ve kcm_feedback.desktop -ve kcm_users.desktop -ve msm_kernel.desktop -ve kcm_kdisplay.desktop -ve msm_keyboard.desktop -ve msm_language_packages.desktop -ve msm_locale.desktop -ve msm_mhwd.desktop -ve kcm_lookandfeel.desktop -ve sierrabreezeenhancedconfig.desktop -ve msm_timedate.desktop -ve kcm_virtualkeyboard.desktop -ve lightlystyleconfig.desktop -ve lightlydecorationconfig.desktop -ve kcm_landingpage.desktop -ve libkcddb.desktop -ve kcm_solid_actions.desktop -ve classikstyleconfig.desktop -ve classikdecorationconfig.desktop -ve klassydecorationconfig.desktop -ve klassystyleconfig.desktop)"
@@ -112,5 +112,6 @@ $SERVICES3"); do
 
 wait
 
+rm -f "$HOME/.config/bigcontrolcenter/reload"
 
 IFS=$OIFS

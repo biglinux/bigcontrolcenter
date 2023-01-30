@@ -9,4 +9,59 @@ TITLE=$"Central de Controle"
 
 
 cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
-(QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x640 main.sh.htm -i icon.png)
+mkdir -p ~/.config/bigcontrolcenter
+
+RELOAD="0"
+
+####################################
+# Verify number of kcmshell5 changed
+####################################
+if [ ! -e "$HOME/.config/bigcontrolcenter/kcmshell_number" ]; then
+    grep -Rl 'kcm_' /usr/share/applications/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+    RELOAD="1"
+else
+    if [ "$(grep -Rl 'kcm_' /usr/share/applications/ | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/kcmshell_number")" ]; then
+        grep -Rl 'kcm_' /usr/share/applications/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
+        RELOAD="1"
+    fi
+fi
+
+#########################
+# Verify language changed
+#########################
+if [ "$LANG" != "$(cat "$HOME/.config/bigcontrolcenter/lang")" ]; then
+    echo "$LANG" >"$HOME/.config/bigcontrolcenter/lang"
+    RELOAD="1"
+fi
+
+#################################
+# Verify bigcontrolcenter version
+#################################
+if [ "$(pacman -Q bigcontrolcenter | cut -f2 -d" ")" != "$(cat "$HOME/.config/bigcontrolcenter/version")" ]; then
+    pacman -Q bigcontrolcenter | cut -f2 -d" " > "$HOME/.config/bigcontrolcenter/version"
+    RELOAD="1"
+fi
+
+
+#################
+# Desativar Cache 
+#################
+
+#RELOAD=1 # Desativado RELOAD=1
+
+if [ "$RELOAD" = "1" ]; then
+    rm -f ~/.config/bigcontrolcenter/cache*
+    rm -f ~/.config/bigcontrolcenter/icons/*
+    rm -f "$HOME/.config/bigcontrolcenter/show_other"
+	> "$HOME/.config/bigcontrolcenter/reload" # Cria arquivo para ser removido dentro do loop-search e verificado no index.sh.htm quando deve prosseguir
+	> "$HOME/.config/bigcontrolcenter/refresh" # Cria arquivo para ser removido dentro do index.sh.htm
+	#########################################################
+	# START CACHE 1
+	#########################################################
+	nice -n 15 ./loop-search.sh &
+    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x640 main.sh.htm -i icon.png
+else
+    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x640 index.sh.htm -i icon.png
+fi
+
+
