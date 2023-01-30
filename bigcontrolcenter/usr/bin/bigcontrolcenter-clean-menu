@@ -12,7 +12,7 @@ for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.
 #add /usr/share/kservices5/kcm_kscreen.desktop
 
     #remover as entradas do KCModulee Type=Service e desocultar a categoria
-    if [ -e "/usr/share/applications/$i" ]; then
+    if [ -s "/usr/share/applications/$i" ]; then
         mv -f "/usr/share/applications/$i" "$bigdir/$i" 2> /dev/null
         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i" 2> /dev/null
 #         sed -i '/X-KDE-ServiceTypes=KCModule/d' "$bigdir/$i"
@@ -20,7 +20,7 @@ for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.
         sed -i '/Categories/s/^/#/' "$bigdir/$i"  2> /dev/null
         sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i"  2> /dev/null
         
-    elif [ -e "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
+    elif [ -s "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
         mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "$bigdir/$i" 2> /dev/null
         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i" 2> /dev/null
         sed -i '/Categories/s/^/#/' "$bigdir/$i"  2> /dev/null
@@ -37,7 +37,7 @@ for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.
 #         fi
     fi
 
-    if [ -e "/usr/share/applications/$i" ]; then
+    if [ ! -e "/usr/share/applications/$i" ]; then
 		EXEC="$(which $(grep -m1 "Exec=" "$bigdir/$i" | cut -f2 -d= | cut -f1 -d" "))"
 		if [ "$EXEC" = "" ]; then
 			rm -f "$bigdir/$i" 2> /dev/null
