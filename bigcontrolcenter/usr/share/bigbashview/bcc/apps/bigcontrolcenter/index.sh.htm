@@ -466,6 +466,14 @@ if [ -e "$HOME/.config/bigcontrolcenter/refresh" ]; then
     fi
 
     ######
+    
+    EXEC="kcmshell5 kcm_desktoptheme"
+    NAME=$"Tema da área de trabalho"
+    COMMENT=$""
+    ICON="icons/preferences-desktop-plasma-theme.png"
+    CATEGORY="Personalization"
+
+    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
     EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
     NAME=$"Monitores e Telas"
