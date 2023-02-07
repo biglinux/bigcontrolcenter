@@ -38,14 +38,14 @@ for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.
     fi
 
     if [ ! -e "/usr/share/applications/$i" ]; then
-		EXEC="$(which $(grep -m1 "Exec=" "$bigdir/$i" | cut -f2 -d= | cut -f1 -d" "))"
+		EXEC="$(which $(grep -m1 "Exec=" "$bigdir/$i" | cut -f2 -d= | cut -f1 -d" " 2> /dev/null))"
 		if [ "$EXEC" = "" ]; then
 			rm -f "$bigdir/$i" 2> /dev/null
 		fi
     fi
 
 done
-if [ -z "$(grep NoDisplay=true /usr/share/desktop-directories/kf5-unknown.directory  )" ]; then 
+if [ -z "$(grep NoDisplay=true /usr/share/desktop-directories/kf5-unknown.directory  2> /dev/null)" ]; then 
     echo "NoDisplay=true" | tee -a /usr/share/desktop-directories/kf5-unknown.directory 2> /dev/null
 fi
 
