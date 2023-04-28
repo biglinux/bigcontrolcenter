@@ -1,6 +1,5 @@
 #!/bin/bash
 
-kdialog --msgbox "$PWD/number_root.run"
 
 NUMBER="$(pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true $PWD/number_root.run "$HOME")"
 
