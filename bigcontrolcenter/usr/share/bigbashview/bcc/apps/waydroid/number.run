@@ -1,6 +1,8 @@
 #!/bin/bash
 
-NUMBER="$(pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true sqlite3 /var/lib/waydroid/data/data/com.google.android.gsf/databases/gservices.db "select * from main where name='android_id';" | cut -f2 -d"|")"
+kdialog --msgbox "$PWD/number_root.run"
+
+NUMBER="$(pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true $PWD/number_root.run "$HOME")"
 
 IDANDROID=$"ID do Android:"
 IDANDROIDERRO=$"Não foi possível resgatar o ID do Android. \n\nAtenção: Waydroid precisa estar aberto."
@@ -14,3 +16,5 @@ else
 kdialog --msgbox "$IDANDROIDERRO" --title "Android ID"
 
 fi
+
+
