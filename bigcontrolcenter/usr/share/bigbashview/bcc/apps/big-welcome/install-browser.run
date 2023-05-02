@@ -33,7 +33,7 @@ else
 	pamac-installer $BROWSER
 fi
 
-xdotool key F5
+# xdotool key F5
 
 if [ "$BROWSER" = "vivaldi" ];then
     ./run-browser.run vivaldi-stable.desktop
