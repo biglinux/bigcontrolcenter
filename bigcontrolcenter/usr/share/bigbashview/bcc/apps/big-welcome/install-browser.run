@@ -1,0 +1,47 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigbrowserselector
+
+#novo browser padrão, o $1 vem do index.sh.htm
+BROWSER=$1
+
+#atualiza banco de pacotes e verifica se tem conexão a internet
+windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
+sleep 600 | zenity --attach="$windowID" --width=300 --progress --title=$"Aguarde..." --pulsate --no-cancel --auto-close --text $"Verificando conexão com a Internet..." &
+#esperar terminar de gerar as chaves
+while [ -n "$(top -b -d1 n1 | grep gpg$)" ]; do
+    sleep 0.5
+done
+
+curl -s --max-time 2 -I http://google.com > /dev/null
+if [ "$?" != "0" ];then
+    windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
+    zenity --attach="$windowID" --error --width=300 --title="Internet" --text $"Sem conexão com a Internet..."
+#     sudo killall python3
+    killall zenity
+    exit 1
+else
+    killall zenity
+fi
+
+# if [ -n "$(echo $BROWSER | grep -E "brave-browser|firefox|chromium|vivaldi|opera")" ];then
+if [ -n "$(echo $BROWSER | grep -E "google-chrome|librewolf-bin")" ];then
+	pamac-installer --build $BROWSER
+else
+	pamac-installer $BROWSER
+fi
+
+xdotool key F5
+
+if [ "$BROWSER" = "vivaldi" ];then
+    ./run-browser.run vivaldi-stable.desktop
+elif [ "$BROWSER" = "librewolf-bin" ];then
+    ./run-browser.run librewolf.desktop
+elif [ "$BROWSER" = "falkon" ];then
+    ./run-browser.run org.kde.falkon.desktop
+else
+    ./run-browser.run ${BROWSER}.desktop
+fi
+exit

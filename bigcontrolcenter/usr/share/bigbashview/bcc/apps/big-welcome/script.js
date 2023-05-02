@@ -1,10 +1,10 @@
 
-$(document).ready(function() {
-var pageRefresh = 7000; // 7s
-    setInterval(function() {
-        refresh();
-    }, pageRefresh);
-});
+// $(document).ready(function() {
+// var pageRefresh = 7000; // 7s
+//     setInterval(function() {
+//         refresh();
+//     }, pageRefresh);
+// });
 
 // Functions
 
