@@ -121,6 +121,7 @@ $(document).ready(function(){
     $("#myDivfalkon").css("display", "block");
     $("#myDivedge").css("display", "none");
     refresh();
+  });
   // Set div display edge
   $(".show-edge").click(function(){
     $("#myDivbrave").css("display", "none");
