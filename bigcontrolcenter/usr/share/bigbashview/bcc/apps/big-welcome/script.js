@@ -17,84 +17,124 @@ function refresh() {
 
 
 $(document).ready(function(){
-    // Set div display to Brave
-    $(".show-brave").click(function(){
-        $("#myDivbrave").css("display", "block");
-        $("#myDivfire").css("display", "none");
-        $("#myDivchrome").css("display", "none");
-        $("#myDivchromium").css("display", "none");
-        $("#myDivvivaldi").css("display", "none");
-        $("#myDivopera").css("display", "none");
-        $("#myDivedge").css("display", "none");
-        refresh();
-    });
-    
-    // Set div display to Firefox
-    $(".show-fire").click(function(){
-        $("#myDivfire").css("display", "block");
-        $("#myDivbrave").css("display", "none");
-        $("#myDivchrome").css("display", "none");
-        $("#myDivchromium").css("display", "none");
-        $("#myDivvivaldi").css("display", "none");
-        $("#myDivopera").css("display", "none");
-        $("#myDivedge").css("display", "none");
-        refresh();
-    });
-    // Set div display Google Chrome
-    $(".show-chrome").click(function(){
-        $("#myDivchrome").css("display", "block");
-        $("#myDivbrave").css("display", "none");
-        $("#myDivfire").css("display", "none");
-        $("#myDivchromium").css("display", "none");
-        $("#myDivvivaldi").css("display", "none");
-        $("#myDivopera").css("display", "none");
-        $("#myDivedge").css("display", "none");
-        refresh();
-    });
-    // Set div display Chromium
-    $(".show-chromium").click(function(){
-        $("#myDivchromium").css("display", "block");
-        $("#myDivbrave").css("display", "none");
-        $("#myDivfire").css("display", "none");
-        $("#myDivchrome").css("display", "none");
-        $("#myDivvivaldi").css("display", "none");
-        $("#myDivopera").css("display", "none");
-        $("#myDivedge").css("display", "none");
-        refresh();
-    });
-    // Set div display Vivaldi
-    $(".show-vivaldi").click(function(){
-        $("#myDivvivaldi").css("display", "block");
-        $("#myDivbrave").css("display", "none");
-        $("#myDivfire").css("display", "none");
-        $("#myDivchrome").css("display", "none");
-        $("#myDivchromium").css("display", "none");
-        $("#myDivopera").css("display", "none");
-        $("#myDivedge").css("display", "none");
-        refresh();
-    });
-    // Set div display Opera
-    $(".show-opera").click(function(){
-        $("#myDivopera").css("display", "block");
-        $("#myDivbrave").css("display", "none");
-        $("#myDivfire").css("display", "none");
-        $("#myDivchrome").css("display", "none");
-        $("#myDivchromium").css("display", "none");
-        $("#myDivvivaldi").css("display", "none");
-        $("#myDivedge").css("display", "none");
-        refresh();
-    });
-    // Set div display Opera
-    $(".show-edge").click(function(){
-        $("#myDivedge").css("display", "block");
-        $("#myDivbrave").css("display", "none");
-        $("#myDivfire").css("display", "none");
-        $("#myDivchrome").css("display", "none");
-        $("#myDivchromium").css("display", "none");
-        $("#myDivvivaldi").css("display", "none");
-        $("#myDivopera").css("display", "none");
-        refresh();
-    });
+  // Set div display to Brave
+  $(".show-brave").click(function(){
+    $("#myDivbrave").css("display", "block");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  
+  // Set div display to Firefox
+  $(".show-fire").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "block");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  // Set div display Google Chrome
+  $(".show-chrome").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "block");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  // Set div display Chromium
+  $(".show-chromium").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "block");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  // Set div display Vivaldi
+  $(".show-vivaldi").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "block");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  // Set div display Opera
+  $(".show-opera").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "block");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  // Set div display librewolf
+  $(".show-librewolf").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "block");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  // Set div display falkon
+  $(".show-falkon").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "block");
+    $("#myDivedge").css("display", "none");
+    refresh();
+  });
+  // Set div display edge
+  $(".show-edge").click(function(){
+    $("#myDivbrave").css("display", "none");
+    $("#myDivfire").css("display", "none");
+    $("#myDivchrome").css("display", "none");
+    $("#myDivchromium").css("display", "none");
+    $("#myDivvivaldi").css("display", "none");
+    $("#myDivopera").css("display", "none");
+    $("#myDivlibrewolf").css("display", "none");
+    $("#myDivfalkon").css("display", "none");
+    $("#myDivedge").css("display", "block");
+    refresh();
+  });
 });
 
 class Steps {

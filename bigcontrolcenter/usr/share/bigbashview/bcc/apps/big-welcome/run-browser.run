@@ -35,7 +35,7 @@ fi
 #caixa de dialogo
 # kdialog --attach="$windowID" --title $"Navegador Padrão" \
 # 		--msgbox $"O navegador $BROWSER foi definido como padrão com sucesso!"
-xdotool key F5
+# xdotool key F5
 exit
 
 
