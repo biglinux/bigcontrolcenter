@@ -5,11 +5,11 @@
 * {
     box-sizing: border-box;
   --text-size-tiny: 12px;
-  --text-size-small: 14px;
-  --text-size-medium: 15px;
-  --text-size-big: 16px;
-  --text-size-large: 17px;
-  --text-size-huge: 18px;
+  --text-size-small: 15px;
+  --text-size-medium: 16px;
+  --text-size-big: 17px;
+  --text-size-large: 18px;
+  --text-size-huge: 19px;
 }
 
 :root {
@@ -437,7 +437,7 @@ body.light-mode:before {
     border: none;
 }
 .content-button:focus {
-    background-color: #006699;
+    background-color: #006699;click button onfocus no border effect
     outline: none;
     border: none;
 }
