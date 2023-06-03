@@ -425,6 +425,23 @@ body.light-mode:before {
     text-decoration: none;
 }
 
+.content-button:active {
+    background-color: #1e59f1;
+    outline: none;
+    border: none;
+}
+
+.content-button:focus-visible {
+    background-color: #006699;
+    outline: none;
+    border: none;
+}
+.content-button:focus {
+    background-color: #006699;
+    outline: none;
+    border: none;
+}
+
 .content-wrapper-img {
     width: 96px;
     object-fit: cover;
