@@ -70,9 +70,9 @@ if [ "$RELOAD" = "1" ]; then
 	# START CACHE 1
 	#########################################################
 	nice -n 15 ./loop-search.sh &
-    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x640 main.sh.htm -i icon.png
+    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x645 main.sh.htm -i icon.png
 else
-    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x640 index.sh.htm -i icon.png
+    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x645 index.sh.htm -i icon.png
 fi
 
 
