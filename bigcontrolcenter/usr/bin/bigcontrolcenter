@@ -1,78 +1,96 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+#sets
+set +o noclobber
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
-
-
+declare -i RELOAD=0
+declare userpath="$HOME/.config/bigcontrolcenter"
+declare appspath='/usr/share/applications'
 TITLE=$"Central de Controle"
 
+cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/ || exit
+[[ ! -e "$userpath" ]] && mkdir -p "$userpath"
 
-cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/
-mkdir -p ~/.config/bigcontrolcenter
-
-RELOAD="0"
-
-####################################
 # Verify number of kcmshell5 changed
-####################################
-if [ ! -e "$HOME/.config/bigcontrolcenter/kcmshell_number" ]; then
-    grep -Rl 'kcm_' /usr/share/applications/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
-    RELOAD="1"
-else
-    if [ "$(grep -Rl 'kcm_' /usr/share/applications/ | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/kcmshell_number")" ]; then
-        grep -Rl 'kcm_' /usr/share/applications/ | wc -l > "$HOME/.config/bigcontrolcenter/kcmshell_number"
-        RELOAD="1"
-    fi
-fi
+function verify_kcm_number {
+	local nfiles_kcm_user
+	local nfiles_kcm_apps
 
-####################################
+	nfiles_kcm_user=0
+	nfiles_kcm_apps=$(wc -l < <(find "$appspath" -type f,l -name 'kcm_*'))
+	[[ -e "$userpath/kcmshell_number" ]] && nfiles_kcm_user=$(printf "%s" "$(<"$userpath/kcmshell_number")")
+	if (( nfiles_kcm_apps != nfiles_kcm_user )); then
+		echo "$nfiles_kcm_apps" > "$userpath/kcmshell_number"
+		RELOAD=1
+	fi
+}
+
 # Verify number of files in bigcontrolcenter applications
-####################################
-if [ "$(ls /usr/share/applications/bigcontrolcenter | wc -l)" != "$(cat "$HOME/.config/bigcontrolcenter/bccapps_number")" ]; then
-    ls /usr/share/applications/bigcontrolcenter | wc -l > "$HOME/.config/bigcontrolcenter/bccapps_number"
-    RELOAD="1"
-fi
+function verify_number_files_bcc_apps {
+	local	nfiles_bcc_user
+	local	nfiles_bcc_apps
 
+	nfiles_bcc_user=0
+	nfiles_bcc_apps=$(wc -l < <(find "$appspath/bigcontrolcenter" -type f))
+	[[ -e "$userpath/bccapps_number" ]] && nfiles_bcc_user=$(printf "%s" "$(<"$userpath/bccapps_number")")
+	if (( nfiles_bcc_apps != nfiles_bcc_user )); then
+		echo "$nfiles_bcc_apps" > "$userpath/bccapps_number"
+		RELOAD=1
+	fi
+}
 
-
-
-#########################
 # Verify language changed
-#########################
-if [ "$LANG" != "$(cat "$HOME/.config/bigcontrolcenter/lang")" ]; then
-    echo "$LANG" >"$HOME/.config/bigcontrolcenter/lang"
-    RELOAD="1"
-fi
+function verify_user_language {
+	local	user_lang
 
-#################################
+	user_lang=''
+	[[ -e "$userpath/lang" ]] && user_lang=$(printf "%s" "$(<"$userpath/lang")")
+	if [[ "$LANG" != "$user_lang" ]]; then
+		echo "$LANG" > "$userpath/lang"
+		RELOAD=1
+	fi
+}
+
 # Verify bigcontrolcenter version
-#################################
-if [ "$(pacman -Q bigcontrolcenter | cut -f2 -d" ")" != "$(cat "$HOME/.config/bigcontrolcenter/version")" ]; then
-    pacman -Q bigcontrolcenter | cut -f2 -d" " > "$HOME/.config/bigcontrolcenter/version"
-    RELOAD="1"
-fi
+function verify_bcc_version {
+	local user_version
+	local bcc_version
 
+	user_version=''
+	bcc_version=$(pacman -Q bigcontrolcenter | cut -f2 -d' ')
+	[[ -e "$userpath/version" ]] && user_version=$(printf "%s" "$(<"$userpath/version")")
+	if [[ "$bcc_version" != "$user_version" ]]; then
+		echo "$bcc_version" > "$userpath/version"
+		RELOAD=1
+	fi
+}
 
-#################
-# Desativar Cache 
-#################
+# Desativar Cache
+function verify_cache {
+	#RELOAD=1 # Desativado RELOAD=1
+	if (( RELOAD )); then
+		rm -f "$userpath/cache*"
+		rm -f "$userpath/icons/*"
+		rm -f "$userpath/show_other"
+		# Cria arquivo para ser removido dentro do loop-search e verificado no index.sh.htm quando deve prosseguir
+		echo '' > "$userpath/reload"
+		# Cria arquivo para ser removido dentro do index.sh.htm
+		echo '' > "$userpath/refresh"
+		#########################################################
+		# START CACHE 1
+		#########################################################
+		nice -n 15 ./loop-search.sh &
+		QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x645 main.sh.htm -i icon.png
+	else
+		QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x645 index.sh.htm -i icon.png
+	fi
+}
 
-#RELOAD=1 # Desativado RELOAD=1
-
-if [ "$RELOAD" = "1" ]; then
-    rm -f ~/.config/bigcontrolcenter/cache*
-    rm -f ~/.config/bigcontrolcenter/icons/*
-    rm -f "$HOME/.config/bigcontrolcenter/show_other"
-	> "$HOME/.config/bigcontrolcenter/reload" # Cria arquivo para ser removido dentro do loop-search e verificado no index.sh.htm quando deve prosseguir
-	> "$HOME/.config/bigcontrolcenter/refresh" # Cria arquivo para ser removido dentro do index.sh.htm
-	#########################################################
-	# START CACHE 1
-	#########################################################
-	nice -n 15 ./loop-search.sh &
-    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x645 main.sh.htm -i icon.png
-else
-    QT_QPA_PLATFORM=xcb SDL_VIDEODRIVER=x11 WINIT_UNIX_BACKEND=x11 GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x645 index.sh.htm -i icon.png
-fi
-
-
+verify_kcm_number
+verify_number_files_bcc_apps
+verify_user_language
+verify_bcc_version
+verify_cache
