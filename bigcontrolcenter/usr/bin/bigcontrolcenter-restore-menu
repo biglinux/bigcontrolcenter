@@ -1,48 +1,148 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-#diretorio onde vão estar os arquivos ocultos do menu
-bigdir=/usr/share/applications/bigcontrolcenter
+#	bigcontrolcenter-restore-menu
+#  Created: 0000/00/00
+#  Altered: 2023/07/16
+#
+#  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
+#                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
+#  All rights reserved.
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#  1. Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+#  2. Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+#  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+#  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+#  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+#  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+#  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+#  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-mkdir -p "$bigdir"
+function sh_debug {
+	red=$(tput setaf 124);
+	green=$(tput setaf 2);
+	pink=$(tput setaf 129);
+	reset=$(tput sgr0);
+	export PS4='${red}${0##*/}${green}[$FUNCNAME]${pink}[$LINENO]${reset} '
+	set -x
+	set -e
+	shopt -s extglob
+}
 
-for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "tlpui.desktop" "kdesystemsettings.desktop" "org.kde.kinfocenter.desktop" "grub-customizer.desktop" "biglinux-tweaks.desktop" "kvantummanager.desktop" "manjaro-settings-manager.desktop" "msm_kde_notifier_settings.desktop" "designer.desktop" "linguist.desktop" "qdbusviewer.desktop" "assistant.desktop" "UserFeedbackConsole.desktop" "cmake-gui.desktop" "avahi-discover.desktop" "bssh.desktop" "bvnc.desktop" "htop.desktop" "lstopo.desktop" "cups.desktop" "org.gnome.baobab.desktop" "qv4l2.desktop" "qvidcap.desktop" "mpv.desktop" "hplip.desktop" "hp-uiscan.desktop" "systemsettings.desktop" "kdesettings.desktop" "org.kde.kuserfeedback-console.desktop" "gsmartcontrol.desktop" "org.pipewire.Helvum.desktop" "bootsplash-manager.desktop" "gnome-alsamixer.desktop" "appimagelaunchersettings.desktop" "org.kde.ksystemlog.desktop" "jamesdsp.desktop" "brightness-controller.desktop"; do
+function sh_config {
+	#diretorio onde vão estar os arquivos ocultos do menu
+	declare -gA APath=([bigdir_path]='/usr/share/applications/bigcontrolcenter'
+							 [ksrv_path]='/usr/share/kservices5/bigcontrolcenter'
+							)
+	declare -ga aDesktopFiles
+:<<'comment'
+	declare -g bigdir='/usr/share/applications/bigcontrolcenter'
+	declare -g ksrv_path='/usr/share/kservices5/bigcontrolcenter'
+	declare -ga aDesktopFiles=(
+					"biglinux-config.desktop"
+					"big-reset.desktop"
+					"system-config-printer.desktop"
+					"openjdk-8-policytool.desktop"
+					"pavucontrol-qt.desktop"
+					"bigkernel.desktop"
+					"gufw.desktop"
+					"gparted.desktop"
+					"hardinfo.desktop"
+					"bigapache.desktop"
+					"timeshift-gtk.desktop"
+					"mintstick-kde.desktop"
+					"mintstick-format-kde.desktop"
+					"biglinux-themes-gui.desktop"
+					"sambasearch.desktop"
+					"org.kde.kwalletmanager5.desktop"
+					"bigflash-javaws-widevine-fonts.desktop"
+					"tlpui.desktop"
+					"kdesystemsettings.desktop"
+					"org.kde.kinfocenter.desktop"
+					"grub-customizer.desktop"
+					"biglinux-tweaks.desktop"
+					"kvantummanager.desktop"
+					"manjaro-settings-manager.desktop"
+					"msm_kde_notifier_settings.desktop"
+					"designer.desktop"
+					"linguist.desktop"
+					"qdbusviewer.desktop"
+					"assistant.desktop"
+					"UserFeedbackConsole.desktop"
+					"cmake-gui.desktop"
+					"avahi-discover.desktop"
+					"bssh.desktop"
+					"bvnc.desktop"
+					"htop.desktop"
+					"lstopo.desktop"
+					"cups.desktop"
+					"org.gnome.baobab.desktop"
+					"qv4l2.desktop"
+					"qvidcap.desktop"
+					"mpv.desktop"
+					"hplip.desktop"
+					"hp-uiscan.desktop"
+					"systemsettings.desktop"
+					"kdesettings.desktop"
+					"org.kde.kuserfeedback-console.desktop"
+					"gsmartcontrol.desktop"
+					"org.pipewire.Helvum.desktop"
+					"bootsplash-manager.desktop"
+					"gnome-alsamixer.desktop"
+					"appimagelaunchersettings.desktop"
+					"org.kde.ksystemlog.desktop"
+					"jamesdsp.desktop"
+					"brightness-controller.desktop"
+					)
+comment
+}
 
+# Usando find para localizar arquivos .desktop e salvá-los em um array
+function sh_search_desktop_files {
+	local aFiles=()
 
-if [ -e "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
+	for i in "${APath[@]}"; {
+#		aDesktopFiles+=($(find "$i" -type f -name "*.desktop"))
+		mapfile -t aFiles < <(find "$i" -type f -name "*.desktop")
+		aDesktopFiles+=("${aFiles[@]}")
+	}
+}
 
-    EXEC="$(which $(grep -m1 "Exec=" "/usr/share/kservices5/bigcontrolcenter/$i" | cut -f2 -d= | cut -f1 -d" "))"
-    
-    if [ "$EXEC" = "" ]; then
-        rm -f "/usr/share/kservices5/bigcontrolcenter/$i"
-    fi
-    
-        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "/usr/share/kservices5/bigcontrolcenter/$i"
-        sed -i '/Categories/s/#//' "/usr/share/kservices5/bigcontrolcenter/$i"
-        sed -i '/DBusActivatable/s/#//' "/usr/share/kservices5/bigcontrolcenter/$i"
-        mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "/usr/share/applications/$i"
+function sh_change_file {
+	local cfile="$1"
 
-elif [ -e "$bigdir/$i" ]; then
-     EXEC="$(which $(grep -m1 "Exec=" "$bigdir/$i" | cut -f2 -d= | cut -f1 -d" "))"
-    
-    if [ "$EXEC" = "" ]; then
-        rm -f "$bigdir/$i"
-    fi
-    
-        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i"
-        sed -i '/Categories/s/#//' "$bigdir/$i"
-        sed -i '/DBusActivatable/s/#//' "$bigdir/$i"
-        mv -f "$bigdir/$i" "/usr/share/applications/$i"
+	sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g;/Categories/s/#//;/DBusActivatable/s/#//' "$cfile" >/dev/null 2>&-
+	mv -f "$cfile" "/usr/share/applications/" >/dev/null 2>&-
+}
 
-fi
+function sh_init {
+	[[ ! -e "${APath[bigdir_path]}" && ! -e "${APath[ksrv_path]}" ]] && return
 
-done
+	sh_search_desktop_files
+	for i in "${aDesktopFiles[@]}"; {
+		if [[ -e "$i" ]]; then
+#			EXEC="$(awk -F '=' '/Exec=/ {split($2, a, " "); print a[1]}' "$i")"
+			EXEC="$(grep -m1 "Exec=" "$i" | cut -f2 -d= | cut -f1 -d" ")"
 
-#     if [ -e "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop" ]; then
-#         mv -f "/usr/share/kservices5/bigcontrolcenter/kdesettings.desktop" "/usr/share/applications/systemsettings.desktop"
-#         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "/usr/share/applications/systemsettings.desktop"
-#     elif [ -e "$bigdir/kdesettings.desktop" ]; then
-#         mv -f "$bigdir/kdesettings.desktop" "/usr/share/applications/systemsettings.desktop"
-#         sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "/usr/share/applications/systemsettings.desktop"
-#     fi
+			if ! which "$EXEC"; then
+				rm -f "$i" >/dev/null 2>&-
+				continue
+			fi
+			sh_change_file "$i"
+		fi
+	}
+}
 
-
+#sh_debug
+sh_config
+sh_init
