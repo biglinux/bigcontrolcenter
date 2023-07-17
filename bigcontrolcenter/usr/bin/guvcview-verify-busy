@@ -1,20 +1,93 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
+#  guvcview-verify-busy
+#  Created: 0000/00/00
+#  Altered: 2023/07/16
+#
+#  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
+#                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
+#  All rights reserved.
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#  1. Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+#  2. Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+#  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+#  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+#  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+#  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+#  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+#  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-WEBCAM_BUSY="$(ps ax | grep $(fuser /dev/video0 2> /dev/null) | grep -v grep | awk '{print $5}')"
+readonly red=$(tput setaf 124);
+readonly green=$(tput setaf 2);
+readonly pink=$(tput setaf 129);
+readonly reset=$(tput sgr0);
+readonly cyan=$(tput setaf 6)
+readonly yellow=$(tput bold)$(tput setaf 3)
+readonly APP="${0##*/}"
 
-if [ "$WEBCAM_BUSY" = "" ]; then
-    guvcview
-else
-kdialog --msgbox $"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY
+function sh_debug {
+	export PS4='${red}${0##*/}${green}[$FUNCNAME]${pink}[$LINENO]${reset} '
+	set -x
+	set -e
+	shopt -s extglob
+}
+
+function sh_config {
+	#Translation
+	readonly DEPENDENCIES=(lsof kdialog guvcview)
+	export TEXTDOMAINDIR="/usr/share/locale"
+	export TEXTDOMAIN=bigcontrolcenter
+	declare -g video_device='/dev/video0'
+}
+
+function sh_checkDependencies {
+	local d
+	local errorFound=0
+	declare -a missing
+
+	for d in "${DEPENDENCIES[@]}"; do
+      [[ -z $(command -v "$d") ]] && missing+=("$d") && errorFound=1 && printf '%s\n' "${red}ERROR${reset}: Command not found ${cyan}'$d'${reset}"
+   done
+   if (( errorFound )); then
+      echo "${yellow}--------------IMPOSSÍVEL CONTINUAR-------------${reset}"
+      echo "Esse script precisa dos comandos listados acima" >&2
+      echo "Instale-os e/ou verifique se estão no seu \$PATH" >&2
+      echo "${yellow}-----------------------------------------------${reset}"
+		exit 1
+   fi
+}
+
+function sh_init {
+	if ! test -c "$video_device"; then
+		kdialog --title $"Webcam" --error $"Nenhuma webcam localizada."
+		return
+	fi
+
+	WEBCAM_BUSY=$(lsof "$video_device" 2>/dev/null | awk 'NR==2 {print $1}')
+	if [[ -z "$WEBCAM_BUSY" ]]; then
+		guvcview >/dev/null 2>&-
+	else
+		kdialog --msgbox $"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY
 
 Abrirei em modo de configuração.
 As alterações feitas podem ser vistas
 na imagem da sua webcam em outros programas." --title $"Webcam"
-    guvcview -z
-fi
+		guvcview -z >/dev/null 2>&-
+	fi
+}
 
-
+#sh_debug
+sh_config
+sh_checkDependencies
+sh_init
