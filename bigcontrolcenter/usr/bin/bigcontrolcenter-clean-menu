@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#shellcheck disable=SC2155
+#shellcheck source=/dev/null
 
 #  bigcontrolcenter-clean-menu
 #  Created: 0000/00/00
@@ -32,8 +34,6 @@ readonly red=$(tput setaf 124);
 readonly green=$(tput setaf 2);
 readonly pink=$(tput setaf 129);
 readonly reset=$(tput sgr0);
-readonly cyan=$(tput setaf 6)
-readonly yellow=$(tput bold)$(tput setaf 3)
 readonly APP="${0##*/}"
 
 function sh_debug {
@@ -151,7 +151,9 @@ function sh_init {
 
 	cfile='/usr/share/desktop-directories/kf5-unknown.directory'
 	if [[ -e "$cfile" ]]; then
-		[[ -z "$(grep NoDisplay=true "$cfile" 2> /dev/null)" ]] && echo "NoDisplay=true" | tee -a "$cfile" 2> /dev/null
+		if ! grep -q NoDisplay=true "$cfile"; then
+			echo "NoDisplay=true" >> "$cfile" 2> /dev/null
+		fi
 	fi
 
 	cfile='/usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop'
