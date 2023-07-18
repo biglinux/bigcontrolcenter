@@ -49,13 +49,20 @@ function sh_config {
 	export TEXTDOMAINDIR="/usr/share/locale"
 	export TEXTDOMAIN=bigcontrolcenter
 	declare -g FILE_TO_SAVE="$HOME/hardware-info-$(date +%Y-%m-%d_%Hh-%Mm).html"
-	declare -g PROGRESS="/tmp/hardinfo-relaroty-progress"
+	declare -g PROGRESS="/tmp/hardinfo-relatory-progress"
 	declare -g OIFS=$IFS
+	declare -gi counter=0
 	IFS=$'\n'
 }
 
+function sh_progress {
+#	((counter+=10))
+#	qdbus "$PROGRESS" org.kde.kdialog.ProgressDialog.value "$counter"
+	return
+}
+
 function sh_style {
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 10
+	sh_progress
 	bigsudo urxvt -geometry 200x1 -e "/usr/share/bigbashview/bcc/apps/bigcontrolcenter/inxi"
 
 	echo '<style>
@@ -98,6 +105,7 @@ function sh_style {
 }
 
 function sh_style2 {
+	sh_progress
 	echo '<style>
 	table {
 		width: 100%;
@@ -137,6 +145,7 @@ function sh_style2 {
 }
 
 function sh_lspci_special {
+	sh_progress
 	{
 		echo '<div class="content">'
 		echo '<div class="ansititleansititle ansi1 ansi34">'
@@ -179,6 +188,7 @@ function sh_lspci_special {
 }
 
 function sh_lsusb {
+	sh_progress
 	{
 		echo '<div class="content">'
 		echo '<div class="ansititleansititle ansi1 ansi34">'
@@ -217,15 +227,13 @@ function sh_lsusb {
 	IFS=$OIFS
 #	cat /tmp/inxi.tmp >> "$FILE_TO_SAVE"
 #	rm -f /tmp/inxi.tmp
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 30
-	#hardinfo -a -m computer.so -m devices.so -f html -r >> "$FILE_TO_SAVE"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 }
 
 function sh_html {
 	local ctitle="$1"
 	local cjob="$2"
 
+	sh_progress
 	{
 		echo '<div class="content">'
 		echo '<div class="ansititleansititle ansi1 ansi34">'
@@ -239,6 +247,7 @@ function sh_html {
 }
 
 function sh_lspci {
+	sh_progress
 	{
 		echo '<div class="content">'
 		echo '<div class="ansititleansititle ansi1 ansi34">'
@@ -257,77 +266,64 @@ function sh_lspci {
 
 function sh_lsusb_v {
 	sh_html 'lsusb' "lsusb"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 }
 
 function sh_fstab {
-	sh_html '/etc/fstab' "sed 's/#.*//' /etc/fstab | column --table --table-columns SOURCE,TARGET,TYPE,OPTIONS,PASS,FREQ --table-right PASS,FREQ"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
+	sh_html '/etc/fstab' "sed 's/#.*//' /etc/fstab | sed 's/#.*//' /etc/fstab | column --table --table-columns '<file system>','mount point>','<type','<options>','<dump>','<pass>'"
 }
 
 function sh_lsmod {
 	sh_html 'lsmod' "lsmod"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 }
 
 function sh_ip_address {
 	sh_html 'ip address' "ip address"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 }
 
 function sh_ip_route {
 	sh_html 'ip route' "ip route"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 50
 }
 
 function sh_ip_link {
 	sh_html 'ip link' "ip link show"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 60
 }
 
 function sh_rfkill {
 	sh_html 'rfkill list (Wifi and Bluetooth' "rfkill"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 70
 }
 
 function sh_nmcli {
 	sh_html 'nmcli general status' "nmcli --colors=no"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 }
 
 function sh_ping_route {
-	sh_html 'ping route and 8.8.8.8' "ping -c3 "$(ip route | grep default | cut -f3 -d" ")" | ping -c3 8.8.8.8"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
+	local gw=$(ip route show default | awk '/default/ {print $3}')
+	sh_html 'ping route and 8.8.8.8' "ping -qnAc3 $gw; ping -qnAc3 8.8.8.8"
 }
 
 function sh_mhwd_l {
 	sh_html 'mhwd -l' "mhwd -l | sed 's/\x1B\[[0-9;]*[mG]//g'"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 }
 
 function sh_mhwd_li {
 	sh_html 'mhwd -li' "mhwd -li | sed 's/\x1B\[[0-9;]*[mG]//g'"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 }
 
 function sh_mhwd_lh {
 	sh_html 'mhwd -lh' "mhwd -lh | sed 's/\x1B\[[0-9;]*[mG]//g'"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 }
 
 function sh_mhwd_kernel_l {
 	sh_html 'mhwd-kernel -l' "mhwd-kernel -l | sed 's/\x1B\[[0-9;]*[mG]//g'"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 }
 
 function sh_mhwd_kernel_li {
 	sh_html 'mhwd-kernel --listinstalled' "mhwd-kernel --listinstalled | sed 's/\x1B\[[0-9;]*[mG]//g'"
-	qdbus $PROGRESS org.kde.kdialog.ProgressDialog.value 80
 }
 
 function sh_report {
 	if [[ -s "$FILE_TO_SAVE" ]] ; then
-		qdbus $PROGRESS org.kde.kdialog.ProgressDialog.close
+		sh_progress
 		if kdialog --warningcontinuecancel $"O relatório foi salvo no arquivo: $FILE_TO_SAVE
 Deseja visualizar o relatório agora?
 		"  --continue-label $"Visualizar o relatório" --cancel-label $"Fechar" --title $"Hardinfo Relatory"; then
@@ -338,6 +334,8 @@ Deseja visualizar o relatório agora?
 }
 
 #sh_debug
+kdialog --title "$APP" --msgbox "Aguarde, gerando o relatório..." &
+progress_pid=$!
 sh_config
 sh_style
 sh_style2
@@ -352,10 +350,11 @@ sh_ip_route
 sh_ip_link
 sh_rfkill
 sh_nmcli
-#sh_ping_route
+sh_ping_route
 sh_mhwd_l
 sh_mhwd_li
 sh_mhwd_lh
 sh_mhwd_kernel_l
 sh_mhwd_kernel_li
+kill $progress_pid
 sh_report
