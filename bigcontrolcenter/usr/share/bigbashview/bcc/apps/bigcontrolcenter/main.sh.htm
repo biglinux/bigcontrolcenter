@@ -1,21 +1,22 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 ##################################
-#  Author1: Bruno Goncalves (www.biglinux.com.br) 
-#  Author2: Rafael Ruscher (rruscher@gmail.com)  
-#  Author3: Eltonff (www.biglinux.com.br)
+#	Author1: Bruno Goncalves (www.biglinux.com.br)
+#	Author2: Rafael Ruscher (rruscher@gmail.com)
+#	Author3: Eltonff (www.biglinux.com.br)
 #
-#  Date:    2022/06/09 
-#  
-#  Description: Loading
-#  
-# Licensed by GPL V2 or greater
+#	Date:    2022/06/09
+#
+#	Description: Loading
+#
+#	Licensed by GPL V2 or greater
 ##################################
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-cat << EOF
+cat <<EOF
 <html>
 <head>
   <meta charset="UTF-8">
@@ -69,31 +70,29 @@ cat << EOF
       text-align: center;
       margin-bottom: 50px;
     }
-    </style>    
+    </style>
   </head>
 EOF
 
 HOUR="$(date +%H)"
-if [ "$HOUR" -ge "06" -a "$HOUR" -le "12" ];then
-    MSG=$"Bom dia"
-elif [ "$HOUR" -ge "12" -a "$HOUR" -le "18" ];then
-    MSG=$"Boa tarde"
+if [[ "$HOUR" -ge "06" -a "$HOUR" -le "12" ]]; then
+	MSG=$"Bom dia"
+elif [[ "$HOUR" -ge "12" -a "$HOUR" -le "18" ]]; then
+	MSG=$"Boa tarde"
 else
-    MSG=$"Boa noite"
+	MSG=$"Boa noite"
 fi
 
-if [ "$USER" != "biglinux" ]; then 
-
-USUARIO=" $USER"
-
+if [[ "$USER" != "biglinux" ]]; then
+	USUARIO=" $USER"
 fi
 
 TXT=$"Aguarde, criando arquivos de cache..."
 
 # Get body tag with color light or not
-/usr/share/bigbashview/bcc/shell/getbgcolor.sh
+[[ -e /usr/share/bigbashview/bcc/shell/getbgcolor.sh ]] && . /usr/share/bigbashview/bcc/shell/getbgcolor.sh
 
-cat << EOF
+cat <<EOF
   <div class="app">
     <div class="header"></div>
     <div class="lds-ring"><div></div><div></div><div></div><div></div></div>

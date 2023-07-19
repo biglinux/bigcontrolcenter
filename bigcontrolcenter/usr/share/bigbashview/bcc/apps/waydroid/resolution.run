@@ -1,6 +1,6 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 
 FOLDER_CONFIG="$HOME/.config/waydroid"
-mkdir -p ~/.config/waydroid
+#mkdir -p ~/.config/waydroid
+[[ ! -d "$FOLDER_CONFIG" ]] && -p "$FOLDER_CONFIG"
 echo "$1" > ${FOLDER_CONFIG}/resolution
