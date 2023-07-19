@@ -61,6 +61,7 @@ function sh_progress {
 	return
 }
 
+
 function sh_style {
 	sh_progress
 	bigsudo urxvt -geometry 200x1 -e "/usr/share/bigbashview/bcc/apps/bigcontrolcenter/inxi"
@@ -101,12 +102,6 @@ function sh_style {
 	.body_background {
 		background: linear-gradient(to bottom, #414345, #232526);
 	}
-	</style>' > "$FILE_TO_SAVE"
-}
-
-function sh_style2 {
-	sh_progress
-	echo '<style>
 	table {
 		width: 100%;
 	}
@@ -141,7 +136,7 @@ function sh_style2 {
 	td.search {
 		text-align: center;
 	}
-	</style>' >> "$FILE_TO_SAVE"
+	</style>' > "$FILE_TO_SAVE"
 }
 
 function sh_lspci_special {
@@ -247,21 +242,8 @@ function sh_html {
 }
 
 function sh_lspci {
-	sh_progress
-	{
-		echo '<div class="content">'
-		echo '<div class="ansititleansititle ansi1 ansi34">'
-		echo 'lspci'
-		echo '</div>'
-		echo '<div class="text_area">'
-		echo '<textarea style="width:100%;" rows="20">'
-		echo "$(lspci -nn)"
-		echo '==========================================================================================================================='
-		echo 'Verbose mode:'
-		echo '==========================================================================================================================='
-		echo "$(lspci -nvv)"
-		echo '</textarea></div></div>'
-	} >> "$FILE_TO_SAVE"
+	sh_html 'lspci' "lspci -nn"
+	sh_html 'lspci - verbose mode' "lspci -nvv"
 }
 
 function sh_lsusb_v {
@@ -288,17 +270,17 @@ function sh_ip_link {
 	sh_html 'ip link' "ip link show"
 }
 
+function sh_ping_route {
+	local gw=$(ip route show default | awk '/default/ {print $3}')
+	sh_html 'ping route and 8.8.8.8' "ping -qnAc3 $gw; ping -qnAc3 8.8.8.8"
+}
+
 function sh_rfkill {
 	sh_html 'rfkill list (Wifi and Bluetooth' "rfkill"
 }
 
 function sh_nmcli {
 	sh_html 'nmcli general status' "nmcli --colors=no"
-}
-
-function sh_ping_route {
-	local gw=$(ip route show default | awk '/default/ {print $3}')
-	sh_html 'ping route and 8.8.8.8' "ping -qnAc3 $gw; ping -qnAc3 8.8.8.8"
 }
 
 function sh_mhwd_l {
@@ -321,6 +303,10 @@ function sh_mhwd_kernel_li {
 	sh_html 'mhwd-kernel --listinstalled' "mhwd-kernel --listinstalled | sed 's/\x1B\[[0-9;]*[mG]//g'"
 }
 
+function sh_cpu {
+	sh_html 'SYSTEM' "inxi -b -a --color"
+}
+
 function sh_report {
 	if [[ -s "$FILE_TO_SAVE" ]] ; then
 		sh_progress
@@ -338,7 +324,7 @@ kdialog --title "$APP" --msgbox "Aguarde, gerando o relatório..." &
 progress_pid=$!
 sh_config
 sh_style
-sh_style2
+sh_cpu
 sh_lspci_special
 sh_lsusb
 sh_lspci
@@ -348,9 +334,9 @@ sh_lsmod
 sh_ip_address
 sh_ip_route
 sh_ip_link
+sh_ping_route
 sh_rfkill
 sh_nmcli
-sh_ping_route
 sh_mhwd_l
 sh_mhwd_li
 sh_mhwd_lh
