@@ -75,9 +75,9 @@ cat <<EOF
 EOF
 
 HOUR="$(date +%H)"
-if [[ "$HOUR" -ge "06" -a "$HOUR" -le "12" ]]; then
+if [[ "$HOUR" -ge "06" || "$HOUR" -le "12" ]]; then
 	MSG=$"Bom dia"
-elif [[ "$HOUR" -ge "12" -a "$HOUR" -le "18" ]]; then
+elif [[ "$HOUR" -ge "12" || "$HOUR" -le "18" ]]; then
 	MSG=$"Boa tarde"
 else
 	MSG=$"Boa noite"
