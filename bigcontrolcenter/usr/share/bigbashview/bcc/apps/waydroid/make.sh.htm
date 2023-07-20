@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
@@ -11,115 +11,88 @@ windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 ##############
 # REMOVE
 ##############
-if [ "$remove" = "1" ]; then
-    if [ -e "$HOME/.local/share/waydroid" ]; then
-
-    kdialog --attach="$windowID" --title $"Waydroid" \
---yesno $"Ao remover as configurações os programas instalados 
+#if [[ "$remove" = "1" ]]; then
+if (( remove )); then
+	if [[ -e "$HOME/.local/share/waydroid" ]]; then
+		if kdialog \
+			--attach="$windowID" \
+			--title $"Waydroid"  \
+			--yesno $"Ao remover as configurações os programas instalados
 dentro do Waydroid e suas configurações serão perdidas.
 
-Realmente deseja remover?"
-
-        if [ "$?" = "0" ]; then
-
-            pkexec rm -R "$HOME/.local/share/waydroid"
-            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
-        else
-            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Nenhuma configuração foi removida!"
-        fi
-    else
-        kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Não existem configurações para remover."
-    fi
+Realmente deseja remover?"; then
+			pkexec rm -R "$HOME/.local/share/waydroid"
+			kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
+		else
+			kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Nenhuma configuração foi removida!"
+		fi
+	else
+		kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Não existem configurações para remover."
+	fi
 fi
 
-
-##############
+###############
 # INSTALL
 ##############
-if [ "$install" = "1" ]; then
-    ./install.sh waydroid-image
+if (( install )); then
+	./install.sh waydroid-image
 fi
-
 
 ###############
 # INSTALL GAPPS
 ###############
-if [ "$install_with_gapps" = "1" ]; then
-    ./install.sh waydroid-image-gapps
+if (( install_with_gapps )); then
+	./install.sh waydroid-image-gapps
 fi
-
 
 ##############
 # UNINSTALL
 ##############
-if [ "$uninstall" = "1" ]; then
+if (( uninstall )); then
+	if [[ -e "$HOME/.local/share/waydroid" ]]; then
+		if kdialog \
+			--attach="$windowID" \
+			--title $"Waydroid" \
+			--yesno $"Deseja remover também os arquivos de configuração
+e programas instalados dentro do Waydroid?"; then
+			pkexec rm -R "$HOME/.local/share/waydroid"
+			kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
+		else
+			kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Nenhuma configuração foi removida!"
+		fi
+	fi
 
-
-    if [ -e "$HOME/.local/share/waydroid" ]; then
-        kdialog --attach="$windowID" --title $"Waydroid" \
---yesno $"Deseja remover também os arquivos de configuração 
-e programas instalados dentro do Waydroid?"
-
-        if [ "$?" = "0" ]; then
-
-            pkexec rm -R "$HOME/.local/share/waydroid"
-            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
-        else
-            kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Nenhuma configuração foi removida!"
-        fi
-    fi
-
-    if [ "$(pacman -Q waydroid-image-gapps 2> /dev/null)" != "" ]; then #START Checks if the waydroid-image-gapps package is installed.
-        pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
-    else
-    
-        if [ "$(pacman -Q waydroid-image 2> /dev/null)" != "" ]; then #START Checks if the waydroid-image package is installed.
-            pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
-        else
-            pamac-installer --remove waydroid waydroid-meta-x11 waydroid-biglinux libgbinder python-gbinder
-        fi
-  
-    fi
-
+	if [[ "$(pacman -Q waydroid-image-gapps 2>/dev/null)" != "" ]]; then #START Checks if the waydroid-image-gapps package is installed.
+		pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
+	else
+		if [[ "$(pacman -Q waydroid-image 2>/dev/null)" != "" ]]; then #START Checks if the waydroid-image package is installed.
+			pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
+		else
+			pamac-installer --remove waydroid waydroid-meta-x11 waydroid-biglinux libgbinder python-gbinder
+		fi
+	fi
 fi
 
-
-###############
-# ENABLE 3D
-###############
-if [ "$gpu" = "1" ]; then
-    pkexec waydroid-big-3d 1
+###################
+# ENABLE/DISABLE 3D
+###################
+if (( gpu )); then
+	pkexec waydroid-big-3d 1
+else
+	pkexec waydroid-big-3d 0
 fi
 
-
-###############
-# DISABLE 3D
-###############
-if [ "$gpu" = "0" ]; then
-    pkexec waydroid-big-3d 0
+#####################
+# START/STOP WAYDROID
+#####################
+if (( start )); then
+	waydroid-big </dev/null &>/dev/null &
+	sleep 1
+elif (( stop )); then
+	waydroid session stop
+	killall weston
 fi
-
-
-################
-# START WAYDROID
-################
-if [ "$start" = "1" ]; then
-    waydroid-big </dev/null &>/dev/null &
-    sleep 1
-fi
-
-
-###############
-# STOP WAYDROID
-###############
-if [ "$stop" = "1" ]; then
-    waydroid session stop
-    killall weston
-fi
-
 
 cat <<EOF
 <meta http-equiv="refresh" content="0; URL='index.sh.htm'"/>
 EOF
-
-

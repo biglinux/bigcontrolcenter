@@ -1,13 +1,14 @@
-#!/bin/bash
-grep ##################################
-#  Author1: Bruno Goncalves (www.biglinux.com.br) 
-#  Author2: Rafael Ruscher (rruscher@gmail.com)  
-#  Date:    2022/02/28 
-#  
-#  Description: Control Center to help usage of BigLinux 
-#  
-# Licensed by GPL V2 or greater
-##################################
+#!/usr/bin/env bash
+
+########################################################
+#	Author1: Bruno Goncalves (www.biglinux.com.br)
+#	Author2: Rafael Ruscher (rruscher@gmail.com)
+#	Date:    2022/02/28
+#
+#	Description: Control Center to help usage of BigLinux
+#
+#	Licensed by GPL V2 or greater
+########################################################
 
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
@@ -16,7 +17,7 @@ export TEXTDOMAIN=bigcontrolcenter
 #Only to debug
 #rm -R "$HOME/.config/bigcontrolcenter/"
 
-mkdir -p "$HOME/.config/bigcontrolcenter/icons"
+[[ ! -d  "$HOME/.config/bigcontrolcenter/icons" ]] && -p "$HOME/.config/bigcontrolcenter/icons"
 
 # Don't group windows
 #xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
@@ -26,8 +27,8 @@ CATEGORY_Star=$"Principais"
 CATEGORY_System=$"Sistema"
 
 #NEW
-CATEGORY_Design=$"Aparência" # Aparência
-CATEGORY_Hardware=$"Dispositivos" #Hardware
+CATEGORY_Design=$"Aparência"             # Aparência
+CATEGORY_Hardware=$"Dispositivos"        #Hardware
 CATEGORY_Personalization=$"Personalizar" #Personalização
 
 #ADD
@@ -53,7 +54,7 @@ TITLE=$"Central de Controle"
 CLOSE=$"Fechar"
 OPEN=$"Abrir"
 
-cat << EOF
+cat <<EOF
 <html>
 <head>
   <meta charset="UTF-8">
@@ -82,25 +83,24 @@ cat <<EOF
             <!-- <button class="custom-search-botton" type="submit">← Enter </button> -->
         </div>
 EOF
-    if [ "$(ps -e | grep kwin)" = "" ]; then
-cat << EOF
+if [ "$(ps -e | grep kwin)" = "" ]; then
+	cat <<EOF
         <div class="header-profile" onclick="_run('/execute close$')"> 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-button"><path d="M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/></svg>
             </svg>
         </div>
 EOF
-    fi
-cat << EOF
+fi
+cat <<EOF
     </div>
 
 EOF
 if [ "$(echo $LANG | grep ^he)" != "" ]; then
-    echo '<div class="wrapper" style="flex-direction: row-reverse;">'
+	echo '<div class="wrapper" style="flex-direction: row-reverse;">'
 else
-    echo '<div class="wrapper">'
+	echo '<div class="wrapper">'
 fi
-cat << EOF
-    
+cat <<EOF
         <div class="left-side">
             <div class="side-wrapper">
                 <div class="side-menu">
@@ -215,10 +215,10 @@ cat << EOF
                 <div class="content-section-title Star"></div>
                 <div class="apps-card Star">
 EOF
-    EXEC="biglinux-themes-gui"
-    NAME=$"Temas, desktop e ajustes"
-    COMMENT=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-cat << EOF
+EXEC="biglinux-themes-gui"
+NAME=$"Temas, desktop e ajustes"
+COMMENT=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+cat <<EOF
               <div class="app-card Star" onclick="_run('$EXEC')">
                   <span>
                       <svg viewBox="0 0 512 512">
@@ -233,7 +233,7 @@ EOF
 EXEC="biglinux-config"
 NAME=$"Restaurar a configuração de programas"
 COMMENT=$"Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
-cat << EOF
+cat <<EOF
               <div class="app-card Star" onclick="_run('$EXEC')">
                 <span><svg viewBox="0 0 640 512">
                     <path fill="currentColor" d="M256.47 216.77l86.73 109.18s-16.6 102.36-76.57 150.12C206.66 523.85 0 510.19 0 510.19s3.8-23.14 11-55.43l94.62-112.17c3.97-4.7-.87-11.62-6.65-9.5l-60.4 22.09c14.44-41.66 32.72-80.04 54.6-97.47 59.97-47.76 163.3-40.94 163.3-40.94zM636.53 31.03l-19.86-25c-5.49-6.9-15.52-8.05-22.41-2.56l-232.48 177.8-34.14-42.97c-5.09-6.41-15.14-5.21-18.59 2.21l-25.33 54.55 86.73 109.18 58.8-12.45c8-1.69 11.42-11.2 6.34-17.6l-34.09-42.92 232.48-177.8c6.89-5.48 8.04-15.53 2.55-22.44z" />
@@ -246,12 +246,11 @@ cat << EOF
 
                 </div>
               </div>
-              
 EOF
 EXEC="big-hardware-info"
 NAME=$"Informações do sistema e hardware"
 COMMENT=$"Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
-cat << EOF
+cat <<EOF
               <div class="app-card Star" onclick="_run('$EXEC')">
                 <span><svg aria-hidden="true" focusable="false" data-prefix="far" viewBox="0 0 496 512" class="far fa-info-circle">
 
@@ -285,13 +284,13 @@ cat << EOF
         </div>
         <div class="main-header Multimedia">
           <a class="menu-link-main">$CATEGORY_Multimedia</a>
-        </div>        
+        </div>
         <div class="main-header Account">
           <a class="menu-link-main">$CATEGORY_Account</a>
-        </div>        
+        </div>
         <div class="main-header Privacy">
           <a class="menu-link-main">$CATEGORY_Privacy</a>
-        </div>         
+        </div>
         <div class="main-header Server">
           <a class="menu-link-main">$CATEGORY_Server</a>
         </div>
@@ -300,7 +299,7 @@ cat << EOF
         </div>
         <div class="main-header System">
           <a class="menu-link-main">$CATEGORY_System</a>
-        </div>         
+        </div>
         <div class="main-header Desenv">
           <a class="menu-link-main">$CATEGORY_Desenv</a>
         </div>
@@ -314,20 +313,19 @@ cat << EOF
           <a class="menu-link-main">$SEARCH_Result</a>
         </div>
 <!-- FIM COMMENT CATEGORIAS -->
-
-<div class="icons-show"> 
+<div class="icons-show">
 EOF
 
 OIFS=$IFS
 IFS=$'\n'
 
 SHOW_ICON() {
-# $1 CATEGORY
-# $2 COMMENT
-# $3 EXEC 
-# $4 ICON 
-# $6 NAME
-cat << EOF
+	# $1 CATEGORY
+	# $2 COMMENT
+	# $3 EXEC
+	# $4 ICON
+	# $6 NAME
+	cat <<EOF
 <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
         <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
         </div>
@@ -340,12 +338,12 @@ EOF
 }
 
 CACHE_ICON() {
-# $1 CATEGORY
-# $2 COMMENT
-# $3 EXEC 
-# $4 ICON 
-# $6 NAME
-cat << EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
+	# $1 CATEGORY
+	# $2 COMMENT
+	# $3 EXEC
+	# $4 ICON
+	# $6 NAME
+	cat <<EOF >>"$HOME/.config/bigcontrolcenter/cache.html"
 <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
         <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
         </div>
@@ -373,17 +371,14 @@ echo "<script>
 #   INTERNET CONNECTION OPEN
 #
 ######################################
-
-if [ -e "/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement" ]; then
-
-EXEC="plasmawindowed org.kde.plasma.networkmanagement"
-NAME=$"Conectar à internet"
-COMMENT=$"Conecte na internet por cabo de rede ou wifi."
-ICON="icons/icon_conectar-internet.png"
-CATEGORY="Network"
-
-SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
+#if [ -e "/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement" ]; then
+if [[ -d "/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement" ]]; then
+	EXEC="plasmawindowed org.kde.plasma.networkmanagement"
+	NAME=$"Conectar à internet"
+	COMMENT=$"Conecte na internet por cabo de rede ou wifi."
+	ICON="icons/icon_conectar-internet.png"
+	CATEGORY="Network"
+	SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 fi
 
 EXEC=""
@@ -407,7 +402,7 @@ Ao ativar será conectado automaticamente, e você estará utilizando a mesma co
 *Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
 
 #SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-cat << EOF
+cat <<EOF
 
 <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
         <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
@@ -440,206 +435,153 @@ ICON="icons/relatory.png"
 CATEGORY="About"
 SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-if [ -e "/usr/bin/manjaro-settings-manager" ]; then
- EXEC="manjaro-settings-manager -m msm_users"
- NAME=$"Adicionar ou Remover Usuários"
- COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
- ICON="icons/icon_useraccount.png"
- CATEGORY="Star Account"
- SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+if [[ -e "/usr/bin/manjaro-settings-manager" ]]; then
+	EXEC="manjaro-settings-manager -m msm_users"
+	NAME=$"Adicionar ou Remover Usuários"
+	COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
+	ICON="icons/icon_useraccount.png"
+	CATEGORY="Star Account"
+	SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 fi
 
+if [[ -e "$HOME/.config/bigcontrolcenter/refresh" ]]; then
+	if [[ -e "/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so" ]]; then
+		EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
+		NAME=$"Economia de energia"
+		COMMENT=""
+		ICON="icons/preferences-system-power-management.png"
+		CATEGORY="Hardware"
+		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	fi
 
+	EXEC="kcmshell5 kcm_desktoptheme"
+	NAME=$"Tema da área de trabalho"
+	COMMENT=$""
+	ICON="icons/preferences-desktop-plasma-theme.png"
+	CATEGORY="Personalization"
+	CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-if [ -e "$HOME/.config/bigcontrolcenter/refresh" ]; then
+	EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
+	NAME=$"Monitores e Telas"
+	COMMENT=$"Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
+	ICON="icons/preferences-desktop-display.png"
+	CATEGORY="Star Hardware"
+	CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    if [ -e "/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so" ]; then
+	EXEC="./kscreen_clean.sh"
+	NAME=$"Resetar as configurações da tela"
+	COMMENT=$"Restaurar a configuração padrão do monitor."
+	ICON="icons/icon_reset-screen.png"
+	CATEGORY="Hardware"
+	CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
-    NAME=$"Economia de energia"
-    COMMENT=""
-    ICON="icons/preferences-system-power-management.png"
-    CATEGORY="Hardware"
+	######################################
+	#   SCREEN CLOSE
+	######################################
+	######################################
+	#   ANDROID OPEN
+	######################################
 
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	#WEBAPP
+	EXEC="xdg-open https://web.airmore.com"
+	NAME=$"Airmore"
+	CATEGORY="Phone"
+	COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+	ICON="icons/airmore.png"
+	CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    fi
+	#WEBAPP
+	EXEC="xdg-open https://web.airdroid.com"
+	NAME=$"Airdroid"
+	CATEGORY="Phone"
+	COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+	ICON="icons/airdroid.png"
+	CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    ######
-    
-    EXEC="kcmshell5 kcm_desktoptheme"
-    NAME=$"Tema da área de trabalho"
-    COMMENT=$""
-    ICON="icons/preferences-desktop-plasma-theme.png"
-    CATEGORY="Personalization"
+	#VERIFICAR FUNCIONANEMTO
+	EXEC="waydroid-gui-big"
+	NAME=$"Suporte a aplicativos Android"
+	COMMENT=$"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase experimental."
+	CATEGORY="Phone"
+	ICON="icons/waydroid.png"
+	CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	########################################
+	#   big-driver-manager
+	########################################
+	if [[ -e "/usr/bin/big-driver-manager" ]]; then
+		EXEC="big-driver-manager"
+		NAME=$"Instalar drivers e firmwares"
+		COMMENT=""
+		CATEGORY="Star Hardware"
+		ICON="/icons/driver.png"
+		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	fi
 
-    EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
-    NAME=$"Monitores e Telas"
-    COMMENT=$"Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-    ICON="icons/preferences-desktop-display.png"
-    CATEGORY="Star Hardware"
+	########################################
+	#   Timeshift
+	########################################
+	if [[ -e "/usr/bin/timeshift-launcher" ]]; then
+		EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
+		NAME=$"Snapshots e backups"
+		if [[ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]]; then
+			COMMENT=$"Gerenciar pontos de restauração."
+		else
+			COMMENT=$"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer backups utilizando o método rsync."
+		fi
 
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+		if [[ -e "/run/miso/bootmnt" ]]; then
+			COMMENT=$"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
+		fi
+		CATEGORY="Star System"
+		ICON="icons/timeshift.png"
+		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-    EXEC="./kscreen_clean.sh"
-    NAME=$"Resetar as configurações da tela"
-    COMMENT=$"Restaurar a configuração padrão do monitor."
-    ICON="icons/icon_reset-screen.png"
-    CATEGORY="Hardware"
+	fi
 
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	########################################
+	#   tts-biglinux
+	########################################
+	if [[ -e "/usr/bin/tts-config" ]]; then
+		EXEC="tts-config"
+		NAME=$"Configurar a voz do sistema (TTS)"
+		COMMENT=$"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema para que textos escritos sejam falados."
+		CATEGORY="Multimedia"
+		ICON="icons/icon-grid-texto-fala-tts.png"
+		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	fi
 
-    ######################################
-    #
-    #   SCREEN CLOSE
-    #
-    ######################################
-    ######################################
-    #
-    #   ANDROID OPEN
-    #
-    ######################################
+	########################################
+	#   kernel
+	########################################
+	if [[ -e "/usr/share/kservices5/msm_kernel.desktop" ]]; then
+		#EXEC="kcmshell5 msm_kernel"
+		EXEC="big-kernel-manager"
+		NAME=$"Instalar versões de kernel e mesa"
+		COMMENT=""
+		CATEGORY="Star System"
+		ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/icon-kernel.svg"
+		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	fi
 
-    #WEBAPP
-    EXEC="xdg-open https://web.airmore.com"
-    NAME=$"Airmore"
-    CATEGORY="Phone"
-    COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-    ICON="icons/airmore.png"
-
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-    #WEBAPP
-    EXEC="xdg-open https://web.airdroid.com"
-    NAME=$"Airdroid"
-    CATEGORY="Phone"
-    COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-    ICON="icons/airdroid.png"
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-    
-
-    #VERIFICAR FUNCIONANEMTO
-    EXEC="waydroid-gui-big"
-    NAME=$"Suporte a aplicativos Android"
-    COMMENT=$"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase experimental."
-    CATEGORY="Phone"
-    ICON="icons/waydroid.png"
-
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-    ########################################
-    #
-    #   big-driver-manager
-    #
-    ########################################
-
-    if [ -e "/usr/bin/big-driver-manager" ]; then
-
-    EXEC="big-driver-manager"
-    NAME=$"Instalar drivers e firmwares"
-    COMMENT=""
-    CATEGORY="Star Hardware"
-    ICON="/icons/driver.png"
-
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-    fi
-
-    ########################################
-    #
-    #   Timeshift
-    #
-    ########################################
-
-    if [ -e "/usr/bin/timeshift-launcher" ]; then
-
-    EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
-    NAME=$"Snapshots e backups"
-    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
-        COMMENT=$"Gerenciar pontos de restauração."
-    else
-        COMMENT=$"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer backups utilizando o método rsync."
-    fi
-
-    if [ -e "/run/miso/bootmnt" ]; then
-        COMMENT=$"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
-    fi
-    CATEGORY="Star System"
-    ICON="icons/timeshift.png"
-
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-        
-    fi
-
-    ########################################
-    #
-    #   tts-biglinux
-    #
-    ########################################
-
-    if [ -e "/usr/bin/tts-config" ]; then
-
-    EXEC="tts-config"
-    NAME=$"Configurar a voz do sistema (TTS)"
-    COMMENT=$"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema para que textos escritos sejam falados."
-    CATEGORY="Multimedia"
-    ICON="icons/icon-grid-texto-fala-tts.png"
-
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-    fi
-
-    ########################################
-    #
-    #   kernel
-    #
-    ########################################
-
-    if [ -e "/usr/share/kservices5/msm_kernel.desktop" ]; then
-
-    #EXEC="kcmshell5 msm_kernel"
-    EXEC="big-kernel-manager"
-    NAME=$"Instalar versões de kernel e mesa"
-    COMMENT=""
-    CATEGORY="Star System"
-    ICON="/usr/share/bigbashview/bcc/apps/bigcontrolcenter/icons/icon-kernel.svg"
-
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-    fi
-
-
-    if [ -e "/usr/bin/policytool" ]; then
-
-        EXEC="policytool"
-        NAME=$"Regras de segurança do Java"
-        COMMENT=$"OpenJDK Java 8 Policy Tool"
-        CATEGORY="Privacy"
-        ICON="icons/openjdk.png"
-
-    CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-    fi
-
-    rm -f "$HOME/.config/bigcontrolcenter/refresh" # Remove file to use cache in next run
+	if [[ -e "/usr/bin/policytool" ]]; then
+		EXEC="policytool"
+		NAME=$"Regras de segurança do Java"
+		COMMENT=$"OpenJDK Java 8 Policy Tool"
+		CATEGORY="Privacy"
+		ICON="icons/openjdk.png"
+		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
+	fi
+	rm -f "$HOME/.config/bigcontrolcenter/refresh" # Remove file to use cache in next run
 fi
-
-
 
 ##########################
-#
 #    ALL BIGLINUX OPEN
-#
 ##########################
-
 # Wait loop-search.sh end
 while [ -e "$HOME/.config/bigcontrolcenter/reload" ]; do
-  sleep 0.02
+	sleep 0.02
 done
-
 
 cat "$HOME/.config/bigcontrolcenter/cache.html"
 cat ~/.config/bigcontrolcenter/cache-*.html
@@ -660,7 +602,7 @@ SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 # CATEGORY="Star"
 # SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-cat << EOF
+cat <<EOF
 
               </div>
             </div>
@@ -674,13 +616,11 @@ cat << EOF
   </div>
 EOF
 
-if [ -e "$HOME/.config/bigcontrolcenter/show_other" ]; then
-
-  echo '<style>#Other{display: flex !important;}</style>'
-
+if [[ -e "$HOME/.config/bigcontrolcenter/show_other" ]]; then
+	echo '<style>#Other{display: flex !important;}</style>'
 fi
 
-cat << EOF
+cat <<EOF
   <script src="./script.js"></script>
 </body>
 </html>
