@@ -1,69 +1,168 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#shellcheck disable=SC2155
+#shellcheck source=/dev/null
 
-#diretorio onde vão estar os arquivos ocultos do menu
-bigdir=/usr/share/applications/bigcontrolcenter
+#  bigcontrolcenter-clean-menu
+#  Created: 0000/00/00
+#  Altered: 2023/07/17
+#
+#  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
+#                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
+#  All rights reserved.
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#  1. Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+#  2. Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+#  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+#  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+#  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+#  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+#  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+#  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#criar o diretorio 
-mkdir -p $bigdir 2> /dev/null
+readonly red=$(tput setaf 124);
+readonly green=$(tput setaf 2);
+readonly pink=$(tput setaf 129);
+readonly reset=$(tput sgr0);
+readonly APP="${0##*/}"
 
-#lista dos arquivos a serem ocultados
-for i  in  "biglinux-config.desktop" "big-reset.desktop" "system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" "bigkernel.desktop" "gufw.desktop" "gparted.desktop" "hardinfo.desktop" "bigapache.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" "mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" "org.kde.kwalletmanager5.desktop" "bigflash-javaws-widevine-fonts.desktop" "tlpui.desktop" "kdesystemsettings.desktop" "org.kde.kinfocenter.desktop" "grub-customizer.desktop" "biglinux-tweaks.desktop" "kvantummanager.desktop" "manjaro-settings-manager.desktop" "msm_kde_notifier_settings.desktop" "designer.desktop" "linguist.desktop" "qdbusviewer.desktop" "assistant.desktop" "UserFeedbackConsole.desktop" "cmake-gui.desktop" "avahi-discover.desktop" "bssh.desktop" "bvnc.desktop" "htop.desktop" "lstopo.desktop" "cups.desktop" "org.gnome.baobab.desktop" "qv4l2.desktop" "qvidcap.desktop" "mpv.desktop" "hplip.desktop" "hp-uiscan.desktop" "systemsettings.desktop" "kdesettings.desktop" "org.kde.kuserfeedback-console.desktop" "gsmartcontrol.desktop" "org.pipewire.Helvum.desktop" "bootsplash-manager.desktop" "gnome-alsamixer.desktop" "appimagelaunchersettings.desktop" "org.kde.ksystemlog.desktop" "jamesdsp.desktop" "brightness-controller.desktop" "org.kde.filelight.desktop"; do
+function sh_debug {
+	export PS4='${red}${0##*/}${green}[$FUNCNAME]${pink}[$LINENO]${reset} '
+	set -x
+	set -e
+	shopt -s extglob
+}
 
-#add /usr/share/kservices5/kcm_kscreen.desktop
+function sh_config {
+	export TEXTDOMAINDIR="/usr/share/locale"
+	export TEXTDOMAIN=bigcontrolcenter
 
-    #remover as entradas do KCModulee Type=Service e desocultar a categoria
-    if [ -s "/usr/share/applications/$i" ]; then
-        mv -f "/usr/share/applications/$i" "$bigdir/$i" 2> /dev/null
-        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i" 2> /dev/null
-#         sed -i '/X-KDE-ServiceTypes=KCModule/d' "$bigdir/$i"
-#         sed -i '/Type=Service/d' "$bigdir/$i"
-        sed -i '/Categories/s/^/#/' "$bigdir/$i"  2> /dev/null
-        sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i"  2> /dev/null
-        
-    elif [ -s "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
-        mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "$bigdir/$i" 2> /dev/null
-        sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i" 2> /dev/null
-        sed -i '/Categories/s/^/#/' "$bigdir/$i"  2> /dev/null
-        sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i"  2> /dev/null
-        
-#         sed -i 's|QT_QUICK_BACKEND= ||g' "$bigdir/$i"
-#         echo 'X-KDE-ServiceTypes=KCModule
-# Type=Service' >> "$bigdir/$i"
+	#diretorio onde vão estar os arquivos ocultos do menu
+   declare -g bigdir='/usr/share/applications/bigcontrolcenter'
+   declare -gA APath=([share_path]='/usr/share/applications'
+                      [ksrv_path]='/usr/share/kservices5/bigcontrolcenter')
+	#lista dos arquivos a serem ocultados
+	declare -ga aDesktopFiles=("biglinux-config.desktop"
+										"big-reset.desktop"
+										"system-config-printer.desktop"
+										"openjdk-8-policytool.desktop"
+										"pavucontrol-qt.desktop"
+										"bigkernel.desktop"
+										"gufw.desktop"
+										"gparted.desktop"
+										"hardinfo.desktop"
+										"bigapache.desktop"
+										"timeshift-gtk.desktop"
+										"mintstick-kde.desktop"
+										"mintstick-format-kde.desktop"
+										"biglinux-themes-gui.desktop"
+										"sambasearch.desktop"
+										"org.kde.kwalletmanager5.desktop"
+										"bigflash-javaws-widevine-fonts.desktop"
+										"tlpui.desktop"
+										"kdesystemsettings.desktop"
+										"org.kde.kinfocenter.desktop"
+										"grub-customizer.desktop"
+										"biglinux-tweaks.desktop"
+										"kvantummanager.desktop"
+										"manjaro-settings-manager.desktop"
+										"msm_kde_notifier_settings.desktop"
+										"designer.desktop"
+										"linguist.desktop"
+										"qdbusviewer.desktop"
+										"assistant.desktop"
+										"UserFeedbackConsole.desktop"
+										"cmake-gui.desktop"
+										"avahi-discover.desktop"
+										"bssh.desktop"
+										"bvnc.desktop"
+										"htop.desktop"
+										"lstopo.desktop"
+										"cups.desktop"
+										"org.gnome.baobab.desktop"
+										"qv4l2.desktop"
+										"qvidcap.desktop"
+										"mpv.desktop"
+										"hplip.desktop"
+										"hp-uiscan.desktop"
+										"systemsettings.desktop"
+										"kdesettings.desktop"
+										"org.kde.kuserfeedback-console.desktop"
+										"gsmartcontrol.desktop"
+										"org.pipewire.Helvum.desktop"
+										"bootsplash-manager.desktop"
+										"gnome-alsamixer.desktop"
+										"appimagelaunchersettings.desktop"
+										"org.kde.ksystemlog.desktop"
+										"jamesdsp.desktop"
+										"brightness-controller.desktop"
+										"org.kde.filelight.desktop")
+}
 
-#         if [ -n "$(grep StartupNotify $bigdir/$i)" ]; then
-#             sed -i 's/StartupNotify=.*/StartupNotify=true/' "$bigdir/$i"
-#         else
-#             echo StartupNotify=true >> "$bigdir/$i"
-#         fi
-    fi
+function sh_fix_permissions {
+	# Fix permissions
+	chmod 644 "$bigdir"/*.desktop >/dev/null 2>&-
+}
 
-    if [ ! -e "/usr/share/applications/$i" ]; then
-		EXEC="$(which $(grep -m1 "Exec=" "$bigdir/$i" 2> /dev/null | cut -f2 -d= | cut -f1 -d" " 2> /dev/null) 2>/dev/null)"
-		if [ "$EXEC" = "" ]; then
-			rm -f "$bigdir/$i" 2> /dev/null
+function sh_change_file {
+	local cfile="$1"
+
+	#remover as entradas do KCModulee Type=Service e desocultar a categoria
+	sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g;/Categories/s/^/#/;/DBusActivatable/s/^/#/' "$cfile" >/dev/null 2>&-
+	mv -f "$cfile" "$bigdir/" >/dev/null 2>&-
+}
+
+function sh_init {
+	local i
+	local cpath
+	local cfile
+
+	#criar o diretorio
+	if [[ ! -d "$bigdir" ]]; then
+		if ! mkdir -p "$bigdir" 2> /dev/null; then
+			kdialog --title $"$APP" --error $"Erro na criação do diretório : $bigdir"
+			exit 1
 		fi
-    fi
+	fi
 
-done
-if [ -z "$(grep NoDisplay=true /usr/share/desktop-directories/kf5-unknown.directory 2> /dev/null)" ]; then 
-    echo "NoDisplay=true" | tee -a /usr/share/desktop-directories/kf5-unknown.directory 2> /dev/null
-fi
+	for i in "${aDesktopFiles[@]}"; {
+		for cpath in "${APath[@]}"; {
+			[[ -s "$cpath/$i" ]] && sh_change_file "$cpath/$i"
+		}
 
-# Fix permissions
-cd "$bigdir"
-chmod 644 *.desktop 2> /dev/null
+		if [[ ! -e "${APath[share_path]}/$i" ]]; then
+			if [[ -e "$bigdir/$i" ]]; then
+				if ! which "$(grep -m1 "Exec=" "$bigdir/$i" | cut -f2 -d= | cut -f1 -d" ")" >/dev/null 2>&- ; then
+					rm -f "$bigdir/$i" >/dev/null 2>&-
+				fi
+			fi
+		fi
+	}
 
+	cfile='/usr/share/desktop-directories/kf5-unknown.directory'
+	if [[ -e "$cfile" ]]; then
+		if ! grep -q NoDisplay=true "$cfile"; then
+			echo "NoDisplay=true" >> "$cfile" 2> /dev/null
+		fi
+	fi
 
-if [ -e "/usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop" ]; then
-    sed -i 's|X-KDE-SubstituteUID=true|X-KDE-SubstituteUID=false|g' /usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop
-fi
+	cfile='/usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop'
+	[[ -e "$cfile" ]] && sed -i 's|X-KDE-SubstituteUID=true|X-KDE-SubstituteUID=false|g' "$cfile"
 
-update-desktop-database 2> /dev/null
+	sh_fix_permissions
+	update-desktop-database 2> /dev/null
+}
 
-
-
-#     if [ -e "/usr/share/applications/systemsettings.desktop" ]; then
-#         mv -f "/usr/share/applications/systemsettings.desktop" "$bigdir/kdesettings.desktop"
-#         echo 'X-KDE-ServiceTypes=KCModule
-# Type=Service' >> "$bigdir/kdesettings.desktop"
-#     fi
+#sh_debug
+sh_config
+sh_init

@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 ##################################
-#  Author Create: Rafael Ruscher (rruscher@gmail.com)
-#  Create Date:   2022/05/15
+#	Author Create: Rafael Ruscher (rruscher@gmail.com)
+#	Create Date:   2022/05/15
 #
-#  Description: BigLinux Welcome Wizard
+#	Description: BigLinux Welcome Wizard
 #
-#  Author 2 Create: Barnabé di Kartola (barnabedikartola@gmail.com)
-#  Create Date:   2023/04/26
+#	Author 2 Create: Barnabé di Kartola (barnabedikartola@gmail.com)
+#	Create Date:   2023/04/26
 #
-#  Description: BigLinux browser selector
+#	Description: BigLinux browser selector
 #
-#  Licensed by GPL V2 or greater
+#	Licensed by GPL V2 or greater
 ##################################
 
 #Translation
@@ -20,27 +20,25 @@ export TEXTDOMAIN=bigcontrolcenter
 # Don't group windows
 xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 
-
 if [ -e "$HOME/.config/lockplasma" ]; then
-    checked_lock_desktop="checked"
+	checked_lock_desktop="checked"
 fi
 
 if [ -e "$HOME/.config/disable_welcome" ]; then
-    checked_lock_desktop="checked"
+	checked_lock_desktop="checked"
 fi
 
 if [ -e "$HOME/.config/systemd/user/plasma-core.target.wants/big-welcome.service" ]; then
-    checked_autostart="checked"
+	checked_autostart="checked"
 fi
 
-
-if [ "$(kreadconfig5  --group "Mouse" --key "XLbInptNaturalScroll" --file "$HOME/.config/kcminputrc")" = "true" ]; then
-    checked_scrool_natural="checked"
+if [ "$(kreadconfig5 --group "Mouse" --key "XLbInptNaturalScroll" --file "$HOME/.config/kcminputrc")" = "true" ]; then
+	checked_scrool_natural="checked"
 fi
-
 
 FOLDER_CONFIG="$HOME/.config/big-welcome"
-mkdir -p ~/.config/big-welcome
+#mkdir -p ~/.config/big-welcome
+[[ ! -d "$FOLDER_CONFIG" ]] && mkdir -p "$FOLDER_CONFIG"
 
 echo '<!DOCTYPE html>
 <html lang="en" >
@@ -53,30 +51,24 @@ echo '<!DOCTYPE html>
 </head>
 <body>
 <!-- partial:index.partial.html -->
-    
 
 <div class="logo">
   <a href="#"><img src="logo-big-trans-branco.png" alt=""></a>
-</div>       
+</div>
 <div class="wrapper">
 
 <div id="wizard" class="wizard">
 
   <div class="wizard__content">
-    <header class="wizard__header"> 
-    
+    <header class="wizard__header">
       <div class="wizard__header-overlay"></div>
-
       <div class="wizard__header-content">
         <h1 class="wizard__title"><!--'$"Bem vindo ao BigLinux"'--></h1>
         <p class="wizard__subheading"><!--'$"Comece com algumas etapas simples."'--></p>
-        
-
-    
         <div class="options-social" style=" margin-right: 15px;">
                   <input onclick="_run(`./autostart.run`)" id="desktop1" name="bb1" type="checkbox" class="switch" style="display: inline-block; float: right; top: 3px; margin-left: 10px"' "$checked_autostart" '>
                   <span for="desktop1">'$"Mostrar na inicialização"'<br><small></small></span>
-        </div> 
+        </div>
       </div>
 
       <div class="wizard__steps">
@@ -96,10 +88,10 @@ echo '<!DOCTYPE html>
                 <div class="line -bigscreen02"></div>
                 <div class="line -bigscreen03"></div>
                 <div class="line -bigscreen04"></div>
-              </div>  
+              </div>
             </div>
           </div>
-<!-- NAV BIG LINUX 01 --> 
+<!-- NAV BIG LINUX 01 -->
           <div class="step">
             <div class="step__content">
               <p class="step__number"><svg viewBox="0 0 576 512" style="width:26px; margin-top:10px;"><path fill="currentcolor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"/></svg></p>
@@ -114,7 +106,7 @@ echo '<!DOCTYPE html>
                 <div class="line -bigscreen03"></div>
                 <div class="line -bigscreen04"></div>
                 <div class="line -bigscreen05"></div>
-              </div>  
+              </div>
             </div>
           </div>
 <!-- NAV BIG LINUX 02 -->
@@ -132,13 +124,12 @@ echo '<!DOCTYPE html>
                 <div class="line -bigscreen03"></div>
                 <div class="line -bigscreen04"></div>
                 <div class="line -bigscreen05"></div>
-              </div> 
+              </div>
             </div>
           </div>
-<!-- NAV BIG LINUX 03 -->            
+<!-- NAV BIG LINUX 03 -->
           <div class="step">
             <div class="step__content">
-            
               <p class="step__number"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:26px; margin-top: 7px; margin-left: 5px;"><path fill="currentcolor" d="M320 0H64C37.5 0 16 21.5 16 48v416C16 490.5 37.5 512 64 512h256c26.5 0 48-21.5 48-48v-416C368 21.5 346.5 0 320 0zM240 447.1C240 456.8 232.8 464 224 464H159.1C151.2 464 144 456.8 144 448S151.2 432 160 432h64C232.8 432 240 439.2 240 447.1zM304 384h-224V64h224V384z"/></svg></p>
               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                 <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
@@ -151,7 +142,7 @@ echo '<!DOCTYPE html>
                 <div class="line -bigscreen03"></div>
                 <div class="line -bigscreen04"></div>
                 <div class="line -bigscreen05"></div>
-              </div> 
+              </div>
             </div>
           </div>
 <!-- NAV BIG LINUX 04 -->
@@ -169,10 +160,10 @@ echo '<!DOCTYPE html>
                 <div class="line -bigscreen03"></div>
                 <div class="line -bigscreen04"></div>
                 <div class="line -bigscreen05"></div>
-              </div> 
+              </div>
             </div>
-          </div>          
-<!-- NAV BIG LINUX 05 -->       
+          </div>
+<!-- NAV BIG LINUX 05 -->
           <div class="step">
             <div class="step__content">
               <p class="step__number"><svg viewBox="0 0 512 512" style="width:26px; margin-top:5px;"><path fill="currentcolor" d="M512 288c0 35.35-21.49 64-48 64c-32.43 0-31.72-32-55.64-32C394.9 320 384 330.9 384 344.4V480c0 17.67-14.33 32-32 32h-71.64C266.9 512 256 501.1 256 487.6C256 463.1 288 464.4 288 432c0-26.51-28.65-48-64-48s-64 21.49-64 48c0 32.43 32 31.72 32 55.64C192 501.1 181.1 512 167.6 512H32c-17.67 0-32-14.33-32-32v-135.6C0 330.9 10.91 320 24.36 320C48.05 320 47.6 352 80 352C106.5 352 128 323.3 128 288S106.5 223.1 80 223.1c-32.43 0-31.72 32-55.64 32C10.91 255.1 0 245.1 0 231.6v-71.64c0-17.67 14.33-31.1 32-31.1h135.6C181.1 127.1 192 117.1 192 103.6c0-23.69-32-23.24-32-55.64c0-26.51 28.65-47.1 64-47.1s64 21.49 64 47.1c0 32.43-32 31.72-32 55.64c0 13.45 10.91 24.36 24.36 24.36H352c17.67 0 32 14.33 32 31.1v71.64c0 13.45 10.91 24.36 24.36 24.36c23.69 0 23.24-32 55.64-32C490.5 223.1 512 252.7 512 288z"/></svg></p>
@@ -187,10 +178,10 @@ echo '<!DOCTYPE html>
                 <div class="line -bigscreen03"></div>
                 <div class="line -bigscreen04"></div>
                 <div class="line -bigscreen05"></div>
-              </div> 
+              </div>
             </div>
-          </div> 
-<!-- NAV BIG LINUX 06 -->     
+          </div>
+<!-- NAV BIG LINUX 06 -->
           <div class="step">
             <div class="step__content">
               <p class="step__number"><svg viewBox="0 0 576 512" style="width:26px; margin-top:7px;"><path fill="currentcolor" d="M271.06,144.3l54.27,14.3a8.59,8.59,0,0,1,6.63,8.1c0,4.6-4.09,8.4-9.12,8.4h-35.6a30,30,0,0,1-11.19-2.2c-5.24-2.2-11.28-1.7-15.3,2l-19,17.5a11.68,11.68,0,0,0-2.25,2.66,11.42,11.42,0,0,0,3.88,15.74,83.77,83.77,0,0,0,34.51,11.5V240c0,8.8,7.83,16,17.37,16h17.37c9.55,0,17.38-7.2,17.38-16V222.4c32.93-3.6,57.84-31,53.5-63-3.15-23-22.46-41.3-46.56-47.7L282.68,97.4a8.59,8.59,0,0,1-6.63-8.1c0-4.6,4.09-8.4,9.12-8.4h35.6A30,30,0,0,1,332,83.1c5.23,2.2,11.28,1.7,15.3-2l19-17.5A11.31,11.31,0,0,0,368.47,61a11.43,11.43,0,0,0-3.84-15.78,83.82,83.82,0,0,0-34.52-11.5V16c0-8.8-7.82-16-17.37-16H295.37C285.82,0,278,7.2,278,16V33.6c-32.89,3.6-57.85,31-53.51,63C227.63,119.6,247,137.9,271.06,144.3ZM565.27,328.1c-11.8-10.7-30.2-10-42.6,0L430.27,402a63.64,63.64,0,0,1-40,14H272a16,16,0,0,1,0-32h78.29c15.9,0,30.71-10.9,33.25-26.6a31.2,31.2,0,0,0,.46-5.46A32,32,0,0,0,352,320H192a117.66,117.66,0,0,0-74.1,26.29L71.4,384H16A16,16,0,0,0,0,400v96a16,16,0,0,0,16,16H372.77a64,64,0,0,0,40-14L564,377a32,32,0,0,0,1.28-48.9Z"/></svg></p>
@@ -205,10 +196,9 @@ echo '<!DOCTYPE html>
                 <div class="line -bigscreen03"></div>
                 <div class="line -bigscreen04"></div>
                 <div class="line -bigscreen05"></div>
-              </div> 
+              </div>
             </div>
           </div>
-          
         </nav>
       </div>
     </header>
@@ -222,7 +212,7 @@ echo '<!DOCTYPE html>
     </div>
 
     <div class="panels"><!-- PANELS -->
-<!-- BIG LINUX START -->      
+<!-- BIG LINUX START -->
       <div class="panel">
         <header class="panel__header">
           <h2 class="panel__title">'$"Olá"', '"$USER"'</h2>
@@ -246,18 +236,16 @@ echo '<!DOCTYPE html>
                             <stop offset="0" stop-color="#2d85c6"/><stop offset="1" stop-color="#04bacc"/></linearGradient>
                           <linearGradient id="linear-gradient-2" x1="227.46" y1="201.84" x2="319.28" y2="201.84" gradientTransform="translate(48.28 -52.72) rotate(12.08)" xlink:href="#linear-gradient"/>
                           <linearGradient id="linear-gradient-3" x1="255.41" y1="309.99" x2="388.82" y2="309.99" xlink:href="#linear-gradient"/>
-                        </defs>              
+                        </defs>
                           <path class="cls-1" id="logo" d="M 158.41016 0 C 155.78016 0.13 153.0293 0.38 150.2793 0.5 C 142.0193 2 134.52 6.6308594 128.75 12.630859 A 9.32 9.32 0 0 0 125.53906 16.890625 C 123.03906 19.650625 121.28906 23.019531 119.28906 26.269531 C 115.90906 33.409531 113.28016 41.289922 113.41016 49.169922 C 112.90016 51.169922 113.4093 53.169922 113.7793 55.169922 A 30.84 30.84 0 0 0 122.06055 72.429688 A 32.73 32.73 0 0 0 128.17969 77.310547 C 132.94969 79.920547 138.19922 82.560547 143.69922 82.810547 C 147.82922 83.560547 151.71984 81.690547 155.08984 79.560547 C 157.46984 78.150547 159.2207 76.060547 161.2207 74.310547 A 33.93 33.93 0 0 1 168.48047 67.570312 A 17.73 17.73 0 0 1 172.10938 66.449219 A 8.43 8.43 0 0 1 176.60938 68.369141 C 177.85938 69.249141 178.35938 70.619141 179.10938 71.869141 A 23.84 23.84 0 0 1 181.60938 78.380859 C 182.65938 81.480859 182.78906 84.86 183.53906 88 C 183.53906 91.12 184.16016 94.37 183.66016 97.5 A 24.68 24.68 0 0 1 183.41016 103.63086 C 183.16016 105.39086 182.41016 107.26063 182.41016 109.14062 C 183.33016 108.89062 183.70008 107.89062 184.33008 107.14062 C 186.34008 104.40062 187.46094 101.26063 188.71094 98.140625 A 96.93 96.93 0 0 0 193.71094 70.140625 C 193.34094 67.260625 193.59094 64.380859 192.96094 61.630859 C 191.48094 56.400859 189.61047 51.020859 186.23047 46.630859 A 14.1 14.1 0 0 0 176.7207 41 A 16.13 16.13 0 0 0 167.83984 43.380859 A 57.07 57.07 0 0 0 158.17969 51.039062 C 156.54969 52.279062 155.54992 53.919922 153.91992 55.169922 C 151.05992 57.899922 148.91992 61.169922 145.91992 63.669922 A 95.26 95.26 0 0 1 137.91992 71.189453 C 137.91992 71.189453 135.41992 72.439453 134.16992 72.189453 C 132.28992 71.189453 132.66016 68.810781 131.91016 67.050781 C 131.66016 64.430781 131.66016 61.930781 131.41016 59.300781 C 131.91016 52.690781 133.28906 46.070781 136.53906 40.300781 A 66 66 0 0 1 139.91992 34.529297 C 141.03992 33.029297 142.41992 31.640625 143.66992 30.140625 C 147.54992 26.110625 152.42945 22.730469 157.93945 21.480469 C 159.80945 20.610469 161.93945 20.980469 163.93945 20.730469 A 21.23 21.23 0 0 1 178.08008 26.609375 C 180.87008 28.729375 182.7207 31.729375 184.7207 34.609375 C 186.0707 36.869375 186.69031 39.620234 188.57031 41.490234 A 54.22 54.22 0 0 0 188.32031 33.740234 A 49.35 49.35 0 0 0 179.17969 12.960938 A 38 38 0 0 0 167.55078 2.3808594 A 26.19 26.19 0 0 0 158.41016 0 z M 89.351562 18.384766 A 20.64 20.64 0 0 0 81.970703 19.650391 A 17.35 17.35 0 0 0 72.699219 27.519531 C 71.579219 29.899531 70.329219 32.649062 71.449219 35.289062 A 12.41 12.41 0 0 0 78.839844 42.919922 A 17.09 17.09 0 0 0 87.449219 44.039062 C 90.199219 44.169062 92.699219 43.039922 95.199219 41.919922 C 98.339219 40.169922 101.33984 37.659063 102.83984 34.289062 A 9.32 9.32 0 0 0 103.33984 26.150391 C 102.58984 23.900391 100.5907 22.400391 98.970703 20.900391 A 20.64 20.64 0 0 0 89.351562 18.384766 z M 11.230469 23.619141 C 10.350469 23.869141 9.9796094 24.869141 9.3496094 25.619141 C 7.3496094 28.349141 6.2207031 31.479141 4.9707031 34.619141 A 96.8 96.8 0 0 0 -0.029296875 62.619141 C 0.34070313 65.499141 0.090703125 68.380859 0.72070312 71.130859 C 2.1907031 76.370859 4.0592187 81.740859 7.4492188 86.130859 A 14 14 0 0 0 16.949219 91.759766 A 16.16 16.16 0 0 0 25.839844 89.380859 A 58 58 0 0 0 35.5 81.679688 C 37.13 80.439687 38.129766 78.800781 39.759766 77.550781 C 42.629766 74.820781 44.759766 71.550781 47.759766 69.050781 A 50.42 50.42 0 0 1 55.759766 61.529297 C 57.009766 60.909297 58.259766 60.279297 59.509766 60.529297 C 61.399766 61.529297 61.019297 63.910156 61.779297 65.660156 C 62.029297 68.290156 62.029297 70.799922 62.279297 73.419922 C 61.779297 80.029922 60.400625 86.649922 57.140625 92.419922 A 66 66 0 0 1 53.759766 98.189453 C 52.639766 99.679453 51.259766 101.07031 50.009766 102.57031 C 46.129766 106.60031 41.250234 109.98047 35.740234 111.23047 C 33.870234 112.10047 31.740234 111.73047 29.740234 111.98047 A 21.23 21.23 0 0 1 15.599609 106.09961 C 12.819609 103.97961 10.970703 100.97961 8.9707031 98.099609 C 7.6307031 95.849609 7.0491406 93.140703 5.1191406 91.220703 A 54.17 54.17 0 0 0 5.3691406 98.970703 A 49.31 49.31 0 0 0 14.509766 119.74023 A 37.59 37.59 0 0 0 26.150391 130.38086 A 26.08 26.08 0 0 0 35.279297 132.75977 C 37.909297 132.62977 40.659922 132.37977 43.419922 132.25977 C 51.669922 130.75977 59.169453 126.11914 64.939453 120.11914 A 10.89 10.89 0 0 0 68.230469 115.85938 C 70.730469 113.10938 72.480469 109.73047 74.480469 106.48047 C 77.870469 99.340469 80.499141 91.460313 80.369141 83.570312 C 80.869141 81.570312 80.37 79.570312 80 77.570312 A 30.87 30.87 0 0 0 71.609375 60.25 A 32.74 32.74 0 0 0 65.480469 55.380859 C 60.730469 52.750859 55.460938 50.109375 49.960938 49.859375 C 45.830937 49.119375 41.960313 50.999141 38.570312 53.119141 C 36.200312 54.529141 34.439453 56.630859 32.439453 58.380859 A 33.6 33.6 0 0 1 25.119141 65.140625 A 17.85 17.85 0 0 1 21.480469 66.269531 A 8.6 8.6 0 0 1 16.980469 64.390625 C 15.730469 63.520625 15.230469 62.140625 14.480469 60.890625 A 24.23 24.23 0 0 1 11.980469 54.390625 C 10.980469 51.280625 10.849609 47.889531 10.099609 44.769531 C 10.099609 41.639531 9.4804688 38.389766 9.9804688 35.259766 A 25.25 25.25 0 0 1 10.230469 29.119141 C 10.480469 27.369141 11.230469 25.549141 11.230469 23.619141 z M 93.589844 46.669922 C 89.189844 46.809922 84.580938 48.810547 82.460938 52.810547 A 16.86 16.86 0 0 0 81.080078 58.310547 C 81.330078 63.470547 83.580938 68.360234 86.210938 72.740234 A 39.46 39.46 0 0 0 95.089844 82.619141 C 97.099844 84.739141 99.730469 85.999766 102.23047 87.509766 A 42.64 42.64 0 0 0 116.74023 92.630859 A 85.09 85.09 0 0 0 129.36914 93.970703 C 126.61914 90.720703 122.86914 88.470938 120.11914 85.210938 C 114.61914 79.950938 109.48047 73.830547 107.48047 66.310547 C 106.48047 62.690547 106.59961 58.930547 106.34961 55.310547 C 105.34961 52.270547 103.35047 49.419922 100.23047 48.419922 C 98.230469 47.169922 95.849844 47.039922 93.589844 46.669922 z "/>
                         </clipPath>
                     </defs>
                         <path clip-path="url(#logoclip)" fill="none" stroke="url(#linear-gradient)" stroke-width="27" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0" d="M 158.41016 0 C 155.78016 0.13 153.0293 0.38 150.2793 0.5 C 142.0193 2 134.52 6.6308594 128.75 12.630859 A 9.32 9.32 0 0 0 125.53906 16.890625 C 123.03906 19.650625 121.28906 23.019531 119.28906 26.269531 C 115.90906 33.409531 113.28016 41.289922 113.41016 49.169922 C 112.90016 51.169922 113.4093 53.169922 113.7793 55.169922 A 30.84 30.84 0 0 0 122.06055 72.429688 A 32.73 32.73 0 0 0 128.17969 77.310547 C 132.94969 79.920547 138.19922 82.560547 143.69922 82.810547 C 147.82922 83.560547 151.71984 81.690547 155.08984 79.560547 C 157.46984 78.150547 159.2207 76.060547 161.2207 74.310547 A 33.93 33.93 0 0 1 168.48047 67.570312 A 17.73 17.73 0 0 1 172.10938 66.449219 A 8.43 8.43 0 0 1 176.60938 68.369141 C 177.85938 69.249141 178.35938 70.619141 179.10938 71.869141 A 23.84 23.84 0 0 1 181.60938 78.380859 C 182.65938 81.480859 182.78906 84.86 183.53906 88 C 183.53906 91.12 184.16016 94.37 183.66016 97.5 A 24.68 24.68 0 0 1 183.41016 103.63086 C 183.16016 105.39086 182.41016 107.26063 182.41016 109.14062 C 183.33016 108.89062 183.70008 107.89062 184.33008 107.14062 C 186.34008 104.40062 187.46094 101.26063 188.71094 98.140625 A 96.93 96.93 0 0 0 193.71094 70.140625 C 193.34094 67.260625 193.59094 64.380859 192.96094 61.630859 C 191.48094 56.400859 189.61047 51.020859 186.23047 46.630859 A 14.1 14.1 0 0 0 176.7207 41 A 16.13 16.13 0 0 0 167.83984 43.380859 A 57.07 57.07 0 0 0 158.17969 51.039062 C 156.54969 52.279062 155.54992 53.919922 153.91992 55.169922 C 151.05992 57.899922 148.91992 61.169922 145.91992 63.669922 A 95.26 95.26 0 0 1 137.91992 71.189453 C 137.91992 71.189453 135.41992 72.439453 134.16992 72.189453 C 132.28992 71.189453 132.66016 68.810781 131.91016 67.050781 C 131.66016 64.430781 131.66016 61.930781 131.41016 59.300781 C 131.91016 52.690781 133.28906 46.070781 136.53906 40.300781 A 66 66 0 0 1 139.91992 34.529297 C 141.03992 33.029297 142.41992 31.640625 143.66992 30.140625 C 147.54992 26.110625 152.42945 22.730469 157.93945 21.480469 C 159.80945 20.610469 161.93945 20.980469 163.93945 20.730469 A 21.23 21.23 0 0 1 178.08008 26.609375 C 180.87008 28.729375 182.7207 31.729375 184.7207 34.609375 C 186.0707 36.869375 186.69031 39.620234 188.57031 41.490234 A 54.22 54.22 0 0 0 188.32031 33.740234 A 49.35 49.35 0 0 0 179.17969 12.960938 A 38 38 0 0 0 167.55078 2.3808594 A 26.19 26.19 0 0 0 158.41016 0 z M 89.351562 18.384766 A 20.64 20.64 0 0 0 81.970703 19.650391 A 17.35 17.35 0 0 0 72.699219 27.519531 C 71.579219 29.899531 70.329219 32.649062 71.449219 35.289062 A 12.41 12.41 0 0 0 78.839844 42.919922 A 17.09 17.09 0 0 0 87.449219 44.039062 C 90.199219 44.169062 92.699219 43.039922 95.199219 41.919922 C 98.339219 40.169922 101.33984 37.659063 102.83984 34.289062 A 9.32 9.32 0 0 0 103.33984 26.150391 C 102.58984 23.900391 100.5907 22.400391 98.970703 20.900391 A 20.64 20.64 0 0 0 89.351562 18.384766 z M 11.230469 23.619141 C 10.350469 23.869141 9.9796094 24.869141 9.3496094 25.619141 C 7.3496094 28.349141 6.2207031 31.479141 4.9707031 34.619141 A 96.8 96.8 0 0 0 -0.029296875 62.619141 C 0.34070313 65.499141 0.090703125 68.380859 0.72070312 71.130859 C 2.1907031 76.370859 4.0592187 81.740859 7.4492188 86.130859 A 14 14 0 0 0 16.949219 91.759766 A 16.16 16.16 0 0 0 25.839844 89.380859 A 58 58 0 0 0 35.5 81.679688 C 37.13 80.439687 38.129766 78.800781 39.759766 77.550781 C 42.629766 74.820781 44.759766 71.550781 47.759766 69.050781 A 50.42 50.42 0 0 1 55.759766 61.529297 C 57.009766 60.909297 58.259766 60.279297 59.509766 60.529297 C 61.399766 61.529297 61.019297 63.910156 61.779297 65.660156 C 62.029297 68.290156 62.029297 70.799922 62.279297 73.419922 C 61.779297 80.029922 60.400625 86.649922 57.140625 92.419922 A 66 66 0 0 1 53.759766 98.189453 C 52.639766 99.679453 51.259766 101.07031 50.009766 102.57031 C 46.129766 106.60031 41.250234 109.98047 35.740234 111.23047 C 33.870234 112.10047 31.740234 111.73047 29.740234 111.98047 A 21.23 21.23 0 0 1 15.599609 106.09961 C 12.819609 103.97961 10.970703 100.97961 8.9707031 98.099609 C 7.6307031 95.849609 7.0491406 93.140703 5.1191406 91.220703 A 54.17 54.17 0 0 0 5.3691406 98.970703 A 49.31 49.31 0 0 0 14.509766 119.74023 A 37.59 37.59 0 0 0 26.150391 130.38086 A 26.08 26.08 0 0 0 35.279297 132.75977 C 37.909297 132.62977 40.659922 132.37977 43.419922 132.25977 C 51.669922 130.75977 59.169453 126.11914 64.939453 120.11914 A 10.89 10.89 0 0 0 68.230469 115.85938 C 70.730469 113.10938 72.480469 109.73047 74.480469 106.48047 C 77.870469 99.340469 80.499141 91.460313 80.369141 83.570312 C 80.869141 81.570312 80.37 79.570312 80 77.570312 A 30.87 30.87 0 0 0 71.609375 60.25 A 32.74 32.74 0 0 0 65.480469 55.380859 C 60.730469 52.750859 55.460938 50.109375 49.960938 49.859375 C 45.830937 49.119375 41.960313 50.999141 38.570312 53.119141 C 36.200312 54.529141 34.439453 56.630859 32.439453 58.380859 A 33.6 33.6 0 0 1 25.119141 65.140625 A 17.85 17.85 0 0 1 21.480469 66.269531 A 8.6 8.6 0 0 1 16.980469 64.390625 C 15.730469 63.520625 15.230469 62.140625 14.480469 60.890625 A 24.23 24.23 0 0 1 11.980469 54.390625 C 10.980469 51.280625 10.849609 47.889531 10.099609 44.769531 C 10.099609 41.639531 9.4804688 38.389766 9.9804688 35.259766 A 25.25 25.25 0 0 1 10.230469 29.119141 C 10.480469 27.369141 11.230469 25.549141 11.230469 23.619141 z M 93.589844 46.669922 C 89.189844 46.809922 84.580938 48.810547 82.460938 52.810547 A 16.86 16.86 0 0 0 81.080078 58.310547 C 81.330078 63.470547 83.580938 68.360234 86.210938 72.740234 A 39.46 39.46 0 0 0 95.089844 82.619141 C 97.099844 84.739141 99.730469 85.999766 102.23047 87.509766 A 42.64 42.64 0 0 0 116.74023 92.630859 A 85.09 85.09 0 0 0 129.36914 93.970703 C 126.61914 90.720703 122.86914 88.470938 120.11914 85.210938 C 114.61914 79.950938 109.48047 73.830547 107.48047 66.310547 C 106.48047 62.690547 106.59961 58.930547 106.34961 55.310547 C 105.34961 52.270547 103.35047 49.419922 100.23047 48.419922 C 98.230469 47.169922 95.849844 47.039922 93.589844 46.669922 z " />
                 </svg>
-        </div>        
+        </div>
         <div id="logo-text">BIGLINUX</div>
-        
-      </div>          
-      
-<!-- BIG LINUX 00 --> 
+      </div>
+<!-- BIG LINUX 00 -->
       <div class="panel">
         <header class="panel__header">
           <h2 class="panel__title">'$"Ajustes iniciais"'</h2>
@@ -275,49 +263,43 @@ echo '<!DOCTYPE html>
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-aparencia-desempenho-usabilidade.png"></div>
               <div class="box-titulo">'$"Temas, Desktop e Ajustes"'</div>
           </button>
-        </div>     
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`QT_QUICK_BACKEND= QT_XCB_GL_INTEGRATION= kcmshell5 kcm_users`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`QT_QUICK_BACKEND= QT_XCB_GL_INTEGRATION= kcmshell5 kcm_users`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_useraccount.png"></div>
               <div class="box-titulo">'$"Escolha seu Avatar"'</div>
           </button>
-        </div>    
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`kcmshell5 msm_language_packages`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`kcmshell5 msm_language_packages`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-multiple-language.svg"></div>
               <div class="box-titulo">'$"Pacotes de Idioma"'</div>
           </button>
-        </div>          
-       
-      </div>          
+        </div>
+      </div>
 <!-- BIG LINUX 01 -->
       <div id="DivBrowserRefresh" class="panel">
         <header class="panel__header">
           <h2 class="panel__title">'$"Escolha seu navegador padrão"'</h2>
           <p class="panel__subheading">'$"Defina seus programas padrões."'</p>
         </header>'
-
-##
-
-if [ -f /usr/bin/brave ];then
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [[ -f /usr/bin/brave ]]; then
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-brave" onclick="_run(`./run-browser.run brave-browser.desktop`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/brave.svg" title="Brave" alt="Brave"></div>
                 <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é brave-browser
-  if [ "$DEFAULTWEB" = "brave-browser.desktop" ]; then
-    echo '<div id="myDivbrave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '<div id="myDivbrave" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'Brave</div>
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é brave-browser
+	if [[ "$DEFAULTWEB" = "brave-browser.desktop" ]]; then
+		echo '<div id="myDivbrave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	else
+		echo '<div id="myDivbrave" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	fi
+	echo 'Brave</div>
             </button>
           </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-brave" onclick="_run(`./install-browser.run brave-browser`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/brave_bw.svg" title="Brave" alt="Brave"></div>
                 <div class="box-titulo">
@@ -326,23 +308,23 @@ else
           </div>'
 fi
 
-if [ -f /usr/bin/firefox ];then
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [[ -f /usr/bin/firefox ]]; then
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-fire" id="box-subtitle" onclick="_run(`./run-browser.run firefox.desktop`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/firefox.svg" title="Firefox" alt="Firefox"></div>
                 <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é firefox
-  if [ "$DEFAULTWEB" = "firefox.desktop" ]; then
-    echo '        <div id="myDivfire"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '        <div id="myDivfire" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'Firefox</div>
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é firefox
+	if [ "$DEFAULTWEB" = "firefox.desktop" ]; then
+		echo '        <div id="myDivfire"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	else
+		echo '        <div id="myDivfire" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	fi
+	echo 'Firefox</div>
             </button>
           </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-fire" id="box-subtitle" onclick="_run(`./install-browser.run firefox`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/firefox_bw.svg" title="Firefox" alt="Firefox"></div>
                 <div class="box-titulo">
@@ -351,23 +333,23 @@ else
           </div>'
 fi
 
-if [ -f /usr/bin/google-chrome-stable ];then
-  echo '        <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [[ -f /usr/bin/google-chrome-stable ]]; then
+	echo '        <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chrome" id="box-subtitle" onclick="_run(`./run-browser.run google-chrome.desktop`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chrome.svg" title="Google Chrome" alt="Google Chrome"></div>
                 <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é google-chrome
-  if [ "$DEFAULTWEB" = "google-chrome.desktop" ]; then
-    echo '        <div id="myDivchrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '        <div id="myDivchrome" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'Google Chrome</div>
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é google-chrome
+	if [ "$DEFAULTWEB" = "google-chrome.desktop" ]; then
+		echo '        <div id="myDivchrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	else
+		echo '        <div id="myDivchrome" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	fi
+	echo 'Google Chrome</div>
             </button>
           </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chrome" id="box-subtitle" onclick="_run(`./install-browser.run google-chrome`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chrome_bw.svg" title="Google Chrome" alt="Google Chrome"></div>
                 <div class="box-titulo">
@@ -376,77 +358,77 @@ else
           </div>'
 fi
 
-if [ -f /usr/bin/chromium ];then
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [ -f /usr/bin/chromium ]; then
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chromium" id="box-subtitle" onclick="_run(`./run-browser.run chromium.desktop`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chromium.svg" title="Chromium" alt="Chromium"></div>
                 <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é google-chromium
-  if [ "$DEFAULTWEB" = "chromium.desktop" ]; then
-    echo '        <div id="myDivchromium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '        <div id="myDivchromium" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'Chromium</div>
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é google-chromium
+	if [ "$DEFAULTWEB" = "chromium.desktop" ]; then
+		echo '        <div id="myDivchromium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	else
+		echo '        <div id="myDivchromium" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	fi
+	echo 'Chromium</div>
             </button>
           </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chromium" id="box-subtitle" onclick="_run(`./install-browser.run chromium`)">
                 <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chromium_bw.svg" title="Chromium" alt="Chromium"></div>
                 <div class="box-titulo">
                 Chromium</div>
             </button>
           </div>'
-fi      
+fi
 
-if [ -f /usr/bin/vivaldi-stable ];then
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [ -f /usr/bin/vivaldi-stable ]; then
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-vivaldi" id="box-subtitle" onclick="_run(`./run-browser.run vivaldi-stable.desktop`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/vivaldi.svg" title="Vivaldi" alt="Vivaldi"></div>
               <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é vivaldi
-  if [ "$DEFAULTWEB" = "vivaldi-stable.desktop" ]; then
-    echo '        <div id="myDivvivaldi"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é vivaldi
+	if [ "$DEFAULTWEB" = "vivaldi-stable.desktop" ]; then
+		echo '        <div id="myDivvivaldi"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '        <div id="myDivvivaldi" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	else
+		echo '        <div id="myDivvivaldi" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'Vivaldi</div>
+	fi
+	echo 'Vivaldi</div>
           </button>
         </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-vivaldi" id="box-subtitle" onclick="_run(`./install-browser.run vivaldi`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/vivaldi_bw.svg" title="Vivaldi" alt="Vivaldi"></div>
               <div class="box-titulo">
               Vivaldi</div>
           </button>
         </div>'
-fi    
+fi
 
-if [ -f /usr/bin/librewolf ];then
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [ -f /usr/bin/librewolf ]; then
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-librewolf" id="box-subtitle" onclick="_run(`./run-browser.run librewolf.desktop`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/librewolf.svg" title="LibreWolf" alt="LibreWolf"></div>
               <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é librewolf
-  if [ "$DEFAULTWEB" = "librewolf.desktop" ]; then
-    echo '<div id="myDivlibrewolf"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é librewolf
+	if [ "$DEFAULTWEB" = "librewolf.desktop" ]; then
+		echo '<div id="myDivlibrewolf"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '        <div id="myDivlibrewolf" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	else
+		echo '        <div id="myDivlibrewolf" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'LibreWolf</div>
+	fi
+	echo 'LibreWolf</div>
           </button>
         </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-librewolf" id="box-subtitle" onclick="_run(`./install-browser.run librewolf-bin`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/librewolf_bw.svg" title="LibreWolf" alt="LibreWolf"></div>
               <div class="box-titulo">
@@ -455,25 +437,25 @@ else
         </div>'
 fi
 
-if [ -f /usr/bin/opera ];then
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [ -f /usr/bin/opera ]; then
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-opera" id="box-subtitle" onclick="_run(`./run-browser.run opera.desktop`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/opera.svg" title="Opera" alt="Opera"></div>
               <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é opera
-  if [ "$DEFAULTWEB" = "opera.desktop" ]; then
-    echo '        <div id="myDivopera"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é opera
+	if [ "$DEFAULTWEB" = "opera.desktop" ]; then
+		echo '        <div id="myDivopera"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '        <div id="myDivopera" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	else
+		echo '        <div id="myDivopera" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'Opera</div>
+	fi
+	echo 'Opera</div>
           </button>
         </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-opera" id="box-subtitle" onclick="_run(`./install-browser.run opera`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/opera_bw.svg" title="Opera" alt="Opera"></div>
               <div class="box-titulo">
@@ -482,25 +464,25 @@ else
         </div>'
 fi
 
-if [ -f /usr/bin/falkon ];then
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+if [ -f /usr/bin/falkon ]; then
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-falkon" id="box-subtitle" onclick="_run(`./run-browser.run org.kde.falkon.desktop`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/falkon.svg" title="Falkon" alt="Falkon"></div>
               <div class="box-titulo">'
-  DEFAULTWEB=$(xdg-settings get default-web-browser)
-  #se não achar browser padrão jultar que é falkon
-  if [ "$DEFAULTWEB" = "org.kde.falkon.desktop" ]; then
-    echo '        <div id="myDivfalkon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é falkon
+	if [ "$DEFAULTWEB" = "org.kde.falkon.desktop" ]; then
+		echo '        <div id="myDivfalkon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  else
-    echo '        <div id="myDivfalkon" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+	else
+		echo '        <div id="myDivfalkon" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
               114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
-  fi
-  echo 'Falkon</div>
+	fi
+	echo 'Falkon</div>
           </button>
         </div>'
 else
-  echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-falkon" id="box-subtitle" onclick="_run(`./install-browser.run falkon`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/falkon_bw.svg" title="Falkon" alt="Falkon"></div>
               <div class="box-titulo">
@@ -509,61 +491,54 @@ else
         </div>'
 fi
 
-##        
-        
-        
+##
 
-if [ -f /usr/bin/microsoft-edge-stable ];then
-echo '
+if [ -f /usr/bin/microsoft-edge-stable ]; then
+	echo '
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-edge" id="box-subtitle" onclick="_run(`./run-browser.run microsoft-edge.desktop`)">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/edge.svg" title="Edge" alt="Edge"></div>
               <div class="box-titulo">'
-DEFAULTWEB=$(xdg-settings get default-web-browser)
-#se não achar browser padrão jultar que é edge
-  if [ "$DEFAULTWEB" = "microsoft-edge.desktop" ]; then
-echo '        <div id="myDivedge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
-              114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'    
-else
-echo '        <div id="myDivedge" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
-              114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'                
-  fi
-echo 'Edge</div>
+	DEFAULTWEB=$(xdg-settings get default-web-browser)
+	#se não achar browser padrão jultar que é edge
+	if [ "$DEFAULTWEB" = "microsoft-edge.desktop" ]; then
+		echo '        <div id="myDivedge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0
+              114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	else
+		echo '        <div id="myDivedge" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:16px; top:-5px;"><path fill="currentcolor" d="M0 256C0 
+              114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></div>'
+	fi
+	echo 'Edge</div>
           </button>
         </div>'
 fi
-        
-echo '    
+
+echo '
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          
-          <button onclick="_run(`./run.run big-store category browser`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run big-store category browser`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-big-store.png" title="Big Store" alt="Big Store"></div>
               <div class="box-titulo">'$"Outros navegadores"'</div>
           </button>
-        </div>        
-        
+        </div>
       </div>
-      
-<!-- NAV BIG LINUX 02 -->  
+<!-- NAV BIG LINUX 02 -->
       <div class="panel">
         <header class="panel__header">
           <h2 class="panel__title">'$"KDE Connect"'</h2>
           <p class="panel__subheading">'$"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para iPhone."'</p>
         </header>
-       
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="width:160px;">
         <img src="img/kde-connect-playstore-qrcode.svg" style="width:140px; margin: -75px;" onclick="_run(`./playstore_kdeconnect.run`)">
         </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization">
-          <button onclick="_run(`./run.run kcmshell5 kdeconnect`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run kcmshell5 kdeconnect`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/kdeconnect.png"></div>
               <div class="box-titulo">'$"KDE Connect"'</div>
-              
           </button>
         </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="width:160px;" onclick="_run(`./appstore_kdeconnect.run`)">
         <img src="img/kde-connect-appstore-qrcode.svg" style="width:140px; margin: -75px;">
-        </div>        
+        </div>
       </div>
 
 <!-- NAV BIG LINUX 03 -->
@@ -572,17 +547,14 @@ echo '
           <h2 class="panel__title">'$"Instalação de Driver e Informações de Hardware"'</h2>
           <p class="panel__subheading">'$"Instalar ou Remover Drivers e Firmwares de forma simples."'</p>
         </header>
-     
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          
           <button onclick="_run(`./run.run big-driver-manager`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/driver.png" title="Big Driver Manager" alt="Big Driver Manager"></div>
               <div class="box-titulo">Big Driver Manager</div>
           </button>
         </div>
-        
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./run.run big-hardware-info`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run big-hardware-info`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/relatory.png" title="Big Info" alt="Big Info"></div>
               <div class="box-titulo">Big Info</div>
           </button>
@@ -594,62 +566,50 @@ echo '
                 <div class="box-titulo">'$"Impressoras"'</div>
             </button>
         </div>
-        
-      </div>      
+      </div>
 <!-- NAV BIG LINUX 04 -->
       <div class="panel">
         <header class="panel__header">
           <h2 class="panel__title">'$"Conheça alguns recursos"'</h2>
           <p class="panel__subheading">'$"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"'</p>
         </header>
-
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          
-          <button onclick="_run(`./run.run bigcontrolcenter`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run bigcontrolcenter`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/bigcontrolcenter.png"></div>
               <div class="box-titulo">'$"Central de Controle"'</div>
           </button>
-        </div> 
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          
-          <button onclick="_run(`./run.run big-store`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run big-store`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-big-store.png"></div>
               <div class="box-titulo">'$"Big Store"'</div>
           </button>
-        </div> 
-        
-
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./run.run webapp-manager-biglinux`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run webapp-manager-biglinux`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/webapp.svg"></div>
               <div class="box-titulo">'$"Web Apps"'</div>
           </button>
-        </div> 
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./run.run biglinux-noise-reduction-pipewire`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run biglinux-noise-reduction-pipewire`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/biglinux-noise-reduction-pipewire.png"></div>
               <div class="box-titulo">'$"Redutor de Ruídos"'</div>
           </button>
-        </div> 
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./run.run tts-config`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run tts-config`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-grid-texto-fala-tts.png"></div>
               <div class="box-titulo">'$"Configurar a voz do sistema (TTS)"'</div>
           </button>
-        </div> 
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          
-          <button onclick="_run(`./run.run bigocrpdf-open`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./run.run bigocrpdf-open`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-big-ocr-pdf.svg"></div>
               <div class="box-titulo">'$"OCR para PDF"'</div>
           </button>
-        </div>        
-      </div>         
+        </div>
+      </div>
 
 <!-- NAV BIG LINUX 05 -->
       <div class="panel">
@@ -657,63 +617,51 @@ echo '
           <h2 class="panel__title">'$"Doação e Redes sociais"'</h2>
           <p class="panel__subheading">'$"Sua doação é muito importante para o projeto e siga as redes sociais."'</p>
         </header>
-        
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./url.run https://www.biglinux.com.br/doacao-financeira/`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./url.run https://www.biglinux.com.br/doacao-financeira/`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/donations-icon.png"></div>
               <div class="box-titulo">'$"Doação"'</div>
           </button>
-        </div>             
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./url.run https://forum.biglinux.com.br/`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./url.run https://forum.biglinux.com.br/`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_forum.png"></div>
               <div class="box-titulo">'$"Fórum"'</div>
           </button>
-        </div>        
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./url.run https://www.youtube.com/channel/UC59fsUVH-th1V5Ybmog1WPQ`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./url.run https://www.youtube.com/channel/UC59fsUVH-th1V5Ybmog1WPQ`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_youtube.png"></div>
               <div class="box-titulo">'$"YouTube"'</div>
           </button>
-        </div>  
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./url.run https://twitter.com/biglinux`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./url.run https://twitter.com/biglinux`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_twitter.png"></div>
               <div class="box-titulo">'$"Twitter"'</div>
           </button>
-        </div>  
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./url.run https://t.me/biglinux`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./url.run https://t.me/biglinux`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_telegram.png"></div>
               <div class="box-titulo">'$"Telegram"'</div>
           </button>
-        </div>     
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./url.run https://www.instagram.com/big_linux/`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./url.run https://www.instagram.com/big_linux/`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_instagram.png"></div>
               <div class="box-titulo">'$"Instagram"'</div>
           </button>
-        </div>    
-        
+        </div>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
-          <button onclick="_run(`./url.run https://www.facebook.com/Biglinuxworld`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+          <button onclick="_run(`./url.run https://www.facebook.com/Biglinuxworld`)" id="box-subtitle" class="box-geral-icons box-geral-button">
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_facebook.png"></div>
               <div class="box-titulo">'$"Facebook"'</div>
           </button>
-        </div>              
-        
-      </div>      
-
+        </div>
+      </div>
     </div> <!-- PANELS -->
-    
   </div>
-  
-
   <h1 class="wizard__congrats-message" style="color: #c6c6c6;">
     '$"Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."'
   </h1>
