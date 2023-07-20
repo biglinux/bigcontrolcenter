@@ -16,7 +16,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
 
-cat <<EOF
+read -d $'' ShowText <<EOF
 <html>
 <head>
   <meta charset="UTF-8">
@@ -73,30 +73,31 @@ cat <<EOF
     </style>
   </head>
 EOF
+echo "$ShowText"
 
-HOUR="$(date +%H)"
-if [[ "$HOUR" -ge "06" || "$HOUR" -le "12" ]]; then
-	MSG=$"Bom dia"
-elif [[ "$HOUR" -ge "12" || "$HOUR" -le "18" ]]; then
-	MSG=$"Boa tarde"
+hour="$(date +%H)"
+if [[ "$hour" -ge "06" && "$hour" -le "12" ]]; then
+	msg=$"Bom dia"
+elif [[ "$hour" -ge "12" && "$hour" -le "18" ]]; then
+	msg=$"Boa tarde"
 else
-	MSG=$"Boa noite"
+	msg=$"Boa noite"
 fi
 
 if [[ "$USER" != "biglinux" ]]; then
-	USUARIO=" $USER"
+	usuario=" $USER"
 fi
 
-TXT=$"Aguarde, criando arquivos de cache..."
+txt=$"Aguarde, criando arquivos de cache..."
 
 # Get body tag with color light or not
 [[ -e /usr/share/bigbashview/bcc/shell/getbgcolor.sh ]] && . /usr/share/bigbashview/bcc/shell/getbgcolor.sh
 
-cat <<EOF
+read -d $'' ShowText <<EOF
   <div class="app">
     <div class="header"></div>
     <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-    <div class=footer-message>$MSG$USUARIO!<br>$TXT</div>
+    <div class=footer-message>$msg$usuario!<br>$txt</div>
   </div>
 
   <div class="footer"></div>
@@ -111,4 +112,5 @@ cat <<EOF
 </body>
 </html>
 EOF
+echo "$ShowText"
 IFS=$OIFS
