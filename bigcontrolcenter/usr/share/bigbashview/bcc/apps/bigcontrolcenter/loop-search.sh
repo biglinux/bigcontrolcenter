@@ -351,7 +351,7 @@ function sh_init {
 		if [[ -e "$i" ]]; then
 			parallel_search "$i" &
 		fi
-	done
+	}
 	wait
 	[[ -e "$HOME/.config/bigcontrolcenter/reload" ]] && rm -f "$HOME/.config/bigcontrolcenter/reload"
 	IFS=$OIFS
