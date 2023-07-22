@@ -55,7 +55,7 @@ parallel_search() {
 		#kdialog --msgbox "$1 $EXEC"
 		>"$HOME/.config/bigcontrolcenter/show_other"
 	fi
-	cat <<EOF >>"$HOME/.config/bigcontrolcenter/cache-$filename.html"
+	cat <<EOF >"$HOME/.config/bigcontrolcenter/cache-$filename.html"
         <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
         <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
         </div>

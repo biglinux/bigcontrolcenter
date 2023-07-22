@@ -522,7 +522,7 @@ if [[ -e "$HOME/.config/bigcontrolcenter/refresh" ]]; then
 	#   Timeshift
 	########################################
 	if [[ -e "/usr/bin/timeshift-launcher" ]]; then
-		EXEC="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true timeshift-launcher"
+		EXEC='timeshift-launcher'
 		NAME=$"Snapshots e backups"
 		if [[ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]]; then
 			COMMENT=$"Gerenciar pontos de restauração."
