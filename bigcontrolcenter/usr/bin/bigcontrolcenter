@@ -115,11 +115,13 @@ function verify_bcc_version {
 
 # Desativar Cache
 function verify_cache {
+	local cfilestart='index.sh.htm'
 	# RELOAD=1
 	if (( RELOAD )); then
-		rm -f "$userpath/cache*"
-		rm -f "$userpath/icons/*"
-		rm -f "$userpath/show_other"
+		local cfilestart='main.sh.htm'
+		rm -f "$userpath/cache*" >/dev/null 2>&-
+		rm -f "$userpath/icons/*" >/dev/null 2>&-
+		rm -f "$userpath/show_other" >/dev/null 2>&-
 		# Cria arquivo para ser removido dentro do loop-search e verificado no index.sh.htm quando deve prosseguir
 		echo '' > "$userpath/reload"
 		# Cria arquivo para ser removido dentro do index.sh.htm
@@ -128,17 +130,12 @@ function verify_cache {
 		# START CACHE 1
 		#########################################################
 		nice -n 15 ./loop-search.sh &
-		QT_QPA_PLATFORM=xcb\
-			SDL_VIDEODRIVER=x11\
-			WINIT_UNIX_BACKEND=x11\
-			GDK_BACKEND=x11\
-			bash bigbashview -n "$TITLE" -s 1200x645 main.sh.htm -i icon.png
-	else
-		QT_QPA_PLATFORM=xcb\
-			SDL_VIDEODRIVER=x11\
-			WINIT_UNIX_BACKEND=x11\
-			GDK_BACKEND=x11 bash bigbashview -n "$TITLE" -s 1200x645 index.sh.htm -i icon.png
 	fi
+	QT_QPA_PLATFORM=xcb\
+		SDL_VIDEODRIVER=x11\
+		WINIT_UNIX_BACKEND=x11\
+		GDK_BACKEND=x11\
+		bash bigbashview -n "$TITLE" -s 1200x645 "$cfilestart" -i icon.png
 }
 
 #sh_debug

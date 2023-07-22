@@ -39,8 +39,7 @@ trap 'printf "\n${red}Interrupted! exiting...\n"; cleanup; exit 0' INT TERM HUP
 
 cleanup() {
 	sh_info_msg "Removing temporary files..."
-	[[ -e "$HOME/.config/bigcontrolcenter/reload" ]] && rm -f "$HOME/.config/bigcontrolcenter/reload"
-	IFS=$OIFS
+	[[ -e "$userpath/reload" ]] && rm -f "$userpath/reload"
 	exit 1
 }
 
@@ -48,97 +47,18 @@ function sh_config {
 	#Translation
 	export TEXTDOMAINDIR="/usr/share/locale"
 	export TEXTDOMAIN=bigcontrolcenter
-	declare -g OIFS=$IFS
-	IFS=$'\n'
+	declare -g userpath="$HOME/.config/bigcontrolcenter"
 }
 
-function sh_get_config_value {
-	local config_file="$1"
-	local key="$2"
-	local entry_group="Desktop Entry"
-	kreadconfig5 --file "$config_file" --group "$entry_group" --key "$key"
-}
-
-# ALL KCMSHELL5 OPEN AND APPS
-#############################
-function parallel_search {
-	local config_file="$1"
-
-	EXEC=$(sh_get_config_value "$config_file" "Exec")
-	if [[ -z "$EXEC" ]]; then
-		kde_library=$(sh_get_config_value "$config_file" "X-KDE-Library")
-      EXEC="kcmshell5 $kde_library"
-	fi
-	EXEC=${EXEC//kcm_/}
-	EXEC=${EXEC//systemsettings/kcmshell5}
-	EXEC=${EXEC%%\%*}
-
-	    NAME=$(sh_get_config_value "$config_file" "Name")
-	 COMMENT=$(sh_get_config_value "$config_file" "Comment")
-	CATEGORY=$(sh_get_config_value "$config_file" "X-KDE-System-Settings-Parent-Category")
-   	 ICON=$(sh_get_config_value "$config_file" "Icon")
-
-	if [[ ! -e "$ICON" ]]; then
-	   ICON_ORIG1="$ICON"
-	   ICON="icons/${ICON%.*}.png"
-	fi
-
-	if [[ ! -e "$ICON" ]]; then
-	   ICON_ORIG=$(geticons "$ICON_ORIG1")
-		ICON_ORIG_PNG="${ICON_ORIG/*64x64/}"
-	   if [[ ! -e "$ICON_ORIG_PNG" ]]; then
-			ICON_ORIG_SVG="${ICON_ORIG##*.svg}"
-	   else
-	      ICON_ORIG="$ICON_ORIG_PNG"
-	   fi
-	   if [[ -e "$ICON_ORIG_SVG" ]]; then
-	      ksvgtopng5 64 64 "$ICON_ORIG_SVG" "$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png" &
-	      ICON="$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png"
-	   else
-	      ICON="$ICON_ORIG"
-	   fi
-	fi
-	case "$CATEGORY" in
-	  *[Ss]tar* | *[Ss]ystem* | *[Hh]ardware* | *[Pp]ersonalization* | *[Pp]hone* | *[Mm]ultimedia* | *[Nn]etwork* | *[Aa]pplications* | *[Aa]ccount* | *[Ll]anguage* | *[Pp]rivacy* | *[Ss]erver* | *[Aa]bout* )
-	    ;;
-	  *)
-	    CATEGORY="Other"
-	    ;;
-	esac
-
-	filename="${1##*/}"
-	filename="${filename%.desktop}"
-	. files/$filename
-
-	if [ "$CATEGORY" = "Other" ]; then
-#	   if command -v kdialog &>/dev/null; then
-#	      kdialog --msgbox "$1 $EXEC"
-#	   fi
-	   > "$HOME/.config/bigcontrolcenter/show_other"
-	fi
-
-cat <<EOF > "$HOME/.config/bigcontrolcenter/cache-$filename.html"
-	<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
-	<div id="box-status-bar"><div id="tit-status-bar">
-	$COMMENT
-	</div>
-	</div>
-	<button onclick="_run('$EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button"> <!-- class="status-button" CHAMA MODAL (POP-UP) -->
-	<div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON" title="$NAME" alt="$NAME"></div>
-	<div class="box-titulo">$NAME</div>
-	<!--<div class="box-comentario">$COMMENT</div>-->
-	</button>
-	</div>
-EOF
-	wait
+function sh_checkdir {
+	[[ ! -d "$userpath" ]] && mkdir -p "$userpath"
 }
 
 function sh_kservices5_desktop_files {
 	local filtered_files
-
-	filtered_files=$(grep -Rl -E '(kcmshell5|control)' /usr/share/kservices5/ \
+	mapfile -t filtered_files < <(grep -Rl -E '(kcmshell5|control)' /usr/share/kservices5/ \
 	| grep -ve 'kcmdolphingeneral.desktop' \
-   -ve 'kcmdolphinnavigation.desktop' \
+    -ve 'kcmdolphinnavigation.desktop' \
     -ve 'kcmdolphinservices.desktop' \
     -ve 'kcmdolphinviewmodes.desktop' \
     -ve 'cache.desktop' \
@@ -213,12 +133,13 @@ function sh_kservices5_desktop_files {
     -ve 'classikdecorationconfig.desktop' \
     -ve 'klassydecorationconfig.desktop' \
     -ve 'klassystyleconfig.desktop')
-	echo "$filtered_files"
+	echo ${filtered_files[@]}
 }
 
 function sh_apps_desktop_files {
+	local -a filtered_files
 	# Array com os padrões de exclusão
-	local	excluded_files=(
+	local excluded_files=(
 	    'kcmdolphingeneral.desktop'
 	    'kcmdolphinnavigation.desktop'
 	    'kcmdolphinservices.desktop'
@@ -296,11 +217,12 @@ function sh_apps_desktop_files {
 	    'kcm_kwinxwayland.desktop'
 	)
 	# Usando find para encontrar os arquivos desejados e excluindo os arquivos da lista de exclusão
-	filtered_files=$(find /usr/share/applications/kcm_*.desktop ! -name "${excluded_files[0]}" $(printf "! -name %s " "${excluded_files[@]:1}"))
-	echo "$filtered_files"
+   mapfile -t filtered_files < <(find /usr/share/applications/ -name "kcm_*.desktop" -type f ! \( -name "${excluded_files[0]}" $(printf -- "-o -name %s " "${excluded_files[@]:1}") \) -print0 | xargs -0)
+   echo "${filtered_files[@]}"
 }
 
 function sh_bcc_desktop_files {
+	local -a filtered_files
 	# Array com os arquivos a serem excluídos
 	local excluded_files=(
     'timeshift-gtk.desktop'
@@ -315,48 +237,221 @@ function sh_bcc_desktop_files {
     'kdesettings'
     'lstopo.desktop'
     'kdesystemsettings.desktop'
-    'qv4l2.desktop'
-)
+    'qv4l2.desktop')
 
 	# Usando find para encontrar os arquivos e excluindo os arquivos da lista de exclusão
-	filtered_files=$(find /usr/share/applications/bigcontrolcenter/ -type f ! -name "${excluded_files[0]}" $(printf "! -name %s " "${excluded_files[@]:1}"))
-	echo "$filtered_files"
+   mapfile -t filtered_files < <(find /usr/share/applications/bigcontrolcenter/ -type f ! \( -name "${excluded_files[0]}" $(printf -- "-o -name %s " "${excluded_files[@]:1}") \) -print0 | xargs -0)
+   echo "${filtered_files[@]}"
 }
 
 function sh_static_desktop_files {
-	local filtered_files=(/usr/share/applications/big-store.desktop
-								/usr/share/applications/org.manjaro.pamac.manager.desktop
-								/usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop
-								/usr/share/kservices5/bigcontrolcenter/qv4l2.desktop
-								/usr/share/kservices5/bigcontrolcenter/org.gnome.baobab.desktop
-								/usr/share/kservices5/bigcontrolcenter/biglinux-grub-restore.desktop
-								/usr/share/applications/gsmartcontrol.desktop
-								/usr/share/applications/org.kde.kdeconnect-settings.desktop
-								/usr/share/applications/org.kde.dolphin.desktop
-								/usr/share/applications/org.kde.konsole.desktop
-								/usr/share/applications/guvcview.desktop
-								/usr/share/applications/hplip.desktop)
+	local -a filtered_files=('/usr/share/applications/big-store.desktop' '/usr/share/applications/org.manjaro.pamac.manager.desktop' '/usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop'
+								'/usr/share/kservices5/bigcontrolcenter/qv4l2.desktop'
+								'/usr/share/kservices5/bigcontrolcenter/org.gnome.baobab.desktop'
+								'/usr/share/kservices5/bigcontrolcenter/biglinux-grub-restore.desktop'
+								'/usr/share/applications/gsmartcontrol.desktop'
+								'/usr/share/applications/org.kde.kdeconnect-settings.desktop'
+								'/usr/share/applications/org.kde.dolphin.desktop'
+								'/usr/share/applications/org.kde.konsole.desktop'
+								'/usr/share/applications/guvcview.desktop'
+								'/usr/share/applications/hplip.desktop')
 	echo "${filtered_files[@]}"
 }
 
-function sh_init {
-	local -a aAll_Desktop_files
+function sh_get_config_value {
+	local config_file="$1"
+	local key="$2"
+	local entry_group="Desktop Entry"
+	kreadconfig5 --file "$config_file" --group "$entry_group" --key "$key"
+}
 
-	aAll_Desktop_files+="$(sh_kservices5_desktop_files)"
-	aAll_Desktop_files+="$(sh_apps_desktop_files)"
-	aAll_Desktop_files=="$(sh_bcc_desktop_files)"
-	aAll_Desktop_files+="$(sh_static_desktop_files)"
+parallel_search () {
+    EXEC="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key Exec)"
+    if [ "$EXEC" = "" ]; then
+        EXEC="kcmshell5 $(kreadconfig5 --file "$1" --group "Desktop Entry" --key X-KDE-Library)"
+    fi
+    EXEC="$(echo "$EXEC" | sed 's|kcm_||g;s|systemsettings|kcmshell5|g;s|%.*||g')"
+    NAME="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key Name)"
+    COMMENT="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key Comment)"
+    CATEGORY="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key X-KDE-System-Settings-Parent-Category)"
+    ICON="$(kreadconfig5 --file "$1" --group "Desktop Entry" --key Icon)"
 
-	for i in "${aAll_Desktop_files[@]}"; {
-		if [[ -e "$i" ]]; then
-			parallel_search "$i" &
+    if [ ! -e "$ICON" ]; then
+        ICON_ORIG1="$ICON"
+        ICON="icons/${ICON}.png"
+    fi
+    if [ ! -e "$ICON" ]; then
+        ICON_ORIG="$(geticons "$ICON_ORIG1")"
+        ICON_ORIG_PNG="$(grep -i -m 1 "64x64.*png" <<< "$ICON_ORIG")"
+        if [ ! -e "$ICON_ORIG_PNG" ]; then
+            ICON_ORIG_SVG="$(grep -i -m 1 ".svg" <<< "$ICON_ORIG" | tail -1)"
+            else
+            ICON_ORIG="$ICON_ORIG_PNG"
+        fi
+        if [ -e "$ICON_ORIG_SVG" ]; then
+            ksvgtopng5 64 64 "$ICON_ORIG_SVG" "$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png" &
+            ICON="$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png"
+        else
+            ICON="$ICON_ORIG"
+        fi
+    fi
+    if [ "$(echo "$CATEGORY" | grep -i "Star\|System\|Hardware\|Personalization\|Phone\|Multimedia\|Network\|Aplications\|Account\|Language\|Privacy\|Server\|About")" = "" ]; then
+        CATEGORY="Other"
+    fi
+    filename="$(echo "$1" | sed 's|.*/||g;s|\.desktop||g')"
+    . files/$filename
+    if [ "$CATEGORY" = "Other" ]; then
+        #kdialog --msgbox "$1 $EXEC"
+        > "$HOME/.config/bigcontrolcenter/show_other"
+    fi
+cat << EOF >> "$HOME/.config/bigcontrolcenter/cache-$filename.html"
+        <div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+        <div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div>
+        </div>
+        <button onclick="_run('$EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button"> <!-- class="status-button" CHAMA MODAL (POP-UP) -->
+            <div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON" title="$NAME" alt="$NAME"></div>
+            <div class="box-titulo">$NAME</div>
+            <!--<div class="box-comentario">$COMMENT</div>-->
+        </button>
+    </div>
+EOF
+wait
+}
+
+
+# ALL KCMSHELL5 OPEN AND APPS
+#############################
+function sh_parallel_search {
+	local config_file="$1"
+
+	EXEC=$(sh_get_config_value "$config_file" "Exec")
+	if [[ -z "$EXEC" ]]; then
+		kde_library=$(sh_get_config_value "$config_file" "X-KDE-Library")
+      EXEC="kcmshell5 $kde_library"
+	fi
+	EXEC=${EXEC//kcm_/}
+	EXEC=${EXEC//systemsettings/kcmshell5}
+	EXEC=${EXEC%%\%*}
+
+	    NAME=$(sh_get_config_value "$config_file" "Name")
+	 COMMENT=$(sh_get_config_value "$config_file" "Comment")
+	CATEGORY=$(sh_get_config_value "$config_file" "X-KDE-System-Settings-Parent-Category")
+   	 ICON=$(sh_get_config_value "$config_file" "Icon")
+
+:<<'comment'
+	if [[ ! -e "$ICON" ]]; then
+	   ICON_ORIG1="$ICON"
+	   ICON="icons/${ICON%.*}.png"
+	fi
+	if [[ ! -e "$ICON" ]]; then
+	   ICON_ORIG=$(geticons "$ICON_ORIG1")
+		ICON_ORIG_PNG="${ICON_ORIG/*64x64/}"
+	   if [[ ! -e "$ICON_ORIG_PNG" ]]; then
+			ICON_ORIG_SVG="${ICON_ORIG##*.svg}"
+	   else
+	      ICON_ORIG="$ICON_ORIG_PNG"
+	   fi
+	   if [[ -e "$ICON_ORIG_SVG" ]]; then
+	      ksvgtopng5 64 64 "$ICON_ORIG_SVG" "$userpath/${ICON_ORIG1}.png" &
+	      ICON="$userpath/${ICON_ORIG1}.png"
+	   else
+	      ICON="$ICON_ORIG"
+	   fi
+	fi
+	case "$CATEGORY" in
+	  *[Ss]tar* | *[Ss]ystem* | *[Hh]ardware* | *[Pp]ersonalization* | *[Pp]hone* | *[Mm]ultimedia* | *[Nn]etwork* | *[Aa]pplications* | *[Aa]ccount* | *[Ll]anguage* | *[Pp]rivacy* | *[Ss]erver* | *[Aa]bout* )
+	    ;;
+	  *)
+	    CATEGORY="Other"
+	    ;;
+	esac
+
+	filename="${1##*/}"
+	filename="${filename%.desktop}"
+	[[ -e files/"$filename" ]] && . files/"$filename"
+
+	if [ "$CATEGORY" = "Other" ]; then
+#	   if command -v kdialog &>/dev/null; then
+#	      kdialog --msgbox "$1 $EXEC"
+#	   fi
+	   > "$userpath/show_other"
+	fi
+comment
+	if [ ! -e "$ICON" ]; then
+		ICON_ORIG1="$ICON"
+		ICON="icons/${ICON}.png"
+	fi
+
+	if [ ! -e "$ICON" ]; then
+		ICON_ORIG="$(geticons "$ICON_ORIG1")"
+		ICON_ORIG_PNG="$(grep -i -m 1 "64x64.*png" <<< "$ICON_ORIG")"
+		if [ ! -e "$ICON_ORIG_PNG" ]; then
+			ICON_ORIG_SVG="$(grep -i -m 1 ".svg" <<< "$ICON_ORIG" | tail -1)"
+		else
+			ICON_ORIG="$ICON_ORIG_PNG"
 		fi
-	}
+
+		if [ -e "$ICON_ORIG_SVG" ]; then
+			ksvgtopng5 64 64 "$ICON_ORIG_SVG" "$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png" &
+			ICON="$HOME/.config/bigcontrolcenter/${ICON_ORIG1}.png"
+		else
+			ICON="$ICON_ORIG"
+		fi
+	fi
+
+	case "$CATEGORY" in
+	  *[Ss]tar* | *[Ss]ystem* | *[Hh]ardware* | *[Pp]ersonalization* | *[Pp]hone* | *[Mm]ultimedia* | *[Nn]etwork* | *[Aa]pplications* | *[Aa]ccount* | *[Ll]anguage* | *[Pp]rivacy* | *[Ss]erver* | *[Aa]bout* )
+	    ;;
+	  *)
+	    CATEGORY="Other"
+	    ;;
+	esac
+
+#	filename="$(echo "$1" | sed 's|.*/||g;s|\.desktop||g')"
+	filename="${1##*/}"
+	filename="${filename%.desktop}"
+	[[ -e files/"$filename" ]] && . files/"$filename"
+
+	if [ "$CATEGORY" = "Other" ]; then
+		#if command -v kdialog &>/dev/null; then
+			#kdialog --msgbox "$1 $EXEC"
+		#fi
+		> "$userpath/show_other"
+	fi
+
+cat <<-EOF > "$userpath/cache-$filename.html"
+	<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+	<div id="box-status-bar"><div id="tit-status-bar">
+	$COMMENT
+	</div>
+	</div>
+	<button onclick="_run('$EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button"> <!-- class="status-button" CHAMA MODAL (POP-UP) -->
+	<div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON" title="$NAME" alt="$NAME"></div>
+	<div class="box-titulo">$NAME</div>
+	<!--<div class="box-comentario">$COMMENT</div>-->
+	</button>
+	</div>
+EOF
 	wait
-	[[ -e "$HOME/.config/bigcontrolcenter/reload" ]] && rm -f "$HOME/.config/bigcontrolcenter/reload"
-	IFS=$OIFS
+}
+
+function sh_init {
+	declare -a aAll_Desktop_files
+	aAll_Desktop_files+=($(sh_kservices5_desktop_files))
+	aAll_Desktop_files+=($(sh_apps_desktop_files))
+	aAll_Desktop_files+=($(sh_bcc_desktop_files))
+	aAll_Desktop_files+=($(sh_static_desktop_files))
+
+	for i in "${aAll_Desktop_files[@]}"; do
+		if [[ -e "$i" ]]; then
+			sh_parallel_search "$i" &
+		fi
+	done
+	wait
+	[[ -e "$userpath/reload" ]] && rm -f "$userpath/reload"
 }
 
 #sh_debug
 sh_config
+sh_checkdir
 sh_init
