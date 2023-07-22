@@ -4,7 +4,7 @@
 
 #  bigcontrolcenter
 #  Created: 0000/00/00
-#  Altered: 2023/07/17
+#  Altered: 2023/07/22
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -30,19 +30,10 @@
 #  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-readonly red=$(tput setaf 124)
-readonly green=$(tput setaf 2)
-readonly pink=$(tput setaf 129)
-readonly reset=$(tput sgr0)
 readonly APP="${0##*/}"
-readonly _VERSION_="1.0.0-20230717"
-
-function sh_debug {
-	export PS4='${red}${0##*/}${green}[$FUNCNAME]${pink}[$LINENO]${reset} '
-	set -x
-	set -e
-	shopt -s extglob
-}
+readonly _VERSION_="1.0.0-20230722"
+readonly LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+[[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
 function sh_config {
 	#sets
@@ -62,6 +53,10 @@ function sh_checkdir {
 	[[ ! -d "$bbvpath" ]] && mkdir -p "$bbvpath"
 	cd "$bbvpath" || exit
 	[[ ! -d "$userpath" ]] && mkdir -p "$userpath"
+}
+
+function sh_clean_reload {
+	[[ -e "$userpath/reload" ]] && rm -f "$userpath/reload"
 }
 
 # Verify number of kcmshell5 changed
@@ -120,7 +115,7 @@ function verify_bcc_version {
 
 # Desativar Cache
 function verify_cache {
-	#RELOAD=1 # Desativado RELOAD=1
+	# RELOAD=1
 	if (( RELOAD )); then
 		rm -f "$userpath/cache*"
 		rm -f "$userpath/icons/*"
@@ -149,6 +144,7 @@ function verify_cache {
 #sh_debug
 sh_config
 sh_checkdir
+sh_clean_reload
 verify_kcm_number
 verify_number_files_bcc_apps
 verify_user_language
