@@ -246,6 +246,13 @@ echo '<!DOCTYPE html>
           <p class="panel__subheading">'$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."'</p>
         </header>
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
+          <button onclick="_run(`kcmshell5 kcm_kscreen`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/cs-screen.svg"></div>
+              <div class="box-titulo">'$"Configurações da Tela"'</div>
+          </button>
+        </div> 
+        
+        <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button onclick="_run(`biglinux-themes-gui`)" id="box-subtitle" class="box-geral-icons box-geral-button"> 
               <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon-aparencia-desempenho-usabilidade.png"></div>
               <div class="box-titulo">'$"Temas, Desktop e Ajustes"'</div>
@@ -273,7 +280,7 @@ echo '<!DOCTYPE html>
 if [[ -f /usr/bin/brave ]]; then
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-brave" onclick="_run(`./run-browser.run brave-browser.desktop`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/brave.png" title="Brave" alt="Brave"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/brave.svg" title="Brave" alt="Brave"></div>
                 <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é brave-browser
@@ -288,7 +295,7 @@ if [[ -f /usr/bin/brave ]]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-brave" onclick="_run(`./install-browser.run brave-browser`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/brave_bw.png" title="Brave" alt="Brave"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/brave_bw.svg" title="Brave" alt="Brave"></div>
                 <div class="box-titulo">
                 Brave</div>
             </button>
@@ -298,7 +305,7 @@ fi
 if [[ -f /usr/bin/firefox ]]; then
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-fire" id="box-subtitle" onclick="_run(`./run-browser.run firefox.desktop`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/firefox.png" title="Firefox" alt="Firefox"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/firefox.svg" title="Firefox" alt="Firefox"></div>
                 <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é firefox
@@ -313,7 +320,7 @@ if [[ -f /usr/bin/firefox ]]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-fire" id="box-subtitle" onclick="_run(`./install-browser.run firefox`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/firefox_bw.png" title="Firefox" alt="Firefox"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/firefox_bw.svg" title="Firefox" alt="Firefox"></div>
                 <div class="box-titulo">
                 Firefox</div>
             </button>
@@ -323,7 +330,7 @@ fi
 if [[ -f /usr/bin/google-chrome-stable ]]; then
 	echo '        <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chrome" id="box-subtitle" onclick="_run(`./run-browser.run google-chrome.desktop`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chrome.png" title="Google Chrome" alt="Google Chrome"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chrome.svg" title="Google Chrome" alt="Google Chrome"></div>
                 <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é google-chrome
@@ -338,7 +345,7 @@ if [[ -f /usr/bin/google-chrome-stable ]]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chrome" id="box-subtitle" onclick="_run(`./install-browser.run google-chrome`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chrome_bw.png" title="Google Chrome" alt="Google Chrome"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chrome_bw.svg" title="Google Chrome" alt="Google Chrome"></div>
                 <div class="box-titulo">
                 Google Chrome</div>
             </button>
@@ -348,7 +355,7 @@ fi
 if [ -f /usr/bin/chromium ]; then
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chromium" id="box-subtitle" onclick="_run(`./run-browser.run chromium.desktop`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chromium.png" title="Chromium" alt="Chromium"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chromium.svg" title="Chromium" alt="Chromium"></div>
                 <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é google-chromium
@@ -363,7 +370,7 @@ if [ -f /usr/bin/chromium ]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
             <button type="button" class="box-geral-icons box-geral-button show-chromium" id="box-subtitle" onclick="_run(`./install-browser.run chromium`)">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chromium_bw.png" title="Chromium" alt="Chromium"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/chromium_bw.svg" title="Chromium" alt="Chromium"></div>
                 <div class="box-titulo">
                 Chromium</div>
             </button>
@@ -373,7 +380,7 @@ fi
 if [ -f /usr/bin/vivaldi-stable ]; then
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-vivaldi" id="box-subtitle" onclick="_run(`./run-browser.run vivaldi-stable.desktop`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/vivaldi.png" title="Vivaldi" alt="Vivaldi"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/vivaldi.svg" title="Vivaldi" alt="Vivaldi"></div>
               <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é vivaldi
@@ -390,7 +397,7 @@ if [ -f /usr/bin/vivaldi-stable ]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-vivaldi" id="box-subtitle" onclick="_run(`./install-browser.run vivaldi`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/vivaldi_bw.png" title="Vivaldi" alt="Vivaldi"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/vivaldi_bw.svg" title="Vivaldi" alt="Vivaldi"></div>
               <div class="box-titulo">
               Vivaldi</div>
           </button>
@@ -400,7 +407,7 @@ fi
 if [ -f /usr/bin/librewolf ]; then
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-librewolf" id="box-subtitle" onclick="_run(`./run-browser.run librewolf.desktop`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/librewolf.png" title="LibreWolf" alt="LibreWolf"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/librewolf.svg" title="LibreWolf" alt="LibreWolf"></div>
               <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é librewolf
@@ -417,7 +424,7 @@ if [ -f /usr/bin/librewolf ]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-librewolf" id="box-subtitle" onclick="_run(`./install-browser.run librewolf-bin`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/librewolf_bw.png" title="LibreWolf" alt="LibreWolf"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/librewolf_bw.svg" title="LibreWolf" alt="LibreWolf"></div>
               <div class="box-titulo">
               LibreWolf</div>
           </button>
@@ -427,7 +434,7 @@ fi
 if [ -f /usr/bin/opera ]; then
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-opera" id="box-subtitle" onclick="_run(`./run-browser.run opera.desktop`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/opera.png" title="Opera" alt="Opera"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/opera.svg" title="Opera" alt="Opera"></div>
               <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é opera
@@ -444,7 +451,7 @@ if [ -f /usr/bin/opera ]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-opera" id="box-subtitle" onclick="_run(`./install-browser.run opera`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/opera_bw.png" title="Opera" alt="Opera"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/opera_bw.svg" title="Opera" alt="Opera"></div>
               <div class="box-titulo">
               Opera</div>
           </button>
@@ -454,7 +461,7 @@ fi
 if [ -f /usr/bin/falkon ]; then
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-falkon" id="box-subtitle" onclick="_run(`./run-browser.run org.kde.falkon.desktop`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/falkon.png" title="Falkon" alt="Falkon"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/falkon.svg" title="Falkon" alt="Falkon"></div>
               <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é falkon
@@ -471,7 +478,7 @@ if [ -f /usr/bin/falkon ]; then
 else
 	echo '<div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-falkon" id="box-subtitle" onclick="_run(`./install-browser.run falkon`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/falkon_bw.png" title="Falkon" alt="Falkon"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/falkon_bw.svg" title="Falkon" alt="Falkon"></div>
               <div class="box-titulo">
               Falkon</div>
           </button>
@@ -484,7 +491,7 @@ if [ -f /usr/bin/microsoft-edge-stable ]; then
 	echo '
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Personalization" style="">
           <button type="button" class="box-geral-icons box-geral-button show-edge" id="box-subtitle" onclick="_run(`./run-browser.run microsoft-edge.desktop`)">
-              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/edge.png" title="Edge" alt="Edge"></div>
+              <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/edge.svg" title="Edge" alt="Edge"></div>
               <div class="box-titulo">'
 	DEFAULTWEB=$(xdg-settings get default-web-browser)
 	#se não achar browser padrão jultar que é edge
@@ -549,7 +556,7 @@ echo '
 
         <div class="box-1 box-2 box-3 box-4 box-5 box-items Star Personalization" style="">
             <button onclick="_run(`system-config-printer`)" id="box-subtitle" class="box-geral-icons box-geral-button">
-                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_print.png" title="'$"Impressoras"'" alt="'$"Impressoras"'"></div>
+                <div class="box-imagem-icon"><img class="box-imagem-icon" src="icons/icon_print.svg" title="'$"Impressoras"'" alt="'$"Impressoras"'"></div>
                 <div class="box-titulo">'$"Impressoras"'</div>
             </button>
         </div>
