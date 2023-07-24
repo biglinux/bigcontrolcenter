@@ -575,10 +575,7 @@ EOF
 	#    ALL BIGLINUX OPEN
 	##########################
 	# Wait loop-search.sh end
-	while [ -e "$HOME/.config/bigcontrolcenter/reload" ]; do
-		sh_info_msg $"Aguardando pela finalização do reload"
-		sleep 0.02 >/dev/null
-	done
+	wait
 
 	cat "$HOME/.config/bigcontrolcenter/cache.html"
 	cat ~/.config/bigcontrolcenter/cache-*.html
