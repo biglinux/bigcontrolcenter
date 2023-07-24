@@ -318,7 +318,6 @@ EOF
 wait
 }
 
-
 # ALL KCMSHELL5 OPEN AND APPS
 #############################
 function sh_parallel_search {

@@ -109,7 +109,7 @@ function CACHE_ICON {
 	# $3 EXEC
 	# $4 ICON
 	# $6 NAME
-cat <<-EOF > "$HOME/.config/bigcontrolcenter/cache.html"
+cat <<-EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
 	<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
 	<div id="box-status-bar">
 	<div id="tit-status-bar">
@@ -575,10 +575,7 @@ EOF
 	#    ALL BIGLINUX OPEN
 	##########################
 	# Wait loop-search.sh end
-	while [ -e "$HOME/.config/bigcontrolcenter/reload" ]; do
-		sh_info_msg $"Aguardando pela finalização do reload"
-		sleep 0.02 >/dev/null
-	done
+	wait
 
 	cat "$HOME/.config/bigcontrolcenter/cache.html"
 	cat ~/.config/bigcontrolcenter/cache-*.html
