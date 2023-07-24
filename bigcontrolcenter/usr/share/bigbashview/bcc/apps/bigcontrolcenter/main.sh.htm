@@ -1,116 +1,118 @@
 #!/usr/bin/env bash
+#shellcheck disable=SC2155
+#shellcheck source=/dev/null
 
-##################################
-#	Author1: Bruno Goncalves (www.biglinux.com.br)
-#	Author2: Rafael Ruscher (rruscher@gmail.com)
-#	Author3: Eltonff (www.biglinux.com.br)
+#  usr/share/bigbashview/bcc/apps/bigcontrolcenter/main.sh.htm
+#  Description: Loading
+#  Created: 2022/06/09
+#  Altered: 2023/07/21
 #
-#	Date:    2022/06/09
+#  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
+#                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
+#                2022-2023, Rafael Ruscher <rruscher@gmail.com>
+#					  2022-2023, Eltonff <www.biglinux.com.br>
+#  All rights reserved.
 #
-#	Description: Loading
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#  1. Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+#  2. Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
 #
-#	Licensed by GPL V2 or greater
-##################################
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+#  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+#  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+#  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+#  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+#  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+#  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
+readonly APP="${0##*/}"
+readonly _VERSION_="1.0.0-20230721"
+readonly LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+[[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
-read -d $'' ShowText <<EOF
-<html>
-<head>
-  <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <style>
-    .lds-ring {
-      display: inline-flex;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-    }
-    .lds-ring div {
-      box-sizing: border-box;
-      display: block;
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      margin: 8px;
-      border: 8px solid rgba(0, 255, 255, .1);
-      border-top-color: #00a8e8;
-      border-radius: 50%;
-      animation: lds-ring 1.2s infinite steps(24);
-      /*border-color: #fff transparent transparent transparent;*/
-    }
-    .lds-ring div:nth-child(1) {
-      animation-delay: -0.45s;
-    }
-    .lds-ring div:nth-child(2) {
-      animation-delay: -0.3s;
-    }
-    .lds-ring div:nth-child(3) {
-      animation-delay: -0.15s;
-    }
-    @keyframes lds-ring {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+function sh_config {
+	#Translation
+	export TEXTDOMAINDIR="/usr/share/locale"
+	export TEXTDOMAIN=bigcontrolcenter
+}
 
-    .footer-message {
-      z-index: 10;
-      position: absolute;
-      bottom: 0;
-      color: var(--theme-color);
-      width: 100%;
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    </style>
-  </head>
+function sh_init {
+	local MSG="$(sh_get_greeting_message)"
+	local TXT=$"Aguarde, criando arquivos de cache..."
+	local USUARIO="$(sh_get_user)"
+
+cat <<-EOF
+	<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.lds-ring {
+			display: inline-flex;
+	      position: absolute;
+	      width: 100%;
+	      height: 100%;
+	      align-items: center;
+	      justify-content: center;
+	    }
+	    .lds-ring div {
+	      box-sizing: border-box;
+	      display: block;
+	      position: absolute;
+	      width: 60px;
+	      height: 60px;
+	      margin: 8px;
+	      border: 8px solid rgba(0, 255, 255, .1);
+	      border-top-color: #00a8e8;
+	      border-radius: 50%;
+	      animation: lds-ring 1.2s infinite steps(24);
+	      /*border-color: #fff transparent transparent transparent;*/
+	    }
+	    .lds-ring div:nth-child(1) { animation-delay: -0.45s; }
+	    .lds-ring div:nth-child(2) { animation-delay: -0.3s; }
+	    .lds-ring div:nth-child(3) { animation-delay: -0.15s; }
+	    @keyframes lds-ring { 0% { transform: rotate(0deg); }
+								   100% { transform: rotate(360deg);}}
+	    .footer-message {
+	      z-index: 10;
+	      position: absolute;
+	      bottom: 0;
+	      color: var(--theme-color);
+	      width: 100%;
+	      text-align: center;
+	      margin-bottom: 50px;
+	    }
+	</style>
+	</head>
+
+	$(sh_getbgcolor)
+
+	<div class="app">
+	<div class="header"></div>
+	<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+	<div class=footer-message>$MSG$USUARIO!<br>$TXT</div>
+	</div>
+	<div class="footer"></div>
+	<div class="logo">
+	<img src="logo.png" class="logo-biglinux">
+	</div>
+	<script type="text/javascript">window.location = "index.sh.htm";</script>
+	<!-- <meta http-equiv="refresh" content="0; URL='index.sh.htm'"/> -->
+	<script src="./script.js"></script>
+	</body>
+	</html>
 EOF
-echo "$ShowText"
+	IFS=$OIFS
+}
 
-hour="$(date +%H)"
-if [[ "$hour" -ge "06" && "$hour" -le "12" ]]; then
-	msg=$"Bom dia"
-elif [[ "$hour" -ge "12" && "$hour" -le "18" ]]; then
-	msg=$"Boa tarde"
-else
-	msg=$"Boa noite"
-fi
-
-if [[ "$USER" != "biglinux" ]]; then
-	usuario=" $USER"
-fi
-
-txt=$"Aguarde, criando arquivos de cache..."
-
-# Get body tag with color light or not
-[[ -e /usr/share/bigbashview/bcc/shell/getbgcolor.sh ]] && . /usr/share/bigbashview/bcc/shell/getbgcolor.sh
-
-read -d $'' ShowText <<EOF
-  <div class="app">
-    <div class="header"></div>
-    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-    <div class=footer-message>$msg$usuario!<br>$txt</div>
-  </div>
-
-  <div class="footer"></div>
-  <div class="logo">
-    <img src="logo.png" class="logo-biglinux">
-  </div>
-  <script type="text/javascript">
-     window.location = "index.sh.htm";
-  </script>
-  <!-- <meta http-equiv="refresh" content="0; URL='index.sh.htm'"/> -->
-  <script src="./script.js"></script>
-</body>
-</html>
-EOF
-echo "$ShowText"
-IFS=$OIFS
+#sh_debug
+sh_config
+sh_init

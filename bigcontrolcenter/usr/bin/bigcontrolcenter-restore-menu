@@ -28,16 +28,11 @@
 #  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-function sh_debug {
-	red=$(tput setaf 124);
-	green=$(tput setaf 2);
-	pink=$(tput setaf 129);
-	reset=$(tput sgr0);
-	export PS4='${red}${0##*/}${green}[$FUNCNAME]${pink}[$LINENO]${reset} '
-	set -x
-	set -e
-	shopt -s extglob
-}
+
+readonly APP="${0##*/}"
+readonly _VERSION_="1.0.0-20230722"
+readonly LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+[[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
 function sh_config {
 	#diretorio onde vão estar os arquivos ocultos do menu
