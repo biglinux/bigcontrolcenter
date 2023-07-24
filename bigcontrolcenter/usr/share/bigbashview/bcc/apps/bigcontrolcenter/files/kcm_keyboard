@@ -7,3 +7,4 @@ export TEXTDOMAIN=bigcontrolcenter
 COMMENT=$"Configurações de layout, teclas de atalho e outras opções."
 CATEGORY="Hardware"
 EXEC="kcmshell5 msm_keyboard keyboard keys standard_actions khotkeys"
+ICON="icons/preferences-desktop-keyboard-atalhos.png"
