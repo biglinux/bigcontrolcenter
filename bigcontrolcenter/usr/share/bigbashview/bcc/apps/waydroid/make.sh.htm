@@ -1,26 +1,60 @@
 #!/usr/bin/env bash
+#shellcheck disable=SC2155
+#shellcheck source=/dev/null
 
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
+#  /usr/share/bigbashview/bcc/apps/waydroid/make.sh.htm
+#  Description: Control Center to help usage of BigLinux
+#
+#  Created: 2022/02/28
+#  Altered: 2023/07/26
+#
+#  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
+#                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
+#                2022-2023, Rafael Ruscher <rruscher@gmail.com>
+#  All rights reserved.
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions
+#  are met:
+#  1. Redistributions of source code must retain the above copyright
+#     notice, this list of conditions and the following disclaimer.
+#  2. Redistributions in binary form must reproduce the above copyright
+#     notice, this list of conditions and the following disclaimer in the
+#     documentation and/or other materials provided with the distribution.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+#  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+#  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+#  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+#  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+#  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+#  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Don't group windows
-xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
-windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
+readonly APP="${0##*/}"
+readonly _VERSION_="1.0.0-20230726"
+readonly LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+[[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
-##############
-# REMOVE
-##############
-#if [[ "$remove" = "1" ]]; then
-if (( remove )); then
+function sh_config {
+	#Translation
+	export TEXTDOMAINDIR="/usr/share/locale"
+	export TEXTDOMAIN=bigcontrolcenter
+	# Configura a classe da janela ativa como o próprio script
+	xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
+	# Obter o ID da janela ativa
+	windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
+}
+
+function sh_remover_configuracoes { 
 	if [[ -e "$HOME/.local/share/waydroid" ]]; then
 		if kdialog \
 			--attach="$windowID" \
-			--title $"Waydroid"  \
-			--yesno $"Ao remover as configurações os programas instalados
-dentro do Waydroid e suas configurações serão perdidas.
-
-Realmente deseja remover?"; then
+			--title $"Waydroid" \
+			--yesno $"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão perdidas. Realmente deseja remover?"; then
+			# Remove as configurações e programas do Waydroid
 			pkexec rm -R "$HOME/.local/share/waydroid"
 			kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
 		else
@@ -29,70 +63,67 @@ Realmente deseja remover?"; then
 	else
 		kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Não existem configurações para remover."
 	fi
-fi
+}
 
-###############
-# INSTALL
-##############
-if (( install )); then
+function sh_instalar_waydroid {
 	./install.sh waydroid-image
-fi
+}
 
-###############
-# INSTALL GAPPS
-###############
-if (( install_with_gapps )); then
+function sh_instalar_waydroid_com_gapps {
 	./install.sh waydroid-image-gapps
-fi
+}
 
-##############
-# UNINSTALL
-##############
-if (( uninstall )); then
-	if [[ -e "$HOME/.local/share/waydroid" ]]; then
-		if kdialog \
-			--attach="$windowID" \
-			--title $"Waydroid" \
-			--yesno $"Deseja remover também os arquivos de configuração
-e programas instalados dentro do Waydroid?"; then
-			pkexec rm -R "$HOME/.local/share/waydroid"
-			kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Configurações removidas com sucesso!"
-		else
-			kdialog --title $"Waydroid" --attach="$windowID" --msgbox $"Nenhuma configuração foi removida!"
-		fi
-	fi
+function sh_desinstalar_waydroid {
+	sh_remover_configuracoes
 
-	if [[ "$(pacman -Q waydroid-image-gapps 2>/dev/null)" != "" ]]; then #START Checks if the waydroid-image-gapps package is installed.
+	if pacman -Q waydroid-image-gapps &>/dev/null; then
+		pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
+	elif pacman -Q waydroid-image &>/dev/null; then
 		pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
 	else
-		if [[ "$(pacman -Q waydroid-image 2>/dev/null)" != "" ]]; then #START Checks if the waydroid-image package is installed.
-			pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
-		else
-			pamac-installer --remove waydroid waydroid-meta-x11 waydroid-biglinux libgbinder python-gbinder
-		fi
+		pamac-installer --remove waydroid waydroid-meta-x11 waydroid-biglinux libgbinder python-gbinder
 	fi
-fi
+}
 
-###################
-# ENABLE/DISABLE 3D
-###################
-if (( gpu )); then
-	pkexec waydroid-big-3d 1
-else
-	pkexec waydroid-big-3d 0
-fi
+function sh_habilitar_desabilitar_3d {
+	if ((gpu)); then
+		pkexec waydroid-big-3d 1				# Habilita o suporte a 3D para o Waydroid
+	else
+		pkexec waydroid-big-3d 0				# Desabilita o suporte a 3D para o Waydroid
+	fi
+}
 
-#####################
-# START/STOP WAYDROID
-#####################
-if (( start )); then
-	waydroid-big </dev/null &>/dev/null &
-	sleep 1
-elif (( stop )); then
-	waydroid session stop
-	killall weston
-fi
+function sh_iniciar_parar_waydroid {
+	if ((start)); then
+		waydroid-big </dev/null &>/dev/null &	# Inicia o Waydroid
+		sleep 1											# Aguarda 1 segundo para permitir que o Waydroid seja inicializado
+	elif ((stop)); then
+		waydroid session stop						# Para o Waydroid e o ambiente de desktop Weston
+		killall weston
+	fi
+}
 
-cat <<EOF
-<meta http-equiv="refresh" content="0; URL='index.sh.htm'"/>
-EOF
+function sh_init {
+	# Verificar e executar ações de acordo com os parâmetros passados ao script
+	if ((remove)); then
+		sh_remover_configuracoes
+	elif ((install)); then
+		sh_instalar_waydroid
+	elif ((install_with_gapps)); then
+		sh_instalar_waydroid_com_gapps
+	elif ((uninstall)); then
+		sh_desinstalar_waydroid
+	fi
+
+	sh_habilitar_desabilitar_3d
+	sh_iniciar_parar_waydroid
+
+	# Redireciona para a página "index.sh.htm" após 0 segundos
+	cat <<-EOF
+		<meta http-equiv="refresh" content="0; URL='index.sh.htm'"/>
+	EOF
+}
+
+sh_debug
+sh_config
+sh_init
