@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-#	bigcontrolcenter-restore-menu
+#	usr/bin/bigcontrolcenter-restore-menu
 #  Created: 0000/00/00
-#  Altered: 2023/07/16
+#  Altered: 2023/08/05
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -29,7 +29,9 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230722"
+_VERSION_="1.0.0-20230805"
+BOOTLOG="/tmp/bigcontrolcenter-$(date +"%d%m%Y").log"
+LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
@@ -39,66 +41,66 @@ function sh_config {
 							 [ksrv_path]='/usr/share/kservices5/bigcontrolcenter'
 							)
 	declare -ga aDesktopFiles
-:<<'comment'
-	declare -g bigdir='/usr/share/applications/bigcontrolcenter'
-	declare -g ksrv_path='/usr/share/kservices5/bigcontrolcenter'
-	declare -ga aDesktopFiles=(
-					"biglinux-config.desktop"
-					"big-reset.desktop"
-					"system-config-printer.desktop"
-					"openjdk-8-policytool.desktop"
-					"pavucontrol-qt.desktop"
-					"bigkernel.desktop"
-					"gufw.desktop"
-					"gparted.desktop"
-					"hardinfo.desktop"
-					"bigapache.desktop"
-					"timeshift-gtk.desktop"
-					"mintstick-kde.desktop"
-					"mintstick-format-kde.desktop"
-					"biglinux-themes-gui.desktop"
-					"sambasearch.desktop"
-					"org.kde.kwalletmanager5.desktop"
-					"bigflash-javaws-widevine-fonts.desktop"
-					"tlpui.desktop"
-					"kdesystemsettings.desktop"
-					"org.kde.kinfocenter.desktop"
-					"grub-customizer.desktop"
-					"biglinux-tweaks.desktop"
-					"kvantummanager.desktop"
-					"manjaro-settings-manager.desktop"
-					"msm_kde_notifier_settings.desktop"
-					"designer.desktop"
-					"linguist.desktop"
-					"qdbusviewer.desktop"
-					"assistant.desktop"
-					"UserFeedbackConsole.desktop"
-					"cmake-gui.desktop"
-					"avahi-discover.desktop"
-					"bssh.desktop"
-					"bvnc.desktop"
-					"htop.desktop"
-					"lstopo.desktop"
-					"cups.desktop"
-					"org.gnome.baobab.desktop"
-					"qv4l2.desktop"
-					"qvidcap.desktop"
-					"mpv.desktop"
-					"hplip.desktop"
-					"hp-uiscan.desktop"
-					"systemsettings.desktop"
-					"kdesettings.desktop"
-					"org.kde.kuserfeedback-console.desktop"
-					"gsmartcontrol.desktop"
-					"org.pipewire.Helvum.desktop"
-					"bootsplash-manager.desktop"
-					"gnome-alsamixer.desktop"
-					"appimagelaunchersettings.desktop"
-					"org.kde.ksystemlog.desktop"
-					"jamesdsp.desktop"
-					"brightness-controller.desktop"
-					)
-comment
+#:<<'comment'
+#	declare -g bigdir='/usr/share/applications/bigcontrolcenter'
+#	declare -g ksrv_path='/usr/share/kservices5/bigcontrolcenter'
+#	declare -ga aDesktopFiles=(
+#					"biglinux-config.desktop"
+#					"big-reset.desktop"
+#					"system-config-printer.desktop"
+#					"openjdk-8-policytool.desktop"
+#					"pavucontrol-qt.desktop"
+#					"bigkernel.desktop"
+#					"gufw.desktop"
+#					"gparted.desktop"
+#					"hardinfo.desktop"
+#					"bigapache.desktop"
+#					"timeshift-gtk.desktop"
+#					"mintstick-kde.desktop"
+#					"mintstick-format-kde.desktop"
+#					"biglinux-themes-gui.desktop"
+#					"sambasearch.desktop"
+#					"org.kde.kwalletmanager5.desktop"
+#					"bigflash-javaws-widevine-fonts.desktop"
+#					"tlpui.desktop"
+#					"kdesystemsettings.desktop"
+#					"org.kde.kinfocenter.desktop"
+#					"grub-customizer.desktop"
+#					"biglinux-tweaks.desktop"
+#					"kvantummanager.desktop"
+#					"manjaro-settings-manager.desktop"
+#					"msm_kde_notifier_settings.desktop"
+#					"designer.desktop"
+#					"linguist.desktop"
+#					"qdbusviewer.desktop"
+#					"assistant.desktop"
+#					"UserFeedbackConsole.desktop"
+#					"cmake-gui.desktop"
+#					"avahi-discover.desktop"
+#					"bssh.desktop"
+#					"bvnc.desktop"
+#					"htop.desktop"
+#					"lstopo.desktop"
+#					"cups.desktop"
+#					"org.gnome.baobab.desktop"
+#					"qv4l2.desktop"
+#					"qvidcap.desktop"
+#					"mpv.desktop"
+#					"hplip.desktop"
+#					"hp-uiscan.desktop"
+#					"systemsettings.desktop"
+#					"kdesettings.desktop"
+#					"org.kde.kuserfeedback-console.desktop"
+#					"gsmartcontrol.desktop"
+#					"org.pipewire.Helvum.desktop"
+#					"bootsplash-manager.desktop"
+#					"gnome-alsamixer.desktop"
+#					"appimagelaunchersettings.desktop"
+#					"org.kde.ksystemlog.desktop"
+#					"jamesdsp.desktop"
+#					"brightness-controller.desktop"
+#					)
+#comment
 }
 
 # Usando find para localizar arquivos .desktop e salvá-los em um array
@@ -115,8 +117,8 @@ function sh_search_desktop_files {
 function sh_change_file {
 	local cfile="$1"
 
-	sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g;/Categories/s/#//;/DBusActivatable/s/#//' "$cfile" >/dev/null 2>&-
-	mv -f "$cfile" "/usr/share/applications/" >/dev/null 2>&-
+	cmdlogger sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g;/Categories/s/#//;/DBusActivatable/s/#//' "$cfile"
+	cmdlogger mv -f "$cfile" "/usr/share/applications/"
 }
 
 function sh_init {
@@ -129,7 +131,7 @@ function sh_init {
 			EXEC="$(grep -m1 "Exec=" "$i" | cut -f2 -d= | cut -f1 -d" ")"
 
 			if ! which "$EXEC"; then
-				rm -f "$i" >/dev/null 2>&-
+				cmdlogger rm -f "$i"
 				continue
 			fi
 			sh_change_file "$i"
