@@ -5,7 +5,7 @@
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/index.sh.htm
 #  Description: Control Center to help usage of BigLinux
 #  Created: 2022/02/28
-#  Altered: 2023/07/21
+#  Altered: 2023/07/27
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -32,9 +32,11 @@
 #  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-readonly APP="${0##*/}"
-readonly _VERSION_="1.0.0-20230722"
-readonly LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+APP="${0##*/}"
+_VERSION_="1.0.0-20230727"
+LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+BOOTLOG="/tmp/bigcontrolcenter-$(date +"%d%m%Y").log"
+LOGGER='/dev/tty8'
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
 function sh_config {
@@ -64,12 +66,11 @@ function sh_config {
 	declare -g CATEGORY_About=$"Sobre"
 
 	#OLD
-	declare -g CATEGORY_Other=$"Outros" #Desativado
+	declare -g CATEGORY_Other=$"Outros"
+	declare -g CATEGORY_Custom=$"Custom"
 	declare -g SEARCH=$"Pesquisar..."
 	declare -g SEARCH_Result=$"Resultado da pesquisa"
-
 	declare -g CONTROLCENTER=$"Central de Controle"
-
 	declare -g TITLE=$"Central de Controle"
 	declare -g CLOSE=$"Fechar"
 	declare -g OPEN=$"Abrir"
@@ -78,25 +79,25 @@ function sh_config {
 }
 
 function sh_checkdir {
-	[[ ! -d "$HOME/.config/bigcontrolcenter/icons" ]] && mkdir -p "$HOME/.config/bigcontrolcenter/icons"
+	[[ ! -d "$HOME/.config/bigcontrolcenter/icons" ]] && cmdlogger mkdir -p "$HOME/.config/bigcontrolcenter/icons"
 }
 
 function SHOW_ICON {
-	# $1 CATEGORY
-	# $2 COMMENT
-	# $3 EXEC
-	# $4 ICON
-	# $6 NAME
+	local xcategory="$1"
+	local xcomment="$2"
+	local xexec="$3"
+	local xicon="$4"
+	local xname="$5"
 cat <<-EOF
-	<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+	<div class="box-1 box-2 box-3 box-4 box-5 box-items $xcategory">
 	<div id="box-status-bar">
 	<div id="tit-status-bar">
-	$COMMENT
+	$xcomment
 	</div></div>
-	<button onclick="_run('$EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button">
-	<div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON"></div>
+	<button onclick="_run('$xexec')" id="box-subtitle" class="box-geral-icons box-geral-button">
+	<div class="box-imagem-icon"><img class="box-imagem-icon" src="$xicon"></div>
 	<div class="box-titulo">
-	$NAME
+	$xname
 	</div>
 	</button>
 	</div>
@@ -104,21 +105,22 @@ EOF
 }
 
 function CACHE_ICON {
-	# $1 CATEGORY
-	# $2 COMMENT
-	# $3 EXEC
-	# $4 ICON
-	# $6 NAME
+	local xcategory="$1"
+	local xcomment="$2"
+	local xexec="$3"
+	local xicon="$4"
+	local xname="$5"
+
 cat <<-EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
-	<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
+	<div class="box-1 box-2 box-3 box-4 box-5 box-items $xcategory">
 	<div id="box-status-bar">
 	<div id="tit-status-bar">
-	$COMMENT
+	$xcomment
 	</div></div>
-	<button onclick="_run('$EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button">
-	<div class="box-imagem-icon"><img class="box-imagem-icon" src="$ICON"></div>
+	<button onclick="_run('$xexec')" id="box-subtitle" class="box-geral-icons box-geral-button">
+	<div class="box-imagem-icon"><img class="box-imagem-icon" src="$xicon"></div>
 	<div class="box-titulo">
-	$NAME
+	$xname
 	</div>
 	</button>
 	</div>
@@ -130,11 +132,14 @@ cat <<-EOF
 	<html>
 	<head>
 	<meta charset="UTF-8">
-	<title>$TITLE</title>
+	<title>
+	$TITLE
+	</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
 	<script src="./filter.js"></script>
 	</head>
+	<body>
 
 	$(sh_getbgcolor)
 
@@ -151,27 +156,18 @@ cat <<-EOF
 	</div>
 EOF
 
-	if ! pgrep kwin > /dev/null; then
+	if ! cmdlogger pgrep kwin > /dev/null; then
 cat <<-EOF
 		<div class="header-profile" onclick="_run('/execute close$')"> 
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-button">
-		<path d="M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/></svg>
-		</svg>
-		</div>
+		<path d="M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/>
+		</svg></div>
 EOF
 	fi
 
 cat <<-EOF
 	</div>
-EOF
-
-	if sh_lang_he; then
-		echo '<div class="wrapper" style="flex-direction: row-reverse;">'
-	else
-		echo '<div class="wrapper">'
-	fi
-
-cat <<-EOF
+	$(sh_div_lang)
 	<div class="left-side">
 	<div class="side-wrapper">
 	<div class="side-menu">
@@ -187,102 +183,135 @@ cat <<-EOF
 	</span></a></div></div>
 	<div class="side-wrapper">
 	<div class="side-menu">
-                    <a href="#topo" id="Network" class="btn">
-                        <svg viewBox="0 0 640 512">
-                            <path fill="currentColor" d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z" />
-                        </svg>
-                        <span>$CATEGORY_Network</span>
-                    </a>
-                    <a href="#topo" id="Phone" class="btn">
-                        <svg viewBox="0 0 500 512" style="margin-left:3px; margin-right:3px;">
-                            <path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z" />
-                        </svg>
-                        <span>$CATEGORY_Phone</span>
-                    </a>
-                    <a href="#topo" id="Personalization" class="btn">
-                        <svg viewBox="0 0 512 512">
-                            <path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
-                        </svg>
-                        <span>$CATEGORY_Personalization</span>
-                    </a>
-                    <a href="#topo" id="Language" class="btn">
-                        <svg viewBox="0 0 496 512">
-                            <path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z" />
-                        </svg>
-                        <span>$CATEGORY_Language</span>
-                    </a>
-                    <a href="#topo" id="Multimedia" class="btn">
-                        <svg viewBox="0 0 512 512">
-                            <path fill="currentColor" d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" />
-                        </svg>
-                        <span>$CATEGORY_Multimedia</span>
-                    </a>
-                    <a href="#topo" id="Account" class="btn">
-                        <svg viewBox="0 0 640 512">
-                            <path fill="currentColor" d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z" />
-                        </svg>
-                        <span>$CATEGORY_Account</span>
-                    </a>
-                    <a href="#topo" id="Privacy" class="btn">
-                        <svg viewBox="0 0 640 512">
-                            <path fill="currentColor" d="M224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128zm96 64a63.08 63.08 0 0 1 8.1-30.5c-4.8-.5-9.5-1.5-14.5-1.5h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h280.9a63.54 63.54 0 0 1-8.9-32zm288-32h-32v-80a80 80 0 0 0-160 0v80h-32a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h224a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32zM496 432a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm32-144h-64v-80a32 32 0 0 1 64 0z" />
-                        </svg>
-                        <span>$CATEGORY_Privacy</span>
-                    </a>
-                    <a href="#topo" id="Server" class="btn">
-                        <svg viewBox="0 0 512 512">
-                            <path fill="currentColor" d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z" />
-                        </svg>
-                        <span>$CATEGORY_Server</span>
-                    </a>
-                    <a href="#topo" id="Hardware" class="btn">
-                        <svg viewBox="0 0 512 512">
-                            <path fill="currentColor" d="M416 48v416c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h224c26.51 0 48 21.49 48 48zm96 58v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42V88h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zM30 376h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6z" />
-                        </svg>
-                        <span>$CATEGORY_Hardware</span>
-                    </a>
-                    <a href="#topo" id="System" class="btn">
-                        <svg viewBox="0 0 576 512">
-                            <path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z" />
-                        </svg>
-                        </svg>
-                        <span>$CATEGORY_System</span>
-                    </a>
-                    <a href="#topo" id="Desenv" class="btn">
-                        <svg viewBox="0 0 512 512">
-                            <path fill="currentColor" d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z" />
-                        </svg>
-                        <span>$CATEGORY_Desenv</span>
-                    </a>
-                    <a href="#topo" id="Other" class="btn" style="display:none;">
-                        <svg viewBox="0 0 448 512">
-                            <path fill="currentColor" d="M27.5 162.2L9 187.1h90.5l6.9-130.7-78.9 105.8zM396.3 45.7L267.7 32l135.7 147.2-7.1-133.5zM112.2 218.3l-11.2-22H9.9L234.8 458zm2-31.2h284l-81.5-88.5L256.3 33zm297.3 9.1L277.6 458l224.8-261.7h-90.9zM415.4 69L406 56.4l.9 17.3 6.1 113.4h90.3zM113.5 93.5l-4.6 85.6L244.7 32 116.1 45.7zm287.7 102.7h-290l42.4 82.9L256.3 480l144.9-283.8z" />
-                        </svg>
-                        <span>$CATEGORY_Other</span>
-                    </a>
-                    <a href="#topo" id="About" class="btn">
-                        <svg viewBox="0 0 512 512">
-                            <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" />
-                        </svg>
-                        <span>$CATEGORY_About</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="main-container" style="overflow: auto;">
-            <!-- PRINCIPAIS -->
-            <a name="topo"></a>
-            <div class="content-wrapper" style="overflow-x: hidden;">
-                <div id="welcome" class="content-wrapper-header Staritem">
-                    <div class="content-wrapper-context">
-                        <h3 class="img-content">
-                            <img class="img-content img" src="icon.png">$CONTROLCENTER
-                        </h3>
-                    </div>
-                    <img class="content-wrapper-img" src="bigpc.png" alt="">
-                </div>
-                <div class="content-section-title Star"></div>
-                <div class="apps-card Star">
+	<a href="#topo" id="Network" class="btn">
+	<svg viewBox="0 0 640 512">
+	<path fill="currentColor" d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z" />
+	</svg>
+	<span>
+	$CATEGORY_Network
+	</span>
+	</a>
+	<a href="#topo" id="Phone" class="btn">
+	<svg viewBox="0 0 500 512" style="margin-left:3px; margin-right:3px;">
+	<path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z" />
+	</svg>
+	<span>
+	$CATEGORY_Phone
+	</span></a>
+	<a href="#topo" id="Personalization" class="btn">
+	<svg viewBox="0 0 512 512">
+	<path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+	</svg>
+	<span>
+	$CATEGORY_Personalization
+	</span></a>
+	<a href="#topo" id="Language" class="btn">
+	<svg viewBox="0 0 496 512">
+	<path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z" />
+	</svg>
+	<span>
+	$CATEGORY_Language
+	</span></a>
+	<a href="#topo" id="Multimedia" class="btn">
+	<svg viewBox="0 0 512 512">
+	<path fill="currentColor" d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" />
+	</svg>
+	<span>
+	$CATEGORY_Multimedia
+	</span>
+	</a>
+	<a href="#topo" id="Account" class="btn">
+	<svg viewBox="0 0 640 512">
+	<path fill="currentColor" d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z" />
+	</svg>
+	<span>
+	$CATEGORY_Account
+	</span></a>
+	<a href="#topo" id="Privacy" class="btn">
+	<svg viewBox="0 0 640 512">
+	<path fill="currentColor" d="M224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128zm96 64a63.08 63.08 0 0 1 8.1-30.5c-4.8-.5-9.5-1.5-14.5-1.5h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h280.9a63.54 63.54 0 0 1-8.9-32zm288-32h-32v-80a80 80 0 0 0-160 0v80h-32a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h224a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32zM496 432a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm32-144h-64v-80a32 32 0 0 1 64 0z" />
+	</svg>
+	<span>
+	$CATEGORY_Privacy
+	</span>
+	</a>
+	<a href="#topo" id="Server" class="btn">
+	<svg viewBox="0 0 512 512">
+	<path fill="currentColor" d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z" />
+	</svg>
+	<span>
+	$CATEGORY_Server
+	</span>
+	</a>
+
+	<a href="#topo" id="Hardware" class="btn">
+	<svg viewBox="0 0 512 512">
+	<path fill="currentColor" d="M416 48v416c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h224c26.51 0 48 21.49 48 48zm96 58v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42V88h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zM30 376h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6z" />
+	</svg>
+	<span>
+	$CATEGORY_Hardware
+	</span>
+	</a>
+
+	<a href="#topo" id="System" class="btn">
+	<svg viewBox="0 0 576 512">
+	<path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z" />
+	</svg>
+	<span>
+	$CATEGORY_System
+	</span>
+	</a>
+	<a href="#topo" id="Desenv" class="	btn">
+	<svg viewBox="0 0 512 512">
+	<path fill="currentColor" d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z" />
+	</svg>
+	<span>
+	$CATEGORY_Desenv
+	</span></a>
+
+	<a href="#topo" id="Other" class="btn" style="display:none;">
+	<svg viewBox="0 0 448 512">
+	<path fill="currentColor" d="M27.5 162.2L9 187.1h90.5l6.9-130.7-78.9 105.8zM396.3 45.7L267.7 32l135.7 147.2-7.1-133.5zM112.2 218.3l-11.2-22H9.9L234.8 458zm2-31.2h284l-81.5-88.5L256.3 33zm297.3 9.1L277.6 458l224.8-261.7h-90.9zM415.4 69L406 56.4l.9 17.3 6.1 113.4h90.3zM113.5 93.5l-4.6 85.6L244.7 32 116.1 45.7zm287.7 102.7h-290l42.4 82.9L256.3 480l144.9-283.8z" />
+	</svg>
+	<span>
+	$CATEGORY_Other
+	</span></a>
+
+	<a href="#topo" id="Custom" class="btn">
+	<svg viewBox="0 0 512 512">
+	<path fill="currentColor" d="M416 48v416c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h224c26.51 0 48 21.49 48 48zm96 58v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42V88h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zM30 376h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6z" />
+	</svg>
+	<span>
+	$CATEGORY_Custom
+	</span>
+	</a>
+
+	<a href="#topo" id="About" class="btn">
+	<svg viewBox="0 0 512 512">
+	<path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" />
+	</svg>
+	<span>
+	$CATEGORY_About
+	</span>
+	</a>
+	</div>
+	</div>
+	</div>
+	<div class="main-container" style="overflow: auto;">
+	<!-- PRINCIPAIS -->
+	<a name="topo"></a>
+	<div class="content-wrapper" style="overflow-x: hidden;">
+	<div id="welcome" class="content-wrapper-header Staritem">
+	<div class="content-wrapper-context">
+	<h3 class="img-content">
+	<img class="img-content img" src="icon.png">
+	$CONTROLCENTER
+	</h3>
+	</div>
+	<img class="content-wrapper-img" src="bigpc.png" alt="">
+	</div>
+	<div class="content-section-title Star"></div>
+	<div class="apps-card Star">
 EOF
 
 	EXEC="biglinux-themes-gui"
@@ -361,6 +390,7 @@ cat <<-EOF
 	<div class="main-header Desenv"><a class="menu-link-main">$CATEGORY_Desenv</a></div>
 	<div class="main-header About"><a class="menu-link-main">$CATEGORY_About</a></div>
 	<div class="main-header Other"><a class="menu-link-main">$CATEGORY_Other</a></div>
+	<div class="main-header Custom"><a class="menu-link-main">$CATEGORY_Custom</a></div>
 	<div class="main-header search"><a class="menu-link-main">$SEARCH_Result</a></div>
 	<!-- FIM COMMENT CATEGORIAS -->
 	<div class="icons-show">
@@ -371,7 +401,7 @@ EOF
 
 	# INTERNET CONNECTION OPEN
 	##########################
-	if test -d '/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement'; then
+	if cmdlogger test -d '/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement'; then
 		EXEC="plasmawindowed org.kde.plasma.networkmanagement"
 		NAME=$"Conectar à internet"
 		COMMENT=$"Conecte na internet por cabo de rede ou wifi."
@@ -430,7 +460,7 @@ EOF
 	CATEGORY="About"
 	SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-	if test -e '/usr/bin/manjaro-settings-manager'; then
+	if cmdlogger test -e '/usr/bin/manjaro-settings-manager'; then
 		EXEC="manjaro-settings-manager -m msm_users"
 		NAME=$"Adicionar ou Remover Usuários"
 		COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
@@ -439,8 +469,8 @@ EOF
 		SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 	fi
 
-	if test -e "$HOME/.config/bigcontrolcenter/refresh"; then
-		if test -e '/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so'; then
+	if cmdlogger test -e "$HOME/.config/bigcontrolcenter/refresh"; then
+		if cmdlogger [[ -e '/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so' ]]; then
 			EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
 			NAME=$"Economia de energia"
 			COMMENT=""
@@ -463,7 +493,8 @@ EOF
 		CATEGORY="Star Hardware"
 		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-		EXEC="./kscreen_clean.sh"
+		ICON="icons/icon_reset-screen.png"
+		EXEC="sh_kscreen_clean $ICON"
 		NAME=$"Resetar as configurações da tela"
 		COMMENT=$"Restaurar a configuração padrão do monitor."
 		ICON="icons/icon_reset-screen.png"
@@ -504,7 +535,7 @@ EOF
 		########################################
 		#   big-driver-manager
 		########################################
-		if test -e '/usr/bin/big-driver-manager'; then
+		if cmdlogger test -e '/usr/bin/big-driver-manager'; then
 			EXEC="big-driver-manager"
 			NAME=$"Instalar drivers e firmwares"
 			COMMENT=""
@@ -516,30 +547,29 @@ EOF
 		########################################
 		#   Timeshift
 		########################################
-		if test -e '/usr/bin/timeshift-launcher'; then
+		if cmdlogger test -e '/usr/bin/timeshift-launcher'; then
 			EXEC="timeshift-launcher"
 			NAME=$"Snapshots e backups"
 
-			if findmnt -n -o FSTYPE -T / | grep -q '^btrfs$'; then
+			if cmdlogger findmnt -n -o FSTYPE -T / | grep -q '^btrfs$'; then
 				COMMENT=$"Gerenciar pontos de restauração."
 			else
 				COMMENT=$"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer backups utilizando o método rsync."
 			fi
 
-			if test -e '/run/miso/bootmnt'; then
+			if cmdlogger test -e '/run/miso/bootmnt'; then
 				COMMENT=$"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
 			fi
 
 			CATEGORY="Star System"
 			ICON="icons/timeshift.png"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
 		fi
 
 		########################################
 		#   tts-biglinux
 		########################################
-		if test -e '/usr/bin/tts-config'; then
+		if cmdlogger test -e '/usr/bin/tts-config'; then
 			EXEC="tts-config"
 			NAME=$"Configurar a voz do sistema (TTS)"
 			COMMENT=$"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema para que textos escritos sejam falados."
@@ -551,7 +581,7 @@ EOF
 		########################################
 		#   kernel
 		########################################
-		if test -e '/usr/share/kservices5/msm_kernel.desktop'; then
+		if cmdlogger test -e '/usr/share/kservices5/msm_kernel.desktop'; then
 			EXEC="big-kernel-manager"
 			NAME=$"Instalar versões de kernel e mesa"
 			COMMENT=""
@@ -560,7 +590,7 @@ EOF
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
 
-		if test -e '/usr/bin/policytool'; then
+		if cmdlogger test -e '/usr/bin/policytool'; then
 			EXEC="policytool"
 			NAME=$"Regras de segurança do Java"
 			COMMENT=$"OpenJDK Java 8 Policy Tool"
@@ -568,7 +598,7 @@ EOF
 			ICON="icons/openjdk.png"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
-		rm -f "$HOME/.config/bigcontrolcenter/refresh" # Remove file to use cache in next run
+		cmdlogger rm -f "$HOME/.config/bigcontrolcenter/refresh" # Remove file to use cache in next run
 	fi
 
 	##########################
@@ -579,6 +609,7 @@ EOF
 
 	cat "$HOME/.config/bigcontrolcenter/cache.html"
 	cat ~/.config/bigcontrolcenter/cache-*.html
+	cat ~/.config/bigcontrolcenter/custom-*.html				#custom files user
 
 	#WEBAPP
 	EXEC="xdg-open https://snapdrop.net"
@@ -597,14 +628,14 @@ EOF
 	# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 cat <<-EOF
-	</div></div></div></div></div>
+	</div></div></div></div>
 	<div class="footer"></div>
 	<div class="logo">
 	<img id="btn-big" src="logo.png" class="logo-biglinux" onclick="biglinux();">
 	</div>
 EOF
 
-	if test -e "$HOME/.config/bigcontrolcenter/show_other"; then
+	if cmdlogger test -e "$HOME/.config/bigcontrolcenter/show_other"; then
 		echo '<style>#Other{display: flex !important;}</style>'
 	fi
 

@@ -4,7 +4,7 @@
 
 #  bigcontrolcenter
 #  Created: 0000/00/00
-#  Altered: 2023/07/22
+#  Altered: 2023/08/01
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -30,23 +30,24 @@
 #  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-readonly APP="${0##*/}"
-readonly _VERSION_="1.0.0-20230722"
-readonly LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+APP="${0##*/}"
+_VERSION_="1.0.0-20230801"
+LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
+BOOTLOG="/tmp/bigcontrolcenter-$(date +"%d%m%Y").log"
+LOGGER='/dev/tty8'
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
 function sh_config {
-	#sets
-	set +o noclobber
-
 	#Translation
 	export TEXTDOMAINDIR="/usr/share/locale"
 	export TEXTDOMAIN=bigcontrolcenter
 	declare -gi RELOAD=0
+	declare -gi PARTIAL=0
 	declare -g bbvpath='/usr/share/bigbashview/bcc/apps/bigcontrolcenter'
 	declare -g userpath="$HOME/.config/bigcontrolcenter"
+	declare -g custom_user_path="$HOME/.config/bcc/files"
 	declare -g appspath='/usr/share/applications'
-	declare -g TITLE=$"Central de Controle"
+	declare -g TITLE=$(gettext "Central de Controle")
 }
 
 function sh_checkdir {
@@ -60,7 +61,7 @@ function sh_clean_reload {
 }
 
 # Verify number of kcmshell5 changed
-function verify_kcm_number {
+function sh_verify_kcm_number {
 	local nfiles_kcm_user
 	local nfiles_kcm_apps
 
@@ -70,37 +71,40 @@ function verify_kcm_number {
 	if (( nfiles_kcm_apps != nfiles_kcm_user )); then
 		echo "$nfiles_kcm_apps" > "$userpath/kcmshell_number"
 		RELOAD=1
+		PARTIAL=0
 	fi
 }
 
 # Verify number of files in bigcontrolcenter applications
-function verify_number_files_bcc_apps {
+function sh_verify_number_files_bcc_apps {
 	local	nfiles_bcc_user
 	local	nfiles_bcc_apps
 
 	nfiles_bcc_user=0
 	nfiles_bcc_apps=$(wc -l < <(find "$appspath/bigcontrolcenter" -type f))
-	[[ -e "$userpath/bccapps_number" ]] && nfiles_bcc_user=$(printf "%s" "$(<"$userpath/bccapps_number")")
+	[[ -e "$userpath/bccapps_number" ]] && nfiles_bcc_user="$(<"$userpath/bccapps_number")"
 	if (( nfiles_bcc_apps != nfiles_bcc_user )); then
 		echo "$nfiles_bcc_apps" > "$userpath/bccapps_number"
 		RELOAD=1
+		PARTIAL=0
 	fi
 }
 
 # Verify language changed
-function verify_user_language {
+function sh_verify_user_language {
 	local	user_lang
 
 	user_lang=''
-	[[ -e "$userpath/lang" ]] && user_lang=$(printf "%s" "$(<"$userpath/lang")")
+	[[ -e "$userpath/lang" ]] && user_lang="$(<"$userpath/lang")"
 	if [[ "$LANG" != "$user_lang" ]]; then
 		echo "$LANG" > "$userpath/lang"
 		RELOAD=1
+		PARTIAL=0
 	fi
 }
 
 # Verify bigcontrolcenter version
-function verify_bcc_version {
+function sh_verify_bcc_version {
 	local user_version
 	local bcc_version
 
@@ -110,18 +114,39 @@ function verify_bcc_version {
 	if [[ "$bcc_version" != "$user_version" ]]; then
 		echo "$bcc_version" > "$userpath/version"
 		RELOAD=1
+		PARTIAL=0
 	fi
 }
 
-# Desativar Cache
-function verify_cache {
+# Verify number of custom user files
+function sh_verify_custom_user_files {
+	local ncustom_user_files
+	local ncustom_user_apps
+
+	ncustom_user_files=0
+	ncustom_user_apps=$(wc -l < <(find "$custom_user_path" -type f,l -name '*'))
+	[[ -e "$userpath/custom_number" ]] && ncustom_user_files=$(printf "%s" "$(<"$userpath/custom_number")")
+	if (( ncustom_user_apps != ncustom_user_files )); then
+		echo "$ncustom_user_apps" > "$userpath/custom_number"
+		RELOAD=1
+		PARTIAL=1
+	fi
+}
+
+function sh_main {
 	local cfilestart='index.sh.htm'
-	# RELOAD=1
+
+	# RELOAD=1			#force reload
 	if (( RELOAD )); then
 		local cfilestart='main.sh.htm'
-		rm -f "$userpath/cache*" >/dev/null 2>&-
-		rm -f "$userpath/icons/*" >/dev/null 2>&-
-		rm -f "$userpath/show_other" >/dev/null 2>&-
+		if (( PARTIAL )); then
+			cmdlogger rm -f "$userpath"/custom-*
+		else
+			cmdlogger rm -f "$userpath"/cache*
+			cmdlogger rm -f "$userpath"/icons/*
+			cmdlogger rm -f "$userpath"/show_other
+			cmdlogger rm -f "$userpath"/custom-*
+		fi
 		# Cria arquivo para ser removido dentro do loop-search e verificado no index.sh.htm quando deve prosseguir
 		echo '' > "$userpath/reload"
 		# Cria arquivo para ser removido dentro do index.sh.htm
@@ -129,7 +154,7 @@ function verify_cache {
 		#########################################################
 		# START CACHE 1
 		#########################################################
-		nice -n 15 ./loop-search.sh &
+		nice -n 15 ./loop-search.sh "$PARTIAL" &
 	fi
 	QT_QPA_PLATFORM=xcb\
 		SDL_VIDEODRIVER=x11\
@@ -142,8 +167,9 @@ function verify_cache {
 sh_config
 sh_checkdir
 sh_clean_reload
-verify_kcm_number
-verify_number_files_bcc_apps
-verify_user_language
-verify_bcc_version
-verify_cache
+sh_verify_custom_user_files
+sh_verify_kcm_number
+sh_verify_number_files_bcc_apps
+sh_verify_user_language
+sh_verify_bcc_version
+sh_main
