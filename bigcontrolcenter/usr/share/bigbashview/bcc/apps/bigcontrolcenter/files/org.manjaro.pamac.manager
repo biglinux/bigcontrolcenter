@@ -3,6 +3,7 @@
 #Translation
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=bigcontrolcenter
-ICON="/usr/share/icons/Fluent/scalable/apps/system-software-install.svg"
+
+ICON="icons/pamac-manager.png"
 #COMMENT=$"Instale ou remova programas de forma simples e rápida."
 CATEGORY="System"
