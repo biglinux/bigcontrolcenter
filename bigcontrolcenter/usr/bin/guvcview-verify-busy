@@ -2,7 +2,7 @@
 
 #  usr/bin/guvcview-verify-busy
 #  Created: 0000/00/00
-#  Altered: 2023/08/05
+#  Altered: 2023/08/07
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -29,8 +29,8 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230805"
-BOOTLOG="/tmp/bigcontrolcenter-$(date +"%d%m%Y").log"
+_VERSION_="1.0.0-20230807"
+BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
@@ -39,47 +39,32 @@ function sh_config {
 	#Translation
 	export TEXTDOMAINDIR="/usr/share/locale"
 	export TEXTDOMAIN=bigcontrolcenter
-	declare -a DEPENDENCIES=(lsof kdialog guvcview)
 	declare -g video_device='/dev/video0'
+	declare -gA Amsg=(
+		[title]=$(gettext $"Webcam")
+		[error]=$(gettext $"Nenhuma webcam localizada.")
+		[busy]=$(gettext $"A webcam já está sendo utilizada pelo programa: ")
+		[msg1]=$(gettext $"Abrirei em modo de configuração. ")
+		[msg2]=$(gettext $"As alterações feitas podem ser vistas")
+		[msg3]=$(gettext $"na imagem da sua webcam em outros programas.")
+	)
 }
 
-function sh_checkDependencies {
-	local d
-	local errorFound=0
-	declare -a missing
-
-	for d in "${DEPENDENCIES[@]}"; do
-      [[ -z $(command -v "$d") ]] && missing+=("$d") && errorFound=1 && printf '%s\n' "${red}ERROR${reset}: Command not found ${cyan}'$d'${reset}"
-   done
-   if (( errorFound )); then
-      echo "${yellow}--------------IMPOSSÍVEL CONTINUAR-------------${reset}"
-      echo "Esse script precisa dos comandos listados acima" >&2
-      echo "Instale-os e/ou verifique se estão no seu \$PATH" >&2
-      echo "${yellow}-----------------------------------------------${reset}"
-		exit 1
-   fi
-}
-
-function sh_init {
-	if ! test -c "$video_device"; then
-		kdialog --title $"Webcam" --error $"Nenhuma webcam localizada."
+function sh_main {
+	if ! cmdlogger test -c "$video_device"; then
+		cmdlogger kdialog --title "${Amsg[title]}" --error "${Amsg[error]}"
 		return
 	fi
 
 	WEBCAM_BUSY=$(lsof "$video_device" 2>/dev/null | awk 'NR==2 {print $1}')
 	if [[ -z "$WEBCAM_BUSY" ]]; then
-		guvcview >/dev/null 2>&-
+		cmdlogger guvcview
 	else
-		kdialog --msgbox $"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY
-
-Abrirei em modo de configuração.
-As alterações feitas podem ser vistas
-na imagem da sua webcam em outros programas." --title $"Webcam"
-		guvcview -z >/dev/null 2>&-
+		cmdlogger kdialog --msgbox "${Amsg[busy]} $WEBCAM_BUSY\n\n${Amsg[msg1]}\n${Amsg[msg2]}\n${Amsg[msg3]}\n" --title "${Amsg[error]}"
+		cmdlogger guvcview -z
 	fi
 }
 
 #sh_debug
 sh_config
-sh_checkDependencies
-sh_init
+sh_main
