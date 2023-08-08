@@ -5,7 +5,7 @@
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/index.sh.htm
 #  Description: Control Center to help usage of BigLinux
 #  Created: 2022/02/28
-#  Altered: 2023/07/27
+#  Altered: 2023/08/08
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -33,9 +33,9 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230727"
+_VERSION_="1.0.0-20230808"
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
-BOOTLOG="/tmp/bigcontrolcenter-$(date +"%d%m%Y").log"
+BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 LOGGER='/dev/tty8'
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
@@ -401,7 +401,7 @@ EOF
 
 	# INTERNET CONNECTION OPEN
 	##########################
-	if cmdlogger test -d '/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement'; then
+	if test -d '/usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement'; then
 		EXEC="plasmawindowed org.kde.plasma.networkmanagement"
 		NAME=$"Conectar à internet"
 		COMMENT=$"Conecte na internet por cabo de rede ou wifi."
@@ -460,7 +460,7 @@ EOF
 	CATEGORY="About"
 	SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-	if cmdlogger test -e '/usr/bin/manjaro-settings-manager'; then
+	if test -e '/usr/bin/manjaro-settings-manager'; then
 		EXEC="manjaro-settings-manager -m msm_users"
 		NAME=$"Adicionar ou Remover Usuários"
 		COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
@@ -469,8 +469,9 @@ EOF
 		SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 	fi
 
-	if cmdlogger test -e "$HOME/.config/bigcontrolcenter/refresh"; then
-		if cmdlogger [[ -e '/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so' ]]; then
+	if test -e "$HOME/.config/bigcontrolcenter/refresh"; then
+		cmdlogger rm -f "$HOME/.config/bigcontrolcenter/cache.html"
+		if [[ -e '/usr/lib/qt/plugins/kcm_powerdevilprofilesconfig.so' ]]; then
 			EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
 			NAME=$"Economia de energia"
 			COMMENT=""
@@ -535,7 +536,7 @@ EOF
 		########################################
 		#   big-driver-manager
 		########################################
-		if cmdlogger test -e '/usr/bin/big-driver-manager'; then
+		if test -e '/usr/bin/big-driver-manager'; then
 			EXEC="big-driver-manager"
 			NAME=$"Instalar drivers e firmwares"
 			COMMENT=""
@@ -547,7 +548,7 @@ EOF
 		########################################
 		#   Timeshift
 		########################################
-		if cmdlogger test -e '/usr/bin/timeshift-launcher'; then
+		if test -e '/usr/bin/timeshift-launcher'; then
 			EXEC="timeshift-launcher"
 			NAME=$"Snapshots e backups"
 
@@ -557,7 +558,7 @@ EOF
 				COMMENT=$"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer backups utilizando o método rsync."
 			fi
 
-			if cmdlogger test -e '/run/miso/bootmnt'; then
+			if test -e '/run/miso/bootmnt'; then
 				COMMENT=$"Sistema em modo live. Restaure pontos de restauração do sistema instalado."
 			fi
 
@@ -569,7 +570,7 @@ EOF
 		########################################
 		#   tts-biglinux
 		########################################
-		if cmdlogger test -e '/usr/bin/tts-config'; then
+		if test -e '/usr/bin/tts-config'; then
 			EXEC="tts-config"
 			NAME=$"Configurar a voz do sistema (TTS)"
 			COMMENT=$"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema para que textos escritos sejam falados."
@@ -581,7 +582,7 @@ EOF
 		########################################
 		#   kernel
 		########################################
-		if cmdlogger test -e '/usr/share/kservices5/msm_kernel.desktop'; then
+		if test -e '/usr/share/kservices5/msm_kernel.desktop'; then
 			EXEC="big-kernel-manager"
 			NAME=$"Instalar versões de kernel e mesa"
 			COMMENT=""
@@ -590,7 +591,7 @@ EOF
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
 
-		if cmdlogger test -e '/usr/bin/policytool'; then
+		if test -e '/usr/bin/policytool'; then
 			EXEC="policytool"
 			NAME=$"Regras de segurança do Java"
 			COMMENT=$"OpenJDK Java 8 Policy Tool"
@@ -607,9 +608,9 @@ EOF
 	# Wait loop-search.sh end
 	wait
 
-	cat "$HOME/.config/bigcontrolcenter/cache.html"
+	cat ~/.config/bigcontrolcenter/cache.html
 	cat ~/.config/bigcontrolcenter/cache-*.html
-	cat ~/.config/bigcontrolcenter/custom-*.html				#custom files user
+	cat ~/.config/bigcontrolcenter/custom-*.html			#custom files user
 
 	#WEBAPP
 	EXEC="xdg-open https://snapdrop.net"
@@ -635,7 +636,7 @@ cat <<-EOF
 	</div>
 EOF
 
-	if cmdlogger test -e "$HOME/.config/bigcontrolcenter/show_other"; then
+	if test -e "$HOME/.config/bigcontrolcenter/show_other"; then
 		echo '<style>#Other{display: flex !important;}</style>'
 	fi
 
