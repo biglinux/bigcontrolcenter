@@ -4,7 +4,7 @@
 
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/loop-search.sh
 #  Created: 2022/02/28
-#  Altered: 2023/08/07
+#  Altered: 2023/08/08
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -32,7 +32,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230807"
+_VERSION_="1.0.0-20230808"
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 LOGGER='/dev/tty8'
@@ -923,7 +923,7 @@ function sh_main {
 	sh_process_custom_user_files
 }
 
-sh_debug
+#sh_debug
 sh_config
 sh_checkdir
 sh_main "$@"
