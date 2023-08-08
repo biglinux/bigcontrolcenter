@@ -856,6 +856,10 @@ function sh_parallel_search {
 #		. files/"$filename"
 #	fi
 
+if [[ $NAME = 'Firewall' ]]; then
+	xdebug "ICON: $ICON FILENAME: $filename"
+fi
+
 	# Definindo as variáveis somente se não estiverem vazias
 	CATEGORY="${Afiles[$filename,CATEGORY]:-$CATEGORY}"
 	EXEC="${Afiles[$filename,EXEC]:-$EXEC}"
@@ -919,7 +923,7 @@ function sh_main {
 	sh_process_custom_user_files
 }
 
-#sh_debug
+sh_debug
 sh_config
 sh_checkdir
 sh_main "$@"
