@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-COMMENT=$"Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
-ICON="icons/kcm_kaccounts.png"
-CATEGORY="Multimedia"

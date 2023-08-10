@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-NAME=$"Informações de armazenamento (SMART)"
-ICON="icons/gsmartcontrol.png"
-CATEGORY="About"

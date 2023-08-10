@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-NAME=$"Procurar servidores SSH"
-ICON="icons/icon_find-server-SSH.png"
-CATEGORY="Server"

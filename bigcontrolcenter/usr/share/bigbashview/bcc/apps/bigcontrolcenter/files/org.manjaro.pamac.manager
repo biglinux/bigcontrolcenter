@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-ICON="icons/pamac-manager.png"
-#COMMENT=$"Instale ou remova programas de forma simples e rápida."
-CATEGORY="System"

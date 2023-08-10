@@ -4,7 +4,7 @@
 
 #  /usr/bin/bigcontrolcenter
 #  Created: 0000/00/00
-#  Altered: 2023/08/08
+#  Altered: 2023/08/09
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -31,7 +31,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230808"
+_VERSION_="1.0.0-20230809"
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 LOGGER='/dev/tty8'
@@ -42,6 +42,7 @@ function sh_config {
 	#Translation
 	export TEXTDOMAINDIR="/usr/share/locale"
 	export TEXTDOMAIN=bigcontrolcenter
+	export $(dbus-launch)
 	declare -gi RELOAD=0
 	declare -gi PARTIAL=0
 	declare -g bbvpath='/usr/share/bigbashview/bcc/apps/bigcontrolcenter'
@@ -161,7 +162,7 @@ function sh_main {
 		SDL_VIDEODRIVER=x11\
 		WINIT_UNIX_BACKEND=x11\
 		GDK_BACKEND=x11\
-		cmdlogger bash bigbashview -n "$TITLE" -s 1280x768 "$cfilestart" -i icon.png
+		cmdlogger bigbashview -n "$TITLE" -s 1280x720 "$cfilestart" -i icon.png -d "/usr/share/bigbashview/bcc/apps/bigcontrolcenter"
 }
 
 #sh_debug

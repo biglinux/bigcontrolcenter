@@ -1,8 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-CATEGORY="Personalization"
-EXEC="kcmshell5 kcm_kwinactions kcm_kwinadvanced kcm_kwinfocus kcm_kwinmoving kcm_kwintabbox kcm_kwinoptions kcm_kwinrules kcm_kwin_scripts kcm_kwintabbox"

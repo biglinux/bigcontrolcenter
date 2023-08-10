@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-NAME=$"Temas do Bootsplash"
-ICON="icons/bootsplash-manager-gui.png"
-CATEGORY="Personalization"

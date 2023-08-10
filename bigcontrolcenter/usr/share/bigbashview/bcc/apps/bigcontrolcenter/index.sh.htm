@@ -5,7 +5,7 @@
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/index.sh.htm
 #  Description: Control Center to help usage of BigLinux
 #  Created: 2022/02/28
-#  Altered: 2023/08/08
+#  Altered: 2023/08/09
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -33,7 +33,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230808"
+_VERSION_="1.0.0-20230809"
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 LOGGER='/dev/tty8'
@@ -74,11 +74,9 @@ function sh_config {
 	declare -g TITLE=$"Central de Controle"
 	declare -g CLOSE=$"Fechar"
 	declare -g OPEN=$"Abrir"
-	OIFS=$IFS
-	IFS=$'\n'
 }
 
-function sh_checkdir {
+function sh_check_user_dir_icons {
 	[[ ! -d "$HOME/.config/bigcontrolcenter/icons" ]] && cmdlogger mkdir -p "$HOME/.config/bigcontrolcenter/icons"
 }
 
@@ -135,14 +133,12 @@ cat <<-EOF
 	<title>
 	$TITLE
 	</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
-	<script src="./filter.js"></script>
+	<script src="./js/filter.js"></script>
 	</head>
 	<body>
-
 	$(sh_getbgcolor)
-
 	<div class="dark-light">
 	<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
 	<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
@@ -158,10 +154,11 @@ EOF
 
 	if ! cmdlogger pgrep kwin > /dev/null; then
 cat <<-EOF
-		<div class="header-profile" onclick="_run('/execute close$')"> 
+		<div class="header-profile" onclick="_run('/execute close$')">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-button">
-		<path d="M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/>
-		</svg></div>
+		<path d="icons/M448 32C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/>
+		</svg>
+		</div>
 EOF
 	fi
 
@@ -183,6 +180,7 @@ cat <<-EOF
 	</span></a></div></div>
 	<div class="side-wrapper">
 	<div class="side-menu">
+
 	<a href="#topo" id="Network" class="btn">
 	<svg viewBox="0 0 640 512">
 	<path fill="currentColor" d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z" />
@@ -191,6 +189,7 @@ cat <<-EOF
 	$CATEGORY_Network
 	</span>
 	</a>
+
 	<a href="#topo" id="Phone" class="btn">
 	<svg viewBox="0 0 500 512" style="margin-left:3px; margin-right:3px;">
 	<path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z" />
@@ -198,6 +197,7 @@ cat <<-EOF
 	<span>
 	$CATEGORY_Phone
 	</span></a>
+
 	<a href="#topo" id="Personalization" class="btn">
 	<svg viewBox="0 0 512 512">
 	<path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
@@ -205,6 +205,7 @@ cat <<-EOF
 	<span>
 	$CATEGORY_Personalization
 	</span></a>
+
 	<a href="#topo" id="Language" class="btn">
 	<svg viewBox="0 0 496 512">
 	<path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z" />
@@ -212,6 +213,7 @@ cat <<-EOF
 	<span>
 	$CATEGORY_Language
 	</span></a>
+
 	<a href="#topo" id="Multimedia" class="btn">
 	<svg viewBox="0 0 512 512">
 	<path fill="currentColor" d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" />
@@ -304,11 +306,11 @@ cat <<-EOF
 	<div id="welcome" class="content-wrapper-header Staritem">
 	<div class="content-wrapper-context">
 	<h3 class="img-content">
-	<img class="img-content img" src="icon.png">
+	<img class="img-content img" src="icons/icon.png">
 	$CONTROLCENTER
 	</h3>
 	</div>
-	<img class="content-wrapper-img" src="bigpc.png" alt="">
+	<img class="content-wrapper-img" src="icons/bigpc.png" alt="">
 	</div>
 	<div class="content-section-title Star"></div>
 	<div class="apps-card Star">
@@ -541,7 +543,7 @@ EOF
 			NAME=$"Instalar drivers e firmwares"
 			COMMENT=""
 			CATEGORY="Star Hardware"
-			ICON="/icons/driver.png"
+			ICON="icons/driver.png"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
 
@@ -632,7 +634,7 @@ cat <<-EOF
 	</div></div></div></div>
 	<div class="footer"></div>
 	<div class="logo">
-	<img id="btn-big" src="logo.png" class="logo-biglinux" onclick="biglinux();">
+	<img id="btn-big" src="icons/logo.png" class="logo-biglinux" onclick="biglinux();">
 	</div>
 EOF
 
@@ -641,14 +643,17 @@ EOF
 	fi
 
 cat <<-EOF
-	<script src="./script.js"></script>
+	<script src="./js/script.js"></script>
 	</body>
 	</html>
 EOF
-	IFS=$OIFS
+}
+
+function sh_main {
+	sh_check_user_dir_icons
+	sh_starthtml
 }
 
 #sh_debug
 sh_config
-sh_checkdir
-sh_starthtml
+sh_main
