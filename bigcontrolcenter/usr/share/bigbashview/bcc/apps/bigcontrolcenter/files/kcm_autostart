@@ -1,8 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-EXEC="kcmshell5 autostart kcmkded"
-CATEGORY="Personalization"

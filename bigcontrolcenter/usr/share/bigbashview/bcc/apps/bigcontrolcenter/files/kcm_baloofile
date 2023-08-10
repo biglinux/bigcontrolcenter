@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-#NAME=$"Integração com Google Drive e ownCloud"
-COMMENT=$"Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-CATEGORY="System"

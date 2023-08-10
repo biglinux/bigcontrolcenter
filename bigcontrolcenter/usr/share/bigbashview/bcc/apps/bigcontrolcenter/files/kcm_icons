@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=bigcontrolcenter
-
-NAME=$"Ícones e emoticons"
-EXEC="kcmshell5 kcm_icons emoticons"
-CATEGORY="Personalization"
