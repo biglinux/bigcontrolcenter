@@ -610,9 +610,9 @@ EOF
 	# Wait loop-search.sh end
 	wait
 
-	cat ~/.config/bigcontrolcenter/cache.html
-	cat ~/.config/bigcontrolcenter/cache-*.html
-	cat ~/.config/bigcontrolcenter/custom-*.html			#custom files user
+	cat ~/.config/bigcontrolcenter/cache.html    2>&-
+	cat ~/.config/bigcontrolcenter/cache-*.html  2>&-
+	cat ~/.config/bigcontrolcenter/custom-*.html 2>&-
 
 	#WEBAPP
 	EXEC="xdg-open https://snapdrop.net"
