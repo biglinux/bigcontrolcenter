@@ -4,7 +4,7 @@
 
 #  /usr/bin/bigcontrolcenter
 #  Created: 0000/00/00
-#  Altered: 2023/08/09
+#  Altered: 2023/08/11'
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -31,12 +31,12 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230809"
+_VERSION_="1.0.0-20230811"
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 LOGGER='/dev/tty8'
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
-export XDG_RUNTIME="${XDG_RUNTIME:-/run/user/$(id -g)}"
+#export XDG_RUNTIME="${XDG_RUNTIME:-/run/user/$(id -g)}"
 
 function sh_config {
 	#Translation
@@ -53,9 +53,10 @@ function sh_config {
 }
 
 function sh_checkdir {
-	[[ ! -d "$bbvpath" ]] && mkdir -p "$bbvpath"
-	cd "$bbvpath" || exit
-	[[ ! -d "$userpath" ]] && mkdir -p "$userpath"
+	[[ ! -d "$custom_user_path" ]] && cmdlogger mkdir -p "$custom_user_path"
+	[[ ! -d "$bbvpath"          ]] && cmdlogger mkdir -p "$bbvpath"
+	[[ ! -d "$userpath"         ]] && cmdlogger mkdir -p "$userpath"
+	cd "$bbvpath" || exit 1
 }
 
 function sh_clean_reload {
@@ -156,13 +157,13 @@ function sh_main {
 		#########################################################
 		# START CACHE 1
 		#########################################################
-		nice -n 15 ./loop-search.sh "$PARTIAL" &
+		cmdlogger nice -n 15 ./loop-search.sh "$PARTIAL" &
 	fi
 	QT_QPA_PLATFORM=xcb\
 		SDL_VIDEODRIVER=x11\
 		WINIT_UNIX_BACKEND=x11\
 		GDK_BACKEND=x11\
-		cmdlogger bigbashview -n "$TITLE" -s 1280x720 "$cfilestart" -i icon.png -d "/usr/share/bigbashview/bcc/apps/bigcontrolcenter"
+		cmdlogger bigbashview -n "$TITLE" -s 1280x720 "$cfilestart" -i icon.png -d "$bbvpath"
 }
 
 #sh_debug
