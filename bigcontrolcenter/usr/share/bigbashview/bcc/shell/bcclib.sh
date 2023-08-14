@@ -109,6 +109,15 @@ function sh_lang_he {
 }
 export -f sh_lang_he
 
+function sh_get_code_lang {
+	LangFilter="${LANG%%.*}"
+	LangFilterLowercase="${LangFilter,,}"
+	LangClean="${LangFilterLowercase%%_*}"
+	LangCountry="${LangFilterLowercase#*_}"
+	echo "$LangFilterLowercase"
+}
+export -f sh_get_code_lang
+
 function sh_getcpu {
 	#awk -F ':' 'NR==1 {print $2}' <<< "$(grep 'model name' /proc/cpuinfo)"
 	grep 'model name' /proc/cpuinfo | awk -F ':' 'NR==1 {print $2}'
@@ -283,6 +292,11 @@ function sh_window_id {
 	xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2
 }
 export -f sh_window_id
+
+function sh_get_window_id {
+	xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2
+}
+export -f sh_get_window_id
 
 function xdebug {
 	local script_name0="${0##*/}[${FUNCNAME[0]}]:${BASH_LINENO[0]}"

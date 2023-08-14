@@ -4,7 +4,7 @@
 
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/loop-search.sh
 #  Created: 2022/02/28
-#  Altered: 2023/08/09
+#  Altered: 2023/08/12
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -32,10 +32,10 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230809"
+_VERSION_="1.0.0-20230812"
+export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
+export LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
-BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
-LOGGER='/dev/tty8'
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 trap 'printf "\n${red}Interrupted! exiting...\n"; cleanup; exit 0' INT TERM HUP
 
