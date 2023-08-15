@@ -66,23 +66,26 @@ function sh_remover_configuracoes {
 }
 
 function sh_instalar_waydroid {
-	./install.sh waydroid-image
+	./install.sh
+	ACTION="install" \
+	WINDOW_ID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" \
+	urxvt +sb -internalBorder 1 -borderColor rgb:00/22/40 -depth 32 -fg rgb:00/ff/ff -bg rgb:00/22/40 -fn "xft:Ubuntu Mono:pixelsize=18" -embed $(xprop -root '\t$0' _NET_ACTIVE_WINDOW |
+		cut -f 2) -sr -bc -e ./install_terminal.sh
 }
 
 function sh_instalar_waydroid_com_gapps {
-	./install.sh waydroid-image-gapps
+	./install.sh
+
+	ACTION="install_gapps" \
+	WINDOW_ID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" \
+	urxvt +sb -internalBorder 1 -borderColor rgb:00/22/40 -depth 32 -fg rgb:00/ff/ff -bg rgb:00/22/40 -fn "xft:Ubuntu Mono:pixelsize=18" -embed $(xprop -root '\t$0' _NET_ACTIVE_WINDOW |
+		cut -f 2) -sr -bc -e ./install_terminal.sh
 }
 
 function sh_desinstalar_waydroid {
 	sh_remover_configuracoes
 
-	if pacman -Q waydroid-image-gapps &>/dev/null; then
-		pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
-	elif pacman -Q waydroid-image &>/dev/null; then
-		pamac-installer --remove waydroid waydroid-meta-x11 waydroid-image-gapps waydroid-biglinux libgbinder python-gbinder
-	else
-		pamac-installer --remove waydroid waydroid-meta-x11 waydroid-biglinux libgbinder python-gbinder
-	fi
+	pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true /usr/share/bigbashview/bcc/apps/waydroid/remove.sh
 }
 
 function sh_habilitar_desabilitar_3d {
