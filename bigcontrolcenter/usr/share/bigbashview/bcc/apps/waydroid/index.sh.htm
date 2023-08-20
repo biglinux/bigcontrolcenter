@@ -37,10 +37,12 @@ _VERSION_="1.0.0-20230722"
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=bigcontrolcenter
+
+
 function sh_config {
 	#Translation
-	export TEXTDOMAINDIR="/usr/share/locale"
-	export TEXTDOMAIN=bigcontrolcenter
 	# Don't group windows
 	xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
 	declare -g FOLDER_CONFIG="$HOME/.config/waydroid"
@@ -72,7 +74,9 @@ function sh_init {
 		<head>
 		<meta charset="UTF-8">
 		<title>
-		$"Waydroid"
+	EOF
+		echo $"Waydroid"
+	cat <<-EOF
 		</title>
 		<script type="text/javascript" src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
 		<link rel="stylesheet" href="./style2.css">
@@ -99,30 +103,27 @@ function sh_init {
 		<!-- INICIO TABS CONTENT LIST -->
 		<div id="list-tab-content" class="fc-card active">
 		<div id="desc">
-		$"Utilize programas para Android no BigLinux."
-		<br><br>
 	EOF
+		echo $"Utilize programas para Android no BigLinux."
+		echo '<br><br>'
 	if ! test -e '/usr/bin/waydroid-big'; then
 		INSTALL_WAYDROID=$"Instalar o Waydroid"
 		INSTALL_WAYDROID_WITH_GAPPS=$"Instalar o Waydroid com Google Apps"
 		#echo $"Waydroid permite executar ou instalar aplicativos Android no formato .apk diretamente do gerenciador de arquivos.<br><br>"
-		cat <<-EOF
-			<div id="img-waydroid"><img src="big-waydroid.svg" class="img-waydroid"></div>
-			<b style="font-size:16px;">
-			$"O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-			</b>
-			<br><br>
+			echo '<div id="img-waydroid"><img src="big-waydroid.svg" class="img-waydroid"></div>
+			<b style="font-size:16px;">'
+			echo $"O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+			echo '</b><br><br>
 			<div class="apps-card" style="margin-left: 10px; margin-right: 10px; display: inline-flex;">
 			<div class="app-card">
-			<a class="content-button status-button" style="margin-left: 10px; margin-right: 10px;" href="make.sh.htm?install_with_gapps=1">$INSTALL_WAYDROID_WITH_GAPPS</a>
+			<a class="content-button status-button" style="margin-left: 10px; margin-right: 10px;" href="make.sh.htm?install_with_gapps=1">' "$INSTALL_WAYDROID_WITH_GAPPS" '</a>
 			</div>
 			<div class="app-card">
-			<a class="content-button status-button" style="margin-left: 10px; margin-right: 10px;" href="make.sh.htm?install=1">$INSTALL_WAYDROID</a>
+			<a class="content-button status-button" style="margin-left: 10px; margin-right: 10px;" href="make.sh.htm?install=1">' "$INSTALL_WAYDROID" '</a>
 			</div>
 			</div>
 			<div class="help-action">
-			<p style='font-size:14px;'>
-		EOF
+			' "<p style='font-size:14px;'>"
 	else
 		# Open to verify if /run/waydroid-lxc/dnsmasq.pid exist using http status, 200 ok, 500 not exist
 		################################################################################################
@@ -164,10 +165,9 @@ function sh_init {
 			<svg viewBox="0 0 576 512" class="svg-inline--fa fa-chrome fa-w-16 fa-3x">
 			<path fill="currentColor" d="M528 0h-480C21.5 0 0 21.5 0 48v320C0 394.5 21.5 416 48 416h192L224 464H152C138.8 464 128 474.8 128 488S138.8 512 152 512h272c13.25 0 24-10.75 24-24s-10.75-24-24-24H352L336 416h192c26.5 0 48-21.5 48-48v-320C576 21.5 554.5 0 528 0zM512 352H64V64h448V352z"></path>
 			</svg>
-			Resolução
-			</div>
-			<div class="button-wrapper">
-		EOF
+			EOF
+			echo $"Resolução"
+			echo '</div><div class="button-wrapper">'
 
 		# Resolução
 		###########
@@ -216,9 +216,10 @@ function sh_init {
 			<div class="products">
 			<svg viewBox="0 0 512 512">
 			<path fill="currentColor" d="M234.5 5.709C248.4 .7377 263.6 .7377 277.5 5.709L469.5 74.28C494.1 83.38 512 107.5 512 134.6V377.4C512 404.5 494.1 428.6 469.5 437.7L277.5 506.3C263.6 511.3 248.4 511.3 234.5 506.3L42.47 437.7C17 428.6 0 404.5 0 377.4V134.6C0 107.5 17 83.38 42.47 74.28L234.5 5.709zM256 65.98L82.34 128L256 190L429.7 128L256 65.98zM288 434.6L448 377.4V189.4L288 246.6V434.6z"></path></svg>
-			Aceleração 3D
-			</div>
-		EOF
+			EOF
+		echo $"Aceleração 3D"
+		echo '</div>'
+		
 		ENABLE_GPU=$"Desativado"
 		DISABLE_GPU=$"Ativado"
 		tooltiprun=$"O Waydroid também pode ser iniciado utilizando o menu do sistema"
@@ -248,7 +249,7 @@ function sh_init {
 		cat <<-EOF
 			</li>
 		EOF
-		if pacman -Qq waydroid-image-gapps >/dev/null 2>&- ; then
+		if pacman -Qq waydroid-image-gapps >/dev/null 2>&- || grep -q GAPPS /var/lib/waydroid/waydroid.cfg; then
 			if [[ "$(waydroid status | grep Session | grep RUNNING)" != "" ]] || [[ "$(ps -e | grep waydroid-big)" != "" ]]; then
 				SHOW_ID=$"Exibir ID do Android"
 				ACTIVATE=$"Ativar Google Apps"
@@ -256,7 +257,10 @@ function sh_init {
 					<li>
 					  <div class="products">
 					    <svg viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
-					    PlayStore
+					EOF
+					    
+					    echo $"PlayStore"
+				cat <<-EOF
 					  </div>
 					  <div class="txt">
 					    <a href="#" class="status-remove"><svg viewBox="0 0 512 512" style="width: 16px; border-radius: 0px; margin: 0px; position: relative; top: -11px;"><path fill="currentcolor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg></a>
@@ -276,7 +280,7 @@ function sh_init {
 					    </div>
 					    <div class="pop-up__subtitle" style="text-align: justify;">
 				EOF
-				echo $'Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!'
+				echo $"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
 				cat <<-EOF
 					    </div>
 					  </div>

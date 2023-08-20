@@ -99,7 +99,7 @@ function sh_config {
 		[biglinux-themes-gui, EXEC]=""
 		[big-store, NAME]=$""
 		[big-store, COMMENT]=$"Instalar ou remover programas."
-		[big-store, ICON]="icons/icon-big-store.png"
+		[big-store, ICON]="icons/icon-big-store.svg"
 		[big-store, CATEGORY]="System"
 		[big-store, EXEC]=""
 		[bootsplash - manager, NAME]=$"Temas do Bootsplash"
