@@ -163,7 +163,7 @@ function sh_main {
 		SDL_VIDEODRIVER=x11\
 		WINIT_UNIX_BACKEND=x11\
 		GDK_BACKEND=x11\
-		cmdlogger bigbashview -n "$TITLE" -s 1280x720 "$cfilestart" -i icon.png -d "$bbvpath"
+		bigbashview -n "$TITLE" -s 1280x720 "$cfilestart" -i icon.png -d "$bbvpath"
 }
 
 #sh_debug

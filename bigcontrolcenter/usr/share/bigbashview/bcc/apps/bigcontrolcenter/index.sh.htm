@@ -152,7 +152,7 @@ cat <<-EOF
 	</div>
 EOF
 
-	if ! cmdlogger pgrep kwin > /dev/null; then
+	if ! pgrep kwin > /dev/null; then
 cat <<-EOF
 		<div class="header-profile" onclick="_run('/execute close$')">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-button">

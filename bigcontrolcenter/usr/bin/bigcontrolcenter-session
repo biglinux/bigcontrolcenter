@@ -44,8 +44,7 @@ function sh_main {
 	cmdlogger sed -i '/BorderlessMaximizedWindows=true/d' ~/.config/kwinrc
 	/usr/lib/polkit-kde-authentication-agent-1 &
 	kwin_x11 &
-#	cmdlogger cd /usr/share/bigbashview/bcc/apps/bigcontrolcenter/ || return 1
-	cmdlogger bigbashview -c black -t qt -w maximized -i icon.png index.sh.htm -d "/usr/share/bigbashview/bcc/apps/bigcontrolcenter"
+	bigbashview -c black -t qt -w maximized -i icon.png index.sh.htm -d "/usr/share/bigbashview/bcc/apps/bigcontrolcenter"
 }
 
 #sh_debub
