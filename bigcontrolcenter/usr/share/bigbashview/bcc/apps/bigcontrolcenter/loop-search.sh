@@ -4,7 +4,7 @@
 
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/loop-search.sh
 #  Created: 2022/02/28
-#  Altered: 2023/08/12
+#  Altered: 2023/08/22
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -32,7 +32,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230812"
+_VERSION_="1.0.0-20230822"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 export LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
@@ -167,7 +167,7 @@ function sh_config {
 		[gsmartcontrol, ICON]="/usr/share/icons/hicolor/128x128/apps/gsmartcontrol.png"
 		[gsmartcontrol, CATEGORY]="About"
 		[gsmartcontrol, EXEC]=""
-		[gufw, NAME]=$"Firewall"
+		[gufw, NAME]=$"Gufw Firewall"
 		[gufw, COMMENT]=$"Configurar regras de segurança para a conexão com a internet."
 		[gufw, ICON]="icons/gufw.png"
 		[gufw, CATEGORY]="Privacy"
@@ -273,9 +273,9 @@ function sh_config {
 		[kcm_filetypes, ICON]=""
 		[kcm_filetypes, CATEGORY]="Personalization"
 		[kcm_filetypes, EXEC]=""
-		[kcm_firewall, NAME]=$""
-		[kcm_firewall, COMMENT]=$""
-		[kcm_firewall, ICON]=""
+		[kcm_firewall, NAME]=$"Plasma Firewall"
+		[kcm_firewall, COMMENT]=$"Configurar regras de segurança para conexões. Este firewall é baseado na infraestrutura do Gufw"
+		[kcm_firewall, ICON]="icons/plasma_firewall.png"
 		[kcm_firewall, CATEGORY]="Privacy"
 		[kcm_firewall, EXEC]=""
 		[kcm_fonts, NAME]=$""

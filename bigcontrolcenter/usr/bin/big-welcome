@@ -48,8 +48,7 @@ function sh_config {
 }
 
 function sh_main {
-#	cmdlogger cd /usr/share/bigbashview/bcc/apps/big-welcome/ || return 1
-	cmdlogger bigbashview -s 1000x660 main.sh.htm -n $"Introdução ao BigLinux" -i big-logo.png -d "/usr/share/bigbashview/bcc/apps/big-welcome"
+	bigbashview -s 1000x660 main.sh.htm -n $"Introdução ao BigLinux" -i big-logo.png -d "/usr/share/bigbashview/bcc/apps/big-welcome"
 }
 
 #sh_debug

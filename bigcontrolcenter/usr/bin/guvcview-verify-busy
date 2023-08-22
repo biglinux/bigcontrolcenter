@@ -2,7 +2,7 @@
 
 #  usr/bin/guvcview-verify-busy
 #  Created: 0000/00/00
-#  Altered: 2023/08/12
+#  Altered: 2023/08/20
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -29,40 +29,45 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230812"
+_VERSION_="1.0.0-20230820"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 export LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 [[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
 
 function sh_config {
-	#Translation
-	export TEXTDOMAINDIR="/usr/share/locale"
-	export TEXTDOMAIN=bigcontrolcenter
-	declare -g video_device='/dev/video0'
-	declare -gA Amsg=(
-		[title]=$(gettext $"Webcam")
-		[error]=$(gettext $"Nenhuma webcam localizada.")
-		[busy]=$(gettext $"A webcam já está sendo utilizada pelo programa: ")
-		[msg1]=$(gettext $"Abrirei em modo de configuração. ")
-		[msg2]=$(gettext $"As alterações feitas podem ser vistas")
-		[msg3]=$(gettext $"na imagem da sua webcam em outros programas.")
-	)
+   #Translation
+   export TEXTDOMAINDIR="/usr/share/locale"
+   export TEXTDOMAIN=bigcontrolcenter
+   declare -g video_device='/dev/video0'
+   declare -gA Amsg=(
+      [title]=$(gettext $"Central de Controle - Webcam")
+      [error]=$(gettext $"Nenhuma webcam localizada.")
+      [busy]=$(gettext $"A webcam já está sendo utilizada pelos aplicativos: ")
+      [msg1]=$(gettext $"Abrirei em modo de configuração. ")
+      [msg2]=$(gettext $"As alterações feitas podem ser vistas")
+      [msg3]=$(gettext $"na imagem da sua webcam em outros programas.")
+   )
 }
 
 function sh_main {
-	if ! cmdlogger test -c "$video_device"; then
-		cmdlogger kdialog --title "${Amsg[title]}" --error "${Amsg[error]}"
-		return
-	fi
+   if ! cmdlogger test -c "$video_device"; then
+      cmdlogger kdialog --title "${Amsg[title]}" --error "${Amsg[error]}"
+      return
+   fi
 
-	WEBCAM_BUSY=$(lsof "$video_device" 2>/dev/null | awk 'NR==2 {print $1}')
-	if [[ -z "$WEBCAM_BUSY" ]]; then
-		cmdlogger guvcview
-	else
-		cmdlogger kdialog --msgbox "${Amsg[busy]} $WEBCAM_BUSY\n\n${Amsg[msg1]}\n${Amsg[msg2]}\n${Amsg[msg3]}\n" --title "${Amsg[error]}"
-		cmdlogger guvcview -z
-	fi
+#  WEBCAM_BUSY="$(ps ax | grep $(fuser "$video_device" 2>/dev/null) | awk '{print $5}')"
+#  WEBCAM_BUSY=$(lsof "$video_device" 2>/dev/null | awk 'NR==2 {print $1}')
+#  WEBCAM_BUSY=$(lsof "$video_device" 2>/dev/null| tail -1| awk '{print $1}')
+#  WEBCAM_BUSY=$(lsof /dev/video0 2>/dev/null | awk 'NR>1 {print $0}' | grep guvcview)
+   WEBCAM_BUSY=$(lsof "$video_device" 2>/dev/null | awk 'NR>1 {print "pid : " $2 " => " $1}' | grep guvcview)
+   if [[ -z "$WEBCAM_BUSY" ]]; then
+      cmdlogger guvcview
+   else
+      if cmdlogger kdialog --yesno "${Amsg[busy]}\n$WEBCAM_BUSY\n\n${Amsg[msg1]}\n${Amsg[msg2]}\n${Amsg[msg3]}\n" --title "${Amsg[error]}"; then
+         cmdlogger guvcview -z
+      fi
+   fi
 }
 
 #sh_debug
