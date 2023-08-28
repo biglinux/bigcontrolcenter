@@ -143,12 +143,12 @@ function sh_main {
 	if (( RELOAD )); then
 		local cfilestart='main.sh.htm'
 		if (( PARTIAL )); then
-			cmdlogger rm -f "$userpath"/custom-*
+			rm -f "$userpath"/custom-*
 		else
-			cmdlogger rm -f "$userpath"/cache*
-			cmdlogger rm -f "$userpath"/icons/*
-			cmdlogger rm -f "$userpath"/show_other
-			cmdlogger rm -f "$userpath"/custom-*
+			rm -f "$userpath"/cache*
+			rm -f "$userpath"/icons/*
+			rm -f "$userpath"/show_other
+			rm -f "$userpath"/custom-*
 		fi
 		# Cria arquivo para ser removido dentro do loop-search e verificado no index.sh.htm quando deve prosseguir
 		echo '' > "$userpath/reload"
@@ -157,7 +157,8 @@ function sh_main {
 		#########################################################
 		# START CACHE 1
 		#########################################################
-		cmdlogger nice -n 15 ./loop-search.sh "$PARTIAL" &
+		./loop-search.sh "$PARTIAL" &
+		export Pid_loop_search=$!
 	fi
 	QT_QPA_PLATFORM=xcb\
 		SDL_VIDEODRIVER=x11\
