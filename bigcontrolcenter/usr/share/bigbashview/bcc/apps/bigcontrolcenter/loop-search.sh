@@ -52,16 +52,11 @@ function sh_config {
 	declare -g userpath="$HOME/.config/bigcontrolcenter"
 	declare -g userfilespath="$HOME/.config/bcc/files"
 	declare -gA Afiles=(
-		[big - welcome, NAME]=$"Introdução ao BigLinux"
-		[big - welcome, COMMENT]=$"Introdução ao BigLinux"
-		[big - welcome, ICON]="/usr/share/bigbashview/bcc/apps/big-welcome/icon-logo-biglinux.png"
-		[big - welcome, CATEGORY]="Star"
-		[big - welcome, EXEC]="big-welcome"
-		[01example, NAME]=$"Integração com Google Drive e ownCloud"
-		[01example, COMMENT]=$"Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
-		[01example, ICON]="icons/kcm_kaccounts.png"
-		[01example, CATEGORY]="Internet"
-		[01example, EXEC]=""
+		[big-welcome, NAME]=$"Introdução ao BigLinux"
+		[big-welcome, COMMENT]=$"Introdução ao BigLinux"
+		[big-welcome, ICON]="/usr/share/bigbashview/bcc/apps/big-welcome/icon-logo-biglinux.png"
+		[big-welcome, CATEGORY]="Star"
+		[big-welcome, EXEC]="big-welcome"
 		[appimagelaunchersettings, NAME]=$"Configurar o AppimageLauncher"
 		[appimagelaunchersettings, COMMENT]=$"Escolher o comportamento dos programas disponibilizados em .appimage"
 		[appimagelaunchersettings, ICON]=""
@@ -87,11 +82,11 @@ function sh_config {
 		[biglinux-config, ICON]="icons/icon-restaurar-configuracoes.png"
 		[biglinux-config, CATEGORY]="System"
 		[biglinux-config, EXEC]=""
-		[biglinux-grub - restore, NAME]=$""
-		[biglinux-grub - restore, COMMENT]=$"Utilitário que facilita a restauração do sistema instalado, principalmente a restauração do boot do sistema (Grub). Também pode ser utilizado para acessar o gerenciador de pacotes e o terminal do sistema instalado."
-		[biglinux-grub - restore, ICON]=""
-		[biglinux-grub - restore, CATEGORY]="System Star"
-		[biglinux-grub - restore, EXEC]=""
+		[biglinux-grub-restore, NAME]=$""
+		[biglinux-grub-restore, COMMENT]=$"Utilitário que facilita a restauração do sistema instalado, principalmente a restauração do boot do sistema (Grub). Também pode ser utilizado para acessar o gerenciador de pacotes e o terminal do sistema instalado."
+		[biglinux-grub-restore, ICON]=""
+		[biglinux-grub-restore, CATEGORY]="System Star"
+		[biglinux-grub-restore, EXEC]=""
 		[biglinux-themes-gui, NAME]=$"Temas, Desktop e Ajustes"
 		[biglinux-themes-gui, COMMENT]=$"Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
 		[biglinux-themes-gui, ICON]="icons/icon-aparencia-desempenho-usabilidade.png"
@@ -102,16 +97,16 @@ function sh_config {
 		[big-store, ICON]="icons/icon-big-store.svg"
 		[big-store, CATEGORY]="System"
 		[big-store, EXEC]=""
-		[bootsplash - manager, NAME]=$"Temas do Bootsplash"
-		[bootsplash - manager, COMMENT]=$""
-		[bootsplash - manager, ICON]="icons/bootsplash-manager-gui.png"
-		[bootsplash - manager, CATEGORY]="Personalization"
-		[bootsplash - manager, EXEC]=""
-		[brightness - controller, NAME]=$"Brilho e cor"
-		[brightness - controller, COMMENT]=$"Controle o brilho e as cores"
-		[brightness - controller, ICON]="icons/brightness-adjust.svg"
-		[brightness - controller, CATEGORY]="Hardware"
-		[brightness - controller, EXEC]="brightness-controller"
+		[bootsplash-manager, NAME]=$"Temas do Bootsplash"
+		[bootsplash-manager, COMMENT]=$""
+		[bootsplash-manager, ICON]="icons/bootsplash-manager-gui.png"
+		[bootsplash-manager, CATEGORY]="Personalization"
+		[bootsplash-manager, EXEC]=""
+		[brightness-controller, NAME]=$"Brilho e cor"
+		[brightness-controller, COMMENT]=$"Controle o brilho e as cores"
+		[brightness-controller, ICON]="icons/brightness-adjust.svg"
+		[brightness-controller, CATEGORY]="Hardware"
+		[brightness-controller, EXEC]="brightness-controller"
 		[bssh, NAME]=$"Procurar servidores SSH"
 		[bssh, COMMENT]=$""
 		[bssh, ICON]="icons/icon_find-server-SSH.png"
@@ -192,11 +187,11 @@ function sh_config {
 		[hp-uiscan, ICON]="icons/icon_scanner-HP.png"
 		[hp-uiscan, CATEGORY]="Hardware"
 		[hp-uiscan, EXEC]=""
-		[iDevice - Mounter, NAME]=$"Montar Hardware Apple"
-		[iDevice - Mounter, COMMENT]=$"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao acesso de arquivos em um pendrive."
-		[iDevice - Mounter, ICON]=""
-		[iDevice - Mounter, CATEGORY]="Phone"
-		[iDevice - Mounter, EXEC]="idevice-mounter"
+		[iDevice-Mounter, NAME]=$"Montar Hardware Apple"
+		[iDevice-Mounter, COMMENT]=$"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao acesso de arquivos em um pendrive."
+		[iDevice-Mounter, ICON]=""
+		[iDevice-Mounter, CATEGORY]="Phone"
+		[iDevice-Mounter, EXEC]="idevice-mounter"
 		[jamesdsp, NAME]=$"Equalizador (DSP)"
 		[jamesdsp, COMMENT]=$""
 		[jamesdsp, ICON]=""
@@ -232,7 +227,6 @@ function sh_config {
 		[kcm_bluetooth, ICON]=""
 		[kcm_bluetooth, CATEGORY]="Hardware"
 		[kcm_bluetooth, EXEC]=""
-		[kcm_keys, ICON]="icons/preferences-desktop-keyboard-shortcuts.svg"
 		[kcm_bolt, NAME]=$""
 		[kcm_bolt, COMMENT]=$""
 		[kcm_bolt, ICON]=""
@@ -322,7 +316,7 @@ function sh_config {
 		[kcm_kwin_effects, COMMENT]=$""
 		[kcm_kwin_effects, ICON]=""
 		[kcm_kwin_effects, CATEGORY]="Personalization"
-		[kcm_kwin_effects, EXEC]="kcmshell5 kwincompositing kcm_kwin_effects"
+		[kcm_kwin_effects, EXEC]="kcmshell5 kwincompositing kcm_kwin_effects qtquicksettings"
 		[kcm_kwinoptions, NAME]=$""
 		[kcm_kwinoptions, COMMENT]=$""
 		[kcm_kwinoptions, ICON]=""
@@ -341,7 +335,7 @@ function sh_config {
 		[kcm_networkmanagement, NAME]=$"Gerenciar conexões"
 		[kcm_networkmanagement, COMMENT]=$"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga móvel e outros)."
 		[kcm_networkmanagement, ICON]="icons/icon_gerenciar-conexoes.png"
-		[kcm_networkmanagement, CATEGORY]="Network Star"
+		[kcm_networkmanagement, CATEGORY]="Network"
 		[kcm_networkmanagement, EXEC]="kcmshell5 kcm_networkmanagement"
 		[kcm_nightcolor, NAME]=$""
 		[kcm_nightcolor, COMMENT]=$""
@@ -358,11 +352,11 @@ function sh_config {
 		[kcm_plymouth, ICON]="icons/kcm_kaccounts.png"
 		[kcm_plymouth, CATEGORY]="Account"
 		[kcm_plymouth, EXEC]=""
-		[kcm_printer_manager, NAME]=$"Impressoras"
-		[kcm_printer_manager, COMMENT]=$"Instalar, configurar ou remover impressoras."
-		[kcm_printer_manager, ICON]="icons/icon_print.png"
-		[kcm_printer_manager, CATEGORY]="Star Hardware"
-		[kcm_printer_manager, EXEC]="system-config-printer"
+		[system-config-printer, NAME]=$"Impressoras"
+		[system-config-printer, COMMENT]=$"Instalar, configurar ou remover impressoras."
+		[system-config-printer, ICON]="icons/icon_print.png"
+		[system-config-printer, CATEGORY]="Star Hardware"
+		[system-config-printer, EXEC]="system-config-printer"
 		[kcm_recentFiles, NAME]=$""
 		[kcm_recentFiles, COMMENT]=$""
 		[kcm_recentFiles, ICON]=""
@@ -463,16 +457,16 @@ function sh_config {
 		[lstopo, ICON]=""
 		[lstopo, CATEGORY]="About"
 		[lstopo, EXEC]=""
-		[mintstick - format - kde, NAME]=$""
-		[mintstick - format - kde, COMMENT]=$""
-		[mintstick - format - kde, ICON]="icons/pendrive-format.svg"
-		[mintstick - format - kde, CATEGORY]="System"
-		[mintstick - format - kde, EXEC]=""
-		[mintstick - kde, NAME]=$""
-		[mintstick - kde, COMMENT]=$""
-		[mintstick - kde, ICON]="icons/pendrive-image-recorder.svg"
-		[mintstick - kde, CATEGORY]="System"
-		[mintstick - kde, EXEC]=""
+		[mintstick-format-kde, NAME]=$""
+		[mintstick-format-kde, COMMENT]=$""
+		[mintstick-format-kde, ICON]="icons/pendrive-format.svg"
+		[mintstick-format-kde, CATEGORY]="System"
+		[mintstick-format-kde, EXEC]=""
+		[mintstick-kde, NAME]=$""
+		[mintstick-kde, COMMENT]=$""
+		[mintstick-kde, ICON]="icons/pendrive-image-recorder.svg"
+		[mintstick-kde, CATEGORY]="System"
+		[mintstick-kde, EXEC]=""
 		[msm_users, NAME]=$"Gerenciador de usuários"
 		[msm_users, COMMENT]=$"Adiciona, remove ou edita usuários e grupos do sistema."
 		[msm_users, ICON]="icons/icon_useraccount.png"
@@ -493,11 +487,11 @@ function sh_config {
 		[org.kde.filelight, ICON]=""
 		[org.kde.filelight, CATEGORY]="System"
 		[org.kde.filelight, EXEC]=""
-		[org.kde.kdeconnect - settings, NAME]=$"KDE Connect"
-		[org.kde.kdeconnect - settings, COMMENT]=$"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google Store ou Apple Store e instale o Kde Connect."
-		[org.kde.kdeconnect - settings, ICON]="icons/preferences-kde-connect.png"
-		[org.kde.kdeconnect - settings, CATEGORY]="Phone"
-		[org.kde.kdeconnect - settings, EXEC]=""
+		[org.kde.kdeconnect-settings, NAME]=$"KDE Connect"
+		[org.kde.kdeconnect-settings, COMMENT]=$"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google Store ou Apple Store e instale o Kde Connect."
+		[org.kde.kdeconnect-settings, ICON]="icons/preferences-kde-connect.png"
+		[org.kde.kdeconnect-settings, CATEGORY]="Phone"
+		[org.kde.kdeconnect-settings, EXEC]=""
 		[org.kde.kinfocenter, NAME]=$""
 		[org.kde.kinfocenter, COMMENT]=$""
 		[org.kde.kinfocenter, ICON]=""
@@ -550,7 +544,7 @@ function sh_config {
 		[systemsettings, EXEC]="systemsettings"
 		[tlpui, NAME]=$"Configurador avançado de energia"
 		[tlpui, COMMENT]=$""
-		[tlpui, ICON]="icons/power-manager.png"
+		[tlpui, ICON]=""
 		[tlpui, CATEGORY]="Hardware"
 		[tlpui, EXEC]=""
 		[user_manager, NAME]=$""
@@ -558,6 +552,14 @@ function sh_config {
 		[user_manager, ICON]=""
 		[user_manager, CATEGORY]="Account"
 		[user_manager, EXEC]=""
+		[biglinux-noise-reduction-pipewire, CATEGORY]="Multimedia"
+		[smb, CATEGORY]="Network"
+		[smb, EXEC]="kcmshell5 smb"
+		[kcm_updates, CATEGORY]="System"
+		[kcm_kamera, CATEGORY]="Hardware"
+		[kcm_powerdevilprofilesconfig, CATEGORY]="Hardware"
+		[kcm_powerdevilprofilesconfig, EXEC]="kcmshell5 kcm_powerdevilactivitiesconfig kcm_powerdevilprofilesconfig kcm_powerdevilglobalconfig"
+		[sambasearch, CATEGORY]="Internet"
 	)
 }
 
@@ -643,6 +645,7 @@ function sh_kservices5_desktop_files {
 			-ve 'classikstyleconfig.desktop' \
 			-ve 'classikdecorationconfig.desktop' \
 			-ve 'klassydecorationconfig.desktop' \
+			-ve 'plasma-applet-org.kde.plasma.bluetooth.desktop' \
 			-ve 'klassystyleconfig.desktop')
 	echo ${filtered_files[@]}
 }
@@ -670,14 +673,14 @@ function sh_apps_desktop_files {
 		'fontinst.desktop'
 		'powerdevilactivitiesconfig.desktop'
 		'kcm_plasmasearch.desktop'
-		'kcm_kdeconnect'
+		'kcm_kdeconnect.desktop'
 		'kwinscreenedges.desktop'
 		'kwintouchscreen.desktop'
 		'keys.desktop'
 		'standard_actions.desktop'
 		'khotkeys.desktop'
 		'qtquicksettings.desktop'
-		'solid-actions'
+		'solid-actions.desktop'
 		'spellchecking.desktop'
 		'kwinactions.desktop'
 		'kwinfocus.desktop'
@@ -688,10 +691,10 @@ function sh_apps_desktop_files {
 		'breezestyleconfig.desktop'
 		'breezedecorationconfig.desktop'
 		'oxygenstyleconfig.desktop'
-		'oxygendecorationconfig'
-		'kcm_pulseaudio'
+		'oxygendecorationconfig.desktop'
+		'kcm_pulseaudio.desktop'
 		'emoticons.desktop'
-		'kcm_nightcolor'
+		'kcm_nightcolor.desktop'
 		'kgamma.desktop'
 		'powerdevilglobalconfig.desktop'
 		'kwincompositing.desktop'
@@ -726,6 +729,14 @@ function sh_apps_desktop_files {
 		'kcm_about-distro.desktop'
 		'kcm_breezedecoration.desktop'
 		'kcm_kwinxwayland.desktop'
+		'kcm_keys.desktop'
+		'kcm_powerdevilglobalconfig.desktop'
+		'kcm_powerdevilactivitiesconfig.desktop'
+		'kcm_fontinst.desktop'
+		'kcm_printer_manager.desktop'
+		'kcm_kwinrules.desktop'
+		'kcm_kwintabbox.desktop'
+		'kcm_qtquicksettings.desktop'
 	)
 	# Usando find para encontrar os arquivos desejados e excluindo os arquivos da lista de exclusão
 	mapfile -t filtered_files < <(find /usr/share/applications/ -name "kcm_*.desktop" -type f ! \( -name "${excluded_files[0]}" $(printf -- "-o -name %s " "${excluded_files[@]:1}") \) -print0 | xargs -0)
@@ -739,7 +750,6 @@ function sh_bcc_desktop_files {
 		'timeshift-gtk.desktop'
 		'cups.desktop'
 		'htop.desktop'
-		'system-config-printer.desktop'
 		'msm_kde_notifier_settings.desktop'
 		'mpv.desktop'
 		'manjaro-settings-manager.desktop'
@@ -759,9 +769,11 @@ function sh_bcc_desktop_files {
 function sh_static_desktop_files {
 	local -a filtered_files=(
 		'/usr/share/applications/big-store.desktop'
+		'/usr/share/applications/bigcontrolcenter/pavucontrol-qt.desktop'
 		'/usr/share/applications/org.manjaro.pamac.manager.desktop'
 		'/usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop'
 		'/usr/share/kservices5/bigcontrolcenter/qv4l2.desktop'
+		'/usr/share/applications/biglinux-noise-reduction-pipewire.desktop'
 		'/usr/share/kservices5/bigcontrolcenter/org.gnome.baobab.desktop'
 		'/usr/share/kservices5/bigcontrolcenter/biglinux-grub-restore.desktop'
 		'/usr/share/applications/gsmartcontrol.desktop'
@@ -770,6 +782,7 @@ function sh_static_desktop_files {
 		'/usr/share/applications/org.kde.konsole.desktop'
 		'/usr/share/applications/guvcview.desktop'
 		'/usr/share/applications/hplip.desktop'
+		'/usr/share/kservices5/smb.desktop'
 	)
 	echo "${filtered_files[@]}"
 }
@@ -780,9 +793,7 @@ function sh_create_file_html {
 	[[ $# -eq 0 ]] && cprefix='cache-' || cprefix="$1"
 	cat <<-EOF >"$userpath/$cprefix$filename.html"
 		<div class="box-1 box-2 box-3 box-4 box-5 box-items $CATEGORY">
-		<div id="box-status-bar"><div id="tit-status-bar">
-		$COMMENT
-		</div></div>
+		<div id="box-status-bar"><div id="tit-status-bar">$COMMENT</div></div>
 		<button onclick="_run('$EXEC')" id="box-subtitle" class="box-geral-icons box-geral-button">
 		<!-- class="status-button" CHAMA MODAL (POP-UP) -->
 		<div class="box-imagem-icon">
@@ -859,13 +870,13 @@ function sh_parallel_search {
 
 			# Verifica se existe um ícone PNG original
 			if [[ ! -e "$ICON" ]]; then
-				ICON="$(grep -i -m 1 ".svg" <<< "$ICON_GET" | tail -1)"
+				ICON="$(grep -i -m 1 "scalable/" <<< "$ICON_GET")"
 
 				# Verifica se existe um ícone SVG original
 				if [[ -e "$ICON" ]]; then
 					# Converte o ícone SVG para PNG
-					if ksvgtopng5 64 64 "$ICON" "$HOME/.config/bigcontrolcenter/${ICON_ORIGINAL}.png"; then
-						ICON="$HOME/.config/bigcontrolcenter/${ICON_ORIGINAL}.png"
+					if ksvgtopng 64 64 "$ICON" "$HOME/.config/bigcontrolcenter/$ICON_ORIGINAL.png"; then
+						ICON="$HOME/.config/bigcontrolcenter/$ICON_ORIGINAL.png"
 					fi
 				else
 					#catch
@@ -893,19 +904,19 @@ function sh_parallel_search {
 	#debug
 
 	case "$CATEGORY" in
-	*[Ss]tar*) ;;
-	*[Ss]ystem*) ;;
-	*[Hh]ardware*) ;;
-	*[Pp]ersonalization*) ;;
-	*[Pp]hone*) ;;
-	*[Mm]ultimedia*) ;;
-	*[Nn]etwork*) ;;
-	*[Aa]pplications*) ;;
-	*[Aa]ccount*) ;;
-	*[Ll]anguage*) ;;
-	*[Pp]rivacy*) ;;
-	*[Ss]erver*) ;;
-	*[Aa]bout*) ;;
+	Star) ;;
+	System) ;;
+	Hardware) ;;
+	Personalization) ;;
+	Phone) ;;
+	Multimedia) ;;
+	Network) ;;
+	Applications) ;;
+	Account) ;;
+	Language) ;;
+	Privacy) ;;
+	Server) ;;
+	About) ;;
 	*) CATEGORY="Other" ;;
 	esac
 
@@ -977,3 +988,4 @@ function sh_main {
 sh_config
 sh_checkdir
 sh_main "$@"
+wait

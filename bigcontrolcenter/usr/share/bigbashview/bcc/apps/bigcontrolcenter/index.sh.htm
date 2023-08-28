@@ -32,6 +32,7 @@
 #  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
 APP="${0##*/}"
 _VERSION_="1.0.0-20230812"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
@@ -112,9 +113,7 @@ function CACHE_ICON {
 cat <<-EOF >> "$HOME/.config/bigcontrolcenter/cache.html"
 	<div class="box-1 box-2 box-3 box-4 box-5 box-items $xcategory">
 	<div id="box-status-bar">
-	<div id="tit-status-bar">
-	$xcomment
-	</div></div>
+	<div id="tit-status-bar">$xcomment</div></div>
 	<button onclick="_run('$xexec')" id="box-subtitle" class="box-geral-icons box-geral-button">
 	<div class="box-imagem-icon"><img class="box-imagem-icon" src="$xicon"></div>
 	<div class="box-titulo">
@@ -278,7 +277,10 @@ cat <<-EOF
 	<span>
 	$CATEGORY_Other
 	</span></a>
+EOF
 
+	if [ -e ~/.config/bigcontrolcenter/custom-*.html ]; then
+cat <<-EOF
 	<a href="#topo" id="Custom" class="btn">
 	<svg viewBox="0 0 512 512">
 	<path fill="currentColor" d="M416 48v416c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h224c26.51 0 48 21.49 48 48zm96 58v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42V88h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zM30 376h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6z" />
@@ -287,7 +289,10 @@ cat <<-EOF
 	$CATEGORY_Custom
 	</span>
 	</a>
+EOF
+	fi
 
+cat <<-EOF
 	<a href="#topo" id="About" class="btn">
 	<svg viewBox="0 0 512 512">
 	<path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" />
@@ -512,14 +517,6 @@ EOF
 		######################################
 
 		#WEBAPP
-		EXEC="xdg-open https://web.airmore.com"
-		NAME=$"Airmore"
-		CATEGORY="Phone"
-		COMMENT=$"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-		ICON="icons/airmore.png"
-		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
-
-		#WEBAPP
 		EXEC="xdg-open https://web.airdroid.com"
 		NAME=$"Airdroid"
 		CATEGORY="Phone"
@@ -584,7 +581,7 @@ EOF
 		########################################
 		#   kernel
 		########################################
-		if test -e '/usr/share/kservices5/msm_kernel.desktop'; then
+		if test -e '/usr/share/bigbashview/bcc/apps/drivers/kernel.sh.htm'; then
 			EXEC="big-kernel-manager"
 			NAME=$"Instalar versões de kernel e mesa"
 			COMMENT=""
@@ -604,12 +601,11 @@ EOF
 		cmdlogger rm -f "$HOME/.config/bigcontrolcenter/refresh" # Remove file to use cache in next run
 	fi
 
+	waitpid $Pid_loop_search
+	
 	##########################
 	#    ALL BIGLINUX OPEN
 	##########################
-	# Wait loop-search.sh end
-	wait
-
 	cat ~/.config/bigcontrolcenter/cache.html    2>&-
 	cat ~/.config/bigcontrolcenter/cache-*.html  2>&-
 	cat ~/.config/bigcontrolcenter/custom-*.html 2>&-
@@ -622,13 +618,6 @@ EOF
 	ICON="icons/snapdrop.png"
 	SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-	# #WELCOME
-	# EXEC="big-welcome"
-	# NAME=$"Introdução"
-	# COMMENT=$"Introdução ao BigLinux."
-	# ICON="/usr/share/bigbashview/bcc/apps/big-welcome/big-logo.png"
-	# CATEGORY="Star"
-	# SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 cat <<-EOF
 	</div></div></div></div>
@@ -656,4 +645,5 @@ function sh_main {
 
 #sh_debug
 sh_config
+
 sh_main
