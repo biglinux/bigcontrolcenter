@@ -872,19 +872,8 @@ function sh_parallel_search {
 			if [[ ! -e "$ICON" ]]; then
 				ICON="$(grep -i -m 1 "scalable/" <<< "$ICON_GET")"
 
-				# Verifica se existe um ícone SVG original
-				if [[ -e "$ICON" ]]; then
-					# Converte o ícone SVG para PNG
-					if ksvgtopng 64 64 "$ICON" "$HOME/.config/bigcontrolcenter/$ICON_ORIGINAL.png"; then
-						ICON="$HOME/.config/bigcontrolcenter/$ICON_ORIGINAL.png"
-					fi
-				else
-					#catch
-					if [[ -n "$ICON_GET" ]]; then
-						ICON="$ICON_GET"
-					else
-						ICON="$ICON_ORIGINAL"
-					fi
+				if [[ ! -e "$ICON" ]]; then
+					ICON="${ICON_GET##*$'\n'}"
 				fi
 			fi
 		fi
