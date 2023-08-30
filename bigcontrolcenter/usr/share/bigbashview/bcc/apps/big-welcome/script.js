@@ -1,18 +1,18 @@
 
-// $(document).ready(function() {
-// var pageRefresh = 7000; // 7s
-//     setInterval(function() {
-//         refresh();
-//     }, pageRefresh);
-// });
+$(document).ready(function() {
+var pageRefresh = 7000; // 7s
+    setInterval(function() {
+        refresh();
+    }, pageRefresh);
+});
 
 // Functions
 
 function refresh() {
-    //$('#DivBrowserRefresh').load(location.href + " #DivBrowserRefresh");
-    //$('#DivBrowserRefresh').load();
-    $("#DivBrowserRefresh").load(location.href+" #myDiv *","");
-    $("#DivBrowserRefresh").load(location.href+" #DivBrowserRefresh>*","");
+    $('#DivBrowserRefresh').load(location.href + " #DivBrowserRefresh");
+    $('#DivBrowserRefresh').load();
+    // $("#DivBrowserRefresh").load(location.href+" #myDiv *","");
+    // $("#DivBrowserRefresh").load(location.href+" #DivBrowserRefresh>*","");
 }
 
 
