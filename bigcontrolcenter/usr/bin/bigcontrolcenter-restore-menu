@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-#	usr/bin/bigcontrolcenter-restore-menu
+#  usr/bin/bigcontrolcenter-restore-menu
 #  Created: 0000/00/00
-#  Altered: 2023/08/12
+#  Altered: 2023/09/01
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -29,7 +29,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230812"
+_VERSION_="1.0.0-20230901"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 export LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
@@ -37,9 +37,9 @@ LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
 
 function sh_config {
 	#diretorio onde vão estar os arquivos ocultos do menu
-	declare -gA APath=([bigdir_path]='/usr/share/applications/bigcontrolcenter'
-							 [ksrv_path]='/usr/share/kservices5/bigcontrolcenter'
-							)
+	declare -gA APath=(	[bigdir_path]='/usr/share/applications/bigcontrolcenter'
+						[ksrv_path]='/usr/share/kservices5/bigcontrolcenter'
+						)
 	declare -ga aDesktopFiles
 #:<<'comment'
 #	declare -g bigdir='/usr/share/applications/bigcontrolcenter'
@@ -117,11 +117,11 @@ function sh_search_desktop_files {
 function sh_change_file {
 	local cfile="$1"
 
-	cmdlogger sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g;/Categories/s/#//;/DBusActivatable/s/#//' "$cfile"
-	cmdlogger mv -f "$cfile" "/usr/share/applications/"
+	sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g;/Categories/s/#//;/DBusActivatable/s/#//' "$cfile"
+	mv -f "$cfile" "/usr/share/applications/"
 }
 
-function sh_init {
+function sh_main {
 	[[ ! -e "${APath[bigdir_path]}" && ! -e "${APath[ksrv_path]}" ]] && return
 
 	sh_search_desktop_files
@@ -131,7 +131,7 @@ function sh_init {
 			EXEC="$(grep -m1 "Exec=" "$i" | cut -f2 -d= | cut -f1 -d" ")"
 
 			if ! which "$EXEC"; then
-				cmdlogger rm -f "$i"
+				rm -f "$i"
 				continue
 			fi
 			sh_change_file "$i"
@@ -141,4 +141,4 @@ function sh_init {
 
 #sh_debug
 sh_config
-sh_init
+sh_main

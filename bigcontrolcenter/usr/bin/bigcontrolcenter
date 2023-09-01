@@ -4,7 +4,7 @@
 
 #  /usr/bin/bigcontrolcenter
 #  Created: 0000/00/00
-#  Altered: 2023/08/12
+#  Altered: 2023/09/01
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -31,7 +31,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230812"
+_VERSION_="1.0.0-20230901"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 export LOGGER='/dev/tty8'
 #export $(dbus-launch)
@@ -53,9 +53,9 @@ function sh_config {
 }
 
 function sh_checkdir {
-	[[ ! -d "$custom_user_path" ]] && cmdlogger mkdir -p "$custom_user_path"
-	[[ ! -d "$bbvpath"          ]] && cmdlogger mkdir -p "$bbvpath"
-	[[ ! -d "$userpath"         ]] && cmdlogger mkdir -p "$userpath"
+	[[ ! -d "$custom_user_path" ]] && mkdir -p "$custom_user_path"
+	[[ ! -d "$bbvpath"          ]] && mkdir -p "$bbvpath"
+	[[ ! -d "$userpath"         ]] && mkdir -p "$userpath"
 	cd "$bbvpath" || exit 1
 }
 
