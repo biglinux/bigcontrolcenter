@@ -2,7 +2,7 @@
 
 #  usr/bin/guvcview-verify-busy
 #  Created: 0000/00/00
-#  Altered: 2023/08/20
+#  Altered: 2023/09/01
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                0000-2023, bigbruno Bruno Gonçalves <bruno@biglinux.com.br>
@@ -29,7 +29,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230820"
+_VERSION_="1.0.0-20230901"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 export LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
@@ -51,8 +51,8 @@ function sh_config {
 }
 
 function sh_main {
-   if ! cmdlogger test -c "$video_device"; then
-      cmdlogger kdialog --title "${Amsg[title]}" --error "${Amsg[error]}"
+   if ! test -c "$video_device"; then
+      kdialog --title "${Amsg[title]}" --error "${Amsg[error]}"
       return
    fi
 
@@ -62,10 +62,10 @@ function sh_main {
 #  WEBCAM_BUSY=$(lsof /dev/video0 2>/dev/null | awk 'NR>1 {print $0}' | grep guvcview)
    WEBCAM_BUSY=$(lsof "$video_device" 2>/dev/null | awk 'NR>1 {print "pid : " $2 " => " $1}' | grep guvcview)
    if [[ -z "$WEBCAM_BUSY" ]]; then
-      cmdlogger guvcview
+		guvcview
    else
-      if cmdlogger kdialog --yesno "${Amsg[busy]}\n$WEBCAM_BUSY\n\n${Amsg[msg1]}\n${Amsg[msg2]}\n${Amsg[msg3]}\n" --title "${Amsg[error]}"; then
-         cmdlogger guvcview -z
+      if kdialog --yesno "${Amsg[busy]}\n$WEBCAM_BUSY\n\n${Amsg[msg1]}\n${Amsg[msg2]}\n${Amsg[msg3]}\n" --title "${Amsg[error]}"; then
+         guvcview -z
       fi
    fi
 }

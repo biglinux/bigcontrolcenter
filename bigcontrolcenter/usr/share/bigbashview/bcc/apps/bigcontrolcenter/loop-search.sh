@@ -4,7 +4,7 @@
 
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/loop-search.sh
 #  Created: 2022/02/28
-#  Altered: 2023/08/22
+#  Altered: 2023/09/01
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -32,7 +32,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230822"
+_VERSION_="1.0.0-20230901"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 export LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
@@ -41,7 +41,7 @@ trap 'printf "\n${red}Interrupted! exiting...\n"; cleanup; exit 0' INT TERM HUP
 
 function cleanup {
 	sh_info_msg "Removing temporary files..."
-	[[ -e "$userpath/reload" ]] && cmdlogger rm -f "$userpath/reload"
+	[[ -e "$userpath/reload" ]] && rm -f "$userpath/reload"
 	exit 1
 }
 
@@ -564,7 +564,7 @@ function sh_config {
 }
 
 function sh_checkdir {
-	[[ ! -d "$userpath" ]] && cmdlogger mkdir -p "$userpath"
+	[[ ! -d "$userpath" ]] && mkdir -p "$userpath"
 }
 
 function sh_kservices5_desktop_files {
@@ -932,7 +932,7 @@ function sh_process_custom_user_files {
 	local afilesUser=()
 	local file
 
-	[[ ! -d "$userfilespath" ]] && cmdlogger mkdir -p "$userfilespath"
+	[[ ! -d "$userfilespath" ]] && mkdir -p "$userfilespath"
 
 	while IFS= read -r -d '' file; do
 		afilesUser+=("$file")
@@ -968,7 +968,7 @@ function sh_main {
 				sh_parallel_search "$i" &
 			fi
 		done
-		[[ -e "$userpath/reload" ]] && cmdlogger rm -f "$userpath/reload"
+		[[ -e "$userpath/reload" ]] && rm -f "$userpath/reload"
 	fi
 	sh_process_custom_user_files
 }
