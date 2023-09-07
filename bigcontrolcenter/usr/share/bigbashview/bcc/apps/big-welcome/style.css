@@ -26,37 +26,7 @@
     --text-a-color: #ccc;
 }
 
-#myDivbrave{
-  position: absolute;
-  margin-top: -26px;
-  margin-left: 122px;
-}
-#myDivfire{
-  position: absolute;
-  margin-top: -26px;
-  margin-left: 122px;
-}
-#myDivchrome{
-  position: absolute;
-  margin-top: -26px;
-  margin-left: 122px;
-}
-#myDivchromium{
-  position: absolute;
-  margin-top: -26px;
-  margin-left: 122px;
-}
-#myDivvivaldi{
-  position: absolute;
-  margin-top: -26px;
-  margin-left: 122px;
-}
-#myDivopera{
-  position: absolute;
-  margin-top: -26px;
-  margin-left: 122px;
-}
-#myDivedge{
+.show-div-button {
   position: absolute;
   margin-top: -26px;
   margin-left: 122px;
@@ -504,6 +474,14 @@ body, html {
 }
 .step:last-child .line {
   width: 50%;
+}
+
+.step.-current {
+  /*background: var(--body-bg-color);*/
+}  
+
+.step.-current .step__number {
+  opacity: 0.6;
 }
 
 .checkmark {
