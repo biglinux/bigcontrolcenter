@@ -1,140 +1,37 @@
-
+// Functions
 $(document).ready(function() {
-var pageRefresh = 7000; // 7s
+    var pageRefreshInterval = 7000; // 7 segundos
+
     setInterval(function() {
         refresh();
-    }, pageRefresh);
+    }, pageRefreshInterval);
 });
 
-// Functions
-
 function refresh() {
-    $('#DivBrowserRefresh').load(location.href + " #DivBrowserRefresh");
-    $('#DivBrowserRefresh').load();
-    // $("#DivBrowserRefresh").load(location.href+" #myDiv *","");
-    // $("#DivBrowserRefresh").load(location.href+" #DivBrowserRefresh>*","");
+    //$('#DivBrowserRefresh').load(location.href + " #DivBrowserRefresh");
+    $("#DivBrowserRefresh").load(location.href + " #DivBrowserRefresh>*","");
 }
 
+$(document).ready(function () {
+    // Define o manipulador de eventos para todos os botões
+    $(".show-div-button").click(function () {
+        // Obtém o valor do atributo "data-target" para saber qual div mostrar
+        var targetDiv = $(this).data("target");
 
-$(document).ready(function(){
-  // Set div display to Brave
-  $(".show-brave").click(function(){
-    $("#myDivbrave").css("display", "block");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  
-  // Set div display to Firefox
-  $(".show-fire").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "block");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  // Set div display Google Chrome
-  $(".show-chrome").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "block");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  // Set div display Chromium
-  $(".show-chromium").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "block");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  // Set div display Vivaldi
-  $(".show-vivaldi").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "block");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  // Set div display Opera
-  $(".show-opera").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "block");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  // Set div display librewolf
-  $(".show-librewolf").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "block");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  // Set div display falkon
-  $(".show-falkon").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "block");
-    $("#myDivedge").css("display", "none");
-    refresh();
-  });
-  // Set div display edge
-  $(".show-edge").click(function(){
-    $("#myDivbrave").css("display", "none");
-    $("#myDivfire").css("display", "none");
-    $("#myDivchrome").css("display", "none");
-    $("#myDivchromium").css("display", "none");
-    $("#myDivvivaldi").css("display", "none");
-    $("#myDivopera").css("display", "none");
-    $("#myDivlibrewolf").css("display", "none");
-    $("#myDivfalkon").css("display", "none");
-    $("#myDivedge").css("display", "block");
-    refresh();
-  });
+        // Oculta todas as divs com a classe "content-div"
+        $(".content-div").hide();
+
+        // Mostra a div alvo
+        $(targetDiv).show();
+
+        // Chama a função de atualização, se necessário
+        refresh();
+    });
+
+    // Função de atualização
+    function refresh() {
+        // Implemente a lógica de atualização aqui
+    }
 });
 
 class Steps {
@@ -146,7 +43,12 @@ class Steps {
   }
 
   setCurrentStep(currentStep) {
+    for (let i = 0; i < this.stepsQuantity; i++) {
+        this.steps[i].classList.remove('-current');
+    }    
+    
     this.currentStep = currentStep;
+    this.steps[this.currentStep].classList.add('-current');
   }
 
   getSteps() {
