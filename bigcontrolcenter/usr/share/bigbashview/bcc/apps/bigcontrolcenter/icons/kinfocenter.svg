@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   version="1"
+   id="svg31282"
+   sodipodi:docname="cpu.svg"
+   xml:space="preserve"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs31286"><style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-9">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-2">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-3">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-97">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-7">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-9-0">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-2-9">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-3-3">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-97-6">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><style
+       type="text/css"
+       id="current-color-scheme-6">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style><pattern
+       id="pattern0"
+       patternContentUnits="objectBoundingBox"
+       width="1"
+       height="1"><use
+         xlink:href="#image0_0_1"
+         transform="scale(0.0178571 0.0277778)"
+         id="use31558" /></pattern><pattern
+       id="pattern1"
+       patternContentUnits="objectBoundingBox"
+       width="1"
+       height="1"><use
+         xlink:href="#image1_0_1"
+         transform="scale(0.027027 0.047619)"
+         id="use31561" /></pattern><radialGradient
+       id="paint0_radial_0_1"
+       cx="0"
+       cy="0"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-18.791627,8.7084357,-8.7084357,-18.791627,19.791729,3.2916706)"><stop
+         stop-color="#777777"
+         id="stop31564" /><stop
+         offset="1"
+         stop-color="#333333"
+         id="stop31566" /></radialGradient><image
+       id="image0_0_1"
+       width="56"
+       height="36"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAkCAYAAADckvn+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABTBJREFUWIXdmN1vHEkVxc+5VV09jj1ONk7z4UTLEnYlsIX2wUisFyK1Vl4jS7z2I+Jf8f8z70SsFGmi1fIEEi+OWAFmV7uxAm0gjp3M9Efdy4M9kUNsJx6PYyvnYR6mq0+fX1dN3TtFvEJ5nnfU+w+g/D7MzZhogHIA6HZM+Nc/fPbZv17lcZHiSRd/8emn89LKslDD8Q7ub/fvfPQnrK/rxNNNQO64C5988uubBv0YRMITX4Rd/8HX377z9W9/8w36fTuPkGfRkYDLy8tT9O4jRyYGyMmAAIHZH/7jm/Srrza3zifm+JKjvnSd7gLg/GmMTPDBL1dW3p1MrMnpJcCVlZWrhF0byyz6n+V53jl7rMnpJcAamB/XjIxpy/Dh2SJNVi8A5nk+Q7OZsxg62u08z2+cLdbk9AJg6/31SZhG+iW8YmN6U3oOmOd5x7fu+Hp3GlPyep7/6keT8DqrngM656YnaRyJD9fW1tJJeo4jAYClpaVk4NyxRX8sY2oYDNqfTtJzrBwAOD8/n5yHeXR8/+PV1e+ch/frikVRuJ2dnc4eMB1qzppr31GVWcJNi2iIgBezM2wY3Nueu/r7jV6vHufuxaIIWbk739KuetME4F6M7t+ff363fK2nLy0tJXNzc+H8AAFQHt2/s3z/NA356urqdBVlwaC3afZSvVaTJ87wZb+/vAkc7/tmAAEY+PC7c1e/6PV68aRxP19bm02G8ScieO8osMNS0hz4GNH9ud//3aOjxrwxQGD/rQdp/3jv3r1//n+OO3fWbkjQHyvs5us+bx8QrarUDvZ3s+rLfr/fXhjgSJHcpdp/DWwJ6xBujoynLimHAQ3xqUG2ux35y927d6vRmBOXwHnJmXWFeNfRbgsxPw7ckb7ShqrCrcMN/4UAnqdUlXUIs0VRBOAtBBxpZ2cnKYrCvbWAALC5uSlvNSDwFi/RkQ7/mzAAoMilOxl7XY2yj1gAQLrdrqVpagBQixgagKSRug8MGMlLB03SCOxnpO5nbA4YAKRpat1ud78V2traght4E2ksiihJi4RF0hCBE3urC1I8+IgHWUlaFFGRxtzA29bW/gmmB4AQgqVprdKEaBZjhEUHRJgqBIpIMUezS3IMQcAYAYop1RRgBNF6Q6SGmKS1VlUwAPBZlllZllZVlQJTMTppHJu6hQswOGcG8xRnRptwyzauSFr0NKppJBtENt7HppWkcdFiVVWapqllWWZ+cXHRer0NvXZtK3Y6rqktVE449E30rQdMqWYmqiYGuRyApmYCNYNCtPbAEOQwKqrg6mY4bOLjx/Oa54tGAJLnuVRVlTh3vRPC4EpNTgs5TbOOmUsAeDOjOeGpjrvPQS0ARh1tfC0ZGyOHavY0mD2t66lnMf5nmKZp0+/31QOwLMvswQPEmzd3ajIhmgawEBui8qZJA/Peg6ZkvOBl6kijh7UtLAHblqFJFBVQDZMkGXjf1A8f3ooLCzAAz8OyKArZ29vzMUb/7FkS0nQYYgwJYL6W2gVNqKrERZ+TVYCIWC2NBQ0RYOtc3VRVp75ypamdc+3MzEzb6/UUhwGxD8kHD+BmZ791IuKTJHNpOpCqChKnWsYYL8Vv0DlnbuAtTWutqiltmjKqavvkya24sIDY6/UMeHEGgYMSUBSFlGXJMsskK0upqor1jRtsqorfuxCcl/UIQJKmFra3LU1TK8tMs6zULMvsYOaAURNwxP0EwPX1dWxsbLAsSwLA7u7upZi9kbrdrgFAlmW2uLho6+vrwMGsHR73P/Qhlqdu4qC4AAAAAElFTkSuQmCC" /><image
+       id="image1_0_1"
+       width="37"
+       height="21"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAVCAYAAADB5CeuAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAVNJREFUSIntl7FOAkEQhv/ZPc5DRdSoQbQQW+MjaEJnT7C3oTAUFj7APYKVhkSiiYXJ+RxWWpGoDYlALIwazwMPhTt2LKSwAMuF4r5iiv2n+DLNzMJmW+QdR2KMEJ+V9fjixmt81CLjz0HtYrnYKKeH5TbbQqcPAAgW39sSamtYg/e0Olu4LcV0ShkMIgGm/cezFAAcZ/aeAeCwerJkxGaCLvkLE5mpEECgTYqgXIDmTRlm+2+XABCYRjbEV4d78k22/BaApjapwAquzba1qQDrb8BKvAhJqqeUj6DzrksoIiIioo/NtmBmGrXHmPDPJPLsSJtZGDp9io1y2qifJo+Ah0F5qt7ccem8q1VKqN4aMxIFLlXd+zm62tjtAoB955gA4ApvmlmxVikSSHCIpFWTuZVJj9Bf/h8JLwcA9Ft8rQccKa6AqCMkEwb8ChTQJhXe/ABmsHobU8QGsgAAAABJRU5ErkJggg==" /></defs><sodipodi:namedview
+     id="namedview31284"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.3125"
+     inkscape:cx="-93.283019"
+     inkscape:cy="33.962264"
+     inkscape:window-width="2560"
+     inkscape:window-height="1000"
+     inkscape:window-x="1680"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg31282" /><path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 1.0000286,11.563201 c 0,0.001 0,0.0019 0,0.0028 1e-5,0.1413 0.0016,0.2829 0.0048,0.4246 -0.03063,1.521799 0.11828,3.025499 0.44675,4.511099 0.77401,3.3001 2.81681,5.3191 6.12839,6.0568 1.42827,0.2939 2.8681304,0.4411 4.3195304,0.4415 0.0043,0 0.0086,0 0.0129,0 0.3726,-10e-5 0.746,-0.0099 1.1201,-0.0294 1.6322,-0.0276 3.2206,-0.3024 4.7653,-0.8243 1.9062,-0.6993 3.2846,-1.9702 4.1352,-3.8127 0.4586,-1.0626 0.7565,-2.1694 0.8935,-3.3203 0.1831,-1.6375 0.2213,-3.278599 0.1145,-4.923299 -0.0771,-1.3097904 -0.3291,-2.5845104 -0.756,-3.8241504 -0.7464,-2.05896 -2.1325,-3.50541 -4.1581,-4.33935 -1.2184,-0.46342 -2.4785,-0.74584 -3.7802,-0.84726 -1.4356,-0.10168899 -2.8712,-0.10550399 -4.3070104,-0.01145 -0.10926,0.03181 -0.22381,0.04707 -0.34365,0.0458 -0.74244,0.05967 -1.47556,0.17798 -2.19935,0.35493 -3.10619,0.73849 -5.06498,2.65056 -5.87638,5.73619 -0.34679,1.43379 -0.52023,2.8866904 -0.52030999,4.3584904 z"
+     fill="url(#paint0_radial_0_1)"
+     id="path31548"
+     style="fill:url(#paint0_radial_0_1)" /><rect
+     x="4.7251544"
+     y="4.7251534"
+     width="14.549692"
+     height="14.549692"
+     rx="1.6788107"
+     ry="1.6788107"
+     fill="#388e3c"
+     id="rect24624"
+     style="stroke-width:0.279802" /><path
+     d="m 6.4039649,4.7251535 c -0.4314544,0 -0.8226173,0.1628446 -1.1192072,0.4283765 V 8.0830546 L 4.7251542,8.6426582 V 9.2022618 L 5.5645595,10.041667 H 16.197027 L 18.15564,7.8032529 h 1.119207 V 7.5234511 H 18.15564 V 6.404244 L 15.917225,8.92246 H 15.07782 L 17.316234,6.404244 V 4.7251535 Z M 7.523172,13.399009 4.7251542,15.637423 v 0.839405 l 1.6788107,-1.119207 v 0.559604 l -1.6788107,1.119207 h 1.1192071 v 2.141043 c 0.1751559,0.06156 0.3629029,0.09737 0.5596036,0.09737 H 7.523172 v -3.07782 l 1.6788107,-1.399008 h 0.8394053 l -1.6788107,1.399008 v 3.07782 h 9.2334587 c 0.930061,0 1.678811,-0.74875 1.678811,-1.678811 v -1.144949 l -1.958613,-2.492474 h -0.559603 l -0.559604,-0.559603 z"
+     fill="#43a047"
+     id="path24626"
+     style="stroke-width:0.279802" /><path
+     d="M 8.9221809,8.6423784 H 9.4817844 V 15.357621 H 8.9221809 Z m 1.1192071,0 h 0.559604 v 6.7152426 h -0.559604 z m 1.119207,0 h 0.559604 v 6.7152426 h -0.559604 z m 1.119207,0 h 0.559604 v 6.7152426 h -0.559604 z m 1.119207,0 h 0.559604 v 6.7152426 h -0.559604 z m 1.119207,0 h 0.559604 v 6.7152426 h -0.559604 z"
+     fill="#fbc02d"
+     fill-rule="evenodd"
+     style="stroke-width:0.279802;paint-order:fill markers stroke"
+     id="path24628" /><g
+     transform="matrix(0.27980178,0,0,0.27980178,1.6473346,3.8857481)"
+     id="g24634"><circle
+       cx="58.5"
+       cy="50.5"
+       r="1.5"
+       fill="#fbc02d"
+       id="circle24630" /><circle
+       cx="58.5"
+       cy="50.5"
+       r="0.5"
+       fill="#263238"
+       id="circle24632" /></g><g
+     transform="matrix(0.27980178,0,0,0.27980178,1.6473346,2.766541)"
+     id="g24640"><circle
+       cx="58.5"
+       cy="11.5"
+       r="1.5"
+       fill="#fbc02d"
+       id="circle24636" /><circle
+       cx="58.5"
+       cy="11.5"
+       r="0.5"
+       fill="#263238"
+       id="circle24638" /></g><g
+     transform="matrix(0.27980178,0,0,0.27980178,4.4453524,3.8857481)"
+     id="g24646"><circle
+       cx="5.5"
+       cy="50.5"
+       r="1.5"
+       fill="#fbc02d"
+       id="circle24642" /><circle
+       cx="5.5"
+       cy="50.5"
+       r="0.5"
+       fill="#263238"
+       id="circle24644" /></g><g
+     transform="matrix(0.27980178,0,0,0.27980178,3.1353205,3.0600531)"
+     id="g24652"><circle
+       cx="10.182"
+       cy="10.451"
+       r="1.5"
+       fill="#fbc02d"
+       id="circle24648" /><circle
+       cx="10.182"
+       cy="10.451"
+       r="0.5"
+       fill="#263238"
+       id="circle24650" /></g><rect
+     x="7.8029737"
+     y="9.2019815"
+     width="8.3940535"
+     height="5.5960355"
+     rx="0.83940536"
+     ry="0.83940536"
+     id="rect24654"
+     style="stroke-width:0.279802" /><rect
+     x="3.605947"
+     y="5.2847571"
+     width="4.7566304"
+     height="3.3576214"
+     rx="0.55960357"
+     ry="0.55960357"
+     fill="#f9f9f9"
+     id="rect24656"
+     style="stroke-width:0.279802" /><rect
+     x="15.637424"
+     y="15.357621"
+     width="4.7566304"
+     height="3.3576214"
+     rx="0.55960357"
+     ry="0.55960357"
+     fill="#f9f9f9"
+     id="rect24658"
+     style="stroke-width:0.279802" /><image
+     x="4.0256495"
+     y="5.2847571"
+     width="15.948702"
+     height="13.430486"
+     image-rendering="optimizeQuality"
+     preserveAspectRatio="none"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAwCAYAAACrF9JNAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABDFJREFUaIHtmsFuFEcQhr/qmpnd tbEJBIIQIIEiIZRjLoklFBHxDOaaV/Gr5AqvABLJISiX3BJFkZIgwAeCgWRts7szU105zCysLWNI rzHsxt+lt0bbPfV39U5X9awAcm3tmo6WO8tZtz7fy/zcR4UvLaqoAn2UvoGhGA0iMYqE9at/fPnD 2tpa5AMnAPRO9jTkW12tbaEjXnwiLpe15LKWnMHo6s5O7iHEyIXvL/546X04/V8JrCHrI8vcvefq vcLJFsXkFMYJjEU1itd1dlk4VG8TCas/r0puT7NoWeHm+dBj2IxBNlA2ULZNKd+3l1OSsQpL60tS 1qXGEMIo5vI4CqU1a7SPMrQ3jPKBkwHUw1q840KWUdIIG7TCIjsfOrNIttdFMwCFwEyLG7OnSJgP cWPC+3bgMJgQmbetgu753ZmlWa7HAQMXb9IceLsYe7n9rhw7SAKADU0yzSXLxlHcP5QiMSr24OqD q/ffvYtHHDFGUjte//b6x4tBPz+flSevdOtwRo1tgy2UYxjLCv0p7EWFx6b8Oszio7p4th3tpzvf 3Hma4mvSFrJyc6WH6ddufgr3sGNT3b3BTmMb4B7c/JTU2bWVmyu9FH+TRObPjp13q3Mqa7Mja9Ik A2vbA7Fpx6+MGKui0++cS/H3tRnPvlSjrplQKVhlmIIVsfVLMQzjAOxSscqo2jn06EmRTBJZVaBZ O8vazPgYM9uxA01nt9Et2+DWaQlaclpn9qq1sU5rT0IOorWJsSful8L/LXedX45EzgtHIueFI5H7 MS6uVdvPCmg73EG0OjH2xP1SSMp48hwk6CtxQHN4CarKZAY0nd2o1EJRgyCe4m5i7loUaIjkgOag haEa0FaxajMBU9sFqCm5KaVCHdMWXpLIogDx5lxW1Zg8/FK0yWfb9TWVbe1qyRWNELK0SCZNTZ3p gPFy3X26t/u3M43djq8KBG3um0CSyFFned3xQ30P5Hg56iyvp/RNEnnvxq2BS303IhtIfLcvYSVG j/7Epb5778atpEgeMS8kn9YdJqs3V/X5cHPFPZ5zD3v/xGJzUlGPaovmfWy0vjXSR1c+PdtP2ycP macvti4CF/Z/hCiK4Qq4S7Sc422CMhMig8tCfFO28zIjVESFqCLe7QIzIvKtCYrHKCEQXNDChuHJ L9syd1WIAkIImoVQLhQB5qTU2lEntBeCW+iNTDbPbspML9dGnL2MlAIVgkeXyW1jZkWOBS4rLLel WR9lU2AUxY3gZaa+dGnJZ1YkQFfhDMYFbdLoh6bUZFSSxeDRNCujfTfjkSyARW3+Hgfwd8g89xBD 8DJWDGUo9enPTs9GJKP4i93XDCiBbVM2tCm3/wEqpxazYRR/MTgxKG+v3k4stQ+Zr+5/8WcIPJRd Fc/Q4DHK71bwmxX8VasPotQxhoG4DMvnZY3AvwtzMrmGw4LdAAAAAElFTkSuQmCC"
+     id="image24660" /><rect
+     x="4.1655507"
+     y="6.6837659"
+     width="1.1192071"
+     height="0.27980179"
+     rx="0.13990089"
+     ry="0.13990089"
+     style="fill:#ffffff;stroke-width:0.279802;paint-order:stroke fill markers"
+     id="rect24662" /><rect
+     x="4.1655507"
+     y="7.2433696"
+     width="2.2384143"
+     height="0.27980179"
+     rx="0.13990089"
+     ry="0.13990089"
+     style="fill:#ffffff;stroke-width:0.279802;paint-order:stroke fill markers"
+     id="rect24664" /><rect
+     x="6.9635682"
+     y="6.403964"
+     width="0.83940536"
+     height="1.1192071"
+     rx="0.11220051"
+     ry="0.11220051"
+     style="fill:#ffffff;stroke-width:0.279802;paint-order:stroke fill markers"
+     id="rect24666" /><rect
+     x="16.197027"
+     y="16.476828"
+     width="2.5182161"
+     height="0.27980179"
+     rx="0.13990089"
+     ry="0.13990089"
+     id="rect24668"
+     style="fill:#ffffff;stroke-width:0.279802" /><path
+     d="m 18.715243,17.596035 0.559604,-0.839405 0.559603,0.839405 z"
+     fill-rule="evenodd"
+     id="path24670"
+     style="fill:#ffffff;stroke-width:0.279802" /><rect
+     x="16.197027"
+     y="17.036432"
+     width="1.3990089"
+     height="0.27980179"
+     rx="0.13990089"
+     ry="0.13990089"
+     id="rect24672"
+     style="fill:#ffffff;stroke-width:0.279802" /></svg>
