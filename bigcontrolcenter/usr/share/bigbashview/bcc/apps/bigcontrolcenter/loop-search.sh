@@ -4,7 +4,7 @@
 
 #  usr/share/bigbashview/bcc/apps/bigcontrolcenter/loop-search.sh
 #  Created: 2022/02/28
-#  Altered: 2023/09/01
+#  Altered: 2023/09/02
 #
 #  Copyright (c) 2023-2023, Vilmar Catafesta <vcatafesta@gmail.com>
 #                2022-2023, Bruno Gonçalves <www.biglinux.com.br>
@@ -32,7 +32,7 @@
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 APP="${0##*/}"
-_VERSION_="1.0.0-20230901"
+_VERSION_="1.0.0-20230902"
 export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
 export LOGGER='/dev/tty8'
 LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
@@ -888,9 +888,9 @@ function sh_parallel_search {
 #echo "$count.6 ICON           : $ICON"
 #echo
 
-	#debug
+#	debug
 #	sh_debug_icon
-	#debug
+#	debug
 
 	case "$CATEGORY" in
 	Star) ;;
@@ -916,9 +916,24 @@ function sh_parallel_search {
 	# Definindo as variáveis somente se não estiverem vazias
 	CATEGORY="${Afiles[$filename, CATEGORY]:-$CATEGORY}"
 	EXEC="${Afiles[$filename, EXEC]:-$EXEC}"
-	ICON="${Afiles[$filename, ICON]:-$ICON}"
 	NAME="${Afiles[$filename, NAME]:-$NAME}"
 	COMMENT="${Afiles[$filename, COMMENT]:-$COMMENT}"
+#	ICON="${Afiles[$filename, ICON]:-$ICON}"
+
+	ICON_BIG_MATERIAL=
+	apath=('apps' 'devices' 'mimetypes' 'places')
+	for xpath in "${apath[@]}"; do
+		if [[ -e "/usr/share/icons/biglinux-icons-material/scalable/${xpath}/${filename}.svg" ]] ; then
+			ICON_BIG_MATERIAL="/usr/share/icons/biglinux-icons-material/scalable/${xpath}/${filename}.svg"
+			break
+		fi
+	done
+
+	if [[ -z "$ICON_BIG_MATERIAL" ]]; then
+		ICON="${Afiles[$filename, ICON]:-$ICON}"
+	else
+		ICON="$ICON_BIG_MATERIAL"
+	fi
 
 	if [[ "$CATEGORY" = "Other" ]]; then
 		>"$userpath/show_other"
