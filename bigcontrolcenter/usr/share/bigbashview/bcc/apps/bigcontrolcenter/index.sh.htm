@@ -311,11 +311,11 @@ cat <<-EOF
 	<div id="welcome" class="content-wrapper-header Staritem">
 	<div class="content-wrapper-context">
 	<h3 class="img-content">
-	<img class="img-content img" src="icons/icon.png">
+	<img class="img-content img" src="icons/icon.svg">
 	$CONTROLCENTER
 	</h3>
 	</div>
-	<img class="content-wrapper-img" src="icons/bigpc.png" alt="">
+	<img class="content-wrapper-img" src="icons/bigpc.svg" alt="">
 	</div>
 	<div class="content-section-title Star"></div>
 	<div class="apps-card Star">
@@ -412,7 +412,7 @@ EOF
 		EXEC="plasmawindowed org.kde.plasma.networkmanagement"
 		NAME=$"Conectar à internet"
 		COMMENT=$"Conecte na internet por cabo de rede ou wifi."
-		ICON="icons/icon_conectar-internet.png"
+		ICON="icons/icon_conectar-internet.svg"
 		CATEGORY="Network"
 		SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 	fi
@@ -420,7 +420,7 @@ EOF
 	EXEC=
 	NAME=$"Conectar à internet utilizando o Android"
 	COMMENT=$"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu computador."
-	ICON="icons/icon_android-connect.png"
+	ICON="icons/icon_android-connect.svg"
 	CATEGORY="Phone Network"
 	ANDROID_TEXT=$"Como utilizar a internet do seu tablet ou  smartphone Android:
 <br><br>1. Plugue o dispositivo na USB do computador;
@@ -463,7 +463,7 @@ EOF
 	EXEC="big-hardware-info"
 	NAME=$"Visualizar informações do sistema e hardware"
 	COMMENT=$"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com o suporte."
-	ICON="icons/relatory.png"
+	ICON="icons/relatory.svg"
 	CATEGORY="About"
 	SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
@@ -471,7 +471,7 @@ EOF
 		EXEC="manjaro-settings-manager -m msm_users"
 		NAME=$"Adicionar ou Remover Usuários"
 		COMMENT=$"Criar, remover e gerenciar contas e grupos de usuários."
-		ICON="icons/icon_useraccount.png"
+		ICON="icons/icon_useraccount.svg"
 		CATEGORY="Star Account"
 		SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 	fi
@@ -482,7 +482,7 @@ EOF
 			EXEC="kcmshell5 powerdevilprofilesconfig powerdevilglobalconfig powerdevilactivitiesconfig kcm_energyinfo"
 			NAME=$"Economia de energia"
 			COMMENT=""
-			ICON="icons/preferences-system-power-management.png"
+			ICON="icons/preferences-system-power-management.svg"
 			CATEGORY="Hardware"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
@@ -490,22 +490,22 @@ EOF
 		EXEC="kcmshell5 kcm_desktoptheme"
 		NAME=$"Tema da área de trabalho"
 		COMMENT=$""
-		ICON="icons/preferences-desktop-plasma-theme.png"
+		ICON="icons/preferences-desktop-plasma-theme.svg"
 		CATEGORY="Personalization"
 		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 		EXEC="kcmshell5 kcm_kdisplay kcm_kscreen kcm_nightcolor kgamma kwintouchscreen kwinscreenedges"
 		NAME=$"Monitores e Telas"
 		COMMENT=$"Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-		ICON="icons/preferences-desktop-display.png"
+		ICON="icons/preferences-desktop-display.svg"
 		CATEGORY="Star Hardware"
 		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
-		ICON="icons/icon_reset-screen.png"
+		ICON="icons/icon_reset-screen.svg"
 		EXEC="sh_kscreen_clean $ICON"
 		NAME=$"Resetar as configurações da tela"
 		COMMENT=$"Restaurar a configuração padrão do monitor."
-		ICON="icons/icon_reset-screen.png"
+		ICON="icons/icon_reset-screen.svg"
 		CATEGORY="Hardware"
 		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
@@ -521,7 +521,7 @@ EOF
 		NAME=$"Airdroid"
 		CATEGORY="Phone"
 		COMMENT=$"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-		ICON="icons/airdroid.png"
+		ICON="icons/airdroid.svg"
 		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 		#VERIFICAR FUNCIONANEMTO
@@ -529,7 +529,7 @@ EOF
 		NAME=$"Suporte a aplicativos Android"
 		COMMENT=$"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase experimental."
 		CATEGORY="Phone"
-		ICON="icons/waydroid.png"
+		ICON="icons/waydroid.svg"
 		CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 		########################################
@@ -540,7 +540,7 @@ EOF
 			NAME=$"Instalar drivers e firmwares"
 			COMMENT=""
 			CATEGORY="Star Hardware"
-			ICON="icons/driver.png"
+			ICON="icons/driver.svg"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
 
@@ -562,7 +562,7 @@ EOF
 			fi
 
 			CATEGORY="Star System"
-			ICON="icons/timeshift.png"
+			ICON="icons/timeshift.svg"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
 
@@ -574,7 +574,7 @@ EOF
 			NAME=$"Configurar a voz do sistema (TTS)"
 			COMMENT=$"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema para que textos escritos sejam falados."
 			CATEGORY="Multimedia"
-			ICON="icons/icon-grid-texto-fala-tts.png"
+			ICON="icons/icon-grid-texto-fala-tts.svg"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
 
@@ -595,7 +595,7 @@ EOF
 			NAME=$"Regras de segurança do Java"
 			COMMENT=$"OpenJDK Java 8 Policy Tool"
 			CATEGORY="Privacy"
-			ICON="icons/openjdk.png"
+			ICON="icons/openjdk.svg"
 			CACHE_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 		fi
 		rm -f "$HOME/.config/bigcontrolcenter/refresh" # Remove file to use cache in next run
@@ -615,7 +615,7 @@ EOF
 	CATEGORY="Star Phone"
 	NAME=$"Snapdrop (Não precisa de aplicativo)"
 	COMMENT=$"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-	ICON="icons/snapdrop.png"
+	ICON="icons/snapdrop.svg"
 	SHOW_ICON "$CATEGORY" "$COMMENT" "$EXEC" "$ICON" "$NAME"
 
 
@@ -623,7 +623,7 @@ cat <<-EOF
 	</div></div></div></div>
 	<div class="footer"></div>
 	<div class="logo">
-	<img id="btn-big" src="icons/logo.png" class="logo-biglinux" onclick="biglinux();">
+	<img id="btn-big" src="icons/logo.svg" class="logo-biglinux" onclick="biglinux();">
 	</div>
 EOF
 
