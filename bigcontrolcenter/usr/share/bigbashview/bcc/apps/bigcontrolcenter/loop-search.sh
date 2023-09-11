@@ -54,7 +54,7 @@ function sh_config {
 	declare -gA Afiles=(
 		[big-welcome, NAME]=$"Introdução ao BigLinux"
 		[big-welcome, COMMENT]=$"Introdução ao BigLinux"
-		[big-welcome, ICON]="/usr/share/bigbashview/bcc/apps/big-welcome/icon-logo-biglinux.png"
+		[big-welcome, ICON]="/usr/share/bigbashview/bcc/apps/big-welcome/icon-logo-biglinux.svg"
 		[big-welcome, CATEGORY]="Star"
 		[big-welcome, EXEC]="big-welcome"
 		[appimagelaunchersettings, NAME]=$"Configurar o AppimageLauncher"
