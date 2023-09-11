@@ -139,7 +139,7 @@ function sh_verify_custom_user_files {
 function sh_main {
 	local cfilestart='index.sh.htm'
 
-	RELOAD=1			#force reload
+	#RELOAD=1			#force reload
 	if (( RELOAD )); then
 		local cfilestart='main.sh.htm'
 		if (( PARTIAL )); then
