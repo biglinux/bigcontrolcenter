@@ -478,10 +478,11 @@ body, html {
 
 .step.-current {
   /*background: var(--body-bg-color);*/
+  
 }  
 
 .step.-current .step__number {
-  opacity: 0.6;
+  animation: preloader .6s ease-in-out alternate infinite;
 }
 
 .checkmark {
@@ -881,5 +882,10 @@ color: #aaa;
   position: relative; 
   width: 180px; 
   height: 180px;
+}
+
+@keyframes preloader {
+  0% { opacity: 0.7; }
+  100% { transform: scale(1.1); opacity: 1; }
 }
 
