@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     setInterval(function() {
         refresh();
+        //console.log("Atualização com: "+pageRefreshInterval);
     }, pageRefreshInterval);
 });
 
@@ -271,9 +272,9 @@ timelineLogoScale
     .to($logoWrapper, 0.2, {delay: 0.1, scale: 1, ease: 'power4.inOut'})    
 
 
-$btn.addEventListener('click', function() {
-  timelineLogoScale.restart()
-  timelineInitial.restart()
-  timelineCircle.restart()
-  timelineLogo.restart()
-})
+// $btn.addEventListener('click', function() {
+//   timelineLogoScale.restart()
+//   timelineInitial.restart()
+//   timelineCircle.restart()
+//   timelineLogo.restart()
+// })
