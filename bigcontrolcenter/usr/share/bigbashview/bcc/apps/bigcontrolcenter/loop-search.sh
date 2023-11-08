@@ -181,7 +181,7 @@ function sh_config {
 		[hplip, COMMENT]=$"Verificar o status, nível de tinta e manutenção."
 		[hplip, ICON]="icons/icon_print-HP.svg"
 		[hplip, CATEGORY]="Hardware"
-		[hplip, EXEC]=""
+		[hplip, EXEC]="hp-toolbox"
 		[hp-uiscan, NAME]=$"Scanners HP"
 		[hp-uiscan, COMMENT]=$""
 		[hp-uiscan, ICON]="icons/icon_scanner-HP.svg"
