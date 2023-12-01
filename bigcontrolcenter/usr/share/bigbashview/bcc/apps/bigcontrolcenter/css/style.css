@@ -351,7 +351,7 @@ body.light-mode:before {
 }
 
 .content-wrapper {
-	border-radius: 15px;
+	border-radius: 15px 0 0 15px;
 	display: flex;
 	flex-direction: column;
 	color: var(--theme-color);
