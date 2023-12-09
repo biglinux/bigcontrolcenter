@@ -250,6 +250,10 @@ body.light-mode:before {
 		flex-basis: 75px;
 		padding: 10px;
 	}
+	.side-wrapper {
+	    display: flex;
+	    justify-content: center;
+	}
 	#box-status-bar {
 		left: 75px !important;
 	}
