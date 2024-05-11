@@ -1,0 +1,227 @@
+<!-- Include the generic header (CSS and JS) -->
+<?include html /usr/share/bigbashview/framework/html/genericHeader.html?>
+
+<!-- Include window control side decorator -->
+<link href="/usr/share/bigbashview/framework/css/client-side-decorator.css" rel="stylesheet">
+<script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+<script src="/usr/share/bigbashview/framework/js/client-side-decorator.js" defer></script>
+
+<!-- Includes the window control side shell script -->
+<?include bash /usr/share/bigbashview/framework/shell/windowControlSide.sh ?>
+<style>
+.description-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: auto;
+    border-radius: 7px;
+    margin-bottom: 24px;
+    margin-right: 28px;
+}
+</style>
+<!-- Appdata() imports json info about applications and fetchData() filters by category/search -->
+<body x-data="appData()" x-init="fetchData()" @keydown.window="handleGlobalKeypress($event)">
+  <!-- Using Client Side Decoration use body transparent to make shadow, and page work like real body -->
+  <div id="page">
+    <!-- Any component with drag-area class is used to drag and move window -->
+    <div id="title-bar" class="drag-area">
+      <div class="field prefix round input-search-right-side"><i stonejs>search</i>
+      <input type="search" x-model="filterText" @input="filterPrograms()" placeholder="Search..." id="searchInput">
+      </div>
+    </div>
+
+    <!-- Left is place of menu -->
+    <div id="left">
+      <div id="app-left-title" class="row"><img class="circle small" src="bigcontrolcenter.svg">
+        <h6 class="bold small" stonejs>Control Center</h6>
+      </div>
+      <nav class="extend margin scroll">
+        <a @click="filterCategory('Star')" :class="{'active-category': currentCategory === 'Star'}">
+          <i>apps</i>
+          <div stonejs>Main</div>
+        </a>
+        <a @click="filterCategory('Network')" :class="{'active-category': currentCategory === 'Network'}">
+          <i>network_wifi</i>
+          <div stonejs>Network and Internet</div>
+        </a>
+        <a @click="filterCategory('Phone')" :class="{'active-category': currentCategory === 'Phone'}">
+          <i>smartphone</i>
+          <div stonejs>Phone</div>
+        </a>
+        <a @click="filterCategory('Personalization')" :class="{'active-category': currentCategory === 'Personalization'}">
+          <i>palette</i>
+          <div stonejs>Customize</div>
+        </a>
+        <a @click="filterCategory('Language')" :class="{'active-category': currentCategory === 'Language'}">
+          <i>globe</i>
+          <div stonejs>Region and Language</div>
+        </a>
+        <a @click="filterCategory('Multimedia')" :class="{'active-category': currentCategory === 'Multimedia'}">
+          <i>music_note</i>
+          <div stonejs>Multimedia</div>
+        </a>
+        <a @click="filterCategory('Account')" :class="{'active-category': currentCategory === 'Account'}">
+          <i>group</i>
+          <div stonejs>Accounts</div>
+        </a>
+        <a @click="filterCategory('Hardware')" :class="{'active-category': currentCategory === 'Hardware'}">
+          <i>memory</i>
+          <div stonejs>Devices</div>
+        </a>
+        <a @click="filterCategory('System')" :class="{'active-category': currentCategory === 'System'}">
+          <i>monitor</i>
+          <div stonejs>System</div>
+        </a>
+        <a @click="filterCategory('About')" :class="{'active-category': currentCategory === 'About'}">
+          <i>info</i>
+          <div stonejs>About</div>
+        </a>
+        <a @click="filterCategory('Other')" :class="{'active-category': currentCategory === 'Other'}">
+          <i>settings_applications</i>
+          <div stonejs>Other</div>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Info about connect from Android Device -->
+    <dialog class="dialog min-width-60em no-padding no-margin" id="dialog-android-usb">
+      <h6 class="surface-bgcolor no-round large-padding center-align drag-area" small stonejs>Using Your Android Device's Internet on Linux via USB</h6>
+    <div class="large medium-padding medium-margin medium-line left-align">
+      <p stonejs>To share your Android smartphone's internet connection with a Linux computer using a USB cable, follow these steps:</p>
+      <ul>
+      <li stonejs>Connect your Android smartphone to the Linux computer using a USB cable.</li>
+      <li stonejs>On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'.</li>
+      <li stonejs>Look for 'USB Tethering', 'USB Tether', or similar terms and enable it.</li>
+      </ul>
+      <p>This will automatically establish the internet connection on your Linux computer without requiring any additional configuration.</p>
+      <img class="tiny" src="warning.svg"><span stonejs>If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will consume data from your cellular plan. To avoid data charges, ensure that your Android device is connected to a Wi-Fi network before enabling tethering.</span></p>
+      <nav class="right-align">
+        <button data-ui="#dialog-android-usb" stonejs>Close</button>
+      </nav>
+    </div>
+    </dialog>
+    
+    <!-- Info about connect from iOS Device -->
+    <dialog class="dialog min-width-60em no-padding no-margin" id="dialog-ios-usb">
+      <h6 class="surface-bgcolor no-round large-padding center-align drag-area" small stonejs>Using Your iOS Device's Internet on Linux via USB</h6>
+    <div class="large medium-padding medium-margin medium-line left-align">
+      <p stonejs>To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow these steps:</p>
+      <ul>
+      <li stonejs>Connect your iOS device to the Linux computer using a USB cable.</li>
+      <li stonejs>On your iOS device, go to 'Settings', then select 'Personal Hotspot'.</li>
+      <li stonejs>Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is detected.</li>
+      </ul>
+      <p>This will automatically establish the internet connection on your Linux computer without requiring any additional configuration.</p>
+      <img class="tiny" src="warning.svg"><span stonejs>If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will consume data from your cellular plan. To avoid data charges, ensure that your iOS device is connected to a Wi-Fi network before enabling tethering.</span></p>
+      <nav the="right-align">
+        <button data-ui="#dialog-ios-usb" stonejs>Close</button>
+      </nav>
+    </div>
+    </dialog>
+
+    <!-- Right show real content -->
+    <div id="right" class="drag-area">
+      <div class="right-content">
+        <div class="autogrid-fit-170">
+          <template x-for="program in filteredPrograms">
+            <button @click="_run(program.app_exec);ui(program.app_exec)"
+                    @mouseenter="showDescription(program.app_description)"
+                    @mouseleave="clearDescription()"
+                    class="vertical border no-border space-between box-items">
+              <img :src="program.app_icon" class="responsive icon-medium no-round" />
+              <span x-text="program.app_name" class="min-height-fill"></span>
+            </button>
+          </template>
+        </div>
+    <!-- Description Container at the bottom of the screen -->
+    <div x-show="descriptionToShow" 
+     x-transition:enter.duration.400ms
+    class="description-container" x-text="descriptionToShow"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+function appData() {
+  return {
+    programs: [],
+    filteredPrograms: [],
+    filterText: "",
+    currentCategory: "",
+    descriptionToShow: "",
+
+    fetchData() {
+      fetch("get_json.sh")
+        .then(response => response.json())
+        .then(data => {
+          this.programs = data;
+          this.filterPrograms();
+          this.currentCategory = 'Star'; // Set the initial category as 'Star'
+          this.filterCategory('Star'); // Initially applies the filter for the 'Star' category
+        });
+    },
+handleGlobalKeypress(event) {
+  // Check if the active element is not an input field
+  if (!['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
+    if (event.key === 'Backspace' && this.filterText.length > 0) {
+      this.filterText = this.filterText.slice(0, -1); // Remove the last character
+      this.filterPrograms(); // Update filtered programs
+    } else if (event.key.length === 1) {
+      this.filterText += event.key; // Adds the pressed character to the filter text
+      this.filterPrograms(); // Filters programs according to the text
+    }
+    // Focus on the input field after modifying the text
+    this.$nextTick(() => {
+      this.$refs.searchInput.focus();
+    });
+  }
+},
+    
+filterCategory(category) {
+  this.currentCategory = category;
+  this.filterText = ""; // Clears the text filter
+  this.filterPrograms();
+},
+
+    filterPrograms() {
+      // First, we apply text filtering to all programs
+      let filteredBySearch = this.programs.filter(program => {
+        const name = this.normalizeText(program.app_name);
+        const description = this.normalizeText(program.app_description);
+        const id = this.normalizeText(program.app_id);
+        return name.includes(this.normalizeText(this.filterText)) ||
+               description.includes(this.normalizeText(this.filterText)) ||
+               id.includes(this.normalizeText(this.filterText));
+      });
+
+      // Then, we apply the category filter if a category is selected and there is no filter text
+      if (this.currentCategory && !this.filterText) {
+        this.filteredPrograms = filteredBySearch.filter(program => program.app_categories.includes(this.currentCategory));
+      } else {
+        this.filteredPrograms = filteredBySearch;
+      }
+
+      // Alphabetical sorting
+      this.filteredPrograms.sort((a, b) => a.app_name.localeCompare(b.app_name));
+    },
+
+    showDescription(description) {
+      if (description) this.descriptionToShow = description;
+    },
+
+    clearDescription() {
+      this.descriptionToShow = "";
+    },
+
+    normalizeText(text) {
+      if (typeof text !== 'string') return ""; // Handle non-string inputs safely
+      return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    }
+  };
+}
+</script>
