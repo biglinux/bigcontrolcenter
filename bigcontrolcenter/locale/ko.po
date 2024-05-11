@@ -16,842 +16,490 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 
-msgid "Bom dia"
-msgstr "살람"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "search"
+msgstr "검색"
 
-msgid "Boa tarde"
-msgstr "안녕하세요"
-
-msgid "Boa noite"
-msgstr "안녕히 주무세요"
-
-msgid "Aguarde, carregando..."
-msgstr "잠깐, 불러오는 중..."
-
-msgid "Introdução ao BigLinux"
-msgstr "빅리눅스 소개"
-
-msgid "Bem vindo ao BigLinux"
-msgstr "빅리눅스에 오신 것을 환영합니다"
-
-msgid "Comece com algumas etapas simples."
-msgstr "몇 가지 간단한 단계부터 시작하십시오."
-
-msgid "Mostrar na inicialização"
-msgstr "시작 시 표시"
-
-msgid "Olá"
-msgstr "안녕"
-
-msgid "Ajustes iniciais"
-msgstr "초기 조정"
-
-msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-msgstr "매우 간단한 방법으로 전체 구성을 선택할 수 있습니다."
-
-msgid "Temas, Desktop e Ajustes"
-msgstr "테마, 데스크톱 및 조정"
-
-msgid "Escolha seu Avatar"
-msgstr "아바타를 선택하세요"
-
-msgid "Pacotes de Idioma"
-msgstr "언어 팩"
-
-msgid "Escolha seu navegador padrão"
-msgstr "기본 브라우저 선택"
-
-msgid "Defina seus programas padrões."
-msgstr "기본 프로그램을 설정합니다."
-
-msgid "Outros navegadores"
-msgstr "기타 브라우저"
-
-msgid "KDE Connect"
-msgstr "KDE 커넥트"
-
-msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
-"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
-"iPhone."
-msgstr ""
-"KDE Connect는 근거리 통신망의 장치 간 무선 통신 및 데이터 전송을 용이하게 해주는 응용 프로그램입니다.안드로이드용 구글 플레이 스토어와 아이폰용 애플 스토어에서 이용할 "
-"수 있습니다."
-
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "드라이버 설치 및 하드웨어 정보"
-
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "간단한 방법으로 드라이버 및 펌웨어를 설치 또는 제거합니다."
-
-msgid "Impressoras"
-msgstr "프린터"
-
-msgid "Conheça alguns recursos"
-msgstr "일부 리소스에 대해 알아보기"
-
-msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
-msgstr "우리의 시스템은 협력적이며, 와서 이러한 진화의 일부가 됩니다.뉴스를 확인해 보세요!"
-
-msgid "Central de Controle"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Control Center"
 msgstr "제어 센터"
 
-msgid "Big Store"
-msgstr "빅 스토어"
-
-msgid "Web Apps"
-msgstr "웹 앱"
-
-msgid "Redutor de Ruídos"
-msgstr "노이즈 리듀서"
-
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "TTS (시스템 음성) 설정"
-
-msgid "OCR para PDF"
-msgstr "OCR을 PDF로 변환"
-
-msgid "Doação e Redes sociais"
-msgstr "기부 및 소셜 네트워크"
-
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "여러분의 기부는 프로젝트에 매우 중요하며 소셜 미디어를 팔로우합니다."
-
-msgid "Doação"
-msgstr "기부금"
-
-msgid "Fórum"
-msgstr "포럼"
-
-msgid "YouTube"
-msgstr "유튜브"
-
-msgid "Twitter"
-msgstr "트위터"
-
-msgid "Telegram"
-msgstr "텔레그램"
-
-msgid "Instagram"
-msgstr "인스타그램"
-
-msgid "Facebook"
-msgstr "페이스북"
-
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "축하합니다. BigLinux를 사용하는 첫 단계를 완료했습니다."
-
-msgid "Som e microfone"
-msgstr "사운드 및 마이크"
-
-msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr "오디오 입력 및 출력 장치를 설정하거나 변경합니다.(예: HDMI)"
-
-msgid "Gerenciar arquivos"
-msgstr "파일 관리"
-
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "파일 및 폴더에 액세스할 수 있습니다."
-
-msgid "Qt Assistant"
-msgstr "Qt 도우미"
-
-msgid "Programas de desenvolvimento para QT."
-msgstr "QT를 위한 개발 프로그램"
-
-msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
-msgstr "오래된 음악 CD를 사용하기 위한 설정은 MP3 곡에는 유효하지 않습니다."
-
-msgid "Procurar servidores (zeroconf)"
-msgstr "서버 검색 (제로컨프)"
-
-msgid "Gerenciador de usuários"
-msgstr "유저 매니저"
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "시스템에서 사용자 및 그룹을 추가, 제거 또는 편집합니다."
-
-msgid "Gerenciar conexões"
-msgstr "연결 관리"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
-"móvel e outros)."
-msgstr "고급 네트워크 구성 (VPN, 와이파이, 유선, 고정 IP, PPPoE, ADSL, 유선 네트워크, 모바일 광대역 및 기타)."
-
-msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-msgstr "검색을 활성화하면 시스템 메모리와 처리 소비가 증가합니다."
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "레이아웃 설정, 핫키 및 기타 옵션"
-
-msgid "Configurar o tema Kvantum"
-msgstr "크반텀 테마 설정"
-
-msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
-msgstr "Kvantum 구성이 작동하려면 '응용 프로그램 스타일'에서 Kvantum 테마를 적용하십시오."
-
-msgid "Integração com Google Drive e ownCloud"
-msgstr "구글 드라이브 및 자체 클라우드와의 통합"
-
-msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
-msgstr "파일 관리자에서 직접 Google 드라이브 또는 ownCloud에 있는 파일에 액세스합니다."
-
-msgid "Montar Hardware Apple"
-msgstr "애플 하드웨어 조립"
-
-msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
-"acesso de arquivos em um pendrive."
-msgstr "이 프로그램을 사용하면 펜 드라이브의 파일에 액세스하는 것과 유사한 방식으로 Apple iPhone 또는 iPad의 프로그램에 액세스 할 수 있습니다."
-
-msgid "Terminal"
-msgstr "터미널"
-
-msgid "Acesse o terminal de comandos."
-msgstr "커맨드 터미널로 이동합니다."
-
-msgid "Joystick"
-msgstr "조이스틱"
-
-msgid "Restaurar a configuração de programas"
-msgstr "프로그램 설정 복원"
-
-msgid "Qt Designer"
-msgstr "Qt 디자이너"
-
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "가상 작업 공간 및 활동"
-
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr "가상 작업 공간 사이를 전환하여 둘 이상의 가상 작업 공간을 만듭니다."
-
-msgid "Lixeira"
-msgstr "휴지통"
-
-msgid "Configurador avançado de energia"
-msgstr "고급 전원 구성기"
-
-msgid "Configurar o AppimageLauncher"
-msgstr "이미지 런처 앱 구성"
-
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr ".appimage에서 사용할 수 있는 프로그램의 동작을 선택합니다."
-
-msgid ""
-"Utilitário que facilita a restauração do sistema instalado, principalmente a restauração do boot do "
-"sistema (Grub). Também pode ser utilizado para acessar o gerenciador de pacotes e o terminal do "
-"sistema instalado."
-msgstr "설치된 시스템의 복원을 용이하게하는 유틸리티, 주로 시스템 부팅 (Grub)의 복원. 또한 패키지 관리자와 설치된 시스템 터미널에 액세스하는 데 사용할 수도 있습니다."
-
-msgid "Firewall"
-msgstr "방화벽"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "인터넷 연결에 대한 보안 규칙을 설정합니다."
-
-msgid "Gerenciador de senhas"
-msgstr "비밀번호 관리자"
-
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "프린터를 설치, 구성 또는 제거합니다."
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDB 버스 뷰어 "
-
-msgid "Procurar servidores VNC"
-msgstr "VNC 서버 검색"
-
-msgid "Temas do Bootsplash"
-msgstr "부트스플래시 테마"
-
-msgid "Particionar ou formatar"
-msgstr "파티션 또는 형식"
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr "이 프로그램은 컴퓨터에서 모든 데이터를 지울 수 있습니다."
-
-msgid "Instalar ou remover programas."
-msgstr "프로그램을 설치 또는 제거합니다."
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "고급 오디오 매니저 - 알사믹서"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "소리가 나지 않을 경우 오디오 컨트롤러."
-
-msgid "Qt Linguist"
-msgstr "Qt 언어학자"
-
-msgid "Equalizador (DSP)"
-msgstr "이퀄라이저 (DSP)"
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "웹캠 또는 캡처 카드 설정"
-
-msgid "Centro de controle do KDE"
-msgstr "KDE 컨트롤 센터"
-
-msgid "Procurar servidores SSH"
-msgstr "SSH 서버 검색"
-
-msgid "Gerenciar serviços (Systemd)"
-msgstr "서비스 관리 (시스템)"
-
-msgid "Configurar este tema de janelas."
-msgstr "이 창 테마를 구성합니다."
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
-"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
-"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
-"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"이 프로그램은 스마트 폰, 태블릿 및 기타 컴퓨터간에 파일을 전송할 수 있습니다.예를 들어 스마트 폰을 무선 마우스 및 키보드로 사용하여 컴퓨터를 제어 할 수 "
-"있습니다.BigLinux와 더 잘 통합되며 시스템 시계 근처에 위치한 애플릿 중 하나입니다.스마트폰과 동기화하려면 구글 스토어 또는 애플 스토어로 이동하여 Kde Connect를 "
-"설치합니다."
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "이 창 테두리 테마 구성"
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE 비밀번호 지갑"
-
-msgid "Impressoras HP"
-msgstr "HP 프린터"
-
-msgid "Verificar o status, nível de tinta e manutenção."
-msgstr "상태, 잉크 잔량 및 유지 관리를 확인합니다."
-
-msgid "Tema da Área de Trabalho"
-msgstr "데스크톱 테마"
-
-msgid "Ícones e emoticons"
-msgstr "아이콘 및 이모티콘"
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "날짜, 시간 및 시간대를 조정합니다."
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "스토리지 정보 (스마트)"
-
-msgid "Controle o brilho e as cores"
-msgstr "밝기 및 색상 제어"
-
-msgid "Brilho e cor"
-msgstr "밝기 및 색상"
-
-msgid "Scanners HP"
-msgstr "HP 스캐너"
-
-msgid "Aguarde, criando arquivos de cache..."
-msgstr "잠시 기다려 주십시오. 캐시 파일을 생성하는 중"
-
-msgid "As configurações da tela foram resetadas."
-msgstr "화면 설정이 재설정되었습니다."
-
-msgid "Configurações da tela"
-msgstr "화면 설정"
-
-msgid "Categorias"
-msgstr "카테고리"
-
-msgid "Principais"
-msgstr "메인"
-
-msgid "Sistema"
-msgstr "시스템"
-
-msgid "Aparência"
-msgstr "외관"
-
-msgid "Dispositivos"
-msgstr "디바이스"
-
-msgid "Personalizar"
-msgstr "개인화"
-
-msgid "Telefone"
-msgstr "전화"
-
-msgid "Multimídia"
-msgstr "멀티미디어"
-
-msgid "Rede e Internet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Main"
+msgstr "주요한"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Network and Internet"
 msgstr "네트워크 및 인터넷"
 
-msgid "Contas"
-msgstr "청구서"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Phone"
+msgstr "전화"
 
-msgid "Região e Idioma"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Customize"
+msgstr "사용자 지정"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Region and Language"
 msgstr "지역 및 언어"
 
-msgid "Privacidade"
-msgstr "개인 정보"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Multimedia"
+msgstr "멀티미디어"
 
-msgid "Servidor"
-msgstr "메인프레임"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Accounts"
+msgstr "계정"
 
-msgid "Desenvolvimento"
-msgstr "개발"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Devices"
+msgstr "장치"
 
-msgid "Sobre"
-msgstr "소개"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "System"
+msgstr "체계"
 
-msgid "Outros"
-msgstr "기타"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "About"
+msgstr "약"
 
-msgid "Pesquisar..."
-msgstr "검색..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Other"
+msgstr "다른"
 
-msgid "Resultado da pesquisa"
-msgstr "검색 결과"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "USB를 통해 Linux에서 Android 기기의 인터넷 사용"
 
-msgid "Fechar"
-msgstr "닫기"
-
-msgid "Abrir"
-msgstr "오픈"
-
-msgid "Temas, desktop e ajustes"
-msgstr "테마, 데스크톱 및 조정"
-
-msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
-msgstr "클릭 한 번으로 구성을 복원할 수 있는 일부 시스템 프로그램을 나열합니다."
-
-msgid "Informações do sistema e hardware"
-msgstr "시스템 및 하드웨어 정보"
-
-msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
-msgstr "정보를 보는 것 외에도 파일에 저장하여 인터넷에서 공유 할 수 있습니다."
-
-msgid "Conectar à internet"
-msgstr "인터넷에 연결"
-
-msgid "Conecte na internet por cabo de rede ou wifi."
-msgstr "네트워크 케이블 또는 WiFi를 통해 인터넷에 연결합니다."
-
-msgid "Conectar à internet utilizando o Android"
-msgstr "안드로이드를 사용하여 인터넷에 연결"
-
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
-"computador."
-msgstr "Android 스마트 폰 또는 태블릿을 컴퓨터의 USB Wi-Fi 장치로 사용할 수 있습니다."
+"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
+"follow these steps:"
+msgstr "USB 케이블을 사용하여 Android 스마트폰의 인터넷 연결을 Linux 컴퓨터와 공유하려면 다음 단계를 따르세요."
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "USB 케이블을 사용하여 Android 스마트폰을 Linux 컴퓨터에 연결합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>\n"
-"1. Plugue o dispositivo na USB do computador;\n"
-"<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
-"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>\n"
-"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
-"<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
-"dispositivo Android.\n"
-"<br>\n"
-"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
+"Sharing'."
+msgstr "스마트폰에서 '설정'을 열고 '네트워크 및 인터넷' 또는 '연결 및 공유'로 이동합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "'USB 테더링', 'USB 테더링' 또는 이와 유사한 용어를 찾아 활성화합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Android 태블릿 또는 스마트폰에서 인터넷을 사용하는 방법:\n"
-"<br><br>\n"
-"하나.장치를 컴퓨터의 USB에 꽂습니다.\n"
-"<br>\n"
-"2.Android 기기의 설정으로 이동하여 'USB 링크', 'USB 도킹' 또는 'USB 테더링'과 같은 몇 가지 옵션을 찾습니다.\n"
-"<br>\n"
-"각 제조업체가 동일한 리소스에 사용하는 방식이 다릅니다.\n"
-"<br><br>\n"
-"*이러한 옵션은 '네트워크 및 인터넷' 또는 '연결 및 공유' 섹션 내에 있습니다.\n"
-"<br><br>\n"
-"활성화하면 자동으로 연결되며 Android 기기와 동일한 연결을 사용하게 됩니다.\n"
-"<br>\n"
-"*모바일 데이터를 사용하는 경우 데이터 요금제에서 소비됩니다."
+"Android 기기가 Wi-Fi에 연결되어 있지 않고 셀룰러 데이터를 사용하는 경우 이 테더링은 셀룰러 요금제의 데이터를 소비합니다. 데이터 요금이 부과되지 않도록 하려면 "
+"테더링을 활성화하기 전에 Android 기기가 Wi-Fi 네트워크에 연결되어 있는지 확인하세요."
 
-msgid "Visualizar informações do sistema e hardware"
-msgstr "시스템 및 하드웨어 정보 보기"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Close"
+msgstr "닫다"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "USB를 통해 Linux에서 iOS 기기의 인터넷 사용"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
-"o suporte."
-msgstr "또한 정보가 포함된 파일을 만들어 다른 사람에게 보내 지원을 받을 수 있습니다."
+"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr "USB 케이블을 사용하여 iOS 스마트폰의 인터넷 연결을 Linux 컴퓨터와 공유하려면 다음 단계를 따르세요."
 
-msgid "Adicionar ou Remover Usuários"
-msgstr "사용자 추가 또는 제거"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "USB 케이블을 사용하여 iOS 기기를 Linux 컴퓨터에 연결합니다."
 
-msgid "Criar, remover e gerenciar contas e grupos de usuários."
-msgstr "사용자 계정 및 그룹을 생성, 제거 및 관리합니다."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "iOS 기기에서 '설정'으로 이동한 다음 '개인용 핫스팟'을 선택합니다."
 
-msgid "Economia de energia"
-msgstr "에너지 절감"
-
-msgid "Monitores e Telas"
-msgstr "모니터 및 화면"
-
-msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-msgstr "해상도, 색상, 주파수, dpi, 스케일, 야간 색상 등을 구성합니다."
-
-msgid "Resetar as configurações da tela"
-msgstr "화면 설정 초기화"
-
-msgid "Restaurar a configuração padrão do monitor."
-msgstr "모니터를 기본 설정으로 복원합니다."
-
-msgid "Airmore"
-msgstr "에어모어"
-
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
-"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
-"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
-"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr "'다른 사람의 참여 허용'을 활성화합니다. 이렇게 하면 USB 연결이 감지되면 'USB 테더링'이 자동으로 활성화될 수 있습니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"스마트폰의 앱 스토어에서 Airmore 앱을 설치합니다.이 버튼을 사용하여 해당 컴퓨터에서 Airmore 웹 사이트를 엽니 다.스마트폰의 앱을 사용하여 컴퓨터 화면에 표시되는 "
-"QRcode를 읽고 파일 전송 등에 액세스할 수 있습니다.웹 앱 관리자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
+"iOS 기기가 Wi-Fi에 연결되어 있지 않고 셀룰러 데이터를 사용하는 경우 이 테더링은 셀룰러 요금제의 데이터를 소비합니다. 데이터 요금이 부과되지 않도록 하려면 테더링을 "
+"활성화하기 전에 iOS 기기가 Wi-Fi 네트워크에 연결되어 있는지 확인하십시오."
 
-msgid "Airdroid"
-msgstr "에어드로이드"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+msgid "Configure AppimageLauncher"
+msgstr "AppimageLauncher 구성"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+msgid "Choose the behavior of programs available in .appimage"
+msgstr ".appimage에서 사용할 수 있는 프로그램의 동작 선택"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 26
+msgid "Usage settings for old music CDs are not valid for MP3 music."
+msgstr "오래된 음악 CD의 사용 설정은 MP3 음악에 유효하지 않습니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 31
+msgid "Search for servers (zeroconf)"
+msgstr "서버 검색(zeroconf)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+msgid "Restore program configuration"
+msgstr "프로그램 구성 복원"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 37
+msgid "biglinux-config"
+msgstr "biglinux-구성"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 42
 msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
-"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
-"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
-"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-msgstr ""
-"스마트폰의 앱 스토어에서 Airdroid 앱을 설치합니다.이 버튼을 사용하여 해당 컴퓨터에서 Airdroid 웹 사이트를 열 수 있습니다.스마트폰의 앱을 사용하여 컴퓨터 화면에 "
-"표시되는 QRcode를 읽고 파일 전송 등에 액세스할 수 있습니다.웹 앱 관리자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
-
-msgid "Suporte a aplicativos Android"
-msgstr "안드로이드 앱 지원"
-
-msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
-"experimental."
-msgstr "웨이드로이드를 사용하면 BigLinux에서 안드로이드 프로그램을 엽니다.*이 기능은 아직 실험 단계에 있습니다."
-
-msgid "Instalar drivers e firmwares"
-msgstr "드라이버 및 펌웨어 설치"
-
-msgid "Snapshots e backups"
-msgstr "스냅샷 및 백업"
-
-msgid "Gerenciar pontos de restauração."
-msgstr "복구 지점을 관리합니다."
-
-msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
-"backups utilizando o método rsync."
-msgstr "시스템이 설치된 파티션에는 복원 지점이 없지만 rsync 방법을 사용하여 백업을 만들 수 있습니다."
-
-msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
-msgstr "시스템이 라이브 모드에 있습니다.설치된 시스템의 복원 지점을 복원합니다."
-
-msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
-"para que textos escritos sejam falados."
-msgstr "원하는 텍스트를 선택하고 [Meta] +V 키 또는 시스템 메뉴의 아이콘으로 단축키를 사용하여 작성된 텍스트를 음성으로 만듭니다."
-
-msgid "Instalar versões de kernel e mesa"
-msgstr "커널 및 데스크톱 버전 설치"
-
-msgid "Regras de segurança do Java"
-msgstr "자바 보안 규칙"
-
-msgid "OpenJDK Java 8 Policy Tool"
-msgstr "오픈JDK 자바 8 정책 툴"
-
-msgid "Snapdrop (Não precisa de aplicativo)"
-msgstr "스냅드롭 (앱 필요 없음)"
-
-msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
-"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
-"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
-"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-msgstr ""
-"파일을 전송하려는 하드웨어 아래에서 https://snapdrop.net 사이트를 열면 자동으로 감지되고 원하는 파일을 보낼 수 있습니다.이 버튼을 사용하여 해당 컴퓨터에서 "
-"Snapdrop 웹 사이트를 엽니다.Snapdrop은 한 스마트 폰에서 다른 스마트 폰으로 직접 파일을 전송하는 것을 포함하여 모든 스마트 폰 또는 컴퓨터에서 사용할 수 "
-"있습니다.웹 앱 관리자를 사용하여 이 사이트를 쉽게 사용할 수도 있습니다."
-
-msgid "ID do Android:"
-msgstr "안드로이드 ID:"
-
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr "안드로이드 ID를 사용할 수 없습니다.\\ n\\ n경고: 웨이드로이드가 열려 있어야 합니다."
-
-msgid "Waydroid"
-msgstr "웨이드로이드"
-
-msgid ""
-"Ao remover as configurações os programas instalados \n"
-"dentro do Waydroid e suas configurações serão perdidas.\n"
-"\n"
-"Realmente deseja remover?"
-msgstr ""
-"설치된 프로그램을 설정을 제거하여 \n"
-"Waydroid 내부에서는 설정이 손실됩니다.\n"
-"\n"
-"정말로 제거하고 싶습니까?"
-
-msgid "Configurações removidas com sucesso!"
-msgstr "설정이 성공적으로 제거되었습니다!"
-
-msgid "Nenhuma configuração foi removida!"
-msgstr "제거된 구성이 없습니다!"
-
-msgid "Não existem configurações para remover."
-msgstr "제거할 설정이 없습니다."
-
-msgid ""
-"Deseja remover também os arquivos de configuração \n"
-"e programas instalados dentro do Waydroid?"
-msgstr ""
-"구성 파일도 제거하려고 합니다. \n"
-"그리고 waydroid에 설치된 프로그램?"
-
-msgid "Remover"
-msgstr "제거하다"
-
-msgid "Maximizado"
-msgstr "최대화"
-
-msgid "Desinstalar"
-msgstr "제거"
-
-msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
-msgstr "가상화 기술에 대한 지원을 확인하지 않았으므로 컴퓨터 BIOS에서 이 옵션을 활성화해야 할 수 있습니다."
-
-msgid "Utilize programas para Android no BigLinux."
-msgstr "BigLinux에서 안드로이드 프로그램을 사용하십시오."
-
-msgid "Instalar o Waydroid"
-msgstr "웨이드로이드 설치"
-
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Google Apps로 Waydroid 설치"
-
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "다운로드는 약 1GB이며, 연결에 따라 달라질 수 있습니다."
-
-msgid "Paisagem"
-msgstr "풍경화"
-
-msgid "Retrato"
-msgstr "초상"
-
-msgid "Desativado"
-msgstr "비활성화"
-
-msgid "Ativado"
-msgstr "활성화"
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "시스템 메뉴를 사용하여 Waydroid를 시작할 수도 있습니다"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
-msgstr "호환되지 않는 하드웨어에서 3D 가속이 활성화되면 안드로이드가로드 화면에서 움직이지 않습니다."
-
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "3D 가속은 독점 드라이버를 사용하는 Nvidia 비디오 카드에서 호환되지 않습니다."
-
-msgid "Exibir ID do Android"
-msgstr "안드로이드 ID 표시"
-
-msgid "Ativar Google Apps"
-msgstr "구글 앱스 활성화"
-
-msgid "Remover Configurações"
-msgstr "설정 제거"
-
-msgid "Desinstalar o Waydroid"
-msgstr "웨이드로이드 제거"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
-msgstr "호환되지 않는 하드웨어에서 3D 가속이 사용 설정된 경우 <br>Android가 로딩 화면 밖으로 이동하지 않습니다."
-
-msgid "Parar o Waydroid"
-msgstr "스탑 웨이드로이드"
-
-msgid "Iniciar o Waydroid"
-msgstr "스타트 웨이드로이드"
-
-msgid ""
-"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
-"\n"
-"Abrirei em modo de configuração.\n"
-"As alterações feitas podem ser vistas\n"
-"na imagem da sua webcam em outros programas."
-msgstr ""
-"프로그램에서 웹캠을 이미 사용하고 있습니다. $WEBCAM_BUSY\n"
-"\n"
-"설정 모드에서 열겠습니다.\n"
-"변경된 내용을 볼 수 있습니다.\n"
-"다른 프로그램의 웹캠 이미지에."
-
-msgid "Webcam"
-msgstr "웹캠"
-
-msgid "Category"
-msgstr "카테고리"
-
-msgid "Name"
-msgstr "이름"
-
-msgid "ID"
-msgstr "신분증"
-
-msgid "Info"
-msgstr "정보"
-
-msgid ""
-"O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
-"\n"
-"Deseja visualizar o relatório agora?\n"
-msgstr ""
-"보고서가 $FILE_TO_SAVE 파일에 저장되었습니다.\n"
-"\n"
-"지금 보고서를 보시겠습니까?\n"
-
-msgid "Visualizar o relatório"
-msgstr "보고서 보기"
-
-msgid "Hardinfo Relatory"
-msgstr "하드인포 리포트"
-
-msgid "Uso de armazenamento"
-msgstr "스토리지 사용량"
-
-msgid "Tema da área de trabalho"
-msgstr "데스크탑 테마"
-
-msgid "Aguarde..."
-msgstr "잠시 기다리다..."
-
-msgid "Verificando conexão com a Internet..."
-msgstr "인터넷 연결 확인 중..."
-
-msgid "Sem conexão com a Internet..."
-msgstr "인터넷에 연결되어 있지 않습니다..."
-
-msgid "Nenhuma webcam localizada."
-msgstr "웹캠이 없습니다."
-
-msgid "Configurações da Tela"
-msgstr "화면 설정"
-
-msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
-msgstr ""
-"보고서가 $FILE_TO_SAVE 파일에 저장되었습니다.\n"
-"지금 보고서를 보시겠습니까?"
-
-msgid "$APP"
-msgstr "$APP"
-
-msgid "Erro na criação do diretório : $bigdir"
-msgstr "디렉터리를 만드는 동안 오류가 발생했습니다: $bigdir"
-
-msgid ""
-"Ao remover as configurações os programas instalados\n"
-"dentro do Waydroid e suas configurações serão perdidas.\n"
-"\n"
-"Realmente deseja remover?"
-msgstr ""
-"설정을 제거 할 때 설치된 프로그램\n"
-"Waydroid 내부에서 설정이 손실됩니다.\n"
-"\n"
-"정말 제거하시겠습니까?"
-
-msgid ""
-"Deseja remover também os arquivos de configuração\n"
-"e programas instalados dentro do Waydroid?"
-msgstr ""
-"또한 구성 파일을 제거하려고 합니다\n"
-"Waydroid 내부에 설치된 프로그램?"
-
-msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>1. Plugue o dispositivo na USB do computador;\n"
-"<br>2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: "
-"'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
-"<br><br>Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
-"dispositivo Android.\n"
-"<br>*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
-msgstr ""
-"Android 태블릿 또는 스마트폰에서 인터넷을 사용하는 방법:<br><br>1. 장치를 컴퓨터의 USB에 연결합니다.<br>2. Android 기기의 설정으로 이동하여 'USB "
-"링크', 'USB 앵커' 또는 'USB 테더링' 옵션을 찾습니다.<br>각 제조업체가 동일한 기능에 사용하는 다른 형태입니다.<br><br>*이 옵션은 '네트워크 및 인터넷' "
-"또는 '연결 및 공유' 섹션에 있습니다.<br><br>활성화되면 자동으로 연결되며 Android 기기와 동일한 연결을 사용하게 됩니다.<br>*모바일 데이터를 사용하는 경우 "
-"데이터 요금제에서 소비됩니다."
-
-msgid "Aguardando pela finalização do reload"
-msgstr "재장전이 완료될 때까지 대기 중"
-
-msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr "설정을 제거하면 Waydroid 내부에 설치된 프로그램과 해당 설정이 손실됩니다. 정말 제거하시겠습니까?"
-
-msgid "Custom"
-msgstr "관습"
-
-msgid "A webcam já está sendo utilizada pelo programa: "
-msgstr "웹캠은 이미 프로그램에서 사용 중입니다. "
-
-msgid "Abrirei em modo de configuração. "
-msgstr "구성 모드에서 열겠습니다. "
-
-msgid "As alterações feitas podem ser vistas"
-msgstr "변경 사항을 볼 수 있습니다."
-
-msgid "na imagem da sua webcam em outros programas."
-msgstr "다른 프로그램의 웹캠 이미지에서."
-
-msgid "Resolução"
-msgstr "해상도"
-
-msgid "Aceleração 3D"
-msgstr "3D 가속"
-
-msgid "PlayStore"
-msgstr "플레이 스토어"
-
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
-msgstr ""
-"PlayStore를 활성화하려면 (Android ID 보기)를 클릭하고 Android ID를 복사한 다음 (Google Apps 활성화)를 클릭하여 기기 등록 페이지를 열고 "
-"Google 계정에 로그인하고 Android ID를 입력하고 등록해야 합니다. Waydroid에서 활성화하는 데 몇 분 정도 걸릴 수 있습니다. 닫았다가 다시 엽니다. 준비된!"
-
-msgid "Central de Controle - Webcam"
-msgstr "제어 센터 - 웹캠"
-
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "웹캠은 이미 응용 프로그램에서 사용 중입니다. "
-
+"Utility that facilitates the restoration of the installed system, mainly restoring the system boot "
+"(Grub). It can also be used to access the package manager and terminal of the installed system."
+msgstr "설치된 시스템의 복원을 용이하게 하는 유틸리티로, 주로 시스템 부팅(Grub)을 복원합니다. 또한 설치된 시스템의 패키지 관리자 및 터미널에 액세스하는 데 사용할 수 있습니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 51
+msgid "Themes, Desktop and Tweaks"
+msgstr "테마, 데스크탑 및 조정"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr "매우 간단한 방법으로 선택할 수 있는 완전한 구성을 제공합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
+msgid "Install or remove programs."
+msgstr "프로그램을 설치하거나 제거합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 62
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 63
+msgid "Introduction to BigLinux"
+msgstr "BigLinux 소개"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 70
+msgid "Themes to Bootsplash"
+msgstr "Bootsplash에 대한 테마"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
+msgid "Brightness and color"
+msgstr "밝기 및 색상"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 76
+msgid "Control brightness and colors"
+msgstr "밝기 및 색상 제어"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+msgid "Search for SSH servers"
+msgstr "SSH 서버 검색"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+msgid "Search for VNC servers"
+msgstr "VNC 서버 검색"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 92
+msgid "Configure this window border theme"
+msgstr "이 창 테두리 테마 구성"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 97
+msgid "Configure this windows theme."
+msgstr "이 창 테마를 구성합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "고급 오디오 관리자 - Alsamixer"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 116
+msgid "Audio controller in case of no sound."
+msgstr "소리가 나지 않는 경우 오디오 컨트롤러."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 126
+msgid "Partition or format"
+msgstr "파티션 또는 포맷"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 127
+msgid "Be careful, this program may erase all data on your computer."
+msgstr "이 프로그램은 컴퓨터의 모든 데이터를 지울 수 있으므로 주의하십시오."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 132
+msgid "Storage Information (SMART)"
+msgstr "스토리지 정보(SMART)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 141
 msgid "Gufw Firewall"
 msgstr "Gufw 방화벽"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 142
+msgid "Configure security rules for the internet connection."
+msgstr "인터넷 연결에 대한 보안 규칙을 구성합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+msgid "Configure webcam or capture card"
+msgstr "웹캠 또는 캡처 카드 구성"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 157
+msgid "HP printers"
+msgstr "HP 프린터"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 158
+msgid "Check status, ink level and maintenance."
+msgstr "상태, 잉크 잔량 및 유지 관리를 확인하십시오."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 164
+msgid "Scanners HP"
+msgstr "HP 스캐너"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 169
+msgid "Assemble Apple Hardware"
+msgstr "Apple 하드웨어 조립하기"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
+msgid ""
+"With this program you can access programs on your Apple iPhone or iPad in a similar way to "
+"accessing files on a pendrive."
+msgstr "이 프로그램을 사용하면 USB 스틱의 파일에 액세스하는 것과 유사한 방식으로 Apple iPhone 또는 iPad의 프로그램에 액세스할 수 있습니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 176
+msgid "Connect to the internet using Android"
+msgstr "Android를 사용하여 인터넷에 연결"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+msgid "Connect to Internet"
+msgstr "인터넷에 연결"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 192
+msgid "Connect to the internet using iOS"
+msgstr "iOS를 사용하여 인터넷에 연결"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 198
+msgid "Equalizer (DSP)"
+msgstr "이퀄라이저(DSP)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+msgid "Virtual desktops and activities"
+msgstr "가상 데스크톱 및 활동"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 212
+msgid "Create more than one virtual desktop by switching between them."
+msgstr "가상 데스크톱 간에 전환하여 둘 이상의 가상 데스크톱을 만듭니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
+msgid "Enabling search increases system memory and processing consumption."
+msgstr "검색을 사용하면 시스템 메모리 및 처리 사용량이 증가합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
+msgid "Adjust the date, time and time zone."
+msgstr "날짜, 시간 및 시간대를 조정합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
 msgid "Plasma Firewall"
 msgstr "플라즈마 방화벽"
 
-msgid "Configurar regras de segurança para conexões. Este firewall é baseado na infraestrutura do Gufw"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 273
+msgid "Configure security rules for connections. This firewall is based on the Gufw infrastructure"
 msgstr "연결에 대한 보안 규칙을 구성합니다. 이 방화벽은 Gufw 인프라를 기반으로 합니다"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 292
+msgid "Integration with Google Drive and ownCloud"
+msgstr "Google 드라이브 및 ownCloud와 통합"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 293
+msgid "Access your files that are on Google Drive or ownCloud directly from the file manager."
+msgstr "파일 관리자에서 직접 Google 드라이브 또는 ownCloud에 있는 파일에 액세스합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 307
+msgid "Layout settings, hotkeys and other options."
+msgstr "레이아웃 설정, 단축키 및 기타 옵션."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 342
+msgid "Manage connections"
+msgstr "연결 관리"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 343
+msgid ""
+"Advanced network configuration (VPN, wifi, wired, fixed IP, PPPoE, ADSL, wired network, mobile "
+"broadband and others)."
+msgstr "고급 네트워크 구성(VPN, Wi-Fi, 유선, 고정 IP, PPPoE, ADSL, 유선 네트워크, 모바일 광대역 등)."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 397
+msgid "Manage services (Systemd)"
+msgstr "서비스 관리(Systemd)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 429
+msgid "Configure the Kvantum theme"
+msgstr "Kvantum 테마 구성"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 430
+msgid "For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."
+msgstr "Kvantum 설정이 작동하려면 '앱 스타일'에서 Kvantum 테마를 적용합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 435
+msgid "KDE Password Wallet"
+msgstr "KDE 암호 지갑"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 474
+msgid "Manage files"
+msgstr "파일 관리"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 475
+msgid "Get access to your files and folders."
+msgstr "파일 및 폴더에 액세스할 수 있습니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+msgid "Storage Usage"
+msgstr "스토리지 사용량"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "KDE 커넥트"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 487
+msgid ""
+"This program can transfer files between smartphones, tablets and other computers. With it, you can, "
+"for example, use your smartphone as a wireless mouse and keyboard to control the computer, among "
+"other features. It integrates better with BigLinux and sits among the applets located near the "
+"system clock. To synchronize with your smartphone, go to the Google Store or Apple Store and "
+"install Kde Connect."
+msgstr ""
+"이 프로그램은 스마트폰, 태블릿 및 다른 컴퓨터 간에 파일을 전송할 수 있습니다. 예를 들어, 스마트폰을 무선 마우스와 키보드로 사용하여 여러 기능들 중에서도 컴퓨터를 제어할 수 "
+"있습니다. BigLinux와 더 잘 통합되며 시스템 클럭 근처에 있는 애플릿 사이에 위치합니다. 스마트 폰과 동기화하려면 Google Store 또는 Apple Store로 "
+"이동하여 Kde Connect를 설치하십시오."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
+msgid "Terminal"
+msgstr "터미널"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+msgid "Access the command terminal."
+msgstr "명령 터미널에 액세스합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
+msgid "Password Manager"
+msgstr "비밀번호 관리자"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+msgid "Sound and microphone"
+msgstr "음향 및 마이크"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "오디오 입력 및 출력 장치를 구성하거나 변경합니다. (예: HDMI)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 540
+msgid "Shared file information"
+msgstr "공유 파일 정보"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+msgid "Printers"
+msgstr "프린터"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+msgid "Install, configure or remove printers."
+msgstr "프린터를 설치, 구성 또는 제거합니다."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+msgid "KDE Control Center"
+msgstr "KDE 제어 센터"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 557
+msgid "Advanced power configurator"
+msgstr "고급 파워 컨피규레이터"

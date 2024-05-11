@@ -16,873 +16,505 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 
-msgid "Bom dia"
-msgstr "Tere hommikust"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "search"
+msgstr "Otsing"
 
-msgid "Boa tarde"
-msgstr "Tere päevast"
-
-msgid "Boa noite"
-msgstr "Tere õhtust"
-
-msgid "Aguarde, carregando..."
-msgstr "Oodata, laadimine..."
-
-msgid "Introdução ao BigLinux"
-msgstr "BigLinuxi tutvustus"
-
-msgid "Bem vindo ao BigLinux"
-msgstr "Tere tulemast BigLinuxi"
-
-msgid "Comece com algumas etapas simples."
-msgstr "Alustage mõne lihtsa sammuga."
-
-msgid "Mostrar na inicialização"
-msgstr "Näita käivitamisel"
-
-msgid "Olá"
-msgstr "Tere"
-
-msgid "Ajustes iniciais"
-msgstr "Esialgsed kohandused"
-
-msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-msgstr "Pakume teile täielikke konfiguratsioone, mille hulgast saate väga lihtsalt valida."
-
-msgid "Temas, Desktop e Ajustes"
-msgstr "Teemad, töölaud ja seaded"
-
-msgid "Escolha seu Avatar"
-msgstr "Valige oma Avatar"
-
-msgid "Pacotes de Idioma"
-msgstr "Keelepaketid"
-
-msgid "Escolha seu navegador padrão"
-msgstr "Valige oma vaikimisi brauser"
-
-msgid "Defina seus programas padrões."
-msgstr "Seadistage oma vaikimisi programmid."
-
-msgid "Outros navegadores"
-msgstr "Muud brauserid"
-
-msgid "KDE Connect"
-msgstr "KDE Connect"
-
-msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
-"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
-"iPhone."
-msgstr ""
-"KDE Connect on rakendus, mis hõlbustab traadita sidet ja andmeedastust seadmete vahel kohalikes "
-"võrkudes. Saadaval Google Play poest Androidile ja Apple Store'ist iPhone'ile."
-
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Juhi paigaldamine ja riistvara teave"
-
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "Paigaldage või eemaldage draiverid ja püsivara hõlpsasti."
-
-msgid "Impressoras"
-msgstr "Printerid"
-
-msgid "Conheça alguns recursos"
-msgstr "Tutvuge mõnede ressurssidega"
-
-msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
-msgstr "Meie süsteem on koostööl põhinev, tulge selle arengu osaliseks. Vaata uudiseid!"
-
-msgid "Central de Controle"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Control Center"
 msgstr "Juhtimiskeskus"
 
-msgid "Big Store"
-msgstr "Suur pood"
-
-msgid "Web Apps"
-msgstr "Veebirakendused"
-
-msgid "Redutor de Ruídos"
-msgstr "Müravähendaja"
-
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Süsteemi hääle (TTS) seadistamine"
-
-msgid "OCR para PDF"
-msgstr "OCR PDF-i jaoks"
-
-msgid "Doação e Redes sociais"
-msgstr "Annetused ja sotsiaalsed võrgustikud"
-
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "Teie annetus on projekti jaoks väga oluline ja jälgige sotsiaalvõrgustikke."
-
-msgid "Doação"
-msgstr "Annetus"
-
-msgid "Fórum"
-msgstr "Foorum"
-
-msgid "YouTube"
-msgstr "YouTube"
-
-msgid "Twitter"
-msgstr "Twitter"
-
-msgid "Telegram"
-msgstr "Telegramm"
-
-msgid "Instagram"
-msgstr "Instagram"
-
-msgid "Facebook"
-msgstr "Facebook"
-
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Palju õnne, olete läbinud esimesed sammud BigLinuxi kasutamiseks."
-
-msgid "Som e microfone"
-msgstr "Heli ja mikrofon"
-
-msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr "Audio sisend- ja väljundseadmete konfigureerimine või muutmine (näiteks: HDMI)"
-
-msgid "Gerenciar arquivos"
-msgstr "Failide haldamine"
-
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "Saate juurdepääsu oma failidele ja kaustadele."
-
-msgid "Qt Assistant"
-msgstr "Qt assistent"
-
-msgid "Programas de desenvolvimento para QT."
-msgstr "QT arendusprogrammid."
-
-msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
-msgstr "Vanade muusikakettide kasutussätted ei kehti MP3-muusika puhul."
-
-msgid "Procurar servidores (zeroconf)"
-msgstr "Otsinguserverid (zeroconf)"
-
-msgid "Gerenciador de usuários"
-msgstr "Kasutajahaldur"
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "Süsteemi kasutajate ja rühmade lisamine, eemaldamine või muutmine."
-
-msgid "Gerenciar conexões"
-msgstr "Ühenduste haldamine"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
-"móvel e outros)."
-msgstr ""
-"Täiustatud võrgukonfiguratsioon (VPN, wifi, traadiga, fikseeritud IP, PPPoE, ADSL, traadiga võrk, "
-"mobiilne lairibaühendus ja muud)."
-
-msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-msgstr "Otsingu aktiveerimine suurendab süsteemi mälu ja töötluskulu."
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Paigutuse seaded, otseteed ja muud valikud."
-
-msgid "Configurar o tema Kvantum"
-msgstr "Kvantumi teema konfigureerimine"
-
-msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
-msgstr "Et Kvantumi konfiguratsioon töötaks, rakendage Kvantumi teema jaotises \"Application Style\"."
-
-msgid "Integração com Google Drive e ownCloud"
-msgstr "Integratsioon Google Drive'i ja ownCloudiga"
-
-msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
-msgstr "Google Drive'is või ownCloudis olevatele failidele pääseb ligi otse failihaldurist."
-
-msgid "Montar Hardware Apple"
-msgstr "Apple'i riistvara paigaldamine"
-
-msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
-"acesso de arquivos em um pendrive."
-msgstr ""
-"Selle programmi abil saate juurdepääsu oma Apple iPhone'i või iPadi programmidele sarnaselt "
-"USB-mälupulgal olevate failide vaatamisega."
-
-msgid "Terminal"
-msgstr "Terminal"
-
-msgid "Acesse o terminal de comandos."
-msgstr "Juurdepääs komandoterminalile."
-
-msgid "Joystick"
-msgstr "Joystick"
-
-msgid "Restaurar a configuração de programas"
-msgstr "Programmi konfiguratsiooni taastamine"
-
-msgid "Qt Designer"
-msgstr "Qt Designer"
-
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "Virtuaalsed tööruumid ja tegevused"
-
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr "Looge rohkem kui üks virtuaalne töölaud, vahetades nende vahel."
-
-msgid "Lixeira"
-msgstr "Prügikast"
-
-msgid "Configurador avançado de energia"
-msgstr "Täiustatud võimsuse konfiguraator"
-
-msgid "Configurar o AppimageLauncher"
-msgstr "AppimageLauncher'i konfigureerimine"
-
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr "Valige .appimage'is saadaval olevate programmide käitumine"
-
-msgid ""
-"Utilitário que facilita a restauração do sistema instalado, principalmente a restauração do boot do "
-"sistema (Grub). Também pode ser utilizado para acessar o gerenciador de pacotes e o terminal do "
-"sistema instalado."
-msgstr ""
-"Kasulikkus, mis hõlbustab paigaldatud süsteemi taastamist, peamiselt süsteemi käivitamise "
-"taastamist (Grub). Seda saab kasutada ka paketihaldurile ja installitud süsteemiterminalile "
-"juurdepääsuks."
-
-msgid "Firewall"
-msgstr "Tulemüür"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "Konfigureerige internetiühenduse turvareeglid."
-
-msgid "Gerenciador de senhas"
-msgstr "Salasõnahaldur"
-
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "Printerite paigaldamine, konfigureerimine või eemaldamine."
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDBusViewer "
-
-msgid "Procurar servidores VNC"
-msgstr "VNC serverite otsing"
-
-msgid "Temas do Bootsplash"
-msgstr "Bootsplash teemad"
-
-msgid "Particionar ou formatar"
-msgstr "Partitsioneerimine või vormindamine"
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr "Ettevaatust, see programm võib kustutada kõik teie arvutis olevad andmed."
-
-msgid "Instalar ou remover programas."
-msgstr "Paigaldage või eemaldage programme."
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "Täiustatud helihaldur - Alsamixer"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "Heli kontroller heli puudumise korral."
-
-msgid "Qt Linguist"
-msgstr "Qt keeleteadlane"
-
-msgid "Equalizador (DSP)"
-msgstr "Ekvalaiser (DSP)"
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "Seadistage veebikaamera või kaamerakaart"
-
-msgid "Centro de controle do KDE"
-msgstr "KDE juhtimiskeskus"
-
-msgid "Procurar servidores SSH"
-msgstr "SSH-serverite sirvimine"
-
-msgid "Gerenciar serviços (Systemd)"
-msgstr "Teenuste haldamine (Systemd)"
-
-msgid "Configurar este tema de janelas."
-msgstr "Konfigureerige see akende teema."
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
-"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
-"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
-"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"See programm võimaldab edastada faile nutitelefonide, tahvelarvutite ja muude arvutite vahel.  "
-"Selle abil saate näiteks kasutada oma nutitelefoni hiire ja juhtmevaba klaviatuuri, et juhtida "
-"arvutit, lisaks muudele funktsioonidele.  See integreerub paremini BigLinuxiga ja on süsteemi kella "
-"lähedal asuvate rakenduste hulgas. Oma nutitelefoniga sünkroniseerimiseks minge Google Store'i või "
-"Apple Store'i ja installige Kde Connect."
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "Seadistage see akende piiride teema"
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE paroolide rahakott"
-
-msgid "Impressoras HP"
-msgstr "HP printerid"
-
-msgid "Verificar o status, nível de tinta e manutenção."
-msgstr "Kontrollige olekut, tinditaset ja hooldust."
-
-msgid "Tema da Área de Trabalho"
-msgstr "Tööruumi teema"
-
-msgid "Ícones e emoticons"
-msgstr "Ikoonid ja emotikonid"
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "Määrake kuupäev, kellaaeg ja ajavöönd."
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "Ladustamise teave (SMART)"
-
-msgid "Controle o brilho e as cores"
-msgstr "Heleduse ja värvide reguleerimine"
-
-msgid "Brilho e cor"
-msgstr "Sära ja värvus"
-
-msgid "Scanners HP"
-msgstr "HP skannerid"
-
-msgid "Aguarde, criando arquivos de cache..."
-msgstr "Oodata, luues vahemälufaile..."
-
-msgid "As configurações da tela foram resetadas."
-msgstr "Ekraani seaded on lähtestatud."
-
-msgid "Configurações da tela"
-msgstr "Ekraani seaded"
-
-msgid "Categorias"
-msgstr "Kategooriad"
-
-msgid "Principais"
-msgstr "Main"
-
-msgid "Sistema"
-msgstr "Süsteem"
-
-msgid "Aparência"
-msgstr "Välimus"
-
-msgid "Dispositivos"
-msgstr "Seadmed"
-
-msgid "Personalizar"
-msgstr "Kohandada"
-
-msgid "Telefone"
-msgstr "Telefon"
-
-msgid "Multimídia"
-msgstr "Multimeedia"
-
-msgid "Rede e Internet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Main"
+msgstr "Peamine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Network and Internet"
 msgstr "Võrk ja Internet"
 
-msgid "Contas"
-msgstr "Kontod"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Phone"
+msgstr "Telefon"
 
-msgid "Região e Idioma"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Customize"
+msgstr "Kohandada"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Region and Language"
 msgstr "Piirkond ja keel"
 
-msgid "Privacidade"
-msgstr "Privaatsus"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Multimedia"
+msgstr "Multimeedia"
 
-msgid "Servidor"
-msgstr "Server"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Accounts"
+msgstr "Kontod"
 
-msgid "Desenvolvimento"
-msgstr "Arendus"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Devices"
+msgstr "Seadmed"
 
-msgid "Sobre"
-msgstr "Kohta"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "System"
+msgstr "Süsteem"
 
-msgid "Outros"
-msgstr "Muud"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "About"
+msgstr "Umbes"
 
-msgid "Pesquisar..."
-msgstr "Otsi..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Other"
+msgstr "Muu"
 
-msgid "Resultado da pesquisa"
-msgstr "Otsingu tulemus"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Android-seadme Interneti kasutamine Linuxis USB kaudu"
 
-msgid "Fechar"
-msgstr "Sulge"
-
-msgid "Abrir"
-msgstr "Avatud"
-
-msgid "Temas, desktop e ajustes"
-msgstr "Teemad, töölaud ja seaded"
-
-msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
-msgstr "Loetelu mõnede süsteemiprogrammidega, mida saab ühe klõpsuga taastada."
-
-msgid "Informações do sistema e hardware"
-msgstr "Süsteemi ja riistvara teave"
-
-msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
-msgstr "Lisaks teabe vaatamisele on võimalik see salvestada faili ja jagada seda internetis."
-
-msgid "Conectar à internet"
-msgstr "Ühendage internetiga"
-
-msgid "Conecte na internet por cabo de rede ou wifi."
-msgstr "Ühendage internetiga võrgukaabli või wifi kaudu."
-
-msgid "Conectar à internet utilizando o Android"
-msgstr "Androidi abil internetti ühendamine"
-
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
-"computador."
-msgstr "Saate kasutada oma Android nutitelefoni või tahvelarvutit arvuti wifi usb-seadmena."
-
-msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>\n"
-"1. Plugue o dispositivo na USB do computador;\n"
-"<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
-"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>\n"
-"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
-"<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
-"dispositivo Android.\n"
-"<br>\n"
-"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
+"follow these steps:"
 msgstr ""
-"Kuidas kasutada Internetti oma Android-tahvelarvuti või nutitelefoniga:\n"
-"<br><br>\n"
-"1. Ühendage seade arvuti USB-porti;\n"
-"<br>\n"
-"2. Mine oma Android-seadme seadistustesse ja otsi mõned valikud: \"USB-ühendus\", \"USB-tethering\" "
-"või \"USB Tethering\".\n"
-"<br>\n"
-"Need on erinevad viisid, mida iga tootja kasutab sama funktsiooni jaoks.\n"
-"<br><br>\n"
-"*Need valikud asuvad jaotises \"Võrk ja Internet\" või \"Ühendused ja jagamine\".\n"
-"<br><br>\n"
-"Aktiveerides ühendatakse see automaatselt ja te kasutate sama ühendust kui teie Android-seade.\n"
-"<br>\n"
-"*Kui kasutate mobiilseid andmeid, tarbitakse need teie andmesideplaanist."
+"Android-nutitelefoni Interneti-ühenduse jagamiseks Linuxi arvutiga USB-kaabli abil toimige "
+"järgmiselt."
 
-msgid "Visualizar informações do sistema e hardware"
-msgstr "Süsteemi ja riistvara teabe vaatamine"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Ühendage oma Android-nutitelefon USB-kaabli abil Linuxi arvutiga."
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
-"o suporte."
-msgstr "Samuti loob see faili teabega, mille saate saata teistele, et nad teid toetaksid."
-
-msgid "Adicionar ou Remover Usuários"
-msgstr "Kasutajate lisamine või eemaldamine"
-
-msgid "Criar, remover e gerenciar contas e grupos de usuários."
-msgstr "Kasutajakontode ja rühmade loomine, eemaldamine ja haldamine."
-
-msgid "Economia de energia"
-msgstr "Energiasäästu"
-
-msgid "Monitores e Telas"
-msgstr "Monitorid ja ekraanid"
-
-msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-msgstr "Konfigureerige resolutsioon, värv, sagedus, dpi, skaala, öine värv jne."
-
-msgid "Resetar as configurações da tela"
-msgstr "Ekraani seadete lähtestamine"
-
-msgid "Restaurar a configuração padrão do monitor."
-msgstr "Taastab vaikimisi monitori konfiguratsiooni."
-
-msgid "Airmore"
-msgstr "Airmore"
-
-msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
-"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
-"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
-"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
+"Sharing'."
 msgstr ""
-"Installige Airmore'i rakendus oma nutitelefoni rakenduste poest.  Kasutage seda nuppu, et avada "
-"Airmore'i veebisait selles arvutis.  Lugege nutitelefoni rakenduse abil QR-koodi, mis kuvatakse "
-"teie arvuti ekraanil, ja saate juurdepääsu failiülekandele ja muule.  Saate kasutada ka meie "
-"veebirakenduste haldurit, et muuta selle saidi kasutamine lihtsamaks."
+"Avage oma nutitelefonis \"Seaded\" ja navigeerige jaotisse \"Võrk ja Internet\" või \"Ühendused ja "
+"jagamine\"."
 
-msgid "Airdroid"
-msgstr "Airdroid"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Otsige \"USB-sidumine\", \"USB-sidumine\" või muid sarnaseid termineid ja lubage see."
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
-"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
-"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
-"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Installige Airdroid rakendus oma nutitelefoni rakenduste poest.  Kasutage seda nuppu, et avada "
-"Airdroidi veebisait selles arvutis.  Lugege nutitelefoni rakendust kasutades oma arvuti ekraanil "
-"kuvatavat QR-koodi ja pääsete ligi failiedastusele ja muuleki.  Saate kasutada ka meie "
-"veebirakenduste haldurit, et muuta selle saidi kasutamine lihtsamaks."
+"Kui teie Android-seade pole Wi-Fi-ga ühendatud ja kasutab mobiilandmesideühendust, tarbib see "
+"lõastamine teie mobiilsidepaketi andmeid. Andmesidetasude vältimiseks veenduge enne sidumise "
+"lubamist, et teie Android-seade oleks ühendatud WiFi-võrguga."
 
-msgid "Suporte a aplicativos Android"
-msgstr "Androidi rakenduste tugi"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Close"
+msgstr "Sulgema"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "IOS-seadme Interneti kasutamine Linuxis USB kaudu"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
-"experimental."
+"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr "IOS-i nutitelefoni Interneti-ühenduse jagamiseks Linuxi arvutiga USB-kaabli abil toimige järgmiselt."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Ühendage oma iOS-seade USB-kaabli abil Linuxi arvutiga."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "Minge oma iOS-i seadmes jaotisse \"Seaded\", seejärel valige \"Isiklik tööpunkt\"."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
 msgstr ""
-"Waydroid'i kasutamine Androidi programmide avamiseks BigLinuxis. *See funktsioon on veel "
-"katsejärgus."
+"Luba \"Luba teistel liituda\". See võib automaatselt lubada USB-ühenduse olemasolu, kui "
+"tuvastatakse USB-ühendus."
 
-msgid "Instalar drivers e firmwares"
-msgstr "Paigaldage draiverid ja püsivara"
-
-msgid "Snapshots e backups"
-msgstr "Vahepildid ja varukoopiad"
-
-msgid "Gerenciar pontos de restauração."
-msgstr "Taastamispunktide haldamine."
-
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
-"backups utilizando o método rsync."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Partitsioonil, kuhu süsteem paigaldati, ei ole taastamispunkte, kuid rsync-meetodiga on võimalik "
-"teha varukoopiaid."
+"Kui teie iOS-seade pole Wi-Fi-ga ühendatud ja kasutab mobiilandmesideühendust, tarbib see "
+"lõastamine teie mobiilsidepaketi andmeid. Andmesidetasude vältimiseks veenduge enne sidumise "
+"lubamist, et teie iOS-seade oleks ühendatud Wi-Fi-võrguga."
 
-msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
-msgstr "Süsteem on reaalajas. Installeeritud süsteemi taastamispunktide taastamine."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+msgid "Configure AppimageLauncher"
+msgstr "AppimageLauncheri konfigureerimine"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+msgid "Choose the behavior of programs available in .appimage"
+msgstr "Appimage'is saadaolevate programmide käitumise valimine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 26
+msgid "Usage settings for old music CDs are not valid for MP3 music."
+msgstr "Vanamuusika CD-de kasutussätted ei kehti MP3-muusika puhul."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 31
+msgid "Search for servers (zeroconf)"
+msgstr "Serverite otsimine (zeroconf)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+msgid "Restore program configuration"
+msgstr "Taasta programmi konfiguratsioon"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 37
+msgid "biglinux-config"
+msgstr "biglinux-config"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 42
 msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
-"para que textos escritos sejam falados."
+"Utility that facilitates the restoration of the installed system, mainly restoring the system boot "
+"(Grub). It can also be used to access the package manager and terminal of the installed system."
 msgstr ""
-"Valige soovitud tekst ja kasutage klahvi [Meta] + V või süsteemimenüüs oleva ikooni otseteed, et "
-"lasta kirjutatud tekstid kõnetada."
-
-msgid "Instalar versões de kernel e mesa"
-msgstr "Installige kerneli ja töölauaversioonid"
-
-msgid "Regras de segurança do Java"
-msgstr "Java ohutuseeskirjad"
-
-msgid "OpenJDK Java 8 Policy Tool"
-msgstr "OpenJDK Java 8 poliitikavahend"
-
-msgid "Snapdrop (Não precisa de aplicativo)"
-msgstr "Snapdrop (rakendust ei ole vaja)"
-
-msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
-"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
-"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
-"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-msgstr ""
-"Lihtsalt avage veebisait https://snapdrop.net riistvara, mida soovite faile edastada, automaatselt "
-"tuvastatakse need ja saate saata soovitud failid.  Kasutage seda nuppu, et avada Snapdropi "
-"veebisait selles arvutis.  Snapdropi saab kasutada mis tahes nutitelefonis või arvutis, sealhulgas "
-"edastada faile otse ühest nutitelefonist teise.  Võite kasutada ka meie veebirakenduse haldurit, et "
-"muuta selle veebisaidi kasutamine lihtsaks."
-
-msgid "ID do Android:"
-msgstr "Android ID:"
-
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr "Androidi ID-d ei ole võimalik kätte saada. \\Hoiatus: Waydroid peab olema avatud."
-
-msgid "Waydroid"
-msgstr "Waydroid"
-
-msgid ""
-"Ao remover as configurações os programas instalados \n"
-"dentro do Waydroid e suas configurações serão perdidas.\n"
-"\n"
-"Realmente deseja remover?"
-msgstr ""
-"Eemaldades seaded installitud programmid \n"
-"Waydroidi sees ja teie seaded kaovad.\n"
-"\n"
-"Kas soovite tõesti eemaldada?"
-
-msgid "Configurações removidas com sucesso!"
-msgstr "Seaded eemaldati edukalt!"
-
-msgid "Nenhuma configuração foi removida!"
-msgstr "Ühtegi konfiguratsiooni pole eemaldatud!"
-
-msgid "Não existem configurações para remover."
-msgstr "Eemaldatavaid seadeid pole."
-
-msgid ""
-"Deseja remover também os arquivos de configuração \n"
-"e programas instalados dentro do Waydroid?"
-msgstr ""
-"Samuti soovite eemaldada konfiguratsioonifailid \n"
-"ja waydroidis installitud programmid?"
-
-msgid "Remover"
-msgstr "Eemaldada"
-
-msgid "Maximizado"
-msgstr "Maksimeeritud"
-
-msgid "Desinstalar"
-msgstr "Desinstallige"
-
-msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
-msgstr ""
-"Ma ei ole tuvastanud virtualiseerimistehnoloogia tuge, seega peate võib-olla selle valiku arvuti "
-"BIOS-is lubama."
-
-msgid "Utilize programas para Android no BigLinux."
-msgstr "Kasutage Android-programme BigLinuxis."
-
-msgid "Instalar o Waydroid"
-msgstr "Waydroidi installimine"
-
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Waydroidi installimine Google Appsiga"
-
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "Allalaadimine on umbes 1 GB, sõltuvalt teie ühendusest võib kuluda."
-
-msgid "Paisagem"
-msgstr "Maastik"
-
-msgid "Retrato"
-msgstr "Portree"
-
-msgid "Desativado"
-msgstr "Desaktiveeritud"
-
-msgid "Ativado"
-msgstr "Aktiveeritud"
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid'i saab käivitada ka süsteemimenüüst"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
-msgstr "Kui 3D-kiirendus on ühildumatul riistvaral lubatud, ei liigu Android laadimisekraanilt"
-
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "3D-kiirendus ei ühildu Nvidia videokaartidega, kasutades patenteeritud draiverit."
-
-msgid "Exibir ID do Android"
-msgstr "Androidi ID kuvamine"
-
-msgid "Ativar Google Apps"
-msgstr "Google Apps'i lubamine"
-
-msgid "Remover Configurações"
-msgstr "Eemalda seaded"
-
-msgid "Desinstalar o Waydroid"
-msgstr "Waydroidi desinstallimine"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
-msgstr "Kui 3D kiirendus on lubatud ühildumatul riistvaral,<br>ei läbita android laadimisekraani"
-
-msgid "Parar o Waydroid"
-msgstr "Lõpeta Waydroid"
-
-msgid "Iniciar o Waydroid"
-msgstr "Alusta Waydroid"
-
-msgid ""
-"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
-"\n"
-"Abrirei em modo de configuração.\n"
-"As alterações feitas podem ser vistas\n"
-"na imagem da sua webcam em outros programas."
-msgstr ""
-"Programm kasutab juba veebikaamerat: $WEBCAM_BUSY\n"
-"\n"
-"Ma avan selle konfiguratsioonirežiimis.\n"
-"Tehtud muudatused on näha\n"
-"oma veebikaamera pildi teistes programmides."
-
-msgid "Webcam"
-msgstr "Veebikaamera"
-
-msgid "Category"
-msgstr "Kategooria"
-
-msgid "Name"
-msgstr "Nimi"
-
-msgid "ID"
-msgstr "ID"
-
-msgid "Info"
-msgstr "Info"
-
-msgid ""
-"O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
-"\n"
-"Deseja visualizar o relatório agora?\n"
-msgstr ""
-"Aruanne salvestati faili $FILE_TO_SAVE\n"
-"\n"
-"Kas soovite aruannet nüüd vaadata?\n"
-
-msgid "Visualizar o relatório"
-msgstr "Vaata aruannet"
-
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo Suhteline"
-
-msgid "Uso de armazenamento"
-msgstr "Salvestusruumi kasutamine"
-
-msgid "Tema da área de trabalho"
-msgstr "Töölaua kujundus"
-
-msgid "Aguarde..."
-msgstr "Pea kinni..."
-
-msgid "Verificando conexão com a Internet..."
-msgstr "Interneti-ühenduse kontrollimine ..."
-
-msgid "Sem conexão com a Internet..."
-msgstr "Interneti-ühendust pole..."
-
-msgid "Nenhuma webcam localizada."
-msgstr "Veebikaamerat ei leitud."
-
-msgid "Configurações da Tela"
-msgstr "Ekraani seaded"
-
-msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
-msgstr ""
-"Aruanne salvestati faili: $FILE_TO_SAVE\n"
-"Kas soovite aruannet kohe vaadata?"
-
-msgid "$APP"
-msgstr "$APP"
-
-msgid "Erro na criação do diretório : $bigdir"
-msgstr "Viga kataloogi loomisel : $bigdir"
-
-msgid ""
-"Ao remover as configurações os programas instalados\n"
-"dentro do Waydroid e suas configurações serão perdidas.\n"
-"\n"
-"Realmente deseja remover?"
-msgstr ""
-"Seadete eemaldamisel installitud programmid\n"
-"sees Waydroid ja selle seaded kaovad.\n"
-"\n"
-"Kas soovite tõesti eemaldada?"
-
-msgid ""
-"Deseja remover também os arquivos de configuração\n"
-"e programas instalados dentro do Waydroid?"
-msgstr ""
-"Samuti soovite eemaldada konfiguratsioonifailid\n"
-"ja Waydroidi sisse installitud programmid?"
-
-msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>1. Plugue o dispositivo na USB do computador;\n"
-"<br>2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: "
-"'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
-"<br><br>Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
-"dispositivo Android.\n"
-"<br>*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
-msgstr ""
-"Kuidas kasutada Internetti oma Android-tahvelarvutist või nutitelefonist:<br><br>1. Ühendage seade "
-"arvuti USB-ga;<br>2. Minge oma Android-seadme seadetesse ja otsige mõnda järgmistest valikutest: "
-"\"USB-link\", \"USB-ankur\" või \"USB-sidumine\".<br>Need on erinevad vormid, mida iga tootja "
-"kasutab sama funktsiooni jaoks.<br><br>*Need valikud asuvad jaotises \"Võrk ja Internet\" või "
-"\"Ühendused ja ühiskasutus\".<br><br>Kui see on aktiveeritud, ühendatakse teid automaatselt ja "
-"kasutate sama ühendust kui teie Android-seade.<br>*Kui kasutate mobiilset andmesidet, tarbitakse "
-"seda teie andmesidepaketist."
-
-msgid "Aguardando pela finalização do reload"
-msgstr "Ootan uuesti laadimise lõppu"
-
-msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr ""
-"Seadete eemaldamisel kaovad Waydroidi sisse installitud programmid ja nende seaded. Kas soovite "
-"tõesti eemaldada?"
-
-msgid "Custom"
-msgstr "Komme"
-
-msgid "A webcam já está sendo utilizada pelo programa: "
-msgstr "Veebikaamerat kasutab programm juba praegu: "
-
-msgid "Abrirei em modo de configuração. "
-msgstr "Avan konfiguratsioonirežiimis. "
-
-msgid "As alterações feitas podem ser vistas"
-msgstr "Tehtud muudatused on nähtavad"
-
-msgid "na imagem da sua webcam em outros programas."
-msgstr "veebikaamera pildil teistes programmides."
-
-msgid "Resolução"
-msgstr "Otsus"
-
-msgid "Aceleração 3D"
-msgstr "3D kiirendus"
-
-msgid "PlayStore"
-msgstr "PlayStore"
-
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
-msgstr ""
-"PlayStore'i aktiveerimiseks peate klõpsama (Vaata Android ID-d) ja kopeerima Android-ID, seejärel "
-"klõpsama (Luba Google Apps), et avada seadme registreerimise leht, peate olema sisse logitud oma "
-"Google'i kontole, sisestama oma Android-ID ja registreeruma. Teie Waydroidil võib kuluda mõni "
-"minut. Sulgege ja avage uuesti. Valmis!"
-
-msgid "Central de Controle - Webcam"
-msgstr "Juhtimiskeskus - veebikaamera"
-
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "Veebikaamerat kasutavad juba rakendused: "
-
+"Utiliit, mis hõlbustab installitud süsteemi taastamist, taastades peamiselt süsteemi alglaadimise "
+"(Grub). Seda saab kasutada ka installitud süsteemi paketihalduri ja terminali juurde pääsemiseks."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 51
+msgid "Themes, Desktop and Tweaks"
+msgstr "Teemad, töölaud ja tweaks"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr "Pakume täielikke konfiguratsioone, mida saate valida äärmiselt lihtsal viisil."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
+msgid "Install or remove programs."
+msgstr "Installige või eemaldage programme."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 62
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 63
+msgid "Introduction to BigLinux"
+msgstr "BigLinuxi tutvustus"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 70
+msgid "Themes to Bootsplash"
+msgstr "Bootsplashi teemad"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
+msgid "Brightness and color"
+msgstr "Heledus ja värv"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 76
+msgid "Control brightness and colors"
+msgstr "Heleduse ja värvide juhtimine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+msgid "Search for SSH servers"
+msgstr "Otsige SSH-servereid"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+msgid "Search for VNC servers"
+msgstr "Otsige VNC-servereid"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 92
+msgid "Configure this window border theme"
+msgstr "Selle akna äärisekujunduse konfigureerimine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 97
+msgid "Configure this windows theme."
+msgstr "Konfigureerige see Windowsi kujundus."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "Täiustatud helihaldur - Alsamixer"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 116
+msgid "Audio controller in case of no sound."
+msgstr "Helikontroller heli puudumise korral."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 126
+msgid "Partition or format"
+msgstr "Partitsioon või vorming"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 127
+msgid "Be careful, this program may erase all data on your computer."
+msgstr "Olge ettevaatlik, see programm võib kustutada kõik teie arvutis olevad andmed."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 132
+msgid "Storage Information (SMART)"
+msgstr "Salvestusteave (SMART)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 141
 msgid "Gufw Firewall"
 msgstr "Gufw tulemüür"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 142
+msgid "Configure security rules for the internet connection."
+msgstr "Interneti-ühenduse turvareeglite konfigureerimine."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+msgid "Configure webcam or capture card"
+msgstr "Veebikaamera või püüdmiskaardi konfigureerimine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 157
+msgid "HP printers"
+msgstr "HP printerid"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 158
+msgid "Check status, ink level and maintenance."
+msgstr "Kontrollige olekut, tindi taset ja hooldust."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 164
+msgid "Scanners HP"
+msgstr "HP skannerid"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 169
+msgid "Assemble Apple Hardware"
+msgstr "Apple'i riistvara kokkupanek"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
+msgid ""
+"With this program you can access programs on your Apple iPhone or iPad in a similar way to "
+"accessing files on a pendrive."
+msgstr ""
+"Selle programmiga pääsete oma Apple iPhone'i või iPadi programmidele juurde sarnaselt "
+"USB-mälupulgal olevate failidega."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 176
+msgid "Connect to the internet using Android"
+msgstr "Interneti-ühenduse loomine Androidi abil"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+msgid "Connect to Internet"
+msgstr "Interneti-ühenduse loomine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 192
+msgid "Connect to the internet using iOS"
+msgstr "Interneti-ühenduse loomine iOS-i abil"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 198
+msgid "Equalizer (DSP)"
+msgstr "Ekvalaiser (DSP)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+msgid "Virtual desktops and activities"
+msgstr "Virtuaalsed töölauad ja tegevused"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 212
+msgid "Create more than one virtual desktop by switching between them."
+msgstr "Looge rohkem kui üks virtuaalne töölaud, vahetades neid vaheldumisi."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
+msgid "Enabling search increases system memory and processing consumption."
+msgstr "Otsingu lubamine suurendab süsteemi mälu ja töötlemise tarbimist."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
+msgid "Adjust the date, time and time zone."
+msgstr "Reguleerige kuupäeva, kellaaega ja ajavööndit."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
 msgid "Plasma Firewall"
 msgstr "Plasma tulemüür"
 
-msgid "Configurar regras de segurança para conexões. Este firewall é baseado na infraestrutura do Gufw"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 273
+msgid "Configure security rules for connections. This firewall is based on the Gufw infrastructure"
 msgstr "Konfigureerige ühenduste turvareeglid. See tulemüür põhineb Gufw infrastruktuuril"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 292
+msgid "Integration with Google Drive and ownCloud"
+msgstr "Integreerimine Google Drive'i ja ownCloudiga"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 293
+msgid "Access your files that are on Google Drive or ownCloud directly from the file manager."
+msgstr "Pääsete Google Drive'is või ownCloudis olevatele failidele juurde otse failihaldurist."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 307
+msgid "Layout settings, hotkeys and other options."
+msgstr "Paigutuse seaded, kiirklahvid ja muud valikud."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 342
+msgid "Manage connections"
+msgstr "Ühenduste haldamine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 343
+msgid ""
+"Advanced network configuration (VPN, wifi, wired, fixed IP, PPPoE, ADSL, wired network, mobile "
+"broadband and others)."
+msgstr ""
+"Täiustatud võrgukonfiguratsioon (VPN, wifi, traadiga, fikseeritud IP, PPPoE, ADSL, traadiga võrk, "
+"mobiilne lairibaühendus ja teised)."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 397
+msgid "Manage services (Systemd)"
+msgstr "Teenuste haldamine (Systemd)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 429
+msgid "Configure the Kvantum theme"
+msgstr "Kvantumi kujunduse konfigureerimine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 430
+msgid "For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."
+msgstr "Kvantumi seadistuse toimimiseks rakendage Kvantumi teemat jaotises \"Rakenduse stiil\"."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 435
+msgid "KDE Password Wallet"
+msgstr "KDE parooliga rahakott"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 474
+msgid "Manage files"
+msgstr "Failide haldamine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 475
+msgid "Get access to your files and folders."
+msgstr "Pääsete juurde oma failidele ja kaustadele."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+msgid "Storage Usage"
+msgstr "Salvestusruumi kasutamine"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "KDE Connect"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 487
+msgid ""
+"This program can transfer files between smartphones, tablets and other computers. With it, you can, "
+"for example, use your smartphone as a wireless mouse and keyboard to control the computer, among "
+"other features. It integrates better with BigLinux and sits among the applets located near the "
+"system clock. To synchronize with your smartphone, go to the Google Store or Apple Store and "
+"install Kde Connect."
+msgstr ""
+"See programm võib edastada faile nutitelefonide, tahvelarvutite ja muude arvutite vahel. Selle abil "
+"saate näiteks oma nutitelefoni kasutada traadita hiire ja klaviatuurina arvuti juhtimiseks. See "
+"integreerub paremini BigLinuxiga ja asub süsteemi kella lähedal asuvate aplettide hulgas. "
+"Nutitelefoniga sünkroonimiseks minge Google Store'i või Apple Store'i ja installige Kde Connect."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
+msgid "Terminal"
+msgstr "Terminal"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+msgid "Access the command terminal."
+msgstr "Juurdepääs käsuterminalile."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
+msgid "Password Manager"
+msgstr "Paroolihaldur"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+msgid "Sound and microphone"
+msgstr "Heli ja mikrofon"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "Heli sisend- ja väljundseadmete konfigureerimine või muutmine. (Nt: HDMI)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 540
+msgid "Shared file information"
+msgstr "Ühiskasutuses faili teave"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+msgid "Printers"
+msgstr "Printerid"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+msgid "Install, configure or remove printers."
+msgstr "Installige, konfigureerige või eemaldage printereid."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+msgid "KDE Control Center"
+msgstr "KDE juhtimiskeskus"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 557
+msgid "Advanced power configurator"
+msgstr "Täiustatud toitekonfiguraator"

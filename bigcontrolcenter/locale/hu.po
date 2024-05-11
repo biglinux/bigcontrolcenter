@@ -16,887 +16,515 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 
-msgid "Bom dia"
-msgstr "Jó reggelt!"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "search"
+msgstr "Keresés"
 
-msgid "Boa tarde"
-msgstr "Jó napot!"
-
-msgid "Boa noite"
-msgstr "Jó estét!"
-
-msgid "Aguarde, carregando..."
-msgstr "Készülj, töltés..."
-
-msgid "Introdução ao BigLinux"
-msgstr "Bevezetés a BigLinuxba"
-
-msgid "Bem vindo ao BigLinux"
-msgstr "Üdvözöljük a BigLinuxon"
-
-msgid "Comece com algumas etapas simples."
-msgstr "Kezdje néhány egyszerű lépéssel."
-
-msgid "Mostrar na inicialização"
-msgstr "Megjelenítés indításkor"
-
-msgid "Olá"
-msgstr "Hello"
-
-msgid "Ajustes iniciais"
-msgstr "Kezdeti beállítások"
-
-msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-msgstr "Teljes konfigurációkat kínálunk, amelyek közül nagyon egyszerűen választhat."
-
-msgid "Temas, Desktop e Ajustes"
-msgstr "Témák, Asztal és beállítások"
-
-msgid "Escolha seu Avatar"
-msgstr "Válassza ki az avatárját"
-
-msgid "Pacotes de Idioma"
-msgstr "Nyelvi csomagok"
-
-msgid "Escolha seu navegador padrão"
-msgstr "Válassza ki az alapértelmezett böngészőt"
-
-msgid "Defina seus programas padrões."
-msgstr "Állítsa be az alapértelmezett programokat."
-
-msgid "Outros navegadores"
-msgstr "Más böngészők"
-
-msgid "KDE Connect"
-msgstr "KDE Connect"
-
-msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
-"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
-"iPhone."
-msgstr ""
-"A KDE Connect egy olyan alkalmazás, amely megkönnyíti a vezeték nélküli kommunikációt és "
-"adatátvitelt a helyi hálózatokon lévő eszközök között. Elérhető a Google Play Áruházban az Android "
-"és az Apple Store-ban az iPhone számára."
-
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Illesztőprogram telepítése és hardverinformációk"
-
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "Az illesztőprogramok és firmware-ek egyszerű telepítése vagy eltávolítása."
-
-msgid "Impressoras"
-msgstr "Nyomtatók"
-
-msgid "Conheça alguns recursos"
-msgstr "Ismerjen meg néhány forrást"
-
-msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
-msgstr "Rendszerünk együttműködő, legyen részese ennek a fejlődésnek. Nézd meg a híreket!"
-
-msgid "Central de Controle"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Control Center"
 msgstr "Vezérlőközpont"
 
-msgid "Big Store"
-msgstr "Big Store"
-
-msgid "Web Apps"
-msgstr "Webes alkalmazások"
-
-msgid "Redutor de Ruídos"
-msgstr "Zajcsökkentő"
-
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Rendszerhang (TTS) beállítása"
-
-msgid "OCR para PDF"
-msgstr "OCR a PDF-hez"
-
-msgid "Doação e Redes sociais"
-msgstr "Adományozás és szociális hálózatok"
-
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "Adománya nagyon fontos a projekt számára, és kövesse a közösségi hálózatokat."
-
-msgid "Doação"
-msgstr "Adományozás"
-
-msgid "Fórum"
-msgstr "Fórum"
-
-msgid "YouTube"
-msgstr "YouTube"
-
-msgid "Twitter"
-msgstr "Twitter"
-
-msgid "Telegram"
-msgstr "Távirat"
-
-msgid "Instagram"
-msgstr "Instagram"
-
-msgid "Facebook"
-msgstr "Facebook"
-
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Gratulálunk, elvégezte a BigLinux használatának első lépéseit."
-
-msgid "Som e microfone"
-msgstr "Hang és mikrofon"
-
-msgid "Configurar ou alterar dispositivos de entrada e saída de áudio. (Ex: HDMI)"
-msgstr "Audió bemeneti és kimeneti eszközök konfigurálása vagy módosítása (pl.: HDMI)"
-
-msgid "Gerenciar arquivos"
-msgstr "Fájlok kezelése"
-
-msgid "Tenha acesso a seus arquivos e pastas."
-msgstr "Hozzáférés a fájlokhoz és mappákhoz."
-
-msgid "Qt Assistant"
-msgstr "Qt asszisztens"
-
-msgid "Programas de desenvolvimento para QT."
-msgstr "Fejlesztési programok a QT számára."
-
-msgid "Configurações de uso dos antigos CDs de música, não são válidas para músicas em MP3."
-msgstr "A régi zenei CD-k használati beállításai nem érvényesek az MP3 zenére."
-
-msgid "Procurar servidores (zeroconf)"
-msgstr "Keresés szerverek (zeroconf)"
-
-msgid "Gerenciador de usuários"
-msgstr "Felhasználó menedzser"
-
-msgid "Adiciona, remove ou edita usuários e grupos do sistema."
-msgstr "Rendszerfelhasználók és csoportok hozzáadása, eltávolítása vagy szerkesztése."
-
-msgid "Gerenciar conexões"
-msgstr "Kapcsolatok kezelése"
-
-msgid ""
-"Configuração avançada de rede (VPN, wifi, cabeada, IP fixo, PPPoE, ADSL, rede com fio, banda larga "
-"móvel e outros)."
-msgstr ""
-"Fejlett hálózati konfiguráció (VPN, wifi, vezetékes, fix IP, PPPoE, ADSL, vezetékes hálózat, mobil "
-"szélessávú hálózat és egyéb)."
-
-msgid "Ativar a pesquisa aumenta o consumo de memória e processamento do sistema."
-msgstr "A keresés aktiválása növeli a rendszer memória- és feldolgozási igényét."
-
-msgid "Configurações de layout, teclas de atalho e outras opções."
-msgstr "Elrendezési beállítások, gyorsbillentyűk és egyéb opciók."
-
-msgid "Configurar o tema Kvantum"
-msgstr "A Kvantum téma konfigurálása"
-
-msgid "Para a configuração do Kvantum funcionar, aplique o tema Kvantum em 'Estilo do aplicativo'."
-msgstr ""
-"Ahhoz, hogy a Kvantum konfiguráció működjön, alkalmazza a Kvantum témát az 'Application Style' "
-"alatt."
-
-msgid "Integração com Google Drive e ownCloud"
-msgstr "Integráció a Google Drive és az ownCloud rendszerrel"
-
-msgid "Acesse seus arquivos que estão no Google Drive ou ownCloud diretamente no gerenciador de arquivos."
-msgstr "A Google Drive-ban vagy ownCloudban lévő fájlokat közvetlenül a fájlkezelőből érheti el."
-
-msgid "Montar Hardware Apple"
-msgstr "Apple hardver összeszerelése"
-
-msgid ""
-"Com esse programa você pode acessar os programas do seu iPhone ou iPad Apple de forma similar ao "
-"acesso de arquivos em um pendrive."
-msgstr ""
-"Ezzel a programmal az Apple iPhone vagy iPad készülékén lévő programokhoz hasonló módon férhet "
-"hozzá, mintha egy USB-pendrive-on lévő fájlokat érne el."
-
-msgid "Terminal"
-msgstr "Terminál"
-
-msgid "Acesse o terminal de comandos."
-msgstr "Lépjen be a parancsterminálba."
-
-msgid "Joystick"
-msgstr "Joystick"
-
-msgid "Restaurar a configuração de programas"
-msgstr "A program konfigurációjának visszaállítása"
-
-msgid "Qt Designer"
-msgstr "Qt tervező"
-
-msgid "Áreas de trabalho virtuais e atividades"
-msgstr "Virtuális munkaterületek és tevékenységek"
-
-msgid "Crie mais de uma área de trabalho vitual alternando entre elas."
-msgstr "Egynél több virtuális asztal létrehozása a köztük való váltogatással."
-
-msgid "Lixeira"
-msgstr "Lomtár"
-
-msgid "Configurador avançado de energia"
-msgstr "Fejlett teljesítmény-konfigurátor"
-
-msgid "Configurar o AppimageLauncher"
-msgstr "Az AppimageLauncher konfigurálása"
-
-msgid "Escolher o comportamento dos programas disponibilizados em .appimage"
-msgstr "Válassza ki a .appimage-ben elérhető programok viselkedését"
-
-msgid ""
-"Utilitário que facilita a restauração do sistema instalado, principalmente a restauração do boot do "
-"sistema (Grub). Também pode ser utilizado para acessar o gerenciador de pacotes e o terminal do "
-"sistema instalado."
-msgstr ""
-"Segédprogram, amely megkönnyíti a telepített rendszer helyreállítását, elsősorban a rendszerindítás "
-"(Grub) helyreállítását. Használható a csomagkezelő és a telepített rendszerterminál elérésére is."
-
-msgid "Firewall"
-msgstr "Tűzfal"
-
-msgid "Configurar regras de segurança para a conexão com a internet."
-msgstr "Az internetkapcsolat biztonsági szabályainak konfigurálása."
-
-msgid "Gerenciador de senhas"
-msgstr "Jelszókezelő"
-
-msgid "Instalar, configurar ou remover impressoras."
-msgstr "Nyomtatók telepítése, konfigurálása vagy eltávolítása."
-
-msgid "Qt QDBusViewer "
-msgstr "Qt QDBusViewer "
-
-msgid "Procurar servidores VNC"
-msgstr "VNC-kiszolgálók keresése"
-
-msgid "Temas do Bootsplash"
-msgstr "Bootsplash témák"
-
-msgid "Particionar ou formatar"
-msgstr "Partícionálás vagy formázás"
-
-msgid "Cuidado, este programa poderá apagar todos os dados do computador."
-msgstr "Vigyázzon, ez a program törölheti a számítógépén lévő összes adatot."
-
-msgid "Instalar ou remover programas."
-msgstr "Programok telepítése vagy eltávolítása."
-
-msgid "Gerenciador de áudio avançado - Alsamixer"
-msgstr "Advanced Audio Manager - Alsamixer"
-
-msgid "Controlador de áudio em caso de ausência som."
-msgstr "Hangvezérlő hang hiánya esetén."
-
-msgid "Qt Linguist"
-msgstr "Qt nyelvész"
-
-msgid "Equalizador (DSP)"
-msgstr "Egyenlítő (DSP)"
-
-msgid "Configurar webcam ou placa de captura"
-msgstr "Webkamera vagy rögzítőkártya beállítása"
-
-msgid "Centro de controle do KDE"
-msgstr "KDE Vezérlőközpont"
-
-msgid "Procurar servidores SSH"
-msgstr "SSH-kiszolgálók böngészése"
-
-msgid "Gerenciar serviços (Systemd)"
-msgstr "Szolgáltatások kezelése (Systemd)"
-
-msgid "Configurar este tema de janelas."
-msgstr "Konfigurálja ezt a Windows-témát."
-
-msgid ""
-"Esse programa pode transferir arquivos entre smartphones, tablets e outros computadores.  Com ele "
-"você pode, por exemplo, utilizar  seu smartphone como mouse e teclado sem fio para controlar o "
-"computador, entre outros recursos.  Ele se integra melhor ao BigLinux e fica entre os applets "
-"localizados perto do relógio do sistema. Para sincronizar com o seu smartphone acesse a Google "
-"Store ou Apple Store e instale o Kde Connect."
-msgstr ""
-"Ez a program képes fájlok átvitelére okostelefonok, táblagépek és más számítógépek között.  "
-"Segítségével többek között az okostelefonját egérként és vezeték nélküli billentyűzetként "
-"használhatja a számítógép vezérlésére.  Jobban integrálódik a BigLinuxba, és a rendszeróra "
-"közelében található appletek között van. Az okostelefonnal való szinkronizáláshoz látogasson el a "
-"Google Store vagy az Apple Store áruházba, és telepítse a Kde Connectet."
-
-msgid "Configurar este tema de borda de janelas"
-msgstr "Az ablakok határának témájának beállítása"
-
-msgid "Carteira de senhas do KDE"
-msgstr "KDE Jelszó tárca"
-
-msgid "Impressoras HP"
-msgstr "HP nyomtatók"
-
-msgid "Verificar o status, nível de tinta e manutenção."
-msgstr "Ellenőrizze az állapotot, a tintaszintet és a karbantartást."
-
-msgid "Tema da Área de Trabalho"
-msgstr "Munkaterület téma"
-
-msgid "Ícones e emoticons"
-msgstr "Ikonok és hangulatjelek"
-
-msgid "Ajuste a data, hora e fuso horário."
-msgstr "Állítsa be a dátumot, az időt és az időzónát."
-
-msgid "Informações de armazenamento (SMART)"
-msgstr "Tárolási információk (SMART)"
-
-msgid "Controle o brilho e as cores"
-msgstr "A fényerő és a színek szabályozása"
-
-msgid "Brilho e cor"
-msgstr "Fény és szín"
-
-msgid "Scanners HP"
-msgstr "HP szkennerek"
-
-msgid "Aguarde, criando arquivos de cache..."
-msgstr "Készenlétben állunk, cache fájlok létrehozása..."
-
-msgid "As configurações da tela foram resetadas."
-msgstr "A képernyőbeállítások visszaállítása megtörtént."
-
-msgid "Configurações da tela"
-msgstr "Képernyőbeállítások"
-
-msgid "Categorias"
-msgstr "Kategóriák"
-
-msgid "Principais"
-msgstr "Főoldal"
-
-msgid "Sistema"
-msgstr "Rendszer"
-
-msgid "Aparência"
-msgstr "Megjelenés"
-
-msgid "Dispositivos"
-msgstr "Eszközök"
-
-msgid "Personalizar"
-msgstr "Testreszabás"
-
-msgid "Telefone"
-msgstr "Telefon"
-
-msgid "Multimídia"
-msgstr "Multimédia"
-
-msgid "Rede e Internet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Main"
+msgstr "Fő"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Network and Internet"
 msgstr "Hálózat és internet"
 
-msgid "Contas"
-msgstr "Számlák"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Phone"
+msgstr "Telefon"
 
-msgid "Região e Idioma"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Customize"
+msgstr "Testreszab"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Region and Language"
 msgstr "Régió és nyelv"
 
-msgid "Privacidade"
-msgstr "Adatvédelem"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Multimedia"
+msgstr "Multimédia"
 
-msgid "Servidor"
-msgstr "Szerver"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Accounts"
+msgstr "Számlák"
 
-msgid "Desenvolvimento"
-msgstr "Fejlesztés"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Devices"
+msgstr "Eszközök"
 
-msgid "Sobre"
-msgstr "A  oldalról"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "System"
+msgstr "Rendszer"
 
-msgid "Outros"
-msgstr "Egyéb"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "About"
+msgstr "Körülbelül"
 
-msgid "Pesquisar..."
-msgstr "Keresés..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Other"
+msgstr "Más"
 
-msgid "Resultado da pesquisa"
-msgstr "Keresés eredménye"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Android-eszköz internetének használata Linuxon USB-n keresztül"
 
-msgid "Fechar"
-msgstr "Zárja be a"
-
-msgid "Abrir"
-msgstr "Nyissa meg a  címet"
-
-msgid "Temas, desktop e ajustes"
-msgstr "Témák, asztal és beállítások"
-
-msgid "Lista com alguns programas do sistema que você pode restaurar a configuração com um clique."
-msgstr "Lista néhány rendszerprogrammal, amelyekkel egy kattintással visszaállíthatja a konfigurációt."
-
-msgid "Informações do sistema e hardware"
-msgstr "Rendszer- és hardverinformációk"
-
-msgid "Além de visualizar as informações é possível salvar em um arquivo e compartilhar na internet."
-msgstr ""
-"Az információk megtekintése mellett lehetőség van azok fájlba mentésére és internetes megosztására "
-"is."
-
-msgid "Conectar à internet"
-msgstr "Csatlakozás az internethez"
-
-msgid "Conecte na internet por cabo de rede ou wifi."
-msgstr "Csatlakozzon az internethez hálózati kábelen vagy wifin keresztül."
-
-msgid "Conectar à internet utilizando o Android"
-msgstr "Csatlakozás az internethez Android segítségével"
-
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Você pode utilizar seu smartphone ou tablet Android como um dispositivo wifi usb para seu "
-"computador."
-msgstr "Android okostelefonját vagy táblagépét wifi usb eszközként használhatja számítógépéhez."
-
-msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>\n"
-"1. Plugue o dispositivo na USB do computador;\n"
-"<br>\n"
-"2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: 'Vínculo "
-"USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>\n"
-"São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>\n"
-"*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
-"<br><br>\n"
-"Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
-"dispositivo Android.\n"
-"<br>\n"
-"*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
+"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
+"follow these steps:"
 msgstr ""
-"Hogyan használhatod az internetet Android táblagépedről vagy okostelefonodról:\n"
-"<br><br>\n"
-"1. Csatlakoztassa a készüléket a számítógép USB-portjához;\n"
-"<br>\n"
-"2. Menj az Android készüléked beállításaihoz, és keress néhány lehetőséget: \"USB bonding\", \"USB "
-"tethering\" vagy \"USB Tethering\".\n"
-"<br>\n"
-"Ezek különböző módok, amelyeket az egyes gyártók ugyanarra a funkcióra használnak.\n"
-"<br><br>\n"
-"*Ezek a lehetőségek a \"Hálózat és internet\" vagy a \"Kapcsolatok és megosztás\" szakaszban "
-"találhatók.\n"
-"<br><br>\n"
-"Aktiválásával automatikusan csatlakozik, és ugyanazt a kapcsolatot fogja használni, mint az Android "
-"készülék.\n"
-"<br>\n"
-"*Ha mobiladatokat használ, akkor az adatcsomagjából fog fogyasztani."
+"Ha USB-kábellel szeretné megosztani Android okostelefonja internetkapcsolatát Linux rendszerű "
+"számítógéppel, kövesse az alábbi lépéseket:"
 
-msgid "Visualizar informações do sistema e hardware"
-msgstr "Rendszer- és hardverinformációk megtekintése"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Csatlakoztassa Android okostelefonját a Linux számítógéphez USB-kábellel."
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Também cria um arquivo com informações, que você pode enviar a outras pessoas para que o ajudem com "
-"o suporte."
+"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
+"Sharing'."
 msgstr ""
-"Emellett létrehoz egy fájlt is az információkkal, amelyet elküldhet másoknak, hogy segítsenek a "
-"támogatásban."
+"Nyissa meg okostelefonján a \"Beállítások\" elemet, és navigáljon a \"Hálózat és internet\" vagy a "
+"\"Kapcsolatok és megosztás\" elemre."
 
-msgid "Adicionar ou Remover Usuários"
-msgstr "Felhasználók hozzáadása vagy eltávolítása"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Keresse meg az \"USB Tethering\", \"USB Tether\" vagy hasonló kifejezéseket, és engedélyezze azt."
 
-msgid "Criar, remover e gerenciar contas e grupos de usuários."
-msgstr "Felhasználói fiókok és csoportok létrehozása, eltávolítása és kezelése."
-
-msgid "Economia de energia"
-msgstr "Energiatakarékosság"
-
-msgid "Monitores e Telas"
-msgstr "Monitorok és képernyők"
-
-msgid "Configurar resolução, cor, frequência, dpi, escala, cor noturna, etc."
-msgstr "Felbontás, szín, frekvencia, dpi, skála, éjszakai szín stb. beállítása."
-
-msgid "Resetar as configurações da tela"
-msgstr "A képernyőbeállítások visszaállítása"
-
-msgid "Restaurar a configuração padrão do monitor."
-msgstr "Az alapértelmezett monitor-konfiguráció visszaállítása."
-
-msgid "Airmore"
-msgstr "Airmore"
-
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Instale o aplicativo Airmore na loja de aplicativos do seu smartphone.  Utilize esse botão para "
-"abrir o site do Airmore nesse computador.  Leia o QRcode que será exibido na tela do seu computador "
-"utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito mais.  "
-"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Telepítse az Airmore alkalmazást okostelefonja alkalmazásboltjából.  Ezzel a gombbal megnyithatja "
-"az Airmore weboldalát az adott számítógépen.  Olvassa el a számítógép képernyőjén megjelenő "
-"QR-kódot az okostelefonján lévő alkalmazással, és férjen hozzá a fájlátvitelhez és még sok máshoz.  "
-"Használhatja webes alkalmazáskezelőnket is, hogy megkönnyítse az oldal használatát."
+"Ha Android-eszköze nem csatlakozik Wi-Fi-hálózathoz, és mobiladat-forgalmat használ, ez az "
+"internetmegosztás a mobil-előfizetésből származó adatokat fogyasztja. Az adatforgalmi díjak "
+"elkerülése érdekében az internetmegosztás engedélyezése előtt győződjön meg arról, hogy "
+"Android-eszköze Wi-Fi-hálózathoz csatlakozik."
 
-msgid "Airdroid"
-msgstr "Airdroid"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Close"
+msgstr "Bezár"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Az iOS-eszköz internetének használata Linuxon USB-n keresztül"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Instale o aplicativo Airdroid na loja de aplicativos do seu smartphone.  Utilize esse botão para "
-"abrir o site do Airdroid nesse computador.  Leia o QRcode que será exibido na tela do seu "
-"computador utilizando o aplicativo no smartphone e tenha acesso a transferência de arquivos e muito "
-"mais.  Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
+"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
 msgstr ""
-"Telepítse az Airdroid alkalmazást okostelefonja alkalmazásboltjából.  Ezzel a gombbal megnyithatja "
-"az Airdroid webhelyét az adott számítógépen.  Olvassa el a számítógép képernyőjén megjelenő "
-"QR-kódot az okostelefonján lévő alkalmazással, és férjen hozzá a fájlátvitelhez és még sok máshoz.  "
-"Használhatja a webes alkalmazáskezelőnket is, hogy megkönnyítse az oldal használatát."
+"Ha USB-kábellel szeretné megosztani iOS okostelefonja internetkapcsolatát Linux rendszerű "
+"számítógéppel, kövesse az alábbi lépéseket:"
 
-msgid "Suporte a aplicativos Android"
-msgstr "Android alkalmazások támogatása"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Csatlakoztassa iOS-eszközét a Linux számítógéphez USB-kábellel."
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr ""
+"iOS-készülékén lépjen a \"Beállítások\" menüpontba, majd válassza a \"Személyes hotspot\" "
+"lehetőséget."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"Utilizando Waydroid abra programas de Android no BigLinux. *Este recurso ainda está em fase "
-"experimental."
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
 msgstr ""
-"Waydroid használata Android programok megnyitására BigLinuxon. *Ez a funkció még kísérleti "
-"szakaszban van."
+"Engedélyezze a \"Mások csatlakozásának engedélyezése\" lehetőséget. Ez automatikusan engedélyezheti "
+"az \"USB-internetmegosztást\", ha USB-kapcsolatot észlel."
 
-msgid "Instalar drivers e firmwares"
-msgstr "Illesztőprogramok és firmware telepítése"
-
-msgid "Snapshots e backups"
-msgstr "Pillanatképek és biztonsági mentések"
-
-msgid "Gerenciar pontos de restauração."
-msgstr "Visszaállítási pontok kezelése."
-
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/index.html, line: 0
 msgid ""
-"A partição que o sistema foi instalado não possui pontos de restauração, mas é possível fazer "
-"backups utilizando o método rsync."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"A partíció, ahová a rendszert telepítették, nem rendelkezik visszaállítási pontokkal, de az rsync "
-"módszerrel készíthetünk biztonsági mentéseket."
+"Ha iOS-készüléke nem csatlakozik Wi-Fi-hálózathoz, és mobiladat-forgalmat használ, ez az "
+"internetmegosztás a mobil-előfizetésből származó adatokat fogja fogyasztani. Az adatforgalmi díjak "
+"elkerülése érdekében az internetmegosztás engedélyezése előtt győződjön meg arról, hogy "
+"iOS-készüléke csatlakozik Wi-Fi-hálózathoz."
 
-msgid "Sistema em modo live. Restaure pontos de restauração do sistema instalado."
-msgstr "A rendszer élő üzemmódban. A telepített rendszer visszaállítási pontjainak visszaállítása."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+msgid "Configure AppimageLauncher"
+msgstr "Az AppimageLauncher konfigurálása"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+msgid "Choose the behavior of programs available in .appimage"
+msgstr "Az .appimage fájlban elérhető programok viselkedésének kiválasztása"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 26
+msgid "Usage settings for old music CDs are not valid for MP3 music."
+msgstr "A régi zenei CD-k használati beállításai nem érvényesek MP3 zenékre."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 31
+msgid "Search for servers (zeroconf)"
+msgstr "Kiszolgálók keresése (zeroconf)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+msgid "Restore program configuration"
+msgstr "Programkonfiguráció visszaállítása"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 37
+msgid "biglinux-config"
+msgstr "biglinux-config"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 42
 msgid ""
-"Selecione o texto desejado e utilize o atalho com a tecla [Meta] + V ou o ícone no menu do sistema "
-"para que textos escritos sejam falados."
+"Utility that facilitates the restoration of the installed system, mainly restoring the system boot "
+"(Grub). It can also be used to access the package manager and terminal of the installed system."
 msgstr ""
-"Válassza ki a kívánt szöveget, és a [Meta] + V billentyűkombinációval vagy a rendszermenüben "
-"található ikon segítségével szólaltassa meg az írott szövegeket."
-
-msgid "Instalar versões de kernel e mesa"
-msgstr "Kernel és asztali verziók telepítése"
-
-msgid "Regras de segurança do Java"
-msgstr "Java biztonsági szabályok"
-
-msgid "OpenJDK Java 8 Policy Tool"
-msgstr "OpenJDK Java 8 házirend eszköz"
-
-msgid "Snapdrop (Não precisa de aplicativo)"
-msgstr "Snapdrop (Nem szükséges alkalmazás)"
-
-msgid ""
-"Basta abrir o site https://snapdrop.net nos Hardware que você quer transferir os arquivos, "
-"automaticamente eles serão detectados e você poderá enviar os arquivos que desejar.  Utilize esse "
-"botão para abrir o site do Snapdrop nesse computador.  O Snapdrop pode ser utilizado em qualquer "
-"smartphone ou computador  Inclusive transferindo arquivos diretamente de um smartphone para outro.  "
-"Você também pode utilizar nosso gerenciador de Web apps para facilitar o uso desse site."
-msgstr ""
-"Csak nyissa meg a https://snapdrop.net weboldalt a Hardver, amit át akarja adni a fájlokat, "
-"automatikusan felismeri őket, és elküldheti a kívánt fájlokat.  Ezzel a gombbal megnyithatja a "
-"Snapdrop webhelyét az adott számítógépen.  A Snapdrop bármilyen okostelefonon vagy számítógépen "
-"használható, beleértve a fájlok közvetlen átvitelét egyik okostelefonról a másikra.  A "
-"webalkalmazás-kezelőnket is használhatja, hogy megkönnyítse a weboldal használatát."
-
-msgid "ID do Android:"
-msgstr "Android ID:"
-
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr "Nem sikerült lekérdezni az Android ID-t. \\Figyelmeztetés: A Waydroidnak nyitva kell lennie."
-
-msgid "Waydroid"
-msgstr "Waydroid"
-
-msgid ""
-"Ao remover as configurações os programas instalados \n"
-"dentro do Waydroid e suas configurações serão perdidas.\n"
-"\n"
-"Realmente deseja remover?"
-msgstr ""
-"A beállítások eltávolításával a telepített programok \n"
-"a Waydroid belsejében, és a beállításaid elvesznek.\n"
-"\n"
-"Tényleg el akarja távolítani?"
-
-msgid "Configurações removidas com sucesso!"
-msgstr "A beállítások sikeresen eltávolításra kerültek!"
-
-msgid "Nenhuma configuração foi removida!"
-msgstr "Egyetlen konfiguráció sem lett eltávolítva!"
-
-msgid "Não existem configurações para remover."
-msgstr "Nincsenek eltávolítandó beállítások."
-
-msgid ""
-"Deseja remover também os arquivos de configuração \n"
-"e programas instalados dentro do Waydroid?"
-msgstr ""
-"A konfigurációs fájlokat is el szeretné távolítani \n"
-"és a waydroidon belül telepített programok?"
-
-msgid "Remover"
-msgstr "Eltávolít"
-
-msgid "Maximizado"
-msgstr "Maximált"
-
-msgid "Desinstalar"
-msgstr "Eltávolítás"
-
-msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
-msgstr ""
-"Nem azonosítottam a virtualizációs technológia támogatását, ezért előfordulhat, hogy engedélyeznie "
-"kell ezt a beállítást a számítógép BIOS-ában."
-
-msgid "Utilize programas para Android no BigLinux."
-msgstr "Használja az Android programokat a BigLinux-en."
-
-msgid "Instalar o Waydroid"
-msgstr "Telepítse a Waydroidot"
-
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Telepítse a Waydroidot a Google Apps segítségével"
-
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "A letöltés körülbelül 1 GB, attól függően, hogy a kapcsolat szükséges-e."
-
-msgid "Paisagem"
-msgstr "Táj"
-
-msgid "Retrato"
-msgstr "Portré"
-
-msgid "Desativado"
-msgstr "Deaktivált"
-
-msgid "Ativado"
-msgstr "Aktivált"
-
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "A Waydroid a rendszermenüből is elindítható"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
-msgstr ""
-"Ha a 3D gyorsítás engedélyezve van az inkompatibilis hardveren, az android nem mozdul el a "
-"betöltőképernyőről"
-
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr ""
-"A 3D gyorsítás nem kompatibilis az Nvidia videokártyákon a szabadalmaztatott illesztőprogram "
-"használatával."
-
-msgid "Exibir ID do Android"
-msgstr "Android ID megjelenítése"
-
-msgid "Ativar Google Apps"
-msgstr "A Google Apps engedélyezése"
-
-msgid "Remover Configurações"
-msgstr "Beállítások eltávolítása"
-
-msgid "Desinstalar o Waydroid"
-msgstr "Távolítsa el a Waydroidot"
-
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
-msgstr ""
-"Ha a 3D gyorsítás nem kompatibilis hardveren van engedélyezve,<br>az android nem fog átjutni a "
-"betöltési képernyőn"
-
-msgid "Parar o Waydroid"
-msgstr "Állítsd meg a Waydroidot"
-
-msgid "Iniciar o Waydroid"
-msgstr "Waydroid indítása"
-
-msgid ""
-"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
-"\n"
-"Abrirei em modo de configuração.\n"
-"As alterações feitas podem ser vistas\n"
-"na imagem da sua webcam em outros programas."
-msgstr ""
-"A webkamerát már használja a program: $WEBCAM_BUSY\n"
-"\n"
-"Megnyitom konfigurációs módban.\n"
-"Az elvégzett változtatások láthatóak\n"
-"a webkamera képében más programokban."
-
-msgid "Webcam"
-msgstr "Webkamera"
-
-msgid "Category"
-msgstr "Kategória"
-
-msgid "Name"
-msgstr "Név"
-
-msgid "ID"
-msgstr "ID"
-
-msgid "Info"
-msgstr "Info"
-
-msgid ""
-"O relatório foi salvo no arquivo $FILE_TO_SAVE\n"
-"\n"
-"Deseja visualizar o relatório agora?\n"
-msgstr ""
-"A jelentés a $FILE_TO_SAVE fájlba lett mentve\n"
-"\n"
-"Szeretné most megtekinteni a jelentést?\n"
-
-msgid "Visualizar o relatório"
-msgstr "A jelentés megtekintése"
-
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo Kapcsolódó"
-
-msgid "Uso de armazenamento"
-msgstr "Tárhelyhasználat"
-
-msgid "Tema da área de trabalho"
-msgstr "Asztali téma"
-
-msgid "Aguarde..."
-msgstr "Vár..."
-
-msgid "Verificando conexão com a Internet..."
-msgstr "Az internetkapcsolat ellenőrzése..."
-
-msgid "Sem conexão com a Internet..."
-msgstr "Nincs internetkapcsolat..."
-
-msgid "Nenhuma webcam localizada."
-msgstr "Nem található webkamera."
-
-msgid "Configurações da Tela"
-msgstr "Képernyő beállítások"
-
-msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
-msgstr ""
-"A jelentést a következő fájlba mentette: $FILE_TO_SAVE\n"
-"Szeretné most megtekinteni a jelentést?"
-
-msgid "$APP"
-msgstr "$APP"
-
-msgid "Erro na criação do diretório : $bigdir"
-msgstr "Hiba történt a könyvtár létrehozásakor : $bigdir"
-
-msgid ""
-"Ao remover as configurações os programas instalados\n"
-"dentro do Waydroid e suas configurações serão perdidas.\n"
-"\n"
-"Realmente deseja remover?"
-msgstr ""
-"A beállítások eltávolításakor a telepített programok\n"
-"a Waydroid belsejében és annak beállításai elvesznek.\n"
-"\n"
-"Tényleg el akarja távolítani?"
-
-msgid ""
-"Deseja remover também os arquivos de configuração\n"
-"e programas instalados dentro do Waydroid?"
-msgstr ""
-"A konfigurációs fájlokat is el szeretné távolítani\n"
-"és a Waydroidon belül telepített programok?"
-
-msgid ""
-"Como utilizar a internet do seu tablet ou  smartphone Android:\n"
-"<br><br>1. Plugue o dispositivo na USB do computador;\n"
-"<br>2. Acesse as Configurações do seu dispositivo Android e procure por algumas das opções: "
-"'Vínculo USB', 'Ancoragem USB' ou 'USB Tethering'.\n"
-"<br>São formas diferentes que cada fabricante utiliza para o mesmo recurso.\n"
-"<br><br>*Essas opções estão dentro da sessão 'Rede e Internet' ou 'Conexões e compartilhamento'.\n"
-"<br><br>Ao ativar será conectado automaticamente, e você estará utilizando a mesma conexão do seu "
-"dispositivo Android.\n"
-"<br>*Caso esteja utilizando o dados móveis, será consumido do seu plano de dados."
-msgstr ""
-"Az internet használata Android táblagépről vagy okostelefonról:<br><br>1. Csatlakoztassa az eszközt "
-"a számítógép USB-jéhez;<br>2. Nyissa meg Android-eszköze beállításait, és keressen néhány "
-"lehetőséget: \"USB Link\", \"USB Anchor\" vagy \"USB Tethering\".<br>Ezek különböző formák, "
-"amelyeket minden gyártó ugyanarra a funkcióra használ.<br><br>*Ezek a lehetőségek a \"Hálózat és "
-"internet\" vagy a \"Kapcsolatok és megosztás\" részben találhatók.<br><br>Aktiváláskor "
-"automatikusan csatlakozik, és ugyanazt a kapcsolatot fogja használni, mint az "
-"Android-eszköz.<br>*Ha mobiladat-forgalmat használ, akkor azt az adatcsomagjából fogyasztja el."
-
-msgid "Aguardando pela finalização do reload"
-msgstr "Várakozás az újratöltés befejezésére"
-
-msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr ""
-"A beállítások eltávolításával a Waydroidba telepített programok és beállításaik elvesznek. Tényleg "
-"el akarja távolítani?"
-
-msgid "Custom"
-msgstr "Szokás"
-
-msgid "A webcam já está sendo utilizada pelo programa: "
-msgstr "A webkamerát már használja a program: "
-
-msgid "Abrirei em modo de configuração. "
-msgstr "Megnyitom konfigurációs módban. "
-
-msgid "As alterações feitas podem ser vistas"
-msgstr "A végrehajtott változtatások láthatók"
-
-msgid "na imagem da sua webcam em outros programas."
-msgstr "a webkamera képében más programokban."
-
-msgid "Resolução"
-msgstr "Felbontás"
-
-msgid "Aceleração 3D"
-msgstr "3D gyorsítás"
-
-msgid "PlayStore"
-msgstr "PlayStore"
-
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
-msgstr ""
-"A PlayStore aktiválásához kattintson a (View Android ID) elemre, és másolja az Android ID-t, majd "
-"kattintson a (Google Apps engedélyezése) gombra az Eszközregisztráció oldal megnyitásához, be kell "
-"jelentkeznie Google-fiókjába, be kell jelentkeznie Android-azonosítójába és regisztrálnia kell. Az "
-"aktiválás eltarthat néhány percig a Waydroidon. Zárja be, majd nyissa meg újra. Kész!"
-
-msgid "Central de Controle - Webcam"
-msgstr "Vezérlőközpont - Webkamera"
-
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "A webkamerát már használják az alkalmazások: "
-
+"Segédprogram, amely megkönnyíti a telepített rendszer helyreállítását, főleg a rendszerindítás "
+"helyreállítását (Grub). Használható a telepített rendszer csomagkezelőjének és termináljának "
+"elérésére is."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 51
+msgid "Themes, Desktop and Tweaks"
+msgstr "Témák, asztal és csípések"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr "Teljes konfigurációkat kínálunk Önnek, amelyeket rendkívül egyszerű módon választhat ki."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
+msgid "Install or remove programs."
+msgstr "Programok telepítése és eltávolítása."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 62
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 63
+msgid "Introduction to BigLinux"
+msgstr "Bevezetés a BigLinuxba"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 70
+msgid "Themes to Bootsplash"
+msgstr "Témák a Bootsplash-hez"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
+msgid "Brightness and color"
+msgstr "Fényerő és szín"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 76
+msgid "Control brightness and colors"
+msgstr "A fényerő és a színek szabályozása"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+msgid "Search for SSH servers"
+msgstr "SSH-kiszolgálók keresése"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+msgid "Search for VNC servers"
+msgstr "VNC-kiszolgálók keresése"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 92
+msgid "Configure this window border theme"
+msgstr "Az ablakszegély témájának konfigurálása"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 97
+msgid "Configure this windows theme."
+msgstr "Konfigurálja ezt a Windows-témát."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "Fejlett hangkezelő - Alsamixer"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 116
+msgid "Audio controller in case of no sound."
+msgstr "Hangvezérlő hang nélkül."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 126
+msgid "Partition or format"
+msgstr "Partíció vagy formátum"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 127
+msgid "Be careful, this program may erase all data on your computer."
+msgstr "Legyen óvatos, ez a program törölheti a számítógép összes adatát."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 132
+msgid "Storage Information (SMART)"
+msgstr "Tárolási információk (SMART)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 141
 msgid "Gufw Firewall"
 msgstr "Gufw tűzfal"
 
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 142
+msgid "Configure security rules for the internet connection."
+msgstr "Konfigurálja az internetkapcsolat biztonsági szabályait."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+msgid "Configure webcam or capture card"
+msgstr "Webkamera vagy rögzítőkártya konfigurálása"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 157
+msgid "HP printers"
+msgstr "HP nyomtatók"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 158
+msgid "Check status, ink level and maintenance."
+msgstr "Ellenőrizze az állapotot, a tintaszintet és a karbantartást."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 164
+msgid "Scanners HP"
+msgstr "HP szkennerek"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 169
+msgid "Assemble Apple Hardware"
+msgstr "Az Apple hardver összeszerelése"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
+msgid ""
+"With this program you can access programs on your Apple iPhone or iPad in a similar way to "
+"accessing files on a pendrive."
+msgstr ""
+"Ezzel a programmal az Apple iPhone vagy iPad programjait hasonló módon érheti el, mint az "
+"USB-meghajtón lévő fájlok elérését."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 176
+msgid "Connect to the internet using Android"
+msgstr "Csatlakozzon az internethez Android használatával"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+msgid "Connect to Internet"
+msgstr "Csatlakozás az internethez"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 192
+msgid "Connect to the internet using iOS"
+msgstr "Csatlakozás az internethez iOS használatával"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 198
+msgid "Equalizer (DSP)"
+msgstr "Hangszínszabályzó (DSP)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+msgid "Virtual desktops and activities"
+msgstr "Virtuális asztalok és tevékenységek"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 212
+msgid "Create more than one virtual desktop by switching between them."
+msgstr "Hozzon létre egynél több virtuális asztalt a közöttük való váltással."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
+msgid "Enabling search increases system memory and processing consumption."
+msgstr "A keresés engedélyezése növeli a rendszermemóriát és a feldolgozási fogyasztást."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
+msgid "Adjust the date, time and time zone."
+msgstr "Állítsa be a dátumot, az időt és az időzónát."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
 msgid "Plasma Firewall"
 msgstr "Plazma tűzfal"
 
-msgid "Configurar regras de segurança para conexões. Este firewall é baseado na infraestrutura do Gufw"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 273
+msgid "Configure security rules for connections. This firewall is based on the Gufw infrastructure"
 msgstr "Biztonsági szabályok konfigurálása kapcsolatokhoz. Ez a tűzfal a Gufw infrastruktúrán alapul"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 292
+msgid "Integration with Google Drive and ownCloud"
+msgstr "Integráció a Google Drive-val és az ownClouddal"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 293
+msgid "Access your files that are on Google Drive or ownCloud directly from the file manager."
+msgstr "A Google Drive-on vagy az ownCloud-on található fájljait közvetlenül a fájlkezelőből érheti el."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 307
+msgid "Layout settings, hotkeys and other options."
+msgstr "Elrendezési beállítások, gyorsbillentyűk és egyéb lehetőségek."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 342
+msgid "Manage connections"
+msgstr "Kapcsolatok kezelése"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 343
+msgid ""
+"Advanced network configuration (VPN, wifi, wired, fixed IP, PPPoE, ADSL, wired network, mobile "
+"broadband and others)."
+msgstr ""
+"Fejlett hálózati konfiguráció (VPN, wifi, vezetékes, rögzített IP, PPPoE, ADSL, vezetékes hálózat, "
+"mobil szélessávú és mások)."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 397
+msgid "Manage services (Systemd)"
+msgstr "Szolgáltatások kezelése (Systemd)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 429
+msgid "Configure the Kvantum theme"
+msgstr "A Kvantum-téma konfigurálása"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 430
+msgid "For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."
+msgstr ""
+"Ahhoz, hogy a Kvantum-beállítás működjön, alkalmazza a Kvantum-témát az \"Alkalmazásstílus\" "
+"részben."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 435
+msgid "KDE Password Wallet"
+msgstr "KDE jelszó pénztárca"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 474
+msgid "Manage files"
+msgstr "Fájlok kezelése"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 475
+msgid "Get access to your files and folders."
+msgstr "Hozzáférés a fájlokhoz és mappákhoz."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+msgid "Storage Usage"
+msgstr "Tárhelyhasználat"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "KDE Connect"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 487
+msgid ""
+"This program can transfer files between smartphones, tablets and other computers. With it, you can, "
+"for example, use your smartphone as a wireless mouse and keyboard to control the computer, among "
+"other features. It integrates better with BigLinux and sits among the applets located near the "
+"system clock. To synchronize with your smartphone, go to the Google Store or Apple Store and "
+"install Kde Connect."
+msgstr ""
+"Ez a program fájlokat továbbíthat okostelefonok, táblagépek és más számítógépek között. Ezzel "
+"például okostelefonját vezeték nélküli egérként és billentyűzetként használhatja a számítógép "
+"vezérléséhez, többek között. Jobban integrálódik a BigLinux-szal, és a rendszeróra közelében "
+"található kisalkalmazások között helyezkedik el. Az okostelefonnal való szinkronizáláshoz lépjen a "
+"Google Store-ba vagy az Apple Store-ba, és telepítse a Kde Connect alkalmazást."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
+msgid "Terminal"
+msgstr "Terminál"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+msgid "Access the command terminal."
+msgstr "Nyissa meg a parancsterminált."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
+msgid "Password Manager"
+msgstr "Jelszókezelő"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+msgid "Sound and microphone"
+msgstr "Hang és mikrofon"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "Hangbemeneti és -kimeneti eszközök konfigurálása vagy módosítása. (Pl.: HDMI)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 540
+msgid "Shared file information"
+msgstr "Megosztott fájlok adatai"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+msgid "Printers"
+msgstr "Nyomtatók"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+msgid "Install, configure or remove printers."
+msgstr "Nyomtatók telepítése, konfigurálása vagy eltávolítása."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+msgid "KDE Control Center"
+msgstr "KDE vezérlőközpont"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 557
+msgid "Advanced power configurator"
+msgstr "Fejlett teljesítménykonfigurátor"
