@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Simplify when open Plasma configurations, without open all systemsettings
+
+if [ -z "$1" ]; then
+    /usr/bin/systemsettings
+else
+    kcmshell6 "$@"
+fi
