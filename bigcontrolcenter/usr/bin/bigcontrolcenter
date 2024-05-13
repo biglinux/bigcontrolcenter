@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 cd /usr/share/bigbashview/apps/bigcontrolcenter/
-bigbashview -s 1000x580 -c transparent -w frameless index.html
+bigbashview -s 1000x580 -n bigcontrolcenter -p bigcontrolcenter -c transparent -w frameless index.html

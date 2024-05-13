@@ -48,7 +48,7 @@ function sh_config {
 }
 
 function sh_main {
-	bigbashview -s 1000x660 main.sh.htm -n $"Introdução ao BigLinux" -i big-logo.png -d "/usr/share/bigbashview/bcc/apps/big-welcome"
+	bigbashview -s 1000x660 main.sh.htm -n $"Introdução ao BigLinux" -p big-welcome -i big-logo.png -d "/usr/share/bigbashview/bcc/apps/big-welcome"
 }
 
 #sh_debug
