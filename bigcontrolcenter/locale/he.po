@@ -1,0 +1,464 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bigcontrolcenter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bigcontrolcenter\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "search"
+msgstr "חיפוש"
+
+msgid "Control Center"
+msgstr "מרכז בקרה"
+
+msgid "Main"
+msgstr "ראשי"
+
+msgid "Network and Internet"
+msgstr "רשת ואינטרנט"
+
+msgid "Phone"
+msgstr "טלפון"
+
+msgid "Customize"
+msgstr "התאמה אישית"
+
+msgid "Region and Language"
+msgstr "אזור ושפה"
+
+msgid "Multimedia"
+msgstr "מולטימדיה"
+
+msgid "Accounts"
+msgstr "חשבונות"
+
+msgid "Devices"
+msgstr "התקן"
+
+msgid "System"
+msgstr "מערכת"
+
+msgid "About"
+msgstr "אודות"
+
+msgid "Other"
+msgstr "אחר"
+
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "שימוש באינטרנט של המכשיר האנדרואיד שלך ב-Linux דרך USB"
+
+msgid ""
+"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
+"follow these steps:"
+msgstr ""
+"כדי לשתף את חיבור האינטרנט של הסמארטפון שלך המשתמש במערכת ההפעלה אנדרואיד עם מחשב לינוקס באמצעות "
+"כבל USB, עקוב אחר השלבים הבאים:"
+
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "חבר את הסמארטפון שלך המרובה למחשב הלינוקס באמצעות כבל USB."
+
+msgid ""
+"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
+"Sharing'."
+msgstr "על הסמארטפון שלך, פתח את 'הגדרות' ונווט אל 'רשת ואינטרנט' או 'חיבורים ושיתוף'."
+
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "חפש 'שיתוף גישה באמצעות USB', 'שיתוף גישה USB', או מונחים דומים והפעל אותם."
+
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"אם המכשיר שלך ב-Android אינו מחובר לרשת Wi-Fi ומשתמש בנתונים סלולריים, השימוש בטתרינג יצרוך נתונים "
+"מתוך תוכנית הנתונים הסלולרית שלך. כדי למנוע חיובים נוספים, וודא שהמכשיר שלך מחובר לרשת Wi-Fi לפני "
+"הפעלת הטתרינג."
+
+msgid "Close"
+msgstr "סגור"
+
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "שימוש באינטרנט של המכשיר שלך ב-IOS על Linux דרך USB"
+
+msgid ""
+"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr ""
+"כדי לשתף את חיבור האינטרנט של הטלפון החכם שלך במערכת ההפעלה Linux באמצעות כבל USB, עקוב אחר השלבים "
+"הבאים:"
+
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "חבר את המכשיר שלך המשתמש במערכת ההפעלה iOS למחשב המשתמש במערכת ההפעלה Linux באמצעות כבל USB."
+
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "על המכשיר שלך ב- iOS, עבור ל 'הגדרות', ואז בחר 'נקודת גישה אישית'."
+
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr ""
+"הפעל 'אפשר לאחרים להצטרף'. זה עשוי להפעיל באופן אוטומטי 'שיתוף גישה לאינטרנט דרך USB' אם גילו חיבור "
+"USB."
+
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"אם המכשיר שלך במערכת ה-iOS אינו מחובר לרשת Wi-Fi ומשתמש בנתונים ניידים, השימוש בטתרינג יצרוך נתונים "
+"מתוך תוכנית הנתונים הניידים שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך מחובר לרשת Wi-Fi לפני "
+"הפעלת הטתרינג."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+msgid "Configure AppimageLauncher"
+msgstr "הגדר AppimageLauncher"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+msgid "Choose the behavior of programs available in .appimage"
+msgstr "בחר את ההתנהגות של התוכניות הזמינות ב־.appimage"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 26
+msgid "Usage settings for old music CDs are not valid for MP3 music."
+msgstr "הגדרות השימוש עבור תקליטי מוזיקה ישנים אינן תקפות עבור מוזיקת MP3."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 31
+msgid "Search for servers (zeroconf)"
+msgstr "חפש שרתים (zeroconf)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+msgid "Restore program configuration"
+msgstr "שחזור הגדרות התוכנית"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 37
+msgid "biglinux-config"
+msgstr "תצורת-biglinux"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 42
+msgid ""
+"Utility that facilitates the restoration of the installed system, mainly restoring the system boot "
+"(Grub). It can also be used to access the package manager and terminal of the installed system."
+msgstr ""
+"כלי שמקל על שחזור המערכת שמותקנת, בעיקר שחזור האתחול של המערכת (Grub). ניתן גם להשתמש בו כדי לגשת "
+"למנהל החבילות ולטרמינל של המערכת שמותקנת."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 51
+msgid "Themes, Desktop and Tweaks"
+msgstr "ערכות עיצוב, שולחן עבודה ושיפורים"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr "אנו מספקים הגדרות מלאות לבחירה בדרך קלה ביותר."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
+msgid "Install or remove programs."
+msgstr "התקן או הסר תוכניות."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 62
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 63
+msgid "Introduction to BigLinux"
+msgstr "הקדמה ל־BigLinux"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 70
+msgid "Themes to Bootsplash"
+msgstr "ערכות נושאים למסך הטעינה"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
+msgid "Brightness and color"
+msgstr "בהירות וצבע"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 76
+msgid "Control brightness and colors"
+msgstr "שליטה בבהירות ובצבעים"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+msgid "Search for SSH servers"
+msgstr "חפש שרתי SSH"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+msgid "Search for VNC servers"
+msgstr "חפש שרתי VNC"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 92
+msgid "Configure this window border theme"
+msgstr "הגדר ערכת גבולות חלון זו"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 97
+msgid "Configure this windows theme."
+msgstr "הגדר ערכת עיצוב זו של Windows."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "מנהל שמע מתקדם - Alsamixer"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 116
+msgid "Audio controller in case of no sound."
+msgstr "בקר שמע במקרה של אין קול."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 126
+msgid "Partition or format"
+msgstr "פריקה או פורמט"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 127
+msgid "Be careful, this program may erase all data on your computer."
+msgstr "זהירות, התוכנית עשויה למחוק את כל הנתונים במחשב שלך."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 132
+msgid "Storage Information (SMART)"
+msgstr "מידע אחסון (SMART)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 141
+msgid "Gufw Firewall"
+msgstr "גיבוי חומת אש"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 142
+msgid "Configure security rules for the internet connection."
+msgstr "הגדר כללי אבטחה עבור חיבור האינטרנט."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+msgid "Configure webcam or capture card"
+msgstr "הגדר מצלמת רשת או כרטיס כידוד"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 157
+msgid "HP printers"
+msgstr "מדפסות HP"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 158
+msgid "Check status, ink level and maintenance."
+msgstr "בדוק מצב, רמת דיו ותחזוקה."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 164
+msgid "Scanners HP"
+msgstr "סורקים HP"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 169
+msgid "Assemble Apple Hardware"
+msgstr "צרי ציוד חומרה של Apple"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
+msgid ""
+"With this program you can access programs on your Apple iPhone or iPad in a similar way to "
+"accessing files on a pendrive."
+msgstr "עם תוכנית זו ניתן לגשת לתוכניות ב-iPhone או iPad שלך בדרך דומה לגישה לקבצים בכונן פנימי."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 176
+msgid "Connect to the internet using Android"
+msgstr "התחבר לאינטרנט באמצעות Android"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+msgid "Connect to Internet"
+msgstr "התחבר לאינטרנט"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 192
+msgid "Connect to the internet using iOS"
+msgstr "התחבר לאינטרנט באמצעות iOS"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 198
+msgid "Equalizer (DSP)"
+msgstr "מכוון עוצמת קול"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+msgid "Virtual desktops and activities"
+msgstr "שולחנות עבודה ופעילויות וירטואליים"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 212
+msgid "Create more than one virtual desktop by switching between them."
+msgstr "צור יותר ממסך רוחבי והחלף ביניהם."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
+msgid "Enabling search increases system memory and processing consumption."
+msgstr "הפעלת החיפוש מגבירה את צריכת זיכרון המערכת ואת צריכת העיבוד."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
+msgid "Adjust the date, time and time zone."
+msgstr "כוונן את התאריך, השעה ואזור הזמן."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
+msgid "Plasma Firewall"
+msgstr "גדר אש פלזמה"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 273
+msgid "Configure security rules for connections. This firewall is based on the Gufw infrastructure"
+msgstr "הגדר כללי אבטחה עבור חיבורים. חומת האש הזו מבוססת על תשתית Gufw"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 292
+msgid "Integration with Google Drive and ownCloud"
+msgstr "אינטגרציה עם Google Drive ו-ownCloud"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 293
+msgid "Access your files that are on Google Drive or ownCloud directly from the file manager."
+msgstr "גישה לקבצים שנמצאים ב-Google Drive או ב-ownCloud ישירות מהמנהל קבצים."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 307
+msgid "Layout settings, hotkeys and other options."
+msgstr "הגדרות פריסה, מקשי חים ואפשרויות נוספות."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 342
+msgid "Manage connections"
+msgstr "ניהול חיבורים"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 343
+msgid ""
+"Advanced network configuration (VPN, wifi, wired, fixed IP, PPPoE, ADSL, wired network, mobile "
+"broadband and others)."
+msgstr "תצורת רשת מתקדמת (VPN, wifi, חוטי, כתובת IP קבועה, PPPoE, ADSL, רשת חוטית, רוחב פס נייד ואחרים)."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 397
+msgid "Manage services (Systemd)"
+msgstr "ניהול שירותים (Systemd)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 429
+msgid "Configure the Kvantum theme"
+msgstr "הגדר את ערכת העיצוב Kvantum"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 430
+msgid "For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."
+msgstr "כדי שההגדרה של Kvantum תעבוד, יש להחיל את ערכת העיצוב של Kvantum ב'סגנון אפליקציה'."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 435
+msgid "KDE Password Wallet"
+msgstr "ארון הסיסמאות של KDE"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 474
+msgid "Manage files"
+msgstr "ניהול קבצים"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 475
+msgid "Get access to your files and folders."
+msgstr "גישה לקבצים ותיקיות שלך."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+msgid "Storage Usage"
+msgstr "שימוש באחסון"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "חיבור KDE"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 487
+msgid ""
+"This program can transfer files between smartphones, tablets and other computers. With it, you can, "
+"for example, use your smartphone as a wireless mouse and keyboard to control the computer, among "
+"other features. It integrates better with BigLinux and sits among the applets located near the "
+"system clock. To synchronize with your smartphone, go to the Google Store or Apple Store and "
+"install Kde Connect."
+msgstr ""
+"תוכנית זו יכולה להעביר קבצים בין טלפונים חכמים, טאבלטים ומחשבים אחרים. עם זאת, ניתן, לדוגמה, להשתמש "
+"בטלפון החכם שלך כעכבר ומקלדת אלחוטיים כדי לשלוט במחשב, בין התכונות האחרות. הוא משתלב טוב יותר עם "
+"BigLinux ונמצא בין האפלטים הממוקמים ליד שעון המערכת. כדי לסנכרן עם הטלפון החכם שלך, עבור אל חנות "
+"Google או חנות Apple והתקן את Kde Connect."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
+msgid "Terminal"
+msgstr "טרמינל"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+msgid "Access the command terminal."
+msgstr "גש לטרמינל הפקודות."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
+msgid "Password Manager"
+msgstr "מנהל סיסמאות"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+msgid "Sound and microphone"
+msgstr "קול ומיקרופון"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "הגדר או שנה מכשירי קלט ופלט של שמע. (לדוגמה: HDMI)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 540
+msgid "Shared file information"
+msgstr "מידע קובץ משותף"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+msgid "Printers"
+msgstr "מדפסות"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+msgid "Install, configure or remove printers."
+msgstr "התקן, הגדר או הסר מדפסות."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+msgid "KDE Control Center"
+msgstr "מרכז בקרת KDE"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 557
+msgid "Advanced power configurator"
+msgstr "מגדיר הגדרות כח מתקדמות"

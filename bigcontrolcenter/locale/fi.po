@@ -1,0 +1,472 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bigcontrolcenter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bigcontrolcenter\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "search"
+msgstr "Etsi"
+
+msgid "Control Center"
+msgstr "Ohjauskeskus"
+
+msgid "Main"
+msgstr "Päävalikko"
+
+msgid "Network and Internet"
+msgstr "Verkko ja Internet"
+
+msgid "Phone"
+msgstr "Puhelin"
+
+msgid "Customize"
+msgstr "Mukauta"
+
+msgid "Region and Language"
+msgstr "Alue ja kieli"
+
+msgid "Multimedia"
+msgstr "Monimedia"
+
+msgid "Accounts"
+msgstr "Tilit"
+
+msgid "Devices"
+msgstr "Laitteet"
+
+msgid "System"
+msgstr "Järjestelmä"
+
+msgid "About"
+msgstr "Tietoja"
+
+msgid "Other"
+msgstr "Toinen"
+
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Käytä Android-laitteesi internetyhteyttä Linuxissa USB:n kautta"
+
+msgid ""
+"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
+"follow these steps:"
+msgstr ""
+"Jakaa Android-älypuhelimen internet-yhteys Linux-tietokoneen kanssa USB-kaapelin avulla, noudata "
+"näitä vaiheita:"
+
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Yhdistä Android-älypuhelimesi Linux-tietokoneeseen USB-kaapelilla."
+
+msgid ""
+"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
+"Sharing'."
+msgstr ""
+"Älypuhelimellasi avaa 'Asetukset' ja siirry kohtaan 'Verkko ja Internet' tai 'Yhteydet ja "
+"jakaminen'."
+
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Etsi 'USB-tetherointi', 'USB-tether' tai vastaavat termit ja ota se käyttöön."
+
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Jos Android-laitteesi ei ole yhteydessä Wi-Fi-verkkoon ja käyttää matkapuhelinverkon dataa, tämä "
+"jaon käyttö kuluttaa dataa matkapuhelinsuunnitelmastasi. Välttääksesi datakuluja varmista, että "
+"Android-laitteesi on yhteydessä Wi-Fi-verkkoon ennen jaon käyttöönottoa."
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Käytä iOS-laitteesi internetyhteyttä Linuxissa USB:n kautta"
+
+msgid ""
+"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr ""
+"Jakaa iOS-älypuhelimen internet-yhteys Linux-tietokoneen kanssa USB-kaapelin avulla, noudata näitä "
+"vaiheita:"
+
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Yhdistä iOS-laite Linux-tietokoneeseen USB-kaapelilla."
+
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "iOS-laitteellasi siirry kohtaan 'Asetukset', valitse sitten 'Henkilökohtainen hotspot'."
+
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr ""
+"Ota käyttöön 'Salli muiden liittyä'. Tämä saattaa automaattisesti ottaa käyttöön "
+"'USB-tetheroinnin', jos USB-yhteys havaitaan."
+
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Jos iOS-laitteesi ei ole yhteydessä Wi-Fi-verkkoon vaan käyttää mobiilidataa, tämä jaon käyttö "
+"kuluttaa dataa matkapuhelinsuunnitelmastasi. Välttääksesi datakuluja varmista, että iOS-laite on "
+"yhteydessä Wi-Fi-verkkoon ennen jaon käyttöönottoa."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+msgid "Configure AppimageLauncher"
+msgstr "Määritä AppimageLauncher"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+msgid "Choose the behavior of programs available in .appimage"
+msgstr "Valitse .appimagen ohjelmien käyttäytyminen"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 26
+msgid "Usage settings for old music CDs are not valid for MP3 music."
+msgstr "Vanhojen musiikkilevyjen käyttöasetukset eivät ole voimassa MP3-musiikille."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 31
+msgid "Search for servers (zeroconf)"
+msgstr "Hae palvelimia (zeroconf)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+msgid "Restore program configuration"
+msgstr "Palauta ohjelman asetukset"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 37
+msgid "biglinux-config"
+msgstr "biglinux-config"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 42
+msgid ""
+"Utility that facilitates the restoration of the installed system, mainly restoring the system boot "
+"(Grub). It can also be used to access the package manager and terminal of the installed system."
+msgstr ""
+"Apuohjelma, joka helpottaa asennetun järjestelmän palauttamista, pääasiassa järjestelmän "
+"käynnistyksen palauttamista (Grub). Sitä voidaan käyttää myös päästäkseen käsiksi asennetun "
+"järjestelmän paketinhallintaan ja terminaaliin."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 51
+msgid "Themes, Desktop and Tweaks"
+msgstr "Teemat, Työpöytä ja Säädöt"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr "Tarjoamme täydelliset määritykset, joita voit valita äärimmäisen yksinkertaisella tavalla."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
+msgid "Install or remove programs."
+msgstr "Asenna tai poista ohjelmia."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 62
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 63
+msgid "Introduction to BigLinux"
+msgstr "BigLinuxin esittely"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 70
+msgid "Themes to Bootsplash"
+msgstr "Teemat käynnistysnäytölle"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
+msgid "Brightness and color"
+msgstr "Kirkkaus ja väri"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 76
+msgid "Control brightness and colors"
+msgstr "Hallitse kirkkautta ja värejä"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+msgid "Search for SSH servers"
+msgstr "Etsi SSH-palvelimia"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+msgid "Search for VNC servers"
+msgstr "Etsi VNC-palvelimia"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 92
+msgid "Configure this window border theme"
+msgstr "Määritä tämän ikkunan reunusteema"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 97
+msgid "Configure this windows theme."
+msgstr "Määritä tämä Windows-teema."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "Edistynyt äänienhallinta - Alsamixer"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 116
+msgid "Audio controller in case of no sound."
+msgstr "Ääniohjain äänen puuttuessa."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 126
+msgid "Partition or format"
+msgstr "Osioi tai alusta"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 127
+msgid "Be careful, this program may erase all data on your computer."
+msgstr "Ole varovainen, tämä ohjelma saattaa poistaa kaikki tietokoneesi tiedot."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 132
+msgid "Storage Information (SMART)"
+msgstr "Tallennustiedot (SMART)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 141
+msgid "Gufw Firewall"
+msgstr "Gufw Palomuuri"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 142
+msgid "Configure security rules for the internet connection."
+msgstr "Määritä tietoturvasäännöt internet-yhteydelle."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+msgid "Configure webcam or capture card"
+msgstr "Määritä web-kamera tai tallennuskortti"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 157
+msgid "HP printers"
+msgstr "HP-tulostimet"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 158
+msgid "Check status, ink level and maintenance."
+msgstr "Tarkista tila, musteen taso ja huolto."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 164
+msgid "Scanners HP"
+msgstr "Skannerit HP"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 169
+msgid "Assemble Apple Hardware"
+msgstr "Kokoa Apple-laitteisto"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
+msgid ""
+"With this program you can access programs on your Apple iPhone or iPad in a similar way to "
+"accessing files on a pendrive."
+msgstr ""
+"Tällä ohjelmalla voit käyttää ohjelmia Apple iPhone- tai iPad-laitteellasi samalla tavalla kuin "
+"tiedostoja USB-tikulta."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 176
+msgid "Connect to the internet using Android"
+msgstr "Yhdistä internetiin Android-laitteella"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+msgid "Connect to Internet"
+msgstr "Yhdistä Internetiin"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 192
+msgid "Connect to the internet using iOS"
+msgstr "Yhdistä internetiin käyttäen iOS-laitetta"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 198
+msgid "Equalizer (DSP)"
+msgstr "Taajuuskorjain (DSP)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+msgid "Virtual desktops and activities"
+msgstr "Virtuaalityöpöydät ja toiminnot"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 212
+msgid "Create more than one virtual desktop by switching between them."
+msgstr "Luo useita virtuaalityöpöytiä vaihtamalla niiden välillä."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
+msgid "Enabling search increases system memory and processing consumption."
+msgstr "Hakutoiminnon käyttöönotto lisää järjestelmän muistin ja prosessoinnin käyttöä."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
+msgid "Adjust the date, time and time zone."
+msgstr "Säädä päivämäärä, aika ja aikavyöhyke."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
+msgid "Plasma Firewall"
+msgstr "Plasman palomuuri"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 273
+msgid "Configure security rules for connections. This firewall is based on the Gufw infrastructure"
+msgstr "Määritä turvallisuussäännöt yhteyksille. Tämä palomuuri perustuu Gufw-infrastruktuuriin"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 292
+msgid "Integration with Google Drive and ownCloud"
+msgstr "Integraatio Google Driveen ja ownCloudiin"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 293
+msgid "Access your files that are on Google Drive or ownCloud directly from the file manager."
+msgstr "Käytä tiedostojasi suoraan tiedostonhallinnasta Google Drivesta tai ownCloudista."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 307
+msgid "Layout settings, hotkeys and other options."
+msgstr "Ulkoasun asetukset, pikanäppäimet ja muut vaihtoehdot."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 342
+msgid "Manage connections"
+msgstr "Hallinnoi yhteyksiä"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 343
+msgid ""
+"Advanced network configuration (VPN, wifi, wired, fixed IP, PPPoE, ADSL, wired network, mobile "
+"broadband and others)."
+msgstr ""
+"Edistynyt verkkokonfiguraatio (VPN, langaton, kiinteä IP, PPPoE, ADSL, langallinen verkko, "
+"mobiililaajakaista ja muut)."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 397
+msgid "Manage services (Systemd)"
+msgstr "Hallinnoi palveluita (Systemd)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 429
+msgid "Configure the Kvantum theme"
+msgstr "Määritä Kvantum-teema"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 430
+msgid "For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."
+msgstr "Kvantum-asetusten toimimiseksi käytä Kvantum-teemaa 'Sovellustyyli'-osiossa."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 435
+msgid "KDE Password Wallet"
+msgstr "KDE Salasanalompakko"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 474
+msgid "Manage files"
+msgstr "Hallinnoi tiedostoja"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 475
+msgid "Get access to your files and folders."
+msgstr "Pääse käsiksi tiedostoihisi ja kansioihisi."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+msgid "Storage Usage"
+msgstr "Tallennustilan käyttö"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "KDE Yhteys"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 487
+msgid ""
+"This program can transfer files between smartphones, tablets and other computers. With it, you can, "
+"for example, use your smartphone as a wireless mouse and keyboard to control the computer, among "
+"other features. It integrates better with BigLinux and sits among the applets located near the "
+"system clock. To synchronize with your smartphone, go to the Google Store or Apple Store and "
+"install Kde Connect."
+msgstr ""
+"Tämä ohjelma voi siirtää tiedostoja älypuhelinten, tablettien ja muiden tietokoneiden välillä. Sen "
+"avulla voit esimerkiksi käyttää älypuhelintasi langattomana hiirenä ja näppäimistönä tietokoneen "
+"hallintaan, muiden ominaisuuksien lisäksi. Se integroituu paremmin BigLinuxiin ja sijoittuu "
+"applettien joukkoon lähellä järjestelmäkelloa. Synkronoidaksesi sen älypuhelimeesi, mene Google "
+"Storeen tai Apple Storeen ja asenna Kde Connect."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
+msgid "Terminal"
+msgstr "Pääte"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+msgid "Access the command terminal."
+msgstr "Avaa komentoterminali."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
+msgid "Password Manager"
+msgstr "Salasananhallinta"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+msgid "Sound and microphone"
+msgstr "Ääni ja mikrofoni"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "Määritä tai vaihda äänilähteen ja -tulolaitteita. (Esim. HDMI)"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 540
+msgid "Shared file information"
+msgstr "Jaettu tiedostotieto"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+msgid "Printers"
+msgstr "Tulostimet"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+msgid "Install, configure or remove printers."
+msgstr "Asenna, määritä tai poista tulostimet."
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+msgid "KDE Control Center"
+msgstr "KDE Hallintakeskus"
+
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 557
+msgid "Advanced power configurator"
+msgstr "Edistynyt virta-asetusten määrittäjä"
