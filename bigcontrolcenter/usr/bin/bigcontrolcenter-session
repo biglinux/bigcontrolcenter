@@ -33,20 +33,9 @@
 #  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 #  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-APP="${0##*/}"
-_VERSION_="1.0.0-20230902"
-export BOOTLOG="/tmp/bigcontrolcenter-$USER-$(date +"%d%m%Y").log"
-export LOGGER='/dev/tty8'
-LIBRARY=${LIBRARY:-'/usr/share/bigbashview/bcc/shell'}
-[[ -f "${LIBRARY}/bcclib.sh" ]] && source "${LIBRARY}/bcclib.sh"
+sed -i '/BorderlessMaximizedWindows=true/d' ~/.config/kwinrc
+/usr/lib/polkit-kde-authentication-agent-1 &
+kwin_x11 &
+cd /usr/share/bigbashview/apps/bigcontrolcenter/
 
-function sh_main {
-	sed -i '/BorderlessMaximizedWindows=true/d' ~/.config/kwinrc
-	/usr/lib/polkit-kde-authentication-agent-1 &
-	kwin_x11 &
-	bigbashview -c black -t qt -w maximized -i icon.png index.sh.htm -d "/usr/share/bigbashview/bcc/apps/bigcontrolcenter"
-}
-
-#sh_debub
-#sh_config
-sh_main
+bigbashview -c black -t qt -w maximized index.html
