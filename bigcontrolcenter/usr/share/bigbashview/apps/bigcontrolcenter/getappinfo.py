@@ -48,7 +48,6 @@ replacements = [
     },
     {
         "app_id": "biglinuxthemesgui",
-        "app_name": _("Themes, Desktop and Tweaks"),
         "app_description": _("We provide complete configurations for you to select in an extremely simple way."),
         "app_categories": "Star Personalization",
     },
