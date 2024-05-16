@@ -29,9 +29,6 @@ msgstr  "#-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#\n"
         "Content-Transfer-Encoding: 8bit\n"
         "Generated-By: pygettext.py 1.5\n"
 #
-msgid   "search"
-msgstr  ""
-#
 msgid   "Control Center"
 msgstr  ""
 #
@@ -68,34 +65,42 @@ msgstr  ""
 msgid   "Other"
 msgstr  ""
 #
-msgid   "Using Your Android Device's Internet on Linux via USB"
+msgid   "Using Your Android\n"
+        "        Device's Internet on Linux via USB"
 msgstr  ""
 #
-msgid   "To share your Android smartphone's internet connection with a Linux computer using a USB cable, follow these steps:"
+msgid   "To share your Android smartphone's internet connection with a Linux computer using a USB cable,\n"
+        "          follow these steps:"
 msgstr  ""
 #
 msgid   "Connect your Android smartphone to the Linux computer using a USB cable."
 msgstr  ""
 #
-msgid   "On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; Sharing'."
+msgid   "On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp;\n"
+        "            Sharing'."
 msgstr  ""
 #
 msgid   "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr  ""
 #
-msgid   "This will automatically establish the internet connection on your Linux computer without requiring any additional configuration."
+msgid   "This will automatically establish the internet connection on your Linux computer without requiring\n"
+        "          any additional configuration."
 msgstr  ""
 #
-msgid   "If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will consume data from your cellular plan. To avoid data charges, ensure that your Android device is connected to a Wi-Fi network before enabling tethering."
+msgid   "If your Android device is not connected to Wi-Fi and is using\n"
+        "          cellular data, this tethering will consume data from your cellular plan. To avoid data charges, ensure that\n"
+        "          your Android device is connected to a Wi-Fi network before enabling tethering."
 msgstr  ""
 #
 msgid   "Close"
 msgstr  ""
 #
-msgid   "Using Your iOS Device's Internet on Linux via USB"
+msgid   "Using Your iOS Device's\n"
+        "        Internet on Linux via USB"
 msgstr  ""
 #
-msgid   "To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow these steps:"
+msgid   "To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow\n"
+        "          these steps:"
 msgstr  ""
 #
 msgid   "Connect your iOS device to the Linux computer using a USB cable."
@@ -104,10 +109,13 @@ msgstr  ""
 msgid   "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr  ""
 #
-msgid   "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is detected."
+msgid   "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection\n"
+        "            is detected."
 msgstr  ""
 #
-msgid   "If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will consume data from your cellular plan. To avoid data charges, ensure that your iOS device is connected to a Wi-Fi network before enabling tethering."
+msgid   "If your iOS device is not connected to Wi-Fi and is using\n"
+        "          cellular data, this tethering will consume data from your cellular plan. To avoid data charges, ensure that\n"
+        "          your iOS device is connected to a Wi-Fi network before enabling tethering."
 msgstr  ""
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
