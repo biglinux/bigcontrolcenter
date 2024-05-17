@@ -219,7 +219,7 @@ replacements = [
     },
     {
         "app_id": "kcm_baloofile",
-        "app_description": _("Enabling search increases system memory and processing consumption."),
+        "app_description": _("Activating the search can consume significant memory and processing resources. This may cause the system to slow down, depending on the number of user files."),
         "app_categories": "System",
     },
     {
