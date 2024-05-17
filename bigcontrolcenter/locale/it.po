@@ -91,6 +91,42 @@ msgstr ""
 "tethering consumerà dati dal tuo piano cellulare. Per evitare costi aggiuntivi, assicurati che il "
 "tuo dispositivo iOS sia connesso a una rete Wi-Fi prima di abilitare il tethering."
 
+msgid "Main"
+msgstr "Principale"
+
+msgid "Network and Internet"
+msgstr "Rete e Internet"
+
+msgid "Phone"
+msgstr "Telefono"
+
+msgid "Customize"
+msgstr "Personalizza"
+
+msgid "Region and Language"
+msgstr "Regione e Lingua"
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Accounts"
+msgstr "Accounti"
+
+msgid "Devices"
+msgstr "Dispositivi"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "About"
+msgstr "Informazioni"
+
+msgid "Other"
+msgstr "Altro"
+
+msgid "Search..."
+msgstr "Cerca..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -282,9 +318,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Creare più di un desktop virtuale passando da uno all'altro."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Abilitare la ricerca aumenta il consumo di memoria di sistema e di elaborazione."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Attivare la ricerca può consumare notevoli risorse di memoria e di elaborazione. Ciò potrebbe "
+"causare un rallentamento del sistema, a seconda del numero di file dell'utente."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

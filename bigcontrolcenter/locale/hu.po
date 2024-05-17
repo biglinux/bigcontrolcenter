@@ -96,6 +96,42 @@ msgstr ""
 "mobiladatot fog fogyasztani a mobilcsomagodból. Az adatdíjak elkerülése érdekében győződjön meg "
 "róla, hogy az iOS eszköz csatlakozik egy Wi-Fi hálózathoz, mielőtt engedélyezné a megosztást."
 
+msgid "Main"
+msgstr "Fő"
+
+msgid "Network and Internet"
+msgstr "Hálózat és internet"
+
+msgid "Phone"
+msgstr "Nem találtam fordítandó szót."
+
+msgid "Customize"
+msgstr "Testreszabás"
+
+msgid "Region and Language"
+msgstr "Régió és Nyelv"
+
+msgid "Multimedia"
+msgstr "Multimédia"
+
+msgid "Accounts"
+msgstr "Számlák"
+
+msgid "Devices"
+msgstr "Eszközök"
+
+msgid "System"
+msgstr "Rendszer"
+
+msgid "About"
+msgstr "Névjegy"
+
+msgid "Other"
+msgstr "Egyéb"
+
+msgid "Search..."
+msgstr "Keresés..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -287,9 +323,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Hozzon létre több virtuális asztalt azok közötti váltással."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "A keresés engedélyezése növeli a rendszer memória- és feldolgozási igényét."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"A keresés aktiválása jelentős memória- és feldolgozási erőforrásokat igényelhet. Ez a rendszert "
+"lelassíthatja a felhasználói fájlok számától függően."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

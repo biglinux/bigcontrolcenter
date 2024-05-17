@@ -93,6 +93,42 @@ msgstr ""
 "консумира данни от вашия мобилен план. За да избегнете такси за данни, се уверете, че вашият iOS "
 "устройство е свързано към Wi-Fi мрежа, преди да активирате тетъринг."
 
+msgid "Main"
+msgstr "Главен"
+
+msgid "Network and Internet"
+msgstr "Мрежа и интернет"
+
+msgid "Phone"
+msgstr "телефон"
+
+msgid "Customize"
+msgstr "Персонализиране"
+
+msgid "Region and Language"
+msgstr "Регион и Език"
+
+msgid "Multimedia"
+msgstr "Мултимедия"
+
+msgid "Accounts"
+msgstr "Сметки"
+
+msgid "Devices"
+msgstr "Устройства"
+
+msgid "System"
+msgstr "Система"
+
+msgid "About"
+msgstr "Относно"
+
+msgid "Other"
+msgstr "Нищо"
+
+msgid "Search..."
+msgstr "Търсене..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -284,9 +320,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Създайте повече от един виртуален работен плот, като превключвате между тях."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Активирането на търсенето увеличава използването на системната памет и обработката."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Активирането на търсенето може да консумира значително количество памет и обработващи ресурси. Това "
+"може да доведе до забавяне на системата, в зависимост от броя на потребителските файлове."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

@@ -91,6 +91,42 @@ msgstr ""
 "kuluttaa dataa matkapuhelinsuunnitelmastasi. Välttääksesi datakuluja varmista, että iOS-laitteesi "
 "on yhteydessä Wi-Fi-verkkoon ennen jaon käyttöönottoa."
 
+msgid "Main"
+msgstr "Päävalikko"
+
+msgid "Network and Internet"
+msgstr "Verkko ja internet"
+
+msgid "Phone"
+msgstr "Puhelin"
+
+msgid "Customize"
+msgstr "Mukauta"
+
+msgid "Region and Language"
+msgstr "Alue ja kieli"
+
+msgid "Multimedia"
+msgstr "Monimedia"
+
+msgid "Accounts"
+msgstr "Tilit"
+
+msgid "Devices"
+msgstr "Laitteet"
+
+msgid "System"
+msgstr "Järjestelmä"
+
+msgid "About"
+msgstr "Tietoja"
+
+msgid "Other"
+msgstr "Muu"
+
+msgid "Search..."
+msgstr "Haku..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -282,9 +318,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Luo useita virtuaalityöpöytiä vaihtamalla niiden välillä."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Hakutoiminnon käyttöönotto lisää järjestelmän muistin ja prosessoinnin käyttöä."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Hakutoiminnon aktivoiminen voi kuluttaa merkittävästi muistia ja prosessointiresursseja. Tämä "
+"saattaa hidastaa järjestelmää käyttäjätiedostojen määrästä riippuen."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

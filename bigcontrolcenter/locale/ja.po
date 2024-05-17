@@ -84,6 +84,42 @@ msgstr ""
 "Fiに接続されておらず、セルラーデータを使用している場合、このテザリングはセルラープランからデータを消費します。データ料金を回避するためには、テザリングを有効にする前にiOSデバイスがWi-"
 "Fiネットワークに接続されていることを確認してください。"
 
+msgid "Main"
+msgstr "メイン"
+
+msgid "Network and Internet"
+msgstr "ネットワークとインターネット"
+
+msgid "Phone"
+msgstr "電話"
+
+msgid "Customize"
+msgstr "カスタマイズ"
+
+msgid "Region and Language"
+msgstr "地域と言語"
+
+msgid "Multimedia"
+msgstr "マルチメディア"
+
+msgid "Accounts"
+msgstr "アカウント"
+
+msgid "Devices"
+msgstr "デバイス"
+
+msgid "System"
+msgstr "システム"
+
+msgid "About"
+msgstr "について"
+
+msgid "Other"
+msgstr "その他"
+
+msgid "Search..."
+msgstr "検索..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -272,9 +308,11 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "複数の仮想デスクトップを作成し、それらを切り替えて使用します。"
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "検索を有効にすると、システムメモリと処理消費量が増加します。"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr "検索を有効にすると、大量のメモリと処理リソースを消費する場合があります。ユーザーファイルの数に応じて、システムが遅くなる可能性があります。"
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

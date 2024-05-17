@@ -93,6 +93,42 @@ msgstr ""
 "dáta z vášho mobilného plánu. Aby ste sa vyhli poplatkom za dáta, uistite sa, že je vaše iOS "
 "zariadenie pripojené k Wi-Fi sieti pred povolením zdieľania."
 
+msgid "Main"
+msgstr "Hlavná"
+
+msgid "Network and Internet"
+msgstr "Sieť a internet"
+
+msgid "Phone"
+msgstr "Telefón"
+
+msgid "Customize"
+msgstr "Prispôsobiť"
+
+msgid "Region and Language"
+msgstr "Región a Jazyk"
+
+msgid "Multimedia"
+msgstr "Multimédiá"
+
+msgid "Accounts"
+msgstr "Účty"
+
+msgid "Devices"
+msgstr "Zariadenia"
+
+msgid "System"
+msgstr "Systém"
+
+msgid "About"
+msgstr "O programe"
+
+msgid "Other"
+msgstr "Iné"
+
+msgid "Search..."
+msgstr "Vyhľadať..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -283,9 +319,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Vytvorte viac ako jeden virtuálny pracovný plochu prepínaním medzi nimi."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Povolenie vyhľadávania zvyšuje spotrebu systémovej pamäte a spracovania."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Aktivácia vyhľadávania môže spotrebovať významné množstvo pamäte a spracovateľných zdrojov. To môže "
+"spôsobiť spomalenie systému v závislosti na počte používateľských súborov."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

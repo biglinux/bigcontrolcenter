@@ -95,6 +95,42 @@ msgstr ""
 "убедитесь, что ваше устройство iOS подключено к сети Wi-Fi перед включением режима использования "
 "данных."
 
+msgid "Main"
+msgstr "Главный"
+
+msgid "Network and Internet"
+msgstr "Сеть и Интернет"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Customize"
+msgstr "Настроить"
+
+msgid "Region and Language"
+msgstr "Регион и язык"
+
+msgid "Multimedia"
+msgstr "Мультимедиа"
+
+msgid "Accounts"
+msgstr "Учетные записи"
+
+msgid "Devices"
+msgstr "Устройства"
+
+msgid "System"
+msgstr "Система"
+
+msgid "About"
+msgstr "О программе"
+
+msgid "Other"
+msgstr "Другой"
+
+msgid "Search..."
+msgstr "Поиск..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -286,9 +322,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Создавайте более одного виртуального рабочего стола, переключаясь между ними."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Включение поиска увеличивает потребление системной памяти и процессора."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Активация поиска может потреблять значительное количество памяти и ресурсов процессора. Это может "
+"привести к замедлению системы в зависимости от количества пользовательских файлов."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

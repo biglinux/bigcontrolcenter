@@ -81,6 +81,42 @@ msgstr ""
 "iOS 기기가 Wi-Fi에 연결되어 있지 않고 셀룰러 데이터를 사용하는 경우, 이 테더링은 셀룰러 요금제에서 데이터를 사용합니다. 데이터 요금을 피하려면 테더링을 활성화하기 전에 "
 "iOS 기기가 Wi-Fi 네트워크에 연결되어 있는지 확인하십시오."
 
+msgid "Main"
+msgstr "주요"
+
+msgid "Network and Internet"
+msgstr "네트워크 및 인터넷"
+
+msgid "Phone"
+msgstr "전화"
+
+msgid "Customize"
+msgstr "사용자 정의"
+
+msgid "Region and Language"
+msgstr "지역 및 언어"
+
+msgid "Multimedia"
+msgstr "멀티미디어"
+
+msgid "Accounts"
+msgstr "계정"
+
+msgid "Devices"
+msgstr "장치"
+
+msgid "System"
+msgstr "시스템"
+
+msgid "About"
+msgstr "소프트웨어에 대하여"
+
+msgid "Other"
+msgstr "다른"
+
+msgid "Search..."
+msgstr "검색..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -267,9 +303,11 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "여러 개의 가상 데스크톱을 만들어 전환하십시오."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "검색 기능을 활성화하면 시스템 메모리 및 처리 소비가 증가합니다."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr "검색 활성화는 상당한 메모리 및 처리 리소스를 소비할 수 있습니다. 사용자 파일의 수에 따라 시스템이 느려질 수 있습니다."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

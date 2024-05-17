@@ -95,6 +95,42 @@ msgstr ""
 "certifique-se de que seu dispositivo iOS esteja conectado a uma rede Wi-Fi antes de ativar o "
 "compartilhamento."
 
+msgid "Main"
+msgstr "Principal"
+
+msgid "Network and Internet"
+msgstr "Rede e Internet"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Customize"
+msgstr "Personalizar"
+
+msgid "Region and Language"
+msgstr "Região e Idioma"
+
+msgid "Multimedia"
+msgstr "Multimídia"
+
+msgid "Accounts"
+msgstr "Contas"
+
+msgid "Devices"
+msgstr "Dispositivos"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "About"
+msgstr "Sobre"
+
+msgid "Other"
+msgstr "Outro"
+
+msgid "Search..."
+msgstr "Pesquisar..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -286,9 +322,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Criar mais de um ambiente de trabalho virtual alternando entre eles."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "A ativação da pesquisa aumenta o consumo de memória do sistema e processamento."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Ativar a pesquisa pode consumir recursos significativos de memória e processamento. Isso pode fazer "
+"com que o sistema fique mais lento, dependendo do número de arquivos do usuário."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

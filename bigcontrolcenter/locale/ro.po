@@ -94,6 +94,42 @@ msgstr ""
 "date, asigurați-vă că dispozitivul iOS este conectat la o rețea Wi-Fi înainte de a activa "
 "partajarea."
 
+msgid "Main"
+msgstr "Principal"
+
+msgid "Network and Internet"
+msgstr "Rețea și Internet"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Customize"
+msgstr "Personalizare"
+
+msgid "Region and Language"
+msgstr "Regiune și Limbă"
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Accounts"
+msgstr "Conturi"
+
+msgid "Devices"
+msgstr "Dispozitive"
+
+msgid "System"
+msgstr "Sistem"
+
+msgid "About"
+msgstr "Despre"
+
+msgid "Other"
+msgstr "Altele"
+
+msgid "Search..."
+msgstr "Căutare..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -285,9 +321,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Creează mai multe desktopuri virtuale comutând între ele."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Activarea căutării crește consumul de memorie și procesare a sistemului."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Activarea căutării poate consuma resurse semnificative de memorie și procesare. Acest lucru poate "
+"determina încetinirea sistemului, în funcție de numărul de fișiere ale utilizatorului."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

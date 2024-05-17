@@ -95,6 +95,42 @@ msgstr ""
 "χρεώσεις δεδομένων, βεβαιωθείτε ότι η iOS συσκευή σας είναι συνδεδεμένη σε ένα δίκτυο Wi-Fi πριν "
 "ενεργοποιήσετε το tethering."
 
+msgid "Main"
+msgstr "Κύριο"
+
+msgid "Network and Internet"
+msgstr "Δίκτυο και Διαδίκτυο"
+
+msgid "Phone"
+msgstr "Τηλέφωνο"
+
+msgid "Customize"
+msgstr "Προσαρμογή"
+
+msgid "Region and Language"
+msgstr "Περιοχή και Γλώσσα"
+
+msgid "Multimedia"
+msgstr "Πολυμέσα"
+
+msgid "Accounts"
+msgstr "Λογαριασμοί"
+
+msgid "Devices"
+msgstr "Συσκευές"
+
+msgid "System"
+msgstr "Σύστημα"
+
+msgid "About"
+msgstr "Σχετικά"
+
+msgid "Other"
+msgstr "Άλλο"
+
+msgid "Search..."
+msgstr "Αναζήτηση..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -286,9 +322,14 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Δημιουργήστε περισσότερα από ένα εικονικά γραφεία μεταβαίνοντας μεταξύ τους."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Η ενεργοποίηση της αναζήτησης αυξάνει τη μνήμη συστήματος και την επεξεργαστική κατανάλωση."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Η ενεργοποίηση της αναζήτησης μπορεί να καταναλώσει σημαντικούς πόρους μνήμης και επεξεργαστικής "
+"ισχύος. Αυτό μπορεί να προκαλέσει το σύστημα να επιβραδυνθεί, ανάλογα με τον αριθμό των αρχείων "
+"χρήστη."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

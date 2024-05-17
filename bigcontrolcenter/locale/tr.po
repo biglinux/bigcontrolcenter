@@ -93,6 +93,42 @@ msgstr ""
 "planınızdan veri tüketir. Veri ücretlerinden kaçınmak için, paylaşımı etkinleştirmeden önce iOS "
 "cihazınızın bir Wi-Fi ağına bağlı olduğundan emin olun."
 
+msgid "Main"
+msgstr "Ana Sayfa"
+
+msgid "Network and Internet"
+msgstr "Ağ ve İnternet"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Customize"
+msgstr "Özelleştir"
+
+msgid "Region and Language"
+msgstr "Bölge ve Dil"
+
+msgid "Multimedia"
+msgstr "Çoklu ortam"
+
+msgid "Accounts"
+msgstr "Hesaplar"
+
+msgid "Devices"
+msgstr "Cihazlar"
+
+msgid "System"
+msgstr "Sistem"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "Other"
+msgstr "Diğer"
+
+msgid "Search..."
+msgstr "Ara..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -286,9 +322,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Birden fazla sanal masaüstü oluşturarak aralarında geçiş yapın."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Arama işlevinin etkinleştirilmesi sistem belleği ve işlemci tüketimini artırır."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Arama işlemi etkinleştirildiğinde önemli miktarda bellek ve işlemci kaynağı tüketebilir. Bu durum, "
+"kullanıcı dosyalarının sayısına bağlı olarak sistemin yavaşlamasına neden olabilir."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

@@ -95,6 +95,42 @@ msgstr ""
 "podataka, provjerite je li vaš uređaj iOS povezan s Wi-Fi mrežom prije omogućavanja dijeljenja "
 "internetskog pristupa."
 
+msgid "Main"
+msgstr "Glavni"
+
+msgid "Network and Internet"
+msgstr "Mreža i internet"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Customize"
+msgstr "Prilagodi"
+
+msgid "Region and Language"
+msgstr "Regija i Jezik"
+
+msgid "Multimedia"
+msgstr "Multimedijski"
+
+msgid "Accounts"
+msgstr "Računi"
+
+msgid "Devices"
+msgstr "Uređaji"
+
+msgid "System"
+msgstr "Sustav"
+
+msgid "About"
+msgstr "O programu"
+
+msgid "Other"
+msgstr "Drugo"
+
+msgid "Search..."
+msgstr "Pretraži..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -285,9 +321,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Stvorite više virtualnih radnih površina prebacivanjem između njih."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Omogućavanje pretraživanja povećava potrošnju sistemske memorije i procesiranja."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Aktiviranje pretraživanja može trošiti značajne resurse memorije i procesora. To može usporiti "
+"sustav, ovisno o broju korisničkih datoteka."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

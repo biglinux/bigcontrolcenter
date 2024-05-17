@@ -77,6 +77,42 @@ msgid ""
 "connected to a Wi-Fi network before enabling tethering."
 msgstr "如果您的iOS设备未连接到Wi-Fi并正在使用蜂窝数据，则此共享功能将消耗您蜂窝计划中的数据。为避免数据费用，请确保在启用共享功能之前将您的iOS设备连接到Wi-Fi网络。"
 
+msgid "Main"
+msgstr "主要"
+
+msgid "Network and Internet"
+msgstr "网络和互联网"
+
+msgid "Phone"
+msgstr "电话"
+
+msgid "Customize"
+msgstr "定制化"
+
+msgid "Region and Language"
+msgstr "区域和语言"
+
+msgid "Multimedia"
+msgstr "多媒体"
+
+msgid "Accounts"
+msgstr "帐户"
+
+msgid "Devices"
+msgstr "设备"
+
+msgid "System"
+msgstr "系统"
+
+msgid "About"
+msgstr "关于"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Search..."
+msgstr "搜索..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -263,9 +299,11 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "通过在它们之间切换来创建多个虚拟桌面。"
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "启用搜索会增加系统内存和处理消耗。"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr "激活搜索可能会消耗大量内存和处理资源。这可能会导致系统变慢，具体取决于用户文件的数量。"
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

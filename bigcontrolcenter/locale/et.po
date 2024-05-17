@@ -91,6 +91,42 @@ msgstr ""
 "kasutab andmeid teie mobiilsest plaanist. Andmetasude vältimiseks veenduge, et teie iOS-seade on "
 "enne jagamise lubamist ühendatud Wi-Fi-võrku."
 
+msgid "Main"
+msgstr "Peamine"
+
+msgid "Network and Internet"
+msgstr "Võrgu- ja internet"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Customize"
+msgstr "Kohandamine"
+
+msgid "Region and Language"
+msgstr "Piirkond ja keel"
+
+msgid "Multimedia"
+msgstr "Multimeedia"
+
+msgid "Accounts"
+msgstr "Kontod"
+
+msgid "Devices"
+msgstr "Seadmed"
+
+msgid "System"
+msgstr "Süsteem"
+
+msgid "About"
+msgstr "Teave"
+
+msgid "Other"
+msgstr "Muu"
+
+msgid "Search..."
+msgstr "Otsi..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -281,9 +317,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Loo mitu virtuaalarvutit, vahetades nende vahel."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Otsingu lubamine suurendab süsteemi mälu- ja töötlusvõimsust."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Otsingu aktiveerimine võib tarbida märkimisväärseid mälu- ja töötlemisressursse. See võib "
+"põhjustada süsteemi aeglustumist, olenevalt kasutaja failide arvust."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

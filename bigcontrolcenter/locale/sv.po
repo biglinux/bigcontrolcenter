@@ -93,6 +93,42 @@ msgstr ""
 "förbruka data från ditt mobilabonnemang. För att undvika dataavgifter, se till att din iOS-enhet är "
 "ansluten till ett Wi-Fi-nätverk innan du aktiverar delning."
 
+msgid "Main"
+msgstr "Huvud"
+
+msgid "Network and Internet"
+msgstr "Nätverk och internet"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Customize"
+msgstr "Anpassa"
+
+msgid "Region and Language"
+msgstr "Region och språk"
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Accounts"
+msgstr "Konton"
+
+msgid "Devices"
+msgstr "Enheter"
+
+msgid "System"
+msgstr "Systemet"
+
+msgid "About"
+msgstr "Om"
+
+msgid "Other"
+msgstr "Annat"
+
+msgid "Search..."
+msgstr "Sök..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -284,9 +320,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Skapa flera virtuella skrivbord genom att växla mellan dem."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Att aktivera sökningen ökar systemets minnes- och processorkonsumtion."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Att aktivera sökningen kan förbruka betydande minne och processresurser. Detta kan få systemet att "
+"sakta ner, beroende på antalet användarfiler."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

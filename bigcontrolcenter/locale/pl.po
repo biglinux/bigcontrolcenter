@@ -100,6 +100,42 @@ msgstr ""
 "łącza spowoduje zużycie danych z Twojego planu komórkowego. Aby uniknąć opłat za dane, upewnij się, "
 "że urządzenie iOS jest podłączone do sieci Wi-Fi przed włączeniem udostępniania łącza."
 
+msgid "Main"
+msgstr "Główny"
+
+msgid "Network and Internet"
+msgstr "Sieć i Internet"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Customize"
+msgstr "Dostosuj"
+
+msgid "Region and Language"
+msgstr "Region i Język"
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Accounts"
+msgstr "Konta"
+
+msgid "Devices"
+msgstr "Urządzenia"
+
+msgid "System"
+msgstr "System"
+
+msgid "About"
+msgstr "O programie"
+
+msgid "Other"
+msgstr "Inne"
+
+msgid "Search..."
+msgstr "Szukaj..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -291,9 +327,13 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Utwórz więcej niż jedno wirtualne biurko, przełączając się między nimi."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Włączenie wyszukiwania zwiększa zużycie pamięci systemowej i procesora."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Aktywowanie wyszukiwania może zużywać znaczne zasoby pamięci i procesora. Może to spowodować "
+"spowolnienie systemu, w zależności od liczby plików użytkownika."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236

@@ -93,6 +93,42 @@ msgstr ""
 "consumirá datos de tu plan celular. Para evitar cargos por datos, asegúrate de que tu dispositivo "
 "iOS esté conectado a una red Wi-Fi antes de habilitar el anclaje."
 
+msgid "Main"
+msgstr "Principal"
+
+msgid "Network and Internet"
+msgstr "Red de redes y Internet"
+
+msgid "Phone"
+msgstr "Teléfono"
+
+msgid "Customize"
+msgstr "Personalizar"
+
+msgid "Region and Language"
+msgstr "Región y Idioma"
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Accounts"
+msgstr "Cuentas"
+
+msgid "Devices"
+msgstr "Dispositivos"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Other"
+msgstr "Otro"
+
+msgid "Search..."
+msgstr "Buscar..."
+
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -284,9 +320,14 @@ msgid "Create more than one virtual desktop by switching between them."
 msgstr "Crear más de un escritorio virtual cambiando entre ellos."
 
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 223
-msgid "Enabling search increases system memory and processing consumption."
-msgstr "Habilitar la búsqueda aumenta el consumo de memoria del sistema y de procesamiento."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
+msgid ""
+"Activating the search can consume significant memory and processing resources. This may cause the "
+"system to slow down, depending on the number of user files."
+msgstr ""
+"Activar la búsqueda puede consumir una cantidad significativa de memoria y recursos de "
+"procesamiento. Esto puede hacer que el sistema se ralentice, dependiendo del número de archivos de "
+"usuario."
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
