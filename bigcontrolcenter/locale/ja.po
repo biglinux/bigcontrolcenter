@@ -19,86 +19,49 @@ msgstr ""
 msgid "Control Center"
 msgstr "コントロールセンター"
 
-msgid "Main"
-msgstr "メイン"
-
-msgid "Network and Internet"
-msgstr "ネットワークとインターネット"
-
-msgid "Phone"
-msgstr "電話"
-
-msgid "Customize"
-msgstr "カスタマイズ"
-
-msgid "Region and Language"
-msgstr "地域と言語"
-
-msgid "Multimedia"
-msgstr "マルチメディア"
-
-msgid "Accounts"
-msgstr "アカウント"
-
-msgid "Devices"
-msgstr "デバイス"
-
-msgid "System"
-msgstr "システム"
-
-msgid "About"
-msgstr "について"
-
-msgid "Other"
-msgstr "その他"
-
-msgid ""
-"Using Your Android\n"
-"        Device's Internet on Linux via USB"
+msgid "Using Your Android Device's Internet on Linux via USB"
 msgstr "AndroidデバイスのインターネットをUSB経由でLinuxで使用する"
 
 msgid ""
-"To share your Android smartphone's internet connection with a Linux computer using a USB cable,\n"
-"          follow these steps:"
-msgstr "Androidスマートフォンのインターネット接続をUSBケーブルを使用してLinuxコンピュータと共有するには、次の手順に従ってください。"
+"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
+"follow these steps:"
+msgstr "Androidスマートフォンのインターネット接続をUSBケーブルを使用してLinuxコンピュータと共有するには、次の手順に従ってください:"
 
 msgid "Connect your Android smartphone to the Linux computer using a USB cable."
 msgstr "AndroidスマートフォンをUSBケーブルでLinuxコンピュータに接続してください。"
 
 msgid ""
-"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp;\n"
-"            Sharing'."
+"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
+"Sharing'."
 msgstr "スマートフォンで、「設定」を開き、「ネットワーク＆インターネット」または「接続と共有」に移動してください。"
 
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr "「USBテザリング」、「USBテザ」などの用語を検索して有効にしてください。"
 
 msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring\n"
-"          any additional configuration."
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
 msgstr "これにより、追加の設定を必要とせずに、Linuxコンピューターでインターネット接続が自動的に確立されます。"
 
 msgid ""
-"If your Android device is not connected to Wi-Fi and is using\n"
-"          cellular data, this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that\n"
-"          your Android device is connected to a Wi-Fi network before enabling tethering."
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Android デバイスが Wi-Fi に接続されておらず、携帯データを使用している場合、このテザリングは携帯プランからデータを消費します。データ料金を回避するためには、テザリングを有効にする前に "
-"Android デバイスが Wi-Fi ネットワークに接続されていることを確認してください。"
+"AndroidデバイスがWi-"
+"Fiに接続されておらず、携帯データを使用している場合、このテザリングは携帯プランからデータを消費します。データ料金を回避するためには、テザリングを有効にする前にAndroidデバイスがWi-"
+"Fiネットワークに接続されていることを確認してください。"
 
 msgid "Close"
 msgstr "閉じる"
 
-msgid ""
-"Using Your iOS Device's\n"
-"        Internet on Linux via USB"
-msgstr "iOSデバイスのインターネットをUSB経由でLinuxで使用する"
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Linuxを介してiOSデバイスのインターネットをUSB経由で使用"
 
 msgid ""
-"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow\n"
-"          these steps:"
-msgstr "iOSスマートフォンのインターネット接続をUSBケーブルを使用してLinuxコンピュータと共有するには、次の手順に従います:"
+"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr "iOSスマートフォンのインターネット接続をUSBケーブルを使用してLinuxコンピュータと共有するには、次の手順に従ってください:"
 
 msgid "Connect your iOS device to the Linux computer using a USB cable."
 msgstr "iOSデバイスをUSBケーブルでLinuxコンピュータに接続してください。"
@@ -107,19 +70,19 @@ msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr "iOSデバイスで、「設定」に移動し、「パーソナルホットスポット」を選択します。"
 
 msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection\n"
-"            is detected."
-msgstr "「他のユーザーの参加を許可」を有効にします。これにより、USB接続が検出されると自動的に「USBテザリング」が有効になる場合があります。"
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr "「他のユーザーの参加を許可」を有効にします。これにより、USB接続が検出された場合、自動的に「USBテザリング」が有効になる場合があります。"
 
 msgid ""
-"If your iOS device is not connected to Wi-Fi and is using\n"
-"          cellular data, this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that\n"
-"          your iOS device is connected to a Wi-Fi network before enabling tethering."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"iOS デバイスが Wi-Fi に接続されておらず、\n"
-"          セルラーデータを使用している場合、このテザリングはセルラープランからデータを消費します。データ料金を回避するためには、\n"
-"          テザリングを有効にする前に iOS デバイスが Wi-Fi ネットワークに接続されていることを確認してください。"
+"iOS "
+"デバイスがWi-"
+"Fiに接続されておらず、セルラーデータを使用している場合、このテザリングはセルラープランからデータを消費します。データ料金を回避するためには、テザリングを有効にする前にiOSデバイスがWi-"
+"Fiネットワークに接続されていることを確認してください。"
 
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20

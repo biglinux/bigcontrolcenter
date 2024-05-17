@@ -20,66 +20,16 @@ msgid "Control Center"
 msgstr "Control Center"
 
 #
-msgid "Main"
-msgstr "Main"
-
-#
-msgid "Network and Internet"
-msgstr "Network and Internet"
-
-#
-msgid "Phone"
-msgstr "Phone"
-
-#
-msgid "Customize"
-msgstr "Customize"
-
-#
-msgid "Region and Language"
-msgstr "Region and Language"
-
-#
-msgid "Multimedia"
-msgstr "Multimedia"
-
-#
-msgid "Accounts"
-msgstr "Accounts"
-
-#
-msgid "Devices"
-msgstr "Devices"
-
-#
-msgid "System"
-msgstr "System"
-
-#
-msgid "About"
-msgstr "About"
-
-#
-msgid "Other"
-msgstr "Other"
-
-#
-msgid ""
-"Using Your Android\n"
-"        Device's Internet on Linux via USB"
-msgstr ""
-"Using Your Android\n"
-"        Device's Internet on Linux via USB"
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Using Your Android Device's Internet on Linux via USB"
 
 #
 msgid ""
 "To share your Android smartphone's internet connection with a Linux computer "
-"using a USB cable,\n"
-"          follow these steps:"
+"using a USB cable, follow these steps:"
 msgstr ""
 "To share your Android smartphone's internet connection with a Linux computer "
-"using a USB cable,\n"
-"          follow these steps:"
+"using a USB cable, follow these steps:"
 
 #
 msgid ""
@@ -90,12 +40,10 @@ msgstr ""
 #
 msgid ""
 "On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' "
-"or 'Connections &amp;\n"
-"            Sharing'."
+"or 'Connections &amp; Sharing'."
 msgstr ""
 "On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' "
-"or 'Connections &amp;\n"
-"            Sharing'."
+"or 'Connections &amp; Sharing'."
 
 #
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
@@ -105,48 +53,38 @@ msgstr ""
 #
 msgid ""
 "This will automatically establish the internet connection on your Linux "
-"computer without requiring\n"
-"          any additional configuration."
+"computer without requiring any additional configuration."
 msgstr ""
 "This will automatically establish the internet connection on your Linux "
-"computer without requiring\n"
-"          any additional configuration."
+"computer without requiring any additional configuration."
 
 #
 msgid ""
-"If your Android device is not connected to Wi-Fi and is using\n"
-"          cellular data, this tethering will consume data from your cellular "
-"plan. To avoid data charges, ensure that\n"
-"          your Android device is connected to a Wi-Fi network before "
-"enabling tethering."
+"If your Android device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your Android device is connected to a Wi-Fi network "
+"before enabling tethering."
 msgstr ""
-"If your Android device is not connected to Wi-Fi and is using\n"
-"          cellular data, this tethering will consume data from your cellular "
-"plan. To avoid data charges, ensure that\n"
-"          your Android device is connected to a Wi-Fi network before "
-"enabling tethering."
+"If your Android device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your Android device is connected to a Wi-Fi network "
+"before enabling tethering."
 
 #
 msgid "Close"
 msgstr "Close"
 
 #
-msgid ""
-"Using Your iOS Device's\n"
-"        Internet on Linux via USB"
-msgstr ""
-"Using Your iOS Device's\n"
-"        Internet on Linux via USB"
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Using Your iOS Device's Internet on Linux via USB"
 
 #
 msgid ""
 "To share your iOS smartphone's internet connection with a Linux computer "
-"using a USB cable, follow\n"
-"          these steps:"
+"using a USB cable, follow these steps:"
 msgstr ""
 "To share your iOS smartphone's internet connection with a Linux computer "
-"using a USB cable, follow\n"
-"          these steps:"
+"using a USB cable, follow these steps:"
 
 #
 msgid "Connect your iOS device to the Linux computer using a USB cable."
@@ -159,26 +97,22 @@ msgstr "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 #
 msgid ""
 "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
-"if a USB connection\n"
-"            is detected."
+"if a USB connection is detected."
 msgstr ""
 "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
-"if a USB connection\n"
-"            is detected."
+"if a USB connection is detected."
 
 #
 msgid ""
-"If your iOS device is not connected to Wi-Fi and is using\n"
-"          cellular data, this tethering will consume data from your cellular "
-"plan. To avoid data charges, ensure that\n"
-"          your iOS device is connected to a Wi-Fi network before enabling "
-"tethering."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your iOS device is connected to a Wi-Fi network before "
+"enabling tethering."
 msgstr ""
-"If your iOS device is not connected to Wi-Fi and is using\n"
-"          cellular data, this tethering will consume data from your cellular "
-"plan. To avoid data charges, ensure that\n"
-"          your iOS device is connected to a Wi-Fi network before enabling "
-"tethering."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your iOS device is connected to a Wi-Fi network before "
+"enabling tethering."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
