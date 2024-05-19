@@ -97,7 +97,7 @@ replacements = [
     },
     {
         "app_id": "big-kernel-manager",
-        "app_description": "The basis of the system and video card support",
+        "app_description": _("The basis of the system and video card support"),
         "app_categories": "Star System",
     },
     {
