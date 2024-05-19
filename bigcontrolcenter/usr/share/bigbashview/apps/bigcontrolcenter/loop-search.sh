@@ -243,7 +243,7 @@ function sh_static_desktop_files {
 		'/usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop'
 		'/usr/share/kservices5/bigcontrolcenter/qv4l2.desktop'
 		'/usr/share/applications/biglinux-noise-reduction-pipewire.desktop'
-		'/usr/share/kservices5/bigcontrolcenter/biglinux-grub-restore.desktop'
+		'/usr/share/applications/biglinux-grub-restore.desktop'
 		'/usr/share/applications/gsmartcontrol.desktop'
 		'/usr/share/applications/org.kde.kdeconnect-settings.desktop'
 		'/usr/share/applications/org.kde.dolphin.desktop'
