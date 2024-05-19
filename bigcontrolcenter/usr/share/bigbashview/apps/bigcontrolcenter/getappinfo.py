@@ -613,12 +613,15 @@ def find_replacement(app_id):
 
 def get_app_info(app_ids):
     app_info_list = []
+    processed_app_ids = set()
     icon_theme = Gtk.IconTheme.get_default()
 
     for app_id in app_ids:
+        if app_id in processed_app_ids:
+            continue
+        
         app_info = None
         try:
-            # Tentativa de encontrar o arquivo .desktop no caminho padrão
             app_info = Gio.DesktopAppInfo.new(f"{app_id}.desktop")
         except Exception:
             alternative_paths = [
@@ -655,9 +658,10 @@ def get_app_info(app_ids):
                             app_info_dict[key] = replacement[key]
 
                 app_info_list.append(app_info_dict)
+                processed_app_ids.add(app_id)
             except Exception as e:
                 print(f"Error processing {app_id}: {e}")
-    # Certifique-se de que esta parte esteja fora do loop
+                
     return json.dumps(app_info_list, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
