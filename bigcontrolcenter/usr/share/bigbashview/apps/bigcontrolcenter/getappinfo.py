@@ -87,6 +87,20 @@ replacements = [
         "app_categories": "Other",
     },
     {
+        "app_id": "big-driver-manager",
+        "app_description": _("Expand device support"),
+        "app_categories": "Star Hardware",
+    },
+    {
+        "app_id": "big-hardware-info",
+        "app_categories": "Star About",
+    },
+    {
+        "app_id": "big-kernel-manager",
+        "app_description": "The basis of the system and video card support",
+        "app_categories": "Star System",
+    },
+    {
         "app_id": "classikdecorationconfig",
         "app_description": _("Configure this window border theme"),
         "app_categories": "Personalization",
@@ -260,6 +274,10 @@ replacements = [
     {
         "app_id": "kcm_device_automounter",
         "app_exec": "kcmshell6 kcm_device_automounter kamera kcm_solid_actions",
+        "app_categories": "Hardware",
+    },
+    {
+        "app_id": "kcm_colord",
         "app_categories": "Hardware",
     },
     {
@@ -464,7 +482,10 @@ replacements = [
     {
         "app_id": "timeshift-gtk",
         "app_categories": "System Star",
-    },    {
+        "app_name": _("Snapshots and backups"),
+        "app_description": _("Create or activate restore points"),
+    },
+    {
         "app_id": "kcm_users",
         "app_categories": "Account",
     },
@@ -543,7 +564,7 @@ replacements = [
         "app_name": _("Printers"),
         "app_description": _("Install, configure or remove printers."),
         "app_exec": "system-config-printer",
-        "app_categories": "Star Hardware",
+        "app_categories": "Hardware",
     },
     {
         "app_id": "systemsettings",
