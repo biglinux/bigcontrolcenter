@@ -228,6 +228,7 @@ function sh_bcc_desktop_files {
 		'kdesystemsettings.desktop'
 		'qv4l2.desktop'
 		'org.gnome.baobab.desktop'
+		'klassy-settings.desktop'
 	)
 
 	# Usando find para encontrar os arquivos e excluindo os arquivos da lista de exclusão
