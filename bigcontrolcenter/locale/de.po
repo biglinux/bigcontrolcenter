@@ -1,98 +1,99 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the biglinux-session-and-themes package.
+# This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: biglinux-session-and-themes\n"
+"Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: Poedit 3.4.4\n"
 
 msgid "Control Center"
-msgstr "Steuerzentrale"
+msgstr "Kontrollzentrum"
 
 msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Die Internetverbindung Ihres Android-Geräts auf Linux über USB nutzen"
+msgstr "Verwenden des Internets Ihres Android-Geräts unter Linux via USB"
 
 msgid ""
-"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
-"follow these steps:"
+"To share your Android smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
 msgstr ""
-"Um die Internetverbindung Ihres Android-Smartphones über ein USB-Kabel mit einem Linux-Computer zu "
-"teilen, befolgen Sie diese Schritte:"
+"Um die Internetverbindung Ihres Android-Smartphones mit einem Linux-Computer über ein USB-Kabel "
+"gemeinsam zu nutzen, gehen Sie folgendermaßen vor:"
 
 msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Verbinden Sie Ihr Android-Smartphone mit dem Linux-Computer über ein USB-Kabel."
+msgstr "Verbinden Sie Ihr Android-Smartphone über ein USB-Kabel mit dem Linux-Computer."
 
 msgid ""
 "On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
 "Sharing'."
 msgstr ""
-"Auf deinem Smartphone öffne \"Einstellungen\" und navigiere zu \"Netzwerk & Internet\" oder "
-"\"Verbindungen & Freigaben\"."
+"Öffnen Sie auf Ihrem Smartphone \"Einstellungen\" und navigieren Sie zu \"Netzwerk &amp; Internet\" "
+"oder \"Verbindungen &amp; Sharing\"."
 
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Suche nach 'USB-Tethering', 'USB-Tether' oder ähnlichen Begriffen und aktiviere es."
+msgstr "Suchen Sie nach „USB-Tethering“, „USB-Tether“ oder ähnlichen Begriffen und aktivieren Sie dies."
 
 msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
+"This will automatically establish the internet connection on your Linux computer without requiring any "
+"additional configuration."
 msgstr ""
-"Dies wird automatisch die Internetverbindung auf Ihrem Linux-Computer herstellen, ohne zusätzliche "
-"Konfiguration zu erfordern."
+"Dies wird die Internetverbindung auf Ihrem Linux-Computer automatisch herstellen, ohne dass irgendeine "
+"zusätzliche Konfiguration erforderlich ist."
 
 msgid ""
 "If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
 "consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
 "connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Wenn Ihr Android-Gerät nicht mit Wi-Fi verbunden ist und Mobilfunkdaten verwendet, verbraucht "
-"dieses Tethering Daten aus Ihrem Mobilfunktarif. Um Datenkosten zu vermeiden, stellen Sie sicher, "
-"dass Ihr Android-Gerät mit einem Wi-Fi-Netzwerk verbunden ist, bevor Sie das Tethering aktivieren."
+"Wenn Ihr Android-Gerät nicht mit Wi-Fi verbunden ist und Mobilfunkdaten verwendet, verbraucht dieses "
+"Tethering Daten aus Ihrem Mobilfunktarif. Um Datengebühren zu vermeiden, stellen Sie sicher, dass Ihr "
+"Android-Gerät mit einem Wi-Fi-Netzwerk verbunden ist, bevor Sie Tethering aktivieren."
 
 msgid "Close"
 msgstr "Schließen"
 
 msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Die Internetverbindung Ihres iOS-Geräts auf Linux über USB nutzen"
+msgstr "Verwenden des Internets Ihres iOS-Geräts unter Linux via USB"
 
 msgid ""
 "To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
 "these steps:"
 msgstr ""
-"Um die Internetverbindung Ihres iOS-Smartphones über ein USB-Kabel mit einem Linux-Computer zu "
-"teilen, befolgen Sie diese Schritte:"
+"Um die Internetverbindung Ihres iOS-Smartphones mit einem Linux-Computer über ein USB-Kabel gemeinsam "
+"zu nutzen, gehen Sie folgendermaßen vor:"
 
 msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Verbinden Sie Ihr iOS-Gerät mit dem Linux-Computer über ein USB-Kabel."
+msgstr "Verbinden Sie Ihr iOS-Gerät über ein USB-Kabel mit dem Linux-Computer."
 
 msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "Auf Ihrem iOS-Gerät gehen Sie zu \"Einstellungen\" und wählen dann \"Persönlicher Hotspot\"."
+msgstr "Gehen Sie auf Ihrem iOS-Gerät zu \"Einstellungen\", dann wählen Sie \"Persönlicher Hotspot\" aus."
 
 msgid ""
 "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
 "detected."
 msgstr ""
-"Aktivieren Sie \"Anderen das Beitreten erlauben\". Dies kann automatisch \"USB-Tethering\" "
-"aktivieren, wenn eine USB-Verbindung erkannt wird."
+"Aktivieren Sie „Zugriff für andere erlauben“. Dies kann „USB-Tethering“ automatisch aktivieren, wenn "
+"eine USB-Verbindung erkannt wird."
 
 msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will consume "
+"data from your cellular plan. To avoid data charges, ensure that your iOS device is connected to a Wi-"
+"Fi network before enabling tethering."
 msgstr ""
-"Wenn Ihr iOS-Gerät nicht mit Wi-Fi verbunden ist und stattdessen Mobilfunkdaten verwendet, "
-"verbraucht dieses Tethering Daten aus Ihrem Mobilfunktarif. Um Datenkosten zu vermeiden, stellen "
-"Sie sicher, dass Ihr iOS-Gerät mit einem Wi-Fi-Netzwerk verbunden ist, bevor Sie das Tethering "
-"aktivieren."
+"Wenn Ihr iOS-Gerät nicht mit Wi-Fi verbunden ist und Mobilfunkdaten verwendet, verbraucht dieses "
+"Tethering Daten aus Ihrem Mobilfunktarif. Um Datengebühren zu vermeiden, stellen Sie sicher, dass Ihr "
+"iOS-Gerät mit einem Wi-Fi-Netzwerk verbunden ist, bevor Sie Tethering aktivieren."
 
 msgid "Main"
 msgstr "Haupt"
@@ -101,10 +102,10 @@ msgid "Network and Internet"
 msgstr "Netzwerk und Internet"
 
 msgid "Phone"
-msgstr "Telefon"
+msgstr "Phone"
 
 msgid "Customize"
-msgstr "Anpassen"
+msgstr "Individuell anpassen"
 
 msgid "Region and Language"
 msgstr "Region und Sprache"
@@ -125,377 +126,375 @@ msgid "About"
 msgstr "Über"
 
 msgid "Other"
-msgstr "Andere"
+msgstr "Anderes"
 
 msgid "Search..."
-msgstr "Suchen..."
+msgstr "Suchen ...."
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
 msgstr "AppimageLauncher konfigurieren"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
 msgid "Choose the behavior of programs available in .appimage"
-msgstr "Wählen Sie das Verhalten von Programmen, die in .appimage verfügbar sind."
+msgstr "Wählen Sie das Verhalten der in .appimage verfügbaren Programme"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 26
 msgid "Usage settings for old music CDs are not valid for MP3 music."
-msgstr "Die Verwendungseinstellungen für alte Musik-CDs sind nicht gültig für MP3-Musik."
+msgstr "Nutzungseinstellungen für alte Musik-CDs sind nicht gültig für MP3-Musik."
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 31
 msgid "Search for servers (zeroconf)"
-msgstr "Suche nach Servern (Zeroconf)"
+msgstr "Suche nach Servern (zeroconf)"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
 msgid "Restore program configuration"
 msgstr "Programmkonfiguration wiederherstellen"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 37
 msgid "biglinux-config"
 msgstr "biglinux-config"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 42
 msgid ""
 "Utility that facilitates the restoration of the installed system, mainly restoring the system boot "
 "(Grub). It can also be used to access the package manager and terminal of the installed system."
 msgstr ""
-"Dienstprogramm, das die Wiederherstellung des installierten Systems erleichtert, hauptsächlich die "
-"Wiederherstellung des Systemstarts (Grub). Es kann auch verwendet werden, um auf den Paketmanager "
-"und das Terminal des installierten Systems zuzugreifen."
+"Utility, das die Wiederherstellung des installierten Systems erleichtert, hauptsächlich das "
+"Wiederherstellen des Systemstarts (Grub). Es kann auch verwendet werden, um auf den Paketmanager und "
+"das Terminal des installierten Systems zuzugreifen."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 51
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
 msgid "We provide complete configurations for you to select in an extremely simple way."
-msgstr "Wir bieten vollständige Konfigurationen zur Auswahl auf äußerst einfache Weise."
+msgstr "Wir bieten Ihnen komplette Konfigurationen, die Sie auf einfachste Weise auswählen können."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 56
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
 msgid "Install or remove programs."
-msgstr "Programme installieren oder entfernen."
+msgstr "Installieren oder entfernen Sie Programme."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 61
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 62
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 63
 msgid "Introduction to BigLinux"
 msgstr "Einführung in BigLinux"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 69
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 70
 msgid "Themes to Bootsplash"
-msgstr "Themen zu Bootsplash"
+msgstr "Themes für Bootsplash"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 74
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
 msgid "Brightness and color"
 msgstr "Helligkeit und Farbe"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 76
 msgid "Control brightness and colors"
 msgstr "Helligkeit und Farben steuern"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 81
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
 msgid "Search for SSH servers"
 msgstr "Suche nach SSH-Servern"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 86
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
 msgid "Search for VNC servers"
 msgstr "Suche nach VNC-Servern"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
 msgid "Expand device support"
 msgstr "Geräteunterstützung erweitern"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 100
 msgid "The basis of the system and video card support"
-msgstr "Die Grundlage des Systems und die Unterstützung der Grafikkarte"
+msgstr "Die Basis des Systems und die Grafikkartenunterstützung"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 105
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 92
 msgid "Configure this window border theme"
-msgstr "Konfigurieren Sie dieses Fensterrahmenthema"
+msgstr "Dieses Fensterrahmen-Theme konfigurieren"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 110
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 97
 msgid "Configure this windows theme."
-msgstr "Konfigurieren Sie dieses Windows-Design."
+msgstr "Konfigurieren Sie dieses Windows-Theme."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 128
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Erweiterter Audio-Manager - Alsamixer"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 129
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 116
 msgid "Audio controller in case of no sound."
-msgstr "Audio-Controller im Falle von keinem Ton."
+msgstr "Audio-Controller im Falle von keinem Sound."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 139
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 126
 msgid "Partition or format"
 msgstr "Partitionieren oder formatieren"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 140
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 127
 msgid "Be careful, this program may erase all data on your computer."
-msgstr "Vorsicht, dieses Programm kann alle Daten auf Ihrem Computer löschen."
+msgstr "Seien Sie vorsichtig, dieses Programm kann alle Daten auf Ihrem Computer löschen."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 145
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 132
 msgid "Storage Information (SMART)"
 msgstr "Speicherinformationen (SMART)"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 154
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 141
 msgid "Gufw Firewall"
-msgstr "Gufw Firewall"
+msgstr "Gufw-Firewall"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 155
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 142
 msgid "Configure security rules for the internet connection."
 msgstr "Konfigurieren Sie Sicherheitsregeln für die Internetverbindung."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 161
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
 msgid "Configure webcam or capture card"
 msgstr "Webcam oder Capture-Karte konfigurieren"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 157
 msgid "HP printers"
 msgstr "HP-Drucker"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 171
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 158
 msgid "Check status, ink level and maintenance."
-msgstr "Überprüfen Sie den Status, den Tintenstand und die Wartung."
+msgstr "Überprüfen Sie Status, Tintenstand und Wartung."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 177
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 164
 msgid "Scanners HP"
-msgstr "HP-Scanner"
+msgstr "Scanner HP"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 169
 msgid "Assemble Apple Hardware"
 msgstr "Apple-Hardware zusammenbauen"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 183
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
 msgid ""
-"With this program you can access programs on your Apple iPhone or iPad in a similar way to "
-"accessing files on a pendrive."
+"With this program you can access programs on your Apple iPhone or iPad in a similar way to accessing "
+"files on a pendrive."
 msgstr ""
-"Mit diesem Programm können Sie Programme auf Ihrem Apple iPhone oder iPad ähnlich wie beim Zugriff "
-"auf Dateien auf einem USB-Stick zugreifen."
+"Mit diesem Programm können Sie auf Programme auf Ihrem Apple iPhone oder iPad zugreifen, in ähnlicher "
+"Weise wie der Zugriff auf Dateien auf einem Pendrive (USB-Stick)."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 189
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 176
 msgid "Connect to the internet using Android"
-msgstr "Mit Android eine Internetverbindung herstellen"
+msgstr "Verbinden mit dem Internet über Android"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 195
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
 msgid "Connect to Internet"
-msgstr "Mit dem Internet verbinden"
+msgstr "Mit Internet verbinden"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 205
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 192
 msgid "Connect to the internet using iOS"
-msgstr "Verbinden Sie mit dem Internet unter Verwendung von iOS."
+msgstr "Verbinden mit dem Internet über iOS"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 198
 msgid "Equalizer (DSP)"
 msgstr "Equalizer (DSP)"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 224
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
 msgid "Virtual desktops and activities"
 msgstr "Virtuelle Desktops und Aktivitäten"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 225
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 212
 msgid "Create more than one virtual desktop by switching between them."
-msgstr "Erstellen Sie mehrere virtuelle Desktops, indem Sie zwischen ihnen wechseln."
+msgstr "Erstellen Sie mehr als einen virtuellen Desktop, indem Sie zwischen ihnen wechseln."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
 msgid ""
 "Activating the search can consume significant memory and processing resources. This may cause the "
 "system to slow down, depending on the number of user files."
 msgstr ""
-"Die Aktivierung der Suche kann erhebliche Speicher- und Verarbeitungsressourcen verbrauchen. Dies "
-"kann dazu führen, dass das System langsamer wird, abhängig von der Anzahl der Benutzerdateien."
+"Die Aktivierung der Suche kann erhebliche Speicher- und Verarbeitungsressourcen verbrauchen. Je nach "
+"der Anzahl der Benutzerdateien kann dies zu einer Verlangsamung des Systems führen."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 249
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
 msgid "Adjust the date, time and time zone."
-msgstr "Passen Sie das Datum, die Uhrzeit und die Zeitzone an."
+msgstr "Passen Sie Datum, Uhrzeit und Zeitzone an."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 289
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
 msgid "Plasma Firewall"
-msgstr "Plasma Firewall"
+msgstr "Plasma-Firewall"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 290
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 273
 msgid "Configure security rules for connections. This firewall is based on the Gufw infrastructure"
 msgstr ""
-"Konfigurieren Sie Sicherheitsregeln für Verbindungen. Diese Firewall basiert auf der "
-"Gufw-Infrastruktur."
+"Konfigurieren Sie Sicherheitsregeln für Verbindungen. Diese Firewall basiert auf der Gufw-Infrastruktur"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 309
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 292
 msgid "Integration with Google Drive and ownCloud"
 msgstr "Integration mit Google Drive und ownCloud"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 310
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 293
 msgid "Access your files that are on Google Drive or ownCloud directly from the file manager."
-msgstr "Greifen Sie direkt von Ihrem Dateimanager auf Ihre Dateien auf Google Drive oder ownCloud zu."
+msgstr "Greifen Sie direkt über den Dateimanager auf Ihre Dateien in Google Drive oder ownCloud zu."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 324
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 307
 msgid "Layout settings, hotkeys and other options."
-msgstr "Layout-Einstellungen, Tastenkombinationen und andere Optionen."
+msgstr "Layout-Einstellungen, Hotkeys und andere Optionen."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 359
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 342
 msgid "Manage connections"
 msgstr "Verbindungen verwalten"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 360
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 343
 msgid ""
 "Advanced network configuration (VPN, wifi, wired, fixed IP, PPPoE, ADSL, wired network, mobile "
 "broadband and others)."
 msgstr ""
-"Erweiterte Netzwerkkonfiguration (VPN, WLAN, kabelgebunden, feste IP, PPPoE, ADSL, kabelgebundenes "
-"Netzwerk, mobile Breitbandverbindung und andere)."
+"Erweiterte Netzwerkkonfiguration (VPN, WiFi, kabelgebunden, festes IP, PPPoE, ADSL, kabelgebundenes "
+"Netzwerk, mobiles Breitband und andere)."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 414
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 397
 msgid "Manage services (Systemd)"
 msgstr "Dienste verwalten (Systemd)"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 446
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 429
 msgid "Configure the Kvantum theme"
-msgstr "Konfigurieren Sie das Kvantum-Thema."
+msgstr "Konfigurieren des Kvantum-Theme"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 447
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 430
 msgid "For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."
-msgstr "Für die Kvantum-Einrichtung muss das Kvantum-Theme im Bereich \"App-Stil\" angewendet werden."
+msgstr "Damit das Kvantum-Setup funktioniert, wenden Sie das Kvantum-Theme in \"Anwendungs-Stil\" an."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 452
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 435
 msgid "KDE Password Wallet"
-msgstr "KDE Passwort-Speicher"
+msgstr "KDE Password Wallet"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
 msgid "Snapshots and backups"
-msgstr "Momentaufnahmen und Sicherungskopien"
+msgstr "Snapshots und Backups"
 
-# 
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
 msgid "Create or activate restore points"
-msgstr "Wiederherstellungspunkte erstellen oder aktivieren"
+msgstr "Erstellen oder aktivieren Sie Wiederherstellungspunkte"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 494
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 474
 msgid "Manage files"
 msgstr "Dateien verwalten"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 495
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 475
 msgid "Get access to your files and folders."
-msgstr "Greifen Sie auf Ihre Dateien und Ordner zu."
+msgstr "Erhalten Sie Zugriff auf Ihre Dateien und Ordner."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 501
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
 msgid "Storage Usage"
 msgstr "Speichernutzung"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 507
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 487
 msgid ""
-"This program can transfer files between smartphones, tablets and other computers. With it, you can, "
-"for example, use your smartphone as a wireless mouse and keyboard to control the computer, among "
-"other features. It integrates better with BigLinux and sits among the applets located near the "
-"system clock. To synchronize with your smartphone, go to the Google Store or Apple Store and "
-"install Kde Connect."
+"This program can transfer files between smartphones, tablets and other computers. With it, you can, for "
+"example, use your smartphone as a wireless mouse and keyboard to control the computer, among other "
+"features. It integrates better with BigLinux and sits among the applets located near the system clock. "
+"To synchronize with your smartphone, go to the Google Store or Apple Store and install Kde Connect."
 msgstr ""
-"Dieses Programm kann Dateien zwischen Smartphones, Tablets und anderen Computern übertragen. Mit "
-"ihm können Sie beispielsweise Ihr Smartphone als drahtlose Maus und Tastatur verwenden, um den "
-"Computer zu steuern, unter anderem. Es integriert sich besser mit BigLinux und befindet sich unter "
-"den Applets in der Nähe der Systemuhr. Um mit Ihrem Smartphone zu synchronisieren, gehen Sie zum "
-"Google Store oder Apple Store und installieren Sie Kde Connect."
+"Dieses Programm kann Dateien zwischen Smartphones, Tablets und anderen Computern übertragen. Mit diesem "
+"können Sie beispielsweise Ihr Smartphone als drahtlose Maus und Tastatur verwenden, um den Computer zu "
+"steuern, neben anderen Features. Es integriert sich besser mit BigLinux und ist unter den Applets in "
+"der Nähe der Systemuhr zu finden. Um mit Ihrem Smartphone zu synchronisieren, gehen Sie in den Google "
+"Store oder Apple Store und installieren Sie KDE Connect."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 516
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
 msgid "Terminal"
 msgstr "Terminal"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 517
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
 msgid "Access the command terminal."
-msgstr "Zugriff auf das Befehlsterminal."
+msgstr "Greifen Sie auf das Befehlsterminal zu."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 526
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
 msgid "Password Manager"
 msgstr "Passwort-Manager"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 543
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
 msgid "Sound and microphone"
-msgstr "Ton und Mikrofon"
+msgstr "Sound und Mikrofon"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
 msgid "Configure or change audio input and output devices. (Ex: HDMI)"
-msgstr "Audioeingabe- und -ausgabegeräte konfigurieren oder ändern. (z. B. HDMI)"
+msgstr "Konfigurieren oder ändern Sie Audioeingabe- und -ausgabegeräte. (Beispiel: HDMI)"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 560
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 540
 msgid "Shared file information"
-msgstr "Gemeinsame Dateiinformationen"
+msgstr "Gemeinsam genutzte Dateiinformationen"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 564
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
 msgid "Printers"
 msgstr "Drucker"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 565
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 msgid "Install, configure or remove printers."
-msgstr "Drucker installieren, konfigurieren oder entfernen."
+msgstr "Installieren, konfigurieren oder entfernen Sie Drucker."
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 571
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
 msgid "KDE Control Center"
-msgstr "KDE Systemeinstellungen"
+msgstr "KDE-Kontrollzentrum"
 
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 577
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 557
 msgid "Advanced power configurator"
-msgstr "Erweiterter Leistungs-Konfigurator"
+msgstr "Erweiterter Leistungskonfigurator"
