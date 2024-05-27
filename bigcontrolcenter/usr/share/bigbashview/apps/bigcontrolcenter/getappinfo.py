@@ -47,7 +47,7 @@ replacements = [
         "app_categories": "Multimedia",
     },
     {
-        "app_id": "biglinuxthemesgui",
+        "app_id": "big-themes-gui",
         "app_description": _("We provide complete configurations for you to select in an extremely simple way."),
         "app_categories": "Star Personalization",
     },
