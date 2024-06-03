@@ -291,6 +291,11 @@ replacements = [
         "app_categories": "Network",
     },
     {
+        "app_id": "firewall-config",
+        "app_name": _("Advanced Firewall"),
+        "app_categories": "Network",
+    },
+    {
         "app_id": "kcm_fonts",
         "app_exec": "kcmshell6 kcm_fonts fontinst",
         "app_categories": "Personalization",
