@@ -31,8 +31,8 @@
 <body x-data="appData()" x-init="fetchData()" @keydown.window="handleGlobalKeypress($event)">
   <!-- Using Client Side Decoration use body transparent to make shadow, and page work like real body -->
   <div id="page">
-    <!-- Any component with drag-area class is used to drag and move window -->
-    <div id="title-bar" class="drag-area">
+    <!-- Any component with drag-area class is used to drag and move window and z-1000 to show over anything -->
+    <div id="title-bar" class="drag-area z-1000">
       <div class="field prefix round input-search-right-side">
         <i>search</i>
         <!-- Using placeholderText to modify in javascript for translated text in stonejs -->
