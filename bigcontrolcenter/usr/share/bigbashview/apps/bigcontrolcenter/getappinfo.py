@@ -332,7 +332,7 @@ replacements = [
     },
     {
         "app_id": "kcm_kscreen",
-        "app_exec": "kcmshell6 kcm_kscreen kcm_nightcolor kgamma kwinscreenedges",
+        "app_exec": "kcmshell6 kcm_kscreen kcm_nightlight kgamma kwinscreenedges",
         "app_categories": "Hardware",
     },
     {
@@ -451,12 +451,6 @@ replacements = [
         "app_name": _("Configure the Kvantum theme"),
         "app_description": _("For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."),
         "app_categories": "Personalization",
-    },
-    {
-        "app_id": "kwalletconfig5",
-        "app_name": _("KDE Password Wallet"),
-        "app_exec": "kcmshell6 kwalletconfig5",
-        "app_categories": "Account",
     },
     {
         "app_id": "kwinadvanced",

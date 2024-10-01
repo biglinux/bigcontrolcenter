@@ -205,6 +205,7 @@ function sh_apps_desktop_files {
 		'kcm_wacomtablet.desktop'
 		'kcm_netpref.desktop'
 		'kcm_webshortcuts.desktop'
+		'kcm_nightlight'
 	)
 	# Usando find para encontrar os arquivos desejados e excluindo os arquivos da lista de exclusão
 	mapfile -t filtered_files < <(find /usr/share/applications/ -name "kcm_*.desktop" -type f ! \( -name "${excluded_files[0]}" $(printf -- "-o -name %s " "${excluded_files[@]:1}") \) -print0 | xargs -0)
@@ -255,6 +256,7 @@ function sh_static_desktop_files {
 		'/usr/share/applications/big-driver-manager.desktop'
 		'/usr/share/applications/big-hardware-info.desktop'
 		'/usr/share/applications/big-kernel-manager.desktop'
+		'/usr/share/applications/org.kde.kwalletmanager.desktop'
 	)
 	echo "${filtered_files[@]}"
 }
