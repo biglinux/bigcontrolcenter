@@ -138,6 +138,7 @@ replacements = [
         "app_id": "gparted",
         "app_name": _("Partition or format"),
         "app_description": _("Be careful, this program may erase all data on your computer."),
+        "app_exec": "gparted",
         "app_categories": "System",
     },
     {
