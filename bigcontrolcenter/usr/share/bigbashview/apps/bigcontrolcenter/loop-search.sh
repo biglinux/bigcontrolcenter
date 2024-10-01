@@ -252,6 +252,9 @@ function sh_static_desktop_files {
 		'/usr/share/applications/guvcview.desktop'
 		'/usr/share/applications/hplip.desktop'
 		'/usr/share/kservices5/smb.desktop'
+		'/usr/share/applications/big-driver-manager.desktop'
+		'/usr/share/applications/big-hardware-info.desktop'
+		'/usr/share/applications/big-kernel-manager.desktop'
 	)
 	echo "${filtered_files[@]}"
 }
