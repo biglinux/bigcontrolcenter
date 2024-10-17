@@ -182,6 +182,7 @@ replacements = [
         "app_id": "qefientrymanager",
         "app_name": _("EFI Entry Manager"),
         "app_categories": "System",
+        "app_icon": "/usr/share/icons/bigicons-papient/scalable/apps/cc.inoki.qefientrymanager.svg",
     },
     {
         "app_id": "iDevice-Mounter",
