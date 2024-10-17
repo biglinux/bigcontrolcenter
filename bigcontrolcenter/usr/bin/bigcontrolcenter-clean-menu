@@ -86,7 +86,8 @@ function sh_config {
 										"org.kde.ksystemlog.desktop"
 										"org.kde.filelight.desktop"
 										"klassy-settings.desktop"
-										"firewall-config.desktop")
+										"firewall-config.desktop"
+										"qefientrymanager.desktop")
 }
 
 function sh_fix_permissions {
@@ -110,7 +111,7 @@ function sh_init {
 	#criar o diretorio
 	if [[ ! -d "$bigdir" ]]; then
 		if ! mkdir -p "$bigdir" 2> /dev/null; then
-			kdialog --title $"$APP" --error $"Erro na criação do diretório : $bigdir"
+			kdialog --title $"$APP" --error $"Error creating directory: $bigdir"
 			exit 1
 		fi
 	fi

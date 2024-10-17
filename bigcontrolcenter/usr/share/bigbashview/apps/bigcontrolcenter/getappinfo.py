@@ -179,6 +179,11 @@ replacements = [
         "app_categories": "Hardware",
     },
     {
+        "app_id": "qefientrymanager",
+        "app_name": _("EFI Entry Manager"),
+        "app_categories": "System",
+    },
+    {
         "app_id": "iDevice-Mounter",
         "app_name": _("Assemble Apple Hardware"),
         "app_description": _("With this program you can access programs on your Apple iPhone or iPad in a similar way to accessing files on a pendrive."),

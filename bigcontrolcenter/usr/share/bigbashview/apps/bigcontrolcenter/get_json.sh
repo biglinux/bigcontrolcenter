@@ -2,7 +2,7 @@
 
 # If the first argument is "cache", then cache the json file
 if [[ $1 = "cache" ]]; then
-    python getappinfo.py $(./loop-search.sh | sed -E 's|.*/(.*).desktop|\1|g') android-usb ios-usb network-connect kcm_users timeshift-gtk big-themes-gui > ~/.cache/bigcontrolcenter.json
+    python getappinfo.py $(./loop-search.sh | sed -E 's|.*/(.*).desktop|\1|g') qefientrymanager android-usb ios-usb network-connect kcm_users timeshift-gtk big-themes-gui > ~/.cache/bigcontrolcenter.json
     rm ~/.cache/pre-cache-bigcontrolcenter.json
     exit
 fi
