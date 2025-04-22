@@ -18,7 +18,7 @@ from ui.application import BigControlCenterApp
 def main():
     """Main application entry point"""
     app = BigControlCenterApp(
-        "br.com.biglinux.bigcontrolcenter", Gio.ApplicationFlags.DEFAULT_FLAGS
+        "bigcontrolcenter", Gio.ApplicationFlags.DEFAULT_FLAGS
     )
     return app.run(sys.argv)
 
