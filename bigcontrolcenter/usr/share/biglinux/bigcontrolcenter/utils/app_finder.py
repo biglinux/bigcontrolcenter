@@ -220,7 +220,7 @@ class AppFinder:
             "breezedecorationconfig.desktop",
             "oxygenstyleconfig.desktop",
             "oxygendecorationconfig.desktop",
-            # "kcm_pulseaudio.desktop",
+            "kcm_pulseaudio.desktop",
             "emoticons.desktop",
             "kcm_nightcolor.desktop",
             "kgamma.desktop",
@@ -302,6 +302,7 @@ class AppFinder:
             "kcm_netpref.desktop",
             "kcm_webshortcuts.desktop",
             "kcm_nightlight.desktop",
+            "kcm_pulseaudio.desktop",  # Added here to make sure it's excluded
         ]
 
         result = []
@@ -331,6 +332,7 @@ class AppFinder:
             "qv4l2.desktop",
             "org.gnome.baobab.desktop",
             "klassy-settings.desktop",
+            "kcm_pulseaudio.desktop",  # Added here to make sure it's excluded
         ]
 
         result = []
@@ -1361,7 +1363,8 @@ class AppFinder:
             unique_programs = {}
             for program in programs:
                 app_id = program.get("app_id", "")
-                if app_id:  # Skip entries without app_id
+                # Skip entries without app_id or ones we explicitly want to exclude
+                if app_id and app_id != "kcm_pulseaudio":  # Added explicit check
                     unique_programs[app_id] = program
 
             # Get the reference order from the template JSON (complete list)
@@ -1467,6 +1470,10 @@ class AppFinder:
 
             # Before saving, apply any final customizations to match expected format
             for program in programs:
+                # Skip excluded programs one last time
+                if program.get("app_id") == "kcm_pulseaudio":
+                    continue
+
                 # Convert empty descriptions to null rather than empty string to match expected format
                 if program.get("app_description") == "":
                     program["app_description"] = None
