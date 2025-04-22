@@ -15,518 +15,16 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Kontrol Merkezi"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Android Cihazınızın İnternetini USB Aracılığıyla Linux Üzerinde Kullanma"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"To share your Android smartphone's internet connection with a Linux computer using a USB cable, "
-"follow these steps:"
-msgstr ""
-"Android akıllı telefonun internet bağlantısını bir USB kablosu kullanarak bir Linux bilgisayarla "
-"paylaşmak için şu adımları izleyin:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Android akıllı telefonunuzu USB kablosu kullanarak Linux bilgisayara bağlayın."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"On your smartphone, open 'Settings' and navigate to 'Network &amp; Internet' or 'Connections &amp; "
-"Sharing'."
-msgstr ""
-"Akıllı telefonunuzda, 'Ayarlar'ı açın ve 'Ağ ve İnternet' veya 'Bağlantılar ve Paylaşım' bölümüne "
-"gidin."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "'USB Tethering' arayın, etkinleştirin."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"Bu, Linux bilgisayarınızda herhangi bir ek yapılandırma gerektirmeden internet bağlantısını "
-"otomatik olarak kuracaktır."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Android cihazınız Wi-Fi'ye bağlı değilse ve mobil veriyi kullanıyorsa, bu bağlantı paylaşımı mobil "
-"planınızdan veri tüketir. Veri ücretlerinden kaçınmak için, paylaşımı etkinleştirmeden önce Android "
-"cihazınızın bir Wi-Fi ağına bağlı olduğundan emin olun."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Kapat"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "iOS Cihazınızın İnternetini USB Aracılığıyla Linux Üzerinde Kullanma"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"To share your iOS smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr ""
-"iOS akıllı telefonunuzun internet bağlantısını bir USB kablosu kullanarak bir Linux bilgisayarla "
-"paylaşmak için şu adımları izleyin:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "iOS cihazınızı USB kablosuyla Linux bilgisayara bağlayın."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "iOS cihazınızda, 'Ayarlar' a gidin, ardından 'Kişisel Erişim Noktası' nı seçin."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"'Diğerlerinin Katılmasına İzin Ver' özelliğini etkinleştirin. Bu, bir USB bağlantısı algılandığında "
-"'USB Tethering' özelliğini otomatik olarak etkinleştirebilir."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"iOS cihazınız Wi-Fi'ye bağlı değilse ve mobil veriyi kullanıyorsa, bu bağlantı paylaşımı mobil "
-"planınızdan veri tüketir. Veri ücretlerinden kaçınmak için, paylaşımı etkinleştirmeden önce iOS "
-"cihazınızın bir Wi-Fi ağına bağlı olduğundan emin olun."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Ana Sayfa"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Ağ ve İnternet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Telefon"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Özelleştir"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Bölge ve Dil"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Çoklu ortam"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Hesaplar"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Cihazlar"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Sistem"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Hakkında"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Diğer"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Ara..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
-msgid "Configure AppimageLauncher"
-msgstr "AppimageLauncher'ı yapılandır"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
-msgid "Choose the behavior of programs available in .appimage"
-msgstr ".appimage dosyasında bulunan programların davranışını seçin"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 26
-msgid "Usage settings for old music CDs are not valid for MP3 music."
-msgstr "Eski müzik CD'leri için kullanım ayarları MP3 müzik için geçerli değil."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 31
-msgid "Search for servers (zeroconf)"
-msgstr "Sunucuları ara (zeroconf)"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
-msgid "Restore program configuration"
-msgstr "Program yapılandırmasını geri yükle"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 37
-msgid "biglinux-config"
-msgstr "biglinux-config"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 42
-msgid ""
-"Utility that facilitates the restoration of the installed system, mainly restoring the system boot "
-"(Grub). It can also be used to access the package manager and terminal of the installed system."
-msgstr ""
-"Yüklü sistemin onarımını kolaylaştıran bir yardımcı program, genellikle sistem önyükleme (Grub) "
-"onarımını sağlar. Ayrıca yüklü sistemin paket yöneticisine ve terminaline erişmek için de "
-"kullanılabilir."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
-msgid "We provide complete configurations for you to select in an extremely simple way."
-msgstr ""
-"Size seçmek için size tam yapılandırmalar sunuyoruz, son derece basit bir şekilde seçim "
-"yapabilirsiniz."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
-msgid "Install or remove programs."
-msgstr "Programları yükle veya kaldır."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 62
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 63
-msgid "Introduction to BigLinux"
-msgstr "BigLinux'e Giriş"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 70
-msgid "Themes to Bootsplash"
-msgstr "Tema Ayarları için Başlangıç Ekranı"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 75
-msgid "Brightness and color"
-msgstr "Parlaklık ve renk"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 76
-msgid "Control brightness and colors"
-msgstr "Parlaklığı ve renkleri kontrol et"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
-msgid "Search for SSH servers"
-msgstr "SSH sunucularını ara"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
-msgid "Search for VNC servers"
-msgstr "VNC sunucularını ara"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
-msgid "Expand device support"
-msgstr "Cihaz desteğini genişlet"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 100
-msgid "The basis of the system and video card support"
-msgstr "Sistem ve video kartı desteğinin temeli"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 92
-msgid "Configure this window border theme"
-msgstr "Bu pencere kenar temasını yapılandır"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 97
-msgid "Configure this windows theme."
-msgstr "Bu Windows temasını yapılandırın."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
-msgid "Advanced Audio Manager - Alsamixer"
-msgstr "Gelişmiş Ses Yöneticisi - Alsamixer"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 116
-msgid "Audio controller in case of no sound."
-msgstr "Ses denetleyicisi ses olmadığında."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 126
-msgid "Partition or format"
-msgstr "Bölümle veya biçimlendir"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 127
-msgid "Be careful, this program may erase all data on your computer."
-msgstr "Dikkatli olun, bu program bilgisayarınızdaki tüm verileri silebilir."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 132
-msgid "Storage Information (SMART)"
-msgstr "Depolama Bilgisi (SMART)"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 141
-msgid "Gufw Firewall"
-msgstr "Gufw Güvenlik Duvarı"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 142
-msgid "Configure security rules for the internet connection."
-msgstr "İnternet bağlantısı için güvenlik kurallarını yapılandırın."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
-msgid "Configure webcam or capture card"
-msgstr "Web kamerasını veya yakalama kartını yapılandırma"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 157
-msgid "HP printers"
-msgstr "HP yazıcıları"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 158
-msgid "Check status, ink level and maintenance."
-msgstr "Durumu kontrol et, mürekkep seviyesi ve bakımı."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 164
-msgid "Scanners HP"
-msgstr "HP Tarayıcıları"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 169
-msgid "Assemble Apple Hardware"
-msgstr "Apple Donanımını Birleştir"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 170
-msgid ""
-"With this program you can access programs on your Apple iPhone or iPad in a similar way to "
-"accessing files on a pendrive."
-msgstr ""
-"Bu program ile Apple iPhone veya iPad'inizdeki programlara, dosyalara USB bellek gibi "
-"erişebilirsiniz."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 176
-msgid "Connect to the internet using Android"
-msgstr "Android kullanarak internete bağlanın"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
-msgid "Connect to Internet"
-msgstr "İnternete bağlan"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 192
-msgid "Connect to the internet using iOS"
-msgstr "iOS kullanarak internete bağlanın"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 198
-msgid "Equalizer (DSP)"
-msgstr "Eşitleyici (DSP)"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
-msgid "Virtual desktops and activities"
-msgstr "Sanal masaüstleri ve etkinlikler"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 212
-msgid "Create more than one virtual desktop by switching between them."
-msgstr "Birden fazla sanal masaüstü oluşturarak aralarında geçiş yapın."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 222
-msgid ""
-"Activating the search can consume significant memory and processing resources. This may cause the "
-"system to slow down, depending on the number of user files."
-msgstr ""
-"Arama işlemi etkinleştirildiğinde önemli miktarda bellek ve işlemci kaynağı tüketebilir. Bu durum, "
-"kullanıcı dosyalarının sayısına bağlı olarak sistemin yavaşlamasına neden olabilir."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 236
-msgid "Adjust the date, time and time zone."
-msgstr "Tarihi, saati ve saat dilimini ayarlayın."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
-msgid "Plasma Firewall"
-msgstr "Plazma Güvenlik Duvarı"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 273
-msgid "Configure security rules for connections. This firewall is based on the Gufw infrastructure"
-msgstr ""
-"Bağlantılar için güvenlik kurallarını yapılandırın. Bu güvenlik duvarı, Gufw altyapısına "
-"dayanmaktadır."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 292
-msgid "Integration with Google Drive and ownCloud"
-msgstr "Google Drive ve ownCloud entegrasyonu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 293
-msgid "Access your files that are on Google Drive or ownCloud directly from the file manager."
-msgstr "Dosya yöneticisinden Google Drive veya ownCloud'daki dosyalarınıza doğrudan erişin."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 307
-msgid "Layout settings, hotkeys and other options."
-msgstr "Düzen ayarları, kısayol tuşları ve diğer seçenekler."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 342
-msgid "Manage connections"
-msgstr "Bağlantıları yönet"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 343
-msgid ""
-"Advanced network configuration (VPN, wifi, wired, fixed IP, PPPoE, ADSL, wired network, mobile "
-"broadband and others)."
-msgstr ""
-"Gelişmiş ağ yapılandırması (VPN, wifi, kablolu, sabit IP, PPPoE, ADSL, kablolu ağ, mobil genişbant "
-"ve diğerleri)."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 397
-msgid "Manage services (Systemd)"
-msgstr "Hizmetleri Yönet (Systemd)"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 429
-msgid "Configure the Kvantum theme"
-msgstr "Kvantum temasını yapılandır"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 430
-msgid "For the Kvantum setup to work, apply the Kvantum theme in 'App Style'."
-msgstr "Kvantum kurulumunun çalışması için 'Uygulama Stili'nde Kvantum temasını uygulayın."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 435
-msgid "KDE Password Wallet"
-msgstr "KDE Parola Cüzdanı"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
-msgid "Snapshots and backups"
-msgstr "Anlık görüntüler ve yedeklemeler"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-msgid "Create or activate restore points"
-msgstr "Geri yükleme noktaları oluştur veya etkinleştir"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 474
-msgid "Manage files"
-msgstr "Dosyaları yönet"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 475
-msgid "Get access to your files and folders."
-msgstr "Dosyalarınıza ve klasörlerinize erişim sağlayın."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
-msgid "Storage Usage"
-msgstr "Depolama Kullanımı"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-msgid "KDE Connect"
-msgstr "KDE Bağlanabilirlik"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 487
-msgid ""
-"This program can transfer files between smartphones, tablets and other computers. With it, you can, "
-"for example, use your smartphone as a wireless mouse and keyboard to control the computer, among "
-"other features. It integrates better with BigLinux and sits among the applets located near the "
-"system clock. To synchronize with your smartphone, go to the Google Store or Apple Store and "
-"install Kde Connect."
-msgstr ""
-"Bu program, akıllı telefonlar, tabletler ve diğer bilgisayarlar arasında dosya transferi yapabilir. "
-"Örneğin, akıllı telefonunuzu kablosuz fare ve klavye olarak kullanarak bilgisayarı kontrol "
-"edebilirsiniz. BigLinux ile daha iyi entegre olur ve sistem saatinin yakınında bulunan uygulamalar "
-"arasında yer alır. Akıllı telefonunuzla senkronize etmek için Google Store veya Apple Store'a gidin "
-"ve Kde Connect'i yükleyin."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
-msgid "Terminal"
-msgstr "Terminal"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
-msgid "Access the command terminal."
-msgstr "Komut terminaline erişin."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 506
-msgid "Password Manager"
-msgstr "Parola Yöneticisi"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
-msgid "Sound and microphone"
-msgstr "Ses ve mikrofon"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
-msgid "Configure or change audio input and output devices. (Ex: HDMI)"
-msgstr "Ses giriş ve çıkış cihazlarını yapılandırın veya değiştirin. (Örn: HDMI)"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 540
-msgid "Shared file information"
-msgstr "Paylaşılan dosya bilgileri"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
-msgid "Printers"
-msgstr "Yazıcılar"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
-msgid "Install, configure or remove printers."
-msgstr "Yazıcıları yükleyin, yapılandırın veya kaldırın."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
-msgid "KDE Control Center"
-msgstr "KDE Kontrol Merkezi"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 557
-msgid "Advanced power configurator"
-msgstr "Gelişmiş güç yapılandırıcısı"
-msgid "$APP"
-msgstr "$UYGulama"
-msgid "Erro na criação do diretório : $bigdir"
-msgstr "$bigdir dizin oluşturma hatası"
-msgid "Category"
-msgstr "Kategori"
-msgid "Name"
-msgstr "Adı"
-msgid "ID"
-msgstr "Kimlik"
-msgid "Info"
-msgstr "Bilgi"
-msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
-msgstr ""
-"Rapor dosyası şuraya kaydedildi: $FILE_TO_SAVE\n"
-"Raporu şimdi görüntülemek ister misiniz?"
-msgid "Visualizar o relatório"
-msgstr "Raporu Görüntüle"
-msgid "Fechar"
-msgstr "Close"
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo Raporu"
-msgid "Central de Controle - Webcam"
-msgstr "Kontrol Merkezi - Web Kamerası"
-msgid "Nenhuma webcam localizada."
-msgstr "No webcam found."
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "Kamera zaten uygulamalar tarafından kullanılıyor:"
-msgid "Abrirei em modo de configuração. "
-msgstr "I will open in configuration mode."
-msgid "As alterações feitas podem ser vistas"
-msgstr "Değişiklikler görülebilir."
-msgid "na imagem da sua webcam em outros programas."
-msgstr "Web kamerası görüntüsünü diğer programlarda."
-msgid "Introdução ao BigLinux"
-msgstr "Giriş BigLinux"
+msgid "Aguarde..."
+msgstr "Bekleyin..."
+msgid "Verificando conexão com a Internet..."
+msgstr "Checking Internet connection..."
+msgid "Sem conexão com a Internet..."
+msgstr "No Internet connection..."
 msgid "Aguarde, carregando..."
 msgstr "Wait, loading..."
+msgid "Introdução ao BigLinux"
+msgstr "Giriş BigLinux"
 msgid "Bem vindo ao BigLinux"
 msgstr "Hoş geldiniz BigLinux'a"
 msgid "Comece com algumas etapas simples."
@@ -547,6 +45,10 @@ msgid "Defina seus programas padrões."
 msgstr "Set your default programs."
 msgid "Outros navegadores"
 msgstr "Diğer tarayıcılar"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "KDE Bağlanabilirlik"
 msgid ""
 "O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
 "dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
@@ -584,12 +86,6 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Your donation is very important to the project and follow the social media."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Congratulations, you have completed the first steps to using BigLinux."
-msgid "Aguarde..."
-msgstr "Bekleyin..."
-msgid "Verificando conexão com a Internet..."
-msgstr "Checking Internet connection..."
-msgid "Sem conexão com a Internet..."
-msgstr "No Internet connection..."
 msgid "Waydroid"
 msgstr "Waydroid"
 msgid ""
@@ -684,16 +180,51 @@ msgid "Parar o Waydroid"
 msgstr "Waydroid'u durdur"
 msgid "Iniciar o Waydroid"
 msgstr "Waydroid'u başlatmak"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 295
-msgid "Advanced Firewall"
-msgstr "Gelişmiş Güvenlik Duvarı"
+msgid "Category"
+msgstr "Kategori"
+msgid "Name"
+msgstr "Adı"
+msgid "ID"
+msgstr "Kimlik"
+msgid "Info"
+msgstr "Bilgi"
+msgid ""
+"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
+"Deseja visualizar o relatório agora?\n"
+"\t\t"
+msgstr ""
+"Rapor dosyası şuraya kaydedildi: $FILE_TO_SAVE\n"
+"Raporu şimdi görüntülemek ister misiniz?"
+msgid "Visualizar o relatório"
+msgstr "Raporu Görüntüle"
+msgid "Fechar"
+msgstr "Close"
+msgid "Hardinfo Relatory"
+msgstr "Hardinfo Raporu"
+msgid "$APP"
+msgstr "$UYGulama"
 msgid "Error creating directory: $bigdir"
 msgstr "Dizin oluşturulurken hata: $bigdir"
+msgid "Central de Controle - Webcam"
+msgstr "Kontrol Merkezi - Web Kamerası"
+msgid "Nenhuma webcam localizada."
+msgstr "No webcam found."
+msgid "A webcam já está sendo utilizada pelos aplicativos: "
+msgstr "Kamera zaten uygulamalar tarafından kullanılıyor:"
+msgid "Abrirei em modo de configuração. "
+msgstr "I will open in configuration mode."
+msgid "As alterações feitas podem ser vistas"
+msgstr "Değişiklikler görülebilir."
+msgid "na imagem da sua webcam em outros programas."
+msgstr "Web kamerası görüntüsünü diğer programlarda."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 183
-msgid "EFI Entry Manager"
-msgstr "EFI Giriş Yöneticisi"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+msgid "Configure AppimageLauncher"
+msgstr "AppimageLauncher'ı yapılandır"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+msgid "Choose the behavior of programs available in .appimage"
+msgstr ".appimage dosyasında bulunan programların davranışını seçin"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 508
 #: NEEDS WORK
@@ -709,6 +240,10 @@ msgstr "Ağınızdaki mevcut Zeroconf hizmetlerini arayın."
 #: NEEDS WORK
 msgid "Drivers and firmware"
 msgstr "Sürücüler ve yazılım."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
+msgid "Expand device support"
+msgstr "Cihaz desteğini genişlet"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 526
 #: NEEDS WORK
@@ -730,10 +265,22 @@ msgstr "Kerneli ve mesa sürümlerini yükleyin"
 msgid "System foundation and video card support"
 msgstr "Sistem temeli ve ekran kartı desteği"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+msgid "Restore program configuration"
+msgstr "Program yapılandırmasını geri yükle"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+msgid "Search for SSH servers"
+msgstr "SSH sunucularını ara"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 552
 #: NEEDS WORK
 msgid "Search for SSH servers with Zeroconf enabled"
 msgstr "Zeroconf etkinleştirilmiş SSH sunucularını ara"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+msgid "Search for VNC servers"
+msgstr "VNC sunucularını ara"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 560
 #: NEEDS WORK
@@ -750,10 +297,18 @@ msgstr "CMake"
 msgid "Cross-platform buildsystem"
 msgstr "Çapraz platform derleme sistemi"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 295
+msgid "Advanced Firewall"
+msgstr "Gelişmiş Güvenlik Duvarı"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 576
 #: NEEDS WORK
 msgid "Firewall Configuration"
 msgstr "Güvenlik Duvarı Yapılandırması"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "Gelişmiş Ses Yöneticisi - Alsamixer"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 584
 #: NEEDS WORK
@@ -820,6 +375,10 @@ msgstr "USB Görüntü Yazıcı"
 msgid "Create a bootable USB device"
 msgstr "Önyüklenebilir bir USB aygıt oluşturun"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+msgid "Storage Usage"
+msgstr "Depolama Kullanımı"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 644
 #: NEEDS WORK
 msgid "Shows disk usage and deletes unused files"
@@ -845,10 +404,38 @@ msgstr "KSystemLog"
 msgid "System log viewing tool"
 msgstr "Sistem günlük görüntüleme aracı"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+msgid "Sound and microphone"
+msgstr "Ses ve mikrofon"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "Ses giriş ve çıkış cihazlarını yapılandırın veya değiştirin. (Örn: HDMI)"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+msgid "Printers"
+msgstr "Yazıcılar"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+msgid "Install, configure or remove printers."
+msgstr "Yazıcıları yükleyin, yapılandırın veya kaldırın."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+msgid "KDE Control Center"
+msgstr "KDE Kontrol Merkezi"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 688
 #: NEEDS WORK
 msgid "Configuration tools for your computer"
 msgstr "Bilgisayarınız için yapılandırma araçları"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
+msgid "Install or remove programs."
+msgstr "Programları yükle veya kaldır."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+msgid "Configure webcam or capture card"
+msgstr "Web kamerasını veya yakalama kartını yapılandırma"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
 #: NEEDS WORK
@@ -864,6 +451,10 @@ msgstr "Erişilebilirlik"
 #: NEEDS WORK
 msgid "Configure accessibility options for users with special needs"
 msgstr "Özel ihtiyaçları olan kullanıcılar için erişilebilirlik seçeneklerini yapılandırın."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+msgid "Virtual desktops and activities"
+msgstr "Sanal masaüstleri ve etkinlikler"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
 #: NEEDS WORK
@@ -983,6 +574,10 @@ msgstr "Dosya İlişkileri"
 #: NEEDS WORK
 msgid "Configure which applications open specific file types"
 msgstr "Belirli dosya türlerini hangi uygulamaların açacağını yapılandırın."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
+msgid "Plasma Firewall"
+msgstr "Plazma Güvenlik Duvarı"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 839
 #: NEEDS WORK
@@ -1195,6 +790,11 @@ msgstr "Son Dosyalar"
 msgid "Manage the history of recently accessed files"
 msgstr "Son erişilen dosyaların geçmişini yönetin."
 # 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Bölge ve Dil"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
 #: NEEDS WORK
 msgid "Configure language, region, and format settings"
@@ -1345,6 +945,14 @@ msgstr ""
 "bulunan appletler arasında yer alır. Akıllı telefonunuzla senkronize olmak için Google Store veya "
 "Apple Store'a gidin ve KDE Connect'i yükleyin."
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
+msgid "Terminal"
+msgstr "Terminal"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+msgid "Access the command terminal."
+msgstr "Komut terminaline erişin."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1172
 #: NEEDS WORK
 msgid "KWalletManager"
@@ -1375,15 +983,33 @@ msgstr "Android kullanarak internete bağlanın."
 msgid "Connect to internet using iOS"
 msgstr "iOS kullanarak internete bağlanın."
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+msgid "Connect to Internet"
+msgstr "İnternete bağlan"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1212
 #: NEEDS WORK
 msgid "Users"
 msgstr "Kullanıcılar"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
+msgid "Snapshots and backups"
+msgstr "Anlık görüntüler ve yedeklemeler"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "Create or activate restore points"
+msgstr "Geri yükleme noktaları oluştur veya etkinleştir"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
 #: NEEDS WORK
 msgid "BigLinux Themes"
 msgstr "BigLinux Temaları"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr ""
+"Size seçmek için size tam yapılandırmalar sunuyoruz, son derece basit bir şekilde seçim "
+"yapabilirsiniz."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1238
 #: NEEDS WORK
@@ -1475,6 +1101,11 @@ msgstr "Sanal Masaüstleri"
 msgid "Configure virtual desktops and KWin behaviors."
 msgstr "Sanal masaüstlerini ve KWin davranışlarını yapılandırın."
 # 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Kontrol Merkezi"
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
 #: NEEDS WORK
 msgid "Categories"
@@ -1489,6 +1120,16 @@ msgstr "Programlar"
 #: NEEDS WORK
 msgid "Menu"
 msgstr "Menü"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Hakkında"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Ara..."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
 #: NEEDS WORK
@@ -1519,10 +1160,80 @@ msgstr "BigLinux Ekibi"
 msgid "© 2025 BigLinux Team"
 msgstr "© 2025 BigLinux Ekibi"
 # 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Android Cihazınızın İnternetini USB Aracılığıyla Linux Üzerinde Kullanma"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Android akıllı telefonunuzu USB kablosu kullanarak Linux bilgisayara bağlayın."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
 #: NEEDS WORK
 msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
 msgstr "Akıllı telefonunuzda 'Ayarlar'ı açın ve 'Ağ ve İnternet' veya 'Bağlantılar ve Paylaşım'a gidin."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "'USB Tethering' arayın, etkinleştirin."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
+msgstr ""
+"Bu, Linux bilgisayarınızda herhangi bir ek yapılandırma gerektirmeden internet bağlantısını "
+"otomatik olarak kuracaktır."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Android cihazınız Wi-Fi'ye bağlı değilse ve mobil veriyi kullanıyorsa, bu bağlantı paylaşımı mobil "
+"planınızdan veri tüketir. Veri ücretlerinden kaçınmak için, paylaşımı etkinleştirmeden önce Android "
+"cihazınızın bir Wi-Fi ağına bağlı olduğundan emin olun."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "iOS Cihazınızın İnternetini USB Aracılığıyla Linux Üzerinde Kullanma"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "iOS cihazınızı USB kablosuyla Linux bilgisayara bağlayın."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "iOS cihazınızda, 'Ayarlar' a gidin, ardından 'Kişisel Erişim Noktası' nı seçin."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr ""
+"'Diğerlerinin Katılmasına İzin Ver' özelliğini etkinleştirin. Bu, bir USB bağlantısı algılandığında "
+"'USB Tethering' özelliğini otomatik olarak etkinleştirebilir."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"iOS cihazınız Wi-Fi'ye bağlı değilse ve mobil veriyi kullanıyorsa, bu bağlantı paylaşımı mobil "
+"planınızdan veri tüketir. Veri ücretlerinden kaçınmak için, paylaşımı etkinleştirmeden önce iOS "
+"cihazınızın bir Wi-Fi ağına bağlı olduğundan emin olun."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
 #: NEEDS WORK
@@ -1532,3 +1243,53 @@ msgid ""
 msgstr ""
 "Bir USB kablosu kullanarak akıllı telefonunuzun internet bağlantısını bir Linux bilgisayarıyla "
 "paylaşmak için şu adımları izleyin:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "Kapat"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "Ana Sayfa"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Ağ ve İnternet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Telefon"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Özelleştir"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Çoklu ortam"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Hesaplar"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Cihazlar"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Sistem"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Diğer"
