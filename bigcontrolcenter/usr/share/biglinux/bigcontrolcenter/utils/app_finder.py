@@ -1,0 +1,1500 @@
+"""
+BigControlCenter - Application finder utility
+
+This module is responsible for finding desktop applications
+and generating program information similar to the original
+loop-search.sh and getappinfo.py scripts.
+"""
+
+import os
+import json
+import subprocess
+import re
+import glob
+from pathlib import Path
+import gettext
+import gi
+
+gi.require_version("Gtk", "4.0")
+from gi.repository import Gio, Gtk, Gdk
+
+# Setup translations
+try:
+    lang_translations = gettext.translation(
+        "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
+    )
+    lang_translations.install()
+    _ = lang_translations.gettext
+except Exception:
+    # Fallback if translation fails
+    _ = lambda x: x
+
+
+class AppFinder:
+    """
+    Utility class to find desktop applications and generate program information
+    """
+
+    def __init__(self):
+        """Initialize the app finder"""
+        # In GTK4, we need to get the icon theme from the display
+        display = Gdk.Display.get_default()
+        self.icon_theme = Gtk.IconTheme.get_for_display(display)
+
+        # Set up cache file paths
+        self.cache_file = os.path.expanduser("~/.cache/bigcontrolcenter.json")
+        self.pre_cache_file = os.path.expanduser(
+            "~/.cache/pre-cache-bigcontrolcenter.json"
+        )
+
+        self.replacements = self._get_replacements()
+
+    def get_programs(self, generate_cache=False):
+        """
+        Get program information, either from cache or by scanning the system
+
+        Args:
+            generate_cache: If True, force regeneration of cache file
+        """
+        # Try to read from cache first if not forcing cache generation
+        if not generate_cache and os.path.exists(self.cache_file):
+            try:
+                with open(self.cache_file, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except (json.JSONDecodeError, IOError):
+                # If cache read fails, continue with scanning
+                pass
+
+        # Create pre-cache file to indicate that we're processing
+        self.create_pre_cache_file()
+
+        # Find desktop files
+        desktop_files = self._find_desktop_files()
+
+        # Use a dictionary to deduplicate entries by app_id
+        program_dict = {}
+
+        # Get program info for each desktop file
+        for desktop_file in desktop_files:
+            app_id = self._get_app_id_from_path(desktop_file)
+
+            # Skip if we already have this app_id processed
+            if app_id in program_dict:
+                continue
+
+            program_info = self._get_app_info(app_id, desktop_file)
+            if program_info:
+                program_dict[app_id] = program_info
+
+        # Add special entries that don't have desktop files
+        special_entries = [
+            "android-usb",
+            "ios-usb",
+            "network-connect",
+            "qefientrymanager",
+            "big-themes-gui",
+        ]
+        for entry_id in special_entries:
+            # Skip if we already have this special entry processed from desktop files
+            if entry_id in program_dict:
+                continue
+
+            replacement = self._find_replacement(entry_id)
+            if replacement and "app_id" in replacement:
+                # Create a minimal program entry that will be populated by the replacement
+                program_info = {
+                    "app_id": entry_id,
+                    "app_name": entry_id,
+                    "app_exec": "",
+                    "app_description": "",
+                    "app_icon": "",
+                    "app_categories": "Other",
+                }
+
+                # Apply the replacement data
+                for key in [
+                    "app_name",
+                    "app_exec",
+                    "app_description",
+                    "app_icon",
+                    "app_categories",
+                ]:
+                    if key in replacement:
+                        program_info[key] = replacement[key]
+
+                program_dict[entry_id] = program_info
+
+        # Convert dictionary to list, maintaining only unique entries
+        programs = list(program_dict.values())
+
+        # Save to cache
+        self._save_to_cache(programs)
+
+        # Remove pre-cache file to indicate completion
+        self.remove_pre_cache_file()
+
+        return programs
+
+    def _find_desktop_files(self):
+        """
+        Find desktop files similar to the loop-search.sh script
+        """
+        # Keep track of app_ids we've already seen to avoid processing duplicate entries
+        unique_app_ids = set()
+        unique_files = []
+
+        # Process files in priority order (most important sources first)
+
+        # 1. Static files first (guaranteed entries we want)
+        static_files = self._find_static_desktop_files()
+        for file_path in static_files:
+            app_id = self._get_app_id_from_path(file_path)
+            if app_id not in unique_app_ids and os.path.exists(file_path):
+                unique_app_ids.add(app_id)
+                unique_files.append(file_path)
+
+        # 2. Big Control Center specific desktop files
+        bcc_files = self._find_bcc_desktop_files()
+        for file_path in bcc_files:
+            app_id = self._get_app_id_from_path(file_path)
+            if app_id not in unique_app_ids and os.path.exists(file_path):
+                unique_app_ids.add(app_id)
+                unique_files.append(file_path)
+
+        # 3. Regular application desktop files with kcm prefix
+        app_files = self._find_app_desktop_files()
+        for file_path in app_files:
+            app_id = self._get_app_id_from_path(file_path)
+            if app_id not in unique_app_ids and os.path.exists(file_path):
+                unique_app_ids.add(app_id)
+                unique_files.append(file_path)
+
+        # 4. KDE Service desktop files last (most likely to have duplicates)
+        kde_service_files = self._find_kde_service_files()
+        for file_path in kde_service_files:
+            app_id = self._get_app_id_from_path(file_path)
+            if app_id not in unique_app_ids and os.path.exists(file_path):
+                unique_app_ids.add(app_id)
+                unique_files.append(file_path)
+
+        return unique_files
+
+    def _find_kde_service_files(self):
+        """Find KDE service desktop files"""
+        excluded_patterns = [
+            "kcmdolphingeneral.desktop",
+            "kcmdolphinnavigation.desktop",
+            "kcmdolphinservices.desktop",
+            "kcmdolphinviewmodes.desktop",
+            "cache.desktop",
+            "cookies.desktop",
+            "kcmtrash.desktop",
+            "netpref.desktop",
+            "proxy.desktop",
+            "useragent.desktop",
+            "webshortcuts.desktop",
+            "kcm_ssl.desktop",
+            "bluedevildevices.desktop",
+            "bluedevilglobal.desktop",
+            "formats.desktop",
+            "camera.desktop",
+            "fontinst.desktop",
+            "powerdevilactivitiesconfig.desktop",
+            "kcm_plasmasearch.desktop",
+            "kwinscreenedges.desktop",
+            "kwintouchscreen.desktop",
+            "keys.desktop",
+            "standard_actions.desktop",
+            "khotkeys.desktop",
+            "qtquicksettings.desktop",
+            "solid-actions.desktop",
+            "spellchecking.desktop",
+            "kwinactions.desktop",
+            "kwinfocus.desktop",
+            "kwinmoving.desktop",
+            "kwinoptions.desktop",
+            "kwinrules.desktop",
+            "kcm_kwin_scripts.desktop",
+            "kwintabbox.desktop",
+            "breezestyleconfig.desktop",
+            "breezedecorationconfig.desktop",
+            "oxygenstyleconfig.desktop",
+            "oxygendecorationconfig.desktop",
+            # "kcm_pulseaudio.desktop",
+            "emoticons.desktop",
+            "kcm_nightcolor.desktop",
+            "kgamma.desktop",
+            "powerdevilglobalconfig.desktop",
+            "kwincompositing.desktop",
+            "kcmsmserver.desktop",
+            "kcmkded.desktop",
+            "kamera.desktop",
+            "kcm_kwin_virtualdesktops.desktop",
+            "powerdevilprofilesconfig.desktop",
+            "kcmperformance.desktop",
+            "kcmkonqyperformance.desktop",
+            "bookmarks.desktop",
+            "msm_user.desktop",
+            "kcm_feedback.desktop",
+            "kcm_users.desktop",
+            "msm_kernel.desktop",
+            "kcm_kdisplay.desktop",
+            "msm_keyboard.desktop",
+            "msm_language_packages.desktop",
+            "msm_locale.desktop",
+            "msm_mhwd.desktop",
+            "kcm_lookandfeel.desktop",
+            "sierrabreezeenhancedconfig.desktop",
+            "msm_timedate.desktop",
+            "kcm_virtualkeyboard.desktop",
+            "lightlystyleconfig.desktop",
+            "lightlydecorationconfig.desktop",
+            "kcm_landingpage.desktop",
+            "libkcddb.desktop",
+            "kcm_solid_actions.desktop",
+            "classikstyleconfig.desktop",
+            "classikdecorationconfig.desktop",
+            "klassydecorationconfig.desktop",
+            "plasma-applet-org.kde.plasma.bluetooth.desktop",
+            "klassystyleconfig.desktop",
+        ]
+
+        result = []
+
+        # Implementation using python's subprocess instead of grep
+        try:
+            cmd = ["grep", "-Rl", "-E", "(kcmshell6|control)", "/usr/share/kservices5/"]
+            output = subprocess.check_output(cmd, text=True).strip()
+            if output:
+                for file_path in output.split("\n"):
+                    # Check against exclusion patterns
+                    if file_path and not any(
+                        pattern in file_path for pattern in excluded_patterns
+                    ):
+                        result.append(file_path)
+        except subprocess.SubprocessError:
+            # Grep command failed - silent handling
+            pass
+
+        return result
+
+    def _find_app_desktop_files(self):
+        """Find application desktop files with kcm_ prefix"""
+        excluded_patterns = [
+            "kcm_kdisplay.desktop",
+            # "kcm_keyboard.desktop",
+            "kcm_krunnersettings.desktop",
+            "kcm_about-distro.desktop",
+            "kcm_breezedecoration.desktop",
+            "kcm_kwinxwayland.desktop",
+            "kcm_keys.desktop",
+            "kcm_powerdevilglobalconfig.desktop",
+            "kcm_powerdevilactivitiesconfig.desktop",
+            "kcm_fontinst.desktop",
+            "kcm_printer_manager.desktop",
+            "kcm_kwinrules.desktop",
+            "kcm_kwintabbox.desktop",
+            "kcm_qtquicksettings.desktop",
+            "kcm_energyinfo.desktop",
+            "kcm_kgamma.desktop",
+            "kcm_klassydecoration.desktop",
+            "kcm_wacomtablet.desktop",
+            "kcm_netpref.desktop",
+            "kcm_webshortcuts.desktop",
+            "kcm_nightlight.desktop",
+        ]
+
+        result = []
+
+        # Find kcm_*.desktop files in /usr/share/applications/
+        for file_path in glob.glob("/usr/share/applications/kcm_*.desktop"):
+            # Check against exclusion patterns
+            if not any(pattern in file_path for pattern in excluded_patterns):
+                result.append(file_path)
+
+        return result
+
+    def _find_bcc_desktop_files(self):
+        """Find BigControlCenter specific desktop files"""
+        excluded_patterns = [
+            # "timeshift-gtk.desktop",
+            "cups.desktop",
+            "htop.desktop",
+            "msm_kde_notifier_settings.desktop",
+            "mpv.desktop",
+            "manjaro-settings-manager.desktop",
+            "org.kde.kuserfeedback-console.desktop",
+            "qvidcap.desktop",
+            "kdesettings",
+            "lstopo.desktop",
+            "kdesystemsettings.desktop",
+            "qv4l2.desktop",
+            "org.gnome.baobab.desktop",
+            "klassy-settings.desktop",
+        ]
+
+        result = []
+
+        # Find files in /usr/share/applications/bigcontrolcenter/
+        if os.path.exists("/usr/share/applications/bigcontrolcenter/"):
+            for file_path in glob.glob("/usr/share/applications/bigcontrolcenter/*"):
+                if os.path.isfile(file_path):
+                    # Check against exclusion patterns
+                    if not any(pattern in file_path for pattern in excluded_patterns):
+                        result.append(file_path)
+
+        return result
+
+    def _find_static_desktop_files(self):
+        """Return a list of static desktop files paths based on the shell script"""
+        static_files = [
+            "/usr/share/applications/big-store.desktop",
+            "/usr/share/applications/bigcontrolcenter/pavucontrol-qt.desktop",
+            "/usr/share/applications/org.manjaro.pamac.manager.desktop",
+            "/usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop",
+            "/usr/share/kservices5/bigcontrolcenter/qv4l2.desktop",
+            "/usr/share/applications/biglinux-noise-reduction-pipewire.desktop",
+            "/usr/share/applications/biglinux-grub-restore.desktop",
+            "/usr/share/applications/gsmartcontrol.desktop",
+            # "/usr/share/applications/org.kde.kdeconnect-settings.desktop",
+            "/usr/share/applications/org.kde.dolphin.desktop",
+            "/usr/share/applications/org.kde.konsole.desktop",
+            "/usr/share/applications/guvcview.desktop",
+            "/usr/share/applications/hplip.desktop",
+            "/usr/share/kservices5/smb.desktop",
+            "/usr/share/applications/big-driver-manager.desktop",
+            "/usr/share/applications/big-hardware-info.desktop",
+            "/usr/share/applications/big-kernel-manager.desktop",
+            "/usr/share/applications/org.kde.kwalletmanager.desktop",
+        ]
+
+        # Filter out files that don't exist
+        return [file_path for file_path in static_files if os.path.exists(file_path)]
+
+    def _get_app_id_from_path(self, file_path):
+        """Extract the app ID from a desktop file path"""
+        base_name = os.path.basename(file_path)
+        return os.path.splitext(base_name)[0]
+
+    def _get_app_info(self, app_id, file_path):
+        """
+        Get application information for a desktop file
+        Similar to getappinfo.py but using GIO directly
+        """
+        try:
+            app_info = Gio.DesktopAppInfo.new_from_filename(file_path)
+            if not app_info:
+                return None
+
+            # Get icon path
+            icon = app_info.get_icon()
+            icon_path = self._get_icon_path(icon) if icon else None
+
+            # Get executable with parameters - KEEP the parameters as in the JSON template
+            exec_field = app_info.get_string("Exec") or "null"
+            executable = exec_field.strip()
+
+            # Get categories from desktop file - preserve original format
+            categories = app_info.get_categories() or "Other"
+
+            # Create info dictionary
+            info_dict = {
+                "app_id": app_id,
+                "app_name": app_info.get_display_name() or app_id,
+                "app_exec": executable,
+                "app_description": app_info.get_description(),  # Allow None/null values
+                "app_icon": icon_path or "",
+                "app_categories": categories,
+            }
+
+            # Apply replacements if available (this is crucial for matching expected output)
+            replacement = self._find_replacement(app_id)
+            if replacement:
+                for key in [
+                    "app_name",
+                    "app_exec",
+                    "app_description",
+                    "app_icon",
+                    "app_categories",
+                ]:
+                    if key in replacement:
+                        info_dict[key] = replacement[key]
+
+            return info_dict
+        except Exception as e:
+            print(f"Error processing {app_id}: {e}")
+            return None
+
+    def _get_icon_path(self, icon):
+        """Get path for an icon using GIO with progressive fallback strategy"""
+        if not icon:
+            return ""
+
+        # If icon is a FileIcon (absolute path)
+        if isinstance(icon, Gio.FileIcon):
+            return icon.get_file().get_path()
+
+        # Get icon names
+        if isinstance(icon, Gio.ThemedIcon):
+            icon_names = icon.get_names()
+        else:
+            # Convert icon to string as fallback
+            icon_str = icon.to_string()
+            if icon_str.startswith("/"):
+                return icon_str
+            icon_names = [icon_str]
+
+        # Prioritize specific themes used in BigLinux
+        icon_themes = [
+            "bigicons-papient-dark",
+            "bigicons-papient",
+            "BigLinux",
+            "biglinux",
+            "hicolor",
+            "Adwaita",
+            "breeze",
+            "Papirus",
+        ]
+
+        # Try each icon name with progressive fallback
+        for icon_name in icon_names:
+            if icon_name.startswith("/"):
+                # Absolute path
+                return icon_name
+
+            # First try using just the icon name - this is the key change
+            # that will let the system find icons in any theme first
+            if icon_name:
+                # Return just the icon name to let the system handle theme lookup
+                return icon_name
+
+            # Progressive name simplification (remove parts from the end)
+            parts = icon_name.split("-")
+            for end in range(len(parts), 0, -1):
+                modified_name = "-".join(parts[:end])
+
+                # Return the simplified name if we found it
+                if modified_name:
+                    return modified_name
+
+        # If all else fails, return a default icon name
+        return "application-default-icon"
+
+    def _find_replacement(self, app_id):
+        """Find a replacement entry for the app_id"""
+        for replacement in self.replacements:
+            if replacement.get("app_id") == app_id:
+                return replacement
+        return None
+
+    def _get_replacements(self):
+        """
+        Get a comprehensive list of program replacements using icon names instead of absolute paths
+        """
+        # Return the list of replacements with icon names instead of absolute paths
+        return [
+            {
+                "app_id": "appimagelaunchersettings",
+                "app_name": _("Configure AppimageLauncher"),
+                "app_exec": "AppImageLauncherSettings %f",
+                "app_description": _(
+                    "Choose the behavior of programs available in .appimage"
+                ),
+                "app_icon": "AppImageLauncher",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "avahi-discover",
+                "app_name": _("Find servers (zeroconf)"),
+                "app_exec": "/usr/bin/avahi-discover",
+                "app_description": _(
+                    "Search for Zeroconf services available on your network"
+                ),
+                "app_icon": "network-wired",
+                "app_categories": "Other",
+            },
+            {
+                "app_id": "big-driver-manager",
+                "app_name": _("Drivers and firmware"),
+                "app_exec": "big-driver-manager",
+                "app_description": _("Expand device support"),
+                "app_icon": "big-driver-manager",
+                "app_categories": "Star Hardware",
+            },
+            {
+                "app_id": "big-hardware-info",
+                "app_name": _("Hardware Information"),
+                "app_exec": "big-hardware-info",
+                "app_description": _("Detailed information about your computer"),
+                "app_icon": "big-hardware-info",
+                "app_categories": "Star About",
+            },
+            {
+                "app_id": "big-kernel-manager",
+                "app_name": _("Install kernel and mesa versions"),
+                "app_exec": "big-kernel-manager",
+                "app_description": _("System foundation and video card support"),
+                "app_icon": "big-kernel-manager",
+                "app_categories": "Star System",
+            },
+            {
+                "app_id": "biglinux-config",
+                "app_name": _("Restore program configuration"),
+                "app_exec": "biglinux-config",
+                "app_description": _("Restore program configuration"),
+                "app_icon": "biglinux-config",
+                "app_categories": "System Star",
+            },
+            {
+                "app_id": "bssh",
+                "app_name": _("Search for SSH servers"),
+                "app_exec": "/usr/bin/bssh",
+                "app_description": _("Search for SSH servers with Zeroconf enabled"),
+                "app_icon": "network-wired",
+                "app_categories": "Other",
+            },
+            {
+                "app_id": "bvnc",
+                "app_name": _("Search for VNC servers"),
+                "app_exec": "/usr/bin/bvnc",
+                "app_description": _("Search for VNC servers with Zeroconf enabled"),
+                "app_icon": "network-wired",
+                "app_categories": "Other",
+            },
+            {
+                "app_id": "cmake-gui",
+                "app_name": _("CMake"),
+                "app_exec": "cmake-gui %f",
+                "app_description": _("Cross-platform buildsystem"),
+                "app_icon": "CMakeSetup",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "firewall-config",
+                "app_name": _("Advanced Firewall"),
+                "app_exec": "/usr/bin/firewall-config",
+                "app_description": _("Firewall Configuration"),
+                "app_icon": "firewall-config",
+                "app_categories": "Network",
+            },
+            {
+                "app_id": "gnome-alsamixer",
+                "app_name": _("Advanced Audio Manager - Alsamixer"),
+                "app_exec": "gnome-alsamixer",
+                "app_description": _("Audio controller in case of sound absence."),
+                "app_icon": "gnome-alsamixer-icon",
+                "app_categories": "Multimedia",
+            },
+            {
+                "app_id": "gparted",
+                "app_name": _("Partition or Format"),
+                "app_exec": "gparted",
+                "app_description": _(
+                    "Be careful, this program can erase all data on your computer."
+                ),
+                "app_icon": "gparted",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "hplip",
+                "app_name": _("HP Printers"),
+                "app_exec": "hp-toolbox",
+                "app_description": _("Check status, ink level, and maintenance."),
+                "app_icon": "hp_logo",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "hp-uiscan",
+                "app_name": _("HP Scanners"),
+                "app_exec": "/usr/bin/hp-uiscan",
+                "app_description": _("Configure and use HP scanning devices"),
+                "app_icon": "scanner",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kvantummanager",
+                "app_name": _("Configure Kvantum Theme"),
+                "app_exec": "kvantummanager",
+                "app_description": _(
+                    "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
+                ),
+                "app_icon": "kvantum",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "mintstick-format-kde",
+                "app_name": _("USB Device Formatter"),
+                "app_exec": "mintstick -m format",
+                "app_description": _("Format a USB device"),
+                "app_icon": "system-run",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "mintstick-kde",
+                "app_name": _("USB Image Writer"),
+                "app_exec": "mintstick -m iso",
+                "app_description": _("Create a bootable USB device"),
+                "app_icon": "system-run",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "org.kde.filelight",
+                "app_name": _("Storage Usage"),
+                "app_exec": "filelight %u",
+                "app_description": _("Shows disk usage and deletes unused files"),
+                "app_icon": "filelight",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "org.kde.kinfocenter",
+                "app_name": _("Information Center"),
+                "app_exec": "kinfocenter",
+                "app_description": _(
+                    "Centralized and convenient summary of system information"
+                ),
+                "app_icon": "hwinfo",
+                "app_categories": "About",
+            },
+            {
+                "app_id": "org.kde.ksystemlog",
+                "app_name": _("KSystemLog"),
+                "app_exec": "ksystemlog -qwindowtitle %c",
+                "app_description": _("System log viewing tool"),
+                "app_icon": "utilities-log-viewer",
+                "app_categories": "System About",
+            },
+            {
+                "app_id": "pavucontrol-qt",
+                "app_name": _("Sound and microphone"),
+                "app_exec": "pavucontrol-qt",
+                "app_description": _(
+                    "Configure or change audio input and output devices. (Ex: HDMI)"
+                ),
+                "app_icon": "multimedia-volume-control",
+                "app_categories": "Star Multimedia",
+            },
+            {
+                "app_id": "system-config-printer",
+                "app_name": _("Printers"),
+                "app_exec": "system-config-printer",
+                "app_description": _("Install, configure or remove printers."),
+                "app_icon": "printer",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "systemsettings",
+                "app_name": _("KDE Control Center"),
+                "app_exec": "systemsettings",
+                "app_description": _("Configuration tools for your computer"),
+                "app_icon": "preferences-system",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "big-store",
+                "app_name": _("Big Store"),
+                "app_exec": "big-store",
+                "app_description": _("Install or remove programs."),
+                "app_icon": "big-store",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "guvcview",
+                "app_name": _("Configure webcam or capture card"),
+                "app_exec": "guvcview",
+                "app_description": _(
+                    "Adjust settings and control webcams or video capture devices"
+                ),
+                "app_icon": "guvcview",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_access",
+                "app_name": _("Accessibility"),
+                "app_exec": "systemsettings kcm_access",
+                "app_description": _(
+                    "Configure accessibility options for users with special needs"
+                ),
+                "app_icon": "preferences-desktop-accessibility",
+                "app_categories": "Account",
+            },
+            {
+                "app_id": "kcm_activities",
+                "app_name": _("Virtual desktops and activities"),
+                "app_exec": "kcmshell6 kcm_kwin_virtualdesktops kcm_activities",
+                "app_description": _(
+                    "Create more than one virtual work environment by switching between them."
+                ),
+                "app_icon": "preferences-desktop-activities",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_autostart",
+                "app_name": _("Autostart"),
+                "app_exec": "kcmshell6 autostart",
+                "app_description": _(
+                    "Manage applications that start automatically on login"
+                ),
+                "app_icon": "system-run",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_baloofile",
+                "app_name": _("File Search"),
+                "app_exec": "systemsettings kcm_baloofile",
+                "app_description": _(
+                    "Enabling search can consume significant memory and processing resources. This may cause the system to slow down, depending on the number of user files."
+                ),
+                "app_icon": "preferences-desktop-baloo",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_bluetooth",
+                "app_name": _("Bluetooth"),
+                "app_exec": "systemsettings kcm_bluetooth",
+                "app_description": _("Connect and manage Bluetooth devices"),
+                "app_icon": "preferences-system-bluetooth",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_bolt",
+                "app_name": _("Thunderbolt"),
+                "app_exec": "systemsettings kcm_bolt",
+                "app_description": _(
+                    "Manage Thunderbolt devices and security settings"
+                ),
+                "app_icon": "preferences-desktop-thunderbolt",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_clock",
+                "app_name": _("Date and Time"),
+                "app_exec": "kcmshell6 clock",
+                "app_description": _("Adjust date, time and timezone."),
+                "app_icon": "preferences-system-time",
+                "app_categories": "Language",
+            },
+            {
+                "app_id": "kcm_colors",
+                "app_name": _("Colors"),
+                "app_exec": "systemsettings kcm_colors",
+                "app_description": _(
+                    "Customize the color scheme of your desktop environment"
+                ),
+                "app_icon": "preferences-desktop-color",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_componentchooser",
+                "app_name": _("Default Applications"),
+                "app_exec": "systemsettings kcm_componentchooser",
+                "app_description": _(
+                    "Select which applications to use for specific tasks"
+                ),
+                "app_icon": "preferences-desktop-default-applications",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_cursortheme",
+                "app_name": _("Cursors"),
+                "app_exec": "systemsettings kcm_cursortheme",
+                "app_description": _("Change mouse cursor appearance and themes"),
+                "app_icon": "preferences-desktop-cursors",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_desktoppaths",
+                "app_name": _("Locations"),
+                "app_exec": "kcmshell6 desktoppaths",
+                "app_description": _(
+                    "Configure default paths for documents, downloads and other folders"
+                ),
+                "app_icon": "system-file-manager",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_desktoptheme",
+                "app_name": _("Plasma Style"),
+                "app_exec": "systemsettings kcm_desktoptheme",
+                "app_description": _(
+                    "Change the visual appearance of the Plasma desktop"
+                ),
+                "app_icon": "preferences-desktop-plasma-theme",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_filetypes",
+                "app_name": _("File Associations"),
+                "app_exec": "systemsettings kcm_filetypes",
+                "app_description": _(
+                    "Configure which applications open specific file types"
+                ),
+                "app_icon": "preferences-desktop-filetype-association",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_firewall",
+                "app_name": _("Plasma Firewall"),
+                "app_exec": "systemsettings kcm_firewall",
+                "app_description": _(
+                    "Configure security rules for connections. This firewall is based on Gufw infrastructure."
+                ),
+                "app_icon": "preferences-security-firewall",
+                "app_categories": "Network",
+            },
+            {
+                "app_id": "kcm_flatpak",
+                "app_name": _("Flatpak Permissions"),
+                "app_exec": "systemsettings kcm_flatpak",
+                "app_description": _("Manage permissions for Flatpak applications"),
+                "app_icon": "flatpak-discover",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_fonts",
+                "app_name": _("Fonts"),
+                "app_exec": "kcmshell6 kcm_fonts fontinst",
+                "app_description": _(
+                    "Install and configure system fonts and typography settings"
+                ),
+                "app_icon": "preferences-desktop-font",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_gamecontroller",
+                "app_name": _("Game Controller"),
+                "app_exec": "systemsettings kcm_gamecontroller",
+                "app_description": _("Configure game controllers and joysticks"),
+                "app_icon": "preferences-desktop-gaming",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_icons",
+                "app_name": _("Icons"),
+                "app_exec": "kcmshell6 kcm_icons",
+                "app_description": _(
+                    "Change the icon theme used throughout the system"
+                ),
+                "app_icon": "preferences-desktop-icons",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_kaccounts",
+                "app_name": _("Google Drive and ownCloud Integration"),
+                "app_exec": "kcmshell6 kcm_kaccounts",
+                "app_description": _(
+                    "Access your files on Google Drive or ownCloud directly from the file manager."
+                ),
+                "app_icon": "preferences-online-accounts",
+                "app_categories": "Network",
+            },
+            {
+                "app_id": "kcm_kamera",
+                "app_name": _("Digital Camera"),
+                "app_exec": "systemsettings kcm_kamera",
+                "app_description": _(
+                    "Configure digital camera integration with your system"
+                ),
+                "app_icon": "camera-photo",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_kded",
+                "app_name": _("Background Services"),
+                "app_exec": "kcmshell6 kcm_kded",
+                "app_description": _(
+                    "Manage system services running in the background"
+                ),
+                "app_icon": "preferences-system-session-services",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_keyboard",
+                "app_name": _("Keyboard"),
+                "app_exec": "kcmshell6 kcm_keyboard kcm_keys kcm_kwinxwayland kcm_virtualkeyboard",
+                "app_description": _("Layout settings, shortcuts and other options."),
+                "app_icon": "preferences-desktop-keyboard",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_kscreen",
+                "app_name": _("Display Settings"),
+                "app_exec": "kcmshell6 kcm_kscreen kcm_nightlight kgamma kwinscreenedges",
+                "app_description": _(
+                    "Configure monitors, resolution, and screen arrangement"
+                ),
+                "app_icon": "preferences-desktop-display-randr",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_kwindecoration",
+                "app_name": _("Window Decorations"),
+                "app_exec": "kcmshell6 kwindecoration",
+                "app_description": _(
+                    "Change the appearance of window title bars and borders"
+                ),
+                "app_icon": "preferences-desktop-theme-windowdecorations",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_kwin_effects",
+                "app_name": _("Desktop Effects"),
+                "app_exec": "kcmshell6 kwincompositing kcm_kwin_effects qtquicksettings",
+                "app_description": _(
+                    "Configure visual effects and animations for the desktop"
+                ),
+                "app_icon": "preferences-desktop-effects",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_kwinoptions",
+                "app_name": _("Window Behavior"),
+                "app_exec": "kcmshell6 kcm_kwintabbox kcm_kwinoptions kcm_kwinrules kcm_kwin_scripts kcm_kwintabbox",
+                "app_description": _("Configure how windows behave and interact"),
+                "app_icon": "preferences-system-windows-actions",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_mouse",
+                "app_name": _("Mouse"),
+                "app_exec": "kcmshell6 mouse kcm_workspace",
+                "app_description": _(
+                    "Configure mouse sensitivity, buttons and behavior"
+                ),
+                "app_icon": "preferences-desktop-mouse",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_networkmanagement",
+                "app_name": _("Manage Connections"),
+                "app_exec": "kcmshell6 kcm_networkmanagement",
+                "app_description": _(
+                    "Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile broadband and others)."
+                ),
+                "app_icon": "preferences-system-network",
+                "app_categories": "Network",
+            },
+            {
+                "app_id": "kcm_nightlight",
+                "app_name": _("Night Light"),
+                "app_exec": "systemsettings kcm_nightlight",
+                "app_description": _("Reduce blue light emission to help with sleep"),
+                "app_icon": "redshift-status-on",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_notifications",
+                "app_name": _("Notifications"),
+                "app_exec": "systemsettings kcm_notifications",
+                "app_description": _("Configure system and application notifications"),
+                "app_icon": "preferences-desktop-notification-bell",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_plymouth",
+                "app_name": _("Boot Screen"),
+                "app_exec": "systemsettings kcm_plymouth",
+                "app_description": _(
+                    "Change the splash screen shown during system startup"
+                ),
+                "app_icon": "preferences-desktop-display",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_powerdevilprofilesconfig",
+                "app_name": _("Power Management"),
+                "app_exec": "kcmshell6 kcm_powerdevilprofilesconfig kcm_energyinfo",
+                "app_description": _("Configure energy saving and battery settings"),
+                "app_icon": "preferences-system-power-management",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_proxy",
+                "app_name": _("Proxy"),
+                "app_exec": "systemsettings kcm_proxy",
+                "app_description": _(
+                    "Configure network proxy settings for internet access"
+                ),
+                "app_icon": "preferences-system-network-proxy",
+                "app_categories": "Network",
+            },
+            {
+                "app_id": "kcm_recentFiles",
+                "app_name": _("Recent Files"),
+                "app_exec": "systemsettings kcm_recentFiles",
+                "app_description": _("Manage the history of recently accessed files"),
+                "app_icon": "preferences-system-time",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_regionandlang",
+                "app_name": _("Region and Language"),
+                "app_exec": "kcmshell6 kcm_regionandlang",
+                "app_description": _("Configure language, region, and format settings"),
+                "app_icon": "preferences-desktop-locale",
+                "app_categories": "Language",
+            },
+            {
+                "app_id": "kcm_screenlocker",
+                "app_name": _("Screen Locking"),
+                "app_exec": "kcmshell6 kcm_screenlocker",
+                "app_description": _(
+                    "Configure screen locking settings and appearance"
+                ),
+                "app_icon": "preferences-desktop-user-password",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_sddm",
+                "app_name": _("Login Screen (SDDM)"),
+                "app_exec": "systemsettings kcm_sddm",
+                "app_description": _(
+                    "Configure the login screen appearance and behavior"
+                ),
+                "app_icon": "preferences-system-login",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_smserver",
+                "app_name": _("Desktop Session"),
+                "app_exec": "kcmshell6 kcm_smserver",
+                "app_description": _("Configure session startup and shutdown behavior"),
+                "app_icon": "system-log-out",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_soundtheme",
+                "app_name": _("System Sounds"),
+                "app_exec": "systemsettings kcm_soundtheme",
+                "app_description": _("Configure sound effects for system events"),
+                "app_icon": "emblem-music-symbolic",
+                "app_categories": "Multimedia",
+            },
+            {
+                "app_id": "kcm_splashscreen",
+                "app_name": _("Splash Screen"),
+                "app_exec": "systemsettings kcm_splashscreen",
+                "app_description": _(
+                    "Configure the splash screen shown while starting applications"
+                ),
+                "app_icon": "preferences-system-splash",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_style",
+                "app_name": _("Application Style"),
+                "app_exec": "systemsettings kcm_style",
+                "app_description": _("Configure the visual appearance of applications"),
+                "app_icon": "preferences-desktop-theme-applications",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_tablet",
+                "app_name": _("Drawing Tablet"),
+                "app_exec": "kcmshell6 kcm_tablet kcm_wacomtablet",
+                "app_description": _("Configure drawing tablets and stylus settings"),
+                "app_icon": "preferences-desktop-tablet",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_touchpad",
+                "app_name": _("Touchpad"),
+                "app_exec": "kcmshell6 touchpad",
+                "app_description": _("Configure laptop touchpad behavior and gestures"),
+                "app_icon": "preferences-desktop-touchpad",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_touchscreen",
+                "app_name": _("Touchscreen"),
+                "app_exec": "kcmshell6 kcm_touchscreen kwintouchscreen",
+                "app_description": _("Configure touchscreen behavior and calibration"),
+                "app_icon": "preferences-desktop-touchscreen",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_trash",
+                "app_name": _("Trash"),
+                "app_exec": "kcmshell6 kcm_trash",
+                "app_description": _(
+                    "Configure trash bin behavior and cleanup settings"
+                ),
+                "app_icon": "user-trash",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_wallpaper",
+                "app_name": _("Wallpaper"),
+                "app_exec": "systemsettings kcm_wallpaper",
+                "app_description": _(
+                    "Change desktop background image and slideshow settings"
+                ),
+                "app_icon": "preferences-desktop-wallpaper",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_workspace",
+                "app_name": _("General Behavior"),
+                "app_exec": "systemsettings kcm_workspace",
+                "app_description": _(
+                    "Configure general desktop behavior and interaction"
+                ),
+                "app_icon": "preferences-desktop",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "org.kde.dolphin",
+                "app_name": _("File Manager"),
+                "app_exec": "dolphin",
+                "app_description": _("Access your files and folders."),
+                "app_icon": "org.kde.dolphin",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_kdeconnect",
+                "app_name": _("KDE Connect"),
+                "app_exec": "kdeconnect-settings",
+                "app_description": _(
+                    "This program can transfer files between smartphones, tablets, and other computers. With it, you can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, among other features. It integrates best with BigLinux and sits among the applets located near the system clock. To sync with your smartphone, go to the Google Store or Apple Store and install KDE Connect."
+                ),
+                "app_icon": "kdeconnect",
+                "app_categories": "Phone",
+            },
+            {
+                "app_id": "org.kde.konsole",
+                "app_name": _("Terminal"),
+                "app_exec": "konsole",
+                "app_description": _("Access the command terminal."),
+                "app_icon": "utilities-terminal",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "org.kde.kwalletmanager",
+                "app_name": _("KWalletManager"),
+                "app_exec": "kwalletmanager5 %F",
+                "app_description": _("Tool for managing KDE wallets"),
+                "app_icon": "kwalletmanager",
+                "app_categories": "Qt;KDE;System;Security;",
+            },
+            {
+                "app_id": "org.manjaro.pamac.manager",
+                "app_name": _("Add/Remove Programs"),
+                "app_exec": "pamac-manager %U",
+                "app_description": _("Add or remove programs installed on the system"),
+                "app_icon": "system-software-install",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "android-usb",
+                "app_name": _("Connect to internet using Android"),
+                "app_exec": "#dialog-android-usb",
+                "app_description": None,
+                "app_icon": "android-usb",
+                "app_categories": "Phone",
+            },
+            {
+                "app_id": "ios-usb",
+                "app_name": _("Connect to internet using iOS"),
+                "app_exec": "#dialog-ios-usb",
+                "app_description": None,
+                "app_icon": "ios-usb",
+                "app_categories": "Phone",
+            },
+            {
+                "app_id": "network-connect",
+                "app_name": _("Connect to Internet"),
+                "app_exec": "plasmawindowed org.kde.plasma.networkmanagement",
+                "app_description": None,
+                "app_icon": "network-connect",
+                "app_categories": "Network",
+            },
+            {
+                "app_id": "kcm_users",
+                "app_name": _("Users"),
+                "app_exec": "systemsettings kcm_users",
+                "app_description": None,
+                "app_icon": "preferences-system-users",
+                "app_categories": "Account",
+            },
+            {
+                "app_id": "timeshift-gtk",
+                "app_name": _("Snapshots and backups"),
+                "app_exec": "timeshift-launcher",
+                "app_description": _("Create or activate restore points"),
+                "app_icon": "timeshift",
+                "app_categories": "Star System",
+            },
+            {
+                "app_id": "big-themes-gui",
+                "app_name": _("BigLinux Themes"),
+                "app_exec": "big-theme-gui",
+                "app_description": _(
+                    "We provide complete configurations for you to select in an extremely simple way."
+                ),
+                "app_icon": "big-theme-gui",
+                "app_categories": "Star Personalization",
+            },
+            {
+                "app_id": "kcm_lookandfeel",
+                "app_name": _("Appearance and Style"),
+                "app_exec": "kcmshell6 kcm_lookandfeel",
+                "app_description": _(
+                    "Customize the theme, icons, cursor and overall system appearance."
+                ),
+                "app_icon": "preferences-desktop-theme",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_landingpage",
+                "app_name": _("Landing Page"),
+                "app_exec": "kcmshell6 kcm_landingpage",
+                "app_description": _(
+                    "Configure the system's landing page and default widgets."
+                ),
+                "app_icon": "start-here",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_feedback",
+                "app_name": _("Feedback"),
+                "app_exec": "kcmshell6 kcm_feedback",
+                "app_description": _(
+                    "Configure feedback and usage report preferences."
+                ),
+                "app_icon": "preferences-desktop-feedback",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_solid_actions",
+                "app_name": _("Device Actions"),
+                "app_exec": "kcmshell6 kcm_solid_actions",
+                "app_description": _(
+                    "Configure automatic actions for when devices are connected."
+                ),
+                "app_icon": "preferences-system-devices",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_virtualkeyboard",
+                "app_name": _("Virtual Keyboard"),
+                "app_exec": "kcmshell6 kcm_virtualkeyboard",
+                "app_description": _("Virtual keyboard settings and display options."),
+                "app_icon": "keyboard",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "msm_keyboard",
+                "app_name": _("Keyboard Manager"),
+                "app_exec": "msm_keyboard",
+                "app_description": _(
+                    "Keyboard layout management and advanced settings."
+                ),
+                "app_icon": "preferences-desktop-keyboard-shortcuts",
+                "app_categories": "Hardware",
+            },
+            {
+                "app_id": "kcm_kwin_scripts",
+                "app_name": _("KWin Scripts"),
+                "app_exec": "kcmshell6 kcm_kwin_scripts",
+                "app_description": _(
+                    "Manage and configure scripts for the KWin window manager."
+                ),
+                "app_icon": "utilities-terminal",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_plasmasearch",
+                "app_name": _("Plasma Search"),
+                "app_exec": "kcmshell6 kcm_plasmasearch",
+                "app_description": _(
+                    "Configure search and indexing options in Plasma."
+                ),
+                "app_icon": "system-search",
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_kwin_virtualdesktops",
+                "app_name": _("Virtual Desktops"),
+                "app_exec": "kcmshell6 kcm_kwin_virtualdesktops",
+                "app_description": _("Configure virtual desktops and KWin behaviors."),
+                "app_icon": "preferences-desktop-virtual",
+                "app_categories": "System",
+            },
+        ]
+
+    def create_pre_cache_file(self):
+        """
+        Creates the pre-cache file to indicate processing is in progress.
+        This file is used by the bash scripts to detect if the cache is being generated.
+        """
+        try:
+            # Ensure cache directory exists
+            os.makedirs(os.path.dirname(self.pre_cache_file), exist_ok=True)
+
+            # Write to pre-cache file
+            with open(self.pre_cache_file, "w", encoding="utf-8") as f:
+                f.write("Processing")
+
+            return True
+        except Exception as e:
+            print(f"Error creating pre-cache file: {e}")
+            return False
+
+    def remove_pre_cache_file(self):
+        """
+        Removes the pre-cache file to indicate processing is complete.
+        """
+        try:
+            if os.path.exists(self.pre_cache_file):
+                os.remove(self.pre_cache_file)
+            return True
+        except Exception as e:
+            print(f"Error removing pre-cache file: {e}")
+            return False
+
+    def _save_to_cache(self, programs):
+        """Save programs data to cache file"""
+        try:
+            # Ensure cache directory exists
+            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
+
+            # Final deduplication by app_id for safety
+            unique_programs = {}
+            for program in programs:
+                app_id = program.get("app_id", "")
+                if app_id:  # Skip entries without app_id
+                    unique_programs[app_id] = program
+
+            # Get the reference order from the template JSON (complete list)
+            reference_order = [
+                "appimagelaunchersettings",
+                "avahi-discover",
+                "big-driver-manager",
+                "big-hardware-info",
+                "big-kernel-manager",
+                "biglinux-config",
+                "bssh",
+                "bvnc",
+                "cmake-gui",
+                "firewall-config",
+                "gnome-alsamixer",
+                "gparted",
+                "hplip",
+                "hp-uiscan",
+                "kvantummanager",
+                "mintstick-format-kde",
+                "mintstick-kde",
+                "org.kde.filelight",
+                "org.kde.kinfocenter",
+                "org.kde.ksystemlog",
+                "pavucontrol-qt",
+                "system-config-printer",
+                "systemsettings",
+                "big-store",
+                "guvcview",
+                "kcm_access",
+                "kcm_activities",
+                "kcm_autostart",
+                "kcm_baloofile",
+                "kcm_bluetooth",
+                "kcm_bolt",
+                "kcm_clock",
+                "kcm_colors",
+                "kcm_componentchooser",
+                "kcm_cursortheme",
+                "kcm_desktoppaths",
+                "kcm_desktoptheme",
+                "kcm_filetypes",
+                "kcm_firewall",
+                "kcm_flatpak",
+                "kcm_fonts",
+                "kcm_gamecontroller",
+                "kcm_icons",
+                "kcm_kaccounts",
+                "kcm_kamera",
+                "kcm_kded",
+                "kcm_keyboard",
+                "kcm_kscreen",
+                "kcm_kwindecoration",
+                "kcm_kwin_effects",
+                "kcm_kwinoptions",
+                "kcm_mouse",
+                "kcm_networkmanagement",
+                "kcm_nightlight",
+                "kcm_notifications",
+                "kcm_plymouth",
+                "kcm_powerdevilprofilesconfig",
+                "kcm_proxy",
+                "kcm_recentFiles",
+                "kcm_regionandlang",
+                "kcm_screenlocker",
+                "kcm_sddm",
+                "kcm_smserver",
+                # "kcm_soundtheme",
+                "kcm_splashscreen",
+                "kcm_style",
+                "kcm_tablet",
+                "kcm_touchpad",
+                "kcm_touchscreen",
+                "kcm_trash",
+                "kcm_wallpaper",
+                "kcm_workspace",
+                "org.kde.dolphin",
+                "org.kde.konsole",
+                "org.kde.kwalletmanager",
+                "org.manjaro.pamac.manager",
+                "android-usb",
+                "ios-usb",
+                "network-connect",
+                "kcm_users",
+                "timeshift-gtk",
+                "big-themes-gui",
+            ]
+
+            # Create a list that maintains the exact order from the reference JSON
+            ordered_programs = []
+
+            # First add entries that are in the reference order
+            for app_id in reference_order:
+                if app_id in unique_programs:
+                    ordered_programs.append(unique_programs[app_id])
+                    del unique_programs[app_id]
+
+            # Then add any remaining entries alphabetically by app_id
+            ordered_programs.extend(
+                sorted(unique_programs.values(), key=lambda x: x.get("app_id", ""))
+            )
+            programs = ordered_programs
+
+            # Before saving, apply any final customizations to match expected format
+            for program in programs:
+                # Convert empty descriptions to null rather than empty string to match expected format
+                if program.get("app_description") == "":
+                    program["app_description"] = None
+
+                # Ensure program has expected fields in expected order
+                ordered_program = {
+                    "app_id": program.get("app_id", ""),
+                    "app_name": program.get("app_name", ""),
+                    "app_exec": program.get("app_exec", ""),
+                    "app_description": program.get("app_description", "")
+                    or program.get("app_id", ""),
+                    "app_icon": program.get("app_icon", ""),
+                    "app_categories": program.get("app_categories", "Other"),
+                }
+
+                # Update program with ordered version
+                program.clear()
+                program.update(ordered_program)
+
+            # Write data to cache file with consistent formatting
+            with open(self.cache_file, "w", encoding="utf-8") as f:
+                json.dump(programs, f, ensure_ascii=False, indent=4)
+        except Exception as e:
+            print(f"Error saving to cache: {e}")
+
+    def generate_cache(self):
+        """
+        Explicitly generate the cache file (equivalent to get_json.sh cache)
+        This method is called from the command line to pre-cache data
+        """
+        return self.get_programs(generate_cache=True)
