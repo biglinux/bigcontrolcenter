@@ -7,11 +7,8 @@ loop-search.sh and getappinfo.py scripts.
 """
 
 import os
-import json
 import subprocess
-import re
 import glob
-from pathlib import Path
 import gettext
 import gi
 
@@ -27,7 +24,8 @@ try:
     _ = lang_translations.gettext
 except Exception:
     # Fallback if translation fails
-    _ = lambda x: x
+    def _(x):
+        return x
 
 
 class AppFinder:
@@ -40,34 +38,12 @@ class AppFinder:
         # In GTK4, we need to get the icon theme from the display
         display = Gdk.Display.get_default()
         self.icon_theme = Gtk.IconTheme.get_for_display(display)
-
-        # Set up cache file paths
-        self.cache_file = os.path.expanduser("~/.cache/bigcontrolcenter.json")
-        self.pre_cache_file = os.path.expanduser(
-            "~/.cache/pre-cache-bigcontrolcenter.json"
-        )
-
         self.replacements = self._get_replacements()
 
-    def get_programs(self, generate_cache=False):
+    def get_programs(self):
         """
-        Get program information, either from cache or by scanning the system
-
-        Args:
-            generate_cache: If True, force regeneration of cache file
+        Get program information by scanning the system
         """
-        # Try to read from cache first if not forcing cache generation
-        if not generate_cache and os.path.exists(self.cache_file):
-            try:
-                with open(self.cache_file, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except (json.JSONDecodeError, IOError):
-                # If cache read fails, continue with scanning
-                pass
-
-        # Create pre-cache file to indicate that we're processing
-        self.create_pre_cache_file()
-
         # Find desktop files
         desktop_files = self._find_desktop_files()
 
@@ -127,25 +103,17 @@ class AppFinder:
         # Convert dictionary to list, maintaining only unique entries
         programs = list(program_dict.values())
 
-        # Save to cache
-        self._save_to_cache(programs)
-
-        # Remove pre-cache file to indicate completion
-        self.remove_pre_cache_file()
-
         return programs
 
     def _find_desktop_files(self):
         """
-        Find desktop files similar to the loop-search.sh script
+        Find desktop files
         """
         # Keep track of app_ids we've already seen to avoid processing duplicate entries
         unique_app_ids = set()
         unique_files = []
 
-        # Process files in priority order (most important sources first)
-
-        # 1. Static files first (guaranteed entries we want)
+        # 1. Static files first
         static_files = self._find_static_desktop_files()
         for file_path in static_files:
             app_id = self._get_app_id_from_path(file_path)
@@ -153,7 +121,7 @@ class AppFinder:
                 unique_app_ids.add(app_id)
                 unique_files.append(file_path)
 
-        # 2. Big Control Center specific desktop files
+        # 2. Big Control Center
         bcc_files = self._find_bcc_desktop_files()
         for file_path in bcc_files:
             app_id = self._get_app_id_from_path(file_path)
@@ -261,7 +229,6 @@ class AppFinder:
 
         result = []
 
-        # Implementation using python's subprocess instead of grep
         try:
             cmd = ["grep", "-Rl", "-E", "(kcmshell6|control)", "/usr/share/kservices5/"]
             output = subprocess.check_output(cmd, text=True).strip()
@@ -302,7 +269,7 @@ class AppFinder:
             "kcm_netpref.desktop",
             "kcm_webshortcuts.desktop",
             "kcm_nightlight.desktop",
-            "kcm_pulseaudio.desktop",  # Added here to make sure it's excluded
+            "kcm_pulseaudio.desktop",
         ]
 
         result = []
@@ -332,7 +299,7 @@ class AppFinder:
             "qv4l2.desktop",
             "org.gnome.baobab.desktop",
             "klassy-settings.desktop",
-            "kcm_pulseaudio.desktop",  # Added here to make sure it's excluded
+            "kcm_pulseaudio.desktop",
         ]
 
         result = []
@@ -380,8 +347,7 @@ class AppFinder:
 
     def _get_app_info(self, app_id, file_path):
         """
-        Get application information for a desktop file
-        Similar to getappinfo.py but using GIO directly
+        Get application information for a desktop file using GIO
         """
         try:
             app_info = Gio.DesktopAppInfo.new_from_filename(file_path)
@@ -445,18 +411,6 @@ class AppFinder:
             if icon_str.startswith("/"):
                 return icon_str
             icon_names = [icon_str]
-
-        # Prioritize specific themes used in BigLinux
-        icon_themes = [
-            "bigicons-papient-dark",
-            "bigicons-papient",
-            "BigLinux",
-            "biglinux",
-            "hicolor",
-            "Adwaita",
-            "breeze",
-            "Papirus",
-        ]
 
         # Try each icon name with progressive fallback
         for icon_name in icon_names:
@@ -1322,186 +1276,3 @@ class AppFinder:
                 "app_categories": "System",
             },
         ]
-
-    def create_pre_cache_file(self):
-        """
-        Creates the pre-cache file to indicate processing is in progress.
-        This file is used by the bash scripts to detect if the cache is being generated.
-        """
-        try:
-            # Ensure cache directory exists
-            os.makedirs(os.path.dirname(self.pre_cache_file), exist_ok=True)
-
-            # Write to pre-cache file
-            with open(self.pre_cache_file, "w", encoding="utf-8") as f:
-                f.write("Processing")
-
-            return True
-        except Exception as e:
-            print(f"Error creating pre-cache file: {e}")
-            return False
-
-    def remove_pre_cache_file(self):
-        """
-        Removes the pre-cache file to indicate processing is complete.
-        """
-        try:
-            if os.path.exists(self.pre_cache_file):
-                os.remove(self.pre_cache_file)
-            return True
-        except Exception as e:
-            print(f"Error removing pre-cache file: {e}")
-            return False
-
-    def _save_to_cache(self, programs):
-        """Save programs data to cache file"""
-        try:
-            # Ensure cache directory exists
-            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
-
-            # Final deduplication by app_id for safety
-            unique_programs = {}
-            for program in programs:
-                app_id = program.get("app_id", "")
-                # Skip entries without app_id or ones we explicitly want to exclude
-                if app_id and app_id != "kcm_pulseaudio":  # Added explicit check
-                    unique_programs[app_id] = program
-
-            # Get the reference order from the template JSON (complete list)
-            reference_order = [
-                "appimagelaunchersettings",
-                "avahi-discover",
-                "big-driver-manager",
-                "big-hardware-info",
-                "big-kernel-manager",
-                "biglinux-config",
-                "bssh",
-                "bvnc",
-                "cmake-gui",
-                "firewall-config",
-                "gnome-alsamixer",
-                "gparted",
-                "hplip",
-                "hp-uiscan",
-                "kvantummanager",
-                "mintstick-format-kde",
-                "mintstick-kde",
-                "org.kde.filelight",
-                "org.kde.kinfocenter",
-                "org.kde.ksystemlog",
-                "pavucontrol-qt",
-                "system-config-printer",
-                "systemsettings",
-                "big-store",
-                "guvcview",
-                "kcm_access",
-                "kcm_activities",
-                "kcm_autostart",
-                "kcm_baloofile",
-                "kcm_bluetooth",
-                "kcm_bolt",
-                "kcm_clock",
-                "kcm_colors",
-                "kcm_componentchooser",
-                "kcm_cursortheme",
-                "kcm_desktoppaths",
-                "kcm_desktoptheme",
-                "kcm_filetypes",
-                "kcm_firewall",
-                "kcm_flatpak",
-                "kcm_fonts",
-                "kcm_gamecontroller",
-                "kcm_icons",
-                "kcm_kaccounts",
-                "kcm_kamera",
-                "kcm_kded",
-                "kcm_keyboard",
-                "kcm_kscreen",
-                "kcm_kwindecoration",
-                "kcm_kwin_effects",
-                "kcm_kwinoptions",
-                "kcm_mouse",
-                "kcm_networkmanagement",
-                "kcm_nightlight",
-                "kcm_notifications",
-                "kcm_plymouth",
-                "kcm_powerdevilprofilesconfig",
-                "kcm_proxy",
-                "kcm_recentFiles",
-                "kcm_regionandlang",
-                "kcm_screenlocker",
-                "kcm_sddm",
-                "kcm_smserver",
-                # "kcm_soundtheme",
-                "kcm_splashscreen",
-                "kcm_style",
-                "kcm_tablet",
-                "kcm_touchpad",
-                "kcm_touchscreen",
-                "kcm_trash",
-                "kcm_wallpaper",
-                "kcm_workspace",
-                "org.kde.dolphin",
-                "org.kde.konsole",
-                "org.kde.kwalletmanager",
-                "org.manjaro.pamac.manager",
-                "android-usb",
-                "ios-usb",
-                "network-connect",
-                "kcm_users",
-                "timeshift-gtk",
-                "big-themes-gui",
-            ]
-
-            # Create a list that maintains the exact order from the reference JSON
-            ordered_programs = []
-
-            # First add entries that are in the reference order
-            for app_id in reference_order:
-                if app_id in unique_programs:
-                    ordered_programs.append(unique_programs[app_id])
-                    del unique_programs[app_id]
-
-            # Then add any remaining entries alphabetically by app_id
-            ordered_programs.extend(
-                sorted(unique_programs.values(), key=lambda x: x.get("app_id", ""))
-            )
-            programs = ordered_programs
-
-            # Before saving, apply any final customizations to match expected format
-            for program in programs:
-                # Skip excluded programs one last time
-                if program.get("app_id") == "kcm_pulseaudio":
-                    continue
-
-                # Convert empty descriptions to null rather than empty string to match expected format
-                if program.get("app_description") == "":
-                    program["app_description"] = None
-
-                # Ensure program has expected fields in expected order
-                ordered_program = {
-                    "app_id": program.get("app_id", ""),
-                    "app_name": program.get("app_name", ""),
-                    "app_exec": program.get("app_exec", ""),
-                    "app_description": program.get("app_description", "")
-                    or program.get("app_id", ""),
-                    "app_icon": program.get("app_icon", ""),
-                    "app_categories": program.get("app_categories", "Other"),
-                }
-
-                # Update program with ordered version
-                program.clear()
-                program.update(ordered_program)
-
-            # Write data to cache file with consistent formatting
-            with open(self.cache_file, "w", encoding="utf-8") as f:
-                json.dump(programs, f, ensure_ascii=False, indent=4)
-        except Exception as e:
-            print(f"Error saving to cache: {e}")
-
-    def generate_cache(self):
-        """
-        Explicitly generate the cache file (equivalent to get_json.sh cache)
-        This method is called from the command line to pre-cache data
-        """
-        return self.get_programs(generate_cache=True)

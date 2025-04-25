@@ -3,10 +3,7 @@ BigControlCenter - Application class
 """
 
 import gi
-import os
-import json
 import gettext
-from pathlib import Path
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
@@ -46,165 +43,9 @@ class BigControlCenterApp(Adw.Application):
         # Set up CSS provider for styling
         self.css_provider = Gtk.CssProvider()
         self.css_provider.load_from_data(b"""
-            .category-button {
-                padding: 12px;
-                border-radius: 0;
-                margin: 0;
-            }
-            
-            .category-button:hover {
-                background-color: alpha(@accent_bg_color, 0.1);
-            }
-            
-            .category-button.selected {
-                background-color: alpha(@accent_bg_color, 0.1);
-            }
-            
-            .program-button {
-                padding: 8px;
-                border-radius: 12px;
-                margin: 6px;
-            }
-            
-            .program-button:hover {
-                background-color: alpha(@accent_bg_color, 0.1);
-            }
-            
-            .program-icon {
-                min-width: 64px !important;
-                min-height: 64px !important;
-                max-width: 64px !important;
-                max-height: 64px !important;
-                width: 64px !important;
-                height: 64px !important;
-                -gtk-icon-size: fixed;
-                -gtk-icon-transform: none;
-                -gtk-icon-effect: none;
-                object-fit: contain;
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                flex-shrink: 0;
-                flex-grow: 0;
-                scale: 1;
-            }
-            
-            image.program-icon {
-                width: 64px !important;
-                height: 64px !important;
-            }
-            
-            .fixed-drawing-area {
-                min-width: 64px !important;
-                min-height: 64px !important;
-                max-width: 64px !important;
-                max-height: 64px !important;
-                width: 64px !important;
-                height: 64px !important;
-                padding: 0 !important;
-                margin: 0 !important;
-                box-sizing: border-box !important;
-            }
-            
-            /* Additional rule to prevent parent widgets from affecting size */
-            .fixed-drawing-area * {
-                min-width: 64px !important;
-                min-height: 64px !important;
-                max-width: 64px !important;
-                max-height: 64px !important;
-            }
-            
-            .program-name {
-                font-weight: bold;
-                margin-top: 8px;
-            }
-            
-            .search-bar {
-                margin: 8px 16px;
-            }
-            
             .status-bar {
                 border-top: 1px solid @borders;
                 padding: 6px 10px;
-                font-size: 0.9em;
-                color: @text_color;
-                background-color: @view_bg_color;
-            }
-            
-            .sidebar-content {
-                padding: 12px;
-                background-color: @view_bg_color;
-            }
-            
-            .navigation-sidebar {
-                background-color: @sidebar_bg_color;
-            }
-            
-            .navigation-sidebar:backdrop {
-                background-color: @sidebar_bg_color;
-            }
-            
-            .navigation-title {
-                font-weight: bold;
-                font-size: 1.1em;
-            }
-            
-            .view-switcher {
-                margin: 8px 0;
-            }
-            
-            /* Fixed container for program icons to prevent parent influence */
-            .program-icon-container {
-                min-width: 64px !important;
-                max-width: 64px !important;
-                min-height: 64px !important;
-                max-height: 64px !important;
-                width: 64px !important;
-                height: 64px !important;
-                overflow: hidden;
-                margin: auto;
-                position: relative !important;
-                transform: none !important;
-                scale: none !important;
-                resize: none !important;
-                box-sizing: border-box !important;
-                background-size: 64px 64px !important;
-                transform-origin: center !important;
-                isolation: isolate !important;
-            }
-            
-            /* Ensure icons themselves never resize */
-            image {
-                transform-box: fill-box !important;
-                transform: none !important;
-                transition: none !important;
-                animation: none !important;
-                scale: 1 !important;
-            }
-            
-            /* Override any attempts to scale by parent containers */
-            box .program-icon-container,
-            grid .program-icon-container,
-            flowbox .program-icon-container {
-                width: 64px !important;
-                height: 64px !important;
-                scale: 1 !important;
-                min-width: 64px !important;
-                min-height: 64px !important;
-                max-width: 64px !important;
-                max-height: 64px !important;
-            }
-            
-            /* Additional constraints for FlowBoxChild and all possible parents */
-            flowboxchild, button, box {
-                min-width: fit-content;
-                min-height: fit-content;
-            }
-            
-            /* Ensure the program grid doesn't compress icons */
-            flowbox {
-                min-child-width: 80px;
-                min-child-height: 100px;
             }
         """)
 
@@ -216,8 +57,6 @@ class BigControlCenterApp(Adw.Application):
 
     def on_activate(self, app):
         """Callback for application activation"""
-        # Remove the unsupported property setting
-        # Gtk.Settings.get_default().set_property("gtk-icon-size", 64)  # This is not supported in GTK4
 
         # Create the main window with a simplified structure
         self.window = Adw.ApplicationWindow(application=app)
@@ -229,13 +68,22 @@ class BigControlCenterApp(Adw.Application):
 
         # Create the toast overlay for notifications (can be used for status messages)
         toast_overlay = Adw.ToastOverlay()
+        toast_overlay.add_css_class("background-as-headerbar-bg-color")
+
+        # Add transparent background style to CSS provider
+        css_data = (
+            self.css_provider.to_string()
+            + """
+            .background-as-headerbar-bg-color {
+            background-color: var(--headerbar-bg-color);
+            }
+        """
+        )
+        self.css_provider.load_from_data(css_data.encode())
         self.window.set_content(toast_overlay)
 
         # Create the main layout with NavigationSplitView as the primary structure
         self.split_view = Adw.NavigationSplitView()
-        self.split_view.set_min_sidebar_width(240)
-        self.split_view.set_sidebar_width_fraction(0.25)
-        self.split_view.set_show_content(True)
         toast_overlay.set_child(self.split_view)
 
         # Create sidebar navigation view
@@ -259,9 +107,6 @@ class BigControlCenterApp(Adw.Application):
         sidebar_header.pack_start(handle)
 
         sidebar_header.set_title_widget(Adw.WindowTitle.new(_("Control Center"), ""))
-        sidebar_header.set_show_end_title_buttons(False)
-
-        # Remove search button from header - we'll keep search visible instead
         sidebar_toolbar_view.add_top_bar(sidebar_header)
 
         # Create the category sidebar
@@ -304,14 +149,8 @@ class BigControlCenterApp(Adw.Application):
         self.search_entry.set_placeholder_text(_("Search..."))
         self.search_entry.connect("search-changed", self.on_search_changed)
         self.search_entry.set_visible(True)  # Always visible
-        # Remove horizontal expansion to keep the search field at its natural width
         self.search_entry.set_hexpand(False)
-
-        # Set a reasonable width for the search entry
-        self.search_entry.set_width_chars(
-            20
-        )  # Set a width for approximately 20 characters
-
+        self.search_entry.set_width_chars(20)
         search_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         search_box.append(self.search_entry)
         content_header.set_title_widget(search_box)
@@ -325,15 +164,7 @@ class BigControlCenterApp(Adw.Application):
             150
         )  # 150ms for smooth transitions
         self.status_bar = Gtk.Label()
-        self.status_bar.set_halign(Gtk.Align.START)
-        self.status_bar.set_hexpand(True)
-        self.status_bar.set_margin_start(10)
-        self.status_bar.set_margin_end(10)
-        self.status_bar.set_margin_top(6)
-        self.status_bar.set_margin_bottom(6)
         self.status_bar.set_wrap(True)
-        self.status_bar.set_wrap_mode(Pango.WrapMode.WORD_CHAR)
-        self.status_bar.set_xalign(0.0)
         status_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
         status_box.append(self.status_bar)
         status_box.add_css_class("status-bar")
@@ -345,7 +176,7 @@ class BigControlCenterApp(Adw.Application):
         # Create the program grid
         self.program_grid = ProgramGrid(self)
         content_toolbar_view.set_content(self.program_grid)
-        self.configure_program_grid_for_fixed_icons()  # Add this line
+        self.configure_program_grid_for_fixed_icons()
 
         # Create content page
         self.content_page = Adw.NavigationPage.new(content_toolbar_view, "Programs")
@@ -373,7 +204,7 @@ class BigControlCenterApp(Adw.Application):
         """Load program data from app_finder"""
         app_finder = AppFinder()
         # Force regeneration of the JSON data on every startup
-        self.programs = app_finder.get_programs(generate_cache=True)
+        self.programs = app_finder.get_programs()
 
         # Update which categories are visible based on program availability
         if hasattr(self, "category_sidebar"):
@@ -481,22 +312,6 @@ class BigControlCenterApp(Adw.Application):
         dialog = DeviceConnectionDialog(self.window)
         dialog.show_ios_dialog()
 
-    def on_search_button_toggled(self, button):
-        """This method is no longer needed since search is always visible,
-        but we'll keep it for backward compatibility"""
-        pass
-
-    def create_fixed_size_icon(self, icon_name):
-        """Create an icon with fixed 64x64 size that won't resize with window"""
-        drawing_area = Gtk.DrawingArea()
-        drawing_area.set_content_width(64)
-        drawing_area.set_content_height(64)
-        drawing_area.set_size_request(64, 64)
-        drawing_area.set_hexpand(False)
-        drawing_area.set_vexpand(False)
-        drawing_area.add_css_class("program-icon-container")
-        drawing_area.add_css_class("fixed-drawing-area")
-
         def draw_function(widget, cr, width, height, data):
             theme = Gtk.IconTheme.get_for_display(widget.get_display())
             try:
@@ -539,9 +354,6 @@ class BigControlCenterApp(Adw.Application):
             flowbox.set_min_children_per_line(1)
             flowbox.set_max_children_per_line(10)
             self.window.connect("size-allocate", self._on_window_size_change)
-
-    def _on_window_size_change(self, widget, allocation):
-        """Force icon sizes whenever window is resized"""
 
         def force_icon_size(widget):
             if widget.has_css_class("program-icon-container"):
