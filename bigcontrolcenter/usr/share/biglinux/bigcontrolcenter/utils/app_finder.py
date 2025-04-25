@@ -64,7 +64,6 @@ class AppFinder:
             "android-usb",
             "ios-usb",
             "network-connect",
-            "qefientrymanager",
             "big-themes-gui",
         ]
         for entry_id in special_entries:
@@ -179,7 +178,6 @@ class AppFinder:
             "kwinmoving.desktop",
             "kwinoptions.desktop",
             "kwinrules.desktop",
-            "kcm_kwin_scripts.desktop",
             "kwintabbox.desktop",
             "breezestyleconfig.desktop",
             "breezedecorationconfig.desktop",
@@ -194,7 +192,6 @@ class AppFinder:
             "kcmsmserver.desktop",
             "kcmkded.desktop",
             "kamera.desktop",
-            "kcm_kwin_virtualdesktops.desktop",
             "powerdevilprofilesconfig.desktop",
             "kcmperformance.desktop",
             "kcmkonqyperformance.desktop",
@@ -211,7 +208,6 @@ class AppFinder:
             "kcm_lookandfeel.desktop",
             "sierrabreezeenhancedconfig.desktop",
             "msm_timedate.desktop",
-            "kcm_virtualkeyboard.desktop",
             "lightlystyleconfig.desktop",
             "lightlydecorationconfig.desktop",
             "kcm_landingpage.desktop",
@@ -246,6 +242,7 @@ class AppFinder:
         """Find application desktop files with kcm_ prefix"""
         excluded_patterns = [
             "kcm_kdisplay.desktop",
+            "kcm_workspace.desktop",
             # "kcm_keyboard.desktop",
             "kcm_krunnersettings.desktop",
             "kcm_about-distro.desktop",
@@ -265,8 +262,11 @@ class AppFinder:
             "kcm_wacomtablet.desktop",
             "kcm_netpref.desktop",
             "kcm_webshortcuts.desktop",
+            "kcm_kwin_scripts.desktop",
+            "kcm_virtualkeyboard.desktop",
             "kcm_nightlight.desktop",
             "kcm_pulseaudio.desktop",
+            "kcm_kwin_virtualdesktops.desktop",
         ]
 
         result = []
@@ -458,108 +458,71 @@ class AppFinder:
             },
             {
                 "app_id": "avahi-discover",
-                "app_name": _("Find servers (zeroconf)"),
-                "app_exec": "/usr/bin/avahi-discover",
-                "app_description": _(
-                    "Search for Zeroconf services available on your network"
-                ),
-                "app_icon": "network-wired",
+                "app_name": _("Search for Zeroconf servers"),
+                "app_icon": "preferences-system-network-server",
                 "app_categories": "Other",
             },
             {
                 "app_id": "big-driver-manager",
-                "app_name": _("Drivers and firmware"),
-                "app_exec": "big-driver-manager",
                 "app_description": _("Expand device support"),
-                "app_icon": "big-driver-manager",
                 "app_categories": "Star Hardware",
             },
             {
                 "app_id": "big-hardware-info",
-                "app_name": _("Hardware Information"),
-                "app_exec": "big-hardware-info",
                 "app_description": _("Detailed information about your computer"),
-                "app_icon": "big-hardware-info",
                 "app_categories": "Star About",
             },
             {
                 "app_id": "big-kernel-manager",
-                "app_name": _("Install kernel and mesa versions"),
-                "app_exec": "big-kernel-manager",
                 "app_description": _("System foundation and video card support"),
-                "app_icon": "big-kernel-manager",
                 "app_categories": "Star System",
             },
             {
                 "app_id": "biglinux-config",
-                "app_name": _("Restore program configuration"),
-                "app_exec": "biglinux-config",
                 "app_description": _("Restore program configuration"),
-                "app_icon": "biglinux-config",
                 "app_categories": "System Star",
             },
             {
                 "app_id": "bssh",
                 "app_name": _("Search for SSH servers"),
-                "app_exec": "/usr/bin/bssh",
-                "app_description": _("Search for SSH servers with Zeroconf enabled"),
-                "app_icon": "network-wired",
+                "app_icon": "folder-remote",
                 "app_categories": "Other",
             },
             {
                 "app_id": "bvnc",
                 "app_name": _("Search for VNC servers"),
-                "app_exec": "/usr/bin/bvnc",
-                "app_description": _("Search for VNC servers with Zeroconf enabled"),
-                "app_icon": "network-wired",
+                "app_icon": "preferences-desktop-remote-desktop",
                 "app_categories": "Other",
             },
             {
                 "app_id": "cmake-gui",
-                "app_name": _("CMake"),
-                "app_exec": "cmake-gui %f",
                 "app_description": _("Cross-platform buildsystem"),
-                "app_icon": "CMakeSetup",
                 "app_categories": "System",
             },
             {
                 "app_id": "firewall-config",
-                "app_name": _("Advanced Firewall"),
-                "app_exec": "/usr/bin/firewall-config",
-                "app_description": _("Firewall Configuration"),
-                "app_icon": "firewall-config",
                 "app_categories": "Network",
             },
             {
                 "app_id": "gnome-alsamixer",
                 "app_name": _("Advanced Audio Manager - Alsamixer"),
-                "app_exec": "gnome-alsamixer",
-                "app_description": _("Audio controller in case of sound absence."),
-                "app_icon": "gnome-alsamixer-icon",
+                "app_icon": "/usr/share/pixmaps/gnome-alsamixer/gnome-alsamixer-icon.png",
                 "app_categories": "Multimedia",
             },
             {
                 "app_id": "gparted",
                 "app_name": _("Partition or Format"),
-                "app_exec": "gparted",
-                "app_description": _(
-                    "Be careful, this program can erase all data on your computer."
-                ),
-                "app_icon": "gparted",
                 "app_categories": "System",
             },
             {
                 "app_id": "hplip",
                 "app_name": _("HP Printers"),
-                "app_exec": "hp-toolbox",
                 "app_description": _("Check status, ink level, and maintenance."),
-                "app_icon": "hp_logo",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "hp-uiscan",
                 "app_name": _("HP Scanners"),
-                "app_exec": "/usr/bin/hp-uiscan",
                 "app_description": _("Configure and use HP scanning devices"),
                 "app_icon": "scanner",
                 "app_categories": "Hardware",
@@ -567,11 +530,9 @@ class AppFinder:
             {
                 "app_id": "kvantummanager",
                 "app_name": _("Configure Kvantum Theme"),
-                "app_exec": "kvantummanager",
                 "app_description": _(
                     "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
                 ),
-                "app_icon": "kvantum",
                 "app_categories": "Personalization",
             },
             {
@@ -579,7 +540,7 @@ class AppFinder:
                 "app_name": _("USB Device Formatter"),
                 "app_exec": "mintstick -m format",
                 "app_description": _("Format a USB device"),
-                "app_icon": "system-run",
+                "app_icon": "media-flash-memory-stick",
                 "app_categories": "Hardware",
             },
             {
@@ -587,73 +548,48 @@ class AppFinder:
                 "app_name": _("USB Image Writer"),
                 "app_exec": "mintstick -m iso",
                 "app_description": _("Create a bootable USB device"),
-                "app_icon": "system-run",
+                "app_icon": "drive-removable-media-usb-symbolic",
                 "app_categories": "System",
             },
             {
                 "app_id": "org.kde.filelight",
                 "app_name": _("Storage Usage"),
-                "app_exec": "filelight %u",
-                "app_description": _("Shows disk usage and deletes unused files"),
-                "app_icon": "filelight",
                 "app_categories": "System",
             },
             {
                 "app_id": "org.kde.kinfocenter",
-                "app_name": _("Information Center"),
-                "app_exec": "kinfocenter",
-                "app_description": _(
-                    "Centralized and convenient summary of system information"
-                ),
-                "app_icon": "hwinfo",
                 "app_categories": "About",
             },
             {
                 "app_id": "org.kde.ksystemlog",
-                "app_name": _("KSystemLog"),
-                "app_exec": "ksystemlog -qwindowtitle %c",
-                "app_description": _("System log viewing tool"),
-                "app_icon": "utilities-log-viewer",
                 "app_categories": "System About",
             },
             {
                 "app_id": "pavucontrol-qt",
                 "app_name": _("Sound and microphone"),
-                "app_exec": "pavucontrol-qt",
                 "app_description": _(
                     "Configure or change audio input and output devices. (Ex: HDMI)"
                 ),
-                "app_icon": "multimedia-volume-control",
                 "app_categories": "Star Multimedia",
             },
             {
                 "app_id": "system-config-printer",
                 "app_name": _("Printers"),
-                "app_exec": "system-config-printer",
                 "app_description": _("Install, configure or remove printers."),
-                "app_icon": "printer",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "systemsettings",
                 "app_name": _("KDE Control Center"),
-                "app_exec": "systemsettings",
-                "app_description": _("Configuration tools for your computer"),
-                "app_icon": "preferences-system",
                 "app_categories": "System",
             },
             {
                 "app_id": "big-store",
-                "app_name": _("Big Store"),
-                "app_exec": "big-store",
-                "app_description": _("Install or remove programs."),
-                "app_icon": "big-store",
                 "app_categories": "System",
             },
             {
                 "app_id": "guvcview",
                 "app_name": _("Configure webcam or capture card"),
-                "app_exec": "guvcview",
                 "app_description": _(
                     "Adjust settings and control webcams or video capture devices"
                 ),
@@ -662,12 +598,9 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_access",
-                "app_name": _("Accessibility"),
-                "app_exec": "systemsettings kcm_access",
                 "app_description": _(
                     "Configure accessibility options for users with special needs"
                 ),
-                "app_icon": "preferences-desktop-accessibility",
                 "app_categories": "Account",
             },
             {
@@ -677,275 +610,198 @@ class AppFinder:
                 "app_description": _(
                     "Create more than one virtual work environment by switching between them."
                 ),
-                "app_icon": "preferences-desktop-activities",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_autostart",
-                "app_name": _("Autostart"),
-                "app_exec": "kcmshell6 autostart",
                 "app_description": _(
                     "Manage applications that start automatically on login"
                 ),
-                "app_icon": "system-run",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_baloofile",
-                "app_name": _("File Search"),
-                "app_exec": "systemsettings kcm_baloofile",
                 "app_description": _(
                     "Enabling search can consume significant memory and processing resources. This may cause the system to slow down, depending on the number of user files."
                 ),
-                "app_icon": "preferences-desktop-baloo",
                 "app_categories": "System",
             },
             {
                 "app_id": "kcm_bluetooth",
-                "app_name": _("Bluetooth"),
-                "app_exec": "systemsettings kcm_bluetooth",
                 "app_description": _("Connect and manage Bluetooth devices"),
-                "app_icon": "preferences-system-bluetooth",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_bolt",
-                "app_name": _("Thunderbolt"),
-                "app_exec": "systemsettings kcm_bolt",
                 "app_description": _(
                     "Manage Thunderbolt devices and security settings"
                 ),
-                "app_icon": "preferences-desktop-thunderbolt",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_clock",
-                "app_name": _("Date and Time"),
-                "app_exec": "kcmshell6 clock",
                 "app_description": _("Adjust date, time and timezone."),
-                "app_icon": "preferences-system-time",
                 "app_categories": "Language",
             },
             {
                 "app_id": "kcm_colors",
-                "app_name": _("Colors"),
-                "app_exec": "systemsettings kcm_colors",
                 "app_description": _(
                     "Customize the color scheme of your desktop environment"
                 ),
-                "app_icon": "preferences-desktop-color",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_componentchooser",
-                "app_name": _("Default Applications"),
-                "app_exec": "systemsettings kcm_componentchooser",
                 "app_description": _(
                     "Select which applications to use for specific tasks"
                 ),
-                "app_icon": "preferences-desktop-default-applications",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_cursortheme",
-                "app_name": _("Cursors"),
-                "app_exec": "systemsettings kcm_cursortheme",
                 "app_description": _("Change mouse cursor appearance and themes"),
-                "app_icon": "preferences-desktop-cursors",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_desktoppaths",
-                "app_name": _("Locations"),
-                "app_exec": "kcmshell6 desktoppaths",
                 "app_description": _(
                     "Configure default paths for documents, downloads and other folders"
                 ),
-                "app_icon": "system-file-manager",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_desktoptheme",
-                "app_name": _("Plasma Style"),
-                "app_exec": "systemsettings kcm_desktoptheme",
                 "app_description": _(
                     "Change the visual appearance of the Plasma desktop"
                 ),
-                "app_icon": "preferences-desktop-plasma-theme",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_filetypes",
-                "app_name": _("File Associations"),
-                "app_exec": "systemsettings kcm_filetypes",
                 "app_description": _(
                     "Configure which applications open specific file types"
                 ),
-                "app_icon": "preferences-desktop-filetype-association",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_firewall",
-                "app_name": _("Plasma Firewall"),
-                "app_exec": "systemsettings kcm_firewall",
-                "app_description": _(
-                    "Configure security rules for connections. This firewall is based on Gufw infrastructure."
-                ),
-                "app_icon": "preferences-security-firewall",
                 "app_categories": "Network",
             },
             {
                 "app_id": "kcm_flatpak",
-                "app_name": _("Flatpak Permissions"),
-                "app_exec": "systemsettings kcm_flatpak",
                 "app_description": _("Manage permissions for Flatpak applications"),
-                "app_icon": "flatpak-discover",
                 "app_categories": "System",
             },
             {
                 "app_id": "kcm_fonts",
-                "app_name": _("Fonts"),
                 "app_exec": "kcmshell6 kcm_fonts fontinst",
                 "app_description": _(
                     "Install and configure system fonts and typography settings"
                 ),
-                "app_icon": "preferences-desktop-font",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_gamecontroller",
-                "app_name": _("Game Controller"),
-                "app_exec": "systemsettings kcm_gamecontroller",
                 "app_description": _("Configure game controllers and joysticks"),
-                "app_icon": "preferences-desktop-gaming",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_icons",
-                "app_name": _("Icons"),
-                "app_exec": "kcmshell6 kcm_icons",
                 "app_description": _(
                     "Change the icon theme used throughout the system"
                 ),
-                "app_icon": "preferences-desktop-icons",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_kaccounts",
-                "app_name": _("Google Drive and ownCloud Integration"),
-                "app_exec": "kcmshell6 kcm_kaccounts",
-                "app_description": _(
-                    "Access your files on Google Drive or ownCloud directly from the file manager."
-                ),
-                "app_icon": "preferences-online-accounts",
                 "app_categories": "Network",
             },
             {
                 "app_id": "kcm_kamera",
-                "app_name": _("Digital Camera"),
-                "app_exec": "systemsettings kcm_kamera",
                 "app_description": _(
                     "Configure digital camera integration with your system"
                 ),
-                "app_icon": "camera-photo",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_kded",
-                "app_name": _("Background Services"),
-                "app_exec": "kcmshell6 kcm_kded",
                 "app_description": _(
                     "Manage system services running in the background"
                 ),
-                "app_icon": "preferences-system-session-services",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_keyboard",
-                "app_name": _("Keyboard"),
                 "app_exec": "kcmshell6 kcm_keyboard kcm_keys kcm_kwinxwayland kcm_virtualkeyboard",
                 "app_description": _("Layout settings, shortcuts and other options."),
-                "app_icon": "preferences-desktop-keyboard",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_kscreen",
-                "app_name": _("Display Settings"),
                 "app_exec": "kcmshell6 kcm_kscreen kcm_nightlight kgamma kwinscreenedges",
                 "app_description": _(
                     "Configure monitors, resolution, and screen arrangement"
                 ),
-                "app_icon": "preferences-desktop-display-randr",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_kwindecoration",
                 "app_name": _("Window Decorations"),
-                "app_exec": "kcmshell6 kwindecoration",
                 "app_description": _(
                     "Change the appearance of window title bars and borders"
                 ),
-                "app_icon": "preferences-desktop-theme-windowdecorations",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_kwin_effects",
-                "app_name": _("Desktop Effects"),
                 "app_exec": "kcmshell6 kwincompositing kcm_kwin_effects qtquicksettings",
                 "app_description": _(
                     "Configure visual effects and animations for the desktop"
                 ),
-                "app_icon": "preferences-desktop-effects",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_kwinoptions",
-                "app_name": _("Window Behavior"),
                 "app_exec": "kcmshell6 kcm_kwintabbox kcm_kwinoptions kcm_kwinrules kcm_kwin_scripts kcm_kwintabbox",
                 "app_description": _("Configure how windows behave and interact"),
-                "app_icon": "preferences-system-windows-actions",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_mouse",
-                "app_name": _("Mouse"),
                 "app_exec": "kcmshell6 mouse kcm_workspace",
                 "app_description": _(
                     "Configure mouse sensitivity, buttons and behavior"
                 ),
-                "app_icon": "preferences-desktop-mouse",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_networkmanagement",
-                "app_name": _("Manage Connections"),
-                "app_exec": "kcmshell6 kcm_networkmanagement",
                 "app_description": _(
                     "Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile broadband and others)."
                 ),
-                "app_icon": "preferences-system-network",
                 "app_categories": "Network",
             },
             {
                 "app_id": "kcm_nightlight",
-                "app_name": _("Night Light"),
-                "app_exec": "systemsettings kcm_nightlight",
-                "app_description": _("Reduce blue light emission to help with sleep"),
-                "app_icon": "redshift-status-on",
                 "app_categories": "Hardware",
             },
             {
+                "app_id": "qefientrymanager",
+                "app_name": _("QEFI Entry Manager"),
+                "app_description": _(
+                    "Manage and configure boot entries for UEFI systems"
+                ),
+                "app_icon": "/usr/share/icons/bigicons-papient/scalable/apps/cc.inoki.qefientrymanager.svg",
+                "app_categories": "System",
+            },
+            {
                 "app_id": "kcm_notifications",
-                "app_name": _("Notifications"),
-                "app_exec": "systemsettings kcm_notifications",
                 "app_description": _("Configure system and application notifications"),
-                "app_icon": "preferences-desktop-notification-bell",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_plymouth",
                 "app_name": _("Boot Screen"),
-                "app_exec": "systemsettings kcm_plymouth",
                 "app_description": _(
                     "Change the splash screen shown during system startup"
                 ),
@@ -954,56 +810,39 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_powerdevilprofilesconfig",
-                "app_name": _("Power Management"),
                 "app_exec": "kcmshell6 kcm_powerdevilprofilesconfig kcm_energyinfo",
                 "app_description": _("Configure energy saving and battery settings"),
-                "app_icon": "preferences-system-power-management",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_proxy",
-                "app_name": _("Proxy"),
-                "app_exec": "systemsettings kcm_proxy",
                 "app_description": _(
                     "Configure network proxy settings for internet access"
                 ),
-                "app_icon": "preferences-system-network-proxy",
                 "app_categories": "Network",
             },
             {
                 "app_id": "kcm_recentFiles",
-                "app_name": _("Recent Files"),
-                "app_exec": "systemsettings kcm_recentFiles",
                 "app_description": _("Manage the history of recently accessed files"),
-                "app_icon": "preferences-system-time",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_regionandlang",
-                "app_name": _("Region and Language"),
-                "app_exec": "kcmshell6 kcm_regionandlang",
                 "app_description": _("Configure language, region, and format settings"),
-                "app_icon": "preferences-desktop-locale",
                 "app_categories": "Language",
             },
             {
                 "app_id": "kcm_screenlocker",
-                "app_name": _("Screen Locking"),
-                "app_exec": "kcmshell6 kcm_screenlocker",
                 "app_description": _(
                     "Configure screen locking settings and appearance"
                 ),
-                "app_icon": "preferences-desktop-user-password",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_sddm",
-                "app_name": _("Login Screen (SDDM)"),
-                "app_exec": "systemsettings kcm_sddm",
                 "app_description": _(
                     "Configure the login screen appearance and behavior"
                 ),
-                "app_icon": "preferences-system-login",
                 "app_categories": "Personalization",
             },
             {
@@ -1016,131 +855,95 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_soundtheme",
-                "app_name": _("System Sounds"),
-                "app_exec": "systemsettings kcm_soundtheme",
                 "app_description": _("Configure sound effects for system events"),
-                "app_icon": "emblem-music-symbolic",
+                "app_icon": "folder-music",
                 "app_categories": "Multimedia",
             },
             {
                 "app_id": "kcm_splashscreen",
-                "app_name": _("Splash Screen"),
-                "app_exec": "systemsettings kcm_splashscreen",
                 "app_description": _(
                     "Configure the splash screen shown while starting applications"
                 ),
-                "app_icon": "preferences-system-splash",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_style",
-                "app_name": _("Application Style"),
-                "app_exec": "systemsettings kcm_style",
                 "app_description": _("Configure the visual appearance of applications"),
-                "app_icon": "preferences-desktop-theme-applications",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_tablet",
-                "app_name": _("Drawing Tablet"),
                 "app_exec": "kcmshell6 kcm_tablet kcm_wacomtablet",
                 "app_description": _("Configure drawing tablets and stylus settings"),
-                "app_icon": "preferences-desktop-tablet",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_touchpad",
-                "app_name": _("Touchpad"),
-                "app_exec": "kcmshell6 touchpad",
                 "app_description": _("Configure laptop touchpad behavior and gestures"),
-                "app_icon": "preferences-desktop-touchpad",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_touchscreen",
-                "app_name": _("Touchscreen"),
                 "app_exec": "kcmshell6 kcm_touchscreen kwintouchscreen",
                 "app_description": _("Configure touchscreen behavior and calibration"),
-                "app_icon": "preferences-desktop-touchscreen",
                 "app_categories": "Hardware",
             },
             {
                 "app_id": "kcm_trash",
-                "app_name": _("Trash"),
-                "app_exec": "kcmshell6 kcm_trash",
                 "app_description": _(
                     "Configure trash bin behavior and cleanup settings"
                 ),
-                "app_icon": "user-trash",
                 "app_categories": "System",
             },
             {
                 "app_id": "kcm_wallpaper",
-                "app_name": _("Wallpaper"),
-                "app_exec": "systemsettings kcm_wallpaper",
                 "app_description": _(
                     "Change desktop background image and slideshow settings"
                 ),
-                "app_icon": "preferences-desktop-wallpaper",
                 "app_categories": "Personalization",
             },
             {
-                "app_id": "kcm_workspace",
-                "app_name": _("General Behavior"),
-                "app_exec": "systemsettings kcm_workspace",
+                "app_id": "kcm_landingpage",
                 "app_description": _(
-                    "Configure general desktop behavior and interaction"
+                    "Configure the system's landing page and default widgets."
                 ),
-                "app_icon": "preferences-desktop",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "org.kde.dolphin",
-                "app_name": _("File Manager"),
-                "app_exec": "dolphin",
                 "app_description": _("Access your files and folders."),
-                "app_icon": "org.kde.dolphin",
                 "app_categories": "System",
             },
             {
                 "app_id": "kcm_kdeconnect",
-                "app_name": _("KDE Connect"),
-                "app_exec": "kdeconnect-settings",
                 "app_description": _(
                     "This program can transfer files between smartphones, tablets, and other computers. With it, you can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, among other features. It integrates best with BigLinux and sits among the applets located near the system clock. To sync with your smartphone, go to the Google Store or Apple Store and install KDE Connect."
                 ),
-                "app_icon": "kdeconnect",
                 "app_categories": "Phone",
             },
             {
                 "app_id": "org.kde.konsole",
-                "app_name": _("Terminal"),
-                "app_exec": "konsole",
                 "app_description": _("Access the command terminal."),
-                "app_icon": "utilities-terminal",
                 "app_categories": "System",
             },
             {
                 "app_id": "org.kde.kwalletmanager",
                 "app_name": _("KWalletManager"),
-                "app_exec": "kwalletmanager5 %F",
+                "app_exec": "kwalletmanager5",
                 "app_description": _("Tool for managing KDE wallets"),
                 "app_icon": "kwalletmanager",
                 "app_categories": "Qt;KDE;System;Security;",
             },
             {
                 "app_id": "org.manjaro.pamac.manager",
-                "app_name": _("Add/Remove Programs"),
-                "app_exec": "pamac-manager %U",
+                "app_exec": "pamac-manager",
                 "app_description": _("Add or remove programs installed on the system"),
-                "app_icon": "system-software-install",
                 "app_categories": "System",
             },
             {
                 "app_id": "android-usb",
                 "app_name": _("Connect to internet using Android"),
                 "app_exec": "#dialog-android-usb",
-                "app_description": None,
                 "app_icon": "android-usb",
                 "app_categories": "Phone",
             },
@@ -1148,7 +951,6 @@ class AppFinder:
                 "app_id": "ios-usb",
                 "app_name": _("Connect to internet using iOS"),
                 "app_exec": "#dialog-ios-usb",
-                "app_description": None,
                 "app_icon": "ios-usb",
                 "app_categories": "Phone",
             },
@@ -1162,16 +964,11 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_users",
-                "app_name": _("Users"),
-                "app_exec": "systemsettings kcm_users",
-                "app_description": None,
-                "app_icon": "preferences-system-users",
                 "app_categories": "Account",
             },
             {
                 "app_id": "timeshift-gtk",
                 "app_name": _("Snapshots and backups"),
-                "app_exec": "timeshift-launcher",
                 "app_description": _("Create or activate restore points"),
                 "app_icon": "timeshift",
                 "app_categories": "Star System",
@@ -1188,88 +985,32 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_lookandfeel",
-                "app_name": _("Appearance and Style"),
-                "app_exec": "kcmshell6 kcm_lookandfeel",
-                "app_description": _(
-                    "Customize the theme, icons, cursor and overall system appearance."
-                ),
-                "app_icon": "preferences-desktop-theme",
-                "app_categories": "Personalization",
-            },
-            {
-                "app_id": "kcm_landingpage",
-                "app_name": _("Landing Page"),
-                "app_exec": "kcmshell6 kcm_landingpage",
-                "app_description": _(
-                    "Configure the system's landing page and default widgets."
-                ),
-                "app_icon": "start-here",
                 "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_feedback",
-                "app_name": _("Feedback"),
-                "app_exec": "kcmshell6 kcm_feedback",
                 "app_description": _(
                     "Configure feedback and usage report preferences."
                 ),
-                "app_icon": "preferences-desktop-feedback",
                 "app_categories": "System",
             },
             {
                 "app_id": "kcm_solid_actions",
-                "app_name": _("Device Actions"),
-                "app_exec": "kcmshell6 kcm_solid_actions",
                 "app_description": _(
                     "Configure automatic actions for when devices are connected."
                 ),
-                "app_icon": "preferences-system-devices",
                 "app_categories": "Hardware",
-            },
-            {
-                "app_id": "kcm_virtualkeyboard",
-                "app_name": _("Virtual Keyboard"),
-                "app_exec": "kcmshell6 kcm_virtualkeyboard",
-                "app_description": _("Virtual keyboard settings and display options."),
-                "app_icon": "keyboard",
-                "app_categories": "Hardware",
-            },
-            {
-                "app_id": "msm_keyboard",
-                "app_name": _("Keyboard Manager"),
-                "app_exec": "msm_keyboard",
-                "app_description": _(
-                    "Keyboard layout management and advanced settings."
-                ),
-                "app_icon": "preferences-desktop-keyboard-shortcuts",
-                "app_categories": "Hardware",
-            },
-            {
-                "app_id": "kcm_kwin_scripts",
-                "app_name": _("KWin Scripts"),
-                "app_exec": "kcmshell6 kcm_kwin_scripts",
-                "app_description": _(
-                    "Manage and configure scripts for the KWin window manager."
-                ),
-                "app_icon": "utilities-terminal",
-                "app_categories": "System",
             },
             {
                 "app_id": "kcm_plasmasearch",
-                "app_name": _("Plasma Search"),
                 "app_exec": "kcmshell6 kcm_plasmasearch",
                 "app_description": _(
                     "Configure search and indexing options in Plasma."
                 ),
-                "app_icon": "system-search",
                 "app_categories": "System",
             },
             {
                 "app_id": "kcm_kwin_virtualdesktops",
-                "app_name": _("Virtual Desktops"),
-                "app_exec": "kcmshell6 kcm_kwin_virtualdesktops",
-                "app_description": _("Configure virtual desktops and KWin behaviors."),
-                "app_icon": "preferences-desktop-virtual",
                 "app_categories": "System",
             },
         ]

@@ -37,12 +37,21 @@ class CategorySidebar(Gtk.Box):
         super().__init__(orientation=Gtk.Orientation.VERTICAL)
         self.app = app
 
-        # Create and load CSS for active category styling
+        # Create and load CSS for active category styling and SVG icon coloring
         css_provider = Gtk.CssProvider()
         css_provider.load_from_data(b"""
             .active-category {
                 background-color: alpha(currentColor, 0.1);
                 border-radius: 6px;
+            }
+            
+            /* Make static SVG icons inherit text color */
+            .symbolic-svg {
+                color: currentColor;
+                -gtk-icon-palette: contrast(currentColor);
+                -gtk-icon-shadow: none;
+                -gtk-icon-effect: none;
+                -gtk-icon-source: -gtk-recolor(currentColor);
             }
         """)
         Gtk.StyleContext.add_provider_for_display(
@@ -71,48 +80,71 @@ class CategorySidebar(Gtk.Box):
 
         scrolled_window.set_child(self.list_box)
 
-        # Define categories with English labels and translations
+        # Define categories
         self.categories = [
-            {"name": "Star", "icon": "view-app-grid-symbolic", "label": _("Main")},
+            {
+                "name": "Star",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/actions/view-app-grid-symbolic.svg",
+                "icon": "view-app-grid-symbolic",
+                "label": _("Main"),
+            },
             {
                 "name": "Network",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/devices/network-wireless-symbolic.svg",
                 "icon": "network-wireless-symbolic",
                 "label": _("Network and Internet"),
             },
-            {"name": "Phone", "icon": "phone-symbolic", "label": _("Phone")},
+            {
+                "name": "Phone",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/devices/smartphone-symbolic.svg",
+                "icon": "phone-symbolic",
+                "label": _("Phone"),
+            },
             {
                 "name": "Personalization",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/apps/preferences-desktop-display-symbolic.svg",
                 "icon": "preferences-desktop-display-symbolic",
                 "label": _("Customize"),
             },
             {
                 "name": "Language",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/actions/globe-symbolic.svg",
                 "icon": "globe-symbolic",
                 "label": _("Region and Language"),
             },
             {
                 "name": "Multimedia",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/mimetypes/audio-x-generic-symbolic.svg",
                 "icon": "audio-x-generic-symbolic",
                 "label": _("Multimedia"),
             },
             {
                 "name": "Account",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/apps/system-users-symbolic.svg",
                 "icon": "system-users-symbolic",
                 "label": _("Accounts"),
             },
             {
                 "name": "Hardware",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/apps/preferences-system-devices-symbolic.svg",
                 "icon": "preferences-system-devices-symbolic",
                 "label": _("Devices"),
             },
             {
                 "name": "System",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/categories/preferences-system-symbolic.svg",
                 "icon": "preferences-system-symbolic",
                 "label": _("System"),
             },
-            {"name": "About", "icon": "help-about-symbolic", "label": _("About")},
+            {
+                "name": "About",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/actions/help-about-symbolic.svg",
+                "icon": "help-about-symbolic",
+                "label": _("About"),
+            },
             {
                 "name": "Other",
+                "icon_static": "/usr/share/icons/bigicons-papient/22x22/symbolic/categories/applications-other-symbolic.svg",
                 "icon": "applications-other-symbolic",
                 "label": _("Other"),
             },
@@ -187,9 +219,27 @@ class CategorySidebar(Gtk.Box):
         button.set_margin_top(8)
         button.set_margin_bottom(8)
 
-        # Create icon with consistent sizing
-        icon = Gtk.Image.new_from_icon_name(category["icon"])
-        icon.set_pixel_size(24)  # Standard size for sidebar icons
+        # Create icon with consistent sizing and inherit text color
+        if "icon_static" in category:
+            try:
+                # Create image from SVG file
+                icon = Gtk.Image.new_from_file(category["icon_static"])
+                # Apply special CSS class for SVG recoloring
+                icon.add_css_class("symbolic")
+                icon.add_css_class("symbolic-svg")
+
+                # Set a colored context for the icon
+                context = icon.get_style_context()
+                context.add_class("symbolic")
+            except:
+                # Fallback to system icon
+                icon = Gtk.Image.new_from_icon_name(category["icon"])
+                icon.add_css_class("symbolic")
+        else:
+            # Load as symbolic icon to inherit text color
+            icon = Gtk.Image.new_from_icon_name(category["icon"])
+            icon.add_css_class("symbolic")
+        icon.set_pixel_size(22)
         icon.set_margin_end(8)
         button.append(icon)
 

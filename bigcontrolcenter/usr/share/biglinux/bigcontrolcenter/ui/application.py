@@ -4,6 +4,9 @@ BigControlCenter - Application class
 
 import gi
 import gettext
+import json
+import os
+from pathlib import Path
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
@@ -35,6 +38,11 @@ class BigControlCenterApp(Adw.Application):
         self.current_category = "Star"
         self.program_grid = None  # Initialize as None until created
 
+        # Config file path
+        self.config_dir = os.path.expanduser("~/.config/bigcontrolcenter")
+        self.config_path = os.path.join(self.config_dir, "config.json")
+        self.config = {}
+
         # Set up CSS provider for styling
         self.css_provider = Gtk.CssProvider()
         self.css_provider.load_from_data(b"""
@@ -53,10 +61,24 @@ class BigControlCenterApp(Adw.Application):
     def on_activate(self, app):
         """Callback for application activation"""
 
+        # Load configuration before creating the window
+        self.load_config()
+
         # Create the main window with a simplified structure
         self.window = Adw.ApplicationWindow(application=app)
-        self.window.set_default_size(1000, 700)
+
+        # Apply saved window size and state
+        if self.config.get("maximized", False):
+            self.window.maximize()
+        else:
+            width = self.config.get("width", 1000)
+            height = self.config.get("height", 620)
+            self.window.set_default_size(width, height)
+
         self.window.set_title(_("Control Center"))
+
+        # Connect window signals to save configuration
+        self.window.connect("close-request", self.on_window_close)
 
         # Set the application icon
         # self.window.set_icon_name("bigcontrolcenter")
@@ -90,15 +112,47 @@ class BigControlCenterApp(Adw.Application):
         # Add header to sidebar
         sidebar_header = Adw.HeaderBar()
 
-        # Add bigger BigControlCenter icon to the sidebar header
+        # Create action for the about dialog
+        about_action = Gio.SimpleAction.new("about", None)
+        about_action.connect("activate", self.on_about_action)
+        self.add_action(about_action)
+
+        # Add BigControlCenter icon as a clickable button that opens the About dialog
+        app_icon_button = Gtk.Button()
+        app_icon_button.set_tooltip_text(_("About Control Center"))
         app_icon = Gtk.Image.new_from_icon_name("bigcontrolcenter")
         app_icon.set_pixel_size(25)  # Larger icon size
-        app_icon.set_margin_start(8)
-        app_icon.set_margin_end(8)
+        # Create css to after apply 5px padding left and right
+        app_icon_button.add_css_class("icon-button-padded")
+        self.css_provider.load_from_data(
+            (
+                self.css_provider.to_string()
+                + """
+            .icon-button-padded {
+            padding: 0px;
+            }
+            .flat:hover {
+            background-color: transparent;
+            box-shadow: none;
+            }
+        """
+            ).encode()
+        )
 
-        # Create a WindowHandle to make the icon area draggable (without checking description)
+        app_icon_button.set_child(app_icon)
+        app_icon_button.add_css_class("flat")
+        # Connect to wrapper method to handle parameter mismatch
+        app_icon_button.connect("clicked", self.on_app_icon_clicked)
+
+        # Set cursor using GTK native property instead of CSS
+        controller = Gtk.EventControllerMotion.new()
+        controller.connect("enter", self.on_app_icon_enter)
+        controller.connect("leave", self.on_app_icon_leave)
+        app_icon_button.add_controller(controller)
+
+        # Create a WindowHandle to make the icon area draggable
         handle = Gtk.WindowHandle()
-        handle.set_child(app_icon)
+        handle.set_child(app_icon_button)
         sidebar_header.pack_start(handle)
 
         sidebar_header.set_title_widget(Adw.WindowTitle.new(_("Control Center"), ""))
@@ -122,22 +176,6 @@ class BigControlCenterApp(Adw.Application):
         content_header = Adw.HeaderBar()
         self.content_title = Adw.WindowTitle.new(_("Programs"), "")
         content_header.set_title_widget(self.content_title)
-
-        # Create menu button for About dialog
-        menu_button = Gtk.MenuButton()
-        menu_button.set_icon_name("open-menu-symbolic")
-        menu_button.set_tooltip_text(_("Menu"))
-
-        # Create menu model
-        menu = Gio.Menu()
-        menu.append(_("About"), "app.about")
-        menu_button.set_menu_model(menu)
-        content_header.pack_end(menu_button)
-
-        # Add action for the about dialog
-        about_action = Gio.SimpleAction.new("about", None)
-        about_action.connect("activate", self.on_about_action)
-        self.add_action(about_action)
 
         # Create search entry (always visible, not hidden)
         self.search_entry = Gtk.SearchEntry()
@@ -194,6 +232,108 @@ class BigControlCenterApp(Adw.Application):
 
         # Show the window
         self.window.present()
+
+        # Add key event controller to redirect key presses to search
+        key_controller = Gtk.EventControllerKey.new()
+        key_controller.connect("key-pressed", self._on_key_pressed)
+        self.window.add_controller(key_controller)
+
+    def _on_key_pressed(self, controller, keyval, keycode, state):
+        """Handle key presses and redirect to search entry"""
+        # Check for backspace key - always remove characters from search
+        if keyval == Gdk.KEY_BackSpace:
+            current_text = self.search_entry.get_text()
+            if current_text:  # Only if there's text to delete
+                self.search_entry.grab_focus()
+                self.search_entry.set_text(current_text[:-1])
+                self.search_entry.set_position(-1)  # Position cursor at end
+                return True
+
+        # Check for navigation keys
+        if keyval in (
+            Gdk.KEY_Up,
+            Gdk.KEY_Down,
+            Gdk.KEY_Left,
+            Gdk.KEY_Right,
+            Gdk.KEY_Return,
+            Gdk.KEY_space,
+        ):
+            # Handle program navigation if we have a flow box
+            try:
+                if (
+                    hasattr(self.program_grid, "flow_box")
+                    and self.program_grid.flow_box
+                ):
+                    flow_box = self.program_grid.flow_box
+
+                    # If Enter/Space and something is selected, activate it
+                    if keyval in (Gdk.KEY_Return, Gdk.KEY_space):
+                        try:
+                            child = self._get_selected_flow_child(flow_box)
+                            if child:
+                                # Manually call child's button click handler instead
+                                button = self._find_button_in_child(child)
+                                if button:
+                                    button.clicked()  # Emit clicked signal directly
+                                return True
+                        except Exception as e:
+                            print(f"Error activating flow box child: {e}")
+
+                    # Arrow key navigation - always force selection and focus
+                    elif keyval in (
+                        Gdk.KEY_Up,
+                        Gdk.KEY_Down,
+                        Gdk.KEY_Left,
+                        Gdk.KEY_Right,
+                    ):
+                        # Simplify: just grab focus on the flow box and let GTK handle navigation
+                        flow_box.grab_focus()
+                        # Don't consume the event - let GTK's default handler manage navigation
+                        return False
+            except Exception as e:
+                print(f"Error in flow box navigation: {e}")
+
+        # Skip if search is already focused
+        if self.search_entry.has_focus():
+            return False
+
+        # Skip if modifier keys are pressed (like Ctrl, Alt, etc.)
+        if state & (
+            Gdk.ModifierType.CONTROL_MASK
+            | Gdk.ModifierType.ALT_MASK
+            | Gdk.ModifierType.SHIFT_MASK
+        ):
+            return False
+
+        # Skip special keys
+        if keyval in (
+            Gdk.KEY_Escape,
+            Gdk.KEY_Tab,
+            Gdk.KEY_Return,
+            Gdk.KEY_Up,
+            Gdk.KEY_Down,
+            Gdk.KEY_Left,
+            Gdk.KEY_Right,
+        ):
+            return False
+
+        # Get the character
+        ch = chr(Gdk.keyval_to_unicode(keyval))
+
+        # Skip if not a printable character
+        if not ch.isprintable():
+            return False
+
+        # Focus search entry and append the character
+        self.search_entry.grab_focus()
+        current_text = self.search_entry.get_text()
+        self.search_entry.set_text(current_text + ch)
+
+        # Position cursor at the end
+        self.search_entry.set_position(-1)
+
+        # Mark event as handled
+        return True
 
     def load_programs(self):
         """Load program data from app_finder"""
@@ -345,3 +485,98 @@ class BigControlCenterApp(Adw.Application):
         about.set_copyright(_("© 2025 BigLinux Team"))
         about.set_developers([_("BigLinux Team")])
         about.present()
+
+    def _get_selected_flow_child(self, flow_box):
+        """Get the currently selected flow box child safely"""
+        try:
+            # In GTK4, selected_children are accessed differently
+            child = None
+
+            # Try to get the child that has focus
+            current = flow_box.get_first_child()
+            while current:
+                if current.has_focus():
+                    return current
+                current = current.get_next_sibling()
+
+            # If no child has focus, try selecting the first one
+            if flow_box.get_first_child():
+                return flow_box.get_first_child()
+
+        except Exception as e:
+            print(f"Error getting selected child: {e}")
+
+        return None
+
+    def _find_button_in_child(self, child):
+        """Find the button inside a flow box child"""
+        try:
+            # The child's child should be our button
+            if isinstance(child, Gtk.FlowBoxChild):
+                button = child.get_child()
+                if isinstance(button, Gtk.Button):
+                    return button
+        except Exception as e:
+            print(f"Error finding button in child: {e}")
+
+        return None
+
+    def load_config(self):
+        if os.path.exists(self.config_path):
+            with open(self.config_path, "r") as f:
+                self.config = json.load(f)
+
+    def save_config(self):
+        """Save window configuration to JSON file"""
+        try:
+            # Create config directory if it doesn't exist
+            os.makedirs(self.config_dir, exist_ok=True)
+
+            # Get current window state
+            maximized = self.window.is_maximized()
+
+            if not maximized:
+                width, height = self.window.get_default_size()
+                self.config["width"] = width
+                self.config["height"] = height
+
+            self.config["maximized"] = maximized
+
+            # Save to file
+            with open(self.config_path, "w") as f:
+                json.dump(self.config, f, indent=2)
+        except Exception as e:
+            print(f"Error saving config: {e}")
+
+    def on_window_close(self, window):
+        """Save window configuration when closing"""
+        self.save_config()
+        return False  # Allow the window to close
+
+    def _on_window_size_change(self, window, allocation):
+        """Update window size in config when size changes (if not maximized)"""
+        if not window.is_maximized():
+            width = allocation.get_width()
+            height = allocation.get_height()
+            if width > 0 and height > 0:
+                self.config["width"] = width
+                self.config["height"] = height
+                self.config["maximized"] = False
+
+    # Add these new methods to handle button click and cursor changes
+    def on_app_icon_clicked(self, button):
+        """Wrapper method to call on_about_action with correct parameters"""
+        self.on_about_action(None, None)
+
+    def on_app_icon_enter(self, controller, x, y):
+        """Change cursor to pointer when mouse enters the app icon button"""
+        window = controller.get_widget().get_root()
+        if window:
+            cursor = Gdk.Cursor.new_from_name("pointer", None)
+            window.set_cursor(cursor)
+
+    def on_app_icon_leave(self, controller):
+        """Reset cursor when mouse leaves the app icon button"""
+        window = controller.get_widget().get_root()
+        if window:
+            window.set_cursor(None)
