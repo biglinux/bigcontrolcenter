@@ -4,6 +4,7 @@ BigControlCenter - Category sidebar component
 
 import gi
 import gettext
+import os
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
@@ -37,21 +38,12 @@ class CategorySidebar(Gtk.Box):
         super().__init__(orientation=Gtk.Orientation.VERTICAL)
         self.app = app
 
-        # Create and load CSS for active category styling and SVG icon coloring
+        # Create and load CSS for active category styling
         css_provider = Gtk.CssProvider()
         css_provider.load_from_data(b"""
             .active-category {
                 background-color: alpha(currentColor, 0.1);
                 border-radius: 6px;
-            }
-            
-            /* Make static SVG icons inherit text color */
-            .symbolic-svg {
-                color: currentColor;
-                -gtk-icon-palette: contrast(currentColor);
-                -gtk-icon-shadow: none;
-                -gtk-icon-effect: none;
-                -gtk-icon-source: -gtk-recolor(currentColor);
             }
         """)
         Gtk.StyleContext.add_provider_for_display(
@@ -219,26 +211,29 @@ class CategorySidebar(Gtk.Box):
         button.set_margin_top(8)
         button.set_margin_bottom(8)
 
-        # Create icon with consistent sizing and inherit text color
-        if "icon_static" in category:
-            try:
-                # Create image from SVG file
-                icon = Gtk.Image.new_from_file(category["icon_static"])
-                # Apply special CSS class for SVG recoloring
-                icon.add_css_class("symbolic")
-                icon.add_css_class("symbolic-svg")
+        # Create icon with consistent sizing
+        icon = None
+        if "icon_static" in category and os.path.exists(category["icon_static"]):
+            # Use system icon as fallback
+            icon = Gtk.Image.new_from_icon_name(category["icon"])
 
-                # Set a colored context for the icon
-                context = icon.get_style_context()
-                context.add_class("symbolic")
-            except:
-                # Fallback to system icon
-                icon = Gtk.Image.new_from_icon_name(category["icon"])
-                icon.add_css_class("symbolic")
+            # automatically apply the recoloring
+            icon_name = category["icon"]
+            if icon_name.endswith("-symbolic"):
+                # Already a symbolic name
+                pass
+            else:
+                # Add symbolic suffix to enforce symbolic coloring
+                icon_name = f"{icon_name}-symbolic"
+
+            # Set the symbolic icon
+            icon.set_from_icon_name(icon_name)
+            icon.add_css_class("symbolic")
         else:
-            # Load as symbolic icon to inherit text color
+            # Use system fallback icon
             icon = Gtk.Image.new_from_icon_name(category["icon"])
             icon.add_css_class("symbolic")
+
         icon.set_pixel_size(22)
         icon.set_margin_end(8)
         button.append(icon)
