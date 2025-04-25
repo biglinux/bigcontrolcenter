@@ -15,16 +15,47 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "Aguarde..."
-msgstr "Pričekajte..."
-msgid "Verificando conexão com a Internet..."
-msgstr "Provjera veze s internetom..."
-msgid "Sem conexão com a Internet..."
-msgstr "Nema internetske veze..."
-msgid "Aguarde, carregando..."
-msgstr "Čekajte, učitavanje..."
+msgid "$APP"
+msgstr "$APLIKACIJA"
+msgid "Error creating directory: $bigdir"
+msgstr "Greška prilikom kreiranja direktorija: $bigdir"
+msgid "Central de Controle - Webcam"
+msgstr "Središnja kontrola - Web kamera"
+msgid "Nenhuma webcam localizada."
+msgstr "Nijedna web kamera nije pronađena."
+msgid "A webcam já está sendo utilizada pelos aplicativos: "
+msgstr "Web kamera već koriste aplikacije:"
+msgid "Abrirei em modo de configuração. "
+msgstr "Otvorit ću u načinu konfiguracije."
+msgid "As alterações feitas podem ser vistas"
+msgstr "Promjene koje su napravljene mogu se vidjeti"
+msgid "na imagem da sua webcam em outros programas."
+msgstr "na slici vaše web kamere u drugim programima."
+msgid "Category"
+msgstr "Kategorija"
+msgid "Name"
+msgstr "Ime"
+msgid "ID"
+msgstr "ID"
+msgid "Info"
+msgstr "Informacije"
+msgid ""
+"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
+"Deseja visualizar o relatório agora?\n"
+"\t\t"
+msgstr ""
+"Izvještaj je spremljen u datoteku: $FILE_TO_SAVE\n"
+"Želite li sada pregledati izvještaj?"
+msgid "Visualizar o relatório"
+msgstr "Prikaz izvještaja"
+msgid "Fechar"
+msgstr "Close"
+msgid "Hardinfo Relatory"
+msgstr "Izvještaj Hardinfo"
 msgid "Introdução ao BigLinux"
 msgstr "Uvod u BigLinux"
+msgid "Aguarde, carregando..."
+msgstr "Čekajte, učitavanje..."
 msgid "Bem vindo ao BigLinux"
 msgstr "Dobrodošli na BigLinux"
 msgid "Comece com algumas etapas simples."
@@ -86,30 +117,12 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Vaša donacija je vrlo važna za projekt i pratite nas na društvenim mrežama."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Čestitamo, završili ste prve korake za korištenje BigLinux-a."
-msgid "Waydroid"
-msgstr "Waydroid"
-msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr ""
-"Prilikom uklanjanja postavki, programi instalirani unutar Waydroida i njihove postavke bit će "
-"izgubljeni. Jeste li sigurni da želite ukloniti?"
-msgid "Configurações removidas com sucesso!"
-msgstr "Postavke uspješno uklonjene!"
-msgid "Nenhuma configuração foi removida!"
-msgstr "Nijedna konfiguracija nije uklonjena!"
-msgid "Não existem configurações para remover."
-msgstr "There are no settings to remove."
-msgid "ID do Android:"
-msgstr "Android ID:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"Nije moguće dohvatiti Android ID. \\n"
-"\\n"
-"Upozorenje: Waydroid mora biti otvoren."
+msgid "Aguarde..."
+msgstr "Pričekajte..."
+msgid "Verificando conexão com a Internet..."
+msgstr "Provjera veze s internetom..."
+msgid "Sem conexão com a Internet..."
+msgstr "Nema internetske veze..."
 msgid "Remover"
 msgstr "Ukloniti"
 msgid "Maximizado"
@@ -122,6 +135,8 @@ msgid ""
 msgstr ""
 "I did not detect support for virtualization technology, you may need to enable this option in the "
 "computer's BIOS."
+msgid "Waydroid"
+msgstr "Waydroid"
 msgid "Utilize programas para Android no BigLinux."
 msgstr "Koristite Android aplikacije na BigLinuxu."
 msgid "Instalar o Waydroid"
@@ -178,43 +193,28 @@ msgid "Parar o Waydroid"
 msgstr "Zaustaviti Waydroid"
 msgid "Iniciar o Waydroid"
 msgstr "Pokreni Waydroid"
-msgid "Category"
-msgstr "Kategorija"
-msgid "Name"
-msgstr "Ime"
-msgid "ID"
-msgstr "ID"
-msgid "Info"
-msgstr "Informacije"
+msgid "ID do Android:"
+msgstr "Android ID:"
 msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
 msgstr ""
-"Izvještaj je spremljen u datoteku: $FILE_TO_SAVE\n"
-"Želite li sada pregledati izvještaj?"
-msgid "Visualizar o relatório"
-msgstr "Prikaz izvještaja"
-msgid "Fechar"
-msgstr "Close"
-msgid "Hardinfo Relatory"
-msgstr "Izvještaj Hardinfo"
-msgid "$APP"
-msgstr "$APLIKACIJA"
-msgid "Error creating directory: $bigdir"
-msgstr "Greška prilikom kreiranja direktorija: $bigdir"
-msgid "Central de Controle - Webcam"
-msgstr "Središnja kontrola - Web kamera"
-msgid "Nenhuma webcam localizada."
-msgstr "Nijedna web kamera nije pronađena."
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "Web kamera već koriste aplikacije:"
-msgid "Abrirei em modo de configuração. "
-msgstr "Otvorit ću u načinu konfiguracije."
-msgid "As alterações feitas podem ser vistas"
-msgstr "Promjene koje su napravljene mogu se vidjeti"
-msgid "na imagem da sua webcam em outros programas."
-msgstr "na slici vaše web kamere u drugim programima."
+"Nije moguće dohvatiti Android ID. \\n"
+"\\n"
+"Upozorenje: Waydroid mora biti otvoren."
+msgid ""
+"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
+"perdidas. Realmente deseja remover?"
+msgstr ""
+"Prilikom uklanjanja postavki, programi instalirani unutar Waydroida i njihove postavke bit će "
+"izgubljeni. Jeste li sigurni da želite ukloniti?"
+msgid "Configurações removidas com sucesso!"
+msgstr "Postavke uspješno uklonjene!"
+msgid "Nenhuma configuração foi removida!"
+msgstr "Nijedna konfiguracija nije uklonjena!"
+msgid "Não existem configurações para remover."
+msgstr "There are no settings to remove."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -224,39 +224,19 @@ msgstr "Konfigurirajte AppimageLauncher"
 msgid "Choose the behavior of programs available in .appimage"
 msgstr "Odaberite ponašanje programa dostupnih u .appimage datotekama"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 508
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
 #: NEEDS WORK
-msgid "Find servers (zeroconf)"
-msgstr "Pronađi poslužitelje (zeroconf)"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 511
-#: NEEDS WORK
-msgid "Search for Zeroconf services available on your network"
-msgstr "Pretraži Zeroconf usluge dostupne na tvojoj mreži"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 518
-#: NEEDS WORK
-msgid "Drivers and firmware"
-msgstr "Upravljački programi i firmver"
+msgid "Search for Zeroconf servers"
+msgstr "Pretraži Zeroconf poslužitelje"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
 msgid "Expand device support"
 msgstr "Proširi podršku za uređaje"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 526
-#: NEEDS WORK
-msgid "Hardware Information"
-msgstr "Informacije o hardveru"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
 #: NEEDS WORK
 msgid "Detailed information about your computer"
 msgstr "Detaljne informacije o vašem računalu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 534
-#: NEEDS WORK
-msgid "Install kernel and mesa versions"
-msgstr "Instalirajte verzije jezgre i mesa"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
 #: NEEDS WORK
@@ -271,57 +251,23 @@ msgstr "Vrati konfiguraciju programa"
 msgid "Search for SSH servers"
 msgstr "Pretraži SSH poslužitelje"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 552
-#: NEEDS WORK
-msgid "Search for SSH servers with Zeroconf enabled"
-msgstr "Pretraži SSH poslužitelje s omogućenom Zeroconf funkcijom"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
 msgid "Search for VNC servers"
 msgstr "Pretražite VNC poslužitelje"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 560
-#: NEEDS WORK
-msgid "Search for VNC servers with Zeroconf enabled"
-msgstr "Pretraži VNC poslužitelje s omogućenom Zeroconf opcijom"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 566
-#: NEEDS WORK
-msgid "CMake"
-msgstr "CMake"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: NEEDS WORK
 msgid "Cross-platform buildsystem"
 msgstr "Križ-platformski sustav izgradnje"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 295
-msgid "Advanced Firewall"
-msgstr "Napredni vatrozid"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 576
-#: NEEDS WORK
-msgid "Firewall Configuration"
-msgstr "Konfiguracija vatrozida"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Napredni upravitelj zvuka - Alsamixer"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 584
-#: NEEDS WORK
-msgid "Audio controller in case of sound absence."
-msgstr "Audio kontroler u slučaju odsutnosti zvuka."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
 #: NEEDS WORK
 msgid "Partition or Format"
 msgstr "Particija ili Formatiranje"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 593
-#: NEEDS WORK
-msgid "Be careful, this program can erase all data on your computer."
-msgstr "Budite oprezni, ovaj program može izbrisati sve podatke na vašem računalu."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
 #: NEEDS WORK
@@ -377,31 +323,6 @@ msgstr "Izradite pokretni USB uređaj"
 msgid "Storage Usage"
 msgstr "Upotreba prostora za pohranu"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 644
-#: NEEDS WORK
-msgid "Shows disk usage and deletes unused files"
-msgstr "Prikazuje korištenje diska i briše neiskorištene datoteke."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 650
-#: NEEDS WORK
-msgid "Information Center"
-msgstr "Informacijski centar"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 653
-#: NEEDS WORK
-msgid "Centralized and convenient summary of system information"
-msgstr "Centralizirani i praktični sažetak informacija o sustavu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 660
-#: NEEDS WORK
-msgid "KSystemLog"
-msgstr "KSystemLog"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 662
-#: NEEDS WORK
-msgid "System log viewing tool"
-msgstr "Alat za pregled sustavnih dnevnika"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
 msgid "Sound and microphone"
 msgstr "Zvuk i mikrofon"
@@ -422,15 +343,6 @@ msgstr "Instalirajte, konfigurirajte ili uklonite pisače."
 msgid "KDE Control Center"
 msgstr "KDE kontrolni centar"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 688
-#: NEEDS WORK
-msgid "Configuration tools for your computer"
-msgstr "Alati za konfiguraciju vašeg računala"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 57
-msgid "Install or remove programs."
-msgstr "Instalirajte ili uklonite programe."
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
 msgid "Configure webcam or capture card"
 msgstr "Konfigurirajte web kameru ili video karticu"
@@ -439,11 +351,6 @@ msgstr "Konfigurirajte web kameru ili video karticu"
 #: NEEDS WORK
 msgid "Adjust settings and control webcams or video capture devices"
 msgstr "Podesite postavke i kontrolirajte web kamere ili uređaje za snimanje videa."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 712
-#: NEEDS WORK
-msgid "Accessibility"
-msgstr "Pristupačnost"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
 #: NEEDS WORK
@@ -459,20 +366,10 @@ msgstr "Virtualne radne površine i aktivnosti"
 msgid "Create more than one virtual work environment by switching between them."
 msgstr "Kreirajte više od jednog virtualnog radnog okruženja prelaskom između njih."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 732
-#: NEEDS WORK
-msgid "Autostart"
-msgstr "Automatsko pokretanje"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
 #: NEEDS WORK
 msgid "Manage applications that start automatically on login"
 msgstr "Upravljajte aplikacijama koje se automatski pokreću prilikom prijave"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 742
-#: NEEDS WORK
-msgid "File Search"
-msgstr "Pretraživanje datoteka"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
 #: NEEDS WORK
@@ -483,189 +380,85 @@ msgstr ""
 "Omogućavanje pretraživanja može potrošiti značajnu memoriju i procesorske resurse. To može "
 "uzrokovati usporavanje sustava, ovisno o broju korisničkih datoteka."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 752
-#: NEEDS WORK
-msgid "Bluetooth"
-msgstr "Bluetooth"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
 #: NEEDS WORK
 msgid "Connect and manage Bluetooth devices"
 msgstr "Povežite i upravljajte Bluetooth uređajima"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 760
-#: NEEDS WORK
-msgid "Thunderbolt"
-msgstr "Thunderbolt"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
 #: NEEDS WORK
 msgid "Manage Thunderbolt devices and security settings"
 msgstr "Upravljajte Thunderbolt uređajima i postavkama sigurnosti"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 770
-#: NEEDS WORK
-msgid "Date and Time"
-msgstr "Datum i vrijeme"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
 #: NEEDS WORK
 msgid "Adjust date, time and timezone."
 msgstr "Podesite datum, vrijeme i vremensku zonu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 778
-#: NEEDS WORK
-msgid "Colors"
-msgstr "Boje"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
 #: NEEDS WORK
 msgid "Customize the color scheme of your desktop environment"
 msgstr "Prilagodite shemu boja svog radnog okruženja."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 788
-#: NEEDS WORK
-msgid "Default Applications"
-msgstr "Zadane aplikacije"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
 #: NEEDS WORK
 msgid "Select which applications to use for specific tasks"
 msgstr "Odaberite koje aplikacije koristiti za specifične zadatke."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 798
-#: NEEDS WORK
-msgid "Cursors"
-msgstr "Kursori"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
 #: NEEDS WORK
 msgid "Change mouse cursor appearance and themes"
 msgstr "Promijenite izgled i teme pokazivača miša."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 806
-#: NEEDS WORK
-msgid "Locations"
-msgstr "Lokacije"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
 #: NEEDS WORK
 msgid "Configure default paths for documents, downloads and other folders"
 msgstr "Konfigurirajte zadane putanje za dokumente, preuzimanja i druge mape."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 816
-#: NEEDS WORK
-msgid "Plasma Style"
-msgstr "Plasma stil"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
 #: NEEDS WORK
 msgid "Change the visual appearance of the Plasma desktop"
 msgstr "Promijenite vizualni izgled Plasma radne površine"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 826
-#: NEEDS WORK
-msgid "File Associations"
-msgstr "Povezivanje datoteka"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
 #: NEEDS WORK
 msgid "Configure which applications open specific file types"
 msgstr "Konfigurirajte koje aplikacije otvaraju specifične vrste datoteka"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 272
-msgid "Plasma Firewall"
-msgstr "Plazma vatrozid"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 839
-#: NEEDS WORK
-msgid "Configure security rules for connections. This firewall is based on Gufw infrastructure."
-msgstr "Konfigurirajte pravila sigurnosti za veze. Ova vatrozid se temelji na Gufw infrastrukturi."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 846
-#: NEEDS WORK
-msgid "Flatpak Permissions"
-msgstr "Flatpak dozvole"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
 #: NEEDS WORK
 msgid "Manage permissions for Flatpak applications"
 msgstr "Upravljanje dozvolama za Flatpak aplikacije"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 854
-#: NEEDS WORK
-msgid "Fonts"
-msgstr "Fontovi"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
 #: NEEDS WORK
 msgid "Install and configure system fonts and typography settings"
 msgstr "Instalirajte i konfigurirajte sustavne fontove i postavke tipografije"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 864
-#: NEEDS WORK
-msgid "Game Controller"
-msgstr "Igraća kontroler"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
 #: NEEDS WORK
 msgid "Configure game controllers and joysticks"
 msgstr "Konfigurirajte igraće kontrolere i joysticke"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 872
-#: NEEDS WORK
-msgid "Icons"
-msgstr "Ikone"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
 #: NEEDS WORK
 msgid "Change the icon theme used throughout the system"
 msgstr "Promijenite temu ikona koja se koristi u cijelom sustavu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 882
-#: NEEDS WORK
-msgid "Google Drive and ownCloud Integration"
-msgstr "Integracija Google Drivea i ownClouda"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 885
-#: NEEDS WORK
-msgid "Access your files on Google Drive or ownCloud directly from the file manager."
-msgstr "Pristupite svojim datotekama na Google Driveu ili ownCloudu izravno iz upravitelja datoteka."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 892
-#: NEEDS WORK
-msgid "Digital Camera"
-msgstr "Digitalna kamera"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
 #: NEEDS WORK
 msgid "Configure digital camera integration with your system"
 msgstr "Konfigurirajte integraciju digitalne kamere s vašim sustavom."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 902
-#: NEEDS WORK
-msgid "Background Services"
-msgstr "Pozadinske usluge"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
 #: NEEDS WORK
 msgid "Manage system services running in the background"
 msgstr "Upravljajte sustavnim uslugama koje rade u pozadini"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 912
-#: NEEDS WORK
-msgid "Keyboard"
-msgstr "Tipkovnica"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: NEEDS WORK
 msgid "Layout settings, shortcuts and other options."
 msgstr "Postavke izgleda, prečaci i druge opcije."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 920
-#: NEEDS WORK
-msgid "Display Settings"
-msgstr "Postavke prikaza"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
 #: NEEDS WORK
@@ -682,40 +475,20 @@ msgstr "Dekoracije prozora"
 msgid "Change the appearance of window title bars and borders"
 msgstr "Promijenite izgled traka s naslovima prozora i rubova."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 940
-#: NEEDS WORK
-msgid "Desktop Effects"
-msgstr "Desktop efekti"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
 #: NEEDS WORK
 msgid "Configure visual effects and animations for the desktop"
 msgstr "Konfigurirajte vizualne efekte i animacije za radnu površinu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 950
-#: NEEDS WORK
-msgid "Window Behavior"
-msgstr "Ponašanje prozora"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
 #: NEEDS WORK
 msgid "Configure how windows behave and interact"
 msgstr "Konfigurirajte kako prozori djeluju i međusobno komuniciraju."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 958
-#: NEEDS WORK
-msgid "Mouse"
-msgstr "Miš"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
 #: NEEDS WORK
 msgid "Configure mouse sensitivity, buttons and behavior"
 msgstr "Konfigurirajte osjetljivost miša, gumbe i ponašanje"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 968
-#: NEEDS WORK
-msgid "Manage Connections"
-msgstr "Upravljanje vezama"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
 #: NEEDS WORK
@@ -726,20 +499,15 @@ msgstr ""
 "Napredna mrežna konfiguracija (VPN, WiFi, žičana, statička IP, PPPoE, ADSL, žična mreža, mobilni "
 "širokopojasni internet i drugi)."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 978
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: NEEDS WORK
-msgid "Night Light"
-msgstr "Noćno svjetlo"
+msgid "QEFI Entry Manager"
+msgstr "QEFI Upravitelj Unosa"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 980
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
 #: NEEDS WORK
-msgid "Reduce blue light emission to help with sleep"
-msgstr "Smanjite emisiju plave svjetlosti kako biste pomogli sa spavanjem."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 986
-#: NEEDS WORK
-msgid "Notifications"
-msgstr "Obavijesti"
+msgid "Manage and configure boot entries for UEFI systems"
+msgstr "Upravljajte i konfigurirajte boot unose za UEFI sustave"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
 #: NEEDS WORK
@@ -756,60 +524,30 @@ msgstr "Zaslon za pokretanje"
 msgid "Change the splash screen shown during system startup"
 msgstr "Promijenite zaslon dobrodošlice koji se prikazuje tijekom pokretanja sustava."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1004
-#: NEEDS WORK
-msgid "Power Management"
-msgstr "Upravljanje energijom"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
 #: NEEDS WORK
 msgid "Configure energy saving and battery settings"
 msgstr "Konfigurirajte postavke uštede energije i baterije"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1012
-#: NEEDS WORK
-msgid "Proxy"
-msgstr "Proxy"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
 #: NEEDS WORK
 msgid "Configure network proxy settings for internet access"
 msgstr "Konfigurirajte postavke mrežnog proxyja za pristup internetu"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1022
-#: NEEDS WORK
-msgid "Recent Files"
-msgstr "Nedavne datoteke"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
 #: NEEDS WORK
 msgid "Manage the history of recently accessed files"
 msgstr "Upravljajte poviješću nedavno pristupanih datoteka"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Regija i Jezik"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
 #: NEEDS WORK
 msgid "Configure language, region, and format settings"
 msgstr "Konfigurirajte postavke jezika, regije i formata"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1038
-#: NEEDS WORK
-msgid "Screen Locking"
-msgstr "Zaključavanje zaslona"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
 #: NEEDS WORK
 msgid "Configure screen locking settings and appearance"
 msgstr "Konfigurirajte postavke zaključavanja zaslona i izgled"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1048
-#: NEEDS WORK
-msgid "Login Screen (SDDM)"
-msgstr "Zaslon za prijavu (SDDM)"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
 #: NEEDS WORK
@@ -826,100 +564,50 @@ msgstr "Radna površina sesije"
 msgid "Configure session startup and shutdown behavior"
 msgstr "Konfigurirajte ponašanje pokretanja i gašenja sesije"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1066
-#: NEEDS WORK
-msgid "System Sounds"
-msgstr "Sustavi zvukovi"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
 #: NEEDS WORK
 msgid "Configure sound effects for system events"
 msgstr "Konfigurirajte zvučne efekte za sustavne događaje"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1074
-#: NEEDS WORK
-msgid "Splash Screen"
-msgstr "Zaslon za učitavanje"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
 #: NEEDS WORK
 msgid "Configure the splash screen shown while starting applications"
 msgstr "Konfigurirajte zaslon dobrodošlice koji se prikazuje prilikom pokretanja aplikacija."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1084
-#: NEEDS WORK
-msgid "Application Style"
-msgstr "Stil aplikacije"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
 #: NEEDS WORK
 msgid "Configure the visual appearance of applications"
 msgstr "Konfigurirajte vizualni izgled aplikacija"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1092
-#: NEEDS WORK
-msgid "Drawing Tablet"
-msgstr "Grafički tablet"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
 #: NEEDS WORK
 msgid "Configure drawing tablets and stylus settings"
 msgstr "Konfigurirajte postavke crtačkih tableta i olovaka."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1100
-#: NEEDS WORK
-msgid "Touchpad"
-msgstr "Pločica osjetljiva na dodir"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
 #: NEEDS WORK
 msgid "Configure laptop touchpad behavior and gestures"
 msgstr "Konfigurirajte ponašanje i geste touchpada prijenosnog računala."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1108
-#: NEEDS WORK
-msgid "Touchscreen"
-msgstr "Zaslon osjetljiv na dodir"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
 #: NEEDS WORK
 msgid "Configure touchscreen behavior and calibration"
 msgstr "Konfigurirajte ponašanje i kalibraciju dodirnog ekrana"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1116
-#: NEEDS WORK
-msgid "Trash"
-msgstr "Otpad"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
 #: NEEDS WORK
 msgid "Configure trash bin behavior and cleanup settings"
 msgstr "Konfigurirajte ponašanje smeća i postavke čišćenja"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1126
-#: NEEDS WORK
-msgid "Wallpaper"
-msgstr "Pozadina"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
 #: NEEDS WORK
 msgid "Change desktop background image and slideshow settings"
 msgstr "Promijenite sliku pozadine radne površine i postavke slajdova."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1136
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: NEEDS WORK
-msgid "General Behavior"
-msgstr "Opće ponašanje"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1139
-#: NEEDS WORK
-msgid "Configure general desktop behavior and interaction"
-msgstr "Konfigurirajte opće ponašanje radne površine i interakciju"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1146
-#: NEEDS WORK
-msgid "File Manager"
-msgstr "Upravitelj datoteka"
+msgid "Configure the system's landing page and default widgets."
+msgstr "Konfigurirajte odredišnu stranicu sustava i zadane widgete."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
 #: NEEDS WORK
@@ -941,10 +629,6 @@ msgstr ""
 "smještenim blizu sustavnog sata. Da biste se sinkronizirali sa svojim pametnim telefonom, idite u "
 "Google Play ili Apple Store i instalirajte KDE Connect."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 496
-msgid "Terminal"
-msgstr "Naredbeni redak"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
 msgid "Access the command terminal."
 msgstr "Pristupite naredbenom terminalu."
@@ -958,11 +642,6 @@ msgstr "KWalletManager"
 #: NEEDS WORK
 msgid "Tool for managing KDE wallets"
 msgstr "Alat za upravljanje KDE novčanicima"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1180
-#: NEEDS WORK
-msgid "Add/Remove Programs"
-msgstr "Dodaj/Ukloni programe"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
 #: NEEDS WORK
@@ -983,11 +662,6 @@ msgstr "Povežite se na internet koristeći iOS"
 msgid "Connect to Internet"
 msgstr "Poveži se na Internet"
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1212
-#: NEEDS WORK
-msgid "Users"
-msgstr "Korisnici"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
 msgid "Snapshots and backups"
 msgstr "Snimke i sigurnosne kopije"
@@ -1005,154 +679,20 @@ msgstr "BigLinux Tematske"
 msgid "We provide complete configurations for you to select in an extremely simple way."
 msgstr "Nudimo potpune konfiguracije za odabir na izuzetno jednostavan način."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1238
-#: NEEDS WORK
-msgid "Appearance and Style"
-msgstr "Izgled i stil"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1241
-#: NEEDS WORK
-msgid "Customize the theme, icons, cursor and overall system appearance."
-msgstr "Prilagodite temu, ikone, pokazivač i cjelokupni izgled sustava."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1248
-#: NEEDS WORK
-msgid "Landing Page"
-msgstr "Odredišna stranica"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
-#: NEEDS WORK
-msgid "Configure the system's landing page and default widgets."
-msgstr "Konfigurirajte odredišnu stranicu sustava i zadane widgete."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1258
-#: NEEDS WORK
-msgid "Feedback"
-msgstr "Povratne informacije"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
 #: NEEDS WORK
 msgid "Configure feedback and usage report preferences."
 msgstr "Konfigurirajte postavke povratnih informacija i izvještaja o korištenju."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1268
-#: NEEDS WORK
-msgid "Device Actions"
-msgstr "Radnje uređaja"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
 #: NEEDS WORK
 msgid "Configure automatic actions for when devices are connected."
 msgstr "Konfigurirajte automatske radnje za kada su uređaji povezani."
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1278
-#: NEEDS WORK
-msgid "Virtual Keyboard"
-msgstr "Virtualna tipkovnica"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1280
-#: NEEDS WORK
-msgid "Virtual keyboard settings and display options."
-msgstr "Postavke virtualne tipkovnice i opcije prikaza."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1286
-#: NEEDS WORK
-msgid "Keyboard Manager"
-msgstr "Upravitelj tipkovnice"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1289
-#: NEEDS WORK
-msgid "Keyboard layout management and advanced settings."
-msgstr "Upravljanje rasporedom tipkovnice i napredne postavke."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1296
-#: NEEDS WORK
-msgid "KWin Scripts"
-msgstr "KWin skripte"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1299
-#: NEEDS WORK
-msgid "Manage and configure scripts for the KWin window manager."
-msgstr "Upravljajte i konfigurirajte skripte za KWin upravitelj prozora."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1306
-#: NEEDS WORK
-msgid "Plasma Search"
-msgstr "Plasma Pretraživanje"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
 #: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "Konfigurirajte opcije pretraživanja i indeksiranja u Plazmi."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1316
-#: NEEDS WORK
-msgid "Virtual Desktops"
-msgstr "Virtualni radni stolovi"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1318
-#: NEEDS WORK
-msgid "Configure virtual desktops and KWin behaviors."
-msgstr "Konfigurirajte virtualne radne površine i KWin ponašanja."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Centar za upravljanje"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "Kategorije"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "Programi"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 289
-#: NEEDS WORK
-msgid "Menu"
-msgstr "Izbornik"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "O programu"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Pretraži..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Izvršavanje posebne naredbe: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Pokretanje: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Greška prilikom pokretanja programa: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "BigLinux Tim"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Tim"
 # 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
@@ -1249,6 +789,60 @@ msgstr "Zatvori"
 # 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
+msgid "Control Center"
+msgstr "Centar za upravljanje"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+#: NEEDS WORK
+msgid "About Control Center"
+msgstr "O Kontrolnom centru"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+#: NEEDS WORK
+msgid "Categories"
+msgstr "Kategorije"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+#: NEEDS WORK
+msgid "Programs"
+msgstr "Programi"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Pretraži..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#: NEEDS WORK
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Izvršavanje posebne naredbe: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#: NEEDS WORK
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Pokretanje: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Greška prilikom pokretanja programa: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+#: NEEDS WORK
+msgid "BigLinux Team"
+msgstr "BigLinux Tim"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+#: NEEDS WORK
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Tim"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid "Main"
 msgstr "Glavni"
 # 
@@ -1269,6 +863,11 @@ msgstr "Prilagodi"
 # 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
+msgid "Region and Language"
+msgstr "Regija i Jezik"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid "Multimedia"
 msgstr "Multimedijski"
 # 
@@ -1286,6 +885,11 @@ msgstr "Uređaji"
 # 
 msgid "System"
 msgstr "Sustav"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "O programu"
 # 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
