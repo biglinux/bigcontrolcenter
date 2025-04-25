@@ -7,6 +7,10 @@
 
 > **A modern, beautiful, and fast control center for BigLinux, built with Python, GTK4, and Adwaita.**
 
+![image](https://github.com/user-attachments/assets/87a4df88-b363-4762-85fd-d50ffd400613)
+
+![image](https://github.com/user-attachments/assets/1020f62e-3198-43fb-b4d2-ed82da9bb2d9)
+
 ---
 
 ## ✨ Features
@@ -18,11 +22,6 @@
 - **Device Connection Dialogs**: Easy instructions for connecting Android/iOS devices via USB tethering.
 - **Multilingual Support**: Translations for multiple languages.
 - **Persistent Settings**: Remembers window size, state, and preferences.
-
----
-
-## 🖼️ Screenshots
-
 
 ---
 
