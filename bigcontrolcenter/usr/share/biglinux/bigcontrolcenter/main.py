@@ -17,7 +17,9 @@ from ui.application import BigControlCenterApp
 
 def main():
     """Main application entry point"""
+    # The application ID should match the .desktop file name for proper icon display
     app = BigControlCenterApp("bigcontrolcenter", Gio.ApplicationFlags.DEFAULT_FLAGS)
+
     return app.run(sys.argv)
 
 

@@ -1,72 +1,71 @@
 # BigControlCenter
 
-A modern GTK4-based control center for system settings.
+![BigLinux](https://img.shields.io/badge/BigLinux-Control%20Center-blue?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&style=flat-square)
+![GTK4](https://img.shields.io/badge/GTK-4.0%2B-green?logo=gnome&style=flat-square)
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)
 
-## Overview
+> **A modern, beautiful, and fast control center for BigLinux, built with Python, GTK4, and Adwaita.**
 
-BigControlCenter is a user-friendly application that provides easy access to system settings and configuration tools. It displays applications categorized by functionality, allowing users to quickly find and launch the tools they need.
+---
 
-## Features
+## ✨ Features
 
-- Modern GTK4 interface with Adwaita styling
-- Category-based navigation
-- Search functionality for quick access
-- Descriptive tooltips for each program
-- JSON-based data storage
+- **Unified Control Center**: Manage system settings, applications, and devices from a single interface.
+- **Modern UI**: Built with GTK4 and Adwaita for a clean, responsive, and accessible experience.
+- **Category Sidebar**: Quickly navigate between system, network, hardware, personalization, and more.
+- **Program Grid**: Launch and search installed applications with beautiful icons and descriptions.
+- **Device Connection Dialogs**: Easy instructions for connecting Android/iOS devices via USB tethering.
+- **Multilingual Support**: Translations for multiple languages.
+- **Persistent Settings**: Remembers window size, state, and preferences.
 
-## Requirements
+---
 
-- Python 3.13 or newer
-- GTK4
-- libadwaita
+## 🖼️ Screenshots
+
+
+---
+
+## 🚀 Installation
+
+### Requirements
+- Python 3.8+
+- GTK 4.0+
+- libadwaita 1+
 - PyGObject
+- BigLinux (recommended, but can run on other Linux distros with dependencies)
 
-## Installation
+---
 
-1. Ensure you have the required dependencies installed:
+## 🛠️ Usage
 
-```bash
-# For Debian/Ubuntu-based systems
-sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-4.0 libadwaita-1-dev
+- Launch the application: `python main.py`
+- Browse categories on the left sidebar.
+- Search and launch applications from the grid.
+- Access device connection help from special entries.
 
-# For Arch/Manjaro-based systems
-sudo pacman -S python-gobject gtk4 libadwaita
-```
+---
 
-2. Clone the repository:
+## 🤝 Contributing
 
-```bash
-git clone https://github.com/biglinux/bigcontrolcenter.git
-cd bigcontrolcenter
-```
+Contributions are welcome! Please open issues or pull requests on [GitHub](https://github.com/biglinux/bigcontrolcenter).
 
-3. Make the main script executable:
+---
 
-```bash
-chmod +x main.py
-```
+## 📄 License
 
-## Usage
+This project is licensed under the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
 
-To run BigControlCenter:
+---
 
-```bash
-./main.py
-```
+## 🙏 Credits
 
-## Directory Structure
+- Developed by the [BigLinux Team](https://www.biglinux.com.br/)
+- Powered by [GTK4](https://www.gtk.org/) and [libadwaita](https://gnome.pages.gitlab.gnome.org/libadwaita/)
 
-- `main.py`: Main application entry point
-- `ui/`: UI components
-  - `application.py`: Main application window
-  - `category_sidebar.py`: Category navigation sidebar
-  - `program_grid.py`: Grid view of programs
-- `utils/`: Utility modules
-  - `app_finder.py`: Find desktop applications
-  - `data_manager.py`: JSON data storage and retrieval
-- `data/`: Configuration files
-  - `categories.json`: Category definitions
+---
 
-## License
+## 🌐 Links
 
-This project is licensed under BSD license.
+- [BigLinux Official Website](https://www.biglinux.com.br/)
+- [Report Issues](https://github.com/biglinux/bigcontrolcenter/issues)

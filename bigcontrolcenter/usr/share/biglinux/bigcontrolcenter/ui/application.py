@@ -32,6 +32,9 @@ class BigControlCenterApp(Adw.Application):
         super().__init__(application_id=application_id, flags=flags)
         self.connect("activate", self.on_activate)
 
+        # Set application icon - needed for taskbar in Wayland
+        GLib.set_prgname(application_id)
+
         # Initialize application data
         self.programs = []
         self.filtered_programs = []
@@ -79,9 +82,6 @@ class BigControlCenterApp(Adw.Application):
 
         # Connect window signals to save configuration
         self.window.connect("close-request", self.on_window_close)
-
-        # Set the application icon
-        # self.window.set_icon_name("bigcontrolcenter")
 
         # Create the toast overlay for notifications (can be used for status messages)
         toast_overlay = Adw.ToastOverlay()
