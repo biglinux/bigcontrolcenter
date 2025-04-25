@@ -967,6 +967,11 @@ class AppFinder:
                 "app_categories": "Account",
             },
             {
+                "app_id": "biglinux-grub-restore",
+                "app_icon": "/usr/share/icons/bigicons-papient/scalable/apps/biglinux-grub-restore.svg",
+                "app_categories": "Star System",
+            },
+            {
                 "app_id": "timeshift-gtk",
                 "app_name": _("Snapshots and backups"),
                 "app_description": _("Create or activate restore points"),
