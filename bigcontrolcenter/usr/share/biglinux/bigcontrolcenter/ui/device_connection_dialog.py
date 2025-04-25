@@ -8,18 +8,14 @@ import gettext
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Adw, GLib, Gdk, GdkPixbuf
+from gi.repository import Gtk, Adw
 
 # Setup translations
-try:
-    lang_translations = gettext.translation(
-        "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
-    )
-    lang_translations.install()
-    _ = lang_translations.gettext
-except Exception:
-    # Fallback if translation fails
-    _ = lambda x: x
+lang_translations = gettext.translation(
+    "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
+)
+lang_translations.install()
+_ = lang_translations.gettext
 
 
 class DeviceConnectionDialog:

@@ -7,18 +7,14 @@ import gettext
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, GLib, Pango, Gdk
+from gi.repository import Gtk, Pango, Gdk
 
 # Setup translations
-try:
-    lang_translations = gettext.translation(
-        "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
-    )
-    lang_translations.install()
-    _ = lang_translations.gettext
-except Exception:
-    # Fallback if translation fails
-    _ = lambda x: x
+lang_translations = gettext.translation(
+    "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
+)
+lang_translations.install()
+_ = lang_translations.gettext
 
 
 class CategoryRow(Gtk.ListBoxRow):
@@ -58,9 +54,6 @@ class CategorySidebar(Gtk.Box):
         self.set_hexpand(False)
         self.set_vexpand(True)
         self.set_size_request(220, -1)  # Width 220, default height
-
-        # Add CSS classes
-        self.add_css_class("sidebar")
 
         # Create a scrolled window for the category list
         scrolled_window = Gtk.ScrolledWindow()
@@ -154,7 +147,6 @@ class CategorySidebar(Gtk.Box):
     def _on_row_activated(self, list_box, row):
         """Handle row activation - gets the category name from the row attribute"""
         if hasattr(row, "category_name"):
-            print(f"Category selected: {row.category_name}")  # Debug output
             self._on_category_selected(row.category_name)
 
     def select_initial_category(self):
@@ -186,8 +178,6 @@ class CategorySidebar(Gtk.Box):
                 row = self.category_rows[name]
                 has_programs = name in self.non_empty_categories
                 row.set_visible(has_programs)
-
-        print(f"Non-empty categories: {self.non_empty_categories}")
 
     def _create_category_button(self, category):
         """Create a button for a category"""

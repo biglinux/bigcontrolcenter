@@ -7,7 +7,7 @@ import gettext
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Gio, GLib, Adw, Gdk, Pango
+from gi.repository import Gtk, Gio, GLib, Adw, Gdk
 
 from ui.category_sidebar import CategorySidebar
 from ui.program_grid import ProgramGrid
@@ -15,15 +15,11 @@ from ui.device_connection_dialog import DeviceConnectionDialog
 from utils.app_finder import AppFinder
 
 # Setup translations
-try:
-    lang_translations = gettext.translation(
-        "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
-    )
-    lang_translations.install()
-    _ = lang_translations.gettext
-except Exception:
-    # Fallback if translation fails
-    _ = lambda x: x
+lang_translations = gettext.translation(
+    "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
+)
+lang_translations.install()
+_ = lang_translations.gettext
 
 
 class BigControlCenterApp(Adw.Application):
@@ -38,7 +34,6 @@ class BigControlCenterApp(Adw.Application):
         self.filtered_programs = []
         self.current_category = "Star"
         self.program_grid = None  # Initialize as None until created
-        self.icon_size = 64  # Set standard icon size
 
         # Set up CSS provider for styling
         self.css_provider = Gtk.CssProvider()
@@ -68,14 +63,14 @@ class BigControlCenterApp(Adw.Application):
 
         # Create the toast overlay for notifications (can be used for status messages)
         toast_overlay = Adw.ToastOverlay()
-        toast_overlay.add_css_class("background-as-headerbar-bg-color")
+        toast_overlay.add_css_class("background-as-view-bg-color")
 
         # Add transparent background style to CSS provider
         css_data = (
             self.css_provider.to_string()
             + """
-            .background-as-headerbar-bg-color {
-            background-color: var(--headerbar-bg-color);
+            .background-as-view-bg-color {
+            background-color: var(--view-bg-color);
             }
         """
         )
@@ -311,36 +306,6 @@ class BigControlCenterApp(Adw.Application):
         """Show dialog with iOS USB tethering instructions"""
         dialog = DeviceConnectionDialog(self.window)
         dialog.show_ios_dialog()
-
-        def draw_function(widget, cr, width, height, data):
-            theme = Gtk.IconTheme.get_for_display(widget.get_display())
-            try:
-                icon_info = theme.lookup_icon(
-                    icon_name, [], 64, 1, Gtk.TextDirection.NONE, 0
-                )
-                if icon_info:
-                    cr.set_source_rgba(0, 0, 0, 0)
-                    cr.paint()
-                    texture = icon_info.get_texture()
-                    if texture:
-                        x = (64 - texture.get_width()) / 2
-                        y = (64 - texture.get_height()) / 2
-                        Gdk.cairo_set_source_texture(cr, texture, x, y)
-                        cr.paint()
-            except Exception as e:
-                print(f"Error loading icon {icon_name}: {e}")
-
-        drawing_area.set_draw_func(draw_function, None)
-        frame = Gtk.AspectFrame()
-        frame.set_child(drawing_area)
-        frame.set_size_request(64, 64)
-        frame.set_hexpand(False)
-        frame.set_vexpand(False)
-        frame.set_ratio(1.0)
-        frame.set_obey_child(False)
-        frame.set_xalign(0.5)
-        frame.set_yalign(0.5)
-        return frame
 
     def configure_program_grid_for_fixed_icons(self):
         """Configure the program grid to respect fixed icon sizes"""

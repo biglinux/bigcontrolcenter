@@ -13,7 +13,7 @@ import gettext
 import gi
 
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gio, Gtk, Gdk
+from gi.repository import Gio
 
 # Setup translations
 try:
@@ -35,9 +35,6 @@ class AppFinder:
 
     def __init__(self):
         """Initialize the app finder"""
-        # In GTK4, we need to get the icon theme from the display
-        display = Gdk.Display.get_default()
-        self.icon_theme = Gtk.IconTheme.get_for_display(display)
         self.replacements = self._get_replacements()
 
     def get_programs(self):
