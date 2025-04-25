@@ -74,7 +74,7 @@ class BigControlCenterApp(Adw.Application):
         if self.config.get("maximized", False):
             self.window.maximize()
         else:
-            width = self.config.get("width", 1000)
+            width = self.config.get("width", 1100)
             height = self.config.get("height", 620)
             self.window.set_default_size(width, height)
 
