@@ -15,47 +15,121 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "$APP"
-msgstr "$ALKALMAZÁS"
-msgid "Error creating directory: $bigdir"
-msgstr "Hiba a könyvtár létrehozásakor: $bigdir"
-msgid "Central de Controle - Webcam"
-msgstr "Vezérlőpult - Webkamera"
-msgid "Nenhuma webcam localizada."
-msgstr "Nem egy webkamera sem található."
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "A webkamera már használatban van az alkalmazások által:"
-msgid "Abrirei em modo de configuração. "
-msgstr "Megnyitom a konfigurációs módban."
-msgid "As alterações feitas podem ser vistas"
-msgstr "Az elvégzett módosítások láthatók"
-msgid "na imagem da sua webcam em outros programas."
-msgstr "a webkamerád képét más programokban."
-msgid "Category"
-msgstr "Kategória"
-msgid "Name"
-msgstr "Név"
-msgid "ID"
-msgstr "Azonosító"
-msgid "Info"
-msgstr "Információ"
+#: NEEDS WORK
 msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
 msgstr ""
-"A jelentés el lett mentve a következő fájlba: $FILE_TO_SAVE\n"
-"Szeretné most megtekinteni a jelentést?"
-msgid "Visualizar o relatório"
-msgstr "Jelentés megjelenítése"
-msgid "Fechar"
-msgstr "Bezárás"
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo Jelentés"
+"A webkamera már használatban van a program által: $WEBCAM_BUSY\n"
+"\n"
+"Beállítási módban fogom megnyitni.\n"
+"A végrehajtott módosítások láthatók\n"
+"a webkamerád képén más programokban."
+#: NEEDS WORK
+msgid "Webcam"
+msgstr "Webkamera"
+msgid "Waydroid"
+msgstr "Waydroid"
+msgid ""
+"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
+"perdidas. Realmente deseja remover?"
+msgstr ""
+"A Waydroid-ban telepített programok és beállításaik törlődnek a beállítások eltávolításakor. "
+"Valóban el szeretné távolítani?"
+msgid "Configurações removidas com sucesso!"
+msgstr "Beállítások sikeresen eltávolítva!"
+msgid "Nenhuma configuração foi removida!"
+msgstr "Nincs eltávolított beállítás!"
+msgid "Não existem configurações para remover."
+msgstr "Nincsenek eltávolítandó beállítások."
+msgid "ID do Android:"
+msgstr "Android azonosító:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"Nem sikerült visszaszerezni az Android azonosítóját. \\n"
+"\\n"
+"Figyelem: A Waydroidnak nyitva kell lennie."
+msgid "Remover"
+msgstr "Eltávolító"
+msgid "Maximizado"
+msgstr "Maximalizált"
+msgid "Desinstalar"
+msgstr "Eltávolítás"
+msgid ""
+"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
+"na BIOS do computador."
+msgstr ""
+"Nem találtam virtualizációs technológiát támogatást, lehet, hogy szükséges engedélyezni ezt a "
+"beállítást a számítógép BIOS-ában."
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Használja az Android alkalmazásokat a BigLinuxon."
+msgid "Instalar o Waydroid"
+msgstr "Telepítse a Waydroid-ot"
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Waydroid telepítése Google alkalmazásokkal"
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "A letöltés körülbelül 1 GB méretű, a kapcsolatától függően eltarthat egy ideig."
+msgid "Resolução"
+msgstr "Felbontás"
+msgid "Paisagem"
+msgstr "There is nothing to translate in your request."
+msgid "Retrato"
+msgstr "Nincs fordítandó szöveg."
+msgid "Aceleração 3D"
+msgstr "3D gyorsítás"
+msgid "Desativado"
+msgstr "Letiltva"
+msgid "Ativado"
+msgstr "Aktiválva"
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "A Waydroid indítására a rendszer menüjéből is lehetőség van."
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
+msgstr ""
+"Ha a 3D gyorsítás engedélyezve van egy nem kompatibilis hardveren, az Android nem fog továbblépni a "
+"betöltési képernyőn."
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D gyorsítás nem kompatibilis Nvidia videokártyákon a saját meghajtóval."
+msgid "Exibir ID do Android"
+msgstr "Android azonosító megjelenítése"
+msgid "Ativar Google Apps"
+msgstr "Google Apps aktiválása"
+msgid "PlayStore"
+msgstr "Play Áruház"
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
+"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
+"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"Az Android ID megjelenítéséhez kattintson az (Android ID megjelenítése) gombra, másolja az Android "
+"ID-t, majd kattintson az (Google alkalmazások engedélyezése) gombra a készülék regisztrációs "
+"oldalának megnyitásához. Be kell jelentkeznie a Google-fiókjába, adja meg az Android ID-jét, és "
+"regisztrálja a készüléket. Néhány percbe telhet, amíg aktiválódik a Waydroidon. Zárja be, majd "
+"nyissa meg újra. Kész!"
+msgid "Remover Configurações"
+msgstr "Beállítások eltávolítása"
+msgid "Desinstalar o Waydroid"
+msgstr "Waydroid eltávolítása"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
+msgstr ""
+"Ha a 3D gyorsítás engedélyezve van egy nem kompatibilis hardveren<br> az android nem fog "
+"továbblépni a betöltési képernyőn"
+msgid "Parar o Waydroid"
+msgstr "Waydroid leállítása"
+msgid "Iniciar o Waydroid"
+msgstr "Indítsa el a Waydroid-ot."
 msgid "Introdução ao BigLinux"
 msgstr "Bevezetés a BigLinuxba"
-msgid "Aguarde, carregando..."
-msgstr "Várjon, betöltés..."
 msgid "Bem vindo ao BigLinux"
 msgstr "Welcome to BigLinux"
 msgid "Comece com algumas etapas simples."
@@ -120,109 +194,217 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Nincs fordítandó elem."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Gratulálok, sikeresen befejezted az első lépéseket a BigLinux használatához."
+msgid "Aguarde, carregando..."
+msgstr "Várjon, betöltés..."
 msgid "Aguarde..."
 msgstr "Várjon..."
 msgid "Verificando conexão com a Internet..."
 msgstr "Internetkapcsolat ellenőrzése..."
 msgid "Sem conexão com a Internet..."
 msgstr "Nincs internetkapcsolat..."
-msgid "Remover"
-msgstr "Eltávolító"
-msgid "Maximizado"
-msgstr "Maximalizált"
-msgid "Desinstalar"
-msgstr "Eltávolítás"
-msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Az Android eszköz internetének használata Linuxon USB-n keresztül"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Csatlakoztasd az Android okostelefonodat a Linux számítógéphez egy USB kábellel."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: NEEDS WORK
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
 msgstr ""
-"Nem találtam virtualizációs technológiát támogatást, lehet, hogy szükséges engedélyezni ezt a "
-"beállítást a számítógép BIOS-ában."
-msgid "Waydroid"
-msgstr "Waydroid"
-msgid "Utilize programas para Android no BigLinux."
-msgstr "Használja az Android alkalmazásokat a BigLinuxon."
-msgid "Instalar o Waydroid"
-msgstr "Telepítse a Waydroid-ot"
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Waydroid telepítése Google alkalmazásokkal"
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "A letöltés körülbelül 1 GB méretű, a kapcsolatától függően eltarthat egy ideig."
-msgid "Resolução"
-msgstr "Felbontás"
-msgid "Paisagem"
-msgstr "There is nothing to translate in your request."
-msgid "Retrato"
-msgstr "Nincs fordítandó szöveg."
-msgid "Aceleração 3D"
-msgstr "3D gyorsítás"
-msgid "Desativado"
-msgstr "Letiltva"
-msgid "Ativado"
-msgstr "Aktiválva"
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "A Waydroid indítására a rendszer menüjéből is lehetőség van."
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
+"Okostelefonján nyissa meg a 'Beállítások' menüt, és navigáljon a 'Hálózat és internet' vagy a "
+"'Kapcsolatok és megosztás' lehetőséghez."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr ""
-"Ha a 3D gyorsítás engedélyezve van egy nem kompatibilis hardveren, az Android nem fog továbblépni a "
-"betöltési képernyőn."
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "3D gyorsítás nem kompatibilis Nvidia videokártyákon a saját meghajtóval."
-msgid "Exibir ID do Android"
-msgstr "Android azonosító megjelenítése"
-msgid "Ativar Google Apps"
-msgstr "Google Apps aktiválása"
-msgid "PlayStore"
-msgstr "Play Áruház"
+"Keresd meg a 'USB osztott hálózat', 'USB osztott kapcsolat' vagy hasonló kifejezéseket, majd "
+"engedélyezd."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
 msgstr ""
-"Az Android ID megjelenítéséhez kattintson az (Android ID megjelenítése) gombra, másolja az Android "
-"ID-t, majd kattintson az (Google alkalmazások engedélyezése) gombra a készülék regisztrációs "
-"oldalának megnyitásához. Be kell jelentkeznie a Google-fiókjába, adja meg az Android ID-jét, és "
-"regisztrálja a készüléket. Néhány percbe telhet, amíg aktiválódik a Waydroidon. Zárja be, majd "
-"nyissa meg újra. Kész!"
-msgid "Remover Configurações"
-msgstr "Beállítások eltávolítása"
-msgid "Desinstalar o Waydroid"
-msgstr "Waydroid eltávolítása"
+"Ez automatikusan létrehozza az internetkapcsolatot a Linux számítógépen, további konfiguráció "
+"nélkül."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Ha a 3D gyorsítás engedélyezve van egy nem kompatibilis hardveren<br> az android nem fog "
-"továbblépni a betöltési képernyőn"
-msgid "Parar o Waydroid"
-msgstr "Waydroid leállítása"
-msgid "Iniciar o Waydroid"
-msgstr "Indítsa el a Waydroid-ot."
-msgid "ID do Android:"
-msgstr "Android azonosító:"
+"Ha az Android készüléke nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a "
+"megosztás mobiladatot fog fogyasztani a mobilcsomagjából. Adatai díjainak elkerülése érdekében "
+"győződjön meg róla, hogy az Android készüléke csatlakoztatva van egy Wi-Fi hálózathoz, mielőtt "
+"engedélyezné a megosztást."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Az iOS eszköz internetének használata Linuxon USB-n keresztül"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Csatlakoztasd az iOS eszközt a Linux számítógéphez egy USB kábellel."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "Az iOS eszközön lépjen a „Beállítások” menübe, majd válassza ki a „Személyes Hotspot” lehetőséget."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
 msgstr ""
-"Nem sikerült visszaszerezni az Android azonosítóját. \\n"
-"\\n"
-"Figyelem: A Waydroidnak nyitva kell lennie."
+"Engedélyezze a „Mások csatlakozásának engedélyezése” lehetőséget. Ez automatikusan engedélyezheti "
+"az „USB-törlést”, ha USB-csatlakozást észlelnek."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"A Waydroid-ban telepített programok és beállításaik törlődnek a beállítások eltávolításakor. "
-"Valóban el szeretné távolítani?"
-msgid "Configurações removidas com sucesso!"
-msgstr "Beállítások sikeresen eltávolítva!"
-msgid "Nenhuma configuração foi removida!"
-msgstr "Nincs eltávolított beállítás!"
-msgid "Não existem configurações para remover."
-msgstr "Nincsenek eltávolítandó beállítások."
+"Ha az iOS eszköz nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a megosztás "
+"mobiladatot fog fogyasztani a mobilcsomagodból. Az adatdíjak elkerülése érdekében győződjön meg "
+"róla, hogy az iOS eszköz csatlakozik egy Wi-Fi hálózathoz, mielőtt engedélyezné a megosztást."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: NEEDS WORK
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr ""
+"A Linux számítógép internetkapcsolatának megosztásához egy USB kábellel, kövesse az alábbi "
+"lépéseket:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "Bezárás"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Vezérlőközpont"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+#: NEEDS WORK
+msgid "About Control Center"
+msgstr "Avez a Vezérlőközpontról"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+#: NEEDS WORK
+msgid "Categories"
+msgstr "Kategóriák"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+#: NEEDS WORK
+msgid "Programs"
+msgstr "Programok"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Keresés..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#: NEEDS WORK
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Különleges parancs végrehajtása: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#: NEEDS WORK
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Indítás: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Hiba a program indításakor: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+#: NEEDS WORK
+msgid "BigLinux Team"
+msgstr "BigLinux Csapat"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+#: NEEDS WORK
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Csapat"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "Fő"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Hálózat és internet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Nem találtam fordítandó szót."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Testreszabás"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Régió és Nyelv"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimédia"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Számlák"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Eszközök"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Rendszer"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Névjegy"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Egyéb"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -271,6 +453,16 @@ msgstr "Keresztplatformos build rendszer"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Speciális hangkezelő - Alsamixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: NEEDS WORK
+msgid "JamesDSP improving music and audio quality"
+msgstr "JamesDSP a zene és hangminőség javítása"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: NEEDS WORK
+msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr "Fokozza a hangzásodat az equalizer, basszuskiemelés, térhatás és egyéb effektek segítségével."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
 #: NEEDS WORK
@@ -702,206 +894,3 @@ msgstr "Állítsa be az automatikus műveleteket, amikor az eszközök csatlakoz
 #: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "Állítsa be a keresési és indexelési lehetőségeket a Plasmában."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Az Android eszköz internetének használata Linuxon USB-n keresztül"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Csatlakoztasd az Android okostelefonodat a Linux számítógéphez egy USB kábellel."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr ""
-"Okostelefonján nyissa meg a 'Beállítások' menüt, és navigáljon a 'Hálózat és internet' vagy a "
-"'Kapcsolatok és megosztás' lehetőséghez."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr ""
-"Keresd meg a 'USB osztott hálózat', 'USB osztott kapcsolat' vagy hasonló kifejezéseket, majd "
-"engedélyezd."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"Ez automatikusan létrehozza az internetkapcsolatot a Linux számítógépen, további konfiguráció "
-"nélkül."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Ha az Android készüléke nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a "
-"megosztás mobiladatot fog fogyasztani a mobilcsomagjából. Adatai díjainak elkerülése érdekében "
-"győződjön meg róla, hogy az Android készüléke csatlakoztatva van egy Wi-Fi hálózathoz, mielőtt "
-"engedélyezné a megosztást."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Az iOS eszköz internetének használata Linuxon USB-n keresztül"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Csatlakoztasd az iOS eszközt a Linux számítógéphez egy USB kábellel."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "Az iOS eszközön lépjen a „Beállítások” menübe, majd válassza ki a „Személyes Hotspot” lehetőséget."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"Engedélyezze a „Mások csatlakozásának engedélyezése” lehetőséget. Ez automatikusan engedélyezheti "
-"az „USB-törlést”, ha USB-csatlakozást észlelnek."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Ha az iOS eszköz nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a megosztás "
-"mobiladatot fog fogyasztani a mobilcsomagodból. Az adatdíjak elkerülése érdekében győződjön meg "
-"róla, hogy az iOS eszköz csatlakozik egy Wi-Fi hálózathoz, mielőtt engedélyezné a megosztást."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr ""
-"A Linux számítógép internetkapcsolatának megosztásához egy USB kábellel, kövesse az alábbi "
-"lépéseket:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Bezárás"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Vezérlőközpont"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "Avez a Vezérlőközpontról"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "Kategóriák"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "Programok"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Keresés..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Különleges parancs végrehajtása: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Indítás: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Hiba a program indításakor: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "BigLinux Csapat"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Csapat"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Fő"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Hálózat és internet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Nem találtam fordítandó szót."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Testreszabás"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Régió és Nyelv"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimédia"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Számlák"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Eszközök"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Rendszer"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Névjegy"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Egyéb"

@@ -15,47 +15,118 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "$APP"
-msgstr "$RAKENDUS"
-msgid "Error creating directory: $bigdir"
-msgstr "Viga kausta loomisel: $bigdir"
-msgid "Central de Controle - Webcam"
-msgstr "Juhtpaneel - Veebikaamera"
-msgid "Nenhuma webcam localizada."
-msgstr "Ühtegi veebikaamerat ei leitud."
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "Veebikaamera on juba rakenduste poolt kasutusel:"
-msgid "Abrirei em modo de configuração. "
-msgstr "Ma avanen konfiguratsioonirežiimis."
-msgid "As alterações feitas podem ser vistas"
-msgstr "Muudatused on nähtavad"
-msgid "na imagem da sua webcam em outros programas."
-msgstr "pildil oma veebikaamera teistes programmides."
-msgid "Category"
-msgstr "Kategooria"
-msgid "Name"
-msgstr "Nimi"
-msgid "ID"
-msgstr "ID"
-msgid "Info"
-msgstr "Informatsioon"
+#: NEEDS WORK
 msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
 msgstr ""
-"Raport on salvestatud faili: $FILE_TO_SAVE\n"
-"Kas soovite raportit kohe vaadata?"
-msgid "Visualizar o relatório"
-msgstr "Vaata aruannet"
-msgid "Fechar"
-msgstr "Sulge"
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo aruanne"
+"Veebikaamera on juba programmi poolt kasutuses: $WEBCAM_BUSY\n"
+"\n"
+"Avan seadistamise režiimis.\n"
+"Tehtud muudatused võivad olla nähtavad\n"
+"teistes programmides teie veebikaamera pildis."
+#: NEEDS WORK
+msgid "Webcam"
+msgstr "Veebikaamera"
+msgid "Waydroid"
+msgstr "Waydroid"
+msgid ""
+"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
+"perdidas. Realmente deseja remover?"
+msgstr ""
+"Kui eemaldate seaded, kaotatakse Waydroidis installitud programmid ja nende seaded. Kas soovite "
+"tõesti eemaldada?"
+msgid "Configurações removidas com sucesso!"
+msgstr "Seaded eemaldatud edukalt!"
+msgid "Nenhuma configuração foi removida!"
+msgstr "Ühtegi seadistust ei eemaldatud!"
+msgid "Não existem configurações para remover."
+msgstr "Puuduvad eemaldamiseks konfiguratsioonid."
+msgid "ID do Android:"
+msgstr "Androidi ID:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"Androidi ID taastamine ebaõnnestus. \\n"
+"\\n"
+"Hoiatus: Waydroid peab olema avatud."
+msgid "Remover"
+msgstr "Eemaldama"
+msgid "Maximizado"
+msgstr "Maksimeeritud"
+msgid "Desinstalar"
+msgstr "Eemaldama"
+msgid ""
+"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
+"na BIOS do computador."
+msgstr "Ma ei leidnud virtualiseerimistehnoloogia tuge, võib-olla peate selle valiku BIOS-is lubama arvutis."
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Kasutage Androidi rakendusi BigLinuxis."
+msgid "Instalar o Waydroid"
+msgstr "Installige Waydroid"
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Installige Waydroid koos Google'i rakendustega"
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "Allaalaadimine on umbes 1 GB, sõltuvalt teie ühendusest võib aega võtta."
+msgid "Resolução"
+msgstr "Resolutsioon"
+msgid "Paisagem"
+msgstr "No translation"
+msgid "Retrato"
+msgstr "No translation needed."
+msgid "Aceleração 3D"
+msgstr "3D kiirendus"
+msgid "Desativado"
+msgstr "Keelatud"
+msgid "Ativado"
+msgstr "Aktiveeritud"
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroidi saab käivitada ka süsteemi menüüst"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
+msgstr ""
+"Kui 3D kiirendus on lubatud kokkusobimatus riistvaras, siis Android ei lähe laadimise ekraanist "
+"edasi."
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D kiirendus on Nvidia graafikakaartidel, kasutades propageeritud draiverit, kokkusobimatu."
+msgid "Exibir ID do Android"
+msgstr "Kuva Androidi ID"
+msgid "Ativar Google Apps"
+msgstr "Aktiveeri Google Apps"
+msgid "PlayStore"
+msgstr "Play poelett"
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
+"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
+"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"PlayStore'i aktiveerimiseks klõpsake (Androidi ID kuvamine) ja kopeerige Androidi ID, seejärel "
+"klõpsake (Google Apps'i lubamine), et avada seadme registreerimise leht, peate olema sisse logitud "
+"oma Google'i kontole, sisestage oma Androidi ID ja registreerige. Aktiveerimine võib võtta mõned "
+"minutid teie Waydroidis. Sulgege ja avage uuesti. Valmis!"
+msgid "Remover Configurações"
+msgstr "Eemaldage sätted"
+msgid "Desinstalar o Waydroid"
+msgstr "Eemalda Waydroid"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
+msgstr ""
+"Kui 3D kiirendus on lubatud kokkusobimatus riistvaras, siis Android ei lähe laadimise ekraanist "
+"edasi"
+msgid "Parar o Waydroid"
+msgstr "Lõpeta Waydroid"
+msgid "Iniciar o Waydroid"
+msgstr "Käivita Waydroid"
 msgid "Introdução ao BigLinux"
 msgstr "Sissejuhatus BigLinuxi"
-msgid "Aguarde, carregando..."
-msgstr "Oota, laadimine..."
 msgid "Bem vindo ao BigLinux"
 msgstr "Tere tulemast BigLinuxi"
 msgid "Comece com algumas etapas simples."
@@ -117,106 +188,210 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Sinu annetus on projekti jaoks väga oluline, järgige sotsiaalmeedia platvorme."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Õnnitleme, olete lõpetanud esimesed sammud BigLinuxi kasutamiseks."
+msgid "Aguarde, carregando..."
+msgstr "Oota, laadimine..."
 msgid "Aguarde..."
 msgstr "Oota..."
 msgid "Verificando conexão com a Internet..."
 msgstr "Kontrollitakse internetiühendust..."
 msgid "Sem conexão com a Internet..."
 msgstr "Ühenduseta Internetiga..."
-msgid "Remover"
-msgstr "Eemaldama"
-msgid "Maximizado"
-msgstr "Maksimeeritud"
-msgid "Desinstalar"
-msgstr "Eemaldama"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Kasutage oma Android-seadme Interneti-ühendust Linuxis USB kaudu"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Ühendage oma Android nutitelefon Linuxi arvutiga USB-kaabli abil."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: NEEDS WORK
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr "Avage oma nutitelefonis 'Seaded' ja liiku 'Võrk ja Internet' või 'Ühendused ja jagamine' juurde."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Otsige 'USB jagamine', 'USB jagamine' või sarnased terminid ning luba see."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
-msgstr "Ma ei leidnud virtualiseerimistehnoloogia tuge, võib-olla peate selle valiku BIOS-is lubama arvutis."
-msgid "Waydroid"
-msgstr "Waydroid"
-msgid "Utilize programas para Android no BigLinux."
-msgstr "Kasutage Androidi rakendusi BigLinuxis."
-msgid "Instalar o Waydroid"
-msgstr "Installige Waydroid"
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Installige Waydroid koos Google'i rakendustega"
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "Allaalaadimine on umbes 1 GB, sõltuvalt teie ühendusest võib aega võtta."
-msgid "Resolução"
-msgstr "Resolutsioon"
-msgid "Paisagem"
-msgstr "No translation"
-msgid "Retrato"
-msgstr "No translation needed."
-msgid "Aceleração 3D"
-msgstr "3D kiirendus"
-msgid "Desativado"
-msgstr "Keelatud"
-msgid "Ativado"
-msgstr "Aktiveeritud"
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroidi saab käivitada ka süsteemi menüüst"
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
 msgstr ""
-"Kui 3D kiirendus on lubatud kokkusobimatus riistvaras, siis Android ei lähe laadimise ekraanist "
-"edasi."
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "3D kiirendus on Nvidia graafikakaartidel, kasutades propageeritud draiverit, kokkusobimatu."
-msgid "Exibir ID do Android"
-msgstr "Kuva Androidi ID"
-msgid "Ativar Google Apps"
-msgstr "Aktiveeri Google Apps"
-msgid "PlayStore"
-msgstr "Play poelett"
+"See loob automaatselt internetiühenduse teie Linuxi arvutis ilma täiendava konfiguratsiooni "
+"nõudmata."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"PlayStore'i aktiveerimiseks klõpsake (Androidi ID kuvamine) ja kopeerige Androidi ID, seejärel "
-"klõpsake (Google Apps'i lubamine), et avada seadme registreerimise leht, peate olema sisse logitud "
-"oma Google'i kontole, sisestage oma Androidi ID ja registreerige. Aktiveerimine võib võtta mõned "
-"minutid teie Waydroidis. Sulgege ja avage uuesti. Valmis!"
-msgid "Remover Configurações"
-msgstr "Eemaldage sätted"
-msgid "Desinstalar o Waydroid"
-msgstr "Eemalda Waydroid"
+"Kui teie Android-seade pole Wi-Fi-ga ühendatud ja kasutab mobiilset andmesidet, siis see jagamine "
+"tarbib andmeid teie mobiilsest plaanist. Andme tasude vältimiseks veenduge, et teie Android-seade "
+"on enne jagamise lubamist ühendatud Wi-Fi-võrku."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Kasutage oma iOS-seadme Interneti-ühendust Linuxis USB kaudu"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Ühendage oma iOS-seade Linuxi arvutiga USB-kaabli abil."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "Teie iOS-seadmes minge jaotisse „Sätted“ ning valige seejärel „Isiklik leviala“."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
 msgstr ""
-"Kui 3D kiirendus on lubatud kokkusobimatus riistvaras, siis Android ei lähe laadimise ekraanist "
-"edasi"
-msgid "Parar o Waydroid"
-msgstr "Lõpeta Waydroid"
-msgid "Iniciar o Waydroid"
-msgstr "Käivita Waydroid"
-msgid "ID do Android:"
-msgstr "Androidi ID:"
+"Luba \"Luba teistel liituda\". See võib automaatselt lubada \"USB-ühenduse jagamise\", kui "
+"USB-ühendus tuvastatakse."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Androidi ID taastamine ebaõnnestus. \\n"
-"\\n"
-"Hoiatus: Waydroid peab olema avatud."
+"Kui teie iOS-seade pole Wi-Fi-ga ühendatud ja kasutab mobiilset andmesidet, siis see jagamine "
+"kasutab andmeid teie mobiilsest plaanist. Andmetasude vältimiseks veenduge, et teie iOS-seade on "
+"enne jagamise lubamist ühendatud Wi-Fi-võrku."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: NEEDS WORK
 msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr ""
-"Kui eemaldate seaded, kaotatakse Waydroidis installitud programmid ja nende seaded. Kas soovite "
-"tõesti eemaldada?"
-msgid "Configurações removidas com sucesso!"
-msgstr "Seaded eemaldatud edukalt!"
-msgid "Nenhuma configuração foi removida!"
-msgstr "Ühtegi seadistust ei eemaldatud!"
-msgid "Não existem configurações para remover."
-msgstr "Puuduvad eemaldamiseks konfiguratsioonid."
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr "Jagage oma nutitelefoni internetiühendust Linuxi arvutiga USB-kaabli abil, järgige neid samme:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "Sulge"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Juhtimiskeskus"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+#: NEEDS WORK
+msgid "About Control Center"
+msgstr "Kontrollikeskuse kohta"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+#: NEEDS WORK
+msgid "Categories"
+msgstr "Kategooriad"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+#: NEEDS WORK
+msgid "Programs"
+msgstr "Programmid"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Otsi..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#: NEEDS WORK
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Täiendava käsu täitmine: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#: NEEDS WORK
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Käivitamine: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Viga programmi käivitamisel: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+#: NEEDS WORK
+msgid "BigLinux Team"
+msgstr "BigLinuxi meeskond"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+#: NEEDS WORK
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinuxi meeskond"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "Peamine"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Võrgu- ja internet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Telefon"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Kohandamine"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Piirkond ja keel"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimeedia"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Kontod"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Seadmed"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Süsteem"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Teave"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Muu"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -265,6 +440,16 @@ msgstr "Ristplatvormi ehitussüsteem"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Täiustatud heli haldur - Alsamixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: NEEDS WORK
+msgid "JamesDSP improving music and audio quality"
+msgstr "JamesDSP parandab muusika ja heli kvaliteeti"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: NEEDS WORK
+msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr "Paranda oma heli ekvalaiseriga, bassitõusuga, ruumilise heliga ja teiste efektidega."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
 #: NEEDS WORK
@@ -695,199 +880,3 @@ msgstr "Konfigureeri automaatsed toimingud, kui seadmed on ühendatud."
 #: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "Konfigureeri otsingu ja indekseerimise valikud Plasmas."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Kasutage oma Android-seadme Interneti-ühendust Linuxis USB kaudu"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Ühendage oma Android nutitelefon Linuxi arvutiga USB-kaabli abil."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr "Avage oma nutitelefonis 'Seaded' ja liiku 'Võrk ja Internet' või 'Ühendused ja jagamine' juurde."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Otsige 'USB jagamine', 'USB jagamine' või sarnased terminid ning luba see."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"See loob automaatselt internetiühenduse teie Linuxi arvutis ilma täiendava konfiguratsiooni "
-"nõudmata."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Kui teie Android-seade pole Wi-Fi-ga ühendatud ja kasutab mobiilset andmesidet, siis see jagamine "
-"tarbib andmeid teie mobiilsest plaanist. Andme tasude vältimiseks veenduge, et teie Android-seade "
-"on enne jagamise lubamist ühendatud Wi-Fi-võrku."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Kasutage oma iOS-seadme Interneti-ühendust Linuxis USB kaudu"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Ühendage oma iOS-seade Linuxi arvutiga USB-kaabli abil."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "Teie iOS-seadmes minge jaotisse „Sätted“ ning valige seejärel „Isiklik leviala“."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"Luba \"Luba teistel liituda\". See võib automaatselt lubada \"USB-ühenduse jagamise\", kui "
-"USB-ühendus tuvastatakse."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Kui teie iOS-seade pole Wi-Fi-ga ühendatud ja kasutab mobiilset andmesidet, siis see jagamine "
-"kasutab andmeid teie mobiilsest plaanist. Andmetasude vältimiseks veenduge, et teie iOS-seade on "
-"enne jagamise lubamist ühendatud Wi-Fi-võrku."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr "Jagage oma nutitelefoni internetiühendust Linuxi arvutiga USB-kaabli abil, järgige neid samme:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Sulge"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Juhtimiskeskus"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "Kontrollikeskuse kohta"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "Kategooriad"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "Programmid"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Otsi..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Täiendava käsu täitmine: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Käivitamine: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Viga programmi käivitamisel: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "BigLinuxi meeskond"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinuxi meeskond"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Peamine"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Võrgu- ja internet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Telefon"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Kohandamine"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Piirkond ja keel"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimeedia"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Kontod"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Seadmed"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Süsteem"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Teave"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Muu"

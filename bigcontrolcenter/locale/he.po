@@ -15,47 +15,112 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "$APP"
-msgstr "$יישום"
-msgid "Error creating directory: $bigdir"
-msgstr "שגיאה ביצירת תיקייה: $bigdir"
-msgid "Central de Controle - Webcam"
-msgstr "מרכז בקרה - מצלמת אינטרנט"
-msgid "Nenhuma webcam localizada."
-msgstr "אין מצלמת אינטרנט זמינה."
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "המצלמה כבר בשימוש על ידי היישומים:"
-msgid "Abrirei em modo de configuração. "
-msgstr "אני אפתח במצב הגדרות."
-msgid "As alterações feitas podem ser vistas"
-msgstr "השינויים שבוצעו ניתן לראות"
-msgid "na imagem da sua webcam em outros programas."
-msgstr "בתמונת המצלמה שלך בתוכניות אחרות."
-msgid "Category"
-msgstr "קטגוריה"
-msgid "Name"
-msgstr "שם"
-msgid "ID"
-msgstr "מזהה"
-msgid "Info"
-msgstr "מידע"
+#: NEEDS WORK
 msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
 msgstr ""
-"הדוח נשמר בקובץ: $FILE_TO_SAVE\n"
-"האם ברצונך להציג את הדוח כעת?"
-msgid "Visualizar o relatório"
-msgstr "הצג דוח"
-msgid "Fechar"
-msgstr "סגור"
-msgid "Hardinfo Relatory"
-msgstr "דוח Hardinfo"
+"המצלמה כבר בשימוש על ידי התוכנית: $WEBCAM_BUSY\n"
+"\n"
+"אפתח במצב הגדרה.\n"
+"השינויים שביצעת יכולים להיראות\n"
+"בתמונה של המצלמה שלך בתוכניות אחרות."
+#: NEEDS WORK
+msgid "Webcam"
+msgstr "מצלמת רשת"
+msgid "Waydroid"
+msgstr "Waydroid"
+msgid ""
+"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
+"perdidas. Realmente deseja remover?"
+msgstr "בהסרת ההגדרות, התוכניות שמותקנות בתוך Waydroid וההגדרות שלהן יימחקו. האם אכן ברצונך להסיר?"
+msgid "Configurações removidas com sucesso!"
+msgstr "הגדרות הוסרו בהצלחה!"
+msgid "Nenhuma configuração foi removida!"
+msgstr "אף הגדרה לא הוסרה!"
+msgid "Não existem configurações para remover."
+msgstr "אין הגדרות להסרה."
+msgid "ID do Android:"
+msgstr "מזהה Android:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"לא ניתן היה לאחזר את זיהוי ה-Android. \\n"
+"\\n"
+"שים לב: Waydroid חייב להיות פתוח."
+msgid "Remover"
+msgstr "הסרה"
+msgid "Maximizado"
+msgstr "מקסימלי"
+msgid "Desinstalar"
+msgstr "הסרת התקנה"
+msgid ""
+"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
+"na BIOS do computador."
+msgstr "לא זיהיתי תמיכה בטכנולוגיית הווירטואליזציה, ייתכן שיהיה עליך להפעיל את האפשרות הזו ב BIOS של המחשב."
+msgid "Utilize programas para Android no BigLinux."
+msgstr "השתמש ביישומי אנדרואיד על BigLinux."
+msgid "Instalar o Waydroid"
+msgstr "התקן את Waydroid"
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "התקן את Waydroid עם Google Apps"
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "ההורדה כוללת בערך 1 ג'יגה-בייט, תלוי במהירות החיבור שלך זמן ההורדה עשוי להיות ארוך."
+msgid "Resolução"
+msgstr "Resolution"
+msgid "Paisagem"
+msgstr "-"
+msgid "Retrato"
+msgstr "-"
+msgid "Aceleração 3D"
+msgstr "תאוצה גרפית 3D"
+msgid "Desativado"
+msgstr "מושבת"
+msgid "Ativado"
+msgstr "פעיל"
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "ה-Waydroid יכול גם להתחיל באמצעות תפריט המערכת"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
+msgstr "אם האצת 3D מופעלת על חומרה שאינה תואמת, אנדרואיד לא יעבור את מסך הטעינה"
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "תאוצת 3D אינה תואמת בכרטיסי מסך Nvidia בשימוש בדרייבר פרופריטרי."
+msgid "Exibir ID do Android"
+msgstr "הצגת מזהה Android"
+msgid "Ativar Google Apps"
+msgstr "הפעלת Google Apps"
+msgid "PlayStore"
+msgstr "חנות Google Play"
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
+"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
+"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"כדי להפעיל את חנות ה-PlayStore, יש ללחוץ על (הצגת מזהה Android) ולהעתיק את מזהה ה-Android, לאחר מכן "
+"ללחוץ על (הפעלת Google Apps) כדי לפתוח את דף הרישום של המכשיר, עליך להיות מחובר לחשבון ה-Google "
+"שלך, להזין את מזהה ה-Android שלך ולבצע את הרישום. ייתכן שיקח כמה דקות עד שהשירות יפעיל ב-Waydroid "
+"שלך. סגור ופתח מחדש. מוכן!"
+msgid "Remover Configurações"
+msgstr "הסר הגדרות"
+msgid "Desinstalar o Waydroid"
+msgstr "הסרת Waydroid"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
+msgstr "אם האצת 3D מופעלת על חומרה שאינה תואמת, אנדרואיד לא יעבור את מסך הטעינה"
+msgid "Parar o Waydroid"
+msgstr "עצור את Waydroid"
+msgid "Iniciar o Waydroid"
+msgstr "הפעל את Waydroid"
 msgid "Introdução ao BigLinux"
 msgstr "הכנסה ל־BigLinux"
-msgid "Aguarde, carregando..."
-msgstr "המתן, טוען..."
 msgid "Bem vindo ao BigLinux"
 msgstr "ברוך הבא ל־BigLinux"
 msgid "Comece com algumas etapas simples."
@@ -117,100 +182,208 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "התרומה שלך חשובה מאוד לפרויקט והישאר מעודכן ברשתות החברתיות."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "מזל טוב, השלמת את הצעדים הראשונים לשימוש ב-BigLinux."
+msgid "Aguarde, carregando..."
+msgstr "המתן, טוען..."
 msgid "Aguarde..."
 msgstr "המתן..."
 msgid "Verificando conexão com a Internet..."
 msgstr "בודק חיבור לאינטרנט..."
 msgid "Sem conexão com a Internet..."
 msgstr "אין חיבור לאינטרנט..."
-msgid "Remover"
-msgstr "הסרה"
-msgid "Maximizado"
-msgstr "מקסימלי"
-msgid "Desinstalar"
-msgstr "הסרת התקנה"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "שימוש באינטרנט של המכשיר האנדרואיד שלך ב-Linux דרך USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "חבר את הסמארטפון שלך המרובה למחשב הלינוקס באמצעות כבל USB."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: NEEDS WORK
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr "במכשיר הסמארטפון שלך, פתח את 'הגדרות' ועבור ל'רשת ואינטרנט' או 'חיבורים ושיתוף'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "חפש 'שיתוף גישה באמצעות USB', 'שיתוף גישה USB', או מונחים דומים והפעל אותם."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
-msgstr "לא זיהיתי תמיכה בטכנולוגיית הווירטואליזציה, ייתכן שיהיה עליך להפעיל את האפשרות הזו ב BIOS של המחשב."
-msgid "Waydroid"
-msgstr "Waydroid"
-msgid "Utilize programas para Android no BigLinux."
-msgstr "השתמש ביישומי אנדרואיד על BigLinux."
-msgid "Instalar o Waydroid"
-msgstr "התקן את Waydroid"
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "התקן את Waydroid עם Google Apps"
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "ההורדה כוללת בערך 1 ג'יגה-בייט, תלוי במהירות החיבור שלך זמן ההורדה עשוי להיות ארוך."
-msgid "Resolução"
-msgstr "Resolution"
-msgid "Paisagem"
-msgstr "-"
-msgid "Retrato"
-msgstr "-"
-msgid "Aceleração 3D"
-msgstr "תאוצה גרפית 3D"
-msgid "Desativado"
-msgstr "מושבת"
-msgid "Ativado"
-msgstr "פעיל"
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "ה-Waydroid יכול גם להתחיל באמצעות תפריט המערכת"
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
+msgstr "זה יקים את חיבור האינטרנט באופן אוטומטי במחשב ה-Linux שלך בלי צורך בתצורה נוספת."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
-msgstr "אם האצת 3D מופעלת על חומרה שאינה תואמת, אנדרואיד לא יעבור את מסך הטעינה"
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "תאוצת 3D אינה תואמת בכרטיסי מסך Nvidia בשימוש בדרייבר פרופריטרי."
-msgid "Exibir ID do Android"
-msgstr "הצגת מזהה Android"
-msgid "Ativar Google Apps"
-msgstr "הפעלת Google Apps"
-msgid "PlayStore"
-msgstr "חנות Google Play"
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"כדי להפעיל את חנות ה-PlayStore, יש ללחוץ על (הצגת מזהה Android) ולהעתיק את מזהה ה-Android, לאחר מכן "
-"ללחוץ על (הפעלת Google Apps) כדי לפתוח את דף הרישום של המכשיר, עליך להיות מחובר לחשבון ה-Google "
-"שלך, להזין את מזהה ה-Android שלך ולבצע את הרישום. ייתכן שיקח כמה דקות עד שהשירות יפעיל ב-Waydroid "
-"שלך. סגור ופתח מחדש. מוכן!"
-msgid "Remover Configurações"
-msgstr "הסר הגדרות"
-msgid "Desinstalar o Waydroid"
-msgstr "הסרת Waydroid"
+"אם המכשיר שלך ב-Android אינו מחובר לרשת Wi-Fi ומשתמש בנתונים סלולריים, השימוש בטתרינג יצרף נתונים "
+"מתוך תוכנית הסלולר שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך ב-Android מחובר לרשת Wi-Fi לפני "
+"הפעלת הטתרינג."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "שימוש באינטרנט של המכשיר שלך ב-iOS על Linux דרך USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "חבר את המכשיר שלך המשתמש במערכת ההפעלה iOS למחשב המשתמש במערכת ההפעלה Linux באמצעות כבל USB."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "על המכשיר שלך ב- iOS, עבור ל 'הגדרות', ואז בחר 'נקודת גישה אישית'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
-msgstr "אם האצת 3D מופעלת על חומרה שאינה תואמת, אנדרואיד לא יעבור את מסך הטעינה"
-msgid "Parar o Waydroid"
-msgstr "עצור את Waydroid"
-msgid "Iniciar o Waydroid"
-msgstr "הפעל את Waydroid"
-msgid "ID do Android:"
-msgstr "מזהה Android:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
 msgstr ""
-"לא ניתן היה לאחזר את זיהוי ה-Android. \\n"
-"\\n"
-"שים לב: Waydroid חייב להיות פתוח."
+"הפעל 'אפשר לאחרים להצטרף'. זה עשוי להפעיל באופן אוטומטי 'שיתוף גישה לאינטרנט דרך USB' אם חיבור USB "
+"זוהה."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr "בהסרת ההגדרות, התוכניות שמותקנות בתוך Waydroid וההגדרות שלהן יימחקו. האם אכן ברצונך להסיר?"
-msgid "Configurações removidas com sucesso!"
-msgstr "הגדרות הוסרו בהצלחה!"
-msgid "Nenhuma configuração foi removida!"
-msgstr "אף הגדרה לא הוסרה!"
-msgid "Não existem configurações para remover."
-msgstr "אין הגדרות להסרה."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"אם המכשיר שלך במערכת ה-iOS אינו מחובר לרשת Wi-Fi ומשתמש בנתונים ניידים, השימוש בטתרינג יצרוך נתונים "
+"מתוך תוכנית הנתונים הניידים שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך מחובר לרשת Wi-Fi לפני "
+"הפעלת הטתרינג."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: NEEDS WORK
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr "כדי לשתף את חיבור האינטרנט של הסמארטפון שלך עם מחשב לינוקס באמצעות כבל USB, עקוב אחרי הצעדים הבאים:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "סגור"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "מרכז בקרה"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+#: NEEDS WORK
+msgid "About Control Center"
+msgstr "על מרכז הבקרה"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+#: NEEDS WORK
+msgid "Categories"
+msgstr "קטגוריות"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+#: NEEDS WORK
+msgid "Programs"
+msgstr "תוכניות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "חיפוש..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#: NEEDS WORK
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "מבצע פקודה מיוחדת: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#: NEEDS WORK
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "מפעיל: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "שגיאה בהשקת התוכנית: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+#: NEEDS WORK
+msgid "BigLinux Team"
+msgstr "צוות ביגלינוקס"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+#: NEEDS WORK
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 צוות ביגלינוקס"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "ראשי"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "רשת ואינטרנט"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "טלפון"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "התאמה אישית"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "אזור ושפה"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "מולטימדיה"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "חשבונות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "התקן"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "מערכת"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "אודות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "אחר"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -259,6 +432,16 @@ msgstr "מערכת בנייה חוצת פלטפורמות"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "מנהל שמע מתקדם - Alsamixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: NEEDS WORK
+msgid "JamesDSP improving music and audio quality"
+msgstr "ג'יימסDSP משפר איכות מוזיקה ואודיו"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: NEEDS WORK
+msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr "שפר את הצליל שלך עם אקולייזר, חיזוק בס, סראונד ואפקטים נוספים."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
 #: NEEDS WORK
@@ -686,197 +869,3 @@ msgstr "הגדר פעולות אוטומטיות כאשר מכשירים מחו�
 #: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "הגדר אפשרויות חיפוש ואינדוקס ב-Plasma."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "שימוש באינטרנט של המכשיר האנדרואיד שלך ב-Linux דרך USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "חבר את הסמארטפון שלך המרובה למחשב הלינוקס באמצעות כבל USB."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr "במכשיר הסמארטפון שלך, פתח את 'הגדרות' ועבור ל'רשת ואינטרנט' או 'חיבורים ושיתוף'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "חפש 'שיתוף גישה באמצעות USB', 'שיתוף גישה USB', או מונחים דומים והפעל אותם."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr "זה יקים את חיבור האינטרנט באופן אוטומטי במחשב ה-Linux שלך בלי צורך בתצורה נוספת."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"אם המכשיר שלך ב-Android אינו מחובר לרשת Wi-Fi ומשתמש בנתונים סלולריים, השימוש בטתרינג יצרף נתונים "
-"מתוך תוכנית הסלולר שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך ב-Android מחובר לרשת Wi-Fi לפני "
-"הפעלת הטתרינג."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "שימוש באינטרנט של המכשיר שלך ב-iOS על Linux דרך USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "חבר את המכשיר שלך המשתמש במערכת ההפעלה iOS למחשב המשתמש במערכת ההפעלה Linux באמצעות כבל USB."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "על המכשיר שלך ב- iOS, עבור ל 'הגדרות', ואז בחר 'נקודת גישה אישית'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"הפעל 'אפשר לאחרים להצטרף'. זה עשוי להפעיל באופן אוטומטי 'שיתוף גישה לאינטרנט דרך USB' אם חיבור USB "
-"זוהה."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"אם המכשיר שלך במערכת ה-iOS אינו מחובר לרשת Wi-Fi ומשתמש בנתונים ניידים, השימוש בטתרינג יצרוך נתונים "
-"מתוך תוכנית הנתונים הניידים שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך מחובר לרשת Wi-Fi לפני "
-"הפעלת הטתרינג."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr "כדי לשתף את חיבור האינטרנט של הסמארטפון שלך עם מחשב לינוקס באמצעות כבל USB, עקוב אחרי הצעדים הבאים:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "סגור"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "מרכז בקרה"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "על מרכז הבקרה"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "קטגוריות"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "תוכניות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "חיפוש..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "מבצע פקודה מיוחדת: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "מפעיל: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "שגיאה בהשקת התוכנית: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "צוות ביגלינוקס"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 צוות ביגלינוקס"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "ראשי"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "רשת ואינטרנט"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "טלפון"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "התאמה אישית"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "אזור ושפה"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "מולטימדיה"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "חשבונות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "התקן"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "מערכת"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "אודות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "אחר"

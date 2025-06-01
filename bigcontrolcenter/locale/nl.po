@@ -15,47 +15,120 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "$APP"
-msgstr "$APP"
-msgid "Error creating directory: $bigdir"
-msgstr "Fout bij het aanmaken van de map: $bigdir"
-msgid "Central de Controle - Webcam"
-msgstr "Bedieningspaneel - Webcam"
-msgid "Nenhuma webcam localizada."
-msgstr "Geen webcam gevonden."
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "Een webcam wordt al gebruikt door de volgende applicaties:"
-msgid "Abrirei em modo de configuração. "
-msgstr "Ik zal het openen in de configuratiemodus."
-msgid "As alterações feitas podem ser vistas"
-msgstr "De wijzigingen die zijn aangebracht, kunnen worden bekeken"
-msgid "na imagem da sua webcam em outros programas."
-msgstr "in andere programma's op uw webcambeeld."
-msgid "Category"
-msgstr "Categorie"
-msgid "Name"
-msgstr "Naam"
-msgid "ID"
-msgstr "ID"
-msgid "Info"
-msgstr "Informatie"
+#: NEEDS WORK
 msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
 msgstr ""
-"Het rapport is opgeslagen in het bestand: $FILE_TO_SAVE\n"
-"Wilt u het rapport nu bekijken?"
-msgid "Visualizar o relatório"
-msgstr "Rapport weergeven"
-msgid "Fechar"
-msgstr "Close"
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo Rapport"
+"Een webcam wordt al gebruikt door het programma: $WEBCAM_BUSY\n"
+"\n"
+"Ik zal het in configuratiemodus openen.\n"
+"De aangebrachte wijzigingen zijn zichtbaar\n"
+"in het beeld van uw webcam in andere programma's."
+#: NEEDS WORK
+msgid "Webcam"
+msgstr "Webcam"
+msgid "Waydroid"
+msgstr "Waydroid"
+msgid ""
+"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
+"perdidas. Realmente deseja remover?"
+msgstr ""
+"Bij het verwijderen van de instellingen zullen de geïnstalleerde programma's binnen Waydroid en hun "
+"instellingen verloren gaan. Weet u zeker dat u wilt verwijderen?"
+msgid "Configurações removidas com sucesso!"
+msgstr "Instellingen succesvol verwijderd!"
+msgid "Nenhuma configuração foi removida!"
+msgstr "Geen instellingen zijn verwijderd!"
+msgid "Não existem configurações para remover."
+msgstr "Er zijn geen instellingen om te verwijderen."
+msgid "ID do Android:"
+msgstr "Android-ID:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"Het Android ID kon niet worden opgehaald. \\n"
+"\\n"
+"Let op: Waydroid moet geopend zijn."
+msgid "Remover"
+msgstr "Verwijderaar"
+msgid "Maximizado"
+msgstr "Gemaximaliseerd"
+msgid "Desinstalar"
+msgstr "Verwijderen"
+msgid ""
+"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
+"na BIOS do computador."
+msgstr ""
+"I did not detect support for virtualization technology, you may need to enable this option in the "
+"computer's BIOS."
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Gebruik Android-apps op BigLinux."
+msgid "Instalar o Waydroid"
+msgstr "Installeer Waydroid"
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Waydroid installeren met Google-apps"
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "De download is ongeveer 1 GB groot, afhankelijk van je verbinding kan het even duren."
+msgid "Resolução"
+msgstr "Resolution"
+msgid "Paisagem"
+msgstr "I have no text to translate for \"Paisagem\"."
+msgid "Retrato"
+msgstr "There is no text to translate in your request."
+msgid "Aceleração 3D"
+msgstr "3D-versnelling"
+msgid "Desativado"
+msgstr "Uitgeschakeld"
+msgid "Ativado"
+msgstr "Ingeschakeld"
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid kan ook worden gestart via het systeemmenu"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
+msgstr ""
+"Als 3D-versnelling is ingeschakeld op een oncompatibele hardware, zal Android niet verder gaan dan "
+"het laadscherm."
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D-versnelling is niet compatibel op Nvidia-videokaarten met de eigen driver."
+msgid "Exibir ID do Android"
+msgstr "Display Android ID"
+msgid "Ativar Google Apps"
+msgstr "Google Apps activeren"
+msgid "PlayStore"
+msgstr "Play Store"
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
+"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
+"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"Om de PlayStore te activeren, moet je op (Android ID weergeven) klikken en het Android ID kopiëren, "
+"vervolgens op (Google-apps activeren) klikken om de apparaatregistratiepagina te openen, je moet "
+"ingelogd zijn op je Google-account, voer je Android ID in en registreer het apparaat. Het kan "
+"enkele minuten duren voordat het geactiveerd is op je Waydroid. Sluit en open opnieuw. Klaar!"
+msgid "Remover Configurações"
+msgstr "Verwijder instellingen"
+msgid "Desinstalar o Waydroid"
+msgstr "Waydroid verwijderen"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
+msgstr ""
+"Als 3D-versnelling is ingeschakeld op een incompatibele hardware, zal Android niet verder gaan dan "
+"het laadscherm."
+msgid "Parar o Waydroid"
+msgstr "Stop Waydroid"
+msgid "Iniciar o Waydroid"
+msgstr "Waydroid starten"
 msgid "Introdução ao BigLinux"
 msgstr "Introductie tot BigLinux"
-msgid "Aguarde, carregando..."
-msgstr "Wacht even, laden..."
 msgid "Bem vindo ao BigLinux"
 msgstr "Welkom bij BigLinux"
 msgid "Comece com algumas etapas simples."
@@ -118,108 +191,214 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Er is niets om te vertalen."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Gefeliciteerd, u heeft de eerste stappen voltooid om BigLinux te gebruiken."
+msgid "Aguarde, carregando..."
+msgstr "Wacht even, laden..."
 msgid "Aguarde..."
 msgstr "Wachten..."
 msgid "Verificando conexão com a Internet..."
 msgstr "Checking internet connection..."
 msgid "Sem conexão com a Internet..."
 msgstr "Geen internetverbinding..."
-msgid "Remover"
-msgstr "Verwijderaar"
-msgid "Maximizado"
-msgstr "Gemaximaliseerd"
-msgid "Desinstalar"
-msgstr "Verwijderen"
-msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Het internet van uw Android-apparaat gebruiken op Linux via USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Verbind uw Android-smartphone met de Linux-computer met behulp van een USB-kabel."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: NEEDS WORK
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
 msgstr ""
-"I did not detect support for virtualization technology, you may need to enable this option in the "
-"computer's BIOS."
-msgid "Waydroid"
-msgstr "Waydroid"
-msgid "Utilize programas para Android no BigLinux."
-msgstr "Gebruik Android-apps op BigLinux."
-msgid "Instalar o Waydroid"
-msgstr "Installeer Waydroid"
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Waydroid installeren met Google-apps"
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "De download is ongeveer 1 GB groot, afhankelijk van je verbinding kan het even duren."
-msgid "Resolução"
-msgstr "Resolution"
-msgid "Paisagem"
-msgstr "I have no text to translate for \"Paisagem\"."
-msgid "Retrato"
-msgstr "There is no text to translate in your request."
-msgid "Aceleração 3D"
-msgstr "3D-versnelling"
-msgid "Desativado"
-msgstr "Uitgeschakeld"
-msgid "Ativado"
-msgstr "Ingeschakeld"
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid kan ook worden gestart via het systeemmenu"
+"Op je smartphone, open 'Instellingen' en navigeer naar 'Netwerk & Internet' of 'Verbindingen & "
+"Delen'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Zoek naar 'USB-tethering', 'USB-tether' of vergelijkbare termen en schakel het in."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
 msgstr ""
-"Als 3D-versnelling is ingeschakeld op een oncompatibele hardware, zal Android niet verder gaan dan "
-"het laadscherm."
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "3D-versnelling is niet compatibel op Nvidia-videokaarten met de eigen driver."
-msgid "Exibir ID do Android"
-msgstr "Display Android ID"
-msgid "Ativar Google Apps"
-msgstr "Google Apps activeren"
-msgid "PlayStore"
-msgstr "Play Store"
+"Dit zal automatisch de internetverbinding tot stand brengen op uw Linux-computer zonder dat er "
+"extra configuratie nodig is."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Om de PlayStore te activeren, moet je op (Android ID weergeven) klikken en het Android ID kopiëren, "
-"vervolgens op (Google-apps activeren) klikken om de apparaatregistratiepagina te openen, je moet "
-"ingelogd zijn op je Google-account, voer je Android ID in en registreer het apparaat. Het kan "
-"enkele minuten duren voordat het geactiveerd is op je Waydroid. Sluit en open opnieuw. Klaar!"
-msgid "Remover Configurações"
-msgstr "Verwijder instellingen"
-msgid "Desinstalar o Waydroid"
-msgstr "Waydroid verwijderen"
+"Als uw Android-apparaat niet is verbonden met Wi-Fi en mobiele data gebruikt, zal deze tethering "
+"gegevens verbruiken van uw mobiele abonnement. Om datakosten te voorkomen, zorg ervoor dat uw "
+"Android-apparaat is verbonden met een Wi-Fi-netwerk voordat u tethering inschakelt."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Het internet van uw iOS-apparaat gebruiken op Linux via USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Sluit uw iOS-apparaat aan op de Linux-computer met een USB-kabel."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "Op uw iOS-apparaat gaat u naar 'Instellingen', selecteert u vervolgens 'Persoonlijke hotspot'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
 msgstr ""
-"Als 3D-versnelling is ingeschakeld op een incompatibele hardware, zal Android niet verder gaan dan "
-"het laadscherm."
-msgid "Parar o Waydroid"
-msgstr "Stop Waydroid"
-msgid "Iniciar o Waydroid"
-msgstr "Waydroid starten"
-msgid "ID do Android:"
-msgstr "Android-ID:"
+"Schakel 'Anderen toestaan om deel te nemen' in. Dit kan automatisch 'USB-tethering' inschakelen als "
+"er een USB-verbinding wordt gedetecteerd."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Het Android ID kon niet worden opgehaald. \\n"
-"\\n"
-"Let op: Waydroid moet geopend zijn."
+"Als uw iOS-apparaat niet is verbonden met Wi-Fi en mobiele data gebruikt, zal deze tethering "
+"gegevens verbruiken van uw mobiele abonnement. Om datakosten te voorkomen, zorg ervoor dat uw "
+"iOS-apparaat is verbonden met een Wi-Fi-netwerk voordat u tethering inschakelt."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: NEEDS WORK
 msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
 msgstr ""
-"Bij het verwijderen van de instellingen zullen de geïnstalleerde programma's binnen Waydroid en hun "
-"instellingen verloren gaan. Weet u zeker dat u wilt verwijderen?"
-msgid "Configurações removidas com sucesso!"
-msgstr "Instellingen succesvol verwijderd!"
-msgid "Nenhuma configuração foi removida!"
-msgstr "Geen instellingen zijn verwijderd!"
-msgid "Não existem configurações para remover."
-msgstr "Er zijn geen instellingen om te verwijderen."
+"Om de internetverbinding van je smartphone te delen met een Linux-computer via een USB-kabel, volg "
+"je deze stappen:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "Sluiten"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Bedieningspaneel"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+#: NEEDS WORK
+msgid "About Control Center"
+msgstr "Over Control Center"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+#: NEEDS WORK
+msgid "Categories"
+msgstr "Categorieën"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+#: NEEDS WORK
+msgid "Programs"
+msgstr "Programma's"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Zoeken..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#: NEEDS WORK
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Speciale opdracht uitvoeren: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#: NEEDS WORK
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Lanceert: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Fout bij het starten van het programma: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+#: NEEDS WORK
+msgid "BigLinux Team"
+msgstr "BigLinux Team"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+#: NEEDS WORK
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Team"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "Hoofd"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Netwerk en internet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Telefoon"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Aanpassen"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Regio en Taal"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimedia"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Accounts"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Apparaten"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Systeem"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Over"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Andere"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -268,6 +447,16 @@ msgstr "Cross-platform buildsysteem"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Geavanceerde audiobeheerder - Alsamixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: NEEDS WORK
+msgid "JamesDSP improving music and audio quality"
+msgstr "JamesDSP verbetert muziek- en geluidskwaliteit"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: NEEDS WORK
+msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr "Verbeter je geluid met een equalizer, basversterking, surround en andere effecten."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
 #: NEEDS WORK
@@ -698,203 +887,3 @@ msgstr "Configureer automatische acties voor wanneer apparaten zijn verbonden."
 #: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "Configureer zoek- en indexeringsopties in Plasma."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Het internet van uw Android-apparaat gebruiken op Linux via USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Verbind uw Android-smartphone met de Linux-computer met behulp van een USB-kabel."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr ""
-"Op je smartphone, open 'Instellingen' en navigeer naar 'Netwerk & Internet' of 'Verbindingen & "
-"Delen'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Zoek naar 'USB-tethering', 'USB-tether' of vergelijkbare termen en schakel het in."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"Dit zal automatisch de internetverbinding tot stand brengen op uw Linux-computer zonder dat er "
-"extra configuratie nodig is."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Als uw Android-apparaat niet is verbonden met Wi-Fi en mobiele data gebruikt, zal deze tethering "
-"gegevens verbruiken van uw mobiele abonnement. Om datakosten te voorkomen, zorg ervoor dat uw "
-"Android-apparaat is verbonden met een Wi-Fi-netwerk voordat u tethering inschakelt."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Het internet van uw iOS-apparaat gebruiken op Linux via USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Sluit uw iOS-apparaat aan op de Linux-computer met een USB-kabel."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "Op uw iOS-apparaat gaat u naar 'Instellingen', selecteert u vervolgens 'Persoonlijke hotspot'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"Schakel 'Anderen toestaan om deel te nemen' in. Dit kan automatisch 'USB-tethering' inschakelen als "
-"er een USB-verbinding wordt gedetecteerd."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Als uw iOS-apparaat niet is verbonden met Wi-Fi en mobiele data gebruikt, zal deze tethering "
-"gegevens verbruiken van uw mobiele abonnement. Om datakosten te voorkomen, zorg ervoor dat uw "
-"iOS-apparaat is verbonden met een Wi-Fi-netwerk voordat u tethering inschakelt."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr ""
-"Om de internetverbinding van je smartphone te delen met een Linux-computer via een USB-kabel, volg "
-"je deze stappen:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Sluiten"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Bedieningspaneel"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "Over Control Center"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "Categorieën"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "Programma's"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Zoeken..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Speciale opdracht uitvoeren: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Lanceert: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Fout bij het starten van het programma: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "BigLinux Team"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Team"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Hoofd"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Netwerk en internet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Telefoon"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Aanpassen"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Regio en Taal"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimedia"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Accounts"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Apparaten"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Systeem"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Over"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Andere"

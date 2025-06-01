@@ -15,45 +15,120 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "$APP"
-msgstr "$APLIKACE"
-msgid "Error creating directory: $bigdir"
-msgstr "Chyba při vytváření adresáře: $bigdir"
-msgid "Central de Controle - Webcam"
-msgstr "Centrální ovládací panel - Webkamera"
-msgid "Nenhuma webcam localizada."
-msgstr "Žádná webová kamera nenalezena."
-msgid "A webcam já está sendo utilizada pelos aplicativos: "
-msgstr "Webová kamera je již používána aplikacemi:"
-msgid "Abrirei em modo de configuração. "
-msgstr "Otevřu v konfiguračním režimu."
-msgid "As alterações feitas podem ser vistas"
-msgstr "Changes made can be viewed"
-msgid "na imagem da sua webcam em outros programas."
-msgstr "v jiných programech."
-msgid "Category"
-msgstr "Kategorie"
-msgid "Name"
-msgstr "Jméno"
-msgid "ID"
-msgstr "Identifikátor"
-msgid "Info"
-msgstr "Informace"
+#: NEEDS WORK
 msgid ""
-"O relatório foi salvo no arquivo: $FILE_TO_SAVE\n"
-"Deseja visualizar o relatório agora?\n"
-"\t\t"
-msgstr "Chcete nyní zobrazit zprávu?"
-msgid "Visualizar o relatório"
-msgstr "Zobrazit zprávu"
-msgid "Fechar"
-msgstr "Zavřít"
-msgid "Hardinfo Relatory"
-msgstr "Hardinfo Zpráva"
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
+msgstr ""
+"Webkamera je již používána programem: $WEBCAM_BUSY\n"
+"\n"
+"Otevřu v konfiguračním režimu.\n"
+"Změny provedené mohou být viditelné\n"
+"na obraze vaší webkamery v jiných programech."
+#: NEEDS WORK
+msgid "Webcam"
+msgstr "Webkamera"
+msgid "Waydroid"
+msgstr "Waydroid"
+msgid ""
+"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
+"perdidas. Realmente deseja remover?"
+msgstr ""
+"Při odstranění nastavení budou ztraceny nainstalované programy a jejich nastavení uvnitř Waydroidu. "
+"Opravdu chcete odstranit?"
+msgid "Configurações removidas com sucesso!"
+msgstr "Nastavení byla úspěšně odebrána!"
+msgid "Nenhuma configuração foi removida!"
+msgstr "Žádná konfigurace nebyla odstraněna!"
+msgid "Não existem configurações para remover."
+msgstr "Neexistují žádné nastavení k odstranění."
+msgid "ID do Android:"
+msgstr "ID zařízení s Androidem:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"Nepodařilo se získat ID Androidu. \\n"
+"\\n"
+"Upozornění: Waydroid musí být otevřený."
+msgid "Remover"
+msgstr "Odstranit"
+msgid "Maximizado"
+msgstr "Změněno na celou obrazovku"
+msgid "Desinstalar"
+msgstr "Odinstalovat"
+msgid ""
+"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
+"na BIOS do computador."
+msgstr ""
+"I didn't detect support for virtualization technology, you may need to enable this option in the "
+"computer's BIOS."
+msgid "Utilize programas para Android no BigLinux."
+msgstr "Využijte aplikace pro Android na BigLinuxu."
+msgid "Instalar o Waydroid"
+msgstr "Nainstalovat Waydroid"
+msgid "Instalar o Waydroid com Google Apps"
+msgstr "Nainstalujte Waydroid s Google aplikacemi"
+msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
+msgstr "Stahování trvá přibližně 1 GB, v závislosti na vašem připojení to může trvat."
+msgid "Resolução"
+msgstr "Nemohu přeložit tuto frázi, protože se nejedná o software string."
+msgid "Paisagem"
+msgstr "I don't have anything to translate for \"Paisagem\"."
+msgid "Retrato"
+msgstr "I don't have anything to translate for \"Retrato\"."
+msgid "Aceleração 3D"
+msgstr "3D akcelerace"
+msgid "Desativado"
+msgstr "Vypnuto"
+msgid "Ativado"
+msgstr "Aktivováno"
+msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
+msgstr "Waydroid lze také spustit pomocí nabídky systému."
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
+"loading"
+msgstr ""
+"Pokud je 3D akcelerace aktivována na nekompatibilním hardwaru, Android se zasekne na obrazovce s "
+"načítáním."
+msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
+msgstr "3D akcelerace není kompatibilní s grafickými kartami Nvidia při použití proprietárního ovladače."
+msgid "Exibir ID do Android"
+msgstr "Zobrazit ID zařízení Android"
+msgid "Ativar Google Apps"
+msgstr "Aktivovat Google Aplikace"
+msgid "PlayStore"
+msgstr "Obchod Play"
+msgid ""
+"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
+"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
+"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
+"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+msgstr ""
+"Pro aktivaci PlayStore je nutné kliknout na (Zobrazit ID Androidu) a zkopírovat ID Androidu, poté "
+"klikněte na (Aktivovat Google Aplikace) pro otevření stránky Registrace zařízení, musíte být "
+"přihlášeni do svého účtu Google, zadejte své ID Androidu a proveďte registraci. Aktivace ve vašem "
+"Waydroidu může trvat několik minut. Zavřete a znovu otevřete. Hotovo!"
+msgid "Remover Configurações"
+msgstr "Odstranit nastavení"
+msgid "Desinstalar o Waydroid"
+msgstr "Odinstalovat Waydroid"
+msgid ""
+"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
+"loading"
+msgstr ""
+"Pokud je 3D akcelerace aktivována na nekompatibilním hardwaru, Android se zasekne na obrazovce s "
+"načítáním."
+msgid "Parar o Waydroid"
+msgstr "Zastavit Waydroid"
+msgid "Iniciar o Waydroid"
+msgstr "Spustit Waydroid"
 msgid "Introdução ao BigLinux"
 msgstr "Introduction to BigLinux"
-msgid "Aguarde, carregando..."
-msgstr "Čekejte, načítání..."
 msgid "Bem vindo ao BigLinux"
 msgstr "Vítejte v BigLinux"
 msgid "Comece com algumas etapas simples."
@@ -115,108 +190,212 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Nemůžu přeložit tuto frázi, protože se nejedná o softwarový řetězec."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Gratulujeme, dokončili jste první kroky k používání BigLinux."
+msgid "Aguarde, carregando..."
+msgstr "Čekejte, načítání..."
 msgid "Aguarde..."
 msgstr "Počkejte..."
 msgid "Verificando conexão com a Internet..."
 msgstr "Kontrola připojení k internetu..."
 msgid "Sem conexão com a Internet..."
 msgstr "No internet connection..."
-msgid "Remover"
-msgstr "Odstranit"
-msgid "Maximizado"
-msgstr "Změněno na celou obrazovku"
-msgid "Desinstalar"
-msgstr "Odinstalovat"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Použití internetu z vašeho zařízení s Androidem v Linuxu pomocí USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Připojte svůj smartphone s Androidem k počítači s Linuxem pomocí USB kabelu."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: NEEDS WORK
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr "Na svém smartphonu otevřete 'Nastavení' a přejděte na 'Síť a internet' nebo 'Připojení a sdílení'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Hledejte „USB sdílení připojení“, „USB sdílení“ nebo podobné termíny a povolte ho."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
 msgstr ""
-"I didn't detect support for virtualization technology, you may need to enable this option in the "
-"computer's BIOS."
-msgid "Waydroid"
-msgstr "Waydroid"
-msgid "Utilize programas para Android no BigLinux."
-msgstr "Využijte aplikace pro Android na BigLinuxu."
-msgid "Instalar o Waydroid"
-msgstr "Nainstalovat Waydroid"
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Nainstalujte Waydroid s Google aplikacemi"
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "Stahování trvá přibližně 1 GB, v závislosti na vašem připojení to může trvat."
-msgid "Resolução"
-msgstr "Nemohu přeložit tuto frázi, protože se nejedná o software string."
-msgid "Paisagem"
-msgstr "I don't have anything to translate for \"Paisagem\"."
-msgid "Retrato"
-msgstr "I don't have anything to translate for \"Retrato\"."
-msgid "Aceleração 3D"
-msgstr "3D akcelerace"
-msgid "Desativado"
-msgstr "Vypnuto"
-msgid "Ativado"
-msgstr "Aktivováno"
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid lze také spustit pomocí nabídky systému."
+"Toto automaticky naváže internetové připojení na vašem počítači s Linuxem bez potřeby jakékoliv "
+"další konfigurace."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Pokud je 3D akcelerace aktivována na nekompatibilním hardwaru, Android se zasekne na obrazovce s "
-"načítáním."
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "3D akcelerace není kompatibilní s grafickými kartami Nvidia při použití proprietárního ovladače."
-msgid "Exibir ID do Android"
-msgstr "Zobrazit ID zařízení Android"
-msgid "Ativar Google Apps"
-msgstr "Aktivovat Google Aplikace"
-msgid "PlayStore"
-msgstr "Obchod Play"
+"Pokud není váš zařízení s Androidem připojeno k Wi-Fi a používá mobilní data, toto připojení bude "
+"spotřebovávat data z vašeho mobilního tarifu. Abyste se vyhnuli poplatkům za data, ujistěte se, že "
+"je vaše zařízení s Androidem připojeno k Wi-Fi síti před povolením připojení."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Použití internetu vašeho zařízení iOS na Linuxu pomocí USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Připojte své zařízení iOS k počítači s Linuxem pomocí USB kabelu."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "Na vašem zařízení s iOS přejděte do nabídky „Nastavení“ a poté vyberte „Osobní hotspot“."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
 msgstr ""
-"Pro aktivaci PlayStore je nutné kliknout na (Zobrazit ID Androidu) a zkopírovat ID Androidu, poté "
-"klikněte na (Aktivovat Google Aplikace) pro otevření stránky Registrace zařízení, musíte být "
-"přihlášeni do svého účtu Google, zadejte své ID Androidu a proveďte registraci. Aktivace ve vašem "
-"Waydroidu může trvat několik minut. Zavřete a znovu otevřete. Hotovo!"
-msgid "Remover Configurações"
-msgstr "Odstranit nastavení"
-msgid "Desinstalar o Waydroid"
-msgstr "Odinstalovat Waydroid"
+"Povolit „Povolit ostatním připojení“. To může automaticky povolit „USB sdílení připojení“, pokud je "
+"detekováno USB připojení."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
 msgstr ""
-"Pokud je 3D akcelerace aktivována na nekompatibilním hardwaru, Android se zasekne na obrazovce s "
-"načítáním."
-msgid "Parar o Waydroid"
-msgstr "Zastavit Waydroid"
-msgid "Iniciar o Waydroid"
-msgstr "Spustit Waydroid"
-msgid "ID do Android:"
-msgstr "ID zařízení s Androidem:"
+"Pokud není váš iOS zařízení připojeno k Wi-Fi a používá mobilní data, sdílení připojení bude "
+"spotřebovávat data z vašeho mobilního tarifu. Abyste se vyhnuli poplatkům za data, ujistěte se, že "
+"je vaše iOS zařízení připojeno k Wi-Fi síti před povolením sdílení připojení."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: NEEDS WORK
 msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
 msgstr ""
-"Nepodařilo se získat ID Androidu. \\n"
-"\\n"
-"Upozornění: Waydroid musí být otevřený."
-msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr ""
-"Při odstranění nastavení budou ztraceny nainstalované programy a jejich nastavení uvnitř Waydroidu. "
-"Opravdu chcete odstranit?"
-msgid "Configurações removidas com sucesso!"
-msgstr "Nastavení byla úspěšně odebrána!"
-msgid "Nenhuma configuração foi removida!"
-msgstr "Žádná konfigurace nebyla odstraněna!"
-msgid "Não existem configurações para remover."
-msgstr "Neexistují žádné nastavení k odstranění."
+"Chcete-li sdílet internetové připojení vašeho smartphonu s počítačem Linux pomocí USB kabelu, "
+"postupujte podle těchto kroků:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "Zavřít"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Řídící centrum"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+#: NEEDS WORK
+msgid "About Control Center"
+msgstr "O aplikaci Ovládací centrum"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+#: NEEDS WORK
+msgid "Categories"
+msgstr "Kategorie"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+#: NEEDS WORK
+msgid "Programs"
+msgstr "Programy"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Hledat..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#: NEEDS WORK
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Provádění speciálního příkazu: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#: NEEDS WORK
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Spouštění: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Chyba při spouštění programu: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+#: NEEDS WORK
+msgid "BigLinux Team"
+msgstr "BigLinux Tým"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+#: NEEDS WORK
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 Tým BigLinux"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "Hlavní"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Síť a internet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Telefon"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Přizpůsobit"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Oblast a jazyk"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimédia"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Účty"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Zařízení"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Systém"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "O aplikaci"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Nemohu najít žádný překlad."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -265,6 +444,16 @@ msgstr "Křížová platforma buildsystem"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Pokročilý správce zvuku - Alsamixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: NEEDS WORK
+msgid "JamesDSP improving music and audio quality"
+msgstr "JamesDSP zlepšuje kvalitu hudby a zvuku"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: NEEDS WORK
+msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr "Vylepšete svůj zvuk pomocí ekvalizéru, zvýšení basů, prostorového zvuku a dalších efektů."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
 #: NEEDS WORK
@@ -695,201 +884,3 @@ msgstr "Nastavte automatické akce pro připojená zařízení."
 #: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "Nastavte možnosti vyhledávání a indexování v Plasma."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Použití internetu z vašeho zařízení s Androidem v Linuxu pomocí USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Připojte svůj smartphone s Androidem k počítači s Linuxem pomocí USB kabelu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr "Na svém smartphonu otevřete 'Nastavení' a přejděte na 'Síť a internet' nebo 'Připojení a sdílení'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Hledejte „USB sdílení připojení“, „USB sdílení“ nebo podobné termíny a povolte ho."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"Toto automaticky naváže internetové připojení na vašem počítači s Linuxem bez potřeby jakékoliv "
-"další konfigurace."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Pokud není váš zařízení s Androidem připojeno k Wi-Fi a používá mobilní data, toto připojení bude "
-"spotřebovávat data z vašeho mobilního tarifu. Abyste se vyhnuli poplatkům za data, ujistěte se, že "
-"je vaše zařízení s Androidem připojeno k Wi-Fi síti před povolením připojení."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Použití internetu vašeho zařízení iOS na Linuxu pomocí USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Připojte své zařízení iOS k počítači s Linuxem pomocí USB kabelu."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "Na vašem zařízení s iOS přejděte do nabídky „Nastavení“ a poté vyberte „Osobní hotspot“."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"Povolit „Povolit ostatním připojení“. To může automaticky povolit „USB sdílení připojení“, pokud je "
-"detekováno USB připojení."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Pokud není váš iOS zařízení připojeno k Wi-Fi a používá mobilní data, sdílení připojení bude "
-"spotřebovávat data z vašeho mobilního tarifu. Abyste se vyhnuli poplatkům za data, ujistěte se, že "
-"je vaše iOS zařízení připojeno k Wi-Fi síti před povolením sdílení připojení."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr ""
-"Chcete-li sdílet internetové připojení vašeho smartphonu s počítačem Linux pomocí USB kabelu, "
-"postupujte podle těchto kroků:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Zavřít"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Řídící centrum"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "O aplikaci Ovládací centrum"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "Kategorie"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "Programy"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Hledat..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Provádění speciálního příkazu: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Spouštění: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Chyba při spouštění programu: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "BigLinux Tým"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 Tým BigLinux"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Hlavní"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Síť a internet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Telefon"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Přizpůsobit"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Oblast a jazyk"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimédia"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Účty"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Zařízení"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Systém"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "O aplikaci"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Nemohu najít žádný překlad."
