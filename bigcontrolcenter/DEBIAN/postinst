@@ -1,9 +1,0 @@
-#!/bin/sh
-set -e
-package_name=bigcontrolcenter
-case "$1" in
-  install)
-    /usr/bin/bigcontrolcenter-clean-menu 2> /dev/null
-    ;;
-esac
-exit 0

@@ -316,6 +316,7 @@ class AppFinder:
         static_files = [
             "/usr/share/applications/big-store.desktop",
             "/usr/share/applications/bigcontrolcenter/pavucontrol-qt.desktop",
+            "/usr/share/applications/bigcontrolcenter/me.timschneeberger.jdsp4linux.desktop",
             "/usr/share/applications/org.manjaro.pamac.manager.desktop",
             "/usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop",
             "/usr/share/kservices5/bigcontrolcenter/qv4l2.desktop",
@@ -331,6 +332,7 @@ class AppFinder:
             "/usr/share/applications/big-driver-manager.desktop",
             "/usr/share/applications/big-hardware-info.desktop",
             "/usr/share/applications/big-kernel-manager.desktop",
+            "/usr/share/applications/br.com.biglinux.networkinfo.desktop",
             "/usr/share/applications/org.kde.kwalletmanager.desktop",
         ]
 
@@ -463,6 +465,10 @@ class AppFinder:
                 "app_categories": "Other",
             },
             {
+                "app_id": "br.com.biglinux.networkinfo",
+                "app_categories": "Star Network",
+            },
+            {
                 "app_id": "big-driver-manager",
                 "app_description": _("Expand device support"),
                 "app_categories": "Star Hardware",
@@ -507,6 +513,14 @@ class AppFinder:
                 "app_id": "gnome-alsamixer",
                 "app_name": _("Advanced Audio Manager - Alsamixer"),
                 "app_icon": "/usr/share/pixmaps/gnome-alsamixer/gnome-alsamixer-icon.png",
+                "app_categories": "Multimedia",
+            },
+            {
+                "app_id": "me.timschneeberger.jdsp4linux",
+                "app_name": _("JamesDSP improving music and audio quality"),
+                "app_description": _(
+                    "Enhance your sound with equalizer, bass boost, surround, and other effects."
+                ),
                 "app_categories": "Multimedia",
             },
             {

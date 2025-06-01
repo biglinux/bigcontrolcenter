@@ -1,0 +1,121 @@
+#!/bin/bash
+
+# Display usage information if no parameters or help requested
+if [ "$1" = "" ] || [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+    echo "Usage: $(basename $0) [clean|restore]"
+    echo ""
+    echo "Options:"
+    echo "  clean    - Hide desktop files from the menu"
+    echo "  restore  - Restore desktop files to the menu"
+    exit 1
+fi
+
+# Directory where hidden menu files will be stored
+bigdir=/usr/share/applications/bigcontrolcenter
+
+# List of desktop files to manage
+MENU_FILES=("biglinux-config.desktop" "big-reset.desktop" "br.com.biglinux.networkinfo.desktop" 
+"system-config-printer.desktop" "openjdk-8-policytool.desktop" "pavucontrol-qt.desktop" 
+"bigkernel.desktop" "gufw.desktop" "gparted.desktop" "timeshift-gtk.desktop" "mintstick-kde.desktop" 
+"mintstick-format-kde.desktop" "biglinux-themes-gui.desktop" "sambasearch.desktop" 
+"org.kde.kwalletmanager5.desktop" "org.kde.kdeconnect.app.desktop" "kdesystemsettings.desktop" 
+"org.kde.kinfocenter.desktop" "grub-customizer.desktop" "kvantummanager.desktop" 
+"manjaro-settings-manager.desktop" "msm_kde_notifier_settings.desktop" "designer.desktop" 
+"linguist.desktop" "qdbusviewer.desktop" "assistant.desktop" "UserFeedbackConsole.desktop" 
+"cmake-gui.desktop" "avahi-discover.desktop" "bssh.desktop" "bvnc.desktop" "htop.desktop" 
+"lstopo.desktop" "cups.desktop" "org.gnome.baobab.desktop" "qv4l2.desktop" "qvidcap.desktop" 
+"mpv.desktop" "me.timschneeberger.jdsp4linux.desktop" "hplip.desktop" "hp-uiscan.desktop" "systemsettings.desktop" 
+"kdesettings.desktop" "org.kde.kuserfeedback-console.desktop" "gsmartcontrol.desktop" 
+"bootsplash-manager.desktop" "gnome-alsamixer.desktop" "appimagelaunchersettings.desktop" 
+"org.kde.ksystemlog.desktop" "org.kde.filelight.desktop" "klassy-settings.desktop" 
+"firewall-config.desktop" "qefientrymanager.desktop")
+
+# Function to clean menu (hide desktop files)
+clean_menu() {
+    # Create directory if it doesn't exist
+    mkdir -p $bigdir 2> /dev/null
+    
+    for i in "${MENU_FILES[@]}"; do
+        # Remove KCModule entries and hide category
+        if [ -s "/usr/share/applications/$i" ]; then
+            mv -f "/usr/share/applications/$i" "$bigdir/$i" 2> /dev/null
+            sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i" 2> /dev/null
+            sed -i '/Categories/s/^/#/' "$bigdir/$i" 2> /dev/null
+            sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i" 2> /dev/null
+            
+        elif [ -s "/usr/share/kservices5/bigcontrolcenter/$i" ]; then
+            mv -f "/usr/share/kservices5/bigcontrolcenter/$i" "$bigdir/$i" 2> /dev/null
+            sed -i 's|X-KDE-ServiceTypes=KCModule||g;s|Type=Service||g' "$bigdir/$i" 2> /dev/null
+            sed -i '/Categories/s/^/#/' "$bigdir/$i" 2> /dev/null
+            sed -i '/DBusActivatable/s/^/#/' "$bigdir/$i" 2> /dev/null
+        fi
+
+        # If the executable file no longer exists, remove the desktop file
+        if [[ ! -e "/usr/share/applications/$i" ]]; then
+            EXEC="$(type -p $(grep -m1 -oP '^Exec=\K[^ ]+' "$bigdir/$i" 2> /dev/null))"
+            if [[ -z "$EXEC" ]]; then
+                rm -f "$bigdir/$i" 2> /dev/null
+            fi
+        fi
+    done
+
+    # Hide the unknown category from the menu
+    if ! grep -q NoDisplay=true /usr/share/desktop-directories/kf5-unknown.directory ; then 
+        echo "NoDisplay=true" >> /usr/share/desktop-directories/kf5-unknown.directory 2> /dev/null
+    fi
+
+    # Fix permissions
+    cd "$bigdir"
+    chmod 644 *.desktop 2> /dev/null
+
+    # Fix specific files
+    if [ -e "/usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop" ]; then
+        sed -i 's|X-KDE-SubstituteUID=true|X-KDE-SubstituteUID=false|g' /usr/share/applications/bigcontrolcenter/org.kde.ksystemlog.desktop
+    fi
+
+    echo "Menu items have been hidden."
+}
+
+# Function to restore menu (show desktop files)
+restore_menu() {
+    # Ensure the directory exists
+    if [ ! -d "$bigdir" ]; then
+        echo "No hidden menu items found to restore."
+        return
+    fi
+    
+    for i in "${MENU_FILES[@]}"; do
+        if [ -s "$bigdir/$i" ]; then
+            # Restore the commented Categories line
+            sed -i '/^#Categories/s/^#//' "$bigdir/$i" 2> /dev/null
+            sed -i '/^#DBusActivatable/s/^#//' "$bigdir/$i" 2> /dev/null
+            
+            # Move back to applications directory
+            mv -f "$bigdir/$i" "/usr/share/applications/$i" 2> /dev/null
+        fi
+    done
+
+    # Show the unknown category in the menu again
+    sed -i '/NoDisplay=true/d' /usr/share/desktop-directories/kf5-unknown.directory 2> /dev/null
+    
+    echo "Menu items have been restored."
+}
+
+# Main logic to call appropriate function
+case "$1" in
+    clean)
+        clean_menu
+        ;;
+    restore)
+        restore_menu
+        ;;
+    *)
+        echo "Invalid option. Use 'clean' or 'restore'"
+        exit 1
+        ;;
+esac
+
+# Update the desktop database
+update-desktop-database 2> /dev/null
+
+exit 0
