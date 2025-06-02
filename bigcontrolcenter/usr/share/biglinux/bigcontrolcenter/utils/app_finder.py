@@ -359,7 +359,7 @@ class AppFinder:
 
             # Get executable with parameters - KEEP the parameters as in the JSON template
             exec_field = app_info.get_string("Exec") or "null"
-            executable = exec_field.strip()
+            executable = exec_field.strip().split("%")[0]
 
             # Get categories from desktop file - preserve original format
             categories = app_info.get_categories() or "Other"
@@ -728,7 +728,7 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_kaccounts",
-                "app_categories": "Network",
+                "app_categories": "Network Account",
             },
             {
                 "app_id": "kcm_kamera",
