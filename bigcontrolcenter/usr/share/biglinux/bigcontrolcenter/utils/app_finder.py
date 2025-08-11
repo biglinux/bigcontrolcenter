@@ -993,6 +993,13 @@ class AppFinder:
                 "app_categories": "Star System",
             },
             {
+                "app_id": "biglinux-settings",
+                "app_name": _("Biglinux Settings"),
+                "app_description": _("Simplify switching BigLinux operation."),
+                "app_icon": "biglinux-settings",
+                "app_categories": "Star System",
+            },
+            {
                 "app_id": "big-themes-gui",
                 "app_name": _("BigLinux Themes"),
                 "app_exec": "big-theme-gui",
