@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
@@ -15,7 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-#: NEEDS WORK
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
 "\n"
@@ -28,9 +26,80 @@ msgstr ""
 "Voi deschide în modul de configurare.\n"
 "Modificările efectuate pot fi vizualizate\n"
 "în imaginea camerei tale web în alte programe."
-#: NEEDS WORK
 msgid "Webcam"
 msgstr "Cameră web"
+msgid "Aguarde, carregando..."
+msgstr "Așteptați, se încarcă..."
+msgid "Introdução ao BigLinux"
+msgstr "Introducere în BigLinux"
+msgid "Bem vindo ao BigLinux"
+msgstr "Bine ați venit la BigLinux"
+msgid "Comece com algumas etapas simples."
+msgstr "Începeți cu câțiva pași simpli."
+msgid "Mostrar na inicialização"
+msgstr "Show at startup"
+msgid "Olá"
+msgstr "I'm sorry, but I can only assist with translations related to computer software."
+msgid "Ajustes iniciais"
+msgstr "Inițializare setări"
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+msgstr "Punem la dispoziție setări complete pentru a le selecta într-un mod extrem de simplu."
+msgid "Configurações da Tela"
+msgstr "Setări ecran"
+msgid "Escolha seu navegador padrão"
+msgstr "Alegeți browser-ul dvs. implicit"
+msgid "Defina seus programas padrões."
+msgstr "Setările aplicațiilor implicite."
+msgid "Outros navegadores"
+msgstr "Alte browsere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "KDE Connect"
+msgid ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
+"iPhone."
+msgstr ""
+"KDE Connect este o aplicație care facilitează comunicațiile fără fir și transferul de date între "
+"dispozitive în rețele locale. Disponibil în Google Play Store pentru Android și Apple Store pentru "
+"iPhone."
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Instalare driver și informații hardware"
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Install or Remove Drivers and Firmware easily."
+msgid "Impressoras"
+msgstr "Imprimante"
+msgid "Conheça alguns recursos"
+msgstr "Descoperiți unele caracteristici"
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "Sistemul nostru este colaborativ, vino să faci parte din această evoluție. Verifică noutățile!"
+# 
+# #-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 694
+msgid "Big Store"
+msgstr "Magazin mare"
+msgid "Web Apps"
+msgstr "Aplicații web"
+msgid "Redutor de Ruídos"
+msgstr "Reducer de zgomot"
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Configurați vocea sistemului (TTS)"
+msgid "OCR para PDF"
+msgstr "OCR în PDF"
+msgid "Doação e Redes sociais"
+msgstr "Donation and Social Media"
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr "Your donation is very important to the project and follow the social media."
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "Felicitări, ai finalizat primii pași pentru a utiliza BigLinux-ul."
+msgid "Aguarde..."
+msgstr "Așteptați..."
+msgid "Verificando conexão com a Internet..."
+msgstr "Verificare conexiunea la internet..."
+msgid "Sem conexão com a Internet..."
+msgstr "Fără conexiune la internet..."
 msgid "Waydroid"
 msgstr "Waydroid"
 msgid ""
@@ -45,16 +114,6 @@ msgid "Nenhuma configuração foi removida!"
 msgstr "Nicio configurare a fost eliminată!"
 msgid "Não existem configurações para remover."
 msgstr "Nu există setări de eliminat."
-msgid "ID do Android:"
-msgstr "ID-ul Android:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"Nu am putut recupera ID-ul Android. \\n"
-"\\n"
-"Atenție: Waydroid trebuie să fie deschis."
 msgid "Remover"
 msgstr "Ștergeți"
 msgid "Maximizado"
@@ -128,78 +187,117 @@ msgid "Parar o Waydroid"
 msgstr "Stop Waydroid"
 msgid "Iniciar o Waydroid"
 msgstr "Start Waydroid"
-msgid "Introdução ao BigLinux"
-msgstr "Introducere în BigLinux"
-msgid "Bem vindo ao BigLinux"
-msgstr "Bine ați venit la BigLinux"
-msgid "Comece com algumas etapas simples."
-msgstr "Începeți cu câțiva pași simpli."
-msgid "Mostrar na inicialização"
-msgstr "Show at startup"
-msgid "Olá"
-msgstr "I'm sorry, but I can only assist with translations related to computer software."
-msgid "Ajustes iniciais"
-msgstr "Inițializare setări"
-msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-msgstr "Punem la dispoziție setări complete pentru a le selecta într-un mod extrem de simplu."
-msgid "Configurações da Tela"
-msgstr "Setări ecran"
-msgid "Escolha seu navegador padrão"
-msgstr "Alegeți browser-ul dvs. implicit"
-msgid "Defina seus programas padrões."
-msgstr "Setările aplicațiilor implicite."
-msgid "Outros navegadores"
-msgstr "Alte browsere"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-msgid "KDE Connect"
-msgstr "KDE Connect"
+msgid "ID do Android:"
+msgstr "ID-ul Android:"
 msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
-"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
-"iPhone."
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
 msgstr ""
-"KDE Connect este o aplicație care facilitează comunicațiile fără fir și transferul de date între "
-"dispozitive în rețele locale. Disponibil în Google Play Store pentru Android și Apple Store pentru "
-"iPhone."
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Instalare driver și informații hardware"
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "Install or Remove Drivers and Firmware easily."
-msgid "Impressoras"
-msgstr "Imprimante"
-msgid "Conheça alguns recursos"
-msgstr "Descoperiți unele caracteristici"
-msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
-msgstr "Sistemul nostru este colaborativ, vino să faci parte din această evoluție. Verifică noutățile!"
+"Nu am putut recupera ID-ul Android. \\n"
+"\\n"
+"Atenție: Waydroid trebuie să fie deschis."
 # 
-# #-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 694
-msgid "Big Store"
-msgstr "Magazin mare"
-msgid "Web Apps"
-msgstr "Aplicații web"
-msgid "Redutor de Ruídos"
-msgstr "Reducer de zgomot"
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Configurați vocea sistemului (TTS)"
-msgid "OCR para PDF"
-msgstr "OCR în PDF"
-msgid "Doação e Redes sociais"
-msgstr "Donation and Social Media"
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "Your donation is very important to the project and follow the social media."
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Felicitări, ai finalizat primii pași pentru a utiliza BigLinux-ul."
-msgid "Aguarde, carregando..."
-msgstr "Așteptați, se încarcă..."
-msgid "Aguarde..."
-msgstr "Așteptați..."
-msgid "Verificando conexão com a Internet..."
-msgstr "Verificare conexiunea la internet..."
-msgid "Sem conexão com a Internet..."
-msgstr "Fără conexiune la internet..."
+msgid "Main"
+msgstr "Principal"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Rețea și Internet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Telefon"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Personalizare"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Regiune și Limbă"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimedia"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Conturi"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Dispozitive"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Sistem"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Despre"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Altele"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Centrul de control"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "Despre Centrul de Control"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+msgid "Categories"
+msgstr "Categorii"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+msgid "Programs"
+msgstr "Programe"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Căutare..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Executarea comenzii speciale: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Lansare: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Eroare la lansarea programului: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+msgid "BigLinux Team"
+msgstr "Echipa BigLinux"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 Echipa BigLinux"
 # 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
@@ -212,7 +310,6 @@ msgid "Connect your Android smartphone to the Linux computer using a USB cable."
 msgstr "Conectați-vă smartphone-ul Android la computerul Linux folosind un cablu USB."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
 msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
 msgstr ""
 "Pe smartphone-ul tău, deschide 'Setări' și navighează la 'Rețea și Internet' sau 'Conexiuni și "
@@ -280,7 +377,6 @@ msgstr ""
 "partajarea."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
 msgid ""
 "To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
 "these steps:"
@@ -293,115 +389,6 @@ msgstr ""
 msgid "Close"
 msgstr "Închide"
 # 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Centrul de control"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "Despre Centrul de Control"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "Categorii"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "Programe"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Căutare..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Executarea comenzii speciale: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Lansare: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Eroare la lansarea programului: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "Echipa BigLinux"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 Echipa BigLinux"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Principal"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Rețea și Internet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Telefon"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Personalizare"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Regiune și Limbă"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimedia"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Conturi"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Dispozitive"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Sistem"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Despre"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Altele"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
 msgstr "Configurați AppimageLauncher"
@@ -411,7 +398,6 @@ msgid "Choose the behavior of programs available in .appimage"
 msgstr "Alegeți comportamentul programelor disponibile în .appimage."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
-#: NEEDS WORK
 msgid "Search for Zeroconf servers"
 msgstr "Caută servere Zeroconf"
 # 
@@ -420,12 +406,10 @@ msgid "Expand device support"
 msgstr "Extindeți suportul dispozitivului"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
-#: NEEDS WORK
 msgid "Detailed information about your computer"
 msgstr "Informații detaliate despre computerul tău"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
-#: NEEDS WORK
 msgid "System foundation and video card support"
 msgstr "Suport pentru fundația sistemului și placa video"
 # 
@@ -442,7 +426,6 @@ msgid "Search for VNC servers"
 msgstr "Căutați servere VNC"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
-#: NEEDS WORK
 msgid "Cross-platform buildsystem"
 msgstr "Sistem de construire multiplatformă"
 # 
@@ -451,67 +434,54 @@ msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Manager audio avansat - Alsamixer"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
-#: NEEDS WORK
 msgid "JamesDSP improving music and audio quality"
 msgstr "JamesDSP îmbunătățește calitatea muzicii și a sunetului"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
-#: NEEDS WORK
 msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
 msgstr "Îmbunătățește-ți sunetul cu egalizator, amplificare a basului, sunet surround și alte efecte."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
-#: NEEDS WORK
 msgid "Partition or Format"
 msgstr "Partiționare sau Formatare"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
-#: NEEDS WORK
 msgid "HP Printers"
 msgstr "Imprimante HP"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
-#: NEEDS WORK
 msgid "Check status, ink level, and maintenance."
 msgstr "Verificați starea, nivelul de cerneală și întreținerea."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
-#: NEEDS WORK
 msgid "HP Scanners"
 msgstr "Scanere HP"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
-#: NEEDS WORK
 msgid "Configure and use HP scanning devices"
 msgstr "Configurează și folosește dispozitivele de scanare HP"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
-#: NEEDS WORK
 msgid "Configure Kvantum Theme"
 msgstr "Configurează tema Kvantum"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
-#: NEEDS WORK
 msgid "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
 msgstr "Pentru ca configurația Kvantum să funcționeze, aplică tema Kvantum în 'Stil aplicație'."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
-#: NEEDS WORK
 msgid "USB Device Formatter"
 msgstr "Formatter de dispozitive USB"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
-#: NEEDS WORK
 msgid "Format a USB device"
 msgstr "Formatează un dispozitiv USB"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
-#: NEEDS WORK
 msgid "USB Image Writer"
 msgstr "Scriitor de imagini USB"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
-#: NEEDS WORK
 msgid "Create a bootable USB device"
 msgstr "Creează un dispozitiv USB bootabil"
 # 
@@ -544,12 +514,10 @@ msgid "Configure webcam or capture card"
 msgstr "Configurați camera web sau placa de captură"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
-#: NEEDS WORK
 msgid "Adjust settings and control webcams or video capture devices"
 msgstr "Ajustați setările și controlați camerele web sau dispozitivele de captură video."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
-#: NEEDS WORK
 msgid "Configure accessibility options for users with special needs"
 msgstr "Configurează opțiunile de accesibilitate pentru utilizatorii cu nevoi speciale"
 # 
@@ -558,17 +526,14 @@ msgid "Virtual desktops and activities"
 msgstr "Desktopuri virtuale și activități"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
-#: NEEDS WORK
 msgid "Create more than one virtual work environment by switching between them."
 msgstr "Creează mai mult de un mediu de lucru virtual prin comutarea între ele."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
-#: NEEDS WORK
 msgid "Manage applications that start automatically on login"
 msgstr "Gestiona aplicațiile care pornesc automat la autentificare"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
-#: NEEDS WORK
 msgid ""
 "Enabling search can consume significant memory and processing resources. This may cause the system "
 "to slow down, depending on the number of user files."
@@ -577,117 +542,94 @@ msgstr ""
 "cauza încetinirea sistemului, în funcție de numărul de fișiere ale utilizatorului."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
-#: NEEDS WORK
 msgid "Connect and manage Bluetooth devices"
 msgstr "Conectează și gestionează dispozitive Bluetooth"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
-#: NEEDS WORK
 msgid "Manage Thunderbolt devices and security settings"
 msgstr "Gestionați dispozitivele Thunderbolt și setările de securitate"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
-#: NEEDS WORK
 msgid "Adjust date, time and timezone."
 msgstr "Ajustați data, ora și fusul orar."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
-#: NEEDS WORK
 msgid "Customize the color scheme of your desktop environment"
 msgstr "Personalizați schema de culori a mediului desktop."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
-#: NEEDS WORK
 msgid "Select which applications to use for specific tasks"
 msgstr "Selectați ce aplicații să utilizați pentru sarcini specifice."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
-#: NEEDS WORK
 msgid "Change mouse cursor appearance and themes"
 msgstr "Schimbă aspectul și temele cursorului mouse-ului."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
-#: NEEDS WORK
 msgid "Configure default paths for documents, downloads and other folders"
 msgstr "Configurează căile implicite pentru documente, descărcări și alte foldere."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
-#: NEEDS WORK
 msgid "Change the visual appearance of the Plasma desktop"
 msgstr "Schimbă aspectul vizual al desktopului Plasma."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
-#: NEEDS WORK
 msgid "Configure which applications open specific file types"
 msgstr "Configurează ce aplicații deschid tipuri specifice de fișiere"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
-#: NEEDS WORK
 msgid "Manage permissions for Flatpak applications"
 msgstr "Gestionați permisiunile pentru aplicațiile Flatpak"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
-#: NEEDS WORK
 msgid "Install and configure system fonts and typography settings"
 msgstr "Instalați și configurați fonturile de sistem și setările de tipografie"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
-#: NEEDS WORK
 msgid "Configure game controllers and joysticks"
 msgstr "Configurează controlerele de joc și joystick-urile"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
-#: NEEDS WORK
 msgid "Change the icon theme used throughout the system"
 msgstr "Schimbă tema pictogramelor utilizată în întregul sistem."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
-#: NEEDS WORK
 msgid "Configure digital camera integration with your system"
 msgstr "Configurează integrarea camerei digitale cu sistemul tău."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
-#: NEEDS WORK
 msgid "Manage system services running in the background"
 msgstr "Gestiona serviciile de sistem care rulează în fundal"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
-#: NEEDS WORK
 msgid "Layout settings, shortcuts and other options."
 msgstr "Setări de aspect, comenzi rapide și alte opțiuni."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
-#: NEEDS WORK
 msgid "Configure monitors, resolution, and screen arrangement"
 msgstr "Configurează monitoarele, rezoluția și aranjamentul ecranului"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-#: NEEDS WORK
 msgid "Window Decorations"
 msgstr "Decorațiuni Fereastră"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
-#: NEEDS WORK
 msgid "Change the appearance of window title bars and borders"
 msgstr "Schimbați aspectul barelor de titlu ale ferestrelor și al marginilor."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
-#: NEEDS WORK
 msgid "Configure visual effects and animations for the desktop"
 msgstr "Configurează efectele vizuale și animațiile pentru desktop."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
-#: NEEDS WORK
 msgid "Configure how windows behave and interact"
 msgstr "Configurează modul în care feronierul se comportă și interacționează."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
-#: NEEDS WORK
 msgid "Configure mouse sensitivity, buttons and behavior"
 msgstr "Configurează sensibilitatea mouse-ului, butoanele și comportamentul."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
-#: NEEDS WORK
 msgid ""
 "Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile "
 "broadband and others)."
@@ -696,122 +638,98 @@ msgstr ""
 "bandă mobilă și altele)."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
-#: NEEDS WORK
 msgid "QEFI Entry Manager"
 msgstr "Manager de Intrare QEFI"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
-#: NEEDS WORK
 msgid "Manage and configure boot entries for UEFI systems"
 msgstr "Gestionați și configurați intrările de boot pentru sistemele UEFI"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
-#: NEEDS WORK
 msgid "Configure system and application notifications"
 msgstr "Configurează notificările sistemului și aplicațiilor"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
-#: NEEDS WORK
 msgid "Boot Screen"
 msgstr "Ecran de pornire"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-#: NEEDS WORK
 msgid "Change the splash screen shown during system startup"
 msgstr "Schimbați ecranul de pornire afișat în timpul pornirii sistemului."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
-#: NEEDS WORK
 msgid "Configure energy saving and battery settings"
 msgstr "Configurează setările de economisire a energiei și ale bateriei"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
-#: NEEDS WORK
 msgid "Configure network proxy settings for internet access"
 msgstr "Configurează setările proxy de rețea pentru acces la internet"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
-#: NEEDS WORK
 msgid "Manage the history of recently accessed files"
 msgstr "Gestionează istoricul fișierelor accesate recent"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
-#: NEEDS WORK
 msgid "Configure language, region, and format settings"
 msgstr "Configurează setările de limbă, regiune și format."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
-#: NEEDS WORK
 msgid "Configure screen locking settings and appearance"
 msgstr "Configurează setările de blocare a ecranului și aspectul."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
-#: NEEDS WORK
 msgid "Configure the login screen appearance and behavior"
 msgstr "Configurează aspectul și comportamentul ecranului de autentificare"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
-#: NEEDS WORK
 msgid "Desktop Session"
 msgstr "Sesiune Desktop"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
-#: NEEDS WORK
 msgid "Configure session startup and shutdown behavior"
 msgstr "Configurează comportamentul de pornire și oprire a sesiunii."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
-#: NEEDS WORK
 msgid "Configure sound effects for system events"
 msgstr "Configurează efectele sonore pentru evenimentele sistemului"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
-#: NEEDS WORK
 msgid "Configure the splash screen shown while starting applications"
 msgstr "Configurează ecranul de pornire afișat în timpul lansării aplicațiilor."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
-#: NEEDS WORK
 msgid "Configure the visual appearance of applications"
 msgstr "Configurează aspectul vizual al aplicațiilor"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
-#: NEEDS WORK
 msgid "Configure drawing tablets and stylus settings"
 msgstr "Configurează setările tabletelor grafice și ale stilourilor."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
-#: NEEDS WORK
 msgid "Configure laptop touchpad behavior and gestures"
 msgstr "Configurează comportamentul și gesturile touchpad-ului laptopului."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
-#: NEEDS WORK
 msgid "Configure touchscreen behavior and calibration"
 msgstr "Configurează comportamentul și calibrarea ecranului tactil"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
-#: NEEDS WORK
 msgid "Configure trash bin behavior and cleanup settings"
 msgstr "Configurează comportamentul coșului de gunoi și setările de curățare"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
-#: NEEDS WORK
 msgid "Change desktop background image and slideshow settings"
 msgstr "Schimbați imaginea de fundal a desktopului și setările pentru prezentarea de diapozitive."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
-#: NEEDS WORK
 msgid "Configure the system's landing page and default widgets."
 msgstr "Configurează pagina de destinație a sistemului și widget-urile implicite."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
-#: NEEDS WORK
 msgid "Access your files and folders."
 msgstr "Accesați fișierele și folderele dvs."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
-#: NEEDS WORK
 msgid ""
 "This program can transfer files between smartphones, tablets, and other computers. With it, you "
 "can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, "
@@ -830,27 +748,22 @@ msgid "Access the command terminal."
 msgstr "Accesați terminalul de comandă."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1172
-#: NEEDS WORK
 msgid "KWalletManager"
 msgstr "KWalletManager"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
-#: NEEDS WORK
 msgid "Tool for managing KDE wallets"
 msgstr "Instrument pentru gestionarea portofelelor KDE"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
-#: NEEDS WORK
 msgid "Add or remove programs installed on the system"
 msgstr "Adăugați sau eliminați programele instalate pe sistem."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
-#: NEEDS WORK
 msgid "Connect to internet using Android"
 msgstr "Conectează-te la internet folosind Android"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
-#: NEEDS WORK
 msgid "Connect to internet using iOS"
 msgstr "Conectează-te la internet folosind iOS"
 # 
@@ -866,8 +779,15 @@ msgstr "Instantanee și copii de siguranță"
 msgid "Create or activate restore points"
 msgstr "Creează sau activează puncte de restaurare"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+msgid "Biglinux Settings"
+msgstr "Setări Biglinux"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
+msgid "Simplify switching BigLinux operation."
+msgstr "Simplifică comutarea operațiunii BigLinux."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
-#: NEEDS WORK
 msgid "BigLinux Themes"
 msgstr "Teme BigLinux"
 # 
@@ -876,16 +796,13 @@ msgid "We provide complete configurations for you to select in an extremely simp
 msgstr "Oferim configurații complete pentru a fi selectate într-un mod extrem de simplu."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
-#: NEEDS WORK
 msgid "Configure feedback and usage report preferences."
 msgstr "Configurează preferințele pentru feedback și raportul de utilizare."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
-#: NEEDS WORK
 msgid "Configure automatic actions for when devices are connected."
 msgstr "Configurează acțiuni automate pentru atunci când dispozitivele sunt conectate."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
-#: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "Configurează opțiunile de căutare și indexare în Plasma."

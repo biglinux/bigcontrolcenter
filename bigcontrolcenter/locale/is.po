@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
@@ -15,7 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-#: NEEDS WORK
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
 "\n"
@@ -28,9 +26,80 @@ msgstr ""
 "Ég mun opna í stillingarmóti.\n"
 "Breytingarnar sem gerðar eru má sjá\n"
 "í myndinni frá vefmyndavélinni þinni í öðrum forritum."
-#: NEEDS WORK
 msgid "Webcam"
 msgstr "Vefmyndavél"
+msgid "Aguarde, carregando..."
+msgstr "Wait, loading..."
+msgid "Introdução ao BigLinux"
+msgstr "Pengenalan BigLinux"
+msgid "Bem vindo ao BigLinux"
+msgstr "Selamat datang di BigLinux"
+msgid "Comece com algumas etapas simples."
+msgstr "Mulai dengan beberapa langkah sederhana."
+msgid "Mostrar na inicialização"
+msgstr "Show at startup"
+msgid "Olá"
+msgstr "Hello"
+msgid "Ajustes iniciais"
+msgstr "Initial Setup"
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+msgstr "We provide complete settings for you to select in an extremely simple way."
+msgid "Configurações da Tela"
+msgstr "Screen Settings"
+msgid "Escolha seu navegador padrão"
+msgstr "Pilih peramban default Anda"
+msgid "Defina seus programas padrões."
+msgstr "Setel program baku Anda."
+msgid "Outros navegadores"
+msgstr "Lain kali yang lain"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "KDE Connect"
+msgid ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
+"iPhone."
+msgstr ""
+"KDE Connect is an application that facilitates wireless communication and data transfer between "
+"devices on local networks. Available on the Google Play Store for Android and Apple Store for "
+"iPhone."
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Pemasangan Pemandu dan Maklumat Peranti Keras"
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Install or Remove Drivers and Firmware easily."
+msgid "Impressoras"
+msgstr "Printers"
+msgid "Conheça alguns recursos"
+msgstr "Discover some features"
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "Our system is collaborative, come be part of this evolution. Check out the news!"
+# 
+# #-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 694
+msgid "Big Store"
+msgstr "Toko Besar"
+msgid "Web Apps"
+msgstr "Aplikasi Web"
+msgid "Redutor de Ruídos"
+msgstr "Noise Reduction"
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Setel suara sistem (TTS)"
+msgid "OCR para PDF"
+msgstr "OCR to PDF"
+msgid "Doação e Redes sociais"
+msgstr "Donation and Social Media"
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr "Sumbangan anda sangat penting untuk projek ini dan ikuti media sosial kami."
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "Congratulations, you have completed the first steps to using BigLinux."
+msgid "Aguarde..."
+msgstr "Wait..."
+msgid "Verificando conexão com a Internet..."
+msgstr "Checking Internet connection..."
+msgid "Sem conexão com a Internet..."
+msgstr "No Internet connection..."
 msgid "Waydroid"
 msgstr "Waydroid"
 msgid ""
@@ -45,16 +114,6 @@ msgid "Nenhuma configuração foi removida!"
 msgstr "No configurations have been removed!"
 msgid "Não existem configurações para remover."
 msgstr "There are no settings to remove."
-msgid "ID do Android:"
-msgstr "ID Android:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"Tidak dapat mengambil ID Android. \\n"
-"\\n"
-"Perhatian: Waydroid harus terbuka."
 msgid "Remover"
 msgstr "Hapus"
 msgid "Maximizado"
@@ -127,78 +186,117 @@ msgid "Parar o Waydroid"
 msgstr "Stop Waydroid"
 msgid "Iniciar o Waydroid"
 msgstr "Start Waydroid"
-msgid "Introdução ao BigLinux"
-msgstr "Pengenalan BigLinux"
-msgid "Bem vindo ao BigLinux"
-msgstr "Selamat datang di BigLinux"
-msgid "Comece com algumas etapas simples."
-msgstr "Mulai dengan beberapa langkah sederhana."
-msgid "Mostrar na inicialização"
-msgstr "Show at startup"
-msgid "Olá"
-msgstr "Hello"
-msgid "Ajustes iniciais"
-msgstr "Initial Setup"
-msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-msgstr "We provide complete settings for you to select in an extremely simple way."
-msgid "Configurações da Tela"
-msgstr "Screen Settings"
-msgid "Escolha seu navegador padrão"
-msgstr "Pilih peramban default Anda"
-msgid "Defina seus programas padrões."
-msgstr "Setel program baku Anda."
-msgid "Outros navegadores"
-msgstr "Lain kali yang lain"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-msgid "KDE Connect"
-msgstr "KDE Connect"
+msgid "ID do Android:"
+msgstr "ID Android:"
 msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
-"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
-"iPhone."
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
 msgstr ""
-"KDE Connect is an application that facilitates wireless communication and data transfer between "
-"devices on local networks. Available on the Google Play Store for Android and Apple Store for "
-"iPhone."
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Pemasangan Pemandu dan Maklumat Peranti Keras"
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "Install or Remove Drivers and Firmware easily."
-msgid "Impressoras"
-msgstr "Printers"
-msgid "Conheça alguns recursos"
-msgstr "Discover some features"
-msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
-msgstr "Our system is collaborative, come be part of this evolution. Check out the news!"
+"Tidak dapat mengambil ID Android. \\n"
+"\\n"
+"Perhatian: Waydroid harus terbuka."
 # 
-# #-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 694
-msgid "Big Store"
-msgstr "Toko Besar"
-msgid "Web Apps"
-msgstr "Aplikasi Web"
-msgid "Redutor de Ruídos"
-msgstr "Noise Reduction"
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Setel suara sistem (TTS)"
-msgid "OCR para PDF"
-msgstr "OCR to PDF"
-msgid "Doação e Redes sociais"
-msgstr "Donation and Social Media"
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "Sumbangan anda sangat penting untuk projek ini dan ikuti media sosial kami."
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Congratulations, you have completed the first steps to using BigLinux."
-msgid "Aguarde, carregando..."
-msgstr "Wait, loading..."
-msgid "Aguarde..."
-msgstr "Wait..."
-msgid "Verificando conexão com a Internet..."
-msgstr "Checking Internet connection..."
-msgid "Sem conexão com a Internet..."
-msgstr "No Internet connection..."
+msgid "Main"
+msgstr "Utama"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Jaringan dan Internet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Telefon"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Sesuaikan"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Wilayah dan Bahasa"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimedia"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Akaun"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Peranti"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Sistem"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Tentang"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "lain"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Pusat Kontrol"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "Um Control Center"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+msgid "Categories"
+msgstr "Flokkar"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+msgid "Programs"
+msgstr "Forritin"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Cari..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Fram að sértækri skipun: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Ræsir: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Villa við að ræsa forrit: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+msgid "BigLinux Team"
+msgstr "BigLinux teymi"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Teymi"
 # 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
@@ -211,7 +309,6 @@ msgid "Connect your Android smartphone to the Linux computer using a USB cable."
 msgstr "Sambungkan smartphone Android Anda ke komputer Linux menggunakan kabel USB."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
 msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
 msgstr ""
 "Á opna 'Stillingar' á snjallsímanum þínum og farðu í 'Nettengingar & Internet' eða 'Tengingar & "
@@ -278,7 +375,6 @@ msgstr ""
 "iOS anda disambungkan ke rangkaian Wi-Fi sebelum mengaktifkan pengikatan."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
 msgid ""
 "To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
 "these steps:"
@@ -291,115 +387,6 @@ msgstr ""
 msgid "Close"
 msgstr "Tutup"
 # 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Pusat Kontrol"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "Um Control Center"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "Flokkar"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "Forritin"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Cari..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Fram að sértækri skipun: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Ræsir: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Villa við að ræsa forrit: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "BigLinux teymi"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Teymi"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Utama"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Jaringan dan Internet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Telefon"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Sesuaikan"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Wilayah dan Bahasa"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimedia"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Akaun"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Peranti"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Sistem"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Tentang"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "lain"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
 msgstr "Konfigurasikan AppimageLauncher"
@@ -409,7 +396,6 @@ msgid "Choose the behavior of programs available in .appimage"
 msgstr "Pilih perilaku program yang tersedia dalam .appimage"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
-#: NEEDS WORK
 msgid "Search for Zeroconf servers"
 msgstr "Leitaðu að Zeroconf þjónustum"
 # 
@@ -418,12 +404,10 @@ msgid "Expand device support"
 msgstr "Perluas dukungan perangkat"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
-#: NEEDS WORK
 msgid "Detailed information about your computer"
 msgstr "Nákvæmar upplýsingar um tölvuna þína"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
-#: NEEDS WORK
 msgid "System foundation and video card support"
 msgstr "Kerfisgrunnur og stuðningur fyrir myndkort"
 # 
@@ -440,7 +424,6 @@ msgid "Search for VNC servers"
 msgstr "Cari pelayan VNC"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
-#: NEEDS WORK
 msgid "Cross-platform buildsystem"
 msgstr "Fjölbreytt byggikerfi"
 # 
@@ -449,67 +432,54 @@ msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Pengurus Audio Lanjutan - Alsamixer"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
-#: NEEDS WORK
 msgid "JamesDSP improving music and audio quality"
 msgstr "JamesDSP bætir tónlist og hljóðgæði"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
-#: NEEDS WORK
 msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
 msgstr "Bættu hljóðið þitt með jafnvægisstillum, bassahækkun, umhverfi og öðrum áhrifum."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
-#: NEEDS WORK
 msgid "Partition or Format"
 msgstr "Partisjon eða Formatera"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
-#: NEEDS WORK
 msgid "HP Printers"
 msgstr "HP prentarar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
-#: NEEDS WORK
 msgid "Check status, ink level, and maintenance."
 msgstr "Athugaðu stöðu, blekstig, og viðhald."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
-#: NEEDS WORK
 msgid "HP Scanners"
 msgstr "HP skannar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
-#: NEEDS WORK
 msgid "Configure and use HP scanning devices"
 msgstr "Stilltu og notaðu HP skönnunarvörur"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
-#: NEEDS WORK
 msgid "Configure Kvantum Theme"
 msgstr "Stillir Kvantum þema"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
-#: NEEDS WORK
 msgid "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
 msgstr "Til að Kvantum stilling virki, beittu Kvantum þema í 'Forritastíl'."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
-#: NEEDS WORK
 msgid "USB Device Formatter"
 msgstr "USB tæki sniðari"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
-#: NEEDS WORK
 msgid "Format a USB device"
 msgstr "Formataðu USB tæki"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
-#: NEEDS WORK
 msgid "USB Image Writer"
 msgstr "USB myndaskrifari"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
-#: NEEDS WORK
 msgid "Create a bootable USB device"
 msgstr "Búðu upp USB tæki sem er ræsanlegt"
 # 
@@ -542,12 +512,10 @@ msgid "Configure webcam or capture card"
 msgstr "Konfigurasikan webcam atau kartu tangkap"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
-#: NEEDS WORK
 msgid "Adjust settings and control webcams or video capture devices"
 msgstr "Aðlaga stillingar og stjórna vefmyndavélum eða myndbandsupptökutækjum"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
-#: NEEDS WORK
 msgid "Configure accessibility options for users with special needs"
 msgstr "Stilltu aðgengisvalkosti fyrir notendur með sérþarfir"
 # 
@@ -556,17 +524,14 @@ msgid "Virtual desktops and activities"
 msgstr "Desktop maya maya dan aktiviti"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
-#: NEEDS WORK
 msgid "Create more than one virtual work environment by switching between them."
 msgstr "Búðu til fleiri en eina sýndarvinnuumhverfi með því að skipta á milli þeirra."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
-#: NEEDS WORK
 msgid "Manage applications that start automatically on login"
 msgstr "Stjórna forritum sem byrja sjálfkrafa við innskráningu"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
-#: NEEDS WORK
 msgid ""
 "Enabling search can consume significant memory and processing resources. This may cause the system "
 "to slow down, depending on the number of user files."
@@ -575,117 +540,94 @@ msgstr ""
 "á sér, allt eftir fjölda notendaskráa."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
-#: NEEDS WORK
 msgid "Connect and manage Bluetooth devices"
 msgstr "Tengdu og stjórna Bluetooth tækjum"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
-#: NEEDS WORK
 msgid "Manage Thunderbolt devices and security settings"
 msgstr "Stjórna Thunderbolt tækjum og öryggisstillingum"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
-#: NEEDS WORK
 msgid "Adjust date, time and timezone."
 msgstr "Aðlaga dagsetningu, tíma og tímasvæði."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
-#: NEEDS WORK
 msgid "Customize the color scheme of your desktop environment"
 msgstr "Sérðu litaskema skrifborðsumhverfisins."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
-#: NEEDS WORK
 msgid "Select which applications to use for specific tasks"
 msgstr "Veldu hvaða forrit á að nota fyrir ákveðin verkefni"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
-#: NEEDS WORK
 msgid "Change mouse cursor appearance and themes"
 msgstr "Breyta útliti músar og þemu"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
-#: NEEDS WORK
 msgid "Configure default paths for documents, downloads and other folders"
 msgstr "Stilltuð sjálfgefin slóðir fyrir skjöl, niðurhal og aðrar möppur"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
-#: NEEDS WORK
 msgid "Change the visual appearance of the Plasma desktop"
 msgstr "Breyta sjónræna útlit Plasma skrifborðsins"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
-#: NEEDS WORK
 msgid "Configure which applications open specific file types"
 msgstr "Stilltuðu hvaða forrit opna ákveðna skráargerðir."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
-#: NEEDS WORK
 msgid "Manage permissions for Flatpak applications"
 msgstr "Stjórna heimildum fyrir Flatpak forrit."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
-#: NEEDS WORK
 msgid "Install and configure system fonts and typography settings"
 msgstr "Settu upp og stillðu kerfisskrifstafi og leturfræði."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
-#: NEEDS WORK
 msgid "Configure game controllers and joysticks"
 msgstr "Stilltuðu leikstýringar og joysticka"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
-#: NEEDS WORK
 msgid "Change the icon theme used throughout the system"
 msgstr "Breyta táknasniði sem notað er um allt kerfið"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
-#: NEEDS WORK
 msgid "Configure digital camera integration with your system"
 msgstr "Stilltuðu stafræna myndavélarsamþættingu við kerfið þitt."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
-#: NEEDS WORK
 msgid "Manage system services running in the background"
 msgstr "Stjórna kerfisþjónustum sem keyra í bakgrunni"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
-#: NEEDS WORK
 msgid "Layout settings, shortcuts and other options."
 msgstr "Uppsetningar fyrir útlit, flýtilyklar og aðrar valkostir."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
-#: NEEDS WORK
 msgid "Configure monitors, resolution, and screen arrangement"
 msgstr "Stilltuðu skjáina, upplausnina og skipulag skjáanna"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-#: NEEDS WORK
 msgid "Window Decorations"
 msgstr "Gluggar glugga"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
-#: NEEDS WORK
 msgid "Change the appearance of window title bars and borders"
 msgstr "Breyta útliti gluggatitla og jaðra."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
-#: NEEDS WORK
 msgid "Configure visual effects and animations for the desktop"
 msgstr "Stilltuðu sjónrænar áhrif og hreyfingar fyrir skrifborðið"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
-#: NEEDS WORK
 msgid "Configure how windows behave and interact"
 msgstr "Stillirðu hvernig gluggar hegða sér og eiga samskipti."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
-#: NEEDS WORK
 msgid "Configure mouse sensitivity, buttons and behavior"
 msgstr "Stilltu músar næmni, takkar og hegðun"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
-#: NEEDS WORK
 msgid ""
 "Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile "
 "broadband and others)."
@@ -694,122 +636,98 @@ msgstr ""
 "farsímagagnasamband og annað)."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
-#: NEEDS WORK
 msgid "QEFI Entry Manager"
 msgstr "QEFI Inngangsstjóri"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
-#: NEEDS WORK
 msgid "Manage and configure boot entries for UEFI systems"
 msgstr "Stjórna og stilla ræsiskrár fyrir UEFI kerfi"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
-#: NEEDS WORK
 msgid "Configure system and application notifications"
 msgstr "Stilltuðu kerfis- og forritatillýsingar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
-#: NEEDS WORK
 msgid "Boot Screen"
 msgstr "Ræsiskjár"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-#: NEEDS WORK
 msgid "Change the splash screen shown during system startup"
 msgstr "Breyta kynningarskjánum sem sýndur er við kerfisupphaf."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
-#: NEEDS WORK
 msgid "Configure energy saving and battery settings"
 msgstr "Stilltu orku- og rafhlöðustillingar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
-#: NEEDS WORK
 msgid "Configure network proxy settings for internet access"
 msgstr "Stilltu netkerfisproxy stillingar fyrir internetaðgang"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
-#: NEEDS WORK
 msgid "Manage the history of recently accessed files"
 msgstr "Stjórna sögunni yfir nýlega aðgengilegar skrár"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
-#: NEEDS WORK
 msgid "Configure language, region, and format settings"
 msgstr "Stilltu tungumál, svæði og sniðstillingar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
-#: NEEDS WORK
 msgid "Configure screen locking settings and appearance"
 msgstr "Stilltuðu stillingar og útlit skjáhlífðar."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
-#: NEEDS WORK
 msgid "Configure the login screen appearance and behavior"
 msgstr "Stillir útlit og hegðun innskráningarskjásins."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
-#: NEEDS WORK
 msgid "Desktop Session"
 msgstr "Svið skrifborðs"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
-#: NEEDS WORK
 msgid "Configure session startup and shutdown behavior"
 msgstr "Stilltuðu upp hegðun við upphaf og lokun sessjónar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
-#: NEEDS WORK
 msgid "Configure sound effects for system events"
 msgstr "Stilltu hljóðáhrif fyrir kerfisviðburði"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
-#: NEEDS WORK
 msgid "Configure the splash screen shown while starting applications"
 msgstr "Stilltuðu upp skyndiskjáinn sem sýndur er meðan á forritum stendur."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
-#: NEEDS WORK
 msgid "Configure the visual appearance of applications"
 msgstr "Stillir sjónræna útlit forrita"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
-#: NEEDS WORK
 msgid "Configure drawing tablets and stylus settings"
 msgstr "Stilltuðu teikniplur og stillingar fyrir stíla."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
-#: NEEDS WORK
 msgid "Configure laptop touchpad behavior and gestures"
 msgstr "Stilltuðu hegðun og hreyfingar fyrir snertiplötuna á fartölvunni."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
-#: NEEDS WORK
 msgid "Configure touchscreen behavior and calibration"
 msgstr "Stilltuðu snertiskjáshegðun og kalibreringu"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
-#: NEEDS WORK
 msgid "Configure trash bin behavior and cleanup settings"
 msgstr "Stilltuðu hegðun ruslatunnu og hreinsunarstillingar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
-#: NEEDS WORK
 msgid "Change desktop background image and slideshow settings"
 msgstr "Breyta skrifborðsbakgrunnsmynd og rennslisstillingar"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
-#: NEEDS WORK
 msgid "Configure the system's landing page and default widgets."
 msgstr "Stilltuðu aðkomusíðu kerfisins og sjálfgefnar smáforrit."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
-#: NEEDS WORK
 msgid "Access your files and folders."
 msgstr "Aðgangur að skrám og möppum."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
-#: NEEDS WORK
 msgid ""
 "This program can transfer files between smartphones, tablets, and other computers. With it, you "
 "can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, "
@@ -828,27 +746,22 @@ msgid "Access the command terminal."
 msgstr "Akses terminal perintah."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1172
-#: NEEDS WORK
 msgid "KWalletManager"
 msgstr "KWalletStjóri"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
-#: NEEDS WORK
 msgid "Tool for managing KDE wallets"
 msgstr "Tól fyrir að stjórna KDE veski."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
-#: NEEDS WORK
 msgid "Add or remove programs installed on the system"
 msgstr "Bæta við eða fjarlægja forrit sem eru uppsett á kerfinu"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
-#: NEEDS WORK
 msgid "Connect to internet using Android"
 msgstr "Tengdu tengingu við internetið með Android."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
-#: NEEDS WORK
 msgid "Connect to internet using iOS"
 msgstr "Tengdu tengingu við internetið með iOS"
 # 
@@ -864,8 +777,15 @@ msgstr "Snapshot dan sandaran"
 msgid "Create or activate restore points"
 msgstr "Buat atau aktifkan titik pemulihan"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+msgid "Biglinux Settings"
+msgstr "Biglinux Stillingar"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
+msgid "Simplify switching BigLinux operation."
+msgstr "Einfacha skipt BigLinux aðgerð."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
-#: NEEDS WORK
 msgid "BigLinux Themes"
 msgstr "BigLinux Þemu"
 # 
@@ -874,16 +794,13 @@ msgid "We provide complete configurations for you to select in an extremely simp
 msgstr "Kami menyediakan konfigurasi lengkap untuk Anda pilih dengan cara yang sangat sederhana."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
-#: NEEDS WORK
 msgid "Configure feedback and usage report preferences."
 msgstr "Stilltuðu til aðlaga endurgjöf og notkunarskýrslur."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
-#: NEEDS WORK
 msgid "Configure automatic actions for when devices are connected."
 msgstr "Stilltu sjálfvirkar aðgerðir þegar tæki eru tengd."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
-#: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "Stillir leitar- og skráningaraðgerðir í Plasma."

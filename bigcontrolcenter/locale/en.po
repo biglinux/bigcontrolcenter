@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
@@ -34,6 +33,140 @@ msgid "Webcam"
 msgstr "Webcam"
 
 #
+msgid "Aguarde, carregando..."
+msgstr "Aguarde, carregando..."
+
+#
+msgid "Introdução ao BigLinux"
+msgstr "Introdução ao BigLinux"
+
+#
+msgid "Bem vindo ao BigLinux"
+msgstr "Bem vindo ao BigLinux"
+
+#
+msgid "Comece com algumas etapas simples."
+msgstr "Comece com algumas etapas simples."
+
+#
+msgid "Mostrar na inicialização"
+msgstr "Mostrar na inicialização"
+
+#
+msgid "Olá"
+msgstr "Olá"
+
+#
+msgid "Ajustes iniciais"
+msgstr "Ajustes iniciais"
+
+#
+msgid ""
+"Disponiblizamos configurações completas para você selecionar de forma "
+"extremamente simples."
+msgstr ""
+"Disponiblizamos configurações completas para você selecionar de forma "
+"extremamente simples."
+
+#
+msgid "Configurações da Tela"
+msgstr "Configurações da Tela"
+
+#
+msgid "Escolha seu navegador padrão"
+msgstr "Escolha seu navegador padrão"
+
+#
+msgid "Defina seus programas padrões."
+msgstr "Defina seus programas padrões."
+
+#
+msgid "Outros navegadores"
+msgstr "Outros navegadores"
+
+#
+msgid "KDE Connect"
+msgstr "KDE Connect"
+
+#
+msgid ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
+"transferência de dados entre dispositivos em redes locais. Disponível na "
+"Google Play Store para Android e Apple Store para iPhone."
+msgstr ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
+"transferência de dados entre dispositivos em redes locais. Disponível na "
+"Google Play Store para Android e Apple Store para iPhone."
+
+#
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "Instalação de Driver e Informações de Hardware"
+
+#
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "Instalar ou Remover Drivers e Firmwares de forma simples."
+
+#
+msgid "Impressoras"
+msgstr "Impressoras"
+
+#
+msgid "Conheça alguns recursos"
+msgstr "Conheça alguns recursos"
+
+#
+msgid ""
+"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
+"novidades!"
+msgstr ""
+"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
+"novidades!"
+
+#
+msgid "Big Store"
+msgstr "Big Store"
+
+#
+msgid "Web Apps"
+msgstr "Web Apps"
+
+#
+msgid "Redutor de Ruídos"
+msgstr "Redutor de Ruídos"
+
+#
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "Configurar a voz do sistema (TTS)"
+
+#
+msgid "OCR para PDF"
+msgstr "OCR para PDF"
+
+#
+msgid "Doação e Redes sociais"
+msgstr "Doação e Redes sociais"
+
+#
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr "Sua doação é muito importante para o projeto e siga as redes sociais."
+
+#
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+
+#
+msgid "Aguarde..."
+msgstr "Aguarde..."
+
+#
+msgid "Verificando conexão com a Internet..."
+msgstr "Verificando conexão com a Internet..."
+
+#
+msgid "Sem conexão com a Internet..."
+msgstr "Sem conexão com a Internet..."
+
+#
 msgid "Waydroid"
 msgstr "Waydroid"
 
@@ -56,18 +189,6 @@ msgstr "Nenhuma configuração foi removida!"
 #
 msgid "Não existem configurações para remover."
 msgstr "Não existem configurações para remover."
-
-#
-msgid "ID do Android:"
-msgstr "ID do Android:"
-
-#
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
-"estar aberto."
-msgstr ""
-"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
-"estar aberto."
 
 #
 msgid "Remover"
@@ -202,138 +323,127 @@ msgid "Iniciar o Waydroid"
 msgstr "Iniciar o Waydroid"
 
 #
-msgid "Introdução ao BigLinux"
-msgstr "Introdução ao BigLinux"
-
-#
-msgid "Bem vindo ao BigLinux"
-msgstr "Bem vindo ao BigLinux"
-
-#
-msgid "Comece com algumas etapas simples."
-msgstr "Comece com algumas etapas simples."
-
-#
-msgid "Mostrar na inicialização"
-msgstr "Mostrar na inicialização"
-
-#
-msgid "Olá"
-msgstr "Olá"
-
-#
-msgid "Ajustes iniciais"
-msgstr "Ajustes iniciais"
+msgid "ID do Android:"
+msgstr "ID do Android:"
 
 #
 msgid ""
-"Disponiblizamos configurações completas para você selecionar de forma "
-"extremamente simples."
+"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
+"estar aberto."
 msgstr ""
-"Disponiblizamos configurações completas para você selecionar de forma "
-"extremamente simples."
+"Não foi possível resgatar o ID do Android. \\n\\nAtenção: Waydroid precisa "
+"estar aberto."
 
 #
-msgid "Configurações da Tela"
-msgstr "Configurações da Tela"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 81
+msgid "Main"
+msgstr "Main"
 
 #
-msgid "Escolha seu navegador padrão"
-msgstr "Escolha seu navegador padrão"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 87
+msgid "Network and Internet"
+msgstr "Network and Internet"
 
 #
-msgid "Defina seus programas padrões."
-msgstr "Defina seus programas padrões."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 93
+msgid "Phone"
+msgstr "Phone"
 
 #
-msgid "Outros navegadores"
-msgstr "Outros navegadores"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 99
+msgid "Customize"
+msgstr "Customize"
 
 #
-msgid "KDE Connect"
-msgstr "KDE Connect"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 105
+msgid "Region and Language"
+msgstr "Region and Language"
 
 #
-msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
-"transferência de dados entre dispositivos em redes locais. Disponível na "
-"Google Play Store para Android e Apple Store para iPhone."
-msgstr ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a "
-"transferência de dados entre dispositivos em redes locais. Disponível na "
-"Google Play Store para Android e Apple Store para iPhone."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 111
+msgid "Multimedia"
+msgstr "Multimedia"
 
 #
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Instalação de Driver e Informações de Hardware"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 117
+msgid "Accounts"
+msgstr "Accounts"
 
 #
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "Instalar ou Remover Drivers e Firmwares de forma simples."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 123
+msgid "Devices"
+msgstr "Devices"
 
 #
-msgid "Impressoras"
-msgstr "Impressoras"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 129
+msgid "System"
+msgstr "System"
 
 #
-msgid "Conheça alguns recursos"
-msgstr "Conheça alguns recursos"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 135
+msgid "About"
+msgstr "About"
 
 #
-msgid ""
-"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
-"novidades!"
-msgstr ""
-"Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as "
-"novidades!"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 141
+msgid "Other"
+msgstr "Other"
 
 #
-msgid "Big Store"
-msgstr "Big Store"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 81
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 158
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 478
+msgid "Control Center"
+msgstr "Control Center"
 
 #
-msgid "Web Apps"
-msgstr "Web Apps"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "About Control Center"
 
 #
-msgid "Redutor de Ruídos"
-msgstr "Redutor de Ruídos"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 166
+msgid "Categories"
+msgstr "Categories"
 
 #
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Configurar a voz do sistema (TTS)"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 177
+msgid "Programs"
+msgstr "Programs"
 
 #
-msgid "OCR para PDF"
-msgstr "OCR para PDF"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 182
+msgid "Search..."
+msgstr "Search..."
 
 #
-msgid "Doação e Redes sociais"
-msgstr "Doação e Redes sociais"
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 430
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Executing special command: {0}"
 
 #
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "Sua doação é muito importante para o projeto e siga as redes sociais."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 434
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Launching: {0}"
 
 #
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 437
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Error launching program: {0}"
 
 #
-msgid "Aguarde, carregando..."
-msgstr "Aguarde, carregando..."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 480
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 486
+msgid "BigLinux Team"
+msgstr "BigLinux Team"
 
 #
-msgid "Aguarde..."
-msgstr "Aguarde..."
-
-#
-msgid "Verificando conexão com a Internet..."
-msgstr "Verificando conexão com a Internet..."
-
-#
-msgid "Sem conexão com a Internet..."
-msgstr "Sem conexão com a Internet..."
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 485
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Team"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 30
@@ -435,117 +545,6 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 153
 msgid "Close"
 msgstr "Close"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 81
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 158
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 478
-msgid "Control Center"
-msgstr "Control Center"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-msgid "About Control Center"
-msgstr "About Control Center"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 166
-msgid "Categories"
-msgstr "Categories"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 177
-msgid "Programs"
-msgstr "Programs"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 182
-msgid "Search..."
-msgstr "Search..."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 430
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Executing special command: {0}"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 434
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Launching: {0}"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 437
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Error launching program: {0}"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 480
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 486
-msgid "BigLinux Team"
-msgstr "BigLinux Team"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 485
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Team"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 81
-msgid "Main"
-msgstr "Main"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 87
-msgid "Network and Internet"
-msgstr "Network and Internet"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 93
-msgid "Phone"
-msgstr "Phone"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 99
-msgid "Customize"
-msgstr "Customize"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 105
-msgid "Region and Language"
-msgstr "Region and Language"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 111
-msgid "Multimedia"
-msgstr "Multimedia"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 117
-msgid "Accounts"
-msgstr "Accounts"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 123
-msgid "Devices"
-msgstr "Devices"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 129
-msgid "System"
-msgstr "System"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 135
-msgid "About"
-msgstr "About"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 141
-msgid "Other"
-msgstr "Other"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 453
@@ -1044,11 +1043,21 @@ msgstr "Create or activate restore points"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+msgid "Biglinux Settings"
+msgstr "Biglinux Settings"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
+msgid "Simplify switching BigLinux operation."
+msgstr "Simplify switching BigLinux operation."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1004
 msgid "BigLinux Themes"
 msgstr "BigLinux Themes"
 
 #
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1000
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1007
 msgid ""
 "We provide complete configurations for you to select in an extremely simple "
 "way."
@@ -1057,16 +1066,16 @@ msgstr ""
 "way."
 
 #
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1012
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1019
 msgid "Configure feedback and usage report preferences."
 msgstr "Configure feedback and usage report preferences."
 
 #
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1019
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1026
 msgid "Configure automatic actions for when devices are connected."
 msgstr "Configure automatic actions for when devices are connected."
 
 #
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1027
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1034
 msgid "Configure search and indexing options in Plasma."
 msgstr "Configure search and indexing options in Plasma."

@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
@@ -15,7 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-#: NEEDS WORK
 msgid ""
 "A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
 "\n"
@@ -28,9 +26,79 @@ msgstr ""
 "אפתח במצב הגדרה.\n"
 "השינויים שביצעת יכולים להיראות\n"
 "בתמונה של המצלמה שלך בתוכניות אחרות."
-#: NEEDS WORK
 msgid "Webcam"
 msgstr "מצלמת רשת"
+msgid "Aguarde, carregando..."
+msgstr "המתן, טוען..."
+msgid "Introdução ao BigLinux"
+msgstr "הכנסה ל־BigLinux"
+msgid "Bem vindo ao BigLinux"
+msgstr "ברוך הבא ל־BigLinux"
+msgid "Comece com algumas etapas simples."
+msgstr "התחל עם כמה שלבים פשוטים."
+msgid "Mostrar na inicialização"
+msgstr "הצג בהפעלה"
+msgid "Olá"
+msgstr "Iשלום"
+msgid "Ajustes iniciais"
+msgstr "הגדרות ראשוניות"
+msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
+msgstr "אנו מציעים הגדרות מלאות לבחירה בצורה קלה ביותר."
+msgid "Configurações da Tela"
+msgstr "הגדרות מסך"
+msgid "Escolha seu navegador padrão"
+msgstr "בחר את הדפדפן הראשי שלך"
+msgid "Defina seus programas padrões."
+msgstr "קבע את התוכניות המובילות שלך."
+msgid "Outros navegadores"
+msgstr "דפדפנים אחרים"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+msgid "KDE Connect"
+msgstr "חיבור KDE"
+msgid ""
+"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
+"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
+"iPhone."
+msgstr ""
+"KDE Connect הוא יישום המקל על תקשורת אלחוטית והעברת נתונים בין התקנים ברשתות מקומיות. זמין בחנות "
+"Google Play עבור Android ובחנות Apple עבור iPhone."
+msgid "Instalação de Driver e Informações de Hardware"
+msgstr "התקנת דרייבר ומידע על חומרה"
+msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
+msgstr "התקן או הסר דרייברים וקושחות בצורה פשוטה."
+msgid "Impressoras"
+msgstr "מדפסות"
+msgid "Conheça alguns recursos"
+msgstr "Meet some features"
+msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
+msgstr "המערכת שלנו היא שיתופית, הצטרף לתהליך התפתחות זה. בדוק את החידושים!"
+# 
+# #-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 694
+msgid "Big Store"
+msgstr "חנות גדולה"
+msgid "Web Apps"
+msgstr "אפליקציות רשת"
+msgid "Redutor de Ruídos"
+msgstr "מוריד רעשים"
+msgid "Configurar a voz do sistema (TTS)"
+msgstr "הגדרת קול המערכת (TTS)"
+msgid "OCR para PDF"
+msgstr "OCR ל־PDF"
+msgid "Doação e Redes sociais"
+msgstr "תרומה ורשתות חברתיות"
+msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
+msgstr "התרומה שלך חשובה מאוד לפרויקט והישאר מעודכן ברשתות החברתיות."
+msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
+msgstr "מזל טוב, השלמת את הצעדים הראשונים לשימוש ב-BigLinux."
+msgid "Aguarde..."
+msgstr "המתן..."
+msgid "Verificando conexão com a Internet..."
+msgstr "בודק חיבור לאינטרנט..."
+msgid "Sem conexão com a Internet..."
+msgstr "אין חיבור לאינטרנט..."
 msgid "Waydroid"
 msgstr "Waydroid"
 msgid ""
@@ -43,16 +111,6 @@ msgid "Nenhuma configuração foi removida!"
 msgstr "אף הגדרה לא הוסרה!"
 msgid "Não existem configurações para remover."
 msgstr "אין הגדרות להסרה."
-msgid "ID do Android:"
-msgstr "מזהה Android:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"לא ניתן היה לאחזר את זיהוי ה-Android. \\n"
-"\\n"
-"שים לב: Waydroid חייב להיות פתוח."
 msgid "Remover"
 msgstr "הסרה"
 msgid "Maximizado"
@@ -119,77 +177,117 @@ msgid "Parar o Waydroid"
 msgstr "עצור את Waydroid"
 msgid "Iniciar o Waydroid"
 msgstr "הפעל את Waydroid"
-msgid "Introdução ao BigLinux"
-msgstr "הכנסה ל־BigLinux"
-msgid "Bem vindo ao BigLinux"
-msgstr "ברוך הבא ל־BigLinux"
-msgid "Comece com algumas etapas simples."
-msgstr "התחל עם כמה שלבים פשוטים."
-msgid "Mostrar na inicialização"
-msgstr "הצג בהפעלה"
-msgid "Olá"
-msgstr "Iשלום"
-msgid "Ajustes iniciais"
-msgstr "הגדרות ראשוניות"
-msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-msgstr "אנו מציעים הגדרות מלאות לבחירה בצורה קלה ביותר."
-msgid "Configurações da Tela"
-msgstr "הגדרות מסך"
-msgid "Escolha seu navegador padrão"
-msgstr "בחר את הדפדפן הראשי שלך"
-msgid "Defina seus programas padrões."
-msgstr "קבע את התוכניות המובילות שלך."
-msgid "Outros navegadores"
-msgstr "דפדפנים אחרים"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-msgid "KDE Connect"
-msgstr "חיבור KDE"
+msgid "ID do Android:"
+msgstr "מזהה Android:"
 msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
-"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
-"iPhone."
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
 msgstr ""
-"KDE Connect הוא יישום המקל על תקשורת אלחוטית והעברת נתונים בין התקנים ברשתות מקומיות. זמין בחנות "
-"Google Play עבור Android ובחנות Apple עבור iPhone."
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "התקנת דרייבר ומידע על חומרה"
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "התקן או הסר דרייברים וקושחות בצורה פשוטה."
-msgid "Impressoras"
-msgstr "מדפסות"
-msgid "Conheça alguns recursos"
-msgstr "Meet some features"
-msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
-msgstr "המערכת שלנו היא שיתופית, הצטרף לתהליך התפתחות זה. בדוק את החידושים!"
+"לא ניתן היה לאחזר את זיהוי ה-Android. \\n"
+"\\n"
+"שים לב: Waydroid חייב להיות פתוח."
 # 
-# #-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 694
-msgid "Big Store"
-msgstr "חנות גדולה"
-msgid "Web Apps"
-msgstr "אפליקציות רשת"
-msgid "Redutor de Ruídos"
-msgstr "מוריד רעשים"
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "הגדרת קול המערכת (TTS)"
-msgid "OCR para PDF"
-msgstr "OCR ל־PDF"
-msgid "Doação e Redes sociais"
-msgstr "תרומה ורשתות חברתיות"
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "התרומה שלך חשובה מאוד לפרויקט והישאר מעודכן ברשתות החברתיות."
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "מזל טוב, השלמת את הצעדים הראשונים לשימוש ב-BigLinux."
-msgid "Aguarde, carregando..."
-msgstr "המתן, טוען..."
-msgid "Aguarde..."
-msgstr "המתן..."
-msgid "Verificando conexão com a Internet..."
-msgstr "בודק חיבור לאינטרנט..."
-msgid "Sem conexão com a Internet..."
-msgstr "אין חיבור לאינטרנט..."
+msgid "Main"
+msgstr "ראשי"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "רשת ואינטרנט"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "טלפון"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "התאמה אישית"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "אזור ושפה"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "מולטימדיה"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "חשבונות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "התקן"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "מערכת"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "אודות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "אחר"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "מרכז בקרה"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "על מרכז הבקרה"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+msgid "Categories"
+msgstr "קטגוריות"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+msgid "Programs"
+msgstr "תוכניות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "חיפוש..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "מבצע פקודה מיוחדת: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "מפעיל: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "שגיאה בהשקת התוכנית: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+msgid "BigLinux Team"
+msgstr "צוות ביגלינוקס"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 צוות ביגלינוקס"
 # 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 # 
@@ -202,7 +300,6 @@ msgid "Connect your Android smartphone to the Linux computer using a USB cable."
 msgstr "חבר את הסמארטפון שלך המרובה למחשב הלינוקס באמצעות כבל USB."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: NEEDS WORK
 msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
 msgstr "במכשיר הסמארטפון שלך, פתח את 'הגדרות' ועבור ל'רשת ואינטרנט' או 'חיבורים ושיתוף'."
 # 
@@ -265,7 +362,6 @@ msgstr ""
 "הפעלת הטתרינג."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: NEEDS WORK
 msgid ""
 "To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
 "these steps:"
@@ -276,115 +372,6 @@ msgstr "כדי לשתף את חיבור האינטרנט של הסמארטפון
 msgid "Close"
 msgstr "סגור"
 # 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "מרכז בקרה"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-#: NEEDS WORK
-msgid "About Control Center"
-msgstr "על מרכז הבקרה"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-#: NEEDS WORK
-msgid "Categories"
-msgstr "קטגוריות"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-#: NEEDS WORK
-msgid "Programs"
-msgstr "תוכניות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "חיפוש..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#: NEEDS WORK
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "מבצע פקודה מיוחדת: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#: NEEDS WORK
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "מפעיל: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "שגיאה בהשקת התוכנית: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-#: NEEDS WORK
-msgid "BigLinux Team"
-msgstr "צוות ביגלינוקס"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-#: NEEDS WORK
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 צוות ביגלינוקס"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "ראשי"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "רשת ואינטרנט"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "טלפון"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "התאמה אישית"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "אזור ושפה"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "מולטימדיה"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "חשבונות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "התקן"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "מערכת"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "אודות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "אחר"
-# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
 msgstr "הגדר AppimageLauncher"
@@ -394,7 +381,6 @@ msgid "Choose the behavior of programs available in .appimage"
 msgstr "בחר את ההתנהגות של התוכניות הזמינות ב־.appimage"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
-#: NEEDS WORK
 msgid "Search for Zeroconf servers"
 msgstr "חפש שרתי Zeroconf"
 # 
@@ -403,12 +389,10 @@ msgid "Expand device support"
 msgstr "הרחב תמיכת התקן"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
-#: NEEDS WORK
 msgid "Detailed information about your computer"
 msgstr "מידע מפורט על המחשב שלך"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
-#: NEEDS WORK
 msgid "System foundation and video card support"
 msgstr "תמיכה במערכת הפעלה ובכרטיס גרפי"
 # 
@@ -425,7 +409,6 @@ msgid "Search for VNC servers"
 msgstr "חפש שרתי VNC"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
-#: NEEDS WORK
 msgid "Cross-platform buildsystem"
 msgstr "מערכת בנייה חוצת פלטפורמות"
 # 
@@ -434,67 +417,54 @@ msgid "Advanced Audio Manager - Alsamixer"
 msgstr "מנהל שמע מתקדם - Alsamixer"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
-#: NEEDS WORK
 msgid "JamesDSP improving music and audio quality"
 msgstr "ג'יימסDSP משפר איכות מוזיקה ואודיו"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
-#: NEEDS WORK
 msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
 msgstr "שפר את הצליל שלך עם אקולייזר, חיזוק בס, סראונד ואפקטים נוספים."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
-#: NEEDS WORK
 msgid "Partition or Format"
 msgstr "חלק או עיצוב"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
-#: NEEDS WORK
 msgid "HP Printers"
 msgstr "מדפסות HP"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
-#: NEEDS WORK
 msgid "Check status, ink level, and maintenance."
 msgstr "בדוק מצב, רמת דיו ותחזוקה."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
-#: NEEDS WORK
 msgid "HP Scanners"
 msgstr "סורקי HP"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
-#: NEEDS WORK
 msgid "Configure and use HP scanning devices"
 msgstr "הגדר והשתמש במכשירי סריקה של HP"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
-#: NEEDS WORK
 msgid "Configure Kvantum Theme"
 msgstr "הגדר את נושא קוונטום"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
-#: NEEDS WORK
 msgid "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
 msgstr "כדי שהגדרת Kvantum תעבוד, יש להחיל את נושא Kvantum ב'סגנון יישום'."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
-#: NEEDS WORK
 msgid "USB Device Formatter"
 msgstr "פורמטור התקני USB"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
-#: NEEDS WORK
 msgid "Format a USB device"
 msgstr "פורמט התקן USB"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
-#: NEEDS WORK
 msgid "USB Image Writer"
 msgstr "כותב תמונות USB"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
-#: NEEDS WORK
 msgid "Create a bootable USB device"
 msgstr "צור התקן USB ניתן לאתחול"
 # 
@@ -527,12 +497,10 @@ msgid "Configure webcam or capture card"
 msgstr "הגדר מצלמת רשת או כרטיס כידוד"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
-#: NEEDS WORK
 msgid "Adjust settings and control webcams or video capture devices"
 msgstr "התאם הגדרות ושלוט במצלמות רשת או במכשירי הקלטת וידאו"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
-#: NEEDS WORK
 msgid "Configure accessibility options for users with special needs"
 msgstr "הגדר אפשרויות נגישות למשתמשים עם צרכים מיוחדים"
 # 
@@ -541,17 +509,14 @@ msgid "Virtual desktops and activities"
 msgstr "שולחנות עבודה ופעילויות וירטואליים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
-#: NEEDS WORK
 msgid "Create more than one virtual work environment by switching between them."
 msgstr "צור יותר מסביבת עבודה וירטואלית אחת על ידי החלפתן ביניהן."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
-#: NEEDS WORK
 msgid "Manage applications that start automatically on login"
 msgstr "נהל יישומים שמתחילים אוטומטית בעת כניסה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
-#: NEEDS WORK
 msgid ""
 "Enabling search can consume significant memory and processing resources. This may cause the system "
 "to slow down, depending on the number of user files."
@@ -560,239 +525,192 @@ msgstr ""
 "המשתמש."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
-#: NEEDS WORK
 msgid "Connect and manage Bluetooth devices"
 msgstr "חבר ונהל מכשירי בלוטות'"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
-#: NEEDS WORK
 msgid "Manage Thunderbolt devices and security settings"
 msgstr "נהל מכשירי Thunderbolt והגדרות אבטחה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
-#: NEEDS WORK
 msgid "Adjust date, time and timezone."
 msgstr "התאם תאריך, שעה ואזור זמן."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
-#: NEEDS WORK
 msgid "Customize the color scheme of your desktop environment"
 msgstr "התאם אישית את סכמת הצבעים של סביבת העבודה שלך"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
-#: NEEDS WORK
 msgid "Select which applications to use for specific tasks"
 msgstr "בחר אילו יישומים להשתמש עבור משימות ספציפיות"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
-#: NEEDS WORK
 msgid "Change mouse cursor appearance and themes"
 msgstr "שנה את מראה הסמן ועיצובים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
-#: NEEDS WORK
 msgid "Configure default paths for documents, downloads and other folders"
 msgstr "הגדר נתיבים ברירת מחדל למסמכים, הורדות ותיקיות אחרות"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
-#: NEEDS WORK
 msgid "Change the visual appearance of the Plasma desktop"
 msgstr "שנה את המראה הוויזואלי של שולחן העבודה של פלאזמה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
-#: NEEDS WORK
 msgid "Configure which applications open specific file types"
 msgstr "הגדר אילו יישומים פותחים סוגי קבצים ספציפיים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
-#: NEEDS WORK
 msgid "Manage permissions for Flatpak applications"
 msgstr "נהל הרשאות עבור יישומי Flatpak"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
-#: NEEDS WORK
 msgid "Install and configure system fonts and typography settings"
 msgstr "התקן והגדר גופנים של מערכת והגדרות טיפוגרפיה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
-#: NEEDS WORK
 msgid "Configure game controllers and joysticks"
 msgstr "הגדר בקרי משחק וג'ויסטיקים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
-#: NEEDS WORK
 msgid "Change the icon theme used throughout the system"
 msgstr "שנה את נושא האייקונים המשמש בכל המערכת"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
-#: NEEDS WORK
 msgid "Configure digital camera integration with your system"
 msgstr "הגדר אינטגרציה של מצלמה דיגיטלית עם המערכת שלך"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
-#: NEEDS WORK
 msgid "Manage system services running in the background"
 msgstr "נהל שירותי מערכת הפועלים ברקע"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
-#: NEEDS WORK
 msgid "Layout settings, shortcuts and other options."
 msgstr "הגדרות פריסה, קיצורי דרך ואפשרויות אחרות."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
-#: NEEDS WORK
 msgid "Configure monitors, resolution, and screen arrangement"
 msgstr "הגדר מסכים, רזולוציה וסידור מסך"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-#: NEEDS WORK
 msgid "Window Decorations"
 msgstr "קישוטי חלון"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
-#: NEEDS WORK
 msgid "Change the appearance of window title bars and borders"
 msgstr "שנה את המראה של כותרות חלונות וגבולות"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
-#: NEEDS WORK
 msgid "Configure visual effects and animations for the desktop"
 msgstr "הגדר אפקטים חזותיים ואנימציות לשולחן העבודה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
-#: NEEDS WORK
 msgid "Configure how windows behave and interact"
 msgstr "הגדר כיצד חלונות מתנהגים ומתקשרים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
-#: NEEDS WORK
 msgid "Configure mouse sensitivity, buttons and behavior"
 msgstr "הגדר רגישות עכבר, כפתורים והתנהגות"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
-#: NEEDS WORK
 msgid ""
 "Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile "
 "broadband and others)."
 msgstr "הגדרת רשת מתקדמת (VPN, WiFi, קווי, IP סטטי, PPPoE, ADSL, רשת קווית, אינטרנט סלולרי ואחרים)."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
-#: NEEDS WORK
 msgid "QEFI Entry Manager"
 msgstr "מנהל כניסת QEFI"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
-#: NEEDS WORK
 msgid "Manage and configure boot entries for UEFI systems"
 msgstr "נהל והגדר רשומות אתחול עבור מערכות UEFI"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
-#: NEEDS WORK
 msgid "Configure system and application notifications"
 msgstr "הגדר התראות מערכת ויישומים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
-#: NEEDS WORK
 msgid "Boot Screen"
 msgstr "מסך אתחול"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-#: NEEDS WORK
 msgid "Change the splash screen shown during system startup"
 msgstr "שנה את מסך הפתיחה המוצג במהלך אתחול המערכת"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
-#: NEEDS WORK
 msgid "Configure energy saving and battery settings"
 msgstr "הגדרות חיסכון באנרגיה וסוללה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
-#: NEEDS WORK
 msgid "Configure network proxy settings for internet access"
 msgstr "הגדר את הגדרות פרוקסי הרשת לגישה לאינטרנט"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
-#: NEEDS WORK
 msgid "Manage the history of recently accessed files"
 msgstr "נהל את היסטוריית הקבצים שניגשת אליהם לאחרונה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
-#: NEEDS WORK
 msgid "Configure language, region, and format settings"
 msgstr "הגדר הגדרות שפה, אזור ופורמט"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
-#: NEEDS WORK
 msgid "Configure screen locking settings and appearance"
 msgstr "הגדר את הגדרות נעילת המסך והמראה שלה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
-#: NEEDS WORK
 msgid "Configure the login screen appearance and behavior"
 msgstr "הגדר את המראה וההתנהגות של מסך הכניסה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
-#: NEEDS WORK
 msgid "Desktop Session"
 msgstr "שיחת שולחן עבודה"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
-#: NEEDS WORK
 msgid "Configure session startup and shutdown behavior"
 msgstr "הגדר את התנהגות הפעלת והפסקת המושב"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
-#: NEEDS WORK
 msgid "Configure sound effects for system events"
 msgstr "הגדר אפקטי קול לאירועי מערכת"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
-#: NEEDS WORK
 msgid "Configure the splash screen shown while starting applications"
 msgstr "הגדר את מסך הפתיחה המוצג בעת הפעלת יישומים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
-#: NEEDS WORK
 msgid "Configure the visual appearance of applications"
 msgstr "הגדר את המראה הוויזואלי של היישומים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
-#: NEEDS WORK
 msgid "Configure drawing tablets and stylus settings"
 msgstr "הגדר את הגדרות לוחות הציור והעטים"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
-#: NEEDS WORK
 msgid "Configure laptop touchpad behavior and gestures"
 msgstr "הגדר את התנהגות משטח המגע של המחשב הנייד והמחוות"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
-#: NEEDS WORK
 msgid "Configure touchscreen behavior and calibration"
 msgstr "הגדר את התנהגות המסך המגע וכיולו"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
-#: NEEDS WORK
 msgid "Configure trash bin behavior and cleanup settings"
 msgstr "הגדר את התנהגות סל המחזור והגדרות הניקוי"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
-#: NEEDS WORK
 msgid "Change desktop background image and slideshow settings"
 msgstr "שנה את תמונת הרקע של שולחן העבודה והגדרות מצגת התמונות"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
-#: NEEDS WORK
 msgid "Configure the system's landing page and default widgets."
 msgstr "הגדר את דף הנחיתה של המערכת ווידג'טים ברירת המחדל."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
-#: NEEDS WORK
 msgid "Access your files and folders."
 msgstr "גשת לקבצים ולתיקיות שלך."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
-#: NEEDS WORK
 msgid ""
 "This program can transfer files between smartphones, tablets, and other computers. With it, you "
 "can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, "
@@ -810,27 +728,22 @@ msgid "Access the command terminal."
 msgstr "גש לטרמינל הפקודות."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1172
-#: NEEDS WORK
 msgid "KWalletManager"
 msgstr "מנהל KWallet"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
-#: NEEDS WORK
 msgid "Tool for managing KDE wallets"
 msgstr "כלי לניהול ארנקים של KDE"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
-#: NEEDS WORK
 msgid "Add or remove programs installed on the system"
 msgstr "הוסף או הסר תוכניות מותקנות במערכת"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
-#: NEEDS WORK
 msgid "Connect to internet using Android"
 msgstr "התחבר לאינטרנט באמצעות אנדרואיד"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
-#: NEEDS WORK
 msgid "Connect to internet using iOS"
 msgstr "התחבר לאינטרנט באמצעות iOS"
 # 
@@ -846,8 +759,15 @@ msgstr "צילומי מסך וגיבויים"
 msgid "Create or activate restore points"
 msgstr "צור או הפעל נקודות שחזור"
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+msgid "Biglinux Settings"
+msgstr "הגדרות ביגלינוקס"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
+msgid "Simplify switching BigLinux operation."
+msgstr "פשט את החלפת פעולת BigLinux."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
-#: NEEDS WORK
 msgid "BigLinux Themes"
 msgstr "נושאים של BigLinux"
 # 
@@ -856,16 +776,13 @@ msgid "We provide complete configurations for you to select in an extremely simp
 msgstr "אנו מספקים הגדרות מלאות לבחירה בדרך קלה ביותר."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
-#: NEEDS WORK
 msgid "Configure feedback and usage report preferences."
 msgstr "הגדר העדפות למשוב ודיווח על שימוש."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
-#: NEEDS WORK
 msgid "Configure automatic actions for when devices are connected."
 msgstr "הגדר פעולות אוטומטיות כאשר מכשירים מחוברים."
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
-#: NEEDS WORK
 msgid "Configure search and indexing options in Plasma."
 msgstr "הגדר אפשרויות חיפוש ואינדוקס ב-Plasma."
