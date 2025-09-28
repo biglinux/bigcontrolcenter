@@ -297,6 +297,7 @@ class AppFinder:
             "org.gnome.baobab.desktop",
             "klassy-settings.desktop",
             "kcm_pulseaudio.desktop",
+            "stoken-gui-small.desktop",
         ]
 
         result = []
@@ -939,7 +940,7 @@ class AppFinder:
                 "app_categories": "System",
             },
             {
-                "app_id": "org.kde.kdeconnect.app.desktop",
+                "app_id": "org.kde.kdeconnect.app",
                 "app_description": _(
                     "This program can transfer files between smartphones, tablets, and other computers. With it, you can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, among other features. It integrates best with BigLinux and sits among the applets located near the system clock. To sync with your smartphone, go to the Google Store or Apple Store and install KDE Connect."
                 ),

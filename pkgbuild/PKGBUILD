@@ -8,8 +8,8 @@ license=('GPL')
 url="https://github.com/biglinux/bigcontrolcenter"
 pkgdesc="Complete control center to use in BigLinux with KDE"
 # python-pyqt5 add as depends because hplip interface need this and not in hplip package, but don't needed by bigcontrolcenter
-
-depends=('bash' 'gtk3' 'python' 'polkit' 'dbus' 'hicolor-icon-theme' 'lsb-release' 'kdialog' 'print-manager' 'inxi' 'biglinux-session-and-themes' 'big-network-info' 'biglinux-config' 'bigicons-papient' 'xdg-desktop-portal-kde' 'gettext' 'python-gobject' 'xdg-utils' 'procps-ng' 'util-linux' 'coreutils' 'biglinux-settings')
+# litehtml add as depends because assistant6 need this and not in qt6-tools package, but don't needed by bigcontrolcenter
+depends=('bash' 'gtk3' 'python' 'polkit' 'dbus' 'hicolor-icon-theme' 'lsb-release' 'kdialog' 'print-manager' 'inxi' 'biglinux-session-and-themes' 'big-network-info' 'biglinux-config' 'bigicons-papient' 'xdg-desktop-portal-kde' 'gettext' 'python-gobject' 'xdg-utils' 'procps-ng' 'util-linux' 'coreutils' 'biglinux-settings' 'litehtml')
 depends_x86_64=('biglinux-driver-manager' 'gnome-alsamixer')
 source=("git+https://github.com/biglinux/bigcontrolcenter.git")
 md5sums=(SKIP)
