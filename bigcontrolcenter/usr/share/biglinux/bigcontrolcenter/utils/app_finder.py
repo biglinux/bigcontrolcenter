@@ -510,6 +510,7 @@ class AppFinder:
             },
             {
                 "app_id": "firewall-config",
+                "app_name": _("Advanced Firewall Settings"),
                 "app_categories": "Network",
             },
             {
@@ -953,7 +954,7 @@ class AppFinder:
             },
             {
                 "app_id": "org.kde.kwalletmanager",
-                "app_name": _("KWalletManager"),
+                "app_name": _("Password Manager - KWalletManager"),
                 "app_exec": "kwalletmanager5",
                 "app_description": _("Tool for managing KDE wallets"),
                 "app_icon": "kwalletmanager",
