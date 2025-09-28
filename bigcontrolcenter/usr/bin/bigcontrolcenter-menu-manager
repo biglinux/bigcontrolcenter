@@ -28,7 +28,8 @@ MENU_FILES=("biglinux-config.desktop" "big-reset.desktop" "br.com.biglinux.netwo
 "kdesettings.desktop" "org.kde.kuserfeedback-console.desktop" "gsmartcontrol.desktop" 
 "bootsplash-manager.desktop" "gnome-alsamixer.desktop" "appimagelaunchersettings.desktop" 
 "org.kde.ksystemlog.desktop" "org.kde.filelight.desktop" "klassy-settings.desktop" 
-"firewall-config.desktop" "qefientrymanager.desktop" "biglinux-settings.desktop")
+"firewall-config.desktop" "qefientrymanager.desktop" "biglinux-settings.desktop" "org.ffado.FfadoMixer.desktop"
+"stoken-gui-small.desktop" "stoken-gui.desktop")
 
 # Function to clean menu (hide desktop files)
 clean_menu() {

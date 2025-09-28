@@ -334,6 +334,8 @@ class AppFinder:
             "/usr/share/applications/big-kernel-manager.desktop",
             "/usr/share/applications/br.com.biglinux.networkinfo.desktop",
             "/usr/share/applications/org.kde.kwalletmanager.desktop",
+            "/usr/share/applications/org.ffado.FfadoMixer.desktop",
+            "/usr/share/applications/stoken-gui.desktop",
         ]
 
         # Filter out files that don't exist
@@ -924,12 +926,20 @@ class AppFinder:
                 "app_categories": "Personalization",
             },
             {
+                "app_id": "org.ffado.FfadoMixer",
+                "app_name": _("Manage FireWire Audio Interfaces - FfadoMixer"),
+                "app_description": _(
+                    "Control Panel for your FireWire Audio Interfaces."
+                ),
+                "app_categories": "Multimedia",
+            },
+            {
                 "app_id": "org.kde.dolphin",
                 "app_description": _("Access your files and folders."),
                 "app_categories": "System",
             },
             {
-                "app_id": "kcm_kdeconnect",
+                "app_id": "org.kde.kdeconnect.app.desktop",
                 "app_description": _(
                     "This program can transfer files between smartphones, tablets, and other computers. With it, you can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, among other features. It integrates best with BigLinux and sits among the applets located near the system clock. To sync with your smartphone, go to the Google Store or Apple Store and install KDE Connect."
                 ),
@@ -946,7 +956,7 @@ class AppFinder:
                 "app_exec": "kwalletmanager5",
                 "app_description": _("Tool for managing KDE wallets"),
                 "app_icon": "kwalletmanager",
-                "app_categories": "Qt;KDE;System;Security;",
+                "app_categories": "Account",
             },
             {
                 "app_id": "org.manjaro.pamac.manager",
@@ -1038,5 +1048,9 @@ class AppFinder:
             {
                 "app_id": "kcm_kwin_virtualdesktops",
                 "app_categories": "System",
+            },
+            {
+                "app_id": "stoken-gui",
+                "app_categories": "Hardware",
             },
         ]
