@@ -214,20 +214,8 @@ class CategorySidebar(Gtk.Box):
         # Create icon with consistent sizing
         icon = None
         if "icon_static" in category and os.path.exists(category["icon_static"]):
-            # Use system icon as fallback
-            icon = Gtk.Image.new_from_icon_name(category["icon"])
-
-            # automatically apply the recoloring
-            icon_name = category["icon"]
-            if icon_name.endswith("-symbolic"):
-                # Already a symbolic name
-                pass
-            else:
-                # Add symbolic suffix to enforce symbolic coloring
-                icon_name = f"{icon_name}-symbolic"
-
-            # Set the symbolic icon
-            icon.set_from_icon_name(icon_name)
+            # Use static icon by default
+            icon = Gtk.Image.new_from_file(category["icon_static"])
             icon.add_css_class("symbolic")
         else:
             # Use system fallback icon
