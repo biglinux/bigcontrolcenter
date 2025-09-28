@@ -28,8 +28,12 @@ msgstr ""
 "i bildet fra webkameraet ditt i andre programmer."
 msgid "Webcam"
 msgstr "Webkamera"
-msgid "Aguarde, carregando..."
-msgstr "Vennligst vent, laster..."
+msgid "Aguarde..."
+msgstr "Vent..."
+msgid "Verificando conexão com a Internet..."
+msgstr "Checking internet connection..."
+msgid "Sem conexão com a Internet..."
+msgstr "Ingen Internett-tilkobling..."
 msgid "Introdução ao BigLinux"
 msgstr "Introduction to BigLinux"
 msgid "Bem vindo ao BigLinux"
@@ -93,12 +97,8 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Din donasjon er veldig viktig for prosjektet, og følg oss på sosiale medier."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Gratulerer, du har fullført de første trinnene for å bruke BigLinux."
-msgid "Aguarde..."
-msgstr "Vent..."
-msgid "Verificando conexão com a Internet..."
-msgstr "Checking internet connection..."
-msgid "Sem conexão com a Internet..."
-msgstr "Ingen Internett-tilkobling..."
+msgid "Aguarde, carregando..."
+msgstr "Vennligst vent, laster..."
 msgid "Waydroid"
 msgstr "Waydroid"
 msgid ""
@@ -113,6 +113,16 @@ msgid "Nenhuma configuração foi removida!"
 msgstr "Ingen konfigurasjon ble fjernet!"
 msgid "Não existem configurações para remover."
 msgstr "Det er ingen innstillinger å fjerne."
+msgid "ID do Android:"
+msgstr "Android-ID:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"It was not possible to retrieve the Android ID. \\n"
+"\\n"
+"Attention: Waydroid needs to be open."
 msgid "Remover"
 msgstr "Fjern"
 msgid "Maximizado"
@@ -185,206 +195,6 @@ msgid "Parar o Waydroid"
 msgstr "Stop Waydroid"
 msgid "Iniciar o Waydroid"
 msgstr "Start Waydroid"
-msgid "ID do Android:"
-msgstr "Android-ID:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"It was not possible to retrieve the Android ID. \\n"
-"\\n"
-"Attention: Waydroid needs to be open."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Hoved"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Nettverk og Internett"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Telefon"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Tilpass"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Region og språk"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimedie"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Kontoer"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Enheter"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "System"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Om"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Annet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Kontrollsenter"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-msgid "About Control Center"
-msgstr "Om Kontrollsenter"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-msgid "Categories"
-msgstr "Kategorier"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-msgid "Programs"
-msgstr "Programmer"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Søk..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Utfører spesialkommando: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Starter: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Feil ved oppstart av programmet: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-msgid "BigLinux Team"
-msgstr "BigLinux-teamet"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Team"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Bruk Internett-tilkoblingen på Android-enheten din på Linux via USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Koble til Android-smarttelefonen til Linux-datamaskinen ved hjelp av en USB-kabel."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr ""
-"På smarttelefonen din, åpne 'Innstillinger' og naviger til 'Nettverk og Internett' eller "
-"'Tilkoblinger og deling'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Se etter 'USB-deling', 'USB-deling' eller lignende termer og aktiver det."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"Dette vil automatisk opprette internettforbindelsen på Linux-datamaskinen din uten behov for "
-"ytterligere konfigurasjon."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Hvis Android-enheten din ikke er koblet til Wi-Fi og bruker mobildata, vil deling av nettverk "
-"forbruke data fra mobilabonnementet ditt. For å unngå dataavgifter, sørg for at Android-enheten din "
-"er koblet til et Wi-Fi-nettverk før du aktiverer deling av nettverk."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Bruk Internett-tilkoblingen på iOS-enheten din på Linux via USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Koble til iOS-enheten din til Linux-datamaskinen ved hjelp av en USB-kabel."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "På iOS-enheten din, gå til 'Innstillinger', velg deretter 'Personlig hotspot'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"Aktiver 'Tillat andre å bli med'. Dette kan automatisk aktivere 'USB-deling' hvis en USB-tilkobling "
-"oppdages."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Hvis iOS-enheten din ikke er koblet til Wi-Fi og bruker mobildata, vil deling av nettverk forbruke "
-"data fra mobilabonnementet ditt. For å unngå dataavgifter, sørg for at iOS-enheten din er koblet "
-"til et Wi-Fi-nettverk før du aktiverer deling."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr ""
-"For å dele internettforbindelsen fra smarttelefonen din med en Linux-datamaskin ved hjelp av en "
-"USB-kabel, følg disse trinnene:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Lukk"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -722,6 +532,14 @@ msgstr "Endre skrivebordsbakgrunnsbilde og lysbildefremvisningsinnstillinger"
 msgid "Configure the system's landing page and default widgets."
 msgstr "Konfigurer systemets landingsside og standardwidgets."
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+msgid "Manage FireWire Audio Interfaces - FfadoMixer"
+msgstr "Administrer FireWire lydgrensesnitt - FfadoMixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
+msgid "Control Panel for your FireWire Audio Interfaces."
+msgstr "Kontrollpanel for dine FireWire lydgrensesnitt."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
 msgid "Access your files and folders."
 msgstr "Få tilgang til filene og mappene dine."
@@ -803,3 +621,193 @@ msgstr "Konfigurer automatiske handlinger for når enheter er tilkoblet."
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
 msgid "Configure search and indexing options in Plasma."
 msgstr "Konfigurer søke- og indekseringsalternativer i Plasma."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Bruk Internett-tilkoblingen på Android-enheten din på Linux via USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Koble til Android-smarttelefonen til Linux-datamaskinen ved hjelp av en USB-kabel."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr ""
+"På smarttelefonen din, åpne 'Innstillinger' og naviger til 'Nettverk og Internett' eller "
+"'Tilkoblinger og deling'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Se etter 'USB-deling', 'USB-deling' eller lignende termer og aktiver det."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
+msgstr ""
+"Dette vil automatisk opprette internettforbindelsen på Linux-datamaskinen din uten behov for "
+"ytterligere konfigurasjon."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Hvis Android-enheten din ikke er koblet til Wi-Fi og bruker mobildata, vil deling av nettverk "
+"forbruke data fra mobilabonnementet ditt. For å unngå dataavgifter, sørg for at Android-enheten din "
+"er koblet til et Wi-Fi-nettverk før du aktiverer deling av nettverk."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Bruk Internett-tilkoblingen på iOS-enheten din på Linux via USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Koble til iOS-enheten din til Linux-datamaskinen ved hjelp av en USB-kabel."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "På iOS-enheten din, gå til 'Innstillinger', velg deretter 'Personlig hotspot'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr ""
+"Aktiver 'Tillat andre å bli med'. Dette kan automatisk aktivere 'USB-deling' hvis en USB-tilkobling "
+"oppdages."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Hvis iOS-enheten din ikke er koblet til Wi-Fi og bruker mobildata, vil deling av nettverk forbruke "
+"data fra mobilabonnementet ditt. For å unngå dataavgifter, sørg for at iOS-enheten din er koblet "
+"til et Wi-Fi-nettverk før du aktiverer deling."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr ""
+"For å dele internettforbindelsen fra smarttelefonen din med en Linux-datamaskin ved hjelp av en "
+"USB-kabel, følg disse trinnene:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "Lukk"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Kontrollsenter"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "Om Kontrollsenter"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+msgid "Categories"
+msgstr "Kategorier"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+msgid "Programs"
+msgstr "Programmer"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Søk..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Utfører spesialkommando: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Starter: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Feil ved oppstart av programmet: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+msgid "BigLinux Team"
+msgstr "BigLinux-teamet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Team"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "Hoved"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Nettverk og Internett"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Telefon"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Tilpass"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Region og språk"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimedie"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Kontoer"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Enheter"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "System"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Om"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Annet"

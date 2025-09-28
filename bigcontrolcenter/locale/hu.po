@@ -28,8 +28,12 @@ msgstr ""
 "a webkamerád képén más programokban."
 msgid "Webcam"
 msgstr "Webkamera"
-msgid "Aguarde, carregando..."
-msgstr "Várjon, betöltés..."
+msgid "Aguarde..."
+msgstr "Várjon..."
+msgid "Verificando conexão com a Internet..."
+msgstr "Internetkapcsolat ellenőrzése..."
+msgid "Sem conexão com a Internet..."
+msgstr "Nincs internetkapcsolat..."
 msgid "Introdução ao BigLinux"
 msgstr "Bevezetés a BigLinuxba"
 msgid "Bem vindo ao BigLinux"
@@ -96,12 +100,8 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "Nincs fordítandó elem."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "Gratulálok, sikeresen befejezted az első lépéseket a BigLinux használatához."
-msgid "Aguarde..."
-msgstr "Várjon..."
-msgid "Verificando conexão com a Internet..."
-msgstr "Internetkapcsolat ellenőrzése..."
-msgid "Sem conexão com a Internet..."
-msgstr "Nincs internetkapcsolat..."
+msgid "Aguarde, carregando..."
+msgstr "Várjon, betöltés..."
 msgid "Waydroid"
 msgstr "Waydroid"
 msgid ""
@@ -116,6 +116,16 @@ msgid "Nenhuma configuração foi removida!"
 msgstr "Nincs eltávolított beállítás!"
 msgid "Não existem configurações para remover."
 msgstr "Nincsenek eltávolítandó beállítások."
+msgid "ID do Android:"
+msgstr "Android azonosító:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"Nem sikerült visszaszerezni az Android azonosítóját. \\n"
+"\\n"
+"Figyelem: A Waydroidnak nyitva kell lennie."
 msgid "Remover"
 msgstr "Eltávolító"
 msgid "Maximizado"
@@ -189,209 +199,6 @@ msgid "Parar o Waydroid"
 msgstr "Waydroid leállítása"
 msgid "Iniciar o Waydroid"
 msgstr "Indítsa el a Waydroid-ot."
-msgid "ID do Android:"
-msgstr "Android azonosító:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"Nem sikerült visszaszerezni az Android azonosítóját. \\n"
-"\\n"
-"Figyelem: A Waydroidnak nyitva kell lennie."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "Fő"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "Hálózat és internet"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "Nem találtam fordítandó szót."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "Testreszabás"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "Régió és Nyelv"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "Multimédia"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "Számlák"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "Eszközök"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "Rendszer"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "Névjegy"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "Egyéb"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "Vezérlőközpont"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-msgid "About Control Center"
-msgstr "Avez a Vezérlőközpontról"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-msgid "Categories"
-msgstr "Kategóriák"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-msgid "Programs"
-msgstr "Programok"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "Keresés..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Különleges parancs végrehajtása: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Indítás: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Hiba a program indításakor: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-msgid "BigLinux Team"
-msgstr "BigLinux Csapat"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Csapat"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Az Android eszköz internetének használata Linuxon USB-n keresztül"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Csatlakoztasd az Android okostelefonodat a Linux számítógéphez egy USB kábellel."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr ""
-"Okostelefonján nyissa meg a 'Beállítások' menüt, és navigáljon a 'Hálózat és internet' vagy a "
-"'Kapcsolatok és megosztás' lehetőséghez."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr ""
-"Keresd meg a 'USB osztott hálózat', 'USB osztott kapcsolat' vagy hasonló kifejezéseket, majd "
-"engedélyezd."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"Ez automatikusan létrehozza az internetkapcsolatot a Linux számítógépen, további konfiguráció "
-"nélkül."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Ha az Android készüléke nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a "
-"megosztás mobiladatot fog fogyasztani a mobilcsomagjából. Adatai díjainak elkerülése érdekében "
-"győződjön meg róla, hogy az Android készüléke csatlakoztatva van egy Wi-Fi hálózathoz, mielőtt "
-"engedélyezné a megosztást."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Az iOS eszköz internetének használata Linuxon USB-n keresztül"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Csatlakoztasd az iOS eszközt a Linux számítógéphez egy USB kábellel."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "Az iOS eszközön lépjen a „Beállítások” menübe, majd válassza ki a „Személyes Hotspot” lehetőséget."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"Engedélyezze a „Mások csatlakozásának engedélyezése” lehetőséget. Ez automatikusan engedélyezheti "
-"az „USB-törlést”, ha USB-csatlakozást észlelnek."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Ha az iOS eszköz nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a megosztás "
-"mobiladatot fog fogyasztani a mobilcsomagodból. Az adatdíjak elkerülése érdekében győződjön meg "
-"róla, hogy az iOS eszköz csatlakozik egy Wi-Fi hálózathoz, mielőtt engedélyezné a megosztást."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr ""
-"A Linux számítógép internetkapcsolatának megosztásához egy USB kábellel, kövesse az alábbi "
-"lépéseket:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Bezárás"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -729,6 +536,14 @@ msgstr "Asztali háttérkép és diavetítés beállításainak módosítása"
 msgid "Configure the system's landing page and default widgets."
 msgstr "Állítsa be a rendszer kezdőlapját és az alapértelmezett widgeteket."
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+msgid "Manage FireWire Audio Interfaces - FfadoMixer"
+msgstr "FireWire Audio Interfészek kezelése - FfadoMixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
+msgid "Control Panel for your FireWire Audio Interfaces."
+msgstr "Vezérlőpult a FireWire audio interfészekhez."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
 msgid "Access your files and folders."
 msgstr "Fájljaidat és mappáidat elérheted."
@@ -811,3 +626,196 @@ msgstr "Állítsa be az automatikus műveleteket, amikor az eszközök csatlakoz
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
 msgid "Configure search and indexing options in Plasma."
 msgstr "Állítsa be a keresési és indexelési lehetőségeket a Plasmában."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Az Android eszköz internetének használata Linuxon USB-n keresztül"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Csatlakoztasd az Android okostelefonodat a Linux számítógéphez egy USB kábellel."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr ""
+"Okostelefonján nyissa meg a 'Beállítások' menüt, és navigáljon a 'Hálózat és internet' vagy a "
+"'Kapcsolatok és megosztás' lehetőséghez."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr ""
+"Keresd meg a 'USB osztott hálózat', 'USB osztott kapcsolat' vagy hasonló kifejezéseket, majd "
+"engedélyezd."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
+msgstr ""
+"Ez automatikusan létrehozza az internetkapcsolatot a Linux számítógépen, további konfiguráció "
+"nélkül."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Ha az Android készüléke nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a "
+"megosztás mobiladatot fog fogyasztani a mobilcsomagjából. Adatai díjainak elkerülése érdekében "
+"győződjön meg róla, hogy az Android készüléke csatlakoztatva van egy Wi-Fi hálózathoz, mielőtt "
+"engedélyezné a megosztást."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Az iOS eszköz internetének használata Linuxon USB-n keresztül"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Csatlakoztasd az iOS eszközt a Linux számítógéphez egy USB kábellel."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "Az iOS eszközön lépjen a „Beállítások” menübe, majd válassza ki a „Személyes Hotspot” lehetőséget."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr ""
+"Engedélyezze a „Mások csatlakozásának engedélyezése” lehetőséget. Ez automatikusan engedélyezheti "
+"az „USB-törlést”, ha USB-csatlakozást észlelnek."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Ha az iOS eszköz nincs csatlakoztatva Wi-Fi-hez, és mobiladatot használ, akkor ez a megosztás "
+"mobiladatot fog fogyasztani a mobilcsomagodból. Az adatdíjak elkerülése érdekében győződjön meg "
+"róla, hogy az iOS eszköz csatlakozik egy Wi-Fi hálózathoz, mielőtt engedélyezné a megosztást."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr ""
+"A Linux számítógép internetkapcsolatának megosztásához egy USB kábellel, kövesse az alábbi "
+"lépéseket:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "Bezárás"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "Vezérlőközpont"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "Avez a Vezérlőközpontról"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+msgid "Categories"
+msgstr "Kategóriák"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+msgid "Programs"
+msgstr "Programok"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "Keresés..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Különleges parancs végrehajtása: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Indítás: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Hiba a program indításakor: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+msgid "BigLinux Team"
+msgstr "BigLinux Csapat"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Csapat"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "Fő"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "Hálózat és internet"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "Nem találtam fordítandó szót."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "Testreszabás"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "Régió és Nyelv"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "Multimédia"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "Számlák"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "Eszközök"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "Rendszer"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "Névjegy"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "Egyéb"

@@ -28,8 +28,12 @@ msgstr ""
 "בתמונה של המצלמה שלך בתוכניות אחרות."
 msgid "Webcam"
 msgstr "מצלמת רשת"
-msgid "Aguarde, carregando..."
-msgstr "המתן, טוען..."
+msgid "Aguarde..."
+msgstr "המתן..."
+msgid "Verificando conexão com a Internet..."
+msgstr "בודק חיבור לאינטרנט..."
+msgid "Sem conexão com a Internet..."
+msgstr "אין חיבור לאינטרנט..."
 msgid "Introdução ao BigLinux"
 msgstr "הכנסה ל־BigLinux"
 msgid "Bem vindo ao BigLinux"
@@ -93,12 +97,8 @@ msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
 msgstr "התרומה שלך חשובה מאוד לפרויקט והישאר מעודכן ברשתות החברתיות."
 msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
 msgstr "מזל טוב, השלמת את הצעדים הראשונים לשימוש ב-BigLinux."
-msgid "Aguarde..."
-msgstr "המתן..."
-msgid "Verificando conexão com a Internet..."
-msgstr "בודק חיבור לאינטרנט..."
-msgid "Sem conexão com a Internet..."
-msgstr "אין חיבור לאינטרנט..."
+msgid "Aguarde, carregando..."
+msgstr "המתן, טוען..."
 msgid "Waydroid"
 msgstr "Waydroid"
 msgid ""
@@ -111,6 +111,16 @@ msgid "Nenhuma configuração foi removida!"
 msgstr "אף הגדרה לא הוסרה!"
 msgid "Não existem configurações para remover."
 msgstr "אין הגדרות להסרה."
+msgid "ID do Android:"
+msgstr "מזהה Android:"
+msgid ""
+"Não foi possível resgatar o ID do Android. \\n"
+"\\n"
+"Atenção: Waydroid precisa estar aberto."
+msgstr ""
+"לא ניתן היה לאחזר את זיהוי ה-Android. \\n"
+"\\n"
+"שים לב: Waydroid חייב להיות פתוח."
 msgid "Remover"
 msgstr "הסרה"
 msgid "Maximizado"
@@ -177,200 +187,6 @@ msgid "Parar o Waydroid"
 msgstr "עצור את Waydroid"
 msgid "Iniciar o Waydroid"
 msgstr "הפעל את Waydroid"
-msgid "ID do Android:"
-msgstr "מזהה Android:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"לא ניתן היה לאחזר את זיהוי ה-Android. \\n"
-"\\n"
-"שים לב: Waydroid חייב להיות פתוח."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Main"
-msgstr "ראשי"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Network and Internet"
-msgstr "רשת ואינטרנט"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Phone"
-msgstr "טלפון"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Customize"
-msgstr "התאמה אישית"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Region and Language"
-msgstr "אזור ושפה"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Multimedia"
-msgstr "מולטימדיה"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Accounts"
-msgstr "חשבונות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Devices"
-msgstr "התקן"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "System"
-msgstr "מערכת"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "About"
-msgstr "אודות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Other"
-msgstr "אחר"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Control Center"
-msgstr "מרכז בקרה"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-msgid "About Control Center"
-msgstr "על מרכז הבקרה"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
-msgid "Categories"
-msgstr "קטגוריות"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
-msgid "Programs"
-msgstr "תוכניות"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Search..."
-msgstr "חיפוש..."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "מבצע פקודה מיוחדת: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "מפעיל: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "שגיאה בהשקת התוכנית: {0}"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
-msgid "BigLinux Team"
-msgstr "צוות ביגלינוקס"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 צוות ביגלינוקס"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "שימוש באינטרנט של המכשיר האנדרואיד שלך ב-Linux דרך USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "חבר את הסמארטפון שלך המרובה למחשב הלינוקס באמצעות כבל USB."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr "במכשיר הסמארטפון שלך, פתח את 'הגדרות' ועבור ל'רשת ואינטרנט' או 'חיבורים ושיתוף'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "חפש 'שיתוף גישה באמצעות USB', 'שיתוף גישה USB', או מונחים דומים והפעל אותם."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr "זה יקים את חיבור האינטרנט באופן אוטומטי במחשב ה-Linux שלך בלי צורך בתצורה נוספת."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"אם המכשיר שלך ב-Android אינו מחובר לרשת Wi-Fi ומשתמש בנתונים סלולריים, השימוש בטתרינג יצרף נתונים "
-"מתוך תוכנית הסלולר שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך ב-Android מחובר לרשת Wi-Fi לפני "
-"הפעלת הטתרינג."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "שימוש באינטרנט של המכשיר שלך ב-iOS על Linux דרך USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "חבר את המכשיר שלך המשתמש במערכת ההפעלה iOS למחשב המשתמש במערכת ההפעלה Linux באמצעות כבל USB."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "על המכשיר שלך ב- iOS, עבור ל 'הגדרות', ואז בחר 'נקודת גישה אישית'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"הפעל 'אפשר לאחרים להצטרף'. זה עשוי להפעיל באופן אוטומטי 'שיתוף גישה לאינטרנט דרך USB' אם חיבור USB "
-"זוהה."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"אם המכשיר שלך במערכת ה-iOS אינו מחובר לרשת Wi-Fi ומשתמש בנתונים ניידים, השימוש בטתרינג יצרוך נתונים "
-"מתוך תוכנית הנתונים הניידים שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך מחובר לרשת Wi-Fi לפני "
-"הפעלת הטתרינג."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr "כדי לשתף את חיבור האינטרנט של הסמארטפון שלך עם מחשב לינוקס באמצעות כבל USB, עקוב אחרי הצעדים הבאים:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "סגור"
 # 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 msgid "Configure AppimageLauncher"
@@ -706,6 +522,14 @@ msgstr "שנה את תמונת הרקע של שולחן העבודה והגדר�
 msgid "Configure the system's landing page and default widgets."
 msgstr "הגדר את דף הנחיתה של המערכת ווידג'טים ברירת המחדל."
 # 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+msgid "Manage FireWire Audio Interfaces - FfadoMixer"
+msgstr "נהל ממשקי שמע FireWire - FfadoMixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
+msgid "Control Panel for your FireWire Audio Interfaces."
+msgstr "לוח בקרה עבור ממשקי שמע FireWire שלך."
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
 msgid "Access your files and folders."
 msgstr "גשת לקבצים ולתיקיות שלך."
@@ -786,3 +610,187 @@ msgstr "הגדר פעולות אוטומטיות כאשר מכשירים מחו�
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
 msgid "Configure search and indexing options in Plasma."
 msgstr "הגדר אפשרויות חיפוש ואינדוקס ב-Plasma."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "שימוש באינטרנט של המכשיר האנדרואיד שלך ב-Linux דרך USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "חבר את הסמארטפון שלך המרובה למחשב הלינוקס באמצעות כבל USB."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr "במכשיר הסמארטפון שלך, פתח את 'הגדרות' ועבור ל'רשת ואינטרנט' או 'חיבורים ושיתוף'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "חפש 'שיתוף גישה באמצעות USB', 'שיתוף גישה USB', או מונחים דומים והפעל אותם."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
+msgstr "זה יקים את חיבור האינטרנט באופן אוטומטי במחשב ה-Linux שלך בלי צורך בתצורה נוספת."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"אם המכשיר שלך ב-Android אינו מחובר לרשת Wi-Fi ומשתמש בנתונים סלולריים, השימוש בטתרינג יצרף נתונים "
+"מתוך תוכנית הסלולר שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך ב-Android מחובר לרשת Wi-Fi לפני "
+"הפעלת הטתרינג."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "שימוש באינטרנט של המכשיר שלך ב-iOS על Linux דרך USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "חבר את המכשיר שלך המשתמש במערכת ההפעלה iOS למחשב המשתמש במערכת ההפעלה Linux באמצעות כבל USB."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "על המכשיר שלך ב- iOS, עבור ל 'הגדרות', ואז בחר 'נקודת גישה אישית'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr ""
+"הפעל 'אפשר לאחרים להצטרף'. זה עשוי להפעיל באופן אוטומטי 'שיתוף גישה לאינטרנט דרך USB' אם חיבור USB "
+"זוהה."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"אם המכשיר שלך במערכת ה-iOS אינו מחובר לרשת Wi-Fi ומשתמש בנתונים ניידים, השימוש בטתרינג יצרוך נתונים "
+"מתוך תוכנית הנתונים הניידים שלך. כדי למנוע חיובים בנתונים, וודא שהמכשיר שלך מחובר לרשת Wi-Fi לפני "
+"הפעלת הטתרינג."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr "כדי לשתף את חיבור האינטרנט של הסמארטפון שלך עם מחשב לינוקס באמצעות כבל USB, עקוב אחרי הצעדים הבאים:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Close"
+msgstr "סגור"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Control Center"
+msgstr "מרכז בקרה"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "על מרכז הבקרה"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+msgid "Categories"
+msgstr "קטגוריות"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+msgid "Programs"
+msgstr "תוכניות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Search..."
+msgstr "חיפוש..."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "מבצע פקודה מיוחדת: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "מפעיל: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "שגיאה בהשקת התוכנית: {0}"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+msgid "BigLinux Team"
+msgstr "צוות ביגלינוקס"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 צוות ביגלינוקס"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Main"
+msgstr "ראשי"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Network and Internet"
+msgstr "רשת ואינטרנט"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Phone"
+msgstr "טלפון"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Customize"
+msgstr "התאמה אישית"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Region and Language"
+msgstr "אזור ושפה"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Multimedia"
+msgstr "מולטימדיה"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Accounts"
+msgstr "חשבונות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Devices"
+msgstr "התקן"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "System"
+msgstr "מערכת"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "About"
+msgstr "אודות"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+msgid "Other"
+msgstr "אחר"
