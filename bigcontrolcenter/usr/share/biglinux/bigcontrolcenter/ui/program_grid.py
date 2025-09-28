@@ -28,13 +28,12 @@ class ProgramGrid(Gtk.Box):
             padding: 8px;
             font-weight: inherit;
             min-width: 150px;
-            min-height: 110px;
             }
-            
+
             .program-button:hover {
             background: alpha(currentColor, 0.08);
             }
-            
+
             .program-button:active {
             transform: scale(0.94);
             transition: transform 0.15s ease;
@@ -58,7 +57,7 @@ class ProgramGrid(Gtk.Box):
         self.flow_box.set_valign(Gtk.Align.START)
         self.flow_box.set_max_children_per_line(20)
         self.flow_box.set_selection_mode(Gtk.SelectionMode.SINGLE)
-        self.flow_box.set_homogeneous(True)
+        self.flow_box.set_homogeneous(False)
         self.flow_box.set_column_spacing(12)
         self.flow_box.set_row_spacing(18)
         self.flow_box.set_margin_start(16)
@@ -116,7 +115,7 @@ class ProgramGrid(Gtk.Box):
         # Create the content box
         content = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         content.set_halign(Gtk.Align.CENTER)
-        content.set_valign(Gtk.Align.CENTER)
+        content.set_valign(Gtk.Align.START)
         button.set_child(content)
 
         # Program icon - handle both icon names and file paths
