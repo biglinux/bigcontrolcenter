@@ -322,7 +322,7 @@ class AppFinder:
             "/usr/share/kservices5/bigcontrolcenter/cmake-gui.desktop",
             "/usr/share/kservices5/bigcontrolcenter/qv4l2.desktop",
             "/usr/share/applications/biglinux-noise-reduction-pipewire.desktop",
-            "/usr/share/applications/biglinux-grub-restore.desktop",
+            "/usr/share/applications/br.com.biglinux.grub-restore.desktop",
             "/usr/share/applications/gsmartcontrol.desktop",
             # "/usr/share/applications/org.kde.kdeconnect-settings.desktop",
             "/usr/share/applications/org.kde.dolphin.desktop",
@@ -993,7 +993,7 @@ class AppFinder:
                 "app_categories": "Account",
             },
             {
-                "app_id": "biglinux-grub-restore",
+                "app_id": "br.com.biglinux.grub-restore",
                 "app_icon": "/usr/share/icons/bigicons-papient/scalable/apps/biglinux-grub-restore.svg",
                 "app_categories": "Star System",
             },
