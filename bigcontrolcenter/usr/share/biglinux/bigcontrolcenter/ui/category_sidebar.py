@@ -8,7 +8,7 @@ import os
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Pango, Gdk
+from gi.repository import Gtk, Pango, Gdk, Gio
 
 # Setup translations
 lang_translations = gettext.translation(
@@ -214,13 +214,14 @@ class CategorySidebar(Gtk.Box):
         # Create icon with consistent sizing
         icon = None
         if "icon_static" in category and os.path.exists(category["icon_static"]):
-            # Use static icon by default
-            icon = Gtk.Image.new_from_file(category["icon_static"])
-            icon.add_css_class("symbolic")
+            # Use Gio.FileIcon to load SVG as symbolic icon
+            # This allows GTK to apply theme colors (dark/light mode)
+            file_icon = Gio.FileIcon.new(Gio.File.new_for_path(category["icon_static"]))
+            icon = Gtk.Image.new_from_gicon(file_icon)
         else:
             # Use system fallback icon
             icon = Gtk.Image.new_from_icon_name(category["icon"])
-            icon.add_css_class("symbolic")
+        icon.add_css_class("symbolic")
 
         icon.set_pixel_size(22)
         icon.set_margin_end(8)
