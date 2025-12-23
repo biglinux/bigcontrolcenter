@@ -141,47 +141,101 @@ class ProgramGrid(Gtk.Box):
 
         return button
 
+    # Icons that need special handling (manual search with size priority)
+    _SPECIAL_ICONS = {
+        'scanner',
+        'network-workgroup', 
+        'smartphone',
+        'network-wired-symbolic',
+    }
+    
+    # Cache for special icon paths
+    _special_icon_cache = {}
+
+    def _find_special_icon(self, icon_name):
+        """
+        Manual search for specific icons that GTK doesn't detect correctly.
+        Priority order: scalable, 48, 64, 128, 32, 22, 16
+        """
+        # Check cache first
+        if icon_name in self._special_icon_cache:
+            return self._special_icon_cache[icon_name]
+        
+        # Get current theme
+        theme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default())
+        theme_name = theme.get_theme_name()
+        
+        # Directories to search (theme first, then common themes, then hicolor)
+        search_bases = [
+            f"/usr/share/icons/{theme_name}",
+        ]
+        
+        # Add common inherited themes
+        for parent_theme in ["bigicons-papient", "bigicons-papient-dark", "breeze", "breeze-dark", "Adwaita"]:
+            if parent_theme != theme_name:
+                search_bases.append(f"/usr/share/icons/{parent_theme}")
+        
+        search_bases.append("/usr/share/icons/hicolor")
+        
+        # Size priority
+        size_dirs = ["scalable", "48x48", "64x64", "32x32", "48", "64", "128"]
+        # Extended subdirs list
+        subdirs = ["apps", "devices", "categories", "status", "actions", "places", "preferences", "emblems", "mimetypes", "symbolic"]
+        extensions = ['.svg', '.png']
+        
+        # Search with size priority
+        for size_dir in size_dirs:
+            for base in search_bases:
+                for subdir in subdirs:
+                    for ext in extensions:
+                        icon_file = f"{base}/{size_dir}/{subdir}/{icon_name}{ext}"
+                        if os.path.exists(icon_file):
+                            self._special_icon_cache[icon_name] = icon_file
+                            return icon_file
+        
+        # Try scalable as last resort
+        for base in search_bases:
+            for subdir in subdirs:
+                icon_file = f"{base}/scalable/{subdir}/{icon_name}.svg"
+                if os.path.exists(icon_file):
+                    self._special_icon_cache[icon_name] = icon_file
+                    return icon_file
+        
+        # Cache miss
+        self._special_icon_cache[icon_name] = None
+        return None
+
     def _create_icon_from_path_or_name(self, icon_path):
         """Create an icon from either a file path or an icon name"""
-        icon = None
+        target_size = 64
 
         # If empty path, use default icon
         if not icon_path:
             icon = Gtk.Image.new_from_icon_name("application-x-executable")
-            icon.set_pixel_size(64)
+            icon.set_pixel_size(target_size)
             return icon
 
         # Check if it's an absolute path
         if icon_path.startswith("/") and os.path.exists(icon_path):
             try:
-                # Load directly from file for absolute paths
                 icon = Gtk.Image.new_from_file(icon_path)
-                icon.set_pixel_size(64)
+                icon.set_pixel_size(target_size)
                 return icon
-            except Exception as e:
-                print(f"Error loading icon from file '{icon_path}': {e}")
-                # Fall through to icon name handling on failure
+            except Exception:
+                pass
 
-        # Try to load as an icon name with specific sizes in order of preference
-        theme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default())
-
-        # Check if the icon exists in the theme
-        if theme.has_icon(icon_path):
-            # Try preferred sizes in order: scalable(SVG), 64x64, 48x48, 128x128
-            for size in [64, 48, 128]:
+        # Special handling for specific problematic icons
+        if icon_path in self._SPECIAL_ICONS:
+            found_path = self._find_special_icon(icon_path)
+            if found_path:
                 try:
-                    # Try to get the icon at preferred size
-                    paintable = theme.lookup_icon(
-                        icon_path, size, 1, Gtk.TextDirection.NONE, 0
-                    )
-                    if paintable:
-                        icon = Gtk.Image.new_from_paintable(paintable)
-                        icon.set_pixel_size(64)
-                        return icon
+                    icon = Gtk.Image.new_from_file(found_path)
+                    icon.set_pixel_size(target_size)
+                    return icon
                 except Exception:
                     pass
 
-        # Default approach - may not respect size preferences but will work
+        # Use GTK icon theme lookup (fast) for all other icons
         icon = Gtk.Image.new_from_icon_name(icon_path)
-        icon.set_pixel_size(64)
+        icon.set_pixel_size(target_size)
         return icon

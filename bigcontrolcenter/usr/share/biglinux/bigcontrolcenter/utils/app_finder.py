@@ -300,6 +300,8 @@ class AppFinder:
             "kcm_pulseaudio.desktop",
             "kcm_kwin_virtualdesktops.desktop",
             "kcm_mobile_power.desktop",
+            "kcm_mobile_wifi.desktop",
+            "kcm_mobile_hotspot.desktop",
         ]
 
         # Add session-based exclusions (exclude _x11 in Wayland, exclude non-_x11 in X11)
@@ -334,6 +336,7 @@ class AppFinder:
             "klassy-settings.desktop",
             "kcm_pulseaudio.desktop",
             "stoken-gui-small.desktop",
+            "org.fcitx.Fcitx5.desktop",
         ]
 
         # Add session-based exclusions (exclude _x11 in Wayland, exclude non-_x11 in X11)
@@ -504,7 +507,7 @@ class AppFinder:
                 "app_id": "avahi-discover",
                 "app_name": _("Search for Zeroconf servers"),
                 "app_categories": "Other",
-                "app_icon": "network-wired-symbolic",
+                "app_icon": "network-workgroup",
             },
             {
                 "app_id": "br.com.biglinux.networkinfo",
@@ -753,6 +756,7 @@ class AppFinder:
                 "app_id": "kcm_app-permissions",
                 "app_description": _("Manage permissions for Flatpak applications"),
                 "app_categories": "System",
+                "app_icon": "preferences"
             },
             {
                 "app_id": "kcm_animations",
@@ -808,7 +812,7 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_kscreen",
-                "app_exec": "kcmshell6 kcm_kscreen kcm_nightlight kgamma kwinscreenedges",
+                "app_exec": "kcmshell6 kcm_nightlight kgamma kcm_kscreen kwinscreenedges",
                 "app_description": _(
                     "Configure monitors, resolution, and screen arrangement"
                 ),
@@ -1030,6 +1034,10 @@ class AppFinder:
                 "app_name": _("Connect to internet using iOS"),
                 "app_exec": "#dialog-ios-usb",
                 "app_icon": "ios-usb",
+                "app_categories": "Phone",
+            },
+            {
+                "app_id": "kcm_cellular_network",
                 "app_categories": "Phone",
             },
             {
