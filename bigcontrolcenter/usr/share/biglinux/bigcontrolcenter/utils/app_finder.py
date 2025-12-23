@@ -35,7 +35,36 @@ class AppFinder:
 
     def __init__(self):
         """Initialize the app finder"""
+        self.session_type = os.environ.get("XDG_SESSION_TYPE", "wayland")
         self.replacements = self._get_replacements()
+
+    def _get_session_excluded_patterns(self):
+        """
+        Get list of desktop file patterns to exclude based on session type.
+        In Wayland: exclude _x11 variants
+        In X11: exclude non-_x11 variants (for modules that have _x11 version)
+        """
+        # Modules that have both normal and _x11 versions
+        x11_modules = [
+            "kcm_animations",
+            "kcm_kwin_effects",
+            "kcm_kwin_scripts",
+            "kcm_kwin_virtualdesktops",
+            "kcm_kwindecoration",
+            "kcm_kwinoptions",
+            "kcm_kwinrules",
+            "kcm_kwinscreenedges",
+            "kcm_kwintabbox",
+            "kcm_kwintouchscreen",
+        ]
+        
+        if self.session_type == "x11":
+            # In X11, exclude the non-_x11 versions
+            return [f"{m}.desktop" for m in x11_modules]
+        else:
+            # In Wayland, exclude all _x11 variants
+            return [f"{m}_x11.desktop" for m in x11_modules]
+
 
     def get_programs(self):
         """
@@ -220,6 +249,9 @@ class AppFinder:
             "klassystyleconfig.desktop",
         ]
 
+        # Add session-based exclusions (exclude _x11 in Wayland, exclude non-_x11 in X11)
+        excluded_patterns.extend(self._get_session_excluded_patterns())
+
         result = []
 
         try:
@@ -267,7 +299,11 @@ class AppFinder:
             "kcm_nightlight.desktop",
             "kcm_pulseaudio.desktop",
             "kcm_kwin_virtualdesktops.desktop",
+            "kcm_mobile_power.desktop",
         ]
+
+        # Add session-based exclusions (exclude _x11 in Wayland, exclude non-_x11 in X11)
+        excluded_patterns.extend(self._get_session_excluded_patterns())
 
         result = []
 
@@ -299,6 +335,9 @@ class AppFinder:
             "kcm_pulseaudio.desktop",
             "stoken-gui-small.desktop",
         ]
+
+        # Add session-based exclusions (exclude _x11 in Wayland, exclude non-_x11 in X11)
+        excluded_patterns.extend(self._get_session_excluded_patterns())
 
         result = []
 
@@ -464,12 +503,17 @@ class AppFinder:
             {
                 "app_id": "avahi-discover",
                 "app_name": _("Search for Zeroconf servers"),
-                "app_icon": "preferences-system-network-server",
                 "app_categories": "Other",
+                "app_icon": "network-wired-symbolic",
             },
             {
                 "app_id": "br.com.biglinux.networkinfo",
                 "app_categories": "Star Network",
+            },
+            {
+                "app_id": "kcm_mobile_hotspot",
+                "app_categories": "Network",
+                "app_icon": "kcm_mobile_hotspot",
             },
             {
                 "app_id": "big-driver-manager",
@@ -500,7 +544,7 @@ class AppFinder:
             {
                 "app_id": "bvnc",
                 "app_name": _("Search for VNC servers"),
-                "app_icon": "preferences-desktop-remote-desktop",
+                "app_icon": "preferences-system-network-remote",
                 "app_categories": "Other",
             },
             {
@@ -706,9 +750,17 @@ class AppFinder:
                 "app_categories": "Network",
             },
             {
-                "app_id": "kcm_flatpak",
+                "app_id": "kcm_app-permissions",
                 "app_description": _("Manage permissions for Flatpak applications"),
                 "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_animations",
+                "app_categories": "Personalization",
+            },
+            {
+                "app_id": "kcm_nighttime",
+                "app_categories": "Personalization",
             },
             {
                 "app_id": "kcm_fonts",
@@ -828,7 +880,7 @@ class AppFinder:
             },
             {
                 "app_id": "kcm_powerdevilprofilesconfig",
-                "app_exec": "kcmshell6 kcm_powerdevilprofilesconfig kcm_energyinfo",
+                "app_exec": "kcmshell6 kcm_powerdevilprofilesconfig kcm_energyinfo kcm_mobile_power",
                 "app_description": _("Configure energy saving and battery settings"),
                 "app_categories": "Hardware",
             },
