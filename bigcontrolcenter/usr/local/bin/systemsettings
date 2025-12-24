@@ -3,12 +3,14 @@
 # Simplify when open Plasma configurations, without open all systemsettings
 
 if [ -z "$1" ]; then
-    /usr/bin/systemsettings $@
+    /usr/bin/systemsettings
 else
     # Fix to open kcm_kscreen in plasma 6.5
     if [[ "$1" = "kcm_kscreen" ]] && [[ -z $2 ]]; then
         kcmshell6 kcm_nightlight kcm_kwinscreenedges kcm_kscreen
+    elif [[ "$1" = "kcm_networkmanagement" ]]; then
+        kcmshell6 $(echo $* | sed 's|--args --args|--args|g')
     else
-        kcmshell6 $@
+        kcmshell6 $*
     fi
 fi
