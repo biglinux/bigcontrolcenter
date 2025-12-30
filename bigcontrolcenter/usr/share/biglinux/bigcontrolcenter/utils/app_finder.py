@@ -561,6 +561,14 @@ class AppFinder:
                 "app_categories": "Network",
             },
             {
+                "app_id": "gufw",
+                "app_categories": "Network",
+            },
+            {
+                "app_id": "kcm_firewall",
+                "app_categories": "Network",
+            },
+            {
                 "app_id": "gnome-alsamixer",
                 "app_name": _("Advanced Audio Manager - Alsamixer"),
                 "app_icon": "/usr/share/pixmaps/gnome-alsamixer/gnome-alsamixer-icon.png",
@@ -747,10 +755,6 @@ class AppFinder:
                     "Configure which applications open specific file types"
                 ),
                 "app_categories": "Personalization",
-            },
-            {
-                "app_id": "kcm_firewall",
-                "app_categories": "Network",
             },
             {
                 "app_id": "kcm_app-permissions",
