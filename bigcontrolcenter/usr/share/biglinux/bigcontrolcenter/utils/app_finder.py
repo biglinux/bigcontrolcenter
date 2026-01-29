@@ -373,7 +373,7 @@ class AppFinder:
             "/usr/share/applications/hplip.desktop",
             "/usr/share/kservices5/smb.desktop",
             "/usr/share/applications/big-driver-manager.desktop",
-            "/usr/share/applications/big-hardware-info.desktop",
+            "/usr/share/applications/br.com.biglinux.bighardwareinfo.desktop",
             "/usr/share/applications/big-kernel-manager.desktop",
             "/usr/share/applications/br.com.biglinux.networkinfo.desktop",
             "/usr/share/applications/org.kde.kwalletmanager.desktop",
@@ -524,7 +524,7 @@ class AppFinder:
                 "app_categories": "Star Hardware",
             },
             {
-                "app_id": "big-hardware-info",
+                "app_id": "br.com.biglinux.bighardwareinfo",
                 "app_description": _("Detailed information about your computer"),
                 "app_categories": "Star About",
             },
