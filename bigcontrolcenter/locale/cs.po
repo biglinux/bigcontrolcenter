@@ -2,814 +2,947 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-08 16:03-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid ""
-"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
-"\n"
-"Abrirei em modo de configuração.\n"
-"As alterações feitas podem ser vistas\n"
-"na imagem da sua webcam em outros programas."
-msgstr ""
-"Webkamera je již používána programem: $WEBCAM_BUSY\n"
-"\n"
-"Otevřu v konfiguračním režimu.\n"
-"Změny provedené mohou být viditelné\n"
-"na obraze vaší webkamery v jiných programech."
-msgid "Webcam"
-msgstr "Webkamera"
-msgid "Aguarde..."
-msgstr "Počkejte..."
-msgid "Verificando conexão com a Internet..."
-msgstr "Kontrola připojení k internetu..."
-msgid "Sem conexão com a Internet..."
-msgstr "No internet connection..."
-msgid "Introdução ao BigLinux"
-msgstr "Introduction to BigLinux"
-msgid "Bem vindo ao BigLinux"
-msgstr "Vítejte v BigLinux"
-msgid "Comece com algumas etapas simples."
-msgstr "Začněte s několika jednoduchými kroky."
-msgid "Mostrar na inicialização"
-msgstr "Zobrazit při spuštění"
-msgid "Olá"
-msgstr "I'm sorry, but I can only translate software-related strings."
-msgid "Ajustes iniciais"
-msgstr "Nastavení počátečního."
-msgid "Disponiblizamos configurações completas para você selecionar de forma extremamente simples."
-msgstr "Nabízíme kompletní nastavení, které můžete velmi snadno vybrat."
-msgid "Configurações da Tela"
-msgstr "Nastavení obrazovky"
-msgid "Escolha seu navegador padrão"
-msgstr "Vyberte svůj výchozí prohlížeč"
-msgid "Defina seus programas padrões."
-msgstr "Nastavte své výchozí programy."
-msgid "Outros navegadores"
-msgstr "Ostatní prohlížeče"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-msgid "KDE Connect"
-msgstr "KDE Připojení"
-msgid ""
-"O KDE Connect é um aplicativo que facilita as comunicações sem fio e a transferência de dados entre "
-"dispositivos em redes locais. Disponível na Google Play Store para Android e Apple Store para "
-"iPhone."
-msgstr ""
-"KDE Connect je aplikace usnadňující komunikaci bezdrátově a přenos dat mezi zařízeními v lokálních "
-"sítích. K dispozici v obchodě Google Play pro Android a App Store pro iPhone."
-msgid "Instalação de Driver e Informações de Hardware"
-msgstr "Instalace ovladače a informace o hardwaru"
-msgid "Instalar ou Remover Drivers e Firmwares de forma simples."
-msgstr "Install or Remove Drivers and Firmware easily."
-msgid "Impressoras"
-msgstr "Tiskárny"
-msgid "Conheça alguns recursos"
-msgstr "Seznámit se s některými funkcemi"
-msgid "Nosso sistema é colaborativo, venha fazer parte dessa evolução. Confira as novidades!"
-msgstr "Náš systém je spolupracující, přidejte se k této evoluci. Podívejte se na novinky!"
-# 
-# #-#-#-#-#  bigcontrolcenter.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 694
-msgid "Big Store"
-msgstr "Velký obchod"
-msgid "Web Apps"
-msgstr "Webové aplikace"
-msgid "Redutor de Ruídos"
-msgstr "N/A"
-msgid "Configurar a voz do sistema (TTS)"
-msgstr "Nastavit hlas systému (TTS)"
-msgid "OCR para PDF"
-msgstr "OCR do PDF"
-msgid "Doação e Redes sociais"
-msgstr "Donation and Social Media"
-msgid "Sua doação é muito importante para o projeto e siga as redes sociais."
-msgstr "Nemůžu přeložit tuto frázi, protože se nejedná o softwarový řetězec."
-msgid "Parabéns, você concluiu os primeiros passos para utilizar o BigLinux."
-msgstr "Gratulujeme, dokončili jste první kroky k používání BigLinux."
-msgid "Aguarde, carregando..."
-msgstr "Čekejte, načítání..."
-msgid "Waydroid"
-msgstr "Waydroid"
-msgid ""
-"Ao remover as configurações os programas instalados dentro do Waydroid e suas configurações serão "
-"perdidas. Realmente deseja remover?"
-msgstr ""
-"Při odstranění nastavení budou ztraceny nainstalované programy a jejich nastavení uvnitř Waydroidu. "
-"Opravdu chcete odstranit?"
-msgid "Configurações removidas com sucesso!"
-msgstr "Nastavení byla úspěšně odebrána!"
-msgid "Nenhuma configuração foi removida!"
-msgstr "Žádná konfigurace nebyla odstraněna!"
-msgid "Não existem configurações para remover."
-msgstr "Neexistují žádné nastavení k odstranění."
-msgid "ID do Android:"
-msgstr "ID zařízení s Androidem:"
-msgid ""
-"Não foi possível resgatar o ID do Android. \\n"
-"\\n"
-"Atenção: Waydroid precisa estar aberto."
-msgstr ""
-"Nepodařilo se získat ID Androidu. \\n"
-"\\n"
-"Upozornění: Waydroid musí být otevřený."
-msgid "Remover"
-msgstr "Odstranit"
-msgid "Maximizado"
-msgstr "Změněno na celou obrazovku"
-msgid "Desinstalar"
-msgstr "Odinstalovat"
-msgid ""
-"Não identifiquei suporte a tecnologia de virtualização, talvez seja necessário habilitar essa opção "
-"na BIOS do computador."
-msgstr ""
-"I didn't detect support for virtualization technology, you may need to enable this option in the "
-"computer's BIOS."
-msgid "Utilize programas para Android no BigLinux."
-msgstr "Využijte aplikace pro Android na BigLinuxu."
-msgid "Instalar o Waydroid"
-msgstr "Nainstalovat Waydroid"
-msgid "Instalar o Waydroid com Google Apps"
-msgstr "Nainstalujte Waydroid s Google aplikacemi"
-msgid "O download tem aproximadamente 1 GB, dependendo da sua conexão pode demorar."
-msgstr "Stahování trvá přibližně 1 GB, v závislosti na vašem připojení to může trvat."
-msgid "Resolução"
-msgstr "Nemohu přeložit tuto frázi, protože se nejedná o software string."
-msgid "Paisagem"
-msgstr "I don't have anything to translate for \"Paisagem\"."
-msgid "Retrato"
-msgstr "I don't have anything to translate for \"Retrato\"."
-msgid "Aceleração 3D"
-msgstr "3D akcelerace"
-msgid "Desativado"
-msgstr "Vypnuto"
-msgid "Ativado"
-msgstr "Aktivováno"
-msgid "O Waydroid também pode ser iniciado utilizando o menu do sistema"
-msgstr "Waydroid lze také spustit pomocí nabídky systému."
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível o android não passará da tela de "
-"loading"
-msgstr ""
-"Pokud je 3D akcelerace aktivována na nekompatibilním hardwaru, Android se zasekne na obrazovce s "
-"načítáním."
-msgid "Aceleração 3D é incompatível em placas de vídeo Nvidia utilizando o driver proprietário."
-msgstr "3D akcelerace není kompatibilní s grafickými kartami Nvidia při použití proprietárního ovladače."
-msgid "Exibir ID do Android"
-msgstr "Zobrazit ID zařízení Android"
-msgid "Ativar Google Apps"
-msgstr "Aktivovat Google Aplikace"
-msgid "PlayStore"
-msgstr "Obchod Play"
-msgid ""
-"Para ativar a PlayStore é necessário clicar em (Exibir ID do Android) e copiar o ID do Android, em "
-"seguida clique em (Ativar Google Apps) para abrir a página de Registro do dispositivo, precisa "
-"estar logado na sua conta Google, insira seu ID do Android e faça o registro. Pode demorar alguns "
-"minutos para ativar no seu Waydroid. Feche e abra novamente. Pronto!"
-msgstr ""
-"Pro aktivaci PlayStore je nutné kliknout na (Zobrazit ID Androidu) a zkopírovat ID Androidu, poté "
-"klikněte na (Aktivovat Google Aplikace) pro otevření stránky Registrace zařízení, musíte být "
-"přihlášeni do svého účtu Google, zadejte své ID Androidu a proveďte registraci. Aktivace ve vašem "
-"Waydroidu může trvat několik minut. Zavřete a znovu otevřete. Hotovo!"
-msgid "Remover Configurações"
-msgstr "Odstranit nastavení"
-msgid "Desinstalar o Waydroid"
-msgstr "Odinstalovat Waydroid"
-msgid ""
-"Se a aceleração 3D estiver ativada em um hardware incompatível<br> o android não passará da tela de "
-"loading"
-msgstr ""
-"Pokud je 3D akcelerace aktivována na nekompatibilním hardwaru, Android se zasekne na obrazovce s "
-"načítáním."
-msgid "Parar o Waydroid"
-msgstr "Zastavit Waydroid"
-msgid "Iniciar o Waydroid"
-msgstr "Spustit Waydroid"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
-msgid "Configure AppimageLauncher"
-msgstr "Nakonfigurovat AppimageLauncher"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
-msgid "Choose the behavior of programs available in .appimage"
-msgstr "Vyberte chování programů dostupných v .appimage."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
-msgid "Search for Zeroconf servers"
-msgstr "Hledejte servery Zeroconf"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
-msgid "Expand device support"
-msgstr "Rozšířit podporu zařízení"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
-msgid "Detailed information about your computer"
-msgstr "Podrobné informace o vašem počítači"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
-msgid "System foundation and video card support"
-msgstr "Podpora základního systému a grafické karty"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
-msgid "Restore program configuration"
-msgstr "Obnovit konfiguraci programu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
-msgid "Search for SSH servers"
-msgstr "Hledat SSH servery"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
-msgid "Search for VNC servers"
-msgstr "Hledat servery VNC"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
-msgid "Cross-platform buildsystem"
-msgstr "Křížová platforma buildsystem"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
-msgid "Advanced Firewall Settings"
-msgstr "Pokročilé nastavení firewallu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
-msgid "Advanced Audio Manager - Alsamixer"
-msgstr "Pokročilý správce zvuku - Alsamixer"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
-msgid "JamesDSP improving music and audio quality"
-msgstr "JamesDSP zlepšuje kvalitu hudby a zvuku"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
-msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
-msgstr "Vylepšete svůj zvuk pomocí ekvalizéru, zvýšení basů, prostorového zvuku a dalších efektů."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
-msgid "Partition or Format"
-msgstr "Oddíl nebo Formátovat"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
-msgid "HP Printers"
-msgstr "Tiskárny HP"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
-msgid "Check status, ink level, and maintenance."
-msgstr "Zkontrolujte stav, úroveň inkoustu a údržbu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
-msgid "HP Scanners"
-msgstr "HP skenery"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
-msgid "Configure and use HP scanning devices"
-msgstr "Nakonfigurujte a používejte skenovací zařízení HP."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
-msgid "Configure Kvantum Theme"
-msgstr "Nastavit téma Kvantum"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
-msgid "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
-msgstr "Aby konfigurace Kvantum fungovala, aplikujte téma Kvantum v 'Styl aplikace'."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
-msgid "USB Device Formatter"
-msgstr "Formátovač USB zařízení"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
-msgid "Format a USB device"
-msgstr "Naformátujte USB zařízení"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
-msgid "USB Image Writer"
-msgstr "USB zapisovač obrazu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
-msgid "Create a bootable USB device"
-msgstr "Vytvořte spouštěcí USB zařízení"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
-msgid "Storage Usage"
-msgstr "Využití úložiště"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
-msgid "Sound and microphone"
-msgstr "Zvuk a mikrofon"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
-msgid "Configure or change audio input and output devices. (Ex: HDMI)"
-msgstr "Konfigurace nebo změna vstupních a výstupních zvukových zařízení. (Např. HDMI)"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
-msgid "Printers"
-msgstr "Tiskárny"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
-msgid "Install, configure or remove printers."
-msgstr "Nainstalovat, nakonfigurovat nebo odebrat tiskárny."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
-msgid "KDE Control Center"
-msgstr "Centrum ovládání KDE"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
-msgid "Configure webcam or capture card"
-msgstr "Nakonfigurujte webkameru nebo videozachytávací kartu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
-msgid "Adjust settings and control webcams or video capture devices"
-msgstr "Upravte nastavení a ovládejte webové kamery nebo zařízení pro záznam videa."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
-msgid "Configure accessibility options for users with special needs"
-msgstr "Nastavte možnosti přístupnosti pro uživatele se speciálními potřebami"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
-msgid "Virtual desktops and activities"
-msgstr "Virtuální plochy a aktivity"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
-msgid "Create more than one virtual work environment by switching between them."
-msgstr "Vytvořte více než jedno virtuální pracovní prostředí přepínáním mezi nimi."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
-msgid "Manage applications that start automatically on login"
-msgstr "Spravujte aplikace, které se spouštějí automaticky při přihlášení."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
-msgid ""
-"Enabling search can consume significant memory and processing resources. This may cause the system "
-"to slow down, depending on the number of user files."
-msgstr ""
-"Povolení vyhledávání může spotřebovat značné množství paměti a procesorových zdrojů. To může "
-"způsobit zpomalení systému v závislosti na počtu uživatelských souborů."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
-msgid "Connect and manage Bluetooth devices"
-msgstr "Připojte a spravujte zařízení Bluetooth"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
-msgid "Manage Thunderbolt devices and security settings"
-msgstr "Spravujte zařízení Thunderbolt a nastavení zabezpečení"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
-msgid "Adjust date, time and timezone."
-msgstr "Upravte datum, čas a časové pásmo."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
-msgid "Customize the color scheme of your desktop environment"
-msgstr "Přizpůsobte barevné schéma svého desktopového prostředí."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
-msgid "Select which applications to use for specific tasks"
-msgstr "Vyberte, které aplikace použít pro konkrétní úkoly."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
-msgid "Change mouse cursor appearance and themes"
-msgstr "Změňte vzhled a motivy kurzoru myši."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
-msgid "Configure default paths for documents, downloads and other folders"
-msgstr "Nastavte výchozí cesty pro dokumenty, stahování a další složky."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
-msgid "Change the visual appearance of the Plasma desktop"
-msgstr "Změňte vizuální vzhled desktopu Plasma."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
-msgid "Configure which applications open specific file types"
-msgstr "Nastavte, které aplikace otevírají konkrétní typy souborů."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
-msgid "Manage permissions for Flatpak applications"
-msgstr "Spravujte oprávnění pro aplikace Flatpak"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
-msgid "Install and configure system fonts and typography settings"
-msgstr "Nainstalujte a nakonfigurujte systémové písma a nastavení typografie."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
-msgid "Configure game controllers and joysticks"
-msgstr "Nakonfigurujte herní ovladače a joysticky"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
-msgid "Change the icon theme used throughout the system"
-msgstr "Změňte ikonu téma používané v celém systému."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
-msgid "Configure digital camera integration with your system"
-msgstr "Nakonfigurujte integraci digitálního fotoaparátu se svým systémem."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
-msgid "Manage system services running in the background"
-msgstr "Spravujte systémové služby běžící na pozadí"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
-msgid "Layout settings, shortcuts and other options."
-msgstr "Nastavení rozložení, zkratky a další možnosti."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
-msgid "Configure monitors, resolution, and screen arrangement"
-msgstr "Nastavte monitory, rozlišení a uspořádání obrazovky"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-msgid "Window Decorations"
-msgstr "Dekorace oken"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
-msgid "Change the appearance of window title bars and borders"
-msgstr "Změňte vzhled titulků oken a okrajů."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
-msgid "Configure visual effects and animations for the desktop"
-msgstr "Nakonfigurujte vizuální efekty a animace pro plochu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
-msgid "Configure how windows behave and interact"
-msgstr "Nastavte, jak se okna chovají a interagují."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
-msgid "Configure mouse sensitivity, buttons and behavior"
-msgstr "Nastavte citlivost myši, tlačítka a chování."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
-msgid ""
-"Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile "
-"broadband and others)."
-msgstr ""
-"Pokročilá konfigurace sítě (VPN, WiFi, Drátová, Statická IP, PPPoE, ADSL, drátová síť, mobilní "
-"širokopásmové připojení a další)."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
-msgid "QEFI Entry Manager"
-msgstr "Správce záznamů QEFI"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
-msgid "Manage and configure boot entries for UEFI systems"
-msgstr "Spravujte a konfigurovejte spouštěcí položky pro systémy UEFI"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
-msgid "Configure system and application notifications"
-msgstr "Nastavte systémová a aplikační oznámení"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
-msgid "Boot Screen"
-msgstr "Zahajovací obrazovka"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-msgid "Change the splash screen shown during system startup"
-msgstr "Změňte úvodní obrazovku zobrazenou během spuštění systému."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
-msgid "Configure energy saving and battery settings"
-msgstr "Nastavte úsporu energie a nastavení baterie"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
-msgid "Configure network proxy settings for internet access"
-msgstr "Nastavte nastavení síťového proxy pro přístup k internetu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
-msgid "Manage the history of recently accessed files"
-msgstr "Spravujte historii nedávno otevřených souborů"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
-msgid "Configure language, region, and format settings"
-msgstr "Nastavte jazyk, region a formátování."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
-msgid "Configure screen locking settings and appearance"
-msgstr "Nastavte nastavení a vzhled uzamčení obrazovky."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
-msgid "Configure the login screen appearance and behavior"
-msgstr "Nakonfigurujte vzhled a chování přihlašovací obrazovky."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
-msgid "Desktop Session"
-msgstr "Desktopová relace"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
-msgid "Configure session startup and shutdown behavior"
-msgstr "Nastavte chování spuštění a vypnutí relace"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
-msgid "Configure sound effects for system events"
-msgstr "Nastavte zvukové efekty pro systémové události"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
-msgid "Configure the splash screen shown while starting applications"
-msgstr "Nakonfigurujte uvodni ekran koji se prikazuje prilikom pokretanja aplikacija."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
-msgid "Configure the visual appearance of applications"
-msgstr "Nakonfigurujte vizuální vzhled aplikací"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
-msgid "Configure drawing tablets and stylus settings"
-msgstr "Nastavte nastavení kreslicích tabletů a stylusů"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
-msgid "Configure laptop touchpad behavior and gestures"
-msgstr "Nastavte chování a gesta touchpadu notebooku."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
-msgid "Configure touchscreen behavior and calibration"
-msgstr "Nastavte chování dotykové obrazovky a kalibraci"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
-msgid "Configure trash bin behavior and cleanup settings"
-msgstr "Nastavte chování koše a nastavení úklidu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
-msgid "Change desktop background image and slideshow settings"
-msgstr "Změňte obrázek pozadí plochy a nastavení prezentace."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
-msgid "Configure the system's landing page and default widgets."
-msgstr "Nakonfigurujte vstupní stránku systému a výchozí widgety."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-msgid "Manage FireWire Audio Interfaces - FfadoMixer"
-msgstr "Spravovat audio rozhraní FireWire - FfadoMixer"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
-msgid "Control Panel for your FireWire Audio Interfaces."
-msgstr "Ovládací panel pro vaše FireWire audio rozhraní."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
-msgid "Access your files and folders."
-msgstr "Získejte přístup k vašim souborům a složkám."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
-msgid ""
-"This program can transfer files between smartphones, tablets, and other computers. With it, you "
-"can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, "
-"among other features. It integrates best with BigLinux and sits among the applets located near the "
-"system clock. To sync with your smartphone, go to the Google Store or Apple Store and install KDE "
-"Connect."
-msgstr ""
-"Tento program může přenášet soubory mezi chytrými telefony, tablety a dalšími počítači. S ním "
-"můžete například použít svůj chytrý telefon jako bezdrátovou myš a klávesnici pro ovládání "
-"počítače, mezi dalšími funkcemi. Nejlépe se integruje s BigLinux a nachází se mezi aplikacemi "
-"umístěnými poblíž systémového hodin. Chcete-li synchronizovat se svým chytrým telefonem, přejděte "
-"do Google Storu nebo Apple Storu a nainstalujte KDE Connect."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
-msgid "Access the command terminal."
-msgstr "Přistupte k příkazovému terminálu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
-msgid "Password Manager - KWalletManager"
-msgstr "Správce hesel - KWalletManager"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
-msgid "Tool for managing KDE wallets"
-msgstr "Nástroj pro správu peněženek KDE"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
-msgid "Add or remove programs installed on the system"
-msgstr "Přidat nebo odebrat programy nainstalované v systému"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
-msgid "Connect to internet using Android"
-msgstr "Připojte se k internetu pomocí Androidu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
-msgid "Connect to internet using iOS"
-msgstr "Připojte se k internetu pomocí iOS"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
-msgid "Connect to Internet"
-msgstr "Připojit k internetu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
-msgid "Snapshots and backups"
-msgstr "Snímky a zálohy"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-msgid "Create or activate restore points"
-msgstr "Vytvořit nebo aktivovat body obnovení"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-msgid "Biglinux Settings"
-msgstr "Nastavení Biglinuxu"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
-msgid "Simplify switching BigLinux operation."
-msgstr "Zjednodušte přepínání operace BigLinux."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
-msgid "BigLinux Themes"
-msgstr "BigLinux Témata"
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
-msgid "We provide complete configurations for you to select in an extremely simple way."
-msgstr "Poskytujeme kompletní konfigurace, které můžete vybrat velmi jednoduchým způsobem."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
-msgid "Configure feedback and usage report preferences."
-msgstr "Nastavte preference pro zpětnou vazbu a zprávy o používání."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
-msgid "Configure automatic actions for when devices are connected."
-msgstr "Nastavte automatické akce pro připojená zařízení."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
-msgid "Configure search and indexing options in Plasma."
-msgstr "Nastavte možnosti vyhledávání a indexování v Plasma."
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Použití internetu z vašeho zařízení s Androidem v Linuxu pomocí USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Připojte svůj smartphone s Androidem k počítači s Linuxem pomocí USB kabelu."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
-msgstr "Na svém smartphonu otevřete 'Nastavení' a přejděte na 'Síť a internet' nebo 'Připojení a sdílení'."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Hledejte „USB sdílení připojení“, „USB sdílení“ nebo podobné termíny a povolte ho."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"This will automatically establish the internet connection on your Linux computer without requiring "
-"any additional configuration."
-msgstr ""
-"Toto automaticky naváže internetové připojení na vašem počítači s Linuxem bez potřeby jakékoliv "
-"další konfigurace."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Pokud není váš zařízení s Androidem připojeno k Wi-Fi a používá mobilní data, toto připojení bude "
-"spotřebovávat data z vašeho mobilního tarifu. Abyste se vyhnuli poplatkům za data, ujistěte se, že "
-"je vaše zařízení s Androidem připojeno k Wi-Fi síti před povolením připojení."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Použití internetu vašeho zařízení iOS na Linuxu pomocí USB"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Připojte své zařízení iOS k počítači s Linuxem pomocí USB kabelu."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "Na vašem zařízení s iOS přejděte do nabídky „Nastavení“ a poté vyberte „Osobní hotspot“."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
-"detected."
-msgstr ""
-"Povolit „Povolit ostatním připojení“. To může automaticky povolit „USB sdílení připojení“, pokud je "
-"detekováno USB připojení."
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
-"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
-"connected to a Wi-Fi network before enabling tethering."
-msgstr ""
-"Pokud není váš iOS zařízení připojeno k Wi-Fi a používá mobilní data, sdílení připojení bude "
-"spotřebovávat data z vašeho mobilního tarifu. Abyste se vyhnuli poplatkům za data, ujistěte se, že "
-"je vaše iOS zařízení připojeno k Wi-Fi síti před povolením sdílení připojení."
-# 
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
-"these steps:"
-msgstr ""
-"Chcete-li sdílet internetové připojení vašeho smartphonu s počítačem Linux pomocí USB kabelu, "
-"postupujte podle těchto kroků:"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
-msgid "Close"
-msgstr "Zavřít"
-# 
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:81
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:158
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:478
 msgid "Control Center"
 msgstr "Řídící centrum"
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
 msgstr "O aplikaci Ovládací centrum"
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:166
 msgid "Categories"
 msgstr "Kategorie"
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:177
 msgid "Programs"
 msgstr "Programy"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:182
 msgid "Search..."
 msgstr "Hledat..."
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:430
 #, python-brace-format
 msgid "Executing special command: {0}"
 msgstr "Provádění speciálního příkazu: {0}"
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:434
 #, python-brace-format
 msgid "Launching: {0}"
 msgstr "Spouštění: {0}"
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:437
 #, python-brace-format
 msgid "Error launching program: {0}"
 msgstr "Chyba při spouštění programu: {0}"
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:480
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:486
 msgid "BigLinux Team"
 msgstr "BigLinux Tým"
-# 
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:485
 msgid "© 2025 BigLinux Team"
 msgstr "© 2025 Tým BigLinux"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
 msgstr "Hlavní"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:87
 msgid "Network and Internet"
 msgstr "Síť a internet"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:93
 msgid "Phone"
 msgstr "Telefon"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:99
 msgid "Customize"
 msgstr "Přizpůsobit"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:105
 msgid "Region and Language"
 msgstr "Oblast a jazyk"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:111
 msgid "Multimedia"
 msgstr "Multimédia"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
 msgstr "Účty"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:123
 msgid "Devices"
 msgstr "Zařízení"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:129
 msgid "System"
 msgstr "Systém"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:135
 msgid "About"
 msgstr "O aplikaci"
-# 
+
+#
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-# 
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
 msgstr "Nemohu najít žádný překlad."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Použití internetu z vašeho zařízení s Androidem v Linuxu pomocí USB"
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
+msgid ""
+"Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr ""
+"Připojte svůj smartphone s Androidem k počítači s Linuxem pomocí USB kabelu."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:36
+msgid ""
+"On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
+"'Connections & Sharing'."
+msgstr ""
+"Na svém smartphonu otevřete 'Nastavení' a přejděte na 'Síť a internet' nebo "
+"'Připojení a sdílení'."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr ""
+"Hledejte „USB sdílení připojení“, „USB sdílení“ nebo podobné termíny a "
+"povolte ho."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:43
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:62
+msgid ""
+"This will automatically establish the internet connection on your Linux "
+"computer without requiring any additional configuration."
+msgstr ""
+"Toto automaticky naváže internetové připojení na vašem počítači s Linuxem "
+"bez potřeby jakékoliv další konfigurace."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:46
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your Android device is connected to a Wi-Fi network "
+"before enabling tethering."
+msgstr ""
+"Pokud není váš zařízení s Androidem připojeno k Wi-Fi a používá mobilní "
+"data, toto připojení bude spotřebovávat data z vašeho mobilního tarifu. "
+"Abyste se vyhnuli poplatkům za data, ujistěte se, že je vaše zařízení s "
+"Androidem připojeno k Wi-Fi síti před povolením připojení."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Použití internetu vašeho zařízení iOS na Linuxu pomocí USB"
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Připojte své zařízení iOS k počítači s Linuxem pomocí USB kabelu."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr ""
+"Na vašem zařízení s iOS přejděte do nabídky „Nastavení“ a poté vyberte "
+"„Osobní hotspot“."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:58
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
+"if a USB connection is detected."
+msgstr ""
+"Povolit „Povolit ostatním připojení“. To může automaticky povolit „USB "
+"sdílení připojení“, pokud je detekováno USB připojení."
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:65
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your iOS device is connected to a Wi-Fi network before "
+"enabling tethering."
+msgstr ""
+"Pokud není váš iOS zařízení připojeno k Wi-Fi a používá mobilní data, "
+"sdílení připojení bude spotřebovávat data z vašeho mobilního tarifu. Abyste "
+"se vyhnuli poplatkům za data, ujistěte se, že je vaše iOS zařízení připojeno "
+"k Wi-Fi síti před povolením sdílení připojení."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a "
+"USB cable, follow these steps:"
+msgstr ""
+"Chcete-li sdílet internetové připojení vašeho smartphonu s počítačem Linux "
+"pomocí USB kabelu, postupujte podle těchto kroků:"
+
+#
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+#
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
+msgid "Close"
+msgstr "Zavřít"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:498
+msgid "Configure AppimageLauncher"
+msgstr "Nakonfigurovat AppimageLauncher"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
+msgid "Choose the behavior of programs available in .appimage"
+msgstr "Vyberte chování programů dostupných v .appimage."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:508
+msgid "Search for Zeroconf servers"
+msgstr "Hledejte servery Zeroconf"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:523
+msgid "Expand device support"
+msgstr "Rozšířit podporu zařízení"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:528
+msgid "Detailed information about your computer"
+msgstr "Podrobné informace o vašem počítači"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
+msgid "System foundation and video card support"
+msgstr "Podpora základního systému a grafické karty"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:538
+msgid "Restore program configuration"
+msgstr "Obnovit konfiguraci programu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:543
+msgid "Search for SSH servers"
+msgstr "Hledat SSH servery"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:549
+msgid "Search for VNC servers"
+msgstr "Hledat servery VNC"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
+msgid "Cross-platform buildsystem"
+msgstr "Křížová platforma buildsystem"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:560
+msgid "Advanced Firewall Settings"
+msgstr "Pokročilé nastavení firewallu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "Pokročilý správce zvuku - Alsamixer"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:579
+msgid "JamesDSP improving music and audio quality"
+msgstr "JamesDSP zlepšuje kvalitu hudby a zvuku"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:581
+msgid ""
+"Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr ""
+"Vylepšete svůj zvuk pomocí ekvalizéru, zvýšení basů, prostorového zvuku a "
+"dalších efektů."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:587
+msgid "Partition or Format"
+msgstr "Oddíl nebo Formátovat"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:592
+msgid "HP Printers"
+msgstr "Tiskárny HP"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
+msgid "Check status, ink level, and maintenance."
+msgstr "Zkontrolujte stav, úroveň inkoustu a údržbu."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:598
+msgid "HP Scanners"
+msgstr "HP skenery"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
+msgid "Configure and use HP scanning devices"
+msgstr "Nakonfigurujte a používejte skenovací zařízení HP."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:605
+msgid "Configure Kvantum Theme"
+msgstr "Nastavit téma Kvantum"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:607
+msgid ""
+"For Kvantum configuration to work, apply the Kvantum theme in 'Application "
+"Style'."
+msgstr ""
+"Aby konfigurace Kvantum fungovala, aplikujte téma Kvantum v 'Styl aplikace'."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:613
+msgid "USB Device Formatter"
+msgstr "Formátovač USB zařízení"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:615
+msgid "Format a USB device"
+msgstr "Naformátujte USB zařízení"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
+msgid "USB Image Writer"
+msgstr "USB zapisovač obrazu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:623
+msgid "Create a bootable USB device"
+msgstr "Vytvořte spouštěcí USB zařízení"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:629
+msgid "Storage Usage"
+msgstr "Využití úložiště"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
+msgid "Sound and microphone"
+msgstr "Zvuk a mikrofon"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:644
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr ""
+"Konfigurace nebo změna vstupních a výstupních zvukových zařízení. (Např. "
+"HDMI)"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:650
+msgid "Printers"
+msgstr "Tiskárny"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
+msgid "Install, configure or remove printers."
+msgstr "Nainstalovat, nakonfigurovat nebo odebrat tiskárny."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:656
+msgid "KDE Control Center"
+msgstr "Centrum ovládání KDE"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:665
+msgid "Configure webcam or capture card"
+msgstr "Nakonfigurujte webkameru nebo videozachytávací kartu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:667
+msgid "Adjust settings and control webcams or video capture devices"
+msgstr ""
+"Upravte nastavení a ovládejte webové kamery nebo zařízení pro záznam videa."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:675
+msgid "Configure accessibility options for users with special needs"
+msgstr "Nastavte možnosti přístupnosti pro uživatele se speciálními potřebami"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:681
+msgid "Virtual desktops and activities"
+msgstr "Virtuální plochy a aktivity"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:684
+msgid ""
+"Create more than one virtual work environment by switching between them."
+msgstr ""
+"Vytvořte více než jedno virtuální pracovní prostředí přepínáním mezi nimi."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:691
+msgid "Manage applications that start automatically on login"
+msgstr "Spravujte aplikace, které se spouštějí automaticky při přihlášení."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:698
+msgid ""
+"Enabling search can consume significant memory and processing resources. "
+"This may cause the system to slow down, depending on the number of user "
+"files."
+msgstr ""
+"Povolení vyhledávání může spotřebovat značné množství paměti a procesorových "
+"zdrojů. To může způsobit zpomalení systému v závislosti na počtu "
+"uživatelských souborů."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:704
+msgid "Connect and manage Bluetooth devices"
+msgstr "Připojte a spravujte zařízení Bluetooth"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:710
+msgid "Manage Thunderbolt devices and security settings"
+msgstr "Spravujte zařízení Thunderbolt a nastavení zabezpečení"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:716
+msgid "Adjust date, time and timezone."
+msgstr "Upravte datum, čas a časové pásmo."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:722
+msgid "Customize the color scheme of your desktop environment"
+msgstr "Přizpůsobte barevné schéma svého desktopového prostředí."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:729
+msgid "Select which applications to use for specific tasks"
+msgstr "Vyberte, které aplikace použít pro konkrétní úkoly."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:735
+msgid "Change mouse cursor appearance and themes"
+msgstr "Změňte vzhled a motivy kurzoru myši."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:741
+msgid "Configure default paths for documents, downloads and other folders"
+msgstr "Nastavte výchozí cesty pro dokumenty, stahování a další složky."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:748
+msgid "Change the visual appearance of the Plasma desktop"
+msgstr "Změňte vizuální vzhled desktopu Plasma."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:755
+msgid "Configure which applications open specific file types"
+msgstr "Nastavte, které aplikace otevírají konkrétní typy souborů."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:761
+msgid "Manage permissions for Flatpak applications"
+msgstr "Spravujte oprávnění pro aplikace Flatpak"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
+msgid "Install and configure system fonts and typography settings"
+msgstr "Nainstalujte a nakonfigurujte systémové písma a nastavení typografie."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:783
+msgid "Configure game controllers and joysticks"
+msgstr "Nakonfigurujte herní ovladače a joysticky"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:789
+msgid "Change the icon theme used throughout the system"
+msgstr "Změňte ikonu téma používané v celém systému."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:800
+msgid "Configure digital camera integration with your system"
+msgstr "Nakonfigurujte integraci digitálního fotoaparátu se svým systémem."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:807
+msgid "Manage system services running in the background"
+msgstr "Spravujte systémové služby běžící na pozadí"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
+msgid "Layout settings, shortcuts and other options."
+msgstr "Nastavení rozložení, zkratky a další možnosti."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:821
+msgid "Configure monitors, resolution, and screen arrangement"
+msgstr "Nastavte monitory, rozlišení a uspořádání obrazovky"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:827
+msgid "Window Decorations"
+msgstr "Dekorace oken"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:829
+msgid "Change the appearance of window title bars and borders"
+msgstr "Změňte vzhled titulků oken a okrajů."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:837
+msgid "Configure visual effects and animations for the desktop"
+msgstr "Nakonfigurujte vizuální efekty a animace pro plochu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:844
+msgid "Configure how windows behave and interact"
+msgstr "Nastavte, jak se okna chovají a interagují."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:851
+msgid "Configure mouse sensitivity, buttons and behavior"
+msgstr "Nastavte citlivost myši, tlačítka a chování."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:858
+msgid ""
+"Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, "
+"wired network, mobile broadband and others)."
+msgstr ""
+"Pokročilá konfigurace sítě (VPN, WiFi, Drátová, Statická IP, PPPoE, ADSL, "
+"drátová síť, mobilní širokopásmové připojení a další)."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
+msgid "QEFI Entry Manager"
+msgstr "Správce záznamů QEFI"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:870
+msgid "Manage and configure boot entries for UEFI systems"
+msgstr "Spravujte a konfigurovejte spouštěcí položky pro systémy UEFI"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:877
+msgid "Configure system and application notifications"
+msgstr "Nastavte systémová a aplikační oznámení"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:882
+msgid "Boot Screen"
+msgstr "Zahajovací obrazovka"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:884
+msgid "Change the splash screen shown during system startup"
+msgstr "Změňte úvodní obrazovku zobrazenou během spuštění systému."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:892
+msgid "Configure energy saving and battery settings"
+msgstr "Nastavte úsporu energie a nastavení baterie"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:898
+msgid "Configure network proxy settings for internet access"
+msgstr "Nastavte nastavení síťového proxy pro přístup k internetu."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:904
+msgid "Manage the history of recently accessed files"
+msgstr "Spravujte historii nedávno otevřených souborů"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:909
+msgid "Configure language, region, and format settings"
+msgstr "Nastavte jazyk, region a formátování."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:915
+msgid "Configure screen locking settings and appearance"
+msgstr "Nastavte nastavení a vzhled uzamčení obrazovky."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:922
+msgid "Configure the login screen appearance and behavior"
+msgstr "Nakonfigurujte vzhled a chování přihlašovací obrazovky."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
+msgid "Desktop Session"
+msgstr "Desktopová relace"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:930
+msgid "Configure session startup and shutdown behavior"
+msgstr "Nastavte chování spuštění a vypnutí relace"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:936
+msgid "Configure sound effects for system events"
+msgstr "Nastavte zvukové efekty pro systémové události"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
+msgid "Configure the splash screen shown while starting applications"
+msgstr ""
+"Nakonfigurujte uvodni ekran koji se prikazuje prilikom pokretanja aplikacija."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:949
+msgid "Configure the visual appearance of applications"
+msgstr "Nakonfigurujte vizuální vzhled aplikací"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:955
+msgid "Configure drawing tablets and stylus settings"
+msgstr "Nastavte nastavení kreslicích tabletů a stylusů"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:960
+msgid "Configure laptop touchpad behavior and gestures"
+msgstr "Nastavte chování a gesta touchpadu notebooku."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:966
+msgid "Configure touchscreen behavior and calibration"
+msgstr "Nastavte chování dotykové obrazovky a kalibraci"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:972
+msgid "Configure trash bin behavior and cleanup settings"
+msgstr "Nastavte chování koše a nastavení úklidu."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:979
+msgid "Change desktop background image and slideshow settings"
+msgstr "Změňte obrázek pozadí plochy a nastavení prezentace."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
+msgid "Configure the system's landing page and default widgets."
+msgstr "Nakonfigurujte vstupní stránku systému a výchozí widgety."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:992
+msgid "Manage FireWire Audio Interfaces - FfadoMixer"
+msgstr "Spravovat audio rozhraní FireWire - FfadoMixer"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:994
+msgid "Control Panel for your FireWire Audio Interfaces."
+msgstr "Ovládací panel pro vaše FireWire audio rozhraní."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
+msgid "Access your files and folders."
+msgstr "Získejte přístup k vašim souborům a složkám."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1006
+msgid ""
+"This program can transfer files between smartphones, tablets, and other "
+"computers. With it, you can, for example, use your smartphone as a wireless "
+"mouse and keyboard to control the computer, among other features. It "
+"integrates best with BigLinux and sits among the applets located near the "
+"system clock. To sync with your smartphone, go to the Google Store or Apple "
+"Store and install KDE Connect."
+msgstr ""
+"Tento program může přenášet soubory mezi chytrými telefony, tablety a "
+"dalšími počítači. S ním můžete například použít svůj chytrý telefon jako "
+"bezdrátovou myš a klávesnici pro ovládání počítače, mezi dalšími funkcemi. "
+"Nejlépe se integruje s BigLinux a nachází se mezi aplikacemi umístěnými "
+"poblíž systémového hodin. Chcete-li synchronizovat se svým chytrým "
+"telefonem, přejděte do Google Storu nebo Apple Storu a nainstalujte KDE "
+"Connect."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1012
+msgid "Access the command terminal."
+msgstr "Přistupte k příkazovému terminálu."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1017
+msgid "Password Manager - KWalletManager"
+msgstr "Správce hesel - KWalletManager"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1019
+msgid "Tool for managing KDE wallets"
+msgstr "Nástroj pro správu peněženek KDE"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1026
+msgid "Add or remove programs installed on the system"
+msgstr "Přidat nebo odebrat programy nainstalované v systému"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1031
+msgid "Connect to internet using Android"
+msgstr "Připojte se k internetu pomocí Androidu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
+msgid "Connect to internet using iOS"
+msgstr "Připojte se k internetu pomocí iOS"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1049
+msgid "Connect to Internet"
+msgstr "Připojit k internetu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
+msgid "Snapshots and backups"
+msgstr "Snímky a zálohy"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
+msgid "Create or activate restore points"
+msgstr "Vytvořit nebo aktivovat body obnovení"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1073
+msgid "Biglinux Settings"
+msgstr "Nastavení Biglinuxu"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
+msgid "Simplify switching BigLinux operation."
+msgstr "Zjednodušte přepínání operace BigLinux."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
+msgid "BigLinux Themes"
+msgstr "BigLinux Témata"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1083
+msgid ""
+"We provide complete configurations for you to select in an extremely simple "
+"way."
+msgstr ""
+"Poskytujeme kompletní konfigurace, které můžete vybrat velmi jednoduchým "
+"způsobem."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1095
+msgid "Configure feedback and usage report preferences."
+msgstr "Nastavte preference pro zpětnou vazbu a zprávy o používání."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1102
+msgid "Configure automatic actions for when devices are connected."
+msgstr "Nastavte automatické akce pro připojená zařízení."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1110
+msgid "Configure search and indexing options in Plasma."
+msgstr "Nastavte možnosti vyhledávání a indexování v Plasma."

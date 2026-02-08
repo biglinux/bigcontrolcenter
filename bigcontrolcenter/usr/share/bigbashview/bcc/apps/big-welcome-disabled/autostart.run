@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-if [[ -e "$HOME/.config/systemd/user/plasma-core.target.wants/big-welcome.service" ]]; then
-	systemctl --user disable big-welcome
-else
-	systemctl --user enable big-welcome
-fi
