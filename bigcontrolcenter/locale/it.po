@@ -90,7 +90,7 @@ msgstr "© 2025 BigLinux Team"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Principale"
+msgstr "Generale"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -132,7 +132,7 @@ msgstr "Multimedia"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
-msgstr "Accounti"
+msgstr "Account"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "Informazioni"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Altro"
+msgstr "Altri"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -193,7 +193,8 @@ msgstr ""
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Cerca di 'USB Tethering', 'USB Tether' o termini simili e abilitalo."
+msgstr ""
+"Cerca 'Tethering USB', 'Router USB' o termini simili e attivalo."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -347,7 +348,7 @@ msgstr "Cerca server VNC"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "Sistema di build multipiattaforma"
+msgstr "Sistema di compilazione multipiattaforma"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -438,7 +439,7 @@ msgstr "Formatta un dispositivo USB"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "Scrittore di Immagini USB"
+msgstr "Creatore di immagini USB"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -475,7 +476,7 @@ msgstr "Stampanti"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Installare, configurare o rimuovere stampanti."
+msgstr "Installa, configura o rimuovi stampanti"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -631,7 +632,7 @@ msgstr "Gestisci i servizi di sistema in esecuzione in background"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "Impostazioni di layout, scorciatoie e altre opzioni."
+msgstr "Impostazioni di layout, scorciatoie e altre opzioni"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -683,7 +684,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "Gestore di Entrata QEFI"
+msgstr "Gestore del menu di avvio UEFI"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -811,7 +812,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Configura la pagina di atterraggio del sistema e i widget predefiniti."
+msgstr "Configura la pagina d'inizio del sistema e i widget del desktop"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930

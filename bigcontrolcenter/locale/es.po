@@ -97,7 +97,7 @@ msgstr "Principal"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:87
 msgid "Network and Internet"
-msgstr "Red de redes y Internet"
+msgstr "Red e Internet"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "Acerca de"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Otro"
+msgstr "Otros"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -184,8 +184,8 @@ msgid ""
 "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
 "'Connections & Sharing'."
 msgstr ""
-"En tu smartphone, abre 'Configuración' y navega a 'Red e Internet' o "
-"'Conexiones y Compartición'."
+"En tu smartphone, abre 'Ajustes' y ve a 'Red e Internet' o 'Conexión y "
+"compartir'."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -193,7 +193,7 @@ msgstr ""
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr ""
-"Busque 'USB Tethering', 'USB Tether' u otros términos similares y habilítelo."
+"Busca 'Anclaje de Red USB', 'Anclaje USB' o términos similares y actívalo."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -242,8 +242,8 @@ msgstr "Conecta tu dispositivo iOS al ordenador Linux usando un cable USB."
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
 msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr ""
-"En su dispositivo iOS, vaya a 'Configuración', luego seleccione 'Compartir "
-"Internet'."
+"En su dispositivo iOS, vaya a 'Ajustes' y seleccione 'Punto de acceso "
+"personal'."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -253,8 +253,8 @@ msgid ""
 "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
 "if a USB connection is detected."
 msgstr ""
-"Habilitar 'Permitir que otros se unan'. Esto puede habilitar automáticamente "
-"'USB Tethering' si se detecta una conexión USB."
+"Active 'Permitir a otros conectarse'. Esto puede activar automáticamente el "
+"'Anclaje a red USB' si se detecta una conexión USB."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -322,7 +322,7 @@ msgstr "Información detallada sobre su computadora"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
 msgid "System foundation and video card support"
-msgstr "Soporte de sistema y tarjeta de video"
+msgstr "Base del sistema y soporte de tarjetas gráficas"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
@@ -437,7 +437,7 @@ msgstr "Formatear un dispositivo USB"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "Escritor de imágenes USB"
+msgstr "Grabador de imágenes USB"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -600,7 +600,7 @@ msgstr "Gestionar permisos para aplicaciones Flatpak"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
 msgid "Install and configure system fonts and typography settings"
-msgstr "Instalar y configurar fuentes del sistema y ajustes de tipografía"
+msgstr "Instalar y gestionar fuentes del sistema y ajustes de tipografía"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
@@ -815,8 +815,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr ""
-"Configura la página de inicio del sistema y los widgets predeterminados."
+msgstr "Configure la página de bienvenida del sistema y los widgets del escritorio"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930

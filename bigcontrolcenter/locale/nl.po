@@ -90,7 +90,7 @@ msgstr "© 2025 BigLinux Team"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Hoofd"
+msgstr "Algemeen"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "Over"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Andere"
+msgstr "Overige"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -195,8 +195,8 @@ msgstr ""
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr ""
-"Zoek naar 'USB-tethering', 'USB-tether' of vergelijkbare termen en schakel "
-"het in."
+"Zoek 'Tethering via USB', 'USB-tethering' of soortgelijke termen en schakel "
+"dit in."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -440,7 +440,7 @@ msgstr "Een USB-apparaat formatteren"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB-afbeeldingmaker"
+msgstr "USB-image-schrijver"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -477,7 +477,7 @@ msgstr "Printers"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Printers installeren, configureren of verwijderen."
+msgstr "Printers installeren, configureren of verwijderen"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -631,7 +631,7 @@ msgstr "Beheer systeemservices die op de achtergrond draaien"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "Lay-outinstellingen, sneltoetsen en andere opties."
+msgstr "Indelingsinstellingen, sneltoetsen en overige opties"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -683,7 +683,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI Invoergestuurder"
+msgstr "Beheerder voor UEFI-opstartmenu"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -813,7 +813,7 @@ msgstr "Wijzig bureaubladachtergrondafbeelding en diavoorstellingsinstellingen"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Configureer de startpagina van het systeem en de standaardwidgets."
+msgstr "Configureer de startpagina van het systeem en de bureaubladwidgets"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 931

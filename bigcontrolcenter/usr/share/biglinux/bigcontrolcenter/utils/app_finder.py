@@ -358,6 +358,7 @@ class AppFinder:
         """Return a list of static desktop files paths based on the shell script"""
         static_files = [
             "/usr/share/applications/big-store.desktop",
+            "/usr/share/applications/org.biglinux.welcome.desktop",
             "/usr/share/applications/bigcontrolcenter/pavucontrol-qt.desktop",
             "/usr/share/applications/bigcontrolcenter/me.timschneeberger.jdsp4linux.desktop",
             "/usr/share/applications/org.manjaro.pamac.manager.desktop",
@@ -1073,6 +1074,10 @@ class AppFinder:
                 "app_name": _("Biglinux Settings"),
                 "app_description": _("Simplify switching BigLinux operation."),
                 "app_icon": "biglinux-settings",
+                "app_categories": "Star System",
+            },
+            {
+                "app_id": "org.biglinux.welcome",
                 "app_categories": "Star System",
             },
             {

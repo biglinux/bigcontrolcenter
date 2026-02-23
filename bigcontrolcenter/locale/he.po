@@ -139,7 +139,7 @@ msgstr "חשבונות"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:123
 msgid "Devices"
-msgstr "התקן"
+msgstr "מכשירים"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "אודות"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "אחר"
+msgstr "אחרים"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -431,7 +431,7 @@ msgstr "פורמט התקן USB"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "כותב תמונות USB"
+msgstr "יצירת כונן USB לאתחול"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -467,7 +467,7 @@ msgstr "מדפסות"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "התקן, הגדר או הסר מדפסות."
+msgstr "התקנה, הגדרה או הסרה של מדפסות."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -617,7 +617,7 @@ msgstr "נהל שירותי מערכת הפועלים ברקע"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "הגדרות פריסה, קיצורי דרך ואפשרויות אחרות."
+msgstr "הגדרות פריסה, קיצורי דרך ואפשרויות נוספות"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -669,7 +669,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "מנהל כניסת QEFI"
+msgstr "מנהל רשומות אתחול UEFI"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -735,7 +735,7 @@ msgstr "הגדר את המראה וההתנהגות של מסך הכניסה"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
 msgid "Desktop Session"
-msgstr "שיחת שולחן עבודה"
+msgstr "סשן שולחן עבודה"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
@@ -753,7 +753,7 @@ msgstr "הגדר אפקטי קול לאירועי מערכת"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
 msgid "Configure the splash screen shown while starting applications"
-msgstr "הגדר את מסך הפתיחה המוצג בעת הפעלת יישומים"
+msgstr "הגדרת מסך הפתיחה המוצג בעת הפעלת יישומים."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
@@ -795,7 +795,7 @@ msgstr "שנה את תמונת הרקע של שולחן העבודה והגדר�
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "הגדר את דף הנחיתה של המערכת ווידג'טים ברירת המחדל."
+msgstr "הגדרת דף הנחיתה של המערכת ויישומונים."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
@@ -813,7 +813,7 @@ msgstr "לוח בקרה עבור ממשקי שמע FireWire שלך."
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
 msgid "Access your files and folders."
-msgstr "גשת לקבצים ולתיקיות שלך."
+msgstr "גישה לקבצים ולתיקיות שלך."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
@@ -878,7 +878,7 @@ msgstr "התחבר לאינטרנט"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
 msgid "Snapshots and backups"
-msgstr "צילומי מסך וגיבויים"
+msgstr "סנאפשוטים וגיבויים"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486

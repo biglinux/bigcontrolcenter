@@ -29,7 +29,7 @@ msgstr "Juhtimiskeskus"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
-msgstr "Kontrollikeskuse kohta"
+msgstr "Juhtimiskeskuse kohta"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
@@ -90,7 +90,7 @@ msgstr "© 2025 BigLinuxi meeskond"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Peamine"
+msgstr "Avaleht"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "Teave"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Muu"
+msgstr "Muud"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -346,7 +346,7 @@ msgstr "Otsi VNC-servereid"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "Ristplatvormi ehitussüsteem"
+msgstr "Multiplatvormne ehitussüsteem"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -436,7 +436,7 @@ msgstr "Formateeri USB-seade"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB-pildi kirjutaja"
+msgstr "USB-mälupulga kirjutaja"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -473,7 +473,7 @@ msgstr "Printerid"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Installige, konfigureerige või eemaldage printerid."
+msgstr "Printerite paigaldamine, seadistamine või eemaldamine."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -626,7 +626,7 @@ msgstr "Haldage süsteemiteenuseid, mis töötavad taustal"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "Paigutuse seaded, otseteed ja muud valikud."
+msgstr "Paigutuse seaded, klahvikombinatsioonid ja muud valikud"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -678,7 +678,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI sisestushaldur"
+msgstr "UEFI käivituskirjete haldur"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -702,7 +702,7 @@ msgstr "Käivitusekraan"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:884
 msgid "Change the splash screen shown during system startup"
-msgstr "Muuda süsteemi käivitamisel kuvatavat sisselogimisekraani."
+msgstr "Muuda süsteemi käivitamisel kuvatavat käivitusekraani."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
@@ -762,7 +762,7 @@ msgstr "Konfigureeri heliefekte süsteemi sündmuste jaoks"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
 msgid "Configure the splash screen shown while starting applications"
-msgstr "Konfigureeri rakenduste käivitamisel kuvatav sisselogimisekraan."
+msgstr "Rakenduste käivitamisel kuvatava käivitusekraani seadistamine."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
@@ -804,7 +804,7 @@ msgstr "Muuda töölaua taustapilti ja slaidiesituse seadeid"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Konfigureeri süsteemi maandumisleht ja vaikevidinad."
+msgstr "Süsteemi maandumislehe ja vaikividžetite seadistamine."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
@@ -870,13 +870,13 @@ msgstr "Lisa või eemalda süsteemi installitud programme"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1031
 msgid "Connect to internet using Android"
-msgstr "Ühenda internetiga, kasutades Androidi."
+msgstr "Ühenda internetiga, kasutades Androidi"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
 msgid "Connect to internet using iOS"
-msgstr "Ühenda internetiga, kasutades iOS-i."
+msgstr "Ühenda internetiga, kasutades iOS-i"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182

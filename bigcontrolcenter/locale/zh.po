@@ -90,7 +90,7 @@ msgstr "© 2025 BigLinux团队"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "主要"
+msgstr "主页"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -111,7 +111,7 @@ msgstr "电话"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:99
 msgid "Customize"
-msgstr "定制化"
+msgstr "个性化"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -190,7 +190,7 @@ msgstr "在您的智能手机上，打开“设置”，然后导航到“网络
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "查找“USB网络共享”、“USB共享”或类似术语并启用。"
+msgstr "查找“USB 网络共享”、“USB 共享”或类似术语并启用。"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -335,7 +335,7 @@ msgstr "搜索VNC服务器"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "跨平台构建系统"
+msgstr "多平台构建系统"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -422,7 +422,7 @@ msgstr "格式化 USB 设备"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB映像写入器"
+msgstr "USB 镜像写入工具"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -458,7 +458,7 @@ msgstr "打印机"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "安装、配置或移除打印机。"
+msgstr "安装、配置或删除打印机"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -608,7 +608,7 @@ msgstr "管理在后台运行的系统服务"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "布局设置、快捷方式和其他选项。"
+msgstr "布局设置、快捷键和其他选项"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -659,7 +659,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI条目管理器"
+msgstr "UEFI 启动项管理器"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -785,7 +785,7 @@ msgstr "更改桌面背景图像和幻灯片设置"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "配置系统的登录页面和默认小部件。"
+msgstr "配置系统首页及默认桌面小部件"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930

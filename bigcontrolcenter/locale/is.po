@@ -23,7 +23,7 @@ msgstr ""
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:158
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:478
 msgid "Control Center"
-msgstr "Pusat Kontrol"
+msgstr "Stjórnstöð"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
@@ -48,7 +48,7 @@ msgstr "Forritin"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:182
 msgid "Search..."
-msgstr "Cari..."
+msgstr "Leita..."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
@@ -90,14 +90,14 @@ msgstr "© 2025 BigLinux Teymi"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Utama"
+msgstr "Aðal"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:87
 msgid "Network and Internet"
-msgstr "Jaringan dan Internet"
+msgstr "Netkerfi og internet"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -111,14 +111,14 @@ msgstr "Telefon"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:99
 msgid "Customize"
-msgstr "Sesuaikan"
+msgstr "Sérsníða"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:105
 msgid "Region and Language"
-msgstr "Wilayah dan Bahasa"
+msgstr "Svæði og tungumál"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -132,51 +132,49 @@ msgstr "Multimedia"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
-msgstr "Akaun"
+msgstr "Reikningar"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:123
 msgid "Devices"
-msgstr "Peranti"
+msgstr "Tæki"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:129
 msgid "System"
-msgstr "Sistem"
+msgstr "Kerfi"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:135
 msgid "About"
-msgstr "Tentang"
+msgstr "Um"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "lain"
+msgstr "Annað"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
 msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Menggunakan Internet Peranti Android Anda pada Linux melalui USB"
+msgstr "Notaðu internet Android-tækisins þíns á Linux með USB"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
-msgid ""
-"Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr ""
-"Sambungkan smartphone Android Anda ke komputer Linux menggunakan kabel USB."
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Tengdu Android-snjallsímann þinn við Linux-tölvuna með USB-snúru."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
@@ -193,7 +191,7 @@ msgstr ""
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Cari 'USB Tethering', 'USB Tether', atau istilah serupa dan aktifkan."
+msgstr "Leitaðu að 'USB Tethering', 'USB Tether' eða svipuðum hugtökum og virkjaðu það."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -204,8 +202,8 @@ msgid ""
 "This will automatically establish the internet connection on your Linux "
 "computer without requiring any additional configuration."
 msgstr ""
-"Ini akan secara otomatis membuat koneksi internet pada komputer Linux Anda "
-"tanpa memerlukan konfigurasi tambahan."
+"Þetta mun sjálfkrafa koma á internettengingu á Linux tölvunni þinni án þess "
+"að þurfa frekari stillingar."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -217,24 +215,24 @@ msgid ""
 "charges, ensure that your Android device is connected to a Wi-Fi network "
 "before enabling tethering."
 msgstr ""
-"Jika peranti Android anda tidak disambungkan ke Wi-Fi dan menggunakan data "
-"selular, pengikatan ini akan menggunakan data dari rancangan selular anda. "
-"Untuk mengelakkan caj data, pastikan bahawa peranti Android anda "
-"disambungkan ke rangkaian Wi-Fi sebelum mengaktifkan pengikatan."
+"Ef Android-tækið þitt er ekki tengt við Wi-Fi og notar farsímagögn, mun "
+"þessi nettenging nota gögn úr farsímaáætlun þinni. Til að forðast "
+"gagnagjöld skaltu ganga úr skugga um að Android-tækið þitt sé tengt við Wi-Fi "
+"net áður en þú virkjar nettengingu."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
 msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Menggunakan Internet Peranti iOS Anda pada Linux melalui USB"
+msgstr "Notaðu internet iOS-tækisins þíns á Linux með USB"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
 msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Sambungkan perangkat iOS Anda ke komputer Linux menggunakan kabel USB."
+msgstr "Tengdu iOS-tækið þitt við Linux-tölvuna með USB-snúru."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -242,7 +240,7 @@ msgstr "Sambungkan perangkat iOS Anda ke komputer Linux menggunakan kabel USB."
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
 msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr ""
-"Pada peranti iOS anda, pergi ke 'Tetapan', kemudian pilih 'Hotspot Peribadi'."
+"Í iOS-tækinu þínu skaltu fara í 'Stillingar' og velja síðan 'Eigin netpunktur'."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -252,8 +250,8 @@ msgid ""
 "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
 "if a USB connection is detected."
 msgstr ""
-"Aktifkan 'Izinkan Orang Lain Bergabung'. Ini mungkin secara otomatis "
-"mengaktifkan 'USB Tethering' jika koneksi USB terdeteksi."
+"Virkjaðu 'Leyfa öðrum að tengjast'. Þetta gæti sjálfkrafa virkjað 'USB "
+"Tethering' ef USB-tenging finnst."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -265,10 +263,10 @@ msgid ""
 "charges, ensure that your iOS device is connected to a Wi-Fi network before "
 "enabling tethering."
 msgstr ""
-"Jika peranti iOS anda tidak disambungkan ke Wi-Fi dan menggunakan data "
-"selular, pengikatan ini akan menggunakan data dari rancangan selular anda. "
-"Untuk mengelakkan caj data, pastikan bahawa peranti iOS anda disambungkan ke "
-"rangkaian Wi-Fi sebelum mengaktifkan pengikatan."
+"Ef iOS-tækið þitt er ekki tengt við Wi-Fi og notar farsímagögn, mun þessi "
+"nettenging nota gögn úr farsímaáætlun þinni. Til að forðast gagnagjöld "
+"skaltu ganga úr skugga um að iOS-tækið þitt sé tengt við Wi-Fi net áður en "
+"þú virkjar nettengingu."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
@@ -285,19 +283,19 @@ msgstr ""
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
 msgid "Close"
-msgstr "Tutup"
+msgstr "Loka"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:498
 msgid "Configure AppimageLauncher"
-msgstr "Konfigurasikan AppimageLauncher"
+msgstr "Stilla AppimageLauncher"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
 msgid "Choose the behavior of programs available in .appimage"
-msgstr "Pilih perilaku program yang tersedia dalam .appimage"
+msgstr "Veldu hegðun forrita sem eru í boði í .appimage"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
@@ -309,7 +307,7 @@ msgstr "Leitaðu að Zeroconf þjónustum"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:523
 msgid "Expand device support"
-msgstr "Perluas dukungan perangkat"
+msgstr "Auka stuðning við tæki"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
@@ -327,19 +325,19 @@ msgstr "Kerfisgrunnur og stuðningur fyrir myndkort"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:538
 msgid "Restore program configuration"
-msgstr "Pulihkan konfigurasi program"
+msgstr "Endurheimta stillingar forrits"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:543
 msgid "Search for SSH servers"
-msgstr "Cari server SSH"
+msgstr "Leita að SSH-þjónum"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:549
 msgid "Search for VNC servers"
-msgstr "Cari pelayan VNC"
+msgstr "Leita að VNC-þjónum"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
@@ -357,7 +355,7 @@ msgstr "Fyrirkomulag háþróaðrar eldveggstillinga"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
 msgid "Advanced Audio Manager - Alsamixer"
-msgstr "Pengurus Audio Lanjutan - Alsamixer"
+msgstr "Ítarleg hljóðstýring - Alsamixer"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
@@ -434,7 +432,7 @@ msgstr "Formataðu USB tæki"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB myndaskrifari"
+msgstr "Búa til USB-ræsilykil"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -446,44 +444,43 @@ msgstr "Búðu upp USB tæki sem er ræsanlegt"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:629
 msgid "Storage Usage"
-msgstr "Penggunaan Penyimpanan"
+msgstr "Geymslunotkun"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
 msgid "Sound and microphone"
-msgstr "Bunyi dan mikrofon"
+msgstr "Hljóð og hljóðnemi"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:644
 msgid "Configure or change audio input and output devices. (Ex: HDMI)"
-msgstr ""
-"Konfigurasikan atau ubah perangkat masukan dan keluaran audio. (Contoh: HDMI)"
+msgstr "Stilla eða breyta inntaks- og úttakstækjum hljóðs (t.d. HDMI)."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:650
 msgid "Printers"
-msgstr "Pencetak"
+msgstr "Prentarar"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Pasang, konfigurasikan, atau hapus printer."
+msgstr "Settu upp, stilltu eða fjarlægðu prentara."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:656
 msgid "KDE Control Center"
-msgstr "Pusat Kontrol KDE"
+msgstr "KDE stjórnstöð"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:665
 msgid "Configure webcam or capture card"
-msgstr "Konfigurasikan webcam atau kartu tangkap"
+msgstr "Stilla vefmyndavél eða hljóðkort"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
@@ -501,7 +498,7 @@ msgstr "Stilltu aðgengisvalkosti fyrir notendur með sérþarfir"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:681
 msgid "Virtual desktops and activities"
-msgstr "Desktop maya maya dan aktiviti"
+msgstr "Sýndarskjáborð og virkni"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
@@ -674,7 +671,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI Inngangsstjóri"
+msgstr "Stýring UEFI ræsifærslna"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -800,7 +797,7 @@ msgstr "Breyta skrifborðsbakgrunnsmynd og rennslisstillingar"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Stilltuðu aðkomusíðu kerfisins og sjálfgefnar smáforrit."
+msgstr "Stilla upphafssíðu kerfisins og sjálfgefna smáforrit"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
@@ -842,7 +839,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1012
 msgid "Access the command terminal."
-msgstr "Akses terminal perintah."
+msgstr "Aðgangur að skipana-terminal."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
@@ -878,19 +875,19 @@ msgstr "Tengdu tengingu við internetið með iOS"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1049
 msgid "Connect to Internet"
-msgstr "Sambungkan ke Internet"
+msgstr "Tengjast internetinu"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
 msgid "Snapshots and backups"
-msgstr "Snapshot dan sandaran"
+msgstr "Skyndimyndir og öryggisafrit"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
 msgid "Create or activate restore points"
-msgstr "Buat atau aktifkan titik pemulihan"
+msgstr "Búa til eða virkja endurheimtarpunkta"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
@@ -917,8 +914,8 @@ msgid ""
 "We provide complete configurations for you to select in an extremely simple "
 "way."
 msgstr ""
-"Kami menyediakan konfigurasi lengkap untuk Anda pilih dengan cara yang "
-"sangat sederhana."
+"Við bjóðum upp á fullkomnar stillingar sem þú getur valið á afar einfaldan "
+"hátt."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261

@@ -90,7 +90,7 @@ msgstr "© 2025 BigLinux-tiimi"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Päävalikko"
+msgstr "Alku"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "Tietoja"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Muu"
+msgstr "Muut"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -346,7 +346,7 @@ msgstr "Etsi VNC-palvelimia"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "Ristiinrakennusjärjestelmä"
+msgstr "Multiplatforminen rakennusjärjestelmä"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -437,7 +437,7 @@ msgstr "Muotoile USB-laite"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB-kuva kirjoittaja"
+msgstr "USB-levykuvan kirjoittaja"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -473,7 +473,7 @@ msgstr "Tulostimet"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Asenna, määritä tai poista tulostimet."
+msgstr "Tulostimien asennus, määritys tai poisto."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -625,7 +625,7 @@ msgstr "Hallitse taustalla toimivia järjestelmäpalveluita"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "Asetteluasetukset, pikanäppäimet ja muut vaihtoehdot."
+msgstr "Asetteluasetukset, pikanäppäimet ja muut vaihtoehdot"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -677,7 +677,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI-tulojohtaja"
+msgstr "UEFI-käynnistyshallinta"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -761,7 +761,7 @@ msgstr "Määritä ääniä järjestelmätilanteille"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
 msgid "Configure the splash screen shown while starting applications"
-msgstr "Määritä aloitusnäyttö, joka näkyy sovelluksia käynnistettäessä."
+msgstr "Sovellusten käynnistyksen yhteydessä näytettävän aloitusruudun määritys."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
@@ -803,7 +803,7 @@ msgstr "Vaihda työpöydän taustakuvaa ja diaesityksen asetuksia"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Määritä järjestelmän aloitussivu ja oletuswidgetit."
+msgstr "Järjestelmän aloitussivun ja oletuswidgetien määritys."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
@@ -875,7 +875,7 @@ msgstr "Yhdistä internetiin käyttäen Androidia"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
 msgid "Connect to internet using iOS"
-msgstr "Yhdistä internetiin käyttäen iOS:ää."
+msgstr "Yhdistä internetiin käyttäen iOS:ää"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182

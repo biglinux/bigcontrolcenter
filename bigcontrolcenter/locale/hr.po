@@ -90,7 +90,7 @@ msgstr "© 2025 BigLinux Tim"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Glavni"
+msgstr "Početna"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -125,7 +125,7 @@ msgstr "Regija i Jezik"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:111
 msgid "Multimedia"
-msgstr "Multimedijski"
+msgstr "Multimedija"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "O programu"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Drugo"
+msgstr "Ostalo"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -349,7 +349,7 @@ msgstr "Pretražite VNC poslužitelje"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "Križ-platformski sustav izgradnje"
+msgstr "Višeplatformski sustav izgradnje"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -440,7 +440,7 @@ msgstr "Formatirajte USB uređaj"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB Writer za slike"
+msgstr "Stvaranje USB pogona za pokretanje"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -478,7 +478,7 @@ msgstr "Pisači"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Instalirajte, konfigurirajte ili uklonite pisače."
+msgstr "Instalacija, podešavanje ili uklanjanje pisača."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -631,7 +631,7 @@ msgstr "Upravljajte sustavnim uslugama koje rade u pozadini"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "Postavke izgleda, prečaci i druge opcije."
+msgstr "Postavke rasporeda, prečaci i druge opcije"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -683,7 +683,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI Upravitelj Unosa"
+msgstr "Upravitelj UEFI unosa"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -750,7 +750,7 @@ msgstr "Konfigurirajte izgled i ponašanje zaslona za prijavu."
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
 msgid "Desktop Session"
-msgstr "Radna površina sesije"
+msgstr "Sesija radne površine"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
@@ -768,9 +768,7 @@ msgstr "Konfigurirajte zvučne efekte za sustavne događaje"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
 msgid "Configure the splash screen shown while starting applications"
-msgstr ""
-"Konfigurirajte zaslon dobrodošlice koji se prikazuje prilikom pokretanja "
-"aplikacija."
+msgstr "Podešavanje početnog zaslona pri pokretanju aplikacija."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
@@ -812,7 +810,7 @@ msgstr "Promijenite sliku pozadine radne površine i postavke slajdova."
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Konfigurirajte odredišnu stranicu sustava i zadane widgete."
+msgstr "Podešavanje početne stranice sustava i zadanih widgeta."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
@@ -914,13 +912,13 @@ msgstr "Biglinux Postavke"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
 msgid "Simplify switching BigLinux operation."
-msgstr "P pojednostavite prebacivanje BigLinux operacije."
+msgstr "Pojednostavite prebacivanje BigLinux operacije."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
 msgid "BigLinux Themes"
-msgstr "BigLinux Tematske"
+msgstr "BigLinux teme"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52

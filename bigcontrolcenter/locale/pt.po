@@ -160,7 +160,7 @@ msgstr "Sobre"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Outro"
+msgstr "Outros"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -193,8 +193,7 @@ msgstr ""
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr ""
-"Procure 'Compartilhamento de USB', 'USB Tether' ou termos similares e "
-"habilite-o."
+"Procure por 'Ancoragem USB', 'Roteador USB' ou termos similares e ative-o."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -243,8 +242,7 @@ msgstr "Conecte seu dispositivo iOS ao computador Linux usando um cabo USB."
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
 msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr ""
-"No seu dispositivo iOS, vá para 'Ajustes', depois selecione 'Hotspot "
-"Pessoal'."
+"No seu dispositivo iOS, vá em 'Ajustes' e selecione 'Acesso Pessoal'."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -254,8 +252,8 @@ msgid ""
 "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
 "if a USB connection is detected."
 msgstr ""
-"Ativar 'Permitir que outros se juntem'. Isso pode ativar automaticamente "
-"'Compartilhamento de USB' se uma conexão USB for detectada."
+"Ative 'Permitir Outros'. Isso pode ativar automaticamente o "
+"'Acesso Pessoal via USB' se uma conexão USB for detectada."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -323,7 +321,7 @@ msgstr "Informações detalhadas sobre o seu computador"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
 msgid "System foundation and video card support"
-msgstr "Suporte para a fundação do sistema e placa de vídeo"
+msgstr "Base do sistema e suporte a placas de vídeo"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
@@ -347,7 +345,7 @@ msgstr "Procurar por servidores VNC"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "Sistema de construção multiplataforma"
+msgstr "Sistema de compilação multiplataforma"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -359,7 +357,7 @@ msgstr "Configurações Avançadas de Firewall"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
 msgid "Advanced Audio Manager - Alsamixer"
-msgstr "Gestor Avançado de Áudio - Alsamixer"
+msgstr "Gerenciador de Áudio Avançado - Alsamixer"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
@@ -599,7 +597,7 @@ msgstr "Gerenciar permissões para aplicativos Flatpak"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
 msgid "Install and configure system fonts and typography settings"
-msgstr "Instale e configure fontes do sistema e configurações de tipografia."
+msgstr "Instale e gerencie fontes do sistema e configurações de tipografia"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
@@ -810,7 +808,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Configure a página de aterragem do sistema e os widgets padrão."
+msgstr "Configurar a página de boas-vindas do sistema e os widgets padrão."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930

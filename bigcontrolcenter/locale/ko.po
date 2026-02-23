@@ -29,7 +29,7 @@ msgstr "컨트롤 센터"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
-msgstr "제어 센터 정보"
+msgstr "컨트롤 센터 정보"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
@@ -90,7 +90,7 @@ msgstr "© 2025 빅리눅스 팀"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "주요"
+msgstr "기본"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -151,16 +151,18 @@ msgstr "시스템"
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:81
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:158
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:135
 msgid "About"
-msgstr "소프트웨어에 대하여"
+msgstr "정보"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "다른"
+msgstr "기타"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -449,7 +451,7 @@ msgstr "저장 공간 사용량"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
 msgid "Sound and microphone"
-msgstr "소리 및 마이크رو폰"
+msgstr "소리 및 마이크로폰"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
@@ -669,7 +671,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI 항목 관리자"
+msgstr "UEFI 부팅 항목 관리자"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792

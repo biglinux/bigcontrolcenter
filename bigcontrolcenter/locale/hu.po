@@ -29,7 +29,7 @@ msgstr "Vezérlőközpont"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
-msgstr "Avez a Vezérlőközpontról"
+msgstr "A Vezérlőközpontról"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
@@ -90,7 +90,7 @@ msgstr "© 2025 BigLinux Csapat"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Fő"
+msgstr "Kezdőlap"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -104,7 +104,7 @@ msgstr "Hálózat és internet"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:93
 msgid "Phone"
-msgstr "Nem találtam fordítandó szót."
+msgstr "Telefon"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -132,7 +132,7 @@ msgstr "Multimédia"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
-msgstr "Számlák"
+msgstr "Fiókok"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -350,7 +350,7 @@ msgstr "VNC szerverek keresése"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "Keresztplatformos build rendszer"
+msgstr "Többplatformos építőrendszer"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -441,7 +441,7 @@ msgstr "USB-eszköz formázása"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB Képíró"
+msgstr "USB indítómező-író"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -479,7 +479,7 @@ msgstr "Nyomtatók"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Nyomtatók telepítése, konfigurálása vagy eltávolítása."
+msgstr "Nyomtatók telepítése, beállítása vagy eltávolítása."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -638,7 +638,7 @@ msgstr "A háttérben futó rendszer szolgáltatások kezelése"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "Elrendezési beállítások, gyorsbillentyűk és egyéb lehetőségek."
+msgstr "Elrendezési beállítások, gyorsbillentyűk és egyéb opciók"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -692,7 +692,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "QEFI Bejegyzéskezelő"
+msgstr "UEFI rendszerindítás-kezelő"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -776,8 +776,7 @@ msgstr "Rendszeresemények hanghatásainak konfigurálása"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
 msgid "Configure the splash screen shown while starting applications"
-msgstr ""
-"Állítsa be a splash képernyőt, amely az alkalmazások indításakor jelenik meg."
+msgstr "Az alkalmazások indításakor megjelenő indítóképernyő beállítása."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
@@ -819,7 +818,7 @@ msgstr "Asztali háttérkép és diavetítés beállításainak módosítása"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Állítsa be a rendszer kezdőlapját és az alapértelmezett widgeteket."
+msgstr "A rendszer kezdőlapjának és alapértelmezett kütyüinek beállítása."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
@@ -837,7 +836,7 @@ msgstr "Vezérlőpult a FireWire audio interfészekhez."
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
 msgid "Access your files and folders."
-msgstr "Fájljaidat és mappáidat elérheted."
+msgstr "Fájlok és mappák elérése."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157

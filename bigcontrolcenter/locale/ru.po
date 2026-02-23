@@ -90,7 +90,7 @@ msgstr "© 2025 Команда BigLinux"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Главный"
+msgstr "Главная"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -160,7 +160,7 @@ msgstr "О программе"
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Другой"
+msgstr "Другие"
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -193,7 +193,9 @@ msgstr ""
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "Ищите \"USB-подключение\" или аналогичные термины и включите его."
+msgstr ""
+"Найдите «USB-модем», «Режим модема через USB» или аналогичные термины и "
+"включите его."
 
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
@@ -299,7 +301,7 @@ msgstr "Настроить AppimageLauncher"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
 msgid "Choose the behavior of programs available in .appimage"
-msgstr "Выберите поведение программ, доступных в .appimage."
+msgstr "Выберите поведение программ, доступных в .appimage"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
@@ -347,7 +349,7 @@ msgstr "Поиск серверов VNC"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
-msgstr "Кроссплатформенная система сборки"
+msgstr "Многоплатформенная система сборки"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
@@ -438,7 +440,7 @@ msgstr "Отформатировать USB-устройство"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
-msgstr "USB-образный писатель"
+msgstr "Запись образа на USB"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
@@ -475,7 +477,7 @@ msgstr "Принтеры"
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
-msgstr "Установить, настроить или удалить принтеры."
+msgstr "Установка, настройка или удаление принтеров."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
@@ -631,7 +633,7 @@ msgstr "Управляйте системными службами, работа
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
-msgstr "Настройки макета, ярлыки и другие параметры."
+msgstr "Настройки раскладки, сочетания клавиш и другие параметры"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
@@ -683,7 +685,7 @@ msgstr ""
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
-msgstr "Менеджер записей QEFI"
+msgstr "Менеджер меню загрузки UEFI"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
@@ -749,7 +751,7 @@ msgstr "Настройте внешний вид и поведение экра�
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
 msgid "Desktop Session"
-msgstr "Рабочий стол Сессия"
+msgstr "Сеанс рабочего стола"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
@@ -809,7 +811,7 @@ msgstr "Измените изображение фона рабочего сто
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
-msgstr "Настройте целевую страницу системы и виджеты по умолчанию."
+msgstr "Настройка начальной страницы и виджетов рабочего стола."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
@@ -882,7 +884,7 @@ msgstr "Подключитесь к интернету с помощью Android
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
 msgid "Connect to internet using iOS"
-msgstr "Подключитесь к интернету с помощью iOS."
+msgstr "Подключитесь к интернету с помощью iOS"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
