@@ -2,939 +2,776 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-08 16:03-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
-#
+msgid ""
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
+msgstr ""
+"ウェブカメラはすでにプログラムによって使用されています: $WEBCAM_BUSY\n"
+"\n"
+"設定モードで開きます。\n"
+"行った変更は、他のプログラムでのウェブカメラの画像に表示されます。"
+msgid "Webcam"
+msgstr "ウェブカメラ"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:498
+msgid "Configure AppimageLauncher"
+msgstr "AppimageLauncherの設定"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
+msgid "Choose the behavior of programs available in .appimage"
+msgstr ".appimage内で利用可能なプログラムの動作を選択します"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:508
+msgid "Search for Zeroconf servers"
+msgstr "Zeroconfサーバーを検索する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:523
+msgid "Expand device support"
+msgstr "デバイスサポートを拡張"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:528
+msgid "Detailed information about your computer"
+msgstr "コンピュータに関する詳細情報"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
+msgid "System foundation and video card support"
+msgstr "システム基盤とビデオカードのサポート"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:538
+msgid "Restore program configuration"
+msgstr "プログラム構成を復元"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:543
+msgid "Search for SSH servers"
+msgstr "SSHサーバーを検索"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:549
+msgid "Search for VNC servers"
+msgstr "VNCサーバーを検索"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
+msgid "Cross-platform buildsystem"
+msgstr "クロスプラットフォームビルドシステム"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:560
+msgid "Advanced Firewall Settings"
+msgstr "高度なファイアウォール設定"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "高度なオーディオマネージャー - Alsamixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:579
+msgid "JamesDSP improving music and audio quality"
+msgstr "JamesDSPは音楽とオーディオの品質を向上させます。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:581
+msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr "イコライザー、バスブースト、サラウンド、その他のエフェクトでサウンドを強化します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:587
+msgid "Partition or Format"
+msgstr "パーティションまたはフォーマット"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:592
+msgid "HP Printers"
+msgstr "HPプリンター"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
+msgid "Check status, ink level, and maintenance."
+msgstr "ステータス、インクレベル、およびメンテナンスを確認してください。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:598
+msgid "HP Scanners"
+msgstr "HPスキャナー"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
+msgid "Configure and use HP scanning devices"
+msgstr "HPスキャンデバイスの設定と使用"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:605
+msgid "Configure Kvantum Theme"
+msgstr "Kvantumテーマを設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:607
+msgid "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
+msgstr "Kvantumの設定が機能するためには、「アプリケーションスタイル」でKvantumテーマを適用してください。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:613
+msgid "USB Device Formatter"
+msgstr "USBデバイスフォーマッタ"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:615
+msgid "Format a USB device"
+msgstr "USBデバイスをフォーマットする"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
+msgid "USB Image Writer"
+msgstr "USBイメージライター"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:623
+msgid "Create a bootable USB device"
+msgstr "ブータブルUSBデバイスを作成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:629
+msgid "Storage Usage"
+msgstr "ストレージ使用量"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
+msgid "Sound and microphone"
+msgstr "サウンドとマイク"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:644
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "オーディオの入力および出力デバイスを設定または変更します。(例: HDMI)"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:650
+msgid "Printers"
+msgstr "プリンタ"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
+msgid "Install, configure or remove printers."
+msgstr "プリンターをインストール、設定、または削除します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:656
+msgid "KDE Control Center"
+msgstr "KDEコントロールセンター"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:665
+msgid "Configure webcam or capture card"
+msgstr "ウェブカメラまたはキャプチャカードを設定します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:667
+msgid "Adjust settings and control webcams or video capture devices"
+msgstr "設定を調整し、ウェブカメラやビデオキャプチャデバイスを制御します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:675
+msgid "Configure accessibility options for users with special needs"
+msgstr "特別なニーズを持つユーザーのためのアクセシビリティオプションを設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:681
+msgid "Virtual desktops and activities"
+msgstr "仮想デスクトップとアクティビティ"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:684
+msgid "Create more than one virtual work environment by switching between them."
+msgstr "複数の仮想作業環境を作成し、それらの間を切り替えます。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:691
+msgid "Manage applications that start automatically on login"
+msgstr "ログイン時に自動的に起動するアプリケーションを管理する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:698
+msgid ""
+"Enabling search can consume significant memory and processing resources. This may cause the system "
+"to slow down, depending on the number of user files."
+msgstr "検索を有効にすると、かなりのメモリと処理リソースを消費する可能性があります。これは、ユーザーファイルの数に応じてシステムの動作が遅くなる原因となることがあります。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:704
+msgid "Connect and manage Bluetooth devices"
+msgstr "Bluetoothデバイスを接続して管理する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:710
+msgid "Manage Thunderbolt devices and security settings"
+msgstr "Thunderboltデバイスとセキュリティ設定を管理する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:716
+msgid "Adjust date, time and timezone."
+msgstr "日付、時刻、タイムゾーンを調整します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:722
+msgid "Customize the color scheme of your desktop environment"
+msgstr "デスクトップ環境のカラースキームをカスタマイズする"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:729
+msgid "Select which applications to use for specific tasks"
+msgstr "特定のタスクに使用するアプリケーションを選択してください。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:735
+msgid "Change mouse cursor appearance and themes"
+msgstr "マウスカーソルの外観とテーマを変更する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:741
+msgid "Configure default paths for documents, downloads and other folders"
+msgstr "ドキュメント、ダウンロード、およびその他のフォルダーのデフォルトパスを設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:748
+msgid "Change the visual appearance of the Plasma desktop"
+msgstr "Plasmaデスクトップの外観を変更する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:755
+msgid "Configure which applications open specific file types"
+msgstr "特定のファイルタイプを開くアプリケーションを設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:761
+msgid "Manage permissions for Flatpak applications"
+msgstr "Flatpakアプリケーションの権限を管理する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
+msgid "Install and configure system fonts and typography settings"
+msgstr "システムフォントとタイポグラフィ設定をインストールおよび構成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:783
+msgid "Configure game controllers and joysticks"
+msgstr "ゲームコントローラーとジョイスティックを設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:789
+msgid "Change the icon theme used throughout the system"
+msgstr "システム全体で使用されるアイコンテーマを変更する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:800
+msgid "Configure digital camera integration with your system"
+msgstr "システムとのデジタルカメラ統合を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:807
+msgid "Manage system services running in the background"
+msgstr "バックグラウンドで実行されているシステムサービスを管理する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
+msgid "Layout settings, shortcuts and other options."
+msgstr "レイアウト設定、ショートカットおよびその他のオプション。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:821
+msgid "Configure monitors, resolution, and screen arrangement"
+msgstr "モニター、解像度、および画面配置を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:827
+msgid "Window Decorations"
+msgstr "ウィンドウ装飾"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:829
+msgid "Change the appearance of window title bars and borders"
+msgstr "ウィンドウのタイトルバーと境界線の外観を変更する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:837
+msgid "Configure visual effects and animations for the desktop"
+msgstr "デスクトップの視覚効果とアニメーションを設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:844
+msgid "Configure how windows behave and interact"
+msgstr "ウィンドウの動作と相互作用を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:851
+msgid "Configure mouse sensitivity, buttons and behavior"
+msgstr "マウスの感度、ボタン、および動作を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:858
+msgid ""
+"Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile "
+"broadband and others)."
+msgstr "高度なネットワーク設定（VPN、WiFi、有線、静的IP、PPPoE、ADSL、有線ネットワーク、モバイルブロードバンドなど）。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
+msgid "QEFI Entry Manager"
+msgstr "QEFIエントリーマネージャー"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:870
+msgid "Manage and configure boot entries for UEFI systems"
+msgstr "UEFIシステムのブートエントリを管理および構成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:877
+msgid "Configure system and application notifications"
+msgstr "システムおよびアプリケーションの通知を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:882
+msgid "Boot Screen"
+msgstr "ブートスクリーン"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:884
+msgid "Change the splash screen shown during system startup"
+msgstr "システム起動時に表示されるスプラッシュスクリーンを変更する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:892
+msgid "Configure energy saving and battery settings"
+msgstr "エネルギー節約とバッテリー設定を構成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:898
+msgid "Configure network proxy settings for internet access"
+msgstr "インターネットアクセスのためのネットワークプロキシ設定を構成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:904
+msgid "Manage the history of recently accessed files"
+msgstr "最近アクセスしたファイルの履歴を管理する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:909
+msgid "Configure language, region, and format settings"
+msgstr "言語、地域、およびフォーマット設定を構成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:915
+msgid "Configure screen locking settings and appearance"
+msgstr "画面ロック設定と外観を構成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:922
+msgid "Configure the login screen appearance and behavior"
+msgstr "ログイン画面の外観と動作を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
+msgid "Desktop Session"
+msgstr "デスクトップセッション"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:930
+msgid "Configure session startup and shutdown behavior"
+msgstr "セッションの起動およびシャットダウンの動作を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:936
+msgid "Configure sound effects for system events"
+msgstr "システムイベントのサウンドエフェクトを設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
+msgid "Configure the splash screen shown while starting applications"
+msgstr "アプリケーション起動時に表示されるスプラッシュスクリーンを設定します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:949
+msgid "Configure the visual appearance of applications"
+msgstr "アプリケーションの視覚的外観を設定する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:955
+msgid "Configure drawing tablets and stylus settings"
+msgstr "描画タブレットとスタイラスの設定を構成する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:960
+msgid "Configure laptop touchpad behavior and gestures"
+msgstr "ノートパソコンのタッチパッドの動作とジェスチャーを設定します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:966
+msgid "Configure touchscreen behavior and calibration"
+msgstr "タッチスクリーンの動作とキャリブレーションを設定します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:972
+msgid "Configure trash bin behavior and cleanup settings"
+msgstr "ゴミ箱の動作とクリーンアップの設定をします。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:979
+msgid "Change desktop background image and slideshow settings"
+msgstr "デスクトップの背景画像とスライドショーの設定を変更します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
+msgid "Configure the system's landing page and default widgets."
+msgstr "システムのランディングページとデフォルトウィジェットを設定します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:992
+msgid "Manage FireWire Audio Interfaces - FfadoMixer"
+msgstr "FireWireオーディオインターフェースを管理 - FfadoMixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:994
+msgid "Control Panel for your FireWire Audio Interfaces."
+msgstr "FireWireオーディオインターフェース用コントロールパネル。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
+msgid "Access your files and folders."
+msgstr "ファイルとフォルダーにアクセスします。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1006
+msgid ""
+"This program can transfer files between smartphones, tablets, and other computers. With it, you "
+"can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, "
+"among other features. It integrates best with BigLinux and sits among the applets located near the "
+"system clock. To sync with your smartphone, go to the Google Store or Apple Store and install KDE "
+"Connect."
+msgstr ""
+"このプログラムは、スマートフォン、タブレット、その他のコンピュータ間でファイルを転送できます。これを使用すると、例えば、スマートフォンをワイヤレスマウスおよびキーボードとして使用してコンピュータを制御"
+"することができます。他の機能の中でも、BigLinuxとの統合が最適で、システムクロックの近くにあるアプレットの中に位置しています。スマートフォンと同期するには、GoogleストアまたはAppleスト"
+"アに行き、KDE Connectをインストールしてください。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1012
+msgid "Access the command terminal."
+msgstr "コマンドターミナルにアクセスします。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1017
+msgid "Password Manager - KWalletManager"
+msgstr "パスワードマネージャー - KWalletManager"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1019
+msgid "Tool for managing KDE wallets"
+msgstr "KDEウォレット管理ツール"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1026
+msgid "Add or remove programs installed on the system"
+msgstr "システムにインストールされているプログラムの追加または削除"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1031
+msgid "Connect to internet using Android"
+msgstr "Androidを使用してインターネットに接続する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
+msgid "Connect to internet using iOS"
+msgstr "iOSを使用してインターネットに接続する"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1049
+msgid "Connect to Internet"
+msgstr "インターネットに接続"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
+msgid "Snapshots and backups"
+msgstr "スナップショットとバックアップ"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
+msgid "Create or activate restore points"
+msgstr "リストアポイントの作成または有効化"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1073
+msgid "Biglinux Settings"
+msgstr "Biglinux 設定"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
+msgid "Simplify switching BigLinux operation."
+msgstr "BigLinuxの操作を簡素化する。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
+msgid "BigLinux Themes"
+msgstr "BigLinux テーマ"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1083
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr "完全な構成を提供し、非常に簡単な方法で選択できます。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1095
+msgid "Configure feedback and usage report preferences."
+msgstr "フィードバックと使用状況レポートの設定をします。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1102
+msgid "Configure automatic actions for when devices are connected."
+msgstr "デバイスが接続されたときの自動アクションを設定します。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1110
+msgid "Configure search and indexing options in Plasma."
+msgstr "Plasmaで検索とインデックス作成のオプションを設定します。"
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "AndroidデバイスのインターネットをUSB経由でLinuxで使用する"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "AndroidスマートフォンをUSBケーブルでLinuxコンピュータに接続してください。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:36
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr "スマートフォンで「設定」を開き、「ネットワークとインターネット」または「接続と共有」に移動します。"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "「USBテザリング」、「USBテザ」などの用語を検索して有効にしてください。"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:43
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:62
+msgid ""
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
+msgstr "これにより、追加の設定を必要とせずに、Linuxコンピューターでインターネット接続が自動的に確立されます。"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:46
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"AndroidデバイスがWi-"
+"Fiに接続されておらず、携帯データを使用している場合、このテザリングは携帯プランからデータを消費します。データ料金を回避するためには、テザリングを有効にする前にAndroidデバイスがWi-"
+"Fiネットワークに接続されていることを確認してください。"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Linuxを介してiOSデバイスのインターネットをUSB経由で使用"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "iOSデバイスをUSBケーブルでLinuxコンピュータに接続してください。"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "iOSデバイスで、「設定」に移動し、「パーソナルホットスポット」を選択します。"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:58
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr "「他のユーザーの参加を許可」を有効にします。これにより、USB接続が検出された場合、自動的に「USBテザリング」が有効になる場合があります。"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:65
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"iOS "
+"デバイスがWi-"
+"Fiに接続されておらず、セルラーデータを使用している場合、このテザリングはセルラープランからデータを消費します。データ料金を回避するためには、テザリングを有効にする前にiOSデバイスがWi-"
+"Fiネットワークに接続されていることを確認してください。"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr "スマートフォンのインターネット接続をUSBケーブルを使用してLinuxコンピュータと共有するには、次の手順に従ってください："
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
+msgid "Close"
+msgstr "閉じる"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:81
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:158
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:478
 msgid "Control Center"
 msgstr "コントロールセンター"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
 msgstr "コントロールセンターについて"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:166
 msgid "Categories"
 msgstr "カテゴリ"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:177
 msgid "Programs"
 msgstr "プログラム"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:182
 msgid "Search..."
 msgstr "検索..."
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:430
 #, python-brace-format
 msgid "Executing special command: {0}"
 msgstr "特別なコマンドを実行中: {0}"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:434
 #, python-brace-format
 msgid "Launching: {0}"
 msgstr "起動中: {0}"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:437
 #, python-brace-format
 msgid "Error launching program: {0}"
 msgstr "プログラムの起動中にエラーが発生しました: {0}"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:480
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:486
 msgid "BigLinux Team"
 msgstr "ビッグリナックスチーム"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:485
 msgid "© 2025 BigLinux Team"
 msgstr "© 2025 ビッグリナックスチーム"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
 msgstr "メイン"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:87
 msgid "Network and Internet"
 msgstr "ネットワークとインターネット"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:93
 msgid "Phone"
 msgstr "電話"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:99
 msgid "Customize"
 msgstr "カスタマイズ"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:105
 msgid "Region and Language"
 msgstr "地域と言語"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:111
 msgid "Multimedia"
 msgstr "マルチメディア"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
 msgstr "アカウント"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:123
 msgid "Devices"
 msgstr "デバイス"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:129
 msgid "System"
 msgstr "システム"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:135
 msgid "About"
 msgstr "について"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
 msgstr "その他"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "AndroidデバイスのインターネットをUSB経由でLinuxで使用する"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
-msgid ""
-"Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr ""
-"AndroidスマートフォンをUSBケーブルでLinuxコンピュータに接続してください。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:36
-msgid ""
-"On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
-"'Connections & Sharing'."
-msgstr ""
-"スマートフォンで「設定」を開き、「ネットワークとインターネット」または「接続"
-"と共有」に移動します。"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr "「USBテザリング」、「USBテザ」などの用語を検索して有効にしてください。"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:43
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:62
-msgid ""
-"This will automatically establish the internet connection on your Linux "
-"computer without requiring any additional configuration."
-msgstr ""
-"これにより、追加の設定を必要とせずに、Linuxコンピューターでインターネット接続"
-"が自動的に確立されます。"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:46
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your Android device is connected to a Wi-Fi network "
-"before enabling tethering."
-msgstr ""
-"AndroidデバイスがWi-Fiに接続されておらず、携帯データを使用している場合、この"
-"テザリングは携帯プランからデータを消費します。データ料金を回避するためには、"
-"テザリングを有効にする前にAndroidデバイスがWi-Fiネットワークに接続されている"
-"ことを確認してください。"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Linuxを介してiOSデバイスのインターネットをUSB経由で使用"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "iOSデバイスをUSBケーブルでLinuxコンピュータに接続してください。"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr ""
-"iOSデバイスで、「設定」に移動し、「パーソナルホットスポット」を選択します。"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:58
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
-"if a USB connection is detected."
-msgstr ""
-"「他のユーザーの参加を許可」を有効にします。これにより、USB接続が検出された場"
-"合、自動的に「USBテザリング」が有効になる場合があります。"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:65
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your iOS device is connected to a Wi-Fi network before "
-"enabling tethering."
-msgstr ""
-"iOS デバイスがWi-Fiに接続されておらず、セルラーデータを使用している場合、この"
-"テザリングはセルラープランからデータを消費します。データ料金を回避するために"
-"は、テザリングを有効にする前にiOSデバイスがWi-Fiネットワークに接続されている"
-"ことを確認してください。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a "
-"USB cable, follow these steps:"
-msgstr ""
-"スマートフォンのインターネット接続をUSBケーブルを使用してLinuxコンピュータと"
-"共有するには、次の手順に従ってください："
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
-msgid "Close"
-msgstr "閉じる"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:498
-msgid "Configure AppimageLauncher"
-msgstr "AppimageLauncherの設定"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
-msgid "Choose the behavior of programs available in .appimage"
-msgstr ".appimage内で利用可能なプログラムの動作を選択します"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:508
-msgid "Search for Zeroconf servers"
-msgstr "Zeroconfサーバーを検索する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:523
-msgid "Expand device support"
-msgstr "デバイスサポートを拡張"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:528
-msgid "Detailed information about your computer"
-msgstr "コンピュータに関する詳細情報"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
-msgid "System foundation and video card support"
-msgstr "システム基盤とビデオカードのサポート"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:538
-msgid "Restore program configuration"
-msgstr "プログラム構成を復元"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:543
-msgid "Search for SSH servers"
-msgstr "SSHサーバーを検索"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:549
-msgid "Search for VNC servers"
-msgstr "VNCサーバーを検索"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
-msgid "Cross-platform buildsystem"
-msgstr "クロスプラットフォームビルドシステム"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:560
-msgid "Advanced Firewall Settings"
-msgstr "高度なファイアウォール設定"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
-msgid "Advanced Audio Manager - Alsamixer"
-msgstr "高度なオーディオマネージャー - Alsamixer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:579
-msgid "JamesDSP improving music and audio quality"
-msgstr "JamesDSPは音楽とオーディオの品質を向上させます。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:581
-msgid ""
-"Enhance your sound with equalizer, bass boost, surround, and other effects."
-msgstr ""
-"イコライザー、バスブースト、サラウンド、その他のエフェクトでサウンドを強化し"
-"ます。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:587
-msgid "Partition or Format"
-msgstr "パーティションまたはフォーマット"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:592
-msgid "HP Printers"
-msgstr "HPプリンター"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
-msgid "Check status, ink level, and maintenance."
-msgstr "ステータス、インクレベル、およびメンテナンスを確認してください。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:598
-msgid "HP Scanners"
-msgstr "HPスキャナー"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
-msgid "Configure and use HP scanning devices"
-msgstr "HPスキャンデバイスの設定と使用"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:605
-msgid "Configure Kvantum Theme"
-msgstr "Kvantumテーマを設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:607
-msgid ""
-"For Kvantum configuration to work, apply the Kvantum theme in 'Application "
-"Style'."
-msgstr ""
-"Kvantumの設定が機能するためには、「アプリケーションスタイル」でKvantumテーマ"
-"を適用してください。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:613
-msgid "USB Device Formatter"
-msgstr "USBデバイスフォーマッタ"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:615
-msgid "Format a USB device"
-msgstr "USBデバイスをフォーマットする"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
-msgid "USB Image Writer"
-msgstr "USBイメージライター"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:623
-msgid "Create a bootable USB device"
-msgstr "ブータブルUSBデバイスを作成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:629
-msgid "Storage Usage"
-msgstr "ストレージ使用量"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
-msgid "Sound and microphone"
-msgstr "サウンドとマイク"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:644
-msgid "Configure or change audio input and output devices. (Ex: HDMI)"
-msgstr "オーディオの入力および出力デバイスを設定または変更します。(例: HDMI)"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:650
-msgid "Printers"
-msgstr "プリンタ"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
-msgid "Install, configure or remove printers."
-msgstr "プリンターをインストール、設定、または削除します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:656
-msgid "KDE Control Center"
-msgstr "KDEコントロールセンター"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:665
-msgid "Configure webcam or capture card"
-msgstr "ウェブカメラまたはキャプチャカードを設定します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:667
-msgid "Adjust settings and control webcams or video capture devices"
-msgstr "設定を調整し、ウェブカメラやビデオキャプチャデバイスを制御します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:675
-msgid "Configure accessibility options for users with special needs"
-msgstr "特別なニーズを持つユーザーのためのアクセシビリティオプションを設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:681
-msgid "Virtual desktops and activities"
-msgstr "仮想デスクトップとアクティビティ"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:684
-msgid ""
-"Create more than one virtual work environment by switching between them."
-msgstr "複数の仮想作業環境を作成し、それらの間を切り替えます。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:691
-msgid "Manage applications that start automatically on login"
-msgstr "ログイン時に自動的に起動するアプリケーションを管理する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:698
-msgid ""
-"Enabling search can consume significant memory and processing resources. "
-"This may cause the system to slow down, depending on the number of user "
-"files."
-msgstr ""
-"検索を有効にすると、かなりのメモリと処理リソースを消費する可能性があります。"
-"これは、ユーザーファイルの数に応じてシステムの動作が遅くなる原因となることが"
-"あります。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:704
-msgid "Connect and manage Bluetooth devices"
-msgstr "Bluetoothデバイスを接続して管理する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:710
-msgid "Manage Thunderbolt devices and security settings"
-msgstr "Thunderboltデバイスとセキュリティ設定を管理する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:716
-msgid "Adjust date, time and timezone."
-msgstr "日付、時刻、タイムゾーンを調整します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:722
-msgid "Customize the color scheme of your desktop environment"
-msgstr "デスクトップ環境のカラースキームをカスタマイズする"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:729
-msgid "Select which applications to use for specific tasks"
-msgstr "特定のタスクに使用するアプリケーションを選択してください。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:735
-msgid "Change mouse cursor appearance and themes"
-msgstr "マウスカーソルの外観とテーマを変更する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:741
-msgid "Configure default paths for documents, downloads and other folders"
-msgstr ""
-"ドキュメント、ダウンロード、およびその他のフォルダーのデフォルトパスを設定す"
-"る"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:748
-msgid "Change the visual appearance of the Plasma desktop"
-msgstr "Plasmaデスクトップの外観を変更する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:755
-msgid "Configure which applications open specific file types"
-msgstr "特定のファイルタイプを開くアプリケーションを設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:761
-msgid "Manage permissions for Flatpak applications"
-msgstr "Flatpakアプリケーションの権限を管理する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
-msgid "Install and configure system fonts and typography settings"
-msgstr "システムフォントとタイポグラフィ設定をインストールおよび構成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:783
-msgid "Configure game controllers and joysticks"
-msgstr "ゲームコントローラーとジョイスティックを設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:789
-msgid "Change the icon theme used throughout the system"
-msgstr "システム全体で使用されるアイコンテーマを変更する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:800
-msgid "Configure digital camera integration with your system"
-msgstr "システムとのデジタルカメラ統合を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:807
-msgid "Manage system services running in the background"
-msgstr "バックグラウンドで実行されているシステムサービスを管理する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
-msgid "Layout settings, shortcuts and other options."
-msgstr "レイアウト設定、ショートカットおよびその他のオプション。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:821
-msgid "Configure monitors, resolution, and screen arrangement"
-msgstr "モニター、解像度、および画面配置を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:827
-msgid "Window Decorations"
-msgstr "ウィンドウ装飾"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:829
-msgid "Change the appearance of window title bars and borders"
-msgstr "ウィンドウのタイトルバーと境界線の外観を変更する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:837
-msgid "Configure visual effects and animations for the desktop"
-msgstr "デスクトップの視覚効果とアニメーションを設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:844
-msgid "Configure how windows behave and interact"
-msgstr "ウィンドウの動作と相互作用を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:851
-msgid "Configure mouse sensitivity, buttons and behavior"
-msgstr "マウスの感度、ボタン、および動作を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:858
-msgid ""
-"Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, "
-"wired network, mobile broadband and others)."
-msgstr ""
-"高度なネットワーク設定（VPN、WiFi、有線、静的IP、PPPoE、ADSL、有線ネットワー"
-"ク、モバイルブロードバンドなど）。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
-msgid "QEFI Entry Manager"
-msgstr "QEFIエントリーマネージャー"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:870
-msgid "Manage and configure boot entries for UEFI systems"
-msgstr "UEFIシステムのブートエントリを管理および構成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:877
-msgid "Configure system and application notifications"
-msgstr "システムおよびアプリケーションの通知を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:882
-msgid "Boot Screen"
-msgstr "ブートスクリーン"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:884
-msgid "Change the splash screen shown during system startup"
-msgstr "システム起動時に表示されるスプラッシュスクリーンを変更する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:892
-msgid "Configure energy saving and battery settings"
-msgstr "エネルギー節約とバッテリー設定を構成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:898
-msgid "Configure network proxy settings for internet access"
-msgstr "インターネットアクセスのためのネットワークプロキシ設定を構成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:904
-msgid "Manage the history of recently accessed files"
-msgstr "最近アクセスしたファイルの履歴を管理する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:909
-msgid "Configure language, region, and format settings"
-msgstr "言語、地域、およびフォーマット設定を構成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:915
-msgid "Configure screen locking settings and appearance"
-msgstr "画面ロック設定と外観を構成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:922
-msgid "Configure the login screen appearance and behavior"
-msgstr "ログイン画面の外観と動作を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
-msgid "Desktop Session"
-msgstr "デスクトップセッション"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:930
-msgid "Configure session startup and shutdown behavior"
-msgstr "セッションの起動およびシャットダウンの動作を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:936
-msgid "Configure sound effects for system events"
-msgstr "システムイベントのサウンドエフェクトを設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
-msgid "Configure the splash screen shown while starting applications"
-msgstr "アプリケーション起動時に表示されるスプラッシュスクリーンを設定します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:949
-msgid "Configure the visual appearance of applications"
-msgstr "アプリケーションの視覚的外観を設定する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:955
-msgid "Configure drawing tablets and stylus settings"
-msgstr "描画タブレットとスタイラスの設定を構成する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:960
-msgid "Configure laptop touchpad behavior and gestures"
-msgstr "ノートパソコンのタッチパッドの動作とジェスチャーを設定します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:966
-msgid "Configure touchscreen behavior and calibration"
-msgstr "タッチスクリーンの動作とキャリブレーションを設定します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:972
-msgid "Configure trash bin behavior and cleanup settings"
-msgstr "ゴミ箱の動作とクリーンアップの設定をします。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:979
-msgid "Change desktop background image and slideshow settings"
-msgstr "デスクトップの背景画像とスライドショーの設定を変更します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
-msgid "Configure the system's landing page and default widgets."
-msgstr "システムのランディングページとデフォルトウィジェットを設定します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:992
-msgid "Manage FireWire Audio Interfaces - FfadoMixer"
-msgstr "FireWireオーディオインターフェースを管理 - FfadoMixer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:994
-msgid "Control Panel for your FireWire Audio Interfaces."
-msgstr "FireWireオーディオインターフェース用コントロールパネル。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
-msgid "Access your files and folders."
-msgstr "ファイルとフォルダーにアクセスします。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1006
-msgid ""
-"This program can transfer files between smartphones, tablets, and other "
-"computers. With it, you can, for example, use your smartphone as a wireless "
-"mouse and keyboard to control the computer, among other features. It "
-"integrates best with BigLinux and sits among the applets located near the "
-"system clock. To sync with your smartphone, go to the Google Store or Apple "
-"Store and install KDE Connect."
-msgstr ""
-"このプログラムは、スマートフォン、タブレット、その他のコンピュータ間でファイ"
-"ルを転送できます。これを使用すると、例えば、スマートフォンをワイヤレスマウス"
-"およびキーボードとして使用してコンピュータを制御することができます。他の機能"
-"の中でも、BigLinuxとの統合が最適で、システムクロックの近くにあるアプレットの"
-"中に位置しています。スマートフォンと同期するには、GoogleストアまたはAppleスト"
-"アに行き、KDE Connectをインストールしてください。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1012
-msgid "Access the command terminal."
-msgstr "コマンドターミナルにアクセスします。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1017
-msgid "Password Manager - KWalletManager"
-msgstr "パスワードマネージャー - KWalletManager"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1019
-msgid "Tool for managing KDE wallets"
-msgstr "KDEウォレット管理ツール"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1026
-msgid "Add or remove programs installed on the system"
-msgstr "システムにインストールされているプログラムの追加または削除"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1031
-msgid "Connect to internet using Android"
-msgstr "Androidを使用してインターネットに接続する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
-msgid "Connect to internet using iOS"
-msgstr "iOSを使用してインターネットに接続する"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1049
-msgid "Connect to Internet"
-msgstr "インターネットに接続"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
-msgid "Snapshots and backups"
-msgstr "スナップショットとバックアップ"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
-msgid "Create or activate restore points"
-msgstr "リストアポイントの作成または有効化"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1073
-msgid "Biglinux Settings"
-msgstr "Biglinux 設定"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
-msgid "Simplify switching BigLinux operation."
-msgstr "BigLinuxの操作を簡素化する。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
-msgid "BigLinux Themes"
-msgstr "BigLinux テーマ"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1083
-msgid ""
-"We provide complete configurations for you to select in an extremely simple "
-"way."
-msgstr "完全な構成を提供し、非常に簡単な方法で選択できます。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1095
-msgid "Configure feedback and usage report preferences."
-msgstr "フィードバックと使用状況レポートの設定をします。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1102
-msgid "Configure automatic actions for when devices are connected."
-msgstr "デバイスが接続されたときの自動アクションを設定します。"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1110
-msgid "Configure search and indexing options in Plasma."
-msgstr "Plasmaで検索とインデックス作成のオプションを設定します。"

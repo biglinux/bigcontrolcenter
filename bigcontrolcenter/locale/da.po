@@ -2,943 +2,790 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bigcontrolcenter package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-08 16:03-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
-#
+msgid ""
+"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"\n"
+"Abrirei em modo de configuração.\n"
+"As alterações feitas podem ser vistas\n"
+"na imagem da sua webcam em outros programas."
+msgstr ""
+"Et webcam er allerede i brug af programmet: $WEBCAM_BUSY\n"
+"\n"
+"Jeg åbner i konfigurationsmode.\n"
+"De foretagne ændringer kan ses\n"
+"i billedet fra din webcam i andre programmer."
+msgid "Webcam"
+msgstr "Webcam"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:498
+msgid "Configure AppimageLauncher"
+msgstr "Konfigurér AppimageLauncher"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
+msgid "Choose the behavior of programs available in .appimage"
+msgstr "Vælg adfærd for programmer tilgængelige i .appimage."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:508
+msgid "Search for Zeroconf servers"
+msgstr "Søg efter Zeroconf-servere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:523
+msgid "Expand device support"
+msgstr "Udvid enhedsunderstøttelse"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:528
+msgid "Detailed information about your computer"
+msgstr "Detaljeret information om din computer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
+msgid "System foundation and video card support"
+msgstr "Systemgrundlag og grafikkortsupport"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:538
+msgid "Restore program configuration"
+msgstr "Gendan programkonfiguration"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:543
+msgid "Search for SSH servers"
+msgstr "Søg efter SSH-servere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:549
+msgid "Search for VNC servers"
+msgstr "Søg efter VNC-servere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
+msgid "Cross-platform buildsystem"
+msgstr "Byggesystem til flere platforme"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:560
+msgid "Advanced Firewall Settings"
+msgstr "Avancerede firewallindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
+msgid "Advanced Audio Manager - Alsamixer"
+msgstr "Avanceret lydadministrator - Alsamixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:579
+msgid "JamesDSP improving music and audio quality"
+msgstr "JamesDSP forbedrer musik- og lydkvalitet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:581
+msgid "Enhance your sound with equalizer, bass boost, surround, and other effects."
+msgstr "Forstærk din lyd med equalizer, basforstærkning, surround og andre effekter."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:587
+msgid "Partition or Format"
+msgstr "Partition eller Formater"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:592
+msgid "HP Printers"
+msgstr "HP-printere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
+msgid "Check status, ink level, and maintenance."
+msgstr "Tjek status, blækniveau og vedligeholdelse."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:598
+msgid "HP Scanners"
+msgstr "HP-scannere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
+msgid "Configure and use HP scanning devices"
+msgstr "Konfigurer og brug HP-scanningsenheder"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:605
+msgid "Configure Kvantum Theme"
+msgstr "Konfigurer Kvantum-tema"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:607
+msgid "For Kvantum configuration to work, apply the Kvantum theme in 'Application Style'."
+msgstr "For at Kvantum-konfigurationen kan fungere, skal du anvende Kvantum-temaet i 'Applikationsstil'."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:613
+msgid "USB Device Formatter"
+msgstr "USB-enhedsformatter"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:615
+msgid "Format a USB device"
+msgstr "Formater en USB-enhed"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
+msgid "USB Image Writer"
+msgstr "USB-diskaftryk-skriver"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:623
+msgid "Create a bootable USB device"
+msgstr "Opret en bootbar USB-enhed"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:629
+msgid "Storage Usage"
+msgstr "Lagringsforbrug"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
+msgid "Sound and microphone"
+msgstr "Lyd og mikrofon"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:644
+msgid "Configure or change audio input and output devices. (Ex: HDMI)"
+msgstr "Konfigurér eller skift lydind- og -udenheder. (f.eks. HDMI)"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:650
+msgid "Printers"
+msgstr "Printere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
+msgid "Install, configure or remove printers."
+msgstr "Installér, konfigurér eller fjern printere"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:656
+msgid "KDE Control Center"
+msgstr "KDE Kontrolcenter"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:665
+msgid "Configure webcam or capture card"
+msgstr "Konfigurér webcam eller capture card"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:667
+msgid "Adjust settings and control webcams or video capture devices"
+msgstr "Juster indstillinger og kontroller webcams eller videooptagelsesenheder."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:675
+msgid "Configure accessibility options for users with special needs"
+msgstr "Konfigurer tilgængelighedsindstillinger for brugere med særlige behov"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:681
+msgid "Virtual desktops and activities"
+msgstr "Virtuelle skriveborde og aktiviteter"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:684
+msgid "Create more than one virtual work environment by switching between them."
+msgstr "Opret mere end et virtuelt arbejdsområde ved at skifte mellem dem."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:691
+msgid "Manage applications that start automatically on login"
+msgstr "Administrer applikationer, der starter automatisk ved login"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:698
+msgid ""
+"Enabling search can consume significant memory and processing resources. This may cause the system "
+"to slow down, depending on the number of user files."
+msgstr ""
+"Aktivering af søgning kan forbruge betydelig hukommelse og behandlingsressourcer. Dette kan få "
+"systemet til at blive langsommere, afhængigt af antallet af brugerfiler."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:704
+msgid "Connect and manage Bluetooth devices"
+msgstr "Forbind og administrer Bluetooth-enheder"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:710
+msgid "Manage Thunderbolt devices and security settings"
+msgstr "Administrer Thunderbolt-enheder og sikkerhedsindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:716
+msgid "Adjust date, time and timezone."
+msgstr "Juster dato, tid og tidszone."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:722
+msgid "Customize the color scheme of your desktop environment"
+msgstr "Tilpas farveskemaet for dit skrivebords miljø"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:729
+msgid "Select which applications to use for specific tasks"
+msgstr "Vælg hvilke applikationer der skal bruges til specifikke opgaver"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:735
+msgid "Change mouse cursor appearance and themes"
+msgstr "Ændre musemarkørens udseende og temaer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:741
+msgid "Configure default paths for documents, downloads and other folders"
+msgstr "Konfigurer standardstier for dokumenter, downloads og andre mapper"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:748
+msgid "Change the visual appearance of the Plasma desktop"
+msgstr "Ændr det visuelle udseende af Plasma-skrivebordet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:755
+msgid "Configure which applications open specific file types"
+msgstr "Konfigurer, hvilke applikationer der åbner specifikke filtyper"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:761
+msgid "Manage permissions for Flatpak applications"
+msgstr "Administrer tilladelser for Flatpak-applikationer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
+msgid "Install and configure system fonts and typography settings"
+msgstr "Installer og konfigurer system skrifttyper og typografiindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:783
+msgid "Configure game controllers and joysticks"
+msgstr "Konfigurer spilcontrollere og joysticks"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:789
+msgid "Change the icon theme used throughout the system"
+msgstr "Skift ikontemaet, der bruges i hele systemet."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:800
+msgid "Configure digital camera integration with your system"
+msgstr "Konfigurer digital kamera integration med dit system"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:807
+msgid "Manage system services running in the background"
+msgstr "Administrer systemtjenester, der kører i baggrunden"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
+msgid "Layout settings, shortcuts and other options."
+msgstr "Layoutindstillinger, genveje og andre muligheder"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:821
+msgid "Configure monitors, resolution, and screen arrangement"
+msgstr "Konfigurer skærme, opløsning og skærmarrangement"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:827
+msgid "Window Decorations"
+msgstr "Vinduesdekorationer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:829
+msgid "Change the appearance of window title bars and borders"
+msgstr "Ændr udseendet af vinduets titellinjer og kanter"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:837
+msgid "Configure visual effects and animations for the desktop"
+msgstr "Konfigurer visuelle effekter og animationer til skrivebordet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:844
+msgid "Configure how windows behave and interact"
+msgstr "Konfigurer, hvordan vinduer opfører sig og interagerer."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:851
+msgid "Configure mouse sensitivity, buttons and behavior"
+msgstr "Konfigurer musens følsomhed, knapper og adfærd"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:858
+msgid ""
+"Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, wired network, mobile "
+"broadband and others)."
+msgstr ""
+"Avanceret netværkskonfiguration (VPN, WiFi, Kablet, Statisk IP, PPPoE, ADSL, kablet netværk, mobil "
+"bredbånd og andre)."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
+msgid "QEFI Entry Manager"
+msgstr "UEFI-opstartsmenu-administrator"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:870
+msgid "Manage and configure boot entries for UEFI systems"
+msgstr "Administrer og konfigurere opstartsposter for UEFI-systemer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:877
+msgid "Configure system and application notifications"
+msgstr "Konfigurer system- og applikationsmeddelelser"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:882
+msgid "Boot Screen"
+msgstr "Bootskærm"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:884
+msgid "Change the splash screen shown during system startup"
+msgstr "Ændre splash-skærmen, der vises under systemstart."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:892
+msgid "Configure energy saving and battery settings"
+msgstr "Konfigurer energibesparelse og batteriindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:898
+msgid "Configure network proxy settings for internet access"
+msgstr "Konfigurer netværksproxyindstillinger for internetadgang"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:904
+msgid "Manage the history of recently accessed files"
+msgstr "Administrer historikken over nyligt tilgåede filer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:909
+msgid "Configure language, region, and format settings"
+msgstr "Konfigurer sprog, region og formatindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:915
+msgid "Configure screen locking settings and appearance"
+msgstr "Konfigurer skærmlåsindstillinger og udseende"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:922
+msgid "Configure the login screen appearance and behavior"
+msgstr "Konfigurer login-skærmens udseende og adfærd"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
+msgid "Desktop Session"
+msgstr "Skrivebords-session"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:930
+msgid "Configure session startup and shutdown behavior"
+msgstr "Konfigurer session opstart og nedlukningsadfærd"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:936
+msgid "Configure sound effects for system events"
+msgstr "Konfigurer lydeffekter til systembegivenheder"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
+msgid "Configure the splash screen shown while starting applications"
+msgstr "Konfigurer splashskærmen, der vises, mens applikationer starter."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:949
+msgid "Configure the visual appearance of applications"
+msgstr "Konfigurer det visuelle udseende af applikationer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:955
+msgid "Configure drawing tablets and stylus settings"
+msgstr "Konfigurer tegnetabletter og stylusindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:960
+msgid "Configure laptop touchpad behavior and gestures"
+msgstr "Konfigurer bærbar touchpad-adfærd og gestus."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:966
+msgid "Configure touchscreen behavior and calibration"
+msgstr "Konfigurer berøringsskærmsadfærd og kalibrering"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:972
+msgid "Configure trash bin behavior and cleanup settings"
+msgstr "Konfigurer opførsel for papirkurv og rydningsindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:979
+msgid "Change desktop background image and slideshow settings"
+msgstr "Skift skrivebordsbaggrundsbillede og diasshowindstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
+msgid "Configure the system's landing page and default widgets."
+msgstr "Konfigurer systemets startside og standardwidgets"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:992
+msgid "Manage FireWire Audio Interfaces - FfadoMixer"
+msgstr "Administrer FireWire lydgrænseflader - FfadoMixer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:994
+msgid "Control Panel for your FireWire Audio Interfaces."
+msgstr "Kontrolpanel til dine FireWire lydinterfaces."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
+msgid "Access your files and folders."
+msgstr "Adgang til dine filer og mapper."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1006
+msgid ""
+"This program can transfer files between smartphones, tablets, and other computers. With it, you "
+"can, for example, use your smartphone as a wireless mouse and keyboard to control the computer, "
+"among other features. It integrates best with BigLinux and sits among the applets located near the "
+"system clock. To sync with your smartphone, go to the Google Store or Apple Store and install KDE "
+"Connect."
+msgstr ""
+"Dette program kan overføre filer mellem smartphones, tablets og andre computere. Med det kan du for "
+"eksempel bruge din smartphone som en trådløs mus og tastatur til at styre computeren, blandt andre "
+"funktioner. Det integreres bedst med BigLinux og sidder blandt de applets, der er placeret nær "
+"systemuret. For at synkronisere med din smartphone, gå til Google Store eller Apple Store og "
+"installer KDE Connect."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1012
+msgid "Access the command terminal."
+msgstr "Åbn kommandoterminalen."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1017
+msgid "Password Manager - KWalletManager"
+msgstr "Adgangskodeadministrator - KWalletManager"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1019
+msgid "Tool for managing KDE wallets"
+msgstr "Værktøj til at administrere KDE-tegnebøger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1026
+msgid "Add or remove programs installed on the system"
+msgstr "Tilføj eller fjern programmer, der er installeret på systemet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1031
+msgid "Connect to internet using Android"
+msgstr "Forbind til internettet ved hjælp af Android"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
+msgid "Connect to internet using iOS"
+msgstr "Opret forbindelse til internettet ved hjælp af iOS"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1049
+msgid "Connect to Internet"
+msgstr "Opret forbindelse til internettet"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
+msgid "Snapshots and backups"
+msgstr "Øjebliksbilleder og sikkerhedskopier"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
+msgid "Create or activate restore points"
+msgstr "Opret eller aktiver gendannelsespunkter"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1073
+msgid "Biglinux Settings"
+msgstr "Biglinux Indstillinger"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
+msgid "Simplify switching BigLinux operation."
+msgstr "Forenkle skift af BigLinux-operation."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
+msgid "BigLinux Themes"
+msgstr "BigLinux Temaer"
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1083
+msgid "We provide complete configurations for you to select in an extremely simple way."
+msgstr "Vi giver komplette konfigurationer til dig at vælge på en ekstremt enkel måde."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1095
+msgid "Configure feedback and usage report preferences."
+msgstr "Konfigurer præferencer for feedback og brugsrapporter."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1102
+msgid "Configure automatic actions for when devices are connected."
+msgstr "Konfigurer automatiske handlinger, når enheder er tilsluttet."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1110
+msgid "Configure search and indexing options in Plasma."
+msgstr "Konfigurer søge- og indekseringsmuligheder i Plasma."
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Brug af din Android-enhedens internet på Linux via USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
+msgid "Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr "Tilslut din Android smartphone til Linux-computeren ved hjælp af et USB-kabel."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:36
+msgid "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or 'Connections & Sharing'."
+msgstr ""
+"På din smartphone skal du åbne 'Indstillinger' og navigere til 'Netværk & Internet' eller "
+"'Forbindelser & Deling'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr "Søg efter 'USB-internetdeling', 'USB-tethering' eller lignende udtryk, og aktivér det."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:43
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:62
+msgid ""
+"This will automatically establish the internet connection on your Linux computer without requiring "
+"any additional configuration."
+msgstr ""
+"Dette vil automatisk oprette internetforbindelsen på din Linux-computer uden behov for yderligere "
+"konfiguration."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:46
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your Android device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Hvis din Android-enhed ikke er tilsluttet til Wi-Fi og bruger mobildata, vil denne deling forbruge "
+"data fra din mobilplan. For at undgå dataafgifter skal du sørge for, at din Android-enhed er "
+"tilsluttet til et Wi-Fi-netværk, før du aktiverer deling."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Brug af din iOS-enhedens internet på Linux via USB"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Tilslut din iOS-enhed til Linux-computeren ved hjælp af et USB-kabel."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "På din iOS-enhed skal du gå til 'Indstillinger', og vælg derefter 'Personlig Hotspot'."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:58
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' if a USB connection is "
+"detected."
+msgstr ""
+"Aktivér 'Tillad andre at deltage'. Dette kan automatisk aktivere 'USB-tethering', hvis en "
+"USB-forbindelse registreres."
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:65
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, this tethering will "
+"consume data from your cellular plan. To avoid data charges, ensure that your iOS device is "
+"connected to a Wi-Fi network before enabling tethering."
+msgstr ""
+"Hvis din iOS-enhed ikke er tilsluttet Wi-Fi og bruger mobildata, vil denne deling forbruge data fra "
+"din mobilplan. For at undgå dataafgifter skal du sørge for, at din iOS-enhed er tilsluttet et "
+"Wi-Fi-netværk, før du aktiverer deling."
+# 
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a USB cable, follow "
+"these steps:"
+msgstr ""
+"For at dele din smartphones internetforbindelse med en Linux-computer ved hjælp af et USB-kabel, "
+"skal du følge disse trin:"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
+msgid "Close"
+msgstr "Luk"
+# 
+# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:81
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:158
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:478
 msgid "Control Center"
 msgstr "Kontrolcenter"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
 msgstr "Om kontrolcenter"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:166
 msgid "Categories"
 msgstr "Kategorier"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:177
 msgid "Programs"
 msgstr "Programmer"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:182
 msgid "Search..."
 msgstr "Søg..."
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:430
 #, python-brace-format
 msgid "Executing special command: {0}"
 msgstr "Udfører specialkommando: {0}"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:434
 #, python-brace-format
 msgid "Launching: {0}"
 msgstr "Starter: {0}"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:437
 #, python-brace-format
 msgid "Error launching program: {0}"
 msgstr "Fejl ved opstart af program: {0}"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:480
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:486
 msgid "BigLinux Team"
 msgstr "BigLinux Team"
-
-#
+# 
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:485
 msgid "© 2025 BigLinux Team"
 msgstr "© 2025 BigLinux Team"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
 msgstr "Generelt"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:87
 msgid "Network and Internet"
 msgstr "Netværk og internet"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:93
 msgid "Phone"
 msgstr "Telefon"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:99
 msgid "Customize"
 msgstr "Tilpas"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:105
 msgid "Region and Language"
 msgstr "Region og sprog"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:111
 msgid "Multimedia"
 msgstr "Multimedie"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
 msgstr "Konti"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:123
 msgid "Devices"
 msgstr "Enheder"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:129
 msgid "System"
 msgstr "System"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:135
 msgid "About"
 msgstr "Om"
-
-#
+# 
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
+# 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
 msgstr "Andet"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Brug af din Android-enhedens internet på Linux via USB"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
-msgid ""
-"Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr ""
-"Tilslut din Android smartphone til Linux-computeren ved hjælp af et USB-"
-"kabel."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:36
-msgid ""
-"On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
-"'Connections & Sharing'."
-msgstr ""
-"På din smartphone skal du åbne 'Indstillinger' og navigere til 'Netværk & "
-"Internet' eller 'Forbindelser & Deling'."
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr ""
-"Søg efter 'USB-internetdeling', 'USB-tethering' eller lignende udtryk, og "
-"aktivér det."
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:43
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:62
-msgid ""
-"This will automatically establish the internet connection on your Linux "
-"computer without requiring any additional configuration."
-msgstr ""
-"Dette vil automatisk oprette internetforbindelsen på din Linux-computer uden "
-"behov for yderligere konfiguration."
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:46
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your Android device is connected to a Wi-Fi network "
-"before enabling tethering."
-msgstr ""
-"Hvis din Android-enhed ikke er tilsluttet til Wi-Fi og bruger mobildata, vil "
-"denne deling forbruge data fra din mobilplan. For at undgå dataafgifter skal "
-"du sørge for, at din Android-enhed er tilsluttet til et Wi-Fi-netværk, før "
-"du aktiverer deling."
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Brug af din iOS-enhedens internet på Linux via USB"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Tilslut din iOS-enhed til Linux-computeren ved hjælp af et USB-kabel."
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr ""
-"På din iOS-enhed skal du gå til 'Indstillinger', og vælg derefter 'Personlig "
-"Hotspot'."
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:58
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
-"if a USB connection is detected."
-msgstr ""
-"Aktivér 'Tillad andre at deltage'. Dette kan automatisk aktivere 'USB-"
-"tethering', hvis en USB-forbindelse registreres."
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:65
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your iOS device is connected to a Wi-Fi network before "
-"enabling tethering."
-msgstr ""
-"Hvis din iOS-enhed ikke er tilsluttet Wi-Fi og bruger mobildata, vil denne "
-"deling forbruge data fra din mobilplan. For at undgå dataafgifter skal du "
-"sørge for, at din iOS-enhed er tilsluttet et Wi-Fi-netværk, før du aktiverer "
-"deling."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a "
-"USB cable, follow these steps:"
-msgstr ""
-"For at dele din smartphones internetforbindelse med en Linux-computer ved "
-"hjælp af et USB-kabel, skal du følge disse trin:"
-
-#
-# #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
-#
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
-msgid "Close"
-msgstr "Luk"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:498
-msgid "Configure AppimageLauncher"
-msgstr "Konfigurér AppimageLauncher"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
-msgid "Choose the behavior of programs available in .appimage"
-msgstr "Vælg adfærd for programmer tilgængelige i .appimage."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:508
-msgid "Search for Zeroconf servers"
-msgstr "Søg efter Zeroconf-servere"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:523
-msgid "Expand device support"
-msgstr "Udvid enhedsunderstøttelse"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:528
-msgid "Detailed information about your computer"
-msgstr "Detaljeret information om din computer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
-msgid "System foundation and video card support"
-msgstr "Systemgrundlag og grafikkortsupport"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:538
-msgid "Restore program configuration"
-msgstr "Gendan programkonfiguration"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:543
-msgid "Search for SSH servers"
-msgstr "Søg efter SSH-servere"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:549
-msgid "Search for VNC servers"
-msgstr "Søg efter VNC-servere"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
-msgid "Cross-platform buildsystem"
-msgstr "Byggesystem til flere platforme"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:560
-msgid "Advanced Firewall Settings"
-msgstr "Avancerede firewallindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
-msgid "Advanced Audio Manager - Alsamixer"
-msgstr "Avanceret lydadministrator - Alsamixer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:579
-msgid "JamesDSP improving music and audio quality"
-msgstr "JamesDSP forbedrer musik- og lydkvalitet"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:581
-msgid ""
-"Enhance your sound with equalizer, bass boost, surround, and other effects."
-msgstr ""
-"Forstærk din lyd med equalizer, basforstærkning, surround og andre effekter."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:587
-msgid "Partition or Format"
-msgstr "Partition eller Formater"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:592
-msgid "HP Printers"
-msgstr "HP-printere"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
-msgid "Check status, ink level, and maintenance."
-msgstr "Tjek status, blækniveau og vedligeholdelse."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:598
-msgid "HP Scanners"
-msgstr "HP-scannere"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
-msgid "Configure and use HP scanning devices"
-msgstr "Konfigurer og brug HP-scanningsenheder"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:605
-msgid "Configure Kvantum Theme"
-msgstr "Konfigurer Kvantum-tema"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:607
-msgid ""
-"For Kvantum configuration to work, apply the Kvantum theme in 'Application "
-"Style'."
-msgstr ""
-"For at Kvantum-konfigurationen kan fungere, skal du anvende Kvantum-temaet i "
-"'Applikationsstil'."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:613
-msgid "USB Device Formatter"
-msgstr "USB-enhedsformatter"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:615
-msgid "Format a USB device"
-msgstr "Formater en USB-enhed"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
-msgid "USB Image Writer"
-msgstr "USB-diskaftryk-skriver"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:623
-msgid "Create a bootable USB device"
-msgstr "Opret en bootbar USB-enhed"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:629
-msgid "Storage Usage"
-msgstr "Lagringsforbrug"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
-msgid "Sound and microphone"
-msgstr "Lyd og mikrofon"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:644
-msgid "Configure or change audio input and output devices. (Ex: HDMI)"
-msgstr "Konfigurér eller skift lydind- og -udenheder. (f.eks. HDMI)"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:650
-msgid "Printers"
-msgstr "Printere"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
-msgid "Install, configure or remove printers."
-msgstr "Installér, konfigurér eller fjern printere"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:656
-msgid "KDE Control Center"
-msgstr "KDE Kontrolcenter"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:665
-msgid "Configure webcam or capture card"
-msgstr "Konfigurér webcam eller capture card"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:667
-msgid "Adjust settings and control webcams or video capture devices"
-msgstr ""
-"Juster indstillinger og kontroller webcams eller videooptagelsesenheder."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:675
-msgid "Configure accessibility options for users with special needs"
-msgstr "Konfigurer tilgængelighedsindstillinger for brugere med særlige behov"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:681
-msgid "Virtual desktops and activities"
-msgstr "Virtuelle skriveborde og aktiviteter"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:684
-msgid ""
-"Create more than one virtual work environment by switching between them."
-msgstr "Opret mere end et virtuelt arbejdsområde ved at skifte mellem dem."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:691
-msgid "Manage applications that start automatically on login"
-msgstr "Administrer applikationer, der starter automatisk ved login"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:698
-msgid ""
-"Enabling search can consume significant memory and processing resources. "
-"This may cause the system to slow down, depending on the number of user "
-"files."
-msgstr ""
-"Aktivering af søgning kan forbruge betydelig hukommelse og "
-"behandlingsressourcer. Dette kan få systemet til at blive langsommere, "
-"afhængigt af antallet af brugerfiler."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:704
-msgid "Connect and manage Bluetooth devices"
-msgstr "Forbind og administrer Bluetooth-enheder"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:710
-msgid "Manage Thunderbolt devices and security settings"
-msgstr "Administrer Thunderbolt-enheder og sikkerhedsindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:716
-msgid "Adjust date, time and timezone."
-msgstr "Juster dato, tid og tidszone."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:722
-msgid "Customize the color scheme of your desktop environment"
-msgstr "Tilpas farveskemaet for dit skrivebords miljø"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:729
-msgid "Select which applications to use for specific tasks"
-msgstr "Vælg hvilke applikationer der skal bruges til specifikke opgaver"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:735
-msgid "Change mouse cursor appearance and themes"
-msgstr "Ændre musemarkørens udseende og temaer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:741
-msgid "Configure default paths for documents, downloads and other folders"
-msgstr "Konfigurer standardstier for dokumenter, downloads og andre mapper"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:748
-msgid "Change the visual appearance of the Plasma desktop"
-msgstr "Ændr det visuelle udseende af Plasma-skrivebordet"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:755
-msgid "Configure which applications open specific file types"
-msgstr "Konfigurer, hvilke applikationer der åbner specifikke filtyper"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:761
-msgid "Manage permissions for Flatpak applications"
-msgstr "Administrer tilladelser for Flatpak-applikationer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
-msgid "Install and configure system fonts and typography settings"
-msgstr "Installer og konfigurer system skrifttyper og typografiindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:783
-msgid "Configure game controllers and joysticks"
-msgstr "Konfigurer spilcontrollere og joysticks"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:789
-msgid "Change the icon theme used throughout the system"
-msgstr "Skift ikontemaet, der bruges i hele systemet."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:800
-msgid "Configure digital camera integration with your system"
-msgstr "Konfigurer digital kamera integration med dit system"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:807
-msgid "Manage system services running in the background"
-msgstr "Administrer systemtjenester, der kører i baggrunden"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
-msgid "Layout settings, shortcuts and other options."
-msgstr "Layoutindstillinger, genveje og andre muligheder"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:821
-msgid "Configure monitors, resolution, and screen arrangement"
-msgstr "Konfigurer skærme, opløsning og skærmarrangement"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:827
-msgid "Window Decorations"
-msgstr "Vinduesdekorationer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:829
-msgid "Change the appearance of window title bars and borders"
-msgstr "Ændr udseendet af vinduets titellinjer og kanter"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:837
-msgid "Configure visual effects and animations for the desktop"
-msgstr "Konfigurer visuelle effekter og animationer til skrivebordet"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:844
-msgid "Configure how windows behave and interact"
-msgstr "Konfigurer, hvordan vinduer opfører sig og interagerer."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:851
-msgid "Configure mouse sensitivity, buttons and behavior"
-msgstr "Konfigurer musens følsomhed, knapper og adfærd"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:858
-msgid ""
-"Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, "
-"wired network, mobile broadband and others)."
-msgstr ""
-"Avanceret netværkskonfiguration (VPN, WiFi, Kablet, Statisk IP, PPPoE, ADSL, "
-"kablet netværk, mobil bredbånd og andre)."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
-msgid "QEFI Entry Manager"
-msgstr "UEFI-opstartsmenu-administrator"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:870
-msgid "Manage and configure boot entries for UEFI systems"
-msgstr "Administrer og konfigurere opstartsposter for UEFI-systemer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:877
-msgid "Configure system and application notifications"
-msgstr "Konfigurer system- og applikationsmeddelelser"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:882
-msgid "Boot Screen"
-msgstr "Bootskærm"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:884
-msgid "Change the splash screen shown during system startup"
-msgstr "Ændre splash-skærmen, der vises under systemstart."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:892
-msgid "Configure energy saving and battery settings"
-msgstr "Konfigurer energibesparelse og batteriindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:898
-msgid "Configure network proxy settings for internet access"
-msgstr "Konfigurer netværksproxyindstillinger for internetadgang"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:904
-msgid "Manage the history of recently accessed files"
-msgstr "Administrer historikken over nyligt tilgåede filer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:909
-msgid "Configure language, region, and format settings"
-msgstr "Konfigurer sprog, region og formatindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:915
-msgid "Configure screen locking settings and appearance"
-msgstr "Konfigurer skærmlåsindstillinger og udseende"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:922
-msgid "Configure the login screen appearance and behavior"
-msgstr "Konfigurer login-skærmens udseende og adfærd"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
-msgid "Desktop Session"
-msgstr "Skrivebords-session"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:930
-msgid "Configure session startup and shutdown behavior"
-msgstr "Konfigurer session opstart og nedlukningsadfærd"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:936
-msgid "Configure sound effects for system events"
-msgstr "Konfigurer lydeffekter til systembegivenheder"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
-msgid "Configure the splash screen shown while starting applications"
-msgstr "Konfigurer splashskærmen, der vises, mens applikationer starter."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:949
-msgid "Configure the visual appearance of applications"
-msgstr "Konfigurer det visuelle udseende af applikationer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:955
-msgid "Configure drawing tablets and stylus settings"
-msgstr "Konfigurer tegnetabletter og stylusindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:960
-msgid "Configure laptop touchpad behavior and gestures"
-msgstr "Konfigurer bærbar touchpad-adfærd og gestus."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:966
-msgid "Configure touchscreen behavior and calibration"
-msgstr "Konfigurer berøringsskærmsadfærd og kalibrering"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:972
-msgid "Configure trash bin behavior and cleanup settings"
-msgstr "Konfigurer opførsel for papirkurv og rydningsindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:979
-msgid "Change desktop background image and slideshow settings"
-msgstr "Skift skrivebordsbaggrundsbillede og diasshowindstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
-msgid "Configure the system's landing page and default widgets."
-msgstr "Konfigurer systemets startside og standardwidgets"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:992
-msgid "Manage FireWire Audio Interfaces - FfadoMixer"
-msgstr "Administrer FireWire lydgrænseflader - FfadoMixer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:994
-msgid "Control Panel for your FireWire Audio Interfaces."
-msgstr "Kontrolpanel til dine FireWire lydinterfaces."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
-msgid "Access your files and folders."
-msgstr "Adgang til dine filer og mapper."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1006
-msgid ""
-"This program can transfer files between smartphones, tablets, and other "
-"computers. With it, you can, for example, use your smartphone as a wireless "
-"mouse and keyboard to control the computer, among other features. It "
-"integrates best with BigLinux and sits among the applets located near the "
-"system clock. To sync with your smartphone, go to the Google Store or Apple "
-"Store and install KDE Connect."
-msgstr ""
-"Dette program kan overføre filer mellem smartphones, tablets og andre "
-"computere. Med det kan du for eksempel bruge din smartphone som en trådløs "
-"mus og tastatur til at styre computeren, blandt andre funktioner. Det "
-"integreres bedst med BigLinux og sidder blandt de applets, der er placeret "
-"nær systemuret. For at synkronisere med din smartphone, gå til Google Store "
-"eller Apple Store og installer KDE Connect."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1012
-msgid "Access the command terminal."
-msgstr "Åbn kommandoterminalen."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1017
-msgid "Password Manager - KWalletManager"
-msgstr "Adgangskodeadministrator - KWalletManager"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1019
-msgid "Tool for managing KDE wallets"
-msgstr "Værktøj til at administrere KDE-tegnebøger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1026
-msgid "Add or remove programs installed on the system"
-msgstr "Tilføj eller fjern programmer, der er installeret på systemet"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1031
-msgid "Connect to internet using Android"
-msgstr "Forbind til internettet ved hjælp af Android"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
-msgid "Connect to internet using iOS"
-msgstr "Opret forbindelse til internettet ved hjælp af iOS"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1049
-msgid "Connect to Internet"
-msgstr "Opret forbindelse til internettet"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
-msgid "Snapshots and backups"
-msgstr "Øjebliksbilleder og sikkerhedskopier"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
-msgid "Create or activate restore points"
-msgstr "Opret eller aktiver gendannelsespunkter"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1073
-msgid "Biglinux Settings"
-msgstr "Biglinux Indstillinger"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
-msgid "Simplify switching BigLinux operation."
-msgstr "Forenkle skift af BigLinux-operation."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
-msgid "BigLinux Themes"
-msgstr "BigLinux Temaer"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1083
-msgid ""
-"We provide complete configurations for you to select in an extremely simple "
-"way."
-msgstr ""
-"Vi giver komplette konfigurationer til dig at vælge på en ekstremt enkel "
-"måde."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1095
-msgid "Configure feedback and usage report preferences."
-msgstr "Konfigurer præferencer for feedback og brugsrapporter."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1102
-msgid "Configure automatic actions for when devices are connected."
-msgstr "Konfigurer automatiske handlinger, når enheder er tilsluttet."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1110
-msgid "Configure search and indexing options in Plasma."
-msgstr "Konfigurer søge- og indekseringsmuligheder i Plasma."

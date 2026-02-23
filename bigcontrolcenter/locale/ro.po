@@ -7,15 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-08 16:03-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -24,53 +22,45 @@ msgstr ""
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:478
 msgid "Control Center"
 msgstr "Centrul de control"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
 msgstr "Despre Centrul de Control"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 272
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:166
 msgid "Categories"
 msgstr "Categorii"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 283
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:177
 msgid "Programs"
 msgstr "Programe"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:182
 msgid "Search..."
 msgstr "Căutare..."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 464
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:430
 #, python-brace-format
 msgid "Executing special command: {0}"
 msgstr "Executarea comenzii speciale: {0}"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 468
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:434
 #, python-brace-format
 msgid "Launching: {0}"
 msgstr "Lansare: {0}"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 471
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:437
 #, python-brace-format
 msgid "Error launching program: {0}"
 msgstr "Eroare la lansarea programului: {0}"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 563
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 569
@@ -78,97 +68,83 @@ msgstr "Eroare la lansarea programului: {0}"
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:486
 msgid "BigLinux Team"
 msgstr "Echipa BigLinux"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:485
 msgid "© 2025 BigLinux Team"
 msgstr "© 2025 Echipa BigLinux"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
 msgstr "Principal"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:87
 msgid "Network and Internet"
 msgstr "Rețea și Internet"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:93
 msgid "Phone"
 msgstr "Telefon"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:99
 msgid "Customize"
 msgstr "Personalizare"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:105
 msgid "Region and Language"
 msgstr "Regiune și Limbă"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:111
 msgid "Multimedia"
 msgstr "Multimedia"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
 msgstr "Conturi"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:123
 msgid "Devices"
 msgstr "Dispozitive"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:129
 msgid "System"
 msgstr "Sistem"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:135
 msgid "About"
 msgstr "Despre"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
 msgstr "Altele"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
 msgid "Using Your Android Device's Internet on Linux via USB"
 msgstr "Folosirea internetului dispozitivului Android pe Linux prin USB"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -177,7 +153,6 @@ msgid ""
 "Connect your Android smartphone to the Linux computer using a USB cable."
 msgstr ""
 "Conectați-vă smartphone-ul Android la computerul Linux folosind un cablu USB."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 40
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:36
@@ -187,7 +162,6 @@ msgid ""
 msgstr ""
 "Pe smartphone-ul tău, deschide 'Setări' și navighează la 'Rețea și Internet' "
 "sau 'Conexiuni și Partajare'."
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -195,7 +169,6 @@ msgstr ""
 msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr ""
 "Caută „USB Tethering”, „USB Tether” sau termeni similari și activează-l."
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -207,7 +180,6 @@ msgid ""
 msgstr ""
 "Acesta va stabili automat conexiunea la internet pe computerul dvs. Linux "
 "fără a necesita configurări suplimentare."
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -223,14 +195,12 @@ msgstr ""
 "date mobile. Pentru a evita taxele de date, asigură-te că dispozitivul "
 "Android este conectat la o rețea Wi-Fi înainte de a activa partajarea de "
 "conexiune."
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
 msgid "Using Your iOS Device's Internet on Linux via USB"
 msgstr "Folosirea internetului dispozitivului iOS pe Linux prin USB"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -238,7 +208,6 @@ msgstr "Folosirea internetului dispozitivului iOS pe Linux prin USB"
 msgid "Connect your iOS device to the Linux computer using a USB cable."
 msgstr ""
 "Conectați-vă dispozitivul iOS la computerul Linux folosind un cablu USB."
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -246,7 +215,6 @@ msgstr ""
 msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr ""
 "Pe dispozitivul iOS, mergi la 'Setări', apoi selectează 'Hotspot personal'."
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -257,7 +225,6 @@ msgid ""
 msgstr ""
 "Activați „Permiteți altora să se alăture”. Acest lucru poate activa automat "
 "„Partajarea USB” dacă este detectată o conexiune USB."
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
@@ -272,7 +239,6 @@ msgstr ""
 "această funcție de partajare a conexiunii va consuma date din planul dvs. de "
 "date mobile. Pentru a evita taxele de date, asigurați-vă că dispozitivul iOS "
 "este conectat la o rețea Wi-Fi înainte de a activa partajarea."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 102
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
@@ -282,92 +248,77 @@ msgid ""
 msgstr ""
 "Pentru a partaja conexiunea la internet a smartphone-ului tău cu un computer "
 "Linux folosind un cablu USB, urmează acești pași:"
-
 #
 # #-#-#-#-#  bigcontrolcenter-bash.pot (bigcontrolcenter)  #-#-#-#-#
 #
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
 msgid "Close"
 msgstr "Închide"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 20
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:498
 msgid "Configure AppimageLauncher"
 msgstr "Configurați AppimageLauncher"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 21
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:501
 msgid "Choose the behavior of programs available in .appimage"
 msgstr "Alegeți comportamentul programelor disponibile în .appimage."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 461
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:508
 msgid "Search for Zeroconf servers"
 msgstr "Caută servere Zeroconf"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 91
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:523
 msgid "Expand device support"
 msgstr "Extindeți suportul dispozitivului"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 528
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:528
 msgid "Detailed information about your computer"
 msgstr "Informații detaliate despre computerul tău"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 536
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:533
 msgid "System foundation and video card support"
 msgstr "Suport pentru fundația sistemului și placa video"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 36
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:538
 msgid "Restore program configuration"
 msgstr "Restabilește configurarea programului"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 82
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:543
 msgid "Search for SSH servers"
 msgstr "Căutați servere SSH"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 87
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:549
 msgid "Search for VNC servers"
 msgstr "Căutați servere VNC"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:555
 msgid "Cross-platform buildsystem"
 msgstr "Sistem de construire multiplatformă"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 513
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:560
 msgid "Advanced Firewall Settings"
 msgstr "Setări avansate ale firewall-ului"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 115
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:573
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Manager audio avansat - Alsamixer"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 520
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:579
 msgid "JamesDSP improving music and audio quality"
 msgstr "JamesDSP îmbunătățește calitatea muzicii și a sunetului"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 522
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:581
@@ -376,43 +327,36 @@ msgid ""
 msgstr ""
 "Îmbunătățește-ți sunetul cu egalizator, amplificare a basului, sunet "
 "surround și alte efecte."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 590
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:587
 msgid "Partition or Format"
 msgstr "Partiționare sau Formatare"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 600
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:592
 msgid "HP Printers"
 msgstr "Imprimante HP"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 602
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
 msgid "Check status, ink level, and maintenance."
 msgstr "Verificați starea, nivelul de cerneală și întreținerea."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 608
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:598
 msgid "HP Scanners"
 msgstr "Scanere HP"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 610
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
 msgid "Configure and use HP scanning devices"
 msgstr "Configurează și folosește dispozitivele de scanare HP"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 616
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:605
 msgid "Configure Kvantum Theme"
 msgstr "Configurează tema Kvantum"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 619
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:607
@@ -422,43 +366,36 @@ msgid ""
 msgstr ""
 "Pentru ca configurația Kvantum să funcționeze, aplică tema Kvantum în 'Stil "
 "aplicație'."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 626
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:613
 msgid "USB Device Formatter"
 msgstr "Formatare dispozitive USB"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 628
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:615
 msgid "Format a USB device"
 msgstr "Formatează un dispozitiv USB"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:621
 msgid "USB Image Writer"
 msgstr "Scriitor de imagini USB"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 636
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:623
 msgid "Create a bootable USB device"
 msgstr "Creează un dispozitiv USB bootabil"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 481
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:629
 msgid "Storage Usage"
 msgstr "Utilizare stocare"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 523
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:642
 msgid "Sound and microphone"
 msgstr "Sunet și microfon"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 524
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:644
@@ -466,31 +403,26 @@ msgid "Configure or change audio input and output devices. (Ex: HDMI)"
 msgstr ""
 "Configurați sau schimbați dispozitivele de intrare și ieșire audio. (Ex: "
 "HDMI)"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 544
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:650
 msgid "Printers"
 msgstr "Imprimante"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Install, configure or remove printers."
 msgstr "Instalați, configurați sau eliminați imprimantele."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 551
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:656
 msgid "KDE Control Center"
 msgstr "Centrul de control KDE"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 148
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:665
 msgid "Configure webcam or capture card"
 msgstr "Configurați camera web sau placa de captură"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 705
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:667
@@ -498,7 +430,6 @@ msgid "Adjust settings and control webcams or video capture devices"
 msgstr ""
 "Ajustați setările și controlați camerele web sau dispozitivele de captură "
 "video."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 715
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:675
@@ -506,13 +437,11 @@ msgid "Configure accessibility options for users with special needs"
 msgstr ""
 "Configurează opțiunile de accesibilitate pentru utilizatorii cu nevoi "
 "speciale"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 211
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:681
 msgid "Virtual desktops and activities"
 msgstr "Desktopuri virtuale și activități"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 725
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:684
@@ -520,13 +449,11 @@ msgid ""
 "Create more than one virtual work environment by switching between them."
 msgstr ""
 "Creează mai mult de un mediu de lucru virtual prin comutarea între ele."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 735
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:691
 msgid "Manage applications that start automatically on login"
 msgstr "Gestiona aplicațiile care pornesc automat la autentificare"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 745
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:698
@@ -538,140 +465,117 @@ msgstr ""
 "Activarea căutării poate consuma resurse semnificative de memorie și "
 "procesare. Acest lucru poate cauza încetinirea sistemului, în funcție de "
 "numărul de fișiere ale utilizatorului."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 754
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:704
 msgid "Connect and manage Bluetooth devices"
 msgstr "Conectează și gestionează dispozitive Bluetooth"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 763
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:710
 msgid "Manage Thunderbolt devices and security settings"
 msgstr "Gestionați dispozitivele Thunderbolt și setările de securitate"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 772
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:716
 msgid "Adjust date, time and timezone."
 msgstr "Ajustați data, ora și fusul orar."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 781
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:722
 msgid "Customize the color scheme of your desktop environment"
 msgstr "Personalizați schema de culori a mediului desktop."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 791
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:729
 msgid "Select which applications to use for specific tasks"
 msgstr "Selectați ce aplicații să utilizați pentru sarcini specifice."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 800
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:735
 msgid "Change mouse cursor appearance and themes"
 msgstr "Schimbă aspectul și temele cursorului mouse-ului."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 809
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:741
 msgid "Configure default paths for documents, downloads and other folders"
 msgstr ""
 "Configurează căile implicite pentru documente, descărcări și alte foldere."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 819
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:748
 msgid "Change the visual appearance of the Plasma desktop"
 msgstr "Schimbă aspectul vizual al desktopului Plasma."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 829
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:755
 msgid "Configure which applications open specific file types"
 msgstr "Configurează ce aplicații deschid tipuri specifice de fișiere"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 848
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:761
 msgid "Manage permissions for Flatpak applications"
 msgstr "Gestionați permisiunile pentru aplicațiile Flatpak"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 857
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:777
 msgid "Install and configure system fonts and typography settings"
 msgstr "Instalați și configurați fonturile de sistem și setările de tipografie"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 866
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:783
 msgid "Configure game controllers and joysticks"
 msgstr "Configurează controlerele de joc și joystick-urile"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 875
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:789
 msgid "Change the icon theme used throughout the system"
 msgstr "Schimbă tema pictogramelor utilizată în întregul sistem."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 895
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:800
 msgid "Configure digital camera integration with your system"
 msgstr "Configurează integrarea camerei digitale cu sistemul tău."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 905
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:807
 msgid "Manage system services running in the background"
 msgstr "Gestiona serviciile de sistem care rulează în fundal"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:814
 msgid "Layout settings, shortcuts and other options."
 msgstr "Setări de aspect, comenzi rapide și alte opțiuni."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 923
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:821
 msgid "Configure monitors, resolution, and screen arrangement"
 msgstr "Configurează monitoarele, rezoluția și aranjamentul ecranului"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:827
 msgid "Window Decorations"
 msgstr "Decorațiuni Fereastră"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 933
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:829
 msgid "Change the appearance of window title bars and borders"
 msgstr "Schimbați aspectul barelor de titlu ale ferestrelor și al marginilor."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 943
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:837
 msgid "Configure visual effects and animations for the desktop"
 msgstr "Configurează efectele vizuale și animațiile pentru desktop."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 952
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:844
 msgid "Configure how windows behave and interact"
 msgstr "Configurează modul în care ferestrele se comportă și interacționează"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 961
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:851
 msgid "Configure mouse sensitivity, buttons and behavior"
 msgstr "Configurează sensibilitatea mouse-ului, butoanele și comportamentul."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 971
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:858
@@ -681,129 +585,108 @@ msgid ""
 msgstr ""
 "Configurare avansată a rețelei (VPN, WiFi, Cablat, IP static, PPPoE, ADSL, "
 "rețea cablată, lățime de bandă mobilă și altele)."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:868
 msgid "QEFI Entry Manager"
 msgstr "Manager intrări de boot UEFI"
 +                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    msgstr "Manager de intrări de boot UEFI"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 792
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:870
 msgid "Manage and configure boot entries for UEFI systems"
 msgstr "Gestionați și configurați intrările de boot pentru sistemele UEFI"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 988
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:877
 msgid "Configure system and application notifications"
 msgstr "Configurează notificările sistemului și aplicațiilor"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 994
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:882
 msgid "Boot Screen"
 msgstr "Ecran de pornire"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:884
 msgid "Change the splash screen shown during system startup"
 msgstr "Schimbați ecranul de pornire afișat în timpul pornirii sistemului."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1006
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:892
 msgid "Configure energy saving and battery settings"
 msgstr "Configurează setările de economisire a energiei și ale bateriei"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1015
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:898
 msgid "Configure network proxy settings for internet access"
 msgstr "Configurează setările proxy de rețea pentru acces la internet"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1024
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:904
 msgid "Manage the history of recently accessed files"
 msgstr "Gestionează istoricul fișierelor accesate recent"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1032
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:909
 msgid "Configure language, region, and format settings"
 msgstr "Configurează setările de limbă, regiune și format."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1041
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:915
 msgid "Configure screen locking settings and appearance"
 msgstr "Configurează setările de blocare a ecranului și aspectul."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1051
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:922
 msgid "Configure the login screen appearance and behavior"
 msgstr "Configurează aspectul și comportamentul ecranului de autentificare"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1058
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:928
 msgid "Desktop Session"
 msgstr "Sesiune Desktop"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1060
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:930
 msgid "Configure session startup and shutdown behavior"
 msgstr "Configurează comportamentul de pornire și oprire a sesiunii."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1068
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:936
 msgid "Configure sound effects for system events"
 msgstr "Configurează efectele sonore pentru evenimentele sistemului"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1077
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:943
 msgid "Configure the splash screen shown while starting applications"
 msgstr ""
 "Configurează ecranul de pornire afișat în timpul lansării aplicațiilor."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1086
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:949
 msgid "Configure the visual appearance of applications"
 msgstr "Configurează aspectul vizual al aplicațiilor"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1094
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:955
 msgid "Configure drawing tablets and stylus settings"
 msgstr "Configurează setările tabletelor grafice și ale stilourilor."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1102
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:960
 msgid "Configure laptop touchpad behavior and gestures"
 msgstr "Configurează comportamentul și gesturile touchpad-ului laptopului."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1110
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:966
 msgid "Configure touchscreen behavior and calibration"
 msgstr "Configurează comportamentul și calibrarea ecranului tactil"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1119
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:972
 msgid "Configure trash bin behavior and cleanup settings"
 msgstr "Configurează comportamentul coșului de gunoi și setările de curățare"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1129
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:979
@@ -811,32 +694,27 @@ msgid "Change desktop background image and slideshow settings"
 msgstr ""
 "Schimbați imaginea de fundal a desktopului și setările pentru prezentarea de "
 "diapozitive."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:986
 msgid "Configure the system's landing page and default widgets."
 msgstr ""
 "Configurează pagina de destinație a sistemului și widget-urile implicite."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 930
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:992
 msgid "Manage FireWire Audio Interfaces - FfadoMixer"
 msgstr "Gestiona interfețele audio FireWire - FfadoMixer"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 932
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:994
 msgid "Control Panel for your FireWire Audio Interfaces."
 msgstr "Panou de control pentru interfețele audio FireWire."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1148
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1000
 msgid "Access your files and folders."
 msgstr "Accesați fișierele și folderele dvs."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1157
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1006
@@ -854,79 +732,66 @@ msgstr ""
 "funcții. Se integrează cel mai bine cu BigLinux și se află printre appletele "
 "situate lângă ceasul sistemului. Pentru a te sincroniza cu smartphone-ul "
 "tău, mergi la Google Store sau Apple Store și instalează KDE Connect."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 497
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1012
 msgid "Access the command terminal."
 msgstr "Accesați terminalul de comandă."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 957
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1017
 msgid "Password Manager - KWalletManager"
 msgstr "Manager de parole - KWalletManager"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1174
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1019
 msgid "Tool for managing KDE wallets"
 msgstr "Instrument pentru gestionarea portofelelor KDE"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1182
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1026
 msgid "Add or remove programs installed on the system"
 msgstr "Adăugați sau eliminați programele instalate pe sistem."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1188
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1031
 msgid "Connect to internet using Android"
 msgstr "Conectează-te la internet folosind Android"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1196
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1038
 msgid "Connect to internet using iOS"
 msgstr "Conectează-te la internet folosind iOS"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 182
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1049
 msgid "Connect to Internet"
 msgstr "Conectați-vă la internet"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 485
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1066
 msgid "Snapshots and backups"
 msgstr "Instantanee și copii de siguranță"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 486
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
 msgid "Create or activate restore points"
 msgstr "Creează sau activează puncte de restaurare"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 997
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1073
 msgid "Biglinux Settings"
 msgstr "Setări Biglinux"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 998
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
 msgid "Simplify switching BigLinux operation."
 msgstr "Simplifică comutarea operațiunii BigLinux."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1228
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
 msgid "BigLinux Themes"
 msgstr "Teme BigLinux"
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py, line: 52
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1083
@@ -936,13 +801,11 @@ msgid ""
 msgstr ""
 "Oferim configurații complete pentru a fi selectate într-un mod extrem de "
 "simplu."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1261
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1095
 msgid "Configure feedback and usage report preferences."
 msgstr "Configurează preferințele pentru feedback și raportul de utilizare."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1271
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1102
@@ -950,7 +813,6 @@ msgid "Configure automatic actions for when devices are connected."
 msgstr ""
 "Configurează acțiuni automate pentru atunci când dispozitivele sunt "
 "conectate."
-
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1309
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1110
