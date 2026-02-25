@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bigcontrolcenter\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Last-Translator: Gustavo Davi da Silva Ramos <GustavoDSR@protonmail.com>\n"
+"Language-Team: English <LL@li.org>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,11 +22,11 @@ msgid ""
 "As alterações feitas podem ser vistas\n"
 "na imagem da sua webcam em outros programas."
 msgstr ""
-"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
+"The webcam is already being used by the program: $WEBCAM_BUSY\n"
 "\n"
-"Abrirei em modo de configuração.\n"
-"As alterações feitas podem ser vistas\n"
-"na imagem da sua webcam em outros programas."
+"I will open in configuration mode.\n"
+"The changes made can be seen \n"
+"in your webcam image in other programs."
 
 #
 msgid "Webcam"
@@ -35,7 +35,7 @@ msgstr "Webcam"
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 30
 msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Using Your Android Device's Internet on Linux via USB"
+msgstr "Using Your Android device's Internet on Linux via USB"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 33
@@ -51,7 +51,7 @@ msgid ""
 "'Connections & Sharing'."
 msgstr ""
 "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
-"'Connections & Sharing'."
+"'Connections & Sharing' or other connectivity-related settings."
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 39
@@ -85,7 +85,7 @@ msgstr ""
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 53
 msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Using your iOS device's Internet on Linux via USB"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 55
@@ -242,7 +242,7 @@ msgstr "BigLinux Team"
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 485
 msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Team"
+msgstr "© 2026 BigLinux Team"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 499
@@ -585,7 +585,7 @@ msgstr "Configure system and application notifications"
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 883
 msgid "Boot Screen"
-msgstr "Boot Screen"
+msgstr "Boot Splash"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 885
@@ -757,7 +757,7 @@ msgstr "Create or activate restore points"
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1074
 msgid "Biglinux Settings"
-msgstr "Biglinux Settings"
+msgstr "BigLinux Settings"
 
 #
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1075
