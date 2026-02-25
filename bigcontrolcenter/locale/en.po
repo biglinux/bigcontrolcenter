@@ -33,6 +33,218 @@ msgid "Webcam"
 msgstr "Webcam"
 
 #
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 30
+msgid "Using Your Android Device's Internet on Linux via USB"
+msgstr "Using Your Android Device's Internet on Linux via USB"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 33
+msgid ""
+"Connect your Android smartphone to the Linux computer using a USB cable."
+msgstr ""
+"Connect your Android smartphone to the Linux computer using a USB cable."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 36
+msgid ""
+"On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
+"'Connections & Sharing'."
+msgstr ""
+"On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
+"'Connections & Sharing'."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 39
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgstr ""
+"Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 43
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 62
+msgid ""
+"This will automatically establish the internet connection on your Linux "
+"computer without requiring any additional configuration."
+msgstr ""
+"This will automatically establish the internet connection on your Linux "
+"computer without requiring any additional configuration."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 46
+msgid ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your Android device is connected to a Wi-Fi network "
+"before enabling tethering."
+msgstr ""
+"If your Android device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your Android device is connected to a Wi-Fi network "
+"before enabling tethering."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 53
+msgid "Using Your iOS Device's Internet on Linux via USB"
+msgstr "Using Your iOS Device's Internet on Linux via USB"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 55
+msgid "Connect your iOS device to the Linux computer using a USB cable."
+msgstr "Connect your iOS device to the Linux computer using a USB cable."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 56
+msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+msgstr "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 58
+msgid ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
+"if a USB connection is detected."
+msgstr ""
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
+"if a USB connection is detected."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 65
+msgid ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your iOS device is connected to a Wi-Fi network before "
+"enabling tethering."
+msgstr ""
+"If your iOS device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
+"charges, ensure that your iOS device is connected to a Wi-Fi network before "
+"enabling tethering."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 98
+msgid ""
+"To share your smartphone's internet connection with a Linux computer using a "
+"USB cable, follow these steps:"
+msgstr ""
+"To share your smartphone's internet connection with a Linux computer using a "
+"USB cable, follow these steps:"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 153
+msgid "Close"
+msgstr "Close"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 81
+msgid "Main"
+msgstr "Main"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 87
+msgid "Network and Internet"
+msgstr "Network and Internet"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 93
+msgid "Phone"
+msgstr "Phone"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 99
+msgid "Customize"
+msgstr "Customize"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 105
+msgid "Region and Language"
+msgstr "Region and Language"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 111
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 117
+msgid "Accounts"
+msgstr "Accounts"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 123
+msgid "Devices"
+msgstr "Devices"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 129
+msgid "System"
+msgstr "System"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 135
+msgid "About"
+msgstr "About"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 141
+msgid "Other"
+msgstr "Other"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 81
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 158
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 478
+msgid "Control Center"
+msgstr "Control Center"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
+msgid "About Control Center"
+msgstr "About Control Center"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 166
+msgid "Categories"
+msgstr "Categories"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 177
+msgid "Programs"
+msgstr "Programs"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 182
+msgid "Search..."
+msgstr "Search..."
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 430
+#, python-brace-format
+msgid "Executing special command: {0}"
+msgstr "Executing special command: {0}"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 434
+#, python-brace-format
+msgid "Launching: {0}"
+msgstr "Launching: {0}"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 437
+#, python-brace-format
+msgid "Error launching program: {0}"
+msgstr "Error launching program: {0}"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 480
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 486
+msgid "BigLinux Team"
+msgstr "BigLinux Team"
+
+#
+# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 485
+msgid "© 2025 BigLinux Team"
+msgstr "© 2025 BigLinux Team"
+
+#
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 499
 msgid "Configure AppimageLauncher"
 msgstr "Configure AppimageLauncher"
@@ -580,215 +792,3 @@ msgstr "Configure automatic actions for when devices are connected."
 # File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py, line: 1115
 msgid "Configure search and indexing options in Plasma."
 msgstr "Configure search and indexing options in Plasma."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 30
-msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Using Your Android Device's Internet on Linux via USB"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 33
-msgid ""
-"Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr ""
-"Connect your Android smartphone to the Linux computer using a USB cable."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 36
-msgid ""
-"On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
-"'Connections & Sharing'."
-msgstr ""
-"On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
-"'Connections & Sharing'."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 39
-msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-msgstr ""
-"Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 43
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 62
-msgid ""
-"This will automatically establish the internet connection on your Linux "
-"computer without requiring any additional configuration."
-msgstr ""
-"This will automatically establish the internet connection on your Linux "
-"computer without requiring any additional configuration."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 46
-msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your Android device is connected to a Wi-Fi network "
-"before enabling tethering."
-msgstr ""
-"If your Android device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your Android device is connected to a Wi-Fi network "
-"before enabling tethering."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 53
-msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Using Your iOS Device's Internet on Linux via USB"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 55
-msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Connect your iOS device to the Linux computer using a USB cable."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 56
-msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-msgstr "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 58
-msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
-"if a USB connection is detected."
-msgstr ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
-"if a USB connection is detected."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 65
-msgid ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your iOS device is connected to a Wi-Fi network before "
-"enabling tethering."
-msgstr ""
-"If your iOS device is not connected to Wi-Fi and is using cellular data, "
-"this tethering will consume data from your cellular plan. To avoid data "
-"charges, ensure that your iOS device is connected to a Wi-Fi network before "
-"enabling tethering."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 98
-msgid ""
-"To share your smartphone's internet connection with a Linux computer using a "
-"USB cable, follow these steps:"
-msgstr ""
-"To share your smartphone's internet connection with a Linux computer using a "
-"USB cable, follow these steps:"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py, line: 153
-msgid "Close"
-msgstr "Close"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 81
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 158
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 478
-msgid "Control Center"
-msgstr "Control Center"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 122
-msgid "About Control Center"
-msgstr "About Control Center"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 166
-msgid "Categories"
-msgstr "Categories"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 177
-msgid "Programs"
-msgstr "Programs"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 182
-msgid "Search..."
-msgstr "Search..."
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 430
-#, python-brace-format
-msgid "Executing special command: {0}"
-msgstr "Executing special command: {0}"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 434
-#, python-brace-format
-msgid "Launching: {0}"
-msgstr "Launching: {0}"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 437
-#, python-brace-format
-msgid "Error launching program: {0}"
-msgstr "Error launching program: {0}"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 480
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 486
-msgid "BigLinux Team"
-msgstr "BigLinux Team"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py, line: 485
-msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux Team"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 81
-msgid "Main"
-msgstr "Main"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 87
-msgid "Network and Internet"
-msgstr "Network and Internet"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 93
-msgid "Phone"
-msgstr "Phone"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 99
-msgid "Customize"
-msgstr "Customize"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 105
-msgid "Region and Language"
-msgstr "Region and Language"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 111
-msgid "Multimedia"
-msgstr "Multimedia"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 117
-msgid "Accounts"
-msgstr "Accounts"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 123
-msgid "Devices"
-msgstr "Devices"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 129
-msgid "System"
-msgstr "System"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 135
-msgid "About"
-msgstr "About"
-
-#
-# File: bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py, line: 141
-msgid "Other"
-msgstr "Other"
