@@ -373,7 +373,7 @@ class AppFinder:
             "/usr/share/applications/guvcview.desktop",
             "/usr/share/applications/hplip.desktop",
             "/usr/share/kservices5/smb.desktop",
-            "/usr/share/applications/big-driver-manager.desktop",
+            "/usr/share/applications/br.com.biglinux.drivermanager.desktop",
             "/usr/share/applications/br.com.biglinux.bighardwareinfo.desktop",
             "/usr/share/applications/big-kernel-manager.desktop",
             "/usr/share/applications/br.com.biglinux.networkinfo.desktop",
@@ -520,7 +520,7 @@ class AppFinder:
                 "app_icon": "kcm_mobile_hotspot",
             },
             {
-                "app_id": "big-driver-manager",
+                "app_id": "br.com.biglinux.drivermanager",
                 "app_description": _("Expand device support"),
                 "app_categories": "Star Hardware",
             },
@@ -761,7 +761,7 @@ class AppFinder:
                 "app_id": "kcm_app-permissions",
                 "app_description": _("Manage permissions for Flatpak applications"),
                 "app_categories": "System",
-                "app_icon": "preferences"
+                "app_icon": "preferences",
             },
             {
                 "app_id": "kcm_animations",
