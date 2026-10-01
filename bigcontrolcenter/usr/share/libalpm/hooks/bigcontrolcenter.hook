@@ -1,4 +1,6 @@
 [Trigger]
+# One Target per entry in MENU_FILES of bigcontrolcenter-menu-manager: an entry
+# missing here goes back to the menu whenever its package updates.
 Type = Path
 Operation = Install
 Operation = Upgrade
@@ -18,7 +20,7 @@ Target = usr/share/applications/mintstick-kde.desktop
 Target = usr/share/applications/mintstick-format-kde.desktop
 Target = usr/share/applications/biglinux-themes-gui.desktop
 Target = usr/share/applications/sambasearch.desktop
-Target = usr/share/applications/org.kde.kwalletmanager5.desktop
+Target = usr/share/applications/org.kde.kwalletmanager.desktop
 Target = usr/share/applications/org.kde.kdeconnect.app.desktop
 Target = usr/share/applications/kdesystemsettings.desktop
 Target = usr/share/applications/org.kde.kinfocenter.desktop
@@ -58,6 +60,14 @@ Target = usr/share/applications/klassy-settings.desktop
 Target = usr/share/applications/firewall-config.desktop
 Target = usr/share/applications/qefientrymanager.desktop
 Target = usr/share/applications/biglinux-settings.desktop
+Target = usr/share/applications/org.biglinux.welcome.desktop
+Target = usr/share/applications/vim.desktop
+Target = usr/share/applications/org.ffado.FfadoMixer.desktop
+Target = usr/share/applications/stoken-gui-small.desktop
+Target = usr/share/applications/stoken-gui.desktop
+Target = usr/share/applications/org.fcitx.Fcitx5.desktop
+Target = usr/share/applications/br.com.biglinux.bighardwareinfo.desktop
+Target = usr/share/applications/br.com.biglinux.drivermanager.desktop
 Target = usr/bin/bigcontrolcenter
 
 [Action]
