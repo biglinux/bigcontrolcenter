@@ -7,146 +7,127 @@ msgstr ""
 "POT-Creation-Date: 2026-10-03 06:13-0300\n"
 "PO-Revision-Date: 2026-10-03 06:33-0300\n"
 "Last-Translator: OpenAI\n"
-"Language-Team: is\n"
-"Language: is\n"
+"Language-Team: be\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:81
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:158
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:478
 msgid "Control Center"
-msgstr "Stjórnstöð"
+msgstr "Цэнтр кіравання"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
-msgstr "Um stjórnstöðina"
+msgstr "Пра цэнтр кіравання"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 272
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:166
 msgid "Categories"
-msgstr "Flokkar"
+msgstr "Катэгорыі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 283
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:177
 msgid "Programs"
-msgstr "Forrit"
+msgstr "Праграмы"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:182
 msgid "Search..."
-msgstr "Leita..."
+msgstr "Пошук..."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 464
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:430
 #, python-brace-format
 msgid "Executing special command: {0}"
-msgstr "Keyri sérstaka skipun: {0}"
+msgstr "Выкананне спецыяльнай каманды: {0}"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 468
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:434
 #, python-brace-format
 msgid "Launching: {0}"
-msgstr "Ræsir: {0}"
+msgstr "Запуск: {0}"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 471
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:437
 #, python-brace-format
 msgid "Error launching program: {0}"
-msgstr "Villa við að ræsa forrit: {0}"
+msgstr "Памылка запуску праграмы: {0}"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 563
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 569
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:480
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:486
 msgid "BigLinux Team"
-msgstr "BigLinux-teymið"
+msgstr "Каманда BigLinux"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
-# line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:485
 msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux-teymið"
+msgstr "© 2025 Каманда BigLinux"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
-msgstr "Aðal"
+msgstr "Галоўнае"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:87
 msgid "Network and Internet"
-msgstr "Netkerfi og internet"
+msgstr "Сетка і інтэрнэт"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:93
 msgid "Phone"
-msgstr "Sími"
+msgstr "Тэлефон"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:99
 msgid "Customize"
-msgstr "Sérsníða"
+msgstr "Персаналізацыя"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:105
 msgid "Region and Language"
-msgstr "Svæði og tungumál"
+msgstr "Рэгіён і мова"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:111
 msgid "Multimedia"
-msgstr "Margmiðlun"
+msgstr "Мультымедыя"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:117
 msgid "Accounts"
-msgstr "Reikningar"
+msgstr "Уліковыя запісы"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:123
 msgid "Devices"
-msgstr "Tæki"
+msgstr "Прылады"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:129
 msgid "System"
-msgstr "Kerfi"
+msgstr "Сістэма"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:135
 msgid "About"
-msgstr "Um"
+msgstr "Пра праграму"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:141
 msgid "Other"
-msgstr "Annað"
+msgstr "Іншае"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
 msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Notaðu internet Android-tækisins þíns á Linux með USB"
+msgstr "Выкарыстанне інтэрнэту з прылады Android у Linux праз USB"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
 msgid ""
 "Connect your Android smartphone to the Linux computer using a USB cable."
-msgstr "Tengdu Android-snjallsímann þinn við Linux-tölvuna með USB-snúru."
+msgstr ""
+"Падключыце смартфон Android да камп'ютара з Linux з дапамогай кабелю USB."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py,
-# line: 40
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:36
 msgid ""
 "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
 "'Connections & Sharing'."
 msgstr ""
-"Opnaðu „Stillingar“ á snjallsímanum og farðu í „Net og internet“ eða "
-"„Tengingar og deiling“."
+"На смартфоне адкрыйце «Налады» і перайдзіце ў раздзел «Сетка і інтэрнэт» або"
+" «Падключэнні і агульны доступ»."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
 msgid ""
 "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr ""
-"Leitaðu að 'USB Tethering', 'USB Tether' eða svipuðum hugtökum og virkjaðu "
-"það."
+"Знайдзіце параметр «USB-мадэм», «Раздача інтэрнэту праз USB» або падобны і "
+"ўключыце яго."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:43
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:62
@@ -154,8 +135,8 @@ msgid ""
 "This will automatically establish the internet connection on your Linux "
 "computer without requiring any additional configuration."
 msgstr ""
-"Þetta mun sjálfkrafa koma á internettengingu á Linux tölvunni þinni án þess "
-"að þurfa frekari stillingar."
+"Інтэрнэт-злучэнне на камп'ютары з Linux будзе ўсталявана аўтаматычна без "
+"дадатковых налад."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:46
 msgid ""
@@ -164,32 +145,31 @@ msgid ""
 "charges, ensure that your Android device is connected to a Wi-Fi network "
 "before enabling tethering."
 msgstr ""
-"Ef Android-tækið þitt er ekki tengt við Wi-Fi og notar farsímagögn, mun "
-"þessi nettenging nota gögn úr farsímaáætlun þinni. Til að forðast gagnagjöld"
-" skaltu ganga úr skugga um að Android-tækið þitt sé tengt við Wi-Fi net áður"
-" en þú virkjar nettengingu."
+"Калі прылада Android не падключана да Wi-Fi і выкарыстоўвае мабільныя даныя,"
+" раздача інтэрнэту будзе расходаваць трафік вашага мабільнага тарыфу. Каб "
+"пазбегнуць платы за трафік, падключыце прыладу Android да сеткі Wi-Fi перад "
+"уключэннем раздачы інтэрнэту."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
 msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Notaðu internet iOS-tækisins þíns á Linux með USB"
+msgstr "Выкарыстанне інтэрнэту з прылады iOS у Linux праз USB"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
 msgid "Connect your iOS device to the Linux computer using a USB cable."
-msgstr "Tengdu iOS-tækið þitt við Linux-tölvuna með USB-snúru."
+msgstr "Падключыце прыладу iOS да камп'ютара з Linux з дапамогай кабелю USB."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
 msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr ""
-"Í iOS-tækinu þínu skaltu fara í 'Stillingar' og velja síðan 'Eigin "
-"netpunktur'."
+"На прыладзе iOS адкрыйце «Налады», затым выберыце «Асабісты пункт доступу»."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:58
 msgid ""
 "Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering'"
 " if a USB connection is detected."
 msgstr ""
-"Virkjaðu 'Leyfa öðrum að tengjast'. Þetta gæti sjálfkrafa virkjað 'USB "
-"Tethering' ef USB-tenging finnst."
+"Уключыце «Дазволіць іншым падключацца». Калі выяўлена падключэнне USB, "
+"раздача інтэрнэту праз USB можа ўключыцца аўтаматычна."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:65
 msgid ""
@@ -198,558 +178,388 @@ msgid ""
 "charges, ensure that your iOS device is connected to a Wi-Fi network before "
 "enabling tethering."
 msgstr ""
-"Ef iOS-tækið þitt er ekki tengt við Wi-Fi og notar farsímagögn, mun þessi "
-"nettenging nota gögn úr farsímaáætlun þinni. Til að forðast gagnagjöld "
-"skaltu ganga úr skugga um að iOS-tækið þitt sé tengt við Wi-Fi net áður en "
-"þú virkjar nettengingu."
+"Калі прылада iOS не падключана да Wi-Fi і выкарыстоўвае мабільныя даныя, "
+"раздача інтэрнэту будзе расходаваць трафік вашага мабільнага тарыфу. Каб "
+"пазбегнуць платы за трафік, падключыце прыладу iOS да сеткі Wi-Fi перад "
+"уключэннем раздачы інтэрнэту."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py,
-# line: 102
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
 msgid ""
 "To share your smartphone's internet connection with a Linux computer using a"
 " USB cable, follow these steps:"
 msgstr ""
-"Til að deila nettengingu snjallsímans með Linux-tölvu í gegnum USB-snúru "
-"skaltu fylgja þessum skrefum:"
+"Каб падзяліцца інтэрнэт-злучэннем смартфона з камп'ютарам з Linux праз "
+"кабель USB, выканайце наступныя дзеянні:"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
 msgid "Close"
-msgstr "Loka"
+msgstr "Закрыць"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 20
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:499
 msgid "Configure AppimageLauncher"
-msgstr "Stilla AppImageLauncher"
+msgstr "Наладзіць AppImageLauncher"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 21
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:502
 msgid "Choose the behavior of programs available in .appimage"
-msgstr "Veldu hvernig forrit á .appimage-sniði hegða sér"
+msgstr "Выбраць паводзіны праграм у фармаце .appimage"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 461
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:509
 msgid "Search for Zeroconf servers"
-msgstr "Leita að Zeroconf-þjónum"
+msgstr "Шукаць серверы Zeroconf"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 91
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:524
 msgid "Expand device support"
-msgstr "Auka stuðning við tæki"
+msgstr "Пашырыць падтрымку прылад"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 528
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:529
 msgid "Detailed information about your computer"
-msgstr "Nákvæmar upplýsingar um tölvuna þína"
+msgstr "Падрабязныя звесткі пра ваш камп'ютар"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 536
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:534
 msgid "System foundation and video card support"
-msgstr "Kerfiskjarni og stuðningur við skjákort"
+msgstr "Ядро сістэмы і падтрымка відэакарт"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 36
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:539
 msgid "Restore program configuration"
-msgstr "Endurheimta stillingar forrits"
+msgstr "Аднавіць налады праграмы"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 82
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:544
 msgid "Search for SSH servers"
-msgstr "Leita að SSH-þjónum"
+msgstr "Шукаць серверы SSH"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 87
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:550
 msgid "Search for VNC servers"
-msgstr "Leita að VNC-þjónum"
+msgstr "Шукаць серверы VNC"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 568
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:556
 msgid "Cross-platform buildsystem"
-msgstr "Byggingarkerfi fyrir marga verkvanga"
+msgstr "Кросплатформавая сістэма зборкі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 513
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:561
 msgid "Advanced Firewall Settings"
-msgstr "Ítarlegar eldveggsstillingar"
+msgstr "Пашыраныя налады міжсеткавага экрана"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 115
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:574
 msgid "Advanced Audio Manager - Alsamixer"
-msgstr "Ítarleg hljóðstýring - Alsamixer"
+msgstr "Пашыранае кіраванне гукам — Alsamixer"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 520
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:580
 msgid "JamesDSP improving music and audio quality"
-msgstr "JamesDSP bætir tónlist og hljóðgæði"
+msgstr "JamesDSP — паляпшэнне якасці музыкі і гуку"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 522
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:582
 msgid ""
 "Enhance your sound with equalizer, bass boost, surround, and other effects."
 msgstr ""
-"Bættu hljóðið með tónjafnara, bassastyrkingu, umhverfishljóði og öðrum "
-"áhrifum."
+"Палепшыце гук з дапамогай эквалайзера, узмацнення басоў, аб'ёмнага гучання і"
+" іншых эфектаў."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 590
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:588
 msgid "Partition or Format"
-msgstr "Skipta í sneiðar eða forsníða"
+msgstr "Стварыць раздзелы або адфарматаваць"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 600
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
 msgid "HP Printers"
-msgstr "HP prentarar"
+msgstr "Прынтары HP"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 602
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:594
 msgid "Check status, ink level, and maintenance."
-msgstr "Athugaðu stöðu, blekstig, og viðhald."
+msgstr "Праверыць стан, узровень чарніла і выканаць абслугоўванне."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 608
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
 msgid "HP Scanners"
-msgstr "HP skannar"
+msgstr "Сканеры HP"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 610
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:600
 msgid "Configure and use HP scanning devices"
-msgstr "Stilla og nota HP-skanna"
+msgstr "Наладзіць і выкарыстоўваць сканеры HP"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 616
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:606
 msgid "Configure Kvantum Theme"
-msgstr "Stilla Kvantum-þema"
+msgstr "Наладзіць тэму Kvantum"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 619
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:608
 msgid ""
 "For Kvantum configuration to work, apply the Kvantum theme in 'Application "
 "Style'."
-msgstr "Til að Kvantum stilling virki, beittu Kvantum þema í 'Forritastíl'."
+msgstr ""
+"Каб налады Kvantum дзейнічалі, ужывіце тэму Kvantum у раздзеле «Стыль "
+"праграм»."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 626
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:614
 msgid "USB Device Formatter"
-msgstr "Forsníðing USB-tækja"
+msgstr "Фарматаванне USB-прылад"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 628
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:616
 msgid "Format a USB device"
-msgstr "Forsníða USB-tæki"
+msgstr "Адфарматаваць USB-прыладу"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 634
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:622
 msgid "USB Image Writer"
-msgstr "Skrifa diskmyndir á USB-tæki"
+msgstr "Запіс вобразаў на USB"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 636
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:624
 msgid "Create a bootable USB device"
-msgstr "Búa til ræsanlegt USB-tæki"
+msgstr "Стварыць загрузачную USB-прыладу"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 481
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:630
 msgid "Storage Usage"
-msgstr "Geymslunotkun"
+msgstr "Выкарыстанне сховішча"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 523
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:643
 msgid "Sound and microphone"
-msgstr "Hljóð og hljóðnemi"
+msgstr "Гук і мікрафон"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 524
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:645
 msgid "Configure or change audio input and output devices. (Ex: HDMI)"
-msgstr "Stilla eða breyta inntaks- og úttakstækjum hljóðs (t.d. HDMI)."
+msgstr "Наладзіць або змяніць прылады ўводу і вываду гуку (напрыклад, HDMI)"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 544
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
 msgid "Printers"
-msgstr "Prentarar"
+msgstr "Прынтары"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 545
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:652
 msgid "Install, configure or remove printers."
-msgstr "Settu upp, stilltu eða fjarlægðu prentara."
+msgstr "Усталяваць, наладзіць або выдаліць прынтары."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 551
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:657
 msgid "KDE Control Center"
-msgstr "KDE stjórnstöð"
+msgstr "Цэнтр кіравання KDE"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 148
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:666
 msgid "Configure webcam or capture card"
-msgstr "Stilla vefmyndavél eða myndupptökukort"
+msgstr "Наладзіць вэб-камеру або плату відэазахопу"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 705
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:668
 msgid "Adjust settings and control webcams or video capture devices"
-msgstr "Aðlaga stillingar og stjórna vefmyndavélum eða myndbandsupptökutækjum"
+msgstr "Змяніць налады і кіраваць вэб-камерамі або прыладамі відэазахопу"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 715
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:676
 msgid "Configure accessibility options for users with special needs"
-msgstr "Stilltu aðgengisvalkosti fyrir notendur með sérþarfir"
+msgstr ""
+"Наладзіць спецыяльныя магчымасці для карыстальнікаў з асаблівымі патрэбамі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 211
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:682
 msgid "Virtual desktops and activities"
-msgstr "Sýndarskjáborð og athafnir"
+msgstr "Віртуальныя працоўныя сталы і пакоі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 725
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:685
 msgid ""
 "Create more than one virtual work environment by switching between them."
-msgstr "Búðu til mörg sýndarvinnuumhverfi og skiptu á milli þeirra."
+msgstr ""
+"Стварыце некалькі віртуальных працоўных асяроддзяў і пераключайцеся паміж "
+"імі."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 735
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:692
 msgid "Manage applications that start automatically on login"
-msgstr "Stjórna forritum sem byrja sjálfkrafa við innskráningu"
+msgstr ""
+"Кіраваць праграмамі, якія запускаюцца аўтаматычна пры ўваходзе ў сістэму"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 745
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:699
 msgid ""
 "Enabling search can consume significant memory and processing resources. "
 "This may cause the system to slow down, depending on the number of user "
 "files."
 msgstr ""
-"Leit getur notað mikið minni og vinnsluafl. Það getur hægt á kerfinu eftir "
-"fjölda skráa notandans."
+"Уключэнне пошуку можа расходаваць значныя рэсурсы памяці і працэсара. Гэта "
+"можа запаволіць сістэму ў залежнасці ад колькасці файлаў карыстальніка."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 754
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:705
 msgid "Connect and manage Bluetooth devices"
-msgstr "Tengja og stjórna Bluetooth-tækjum"
+msgstr "Падключаць прылады Bluetooth і кіраваць імі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 763
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:711
 msgid "Manage Thunderbolt devices and security settings"
-msgstr "Stjórna Thunderbolt tækjum og öryggisstillingum"
+msgstr "Кіраваць прыладамі Thunderbolt і наладамі бяспекі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 772
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:717
 msgid "Adjust date, time and timezone."
-msgstr "Aðlaga dagsetningu, tíma og tímasvæði."
+msgstr "Наладзіць дату, час і часавы пояс."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 781
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:723
 msgid "Customize the color scheme of your desktop environment"
-msgstr "Sérsníða litaskema skjáborðsumhverfisins"
+msgstr "Наладзіць каляровую схему працоўнага асяроддзя"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 791
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:730
 msgid "Select which applications to use for specific tasks"
-msgstr "Veldu hvaða forrit á að nota fyrir ákveðin verkefni"
+msgstr "Выбраць праграмы для пэўных задач"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 800
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:736
 msgid "Change mouse cursor appearance and themes"
-msgstr "Breyta útliti og þemum músarbendilsins"
+msgstr "Змяніць выгляд і тэмы ўказальніка мышы"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 809
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:742
 msgid "Configure default paths for documents, downloads and other folders"
-msgstr "Stilla sjálfgefnar slóðir fyrir skjöl, niðurhal og aðrar möppur"
+msgstr "Наладзіць прадвызначаныя шляхі да дакументаў, спамповак і іншых папак"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 819
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:749
 msgid "Change the visual appearance of the Plasma desktop"
-msgstr "Breyta útliti Plasma-skjáborðsins"
+msgstr "Змяніць выгляд працоўнага стала Plasma"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 829
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:756
 msgid "Configure which applications open specific file types"
-msgstr "Stilla hvaða forrit opna tilteknar skráargerðir"
+msgstr "Выбраць праграмы для адкрыцця пэўных тыпаў файлаў"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 848
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:762
 msgid "Manage permissions for Flatpak applications"
-msgstr "Stjórna heimildum fyrir Flatpak forrit."
+msgstr "Кіраваць дазволамі праграм Flatpak"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 857
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:778
 msgid "Install and configure system fonts and typography settings"
-msgstr "Setja upp og stilla kerfisletur og leturstillingar"
+msgstr "Усталяваць і наладзіць сістэмныя шрыфты і параметры тыпаграфікі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 866
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:784
 msgid "Configure game controllers and joysticks"
-msgstr "Stilla leikjastýringar og stýripinna"
+msgstr "Наладзіць гульнявыя кантролеры і джойсцікі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 875
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:790
 msgid "Change the icon theme used throughout the system"
-msgstr "Breyta táknasniði sem notað er um allt kerfið"
+msgstr "Змяніць тэму значкоў для ўсёй сістэмы"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 895
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:801
 msgid "Configure digital camera integration with your system"
-msgstr "Stilla samþættingu stafrænnar myndavélar við kerfið"
+msgstr "Наладзіць інтэграцыю лічбавай камеры з сістэмай"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 905
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:808
 msgid "Manage system services running in the background"
-msgstr "Stjórna kerfisþjónustum sem keyra í bakgrunni"
+msgstr "Кіраваць сістэмнымі службамі, якія працуюць у фоне"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 914
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:815
 msgid "Layout settings, shortcuts and other options."
-msgstr "Stillingar fyrir uppsetningu, flýtilykla og aðra valkosti"
+msgstr "Налады раскладкі, спалучэнні клавіш і іншыя параметры."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 923
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:822
 msgid "Configure monitors, resolution, and screen arrangement"
-msgstr "Stilla skjái, upplausn og röðun skjáa"
+msgstr "Наладзіць маніторы, раздзяляльнасць і размяшчэнне экранаў"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 930
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:828
 msgid "Window Decorations"
-msgstr "Gluggaskreytingar"
+msgstr "Афармленне вокнаў"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 933
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:830
 msgid "Change the appearance of window title bars and borders"
-msgstr "Breyta útliti gluggatitla og jaðra."
+msgstr "Змяніць выгляд загалоўкаў і рамак вокнаў"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 943
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:838
 msgid "Configure visual effects and animations for the desktop"
-msgstr "Stilla sjónræn áhrif og hreyfingar á skjáborðinu"
+msgstr "Наладзіць візуальныя эфекты і анімацыю працоўнага стала"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 952
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:845
 msgid "Configure how windows behave and interact"
-msgstr "Stilla hvernig gluggar hegða sér og vinna saman"
+msgstr "Наладзіць паводзіны і ўзаемадзеянне вокнаў"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 961
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:852
 msgid "Configure mouse sensitivity, buttons and behavior"
-msgstr "Stilla næmi, hnappa og hegðun músar"
+msgstr "Наладзіць адчувальнасць, кнопкі і паводзіны мышы"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 971
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:859
 msgid ""
 "Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, "
 "wired network, mobile broadband and others)."
 msgstr ""
-"Ítarlegar netstillingar (VPN, Wi-Fi, kapaltenging, föst IP-tala, PPPoE, "
-"ADSL, kapalkerfi, farsímabreiðband og fleira)."
+"Пашыраныя налады сеткі (VPN, Wi-Fi, правадное злучэнне, статычны IP, PPPoE, "
+"ADSL, правадная сетка, мабільны шырокапалосны доступ і іншыя)."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 790
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:869
 msgid "QEFI Entry Manager"
-msgstr "Umsjón með ræsifærslum — QEFI"
+msgstr "Кіраванне загрузачнымі запісамі — QEFI"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 792
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:871
 msgid "Manage and configure boot entries for UEFI systems"
-msgstr "Stjórna og stilla ræsifærslur fyrir UEFI-kerfi"
+msgstr "Кіраваць загрузачнымі запісамі сістэм UEFI і наладжваць іх"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 988
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:878
 msgid "Configure system and application notifications"
-msgstr "Stilla tilkynningar kerfis og forrita"
+msgstr "Наладзіць апавяшчэнні сістэмы і праграм"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 994
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:883
 msgid "Boot Screen"
-msgstr "Ræsiskjár"
+msgstr "Экран загрузкі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 997
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:885
 msgid "Change the splash screen shown during system startup"
-msgstr "Breyta kynningarskjánum sem sýndur er við kerfisupphaf."
+msgstr "Змяніць застаўку, якая паказваецца падчас запуску сістэмы"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1006
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:893
 msgid "Configure energy saving and battery settings"
-msgstr "Stilltu orku- og rafhlöðustillingar"
+msgstr "Наладзіць энергазберажэнне і параметры батарэі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1015
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:899
 msgid "Configure network proxy settings for internet access"
-msgstr "Stilltu netkerfisproxy stillingar fyrir internetaðgang"
+msgstr "Наладзіць сеткавы проксі для доступу ў інтэрнэт"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1024
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:905
 msgid "Manage the history of recently accessed files"
-msgstr "Stjórna sögunni yfir nýlega aðgengilegar skrár"
+msgstr "Кіраваць гісторыяй нядаўна адкрытых файлаў"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1032
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:910
 msgid "Configure language, region, and format settings"
-msgstr "Stilltu tungumál, svæði og sniðstillingar"
+msgstr "Наладзіць мову, рэгіён і фарматы"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1041
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:916
 msgid "Configure screen locking settings and appearance"
-msgstr "Stilla skjálæsingu og útlit hennar"
+msgstr "Наладзіць блакіраванне экрана і яго выгляд"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1051
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:923
 msgid "Configure the login screen appearance and behavior"
-msgstr "Stilla útlit og hegðun innskráningarskjásins"
+msgstr "Наладзіць выгляд і паводзіны экрана ўваходу"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1058
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:929
 msgid "Desktop Session"
-msgstr "Skjáborðsseta"
+msgstr "Сеанс працоўнага стала"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1060
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:931
 msgid "Configure session startup and shutdown behavior"
-msgstr "Stilla hegðun við upphaf og lok setu"
+msgstr "Наладзіць паводзіны пры запуску і завяршэнні сеанса"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1068
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:937
 msgid "Configure sound effects for system events"
-msgstr "Stilltu hljóðáhrif fyrir kerfisviðburði"
+msgstr "Наладзіць гукавыя эфекты сістэмных падзей"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1077
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:944
 msgid "Configure the splash screen shown while starting applications"
-msgstr "Stilla upphafsskjáinn sem birtist þegar forrit eru ræst"
+msgstr "Наладзіць застаўку, якая паказваецца пры запуску праграм"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1086
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:950
 msgid "Configure the visual appearance of applications"
-msgstr "Stilla útlit forrita"
+msgstr "Наладзіць выгляд праграм"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1094
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:956
 msgid "Configure drawing tablets and stylus settings"
-msgstr "Stilla teiknitöflur og snertipenna"
+msgstr "Наладзіць графічныя планшэты і стылусы"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1102
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:961
 msgid "Configure laptop touchpad behavior and gestures"
-msgstr "Stilla hegðun og bendingar snertiplötu fartölvunnar"
+msgstr "Наладзіць паводзіны і жэсты сэнсарнай панэлі ноўтбука"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1110
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:967
 msgid "Configure touchscreen behavior and calibration"
-msgstr "Stilla hegðun og kvörðun snertiskjás"
+msgstr "Наладзіць паводзіны і каліброўку сэнсарнага экрана"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1119
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:973
 msgid "Configure trash bin behavior and cleanup settings"
-msgstr "Stilla hegðun ruslafötunnar og hreinsunarstillingar"
+msgstr "Наладзіць паводзіны сметніцы і параметры яе ачысткі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1129
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:980
 msgid "Change desktop background image and slideshow settings"
-msgstr "Breyta bakgrunnsmynd skjáborðsins og stillingum myndasýningar"
+msgstr "Змяніць фон працоўнага стала і налады слайд-шоу"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1251
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:987
 msgid "Configure the system's landing page and default widgets."
-msgstr "Stilla upphafssíðu kerfisins og sjálfgefna smáforrit"
+msgstr "Наладзіць стартавую старонку сістэмы і прадвызначаныя віджэты."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 930
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:993
 msgid "Manage FireWire Audio Interfaces - FfadoMixer"
-msgstr "Stjórna FireWire hljóðtengjum - FfadoMixer"
+msgstr "Кіраванне гукавымі інтэрфейсамі FireWire — FfadoMixer"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 932
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:995
 msgid "Control Panel for your FireWire Audio Interfaces."
-msgstr "Stjórnborð fyrir FireWire-hljóðtæki."
+msgstr "Панэль кіравання гукавымі інтэрфейсамі FireWire."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1148
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1001
 msgid "Access your files and folders."
-msgstr "Aðgangur að skrám og möppum."
+msgstr "Доступ да вашых файлаў і папак."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1157
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1007
 msgid ""
 "This program can transfer files between smartphones, tablets, and other "
@@ -759,111 +569,78 @@ msgid ""
 "system clock. To sync with your smartphone, go to the Google Store or Apple "
 "Store and install KDE Connect."
 msgstr ""
-"Þetta forrit flytur skrár á milli snjallsíma, spjaldtölva og annarra tölva. "
-"Meðal annars geturðu notað snjallsímann sem þráðlausa mús og lyklaborð til "
-"að stjórna tölvunni. Það fellur vel að BigLinux og birtist meðal smáforrita "
-"við kerfisklukkuna. Til að samstilla við snjallsímann skaltu setja upp KDE "
-"Connect úr forritaverslun Google eða Apple."
+"Гэта праграма дазваляе перадаваць файлы паміж смартфонамі, планшэтамі і "
+"іншымі камп'ютарамі. Сярод іншых магчымасцей, смартфон можна выкарыстоўваць "
+"як бесправадную мыш і клавіятуру для кіравання камп'ютарам. Праграма добра "
+"інтэгруецца з BigLinux і размяшчаецца сярод аплетаў побач з сістэмным "
+"гадзіннікам. Каб сінхранізаваць смартфон, усталюйце KDE Connect з крамы "
+"Google або Apple."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 497
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1013
 msgid "Access the command terminal."
-msgstr "Opna skipanalínuna."
+msgstr "Доступ да каманднага тэрмінала."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 957
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1018
 msgid "Password Manager - KWalletManager"
-msgstr "Lykilorðastjóri — KWalletManager"
+msgstr "Кіраванне паролямі — KWalletManager"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1174
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1020
 msgid "Tool for managing KDE wallets"
-msgstr "Verkfæri til að stjórna KDE-veskjum"
+msgstr "Інструмент для кіравання кашалькамі KDE"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1182
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1027
 msgid "Add or remove programs installed on the system"
-msgstr "Bæta við eða fjarlægja forrit sem eru uppsett á kerfinu"
+msgstr "Дадаць або выдаліць праграмы ў сістэме"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1188
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1032
 msgid "Connect to internet using Android"
-msgstr "Tengjast internetinu með Android"
+msgstr "Падключыцца да інтэрнэту праз Android"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1196
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1039
 msgid "Connect to internet using iOS"
-msgstr "Tengjast internetinu með iOS"
+msgstr "Падключыцца да інтэрнэту праз iOS"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 182
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1050
 msgid "Connect to Internet"
-msgstr "Tengjast internetinu"
+msgstr "Падключыцца да інтэрнэту"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 485
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
 msgid "Snapshots and backups"
-msgstr "Skyndimyndir og öryggisafrit"
+msgstr "Здымкі і рэзервовыя копіі"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 486
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1068
 msgid "Create or activate restore points"
-msgstr "Búa til eða virkja endurheimtarpunkta"
+msgstr "Стварыць або актываваць пункты аднаўлення"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 997
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
 msgid "Biglinux Settings"
-msgstr "BigLinux-stillingar"
+msgstr "Налады BigLinux"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 998
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1075
 msgid "Simplify switching BigLinux operation."
-msgstr "Auðvelda skipti á milli vinnsluhátta BigLinux."
+msgstr "Спрасціць пераключэнне рэжымаў працы BigLinux."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1228
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1085
 msgid "BigLinux Themes"
-msgstr "BigLinux-þemu"
+msgstr "Тэмы BigLinux"
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
-# line: 52
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1088
 msgid ""
 "We provide complete configurations for you to select in an extremely simple "
 "way."
-msgstr ""
-"Við bjóðum upp á fullkomnar stillingar sem þú getur valið á afar einfaldan "
-"hátt."
+msgstr "Мы прапануем гатовыя канфігурацыі, якія можна выбраць вельмі проста."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1261
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1100
 msgid "Configure feedback and usage report preferences."
-msgstr "Stilla valkosti fyrir endurgjöf og notkunarskýrslur."
+msgstr "Наладзіць параметры зваротнай сувязі і справаздач аб выкарыстанні."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1271
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1107
 msgid "Configure automatic actions for when devices are connected."
-msgstr "Stilltu sjálfvirkar aðgerðir þegar tæki eru tengd."
+msgstr "Наладзіць аўтаматычныя дзеянні пры падключэнні прылад."
 
-# bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
-# line: 1309
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1115
 msgid "Configure search and indexing options in Plasma."
-msgstr "Stilla leit og skráningu í Plasma."
+msgstr "Наладзіць пошук і індэксаванне ў Plasma."
 
 #: bigcontrolcenter/usr/bin/guvcview-verify-busy:12
 #, sh-format
@@ -874,12 +651,12 @@ msgid ""
 "As alterações feitas podem ser vistas\n"
 "na imagem da sua webcam em outros programas."
 msgstr ""
-"Vefmyndavélin er þegar í notkun hjá forritinu: $WEBCAM_BUSY\n"
+"Вэб-камера ўжо выкарыстоўваецца праграмай: $WEBCAM_BUSY\n"
 "\n"
-"Hún verður opnuð í stillingarham.\n"
-"Breytingarnar sjást\n"
-"í mynd vefmyndavélarinnar í öðrum forritum."
+"Камера адкрыецца ў рэжыме наладжвання.\n"
+"Змены будуць бачныя\n"
+"ў выяве з вэб-камеры ў іншых праграмах."
 
 #: bigcontrolcenter/usr/bin/guvcview-verify-busy:16
 msgid "Webcam"
-msgstr "Vefmyndavél"
+msgstr "Вэб-камера"
