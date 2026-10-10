@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BigControlCenter 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-03 06:13-0300\n"
+"POT-Creation-Date: 2026-10-10 17:10-0300\n"
 "PO-Revision-Date: 2026-10-03 06:33-0300\n"
 "Last-Translator: OpenAI\n"
 "Language-Team: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:81
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:158
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:478
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:509
 msgid "Control Center"
 msgstr "Vezérlőközpont"
 
@@ -24,7 +24,7 @@ msgstr "Vezérlőközpont"
 # line: 122
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:122
 msgid "About Control Center"
-msgstr "A Vezérlőközpontról"
+msgstr "A Vezérlőközpont névjegye"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
 # line: 272
@@ -44,39 +44,67 @@ msgstr "Keresés..."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
 # line: 464
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:430
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:432
 #, python-brace-format
 msgid "Executing special command: {0}"
 msgstr "Különleges parancs végrehajtása: {0}"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
 # line: 468
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:434
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:436
 #, python-brace-format
 msgid "Launching: {0}"
 msgstr "Indítás: {0}"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
 # line: 471
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:437
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:439
 #, python-brace-format
 msgid "Error launching program: {0}"
 msgstr "Hiba a program indításakor: {0}"
+
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:455
+msgid "Reset display settings?"
+msgstr "Visszaállítja a kijelzőbeállításokat?"
+
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:457
+msgid ""
+"Resolution, position, refresh rate, scale and rotation of every monitor "
+"return to the defaults detected at the next login, on Wayland and Xorg. This "
+"session ends to apply them."
+msgstr ""
+"Az összes monitor felbontása, elhelyezése, frissítési gyakorisága, "
+"méretezése és elforgatása visszaáll a következő bejelentkezéskor észlelt "
+"alapértelmezett értékekre, Waylanden és Xorgon is. A módosítások "
+"alkalmazásához a jelenlegi munkamenet befejeződik."
+
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:460
+msgid "Cancel"
+msgstr "Mégse"
+
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:461
+msgid "Reset and Log Out"
+msgstr "Visszaállítás és kijelentkezés"
+
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:476
+#, python-brace-format
+msgid "Could not reset display settings: {0}"
+msgstr "Nem sikerült visszaállítani a kijelzőbeállításokat: {0}"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
 # line: 563
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
 # line: 569
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:480
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:486
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:511
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:517
 msgid "BigLinux Team"
-msgstr "BigLinux csapat"
+msgstr "BigLinux-csapat"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py,
 # line: 568
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:485
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/application.py:516
 msgid "© 2025 BigLinux Team"
-msgstr "© 2025 BigLinux csapat"
+msgstr "© 2025 BigLinux-csapat"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/category_sidebar.py:81
 msgid "Main"
@@ -124,7 +152,8 @@ msgstr "Egyéb"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:30
 msgid "Using Your Android Device's Internet on Linux via USB"
-msgstr "Az Android eszköz internetének használata Linuxon USB-n keresztül"
+msgstr ""
+"Az Android-eszköz internetkapcsolatának használata Linuxon USB-n keresztül"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:33
 msgid ""
@@ -140,12 +169,11 @@ msgid ""
 "On your smartphone, open 'Settings' and navigate to 'Network & Internet' or "
 "'Connections & Sharing'."
 msgstr ""
-"Okostelefonján nyissa meg a 'Beállítások' menüt, és navigáljon a 'Hálózat és"
-" internet' vagy a 'Kapcsolatok és megosztás' lehetőséghez."
+"Okostelefonján nyissa meg a „Beállítások” menüt, és lépjen a „Hálózat és "
+"internet” vagy a „Kapcsolatok és megosztás” részhez."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:39
-msgid ""
-"Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
+msgid "Look for 'USB Tethering', 'USB Tether', or similar terms and enable it."
 msgstr ""
 "Keresse meg az „USB-internetmegosztás”, „USB-megosztás” vagy hasonló "
 "beállítást, és kapcsolja be."
@@ -156,13 +184,13 @@ msgid ""
 "This will automatically establish the internet connection on your Linux "
 "computer without requiring any additional configuration."
 msgstr ""
-"Ez automatikusan létrehozza az internetkapcsolatot a Linux számítógépen, "
-"további konfiguráció nélkül."
+"Ez automatikusan, további beállítás nélkül létrehozza az internetkapcsolatot "
+"a Linuxot futtató számítógépen."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:46
 msgid ""
-"If your Android device is not connected to Wi-Fi and is using cellular data,"
-" this tethering will consume data from your cellular plan. To avoid data "
+"If your Android device is not connected to Wi-Fi and is using cellular data, "
+"this tethering will consume data from your cellular plan. To avoid data "
 "charges, ensure that your Android device is connected to a Wi-Fi network "
 "before enabling tethering."
 msgstr ""
@@ -173,24 +201,23 @@ msgstr ""
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:53
 msgid "Using Your iOS Device's Internet on Linux via USB"
-msgstr "Az iOS eszköz internetének használata Linuxon USB-n keresztül"
+msgstr "Az iOS-eszköz internetkapcsolatának használata Linuxon USB-n keresztül"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:55
 msgid "Connect your iOS device to the Linux computer using a USB cable."
 msgstr ""
-"Csatlakoztassa iOS-eszközét a Linuxot futtató számítógéphez egy USB-"
-"kábellel."
+"Csatlakoztassa iOS-eszközét a Linuxot futtató számítógéphez egy USB-kábellel."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:56
 msgid "On your iOS device, go to 'Settings', then select 'Personal Hotspot'."
 msgstr ""
-"Az iOS eszközön lépjen a „Beállítások” menübe, majd válassza ki a „Személyes"
-" Hotspot” lehetőséget."
+"iOS-eszközén lépjen a „Beállítások” menübe, majd válassza a „Személyes "
+"hotspot” lehetőséget."
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:58
 msgid ""
-"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering'"
-" if a USB connection is detected."
+"Enable 'Allow Others to Join'. This may automatically enable 'USB Tethering' "
+"if a USB connection is detected."
 msgstr ""
 "Engedélyezze a „Mások csatlakozásának engedélyezése” beállítást. USB-"
 "kapcsolat észlelésekor az USB-internetmegosztás automatikusan bekapcsolhat."
@@ -211,11 +238,11 @@ msgstr ""
 # line: 102
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:98
 msgid ""
-"To share your smartphone's internet connection with a Linux computer using a"
-" USB cable, follow these steps:"
+"To share your smartphone's internet connection with a Linux computer using a "
+"USB cable, follow these steps:"
 msgstr ""
-"Okostelefonja internetkapcsolatának USB-kábelen keresztüli megosztásához egy"
-" Linuxot futtató számítógéppel kövesse az alábbi lépéseket:"
+"Okostelefonja internetkapcsolatának USB-kábelen keresztüli megosztásához egy "
+"Linuxot futtató számítógéppel kövesse az alábbi lépéseket:"
 
 #: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/ui/device_connection_dialog.py:153
 msgid "Close"
@@ -223,243 +250,238 @@ msgstr "Bezárás"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 20
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:499
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:502
 msgid "Configure AppimageLauncher"
-msgstr "AppImageLauncher konfigurálása"
+msgstr "AppImageLauncher beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 21
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:502
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:505
 msgid "Choose the behavior of programs available in .appimage"
-msgstr "Válassza ki a .appimage formátumú programok működését"
+msgstr "A .appimage formátumú programok működésének kiválasztása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 461
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:509
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:512
 msgid "Search for Zeroconf servers"
-msgstr "Keresés a Zeroconf kiszolgálók között"
+msgstr "Zeroconf-kiszolgálók keresése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 91
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:524
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:527
 msgid "Expand device support"
 msgstr "Eszköztámogatás kiterjesztése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 528
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:529
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:532
 msgid "Detailed information about your computer"
 msgstr "Részletes információk a számítógépéről"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 536
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:534
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:537
 msgid "System foundation and video card support"
 msgstr "Rendszermag és videokártya-támogatás"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 36
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:539
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:542
 msgid "Restore program configuration"
-msgstr "Programkonfiguráció visszaállítása"
+msgstr "Programbeállítások visszaállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 82
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:544
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:547
 msgid "Search for SSH servers"
-msgstr "Keresés SSH szerverekre"
+msgstr "SSH-kiszolgálók keresése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 87
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:550
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:553
 msgid "Search for VNC servers"
-msgstr "VNC szerverek keresése"
+msgstr "VNC-kiszolgálók keresése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 568
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:556
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:559
 msgid "Cross-platform buildsystem"
-msgstr "Többplatformos építőrendszer"
+msgstr "Platformfüggetlen fordítórendszer"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 513
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:561
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:564
 msgid "Advanced Firewall Settings"
 msgstr "Speciális tűzfalbeállítások"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 115
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:574
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:577
 msgid "Advanced Audio Manager - Alsamixer"
 msgstr "Speciális hangkezelő - Alsamixer"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 520
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:580
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:583
 msgid "JamesDSP improving music and audio quality"
-msgstr "JamesDSP a zene és hangminőség javítása"
+msgstr "JamesDSP: a zene és a hang minőségének javítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 522
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:582
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:585
 msgid ""
 "Enhance your sound with equalizer, bass boost, surround, and other effects."
 msgstr ""
-"Javítsa a hangzást hangszínszabályzóval, basszuskiemeléssel, térhangzással "
-"és más effektekkel."
+"A hangzás javítása hangszínszabályzóval, basszuskiemeléssel, térhatással és "
+"más effektusokkal."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 590
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:588
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:591
 msgid "Partition or Format"
 msgstr "Particionálás vagy formázás"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 600
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:593
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:596
 msgid "HP Printers"
-msgstr "HP nyomtatók"
+msgstr "HP-nyomtatók"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 602
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:594
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:597
 msgid "Check status, ink level, and maintenance."
-msgstr "Ellenőrizze az állapotot, a tintaszintet és a karbantartást."
+msgstr "Az állapot és a tintaszint ellenőrzése, karbantartás."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 608
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:599
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:602
 msgid "HP Scanners"
-msgstr "HP szkennerek"
+msgstr "HP-szkennerek"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 610
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:600
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:603
 msgid "Configure and use HP scanning devices"
-msgstr "HP beolvasó eszközök konfigurálása és használata"
+msgstr "HP-szkennerek beállítása és használata"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 616
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:606
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:609
 msgid "Configure Kvantum Theme"
-msgstr "Kvantum téma konfigurálása"
+msgstr "Kvantum-téma beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 619
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:608
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:611
 msgid ""
 "For Kvantum configuration to work, apply the Kvantum theme in 'Application "
 "Style'."
 msgstr ""
-"A Kvantum konfiguráció működéséhez alkalmazza a Kvantum témát az 'Alkalmazás"
-" stílus' menüben."
+"A Kvantum-beállítások működéséhez válassza a Kvantum-témát az "
+"„Alkalmazásstílus” beállításnál."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 626
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:614
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:617
 msgid "USB Device Formatter"
 msgstr "USB-eszközök formázása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 628
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:616
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:619
 msgid "Format a USB device"
 msgstr "USB-eszköz formázása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 634
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:622
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:625
 msgid "USB Image Writer"
 msgstr "Lemezképek írása USB-eszközre"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 636
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:624
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:627
 msgid "Create a bootable USB device"
-msgstr "Hozzon létre egy indítható USB-eszközt."
+msgstr "Indítható USB-eszköz létrehozása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 481
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:630
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:633
 msgid "Storage Usage"
 msgstr "Tárhelyhasználat"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 523
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:643
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:646
 msgid "Sound and microphone"
 msgstr "Hang és mikrofon"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 524
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:645
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:648
 msgid "Configure or change audio input and output devices. (Ex: HDMI)"
 msgstr ""
-"Hangolja be vagy változtassa meg az audio bemeneti és kimeneti eszközöket. "
-"(Pl.: HDMI)"
+"Hangbemeneti és -kimeneti eszközök beállítása vagy módosítása. (Pl.: HDMI)"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 544
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:651
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:654
 msgid "Printers"
 msgstr "Nyomtatók"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 545
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:652
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:655
 msgid "Install, configure or remove printers."
 msgstr "Nyomtatók telepítése, beállítása vagy eltávolítása."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 551
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:657
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:660
 msgid "KDE Control Center"
 msgstr "KDE Vezérlőközpont"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 148
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:666
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:669
 msgid "Configure webcam or capture card"
-msgstr "Webkamera vagy capture kártya konfigurálása"
+msgstr "Webkamera vagy videorögzítő kártya beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 705
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:668
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:671
 msgid "Adjust settings and control webcams or video capture devices"
-msgstr ""
-"Állítsa be a beállításokat és vezérelje a webkamerákat vagy a videofelvevő "
-"eszközöket."
+msgstr "Webkamerák és videorögzítő eszközök beállítása és vezérlése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 715
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:676
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:679
 msgid "Configure accessibility options for users with special needs"
-msgstr ""
-"Állítsa be a hozzáférhetőségi lehetőségeket a speciális igényű felhasználók "
-"számára."
+msgstr "Akadálymentesítési beállítások speciális igényű felhasználók számára"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 211
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:682
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:685
 msgid "Virtual desktops and activities"
-msgstr "Virtuális asztalok és tevékenységek"
+msgstr "Virtuális asztalok és aktivitások"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 725
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:685
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:688
 msgid ""
 "Create more than one virtual work environment by switching between them."
-msgstr "Hozzon létre több virtuális munkakörnyezetet, és váltson közöttük."
+msgstr "Több virtuális munkakörnyezet létrehozása és váltás közöttük."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 735
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:692
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:695
 msgid "Manage applications that start automatically on login"
-msgstr "Kezelje a bejelentkezéskor automatikusan induló alkalmazásokat"
+msgstr "A bejelentkezéskor automatikusan induló alkalmazások kezelése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 745
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:699
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:702
 msgid ""
 "Enabling search can consume significant memory and processing resources. "
 "This may cause the system to slow down, depending on the number of user "
@@ -471,302 +493,303 @@ msgstr ""
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 754
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:705
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:708
 msgid "Connect and manage Bluetooth devices"
-msgstr "Csatlakoztassa és kezelje a Bluetooth-eszközöket"
+msgstr "Bluetooth-eszközök csatlakoztatása és kezelése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 763
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:711
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:714
 msgid "Manage Thunderbolt devices and security settings"
-msgstr "Thunderbolt eszközök és biztonsági beállítások kezelése"
+msgstr "Thunderbolt-eszközök és biztonsági beállítások kezelése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 772
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:717
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:720
 msgid "Adjust date, time and timezone."
-msgstr "Állítsa be a dátumot, időt és időzónát."
+msgstr "Dátum, idő és időzóna beállítása."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 781
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:723
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:726
 msgid "Customize the color scheme of your desktop environment"
-msgstr "Testreszabhatja az asztali környezet színvilágát."
+msgstr "Az asztali környezet színsémájának testreszabása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 791
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:730
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:733
 msgid "Select which applications to use for specific tasks"
-msgstr "Válassza ki, mely alkalmazásokat használja a konkrét feladatokhoz."
+msgstr "Az egyes feladatokhoz használt alkalmazások kiválasztása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 800
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:736
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:739
 msgid "Change mouse cursor appearance and themes"
 msgstr "Egérmutató megjelenésének és témáinak megváltoztatása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 809
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:742
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:745
 msgid "Configure default paths for documents, downloads and other folders"
 msgstr ""
-"Állítsa be az alapértelmezett elérési utakat a dokumentumok, letöltések és "
-"egyéb mappák számára."
+"A dokumentumok, letöltések és egyéb mappák alapértelmezett helyének "
+"beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 819
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:749
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:752
 msgid "Change the visual appearance of the Plasma desktop"
-msgstr "Változtassa meg a Plasma asztal vizuális megjelenését."
+msgstr "A Plasma asztal megjelenésének módosítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 829
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:756
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:759
 msgid "Configure which applications open specific file types"
 msgstr ""
-"Állítsa be, hogy mely alkalmazások nyissanak meg konkrét fájltípusokat."
+"Annak beállítása, hogy mely alkalmazások nyissák meg az egyes fájltípusokat"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 848
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:762
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:765
 msgid "Manage permissions for Flatpak applications"
-msgstr "Flatpak alkalmazások engedélyeinek kezelése"
+msgstr "Flatpak-alkalmazások jogosultságainak kezelése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 857
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:778
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:781
 msgid "Install and configure system fonts and typography settings"
-msgstr "Rendszerbetűk és tipográfiai beállítások telepítése és konfigurálása"
+msgstr ""
+"Rendszer-betűkészletek és tipográfiai beállítások telepítése és kezelése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 866
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:784
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:787
 msgid "Configure game controllers and joysticks"
-msgstr "Játékvezérlők és joystickok konfigurálása"
+msgstr "Játékvezérlők és joystickok beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 875
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:790
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:793
 msgid "Change the icon theme used throughout the system"
-msgstr "Változtassa meg a rendszerben használt ikon témát."
+msgstr "A rendszerszerte használt ikontéma módosítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 895
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:801
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:804
 msgid "Configure digital camera integration with your system"
-msgstr "Állítsa be a digitális fényképezőgép integrációját a rendszerével."
+msgstr "A digitális fényképezőgép rendszerintegrációjának beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 905
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:808
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:811
 msgid "Manage system services running in the background"
-msgstr "A háttérben futó rendszer szolgáltatások kezelése"
+msgstr "A háttérben futó rendszerszolgáltatások kezelése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 914
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:815
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:818
 msgid "Layout settings, shortcuts and other options."
-msgstr "Elrendezési beállítások, gyorsbillentyűk és egyéb opciók"
+msgstr "Billentyűzetkiosztás, gyorsbillentyűk és egyéb beállítások."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 923
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:822
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:825
 msgid "Configure monitors, resolution, and screen arrangement"
 msgstr "Monitorok, felbontás és képernyőelrendezés beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 930
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:828
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:831
 msgid "Window Decorations"
-msgstr "Ablakdíszítések"
+msgstr "Ablakdekorációk"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 933
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:830
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:833
 msgid "Change the appearance of window title bars and borders"
-msgstr "Ablak címsorainak és kereteinek megjelenésének megváltoztatása"
+msgstr "Az ablakcímsorok és -szegélyek megjelenésének módosítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 943
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:838
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:841
 msgid "Configure visual effects and animations for the desktop"
-msgstr "Állítsa be a vizuális effekteket és animációkat az asztalon."
+msgstr "Az asztal vizuális effektusainak és animációinak beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 952
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:845
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:848
 msgid "Configure how windows behave and interact"
-msgstr "Állítsa be az ablakok viselkedését és együttműködését"
+msgstr "Az ablakok viselkedésének és együttműködésének beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 961
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:852
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:855
 msgid "Configure mouse sensitivity, buttons and behavior"
-msgstr "Állítsa be az egér érzékenységét, gombjait és viselkedését."
+msgstr "Az egér érzékenységének, gombjainak és viselkedésének beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 971
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:859
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:862
 msgid ""
 "Advanced network configuration (VPN, WiFi, Wired, Static IP, PPPoE, ADSL, "
 "wired network, mobile broadband and others)."
 msgstr ""
-"Fejlett hálózati konfiguráció (VPN, WiFi, Vezetékes, Statikus IP, PPPoE, "
+"Speciális hálózati beállítások (VPN, Wi-Fi, vezetékes, statikus IP, PPPoE, "
 "ADSL, vezetékes hálózat, mobil szélessáv és egyebek)."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 790
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:869
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:872
 msgid "QEFI Entry Manager"
 msgstr "Rendszerindítási bejegyzések kezelése — QEFI"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 792
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:871
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:874
 msgid "Manage and configure boot entries for UEFI systems"
-msgstr "Bootbejegyzések kezelése és konfigurálása UEFI rendszerekhez"
+msgstr "UEFI-rendszerek rendszerindítási bejegyzéseinek kezelése és beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 988
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:878
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:881
 msgid "Configure system and application notifications"
-msgstr "Rendszer- és alkalmazásértesítések konfigurálása"
+msgstr "Rendszer- és alkalmazásértesítések beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 994
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:883
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:886
 msgid "Boot Screen"
-msgstr "Indító képernyő"
+msgstr "Rendszerindító nyitóképernyő"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 997
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:885
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:888
 msgid "Change the splash screen shown during system startup"
-msgstr "Változtassa meg a rendszerindítás során megjelenő indítóképernyőt."
+msgstr "A rendszerindításkor megjelenő nyitóképernyő módosítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1006
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:893
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:896
 msgid "Configure energy saving and battery settings"
-msgstr "Energiatakarékos és akkumulátorbeállítások konfigurálása"
+msgstr "Energiatakarékosság és akkumulátor beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1015
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:899
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:902
 msgid "Configure network proxy settings for internet access"
-msgstr "Állítsa be a hálózati proxybeállításokat az internet-hozzáféréshez."
+msgstr "Hálózati proxy beállítása az internet-hozzáféréshez"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1024
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:905
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:908
 msgid "Manage the history of recently accessed files"
-msgstr "Kezelje a nemrégiben megnyitott fájlok előzményeit."
+msgstr "A legutóbb megnyitott fájlok előzményeinek kezelése"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1032
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:910
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:913
 msgid "Configure language, region, and format settings"
-msgstr "Nyelv, régió és formátum beállításainak konfigurálása"
+msgstr "A nyelv, a régió és a formátumok beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1041
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:916
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:919
 msgid "Configure screen locking settings and appearance"
-msgstr "Állítsa be a képernyőzár beállításait és megjelenését"
+msgstr "A képernyőzárolás működésének és megjelenésének beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1051
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:923
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:926
 msgid "Configure the login screen appearance and behavior"
-msgstr "Állítsa be a bejelentkezési képernyő megjelenését és viselkedését."
+msgstr "A bejelentkezési képernyő megjelenésének és viselkedésének beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1058
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:929
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:932
 msgid "Desktop Session"
 msgstr "Asztali munkamenet"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1060
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:931
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:934
 msgid "Configure session startup and shutdown behavior"
-msgstr "Állítsa be a munkamenet indítási és leállítási viselkedését"
+msgstr "A munkamenet indításának és leállításának beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1068
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:937
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:940
 msgid "Configure sound effects for system events"
-msgstr "Rendszeresemények hanghatásainak konfigurálása"
+msgstr "Rendszeresemények hangeffektusainak beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1077
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:944
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:947
 msgid "Configure the splash screen shown while starting applications"
-msgstr "Az alkalmazások indításakor megjelenő indítóképernyő beállítása."
+msgstr "Az alkalmazások indításakor megjelenő nyitóképernyő beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1086
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:950
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:953
 msgid "Configure the visual appearance of applications"
-msgstr "Alkalmazások vizuális megjelenésének konfigurálása"
+msgstr "Az alkalmazások megjelenésének beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1094
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:956
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:959
 msgid "Configure drawing tablets and stylus settings"
-msgstr "Rajzoló táblák és tollbeállítások konfigurálása"
+msgstr "Rajztáblák és tollak beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1102
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:961
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:964
 msgid "Configure laptop touchpad behavior and gestures"
-msgstr "Állítsa be a laptop érintőpad viselkedését és gesztusait."
+msgstr "Az érintőtábla viselkedésének és gesztusainak beállítása laptopokon"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1110
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:967
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:970
 msgid "Configure touchscreen behavior and calibration"
-msgstr "Állítsa be az érintőképernyő működését és kalibrálását"
+msgstr "Az érintőképernyő működésének és kalibrálásának beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1119
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:973
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:976
 msgid "Configure trash bin behavior and cleanup settings"
-msgstr "Állítsa be a lomtár viselkedését és a takarítási beállításokat."
+msgstr "A Kuka viselkedésének és ürítésének beállítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1129
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:980
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:983
 msgid "Change desktop background image and slideshow settings"
 msgstr "Asztali háttérkép és diavetítés beállításainak módosítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1251
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:987
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:990
 msgid "Configure the system's landing page and default widgets."
-msgstr "A rendszer kezdőlapjának és alapértelmezett kütyüinek beállítása."
+msgstr "A rendszer kezdőoldalának és alapértelmezett widgetjeinek beállítása."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 930
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:993
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:996
 msgid "Manage FireWire Audio Interfaces - FfadoMixer"
-msgstr "FireWire Audio Interfészek kezelése - FfadoMixer"
+msgstr "FireWire-hanginterfészek kezelése - FfadoMixer"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 932
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:995
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:998
 msgid "Control Panel for your FireWire Audio Interfaces."
-msgstr "Vezérlőpult a FireWire audio interfészekhez."
+msgstr "Vezérlőpult a FireWire-hanginterfészekhez."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1148
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1001
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1004
 msgid "Access your files and folders."
 msgstr "Fájlok és mappák elérése."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1157
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1007
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1010
 msgid ""
 "This program can transfer files between smartphones, tablets, and other "
 "computers. With it, you can, for example, use your smartphone as a wireless "
@@ -775,8 +798,8 @@ msgid ""
 "system clock. To sync with your smartphone, go to the Google Store or Apple "
 "Store and install KDE Connect."
 msgstr ""
-"Ez a program fájlokat továbbít okostelefonok, táblagépek és más számítógépek"
-" között. Többek között lehetővé teszi, hogy okostelefonját vezeték nélküli "
+"Ez a program fájlokat továbbít okostelefonok, táblagépek és más számítógépek "
+"között. Többek között lehetővé teszi, hogy okostelefonját vezeték nélküli "
 "egérként és billentyűzetként használja a számítógép vezérlésére. Jól "
 "integrálódik a BigLinuxszal, és a rendszeróra melletti kisalkalmazások "
 "között található. A telefonnal való szinkronizáláshoz telepítse a KDE "
@@ -784,120 +807,113 @@ msgstr ""
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 497
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1013
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1016
 msgid "Access the command terminal."
-msgstr "Hozzáférés a parancssorhoz."
+msgstr "Parancssori terminál megnyitása."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 957
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1018
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1021
 msgid "Password Manager - KWalletManager"
 msgstr "Jelszókezelő - KWalletManager"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1174
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1020
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1023
 msgid "Tool for managing KDE wallets"
-msgstr "Eszköz a KDE pénztárcák kezelésére"
+msgstr "Eszköz a KDE jelszótárolók kezeléséhez"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1182
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1027
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1030
 msgid "Add or remove programs installed on the system"
-msgstr "Programok hozzáadása vagy eltávolítása a rendszeren."
+msgstr "A rendszerre telepített programok hozzáadása vagy eltávolítása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1188
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1032
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1035
 msgid "Connect to internet using Android"
-msgstr "Csatlakozás az internethez Androidon"
+msgstr "Csatlakozás az internethez Androiddal"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1196
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1039
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1042
 msgid "Connect to internet using iOS"
-msgstr "Csatlakozás az internethez iOS használatával"
+msgstr "Csatlakozás az internethez iOS-szel"
+
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1053
+msgid "Reset display settings"
+msgstr "Kijelzőbeállítások visszaállítása"
+
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1056
+msgid ""
+"Restore the default resolution, position, refresh rate, scale and rotation "
+"of every monitor, on Wayland and Xorg"
+msgstr ""
+"Az összes monitor alapértelmezett felbontásának, elhelyezésének, frissítési "
+"gyakoriságának, méretezésének és elforgatásának visszaállítása Waylanden és "
+"Xorgon"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 182
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1050
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1063
 msgid "Connect to Internet"
-msgstr "Csatlakozzon az internethez"
+msgstr "Csatlakozás az internethez"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 485
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1067
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1080
 msgid "Snapshots and backups"
 msgstr "Pillanatképek és biztonsági másolatok"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 486
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1068
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1081
 msgid "Create or activate restore points"
 msgstr "Visszaállítási pontok létrehozása vagy aktiválása"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 997
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1074
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1087
 msgid "Biglinux Settings"
 msgstr "BigLinux-beállítások"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 998
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1075
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1088
 msgid "Simplify switching BigLinux operation."
 msgstr "A BigLinux működési módjai közötti váltás egyszerűsítése."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1228
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1085
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1098
 msgid "BigLinux Themes"
 msgstr "BigLinux-témák"
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/bigbashview/apps/bigcontrolcenter/getappinfo.py,
 # line: 52
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1088
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1101
 msgid ""
 "We provide complete configurations for you to select in an extremely simple "
 "way."
 msgstr ""
-"Teljes konfigurációkat biztosítunk Önnek, hogy rendkívül egyszerűen "
-"választhasson."
+"Kész, teljes beállításcsomagokat kínálunk, amelyek közül rendkívül "
+"egyszerűen választhat."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1261
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1100
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1113
 msgid "Configure feedback and usage report preferences."
-msgstr "Állítsa be a visszajelzési és használati jelentési preferenciákat."
+msgstr "A visszajelzések és használati jelentések beállításai."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1271
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1107
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1120
 msgid "Configure automatic actions for when devices are connected."
-msgstr ""
-"Állítsa be az automatikus műveleteket, amikor az eszközök csatlakoznak."
+msgstr "Automatikus műveletek beállítása eszközök csatlakoztatásakor."
 
 # bigcontrolcenter/bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py,
 # line: 1309
-#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1115
+#: bigcontrolcenter/usr/share/biglinux/bigcontrolcenter/utils/app_finder.py:1128
 msgid "Configure search and indexing options in Plasma."
-msgstr "Állítsa be a keresési és indexelési lehetőségeket a Plasmában."
-
-#: bigcontrolcenter/usr/bin/guvcview-verify-busy:12
-#, sh-format
-msgid ""
-"A webcam já está sendo utilizada pelo programa: $WEBCAM_BUSY\n"
-"\n"
-"Abrirei em modo de configuração.\n"
-"As alterações feitas podem ser vistas\n"
-"na imagem da sua webcam em outros programas."
-msgstr ""
-"A webkamera már használatban van a program által: $WEBCAM_BUSY\n"
-"\n"
-"Beállítási módban fogom megnyitni.\n"
-"A végrehajtott módosítások láthatók\n"
-"a webkamerája képén más programokban."
-
-#: bigcontrolcenter/usr/bin/guvcview-verify-busy:16
-msgid "Webcam"
-msgstr "Webkamera"
+msgstr "A Plasma keresési és indexelési beállításai."
