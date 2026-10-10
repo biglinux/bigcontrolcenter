@@ -1,7 +1,8 @@
 [Desktop Entry]
-Type=XSession
+Type=Application
 Exec=/usr/bin/bigcontrolcenter-session
-TryExec=/usr/bin/startplasma-x11
+TryExec=/usr/bin/kwin_wayland
+DesktopNames=KDE
 Name=Central de Controle
 Name[pt]=Central de Controle
 Name[pt_BR]=Central de Controle

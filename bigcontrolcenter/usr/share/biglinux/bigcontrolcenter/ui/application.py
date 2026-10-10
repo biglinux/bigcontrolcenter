@@ -424,6 +424,8 @@ class BigControlCenterApp(Adw.Application):
                 self.show_android_usb_dialog()
             elif app_exec == "#dialog-ios-usb":
                 self.show_ios_usb_dialog()
+            elif app_exec == "#dialog-reset-display":
+                self.show_reset_display_dialog()
             else:
                 print(f"Special command: {app_exec}")
                 self.set_status_message(
@@ -446,6 +448,35 @@ class BigControlCenterApp(Adw.Application):
         """Show dialog with iOS USB tethering instructions"""
         dialog = DeviceConnectionDialog(self.window)
         dialog.show_ios_dialog()
+
+    def show_reset_display_dialog(self):
+        """Confirm resetting KDE's monitor settings"""
+        dialog = Adw.AlertDialog(
+            heading=_("Reset display settings?"),
+            body=_(
+                "Resolution, position, refresh rate, scale and rotation of every monitor return to the defaults detected at the next login, on Wayland and Xorg. This session ends to apply them."
+            ),
+        )
+        dialog.add_response("cancel", _("Cancel"))
+        dialog.add_response("reset", _("Reset and Log Out"))
+        dialog.set_response_appearance("reset", Adw.ResponseAppearance.DESTRUCTIVE)
+        dialog.set_close_response("cancel")
+        dialog.connect("response", self._on_reset_display_response)
+        dialog.present(self.window)
+
+    def _on_reset_display_response(self, dialog, response):
+        if response != "reset":
+            return
+        # KWin writes its monitor layout when it exits, so bigcontrolcenter-session
+        # resets after the session ends; closing the window ends it.
+        try:
+            Path(os.environ["BIGCONTROLCENTER_RESET_DISPLAY"]).touch()
+        except OSError as e:
+            self.set_status_message(
+                _("Could not reset display settings: {0}").format(e)
+            )
+            return
+        self.window.close()
 
     def configure_program_grid_for_fixed_icons(self):
         """Configure the program grid to respect fixed icon sizes"""

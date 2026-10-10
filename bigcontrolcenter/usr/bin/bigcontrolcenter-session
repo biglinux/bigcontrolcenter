@@ -1,6 +1,38 @@
 #!/usr/bin/env bash
+# Control Center as a login session: KWin on Wayland running only this program.
+# The display manager starts this script; KWin runs it again with --inner once
+# WAYLAND_DISPLAY exists and ends the session when that run returns.
+
+if [[ ${1-} == --inner ]]; then
+	# D-Bus activated services, such as the KScreen backend behind the display
+	# settings, reach the compositor only through the activation environment.
+	dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY \
+		XDG_CURRENT_DESKTOP XDG_MENU_PREFIX XDG_SESSION_TYPE
+	/usr/lib/polkit-kde-authentication-agent-1 &
+	exec bigcontrolcenter
+fi
 
 sed -i '/BorderlessMaximizedWindows=true/d' ~/.config/kwinrc
-/usr/lib/polkit-kde-authentication-agent-1 &
-kwin_x11 &
-bigcontrolcenter
+# The Control Center offers the display reset only when this is set, and
+# creates the file to request it.
+export BIGCONTROLCENTER_RESET_DISPLAY="$XDG_RUNTIME_DIR/bigcontrolcenter-reset-display"
+rm -f "$BIGCONTROLCENTER_RESET_DISPLAY"
+# Arch ships only the prefixed menu; without the prefix KDE's service database is empty.
+if [[ -e /etc/xdg/menus/plasma-applications.menu ]]; then
+	export XDG_MENU_PREFIX=plasma-
+fi
+kwin_wayland --xwayland --exit-with-session="$0 --inner"
+status=$?
+
+# KWin saves the monitor layout it holds when it exits, so the reset runs after it.
+if [[ -e $BIGCONTROLCENTER_RESET_DISPLAY ]]; then
+	rm -f "$BIGCONTROLCENTER_RESET_DISPLAY"
+	# Wayland: KWin's output configuration
+	rm -f "${XDG_CONFIG_HOME:-$HOME/.config}/kwinoutputconfig.json"
+	# Xorg: KScreen's output configuration and the global scale it writes
+	rm -rf "${XDG_DATA_HOME:-$HOME/.local/share}/kscreen"
+	kwriteconfig6 --file kdeglobals --group KScreen --key ScaleFactor --delete
+	kwriteconfig6 --file kdeglobals --group KScreen --key ScreenScaleFactors --delete
+	kwriteconfig6 --file kcmfonts --group General --key forceFontDPI --delete
+fi
+exit "$status"

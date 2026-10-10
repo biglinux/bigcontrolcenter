@@ -95,6 +95,9 @@ class AppFinder:
             "network-connect",
             "big-themes-gui",
         ]
+        # Set by bigcontrolcenter-session, started from the login manager
+        if os.environ.get("BIGCONTROLCENTER_RESET_DISPLAY"):
+            special_entries.append("reset-display")
         for entry_id in special_entries:
             # Skip if we already have this special entry processed from desktop files
             if entry_id in program_dict:
@@ -1044,6 +1047,16 @@ class AppFinder:
             {
                 "app_id": "kcm_cellular_network",
                 "app_categories": "Phone",
+            },
+            {
+                "app_id": "reset-display",
+                "app_name": _("Reset display settings"),
+                "app_exec": "#dialog-reset-display",
+                "app_description": _(
+                    "Restore the default resolution, position, refresh rate, scale and rotation of every monitor, on Wayland and Xorg"
+                ),
+                "app_icon": "video-display",
+                "app_categories": "Hardware",
             },
             {
                 "app_id": "network-connect",
