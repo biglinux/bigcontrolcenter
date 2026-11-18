@@ -436,46 +436,19 @@ class AppFinder:
         return info_dict
 
     def _get_icon_path(self, icon):
-        """Get path for an icon using GIO with progressive fallback strategy"""
-        if not icon:
-            return ""
-
-        # If icon is a FileIcon (absolute path)
+        """Return the icon file path, or the first theme icon name for the system to look up"""
         if isinstance(icon, Gio.FileIcon):
             return icon.get_file().get_path()
 
-        # Get icon names
         if isinstance(icon, Gio.ThemedIcon):
             icon_names = icon.get_names()
         else:
-            # Convert icon to string as fallback
-            icon_str = icon.to_string()
-            if icon_str.startswith("/"):
-                return icon_str
-            icon_names = [icon_str]
+            icon_names = [icon.to_string() or ""]
 
-        # Try each icon name with progressive fallback
         for icon_name in icon_names:
-            if icon_name.startswith("/"):
-                # Absolute path
-                return icon_name
-
-            # First try using just the icon name - this is the key change
-            # that will let the system find icons in any theme first
             if icon_name:
-                # Return just the icon name to let the system handle theme lookup
                 return icon_name
 
-            # Progressive name simplification (remove parts from the end)
-            parts = icon_name.split("-")
-            for end in range(len(parts), 0, -1):
-                modified_name = "-".join(parts[:end])
-
-                # Return the simplified name if we found it
-                if modified_name:
-                    return modified_name
-
-        # If all else fails, return a default icon name
         return "application-default-icon"
 
     def _find_replacement(self, app_id):

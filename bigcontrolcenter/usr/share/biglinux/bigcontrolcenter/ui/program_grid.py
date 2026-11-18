@@ -8,7 +8,7 @@ import gi
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gdk, Gtk, Pango
+from gi.repository import Gtk, Pango
 
 
 class ProgramGrid(Gtk.Box):
@@ -42,7 +42,7 @@ class ProgramGrid(Gtk.Box):
             }
         """)
         Gtk.StyleContext.add_provider_for_display(
-            Gdk.Display.get_default(),
+            self.get_display(),
             css_provider,
             Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION,
         )
@@ -163,7 +163,7 @@ class ProgramGrid(Gtk.Box):
             return self._special_icon_cache[icon_name]
 
         # Get current theme
-        theme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default())
+        theme = Gtk.IconTheme.get_for_display(self.get_display())
         theme_name = theme.get_theme_name()
 
         # Directories to search (theme first, then common themes, then hicolor)
@@ -235,23 +235,17 @@ class ProgramGrid(Gtk.Box):
 
         # Check if it's an absolute path
         if icon_path.startswith("/") and os.path.exists(icon_path):
-            try:
-                icon = Gtk.Image.new_from_file(icon_path)
-                icon.set_pixel_size(target_size)
-                return icon
-            except Exception:
-                pass
+            icon = Gtk.Image.new_from_file(icon_path)
+            icon.set_pixel_size(target_size)
+            return icon
 
         # Special handling for specific problematic icons
         if icon_path in self._SPECIAL_ICONS:
             found_path = self._find_special_icon(icon_path)
             if found_path:
-                try:
-                    icon = Gtk.Image.new_from_file(found_path)
-                    icon.set_pixel_size(target_size)
-                    return icon
-                except Exception:
-                    pass
+                icon = Gtk.Image.new_from_file(found_path)
+                icon.set_pixel_size(target_size)
+                return icon
 
         # Use GTK icon theme lookup (fast) for all other icons
         icon = Gtk.Image.new_from_icon_name(icon_path)
