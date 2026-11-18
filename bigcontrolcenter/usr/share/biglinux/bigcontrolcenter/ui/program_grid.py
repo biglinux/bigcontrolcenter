@@ -3,6 +3,7 @@ BigControlCenter - Program grid component
 """
 
 import os
+from typing import ClassVar
 
 import gi
 
@@ -143,15 +144,17 @@ class ProgramGrid(Gtk.Box):
         return button
 
     # Icons that need special handling (manual search with size priority)
-    _SPECIAL_ICONS = {
-        "scanner",
-        "network-workgroup",
-        "smartphone",
-        "network-wired-symbolic",
-    }
+    _SPECIAL_ICONS = frozenset(
+        {
+            "scanner",
+            "network-workgroup",
+            "smartphone",
+            "network-wired-symbolic",
+        }
+    )
 
     # Cache for special icon paths
-    _special_icon_cache = {}
+    _special_icon_cache: ClassVar[dict[str, str | None]] = {}
 
     def _find_special_icon(self, icon_name):
         """
