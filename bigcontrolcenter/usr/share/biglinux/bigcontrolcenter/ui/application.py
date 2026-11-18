@@ -43,7 +43,6 @@ class BigControlCenterApp(Adw.Application):
         self.programs = []
         self.filtered_programs = []
         self.current_category = "Star"
-        self.program_grid = None  # Initialize as None until created
 
         # Config file path
         self.config_dir = os.path.expanduser("~/.config/bigcontrolcenter")
@@ -213,7 +212,6 @@ class BigControlCenterApp(Adw.Application):
         # Create the program grid
         self.program_grid = ProgramGrid(self)
         content_toolbar_view.set_content(self.program_grid)
-        self.configure_program_grid_for_fixed_icons()
 
         # Create content page
         self.content_page = Adw.NavigationPage.new(content_toolbar_view, "Programs")
@@ -262,40 +260,19 @@ class BigControlCenterApp(Adw.Application):
             Gdk.KEY_Return,
             Gdk.KEY_space,
         ):
-            # Handle program navigation if we have a flow box
-            try:
-                if (
-                    hasattr(self.program_grid, "flow_box")
-                    and self.program_grid.flow_box
-                ):
-                    flow_box = self.program_grid.flow_box
+            flow_box = self.program_grid.flow_box
 
-                    # If Enter/Space and something is selected, activate it
-                    if keyval in (Gdk.KEY_Return, Gdk.KEY_space):
-                        try:
-                            child = self._get_selected_flow_child(flow_box)
-                            if child:
-                                # Manually call child's button click handler instead
-                                button = self._find_button_in_child(child)
-                                if button:
-                                    button.clicked()  # Emit clicked signal directly
-                                return True
-                        except Exception as e:
-                            print(f"Error activating flow box child: {e}")
+            # Enter/Space launches the focused program, or the first one
+            if keyval in (Gdk.KEY_Return, Gdk.KEY_space):
+                child = flow_box.get_focus_child() or flow_box.get_first_child()
+                if child:
+                    child.activate()
+                    return True
 
-                    # Arrow key navigation - always force selection and focus
-                    elif keyval in (
-                        Gdk.KEY_Up,
-                        Gdk.KEY_Down,
-                        Gdk.KEY_Left,
-                        Gdk.KEY_Right,
-                    ):
-                        # Simplify: just grab focus on the flow box and let GTK handle navigation
-                        flow_box.grab_focus()
-                        # Don't consume the event - let GTK's default handler manage navigation
-                        return False
-            except Exception as e:
-                print(f"Error in flow box navigation: {e}")
+            # Arrow keys move focus into the grid and let GTK navigate it
+            else:
+                flow_box.grab_focus()
+                return False
 
         # Skip if search is already focused
         if self.search_entry.has_focus():
@@ -314,10 +291,6 @@ class BigControlCenterApp(Adw.Application):
             Gdk.KEY_Escape,
             Gdk.KEY_Tab,
             Gdk.KEY_Return,
-            Gdk.KEY_Up,
-            Gdk.KEY_Down,
-            Gdk.KEY_Left,
-            Gdk.KEY_Right,
         ):
             return False
 
@@ -375,8 +348,7 @@ class BigControlCenterApp(Adw.Application):
                 if self.current_category in program.get("app_categories", "").split()
             ]
         self.filtered_programs.sort(key=lambda x: x["app_name"])
-        if self.program_grid:
-            self.program_grid.update_grid(self.filtered_programs)
+        self.program_grid.update_grid(self.filtered_programs)
         self.set_status_message("")
 
     def on_search_changed(self, search_entry):
@@ -392,15 +364,6 @@ class BigControlCenterApp(Adw.Application):
         for cat in self.category_sidebar.categories:
             if cat["name"] == category:
                 category_label = cat["label"]
-                if hasattr(cat, "button") and cat["button"] is not None:
-                    cat["button"].add_css_class("selected")
-                for other_cat in self.category_sidebar.categories:
-                    if (
-                        other_cat["name"] != category
-                        and hasattr(other_cat, "button")
-                        and other_cat["button"] is not None
-                    ):
-                        other_cat["button"].remove_css_class("selected")
                 break
         self.content_page.set_title(category_label)
         self.content_title.set_title(category_label)
@@ -482,31 +445,6 @@ class BigControlCenterApp(Adw.Application):
             return
         self.window.close()
 
-    def configure_program_grid_for_fixed_icons(self):
-        """Configure the program grid to respect fixed icon sizes"""
-        if hasattr(self.program_grid, "flowbox"):
-            flowbox = self.program_grid.flowbox
-            flowbox.set_homogeneous(False)
-            flowbox.set_column_spacing(16)
-            flowbox.set_row_spacing(16)
-            flowbox.set_valign(Gtk.Align.START)
-            flowbox.set_halign(Gtk.Align.START)
-            flowbox.set_min_children_per_line(1)
-            flowbox.set_max_children_per_line(10)
-            self.window.connect("size-allocate", self._on_window_size_change)
-
-        def force_icon_size(widget):
-            if widget.has_css_class("program-icon-container"):
-                widget.set_size_request(64, 64)
-                return True
-            if isinstance(widget, Gtk.Box) or isinstance(widget, Gtk.FlowBox):
-                for child in widget:
-                    force_icon_size(child)
-            return False
-
-        if self.program_grid:
-            force_icon_size(self.program_grid)
-
     def on_about_action(self, action, param):
         """Show the About dialog for BigControlCenter"""
         about = Adw.AboutWindow.new()
@@ -520,41 +458,6 @@ class BigControlCenterApp(Adw.Application):
         about.set_copyright(_("© 2025 BigLinux Team"))
         about.set_developers([_("BigLinux Team")])
         about.present()
-
-    def _get_selected_flow_child(self, flow_box):
-        """Get the currently selected flow box child safely"""
-        try:
-            # In GTK4, selected_children are accessed differently
-            child = None
-
-            # Try to get the child that has focus
-            current = flow_box.get_first_child()
-            while current:
-                if current.has_focus():
-                    return current
-                current = current.get_next_sibling()
-
-            # If no child has focus, try selecting the first one
-            if flow_box.get_first_child():
-                return flow_box.get_first_child()
-
-        except Exception as e:
-            print(f"Error getting selected child: {e}")
-
-        return None
-
-    def _find_button_in_child(self, child):
-        """Find the button inside a flow box child"""
-        try:
-            # The child's child should be our button
-            if isinstance(child, Gtk.FlowBoxChild):
-                button = child.get_child()
-                if isinstance(button, Gtk.Button):
-                    return button
-        except Exception as e:
-            print(f"Error finding button in child: {e}")
-
-        return None
 
     def load_config(self):
         """Load the saved window state; an unreadable file only costs the saved size."""
@@ -604,16 +507,6 @@ class BigControlCenterApp(Adw.Application):
         """Save window configuration when closing"""
         self.save_config()
         return False  # Allow the window to close
-
-    def _on_window_size_change(self, window, allocation):
-        """Update window size in config when size changes (if not maximized)"""
-        if not window.is_maximized():
-            width = allocation.get_width()
-            height = allocation.get_height()
-            if width > 0 and height > 0:
-                self.config["width"] = width
-                self.config["height"] = height
-                self.config["maximized"] = False
 
     # Add these new methods to handle button click and cursor changes
     def on_app_icon_clicked(self, button):
