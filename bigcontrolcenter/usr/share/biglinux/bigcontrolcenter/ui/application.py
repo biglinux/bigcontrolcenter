@@ -394,7 +394,7 @@ class BigControlCenterApp(Adw.Application):
             elif app_exec == "#dialog-reset-display":
                 self.show_reset_display_dialog()
             else:
-                print(f"Special command: {app_exec}")
+                logger.warning("Unknown special command: %s", app_exec)
                 self.set_status_message(
                     _("Executing special command: {0}").format(app_exec)
                 )
@@ -404,7 +404,7 @@ class BigControlCenterApp(Adw.Application):
                 GLib.spawn_command_line_async(app_exec)
             except GLib.Error as e:
                 self.set_status_message(_("Error launching program: {0}").format(e))
-                print(f"Error running command: {e}")
+                logger.warning("Error running command %s: %s", app_exec, e)
 
     def show_android_usb_dialog(self):
         """Show dialog with Android USB tethering instructions"""
