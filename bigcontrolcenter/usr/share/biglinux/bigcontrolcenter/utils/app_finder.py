@@ -397,49 +397,48 @@ class AppFinder:
         """
         Get application information for a desktop file using GIO
         """
+        # GIO refuses files it would not launch: no Type=Application, or a
+        # TryExec or Exec program that is not installed.
         try:
             app_info = Gio.DesktopAppInfo.new_from_filename(file_path)
-            if not app_info:
-                return None
-
-            # Get icon path
-            icon = app_info.get_icon()
-            icon_path = self._get_icon_path(icon) if icon else None
-
-            # Get executable with parameters - KEEP the parameters as in the JSON template
-            exec_field = app_info.get_string("Exec") or "null"
-            executable = exec_field.strip().split("%")[0]
-
-            # Get categories from desktop file - preserve original format
-            categories = app_info.get_categories() or "Other"
-
-            # Create info dictionary
-            info_dict = {
-                "app_id": app_id,
-                "app_name": app_info.get_display_name() or app_id,
-                "app_exec": executable,
-                "app_description": app_info.get_description(),  # Allow None/null values
-                "app_icon": icon_path or "",
-                "app_categories": categories,
-            }
-
-            # Apply replacements if available (this is crucial for matching expected output)
-            replacement = self._find_replacement(app_id)
-            if replacement:
-                for key in [
-                    "app_name",
-                    "app_exec",
-                    "app_description",
-                    "app_icon",
-                    "app_categories",
-                ]:
-                    if key in replacement:
-                        info_dict[key] = replacement[key]
-
-            return info_dict
-        except Exception as e:
-            print(f"Error processing {app_id}: {e}")
+        except TypeError:
             return None
+
+        # Get icon path
+        icon = app_info.get_icon()
+        icon_path = self._get_icon_path(icon) if icon else None
+
+        # Get executable with parameters - KEEP the parameters as in the JSON template
+        exec_field = app_info.get_string("Exec") or "null"
+        executable = exec_field.strip().split("%")[0]
+
+        # Get categories from desktop file - preserve original format
+        categories = app_info.get_categories() or "Other"
+
+        # Create info dictionary
+        info_dict = {
+            "app_id": app_id,
+            "app_name": app_info.get_display_name() or app_id,
+            "app_exec": executable,
+            "app_description": app_info.get_description(),  # Allow None/null values
+            "app_icon": icon_path or "",
+            "app_categories": categories,
+        }
+
+        # Apply replacements if available (this is crucial for matching expected output)
+        replacement = self._find_replacement(app_id)
+        if replacement:
+            for key in [
+                "app_name",
+                "app_exec",
+                "app_description",
+                "app_icon",
+                "app_categories",
+            ]:
+                if key in replacement:
+                    info_dict[key] = replacement[key]
+
+        return info_dict
 
     def _get_icon_path(self, icon):
         """Get path for an icon using GIO with progressive fallback strategy"""
