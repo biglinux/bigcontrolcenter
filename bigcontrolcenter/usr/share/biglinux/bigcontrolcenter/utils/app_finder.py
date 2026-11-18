@@ -300,6 +300,7 @@ class AppFinder:
             "kcm_mobile_power.desktop",
             "kcm_mobile_wifi.desktop",
             "kcm_mobile_hotspot.desktop",
+            "kcm_mobile_wired.desktop",
         ]
 
         # Add session-based exclusions (exclude _x11 in Wayland, exclude non-_x11 in X11)
@@ -328,6 +329,7 @@ class AppFinder:
             "qvidcap.desktop",
             "kdesettings",
             "lstopo.desktop",
+            "vim.desktop",
             "kdesystemsettings.desktop",
             "qv4l2.desktop",
             "org.gnome.baobab.desktop",
