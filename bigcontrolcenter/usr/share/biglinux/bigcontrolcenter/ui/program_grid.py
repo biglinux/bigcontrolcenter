@@ -2,12 +2,13 @@
 BigControlCenter - Program grid component
 """
 
-import gi
 import os
+
+import gi
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Gdk, Pango
+from gi.repository import Gdk, Gtk, Pango
 
 
 class ProgramGrid(Gtk.Box):
@@ -143,12 +144,12 @@ class ProgramGrid(Gtk.Box):
 
     # Icons that need special handling (manual search with size priority)
     _SPECIAL_ICONS = {
-        'scanner',
-        'network-workgroup', 
-        'smartphone',
-        'network-wired-symbolic',
+        "scanner",
+        "network-workgroup",
+        "smartphone",
+        "network-wired-symbolic",
     }
-    
+
     # Cache for special icon paths
     _special_icon_cache = {}
 
@@ -160,29 +161,46 @@ class ProgramGrid(Gtk.Box):
         # Check cache first
         if icon_name in self._special_icon_cache:
             return self._special_icon_cache[icon_name]
-        
+
         # Get current theme
         theme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default())
         theme_name = theme.get_theme_name()
-        
+
         # Directories to search (theme first, then common themes, then hicolor)
         search_bases = [
             f"/usr/share/icons/{theme_name}",
         ]
-        
+
         # Add common inherited themes
-        for parent_theme in ["bigicons-papient", "bigicons-papient-dark", "breeze", "breeze-dark", "Adwaita"]:
+        for parent_theme in [
+            "bigicons-papient",
+            "bigicons-papient-dark",
+            "breeze",
+            "breeze-dark",
+            "Adwaita",
+        ]:
             if parent_theme != theme_name:
                 search_bases.append(f"/usr/share/icons/{parent_theme}")
-        
+
         search_bases.append("/usr/share/icons/hicolor")
-        
+
         # Size priority
         size_dirs = ["scalable", "48x48", "64x64", "32x32", "48", "64", "128"]
         # Extended subdirs list
-        subdirs = ["apps", "devices", "categories", "status", "actions", "places", "preferences", "emblems", "mimetypes", "symbolic"]
-        extensions = ['.svg', '.png']
-        
+        subdirs = [
+            "apps",
+            "devices",
+            "categories",
+            "status",
+            "actions",
+            "places",
+            "preferences",
+            "emblems",
+            "mimetypes",
+            "symbolic",
+        ]
+        extensions = [".svg", ".png"]
+
         # Search with size priority
         for size_dir in size_dirs:
             for base in search_bases:
@@ -192,7 +210,7 @@ class ProgramGrid(Gtk.Box):
                         if os.path.exists(icon_file):
                             self._special_icon_cache[icon_name] = icon_file
                             return icon_file
-        
+
         # Try scalable as last resort
         for base in search_bases:
             for subdir in subdirs:
@@ -200,7 +218,7 @@ class ProgramGrid(Gtk.Box):
                 if os.path.exists(icon_file):
                     self._special_icon_cache[icon_name] = icon_file
                     return icon_file
-        
+
         # Cache miss
         self._special_icon_cache[icon_name] = None
         return None

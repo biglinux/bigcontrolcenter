@@ -6,10 +6,11 @@ and generating program information similar to the original
 loop-search.sh and getappinfo.py scripts.
 """
 
+import gettext
+import glob
 import os
 import subprocess
-import glob
-import gettext
+
 import gi
 
 gi.require_version("Gtk", "4.0")
@@ -57,14 +58,13 @@ class AppFinder:
             "kcm_kwintabbox",
             "kcm_kwintouchscreen",
         ]
-        
+
         if self.session_type == "x11":
             # In X11, exclude the non-_x11 versions
             return [f"{m}.desktop" for m in x11_modules]
         else:
             # In Wayland, exclude all _x11 variants
             return [f"{m}_x11.desktop" for m in x11_modules]
-
 
     def get_programs(self):
         """

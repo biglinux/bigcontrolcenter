@@ -2,13 +2,14 @@
 BigControlCenter - Category sidebar component
 """
 
-import gi
 import gettext
 import os
 
+import gi
+
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Pango, Gdk, Gio
+from gi.repository import Gdk, Gio, Gtk, Pango
 
 # Setup translations
 lang_translations = gettext.translation(

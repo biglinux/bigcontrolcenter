@@ -2,20 +2,21 @@
 BigControlCenter - Application class
 """
 
-import gi
 import gettext
 import json
 import logging
 import os
 from pathlib import Path
 
+import gi
+
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Gio, GLib, Adw, Gdk
+from gi.repository import Adw, Gdk, Gio, GLib, Gtk
 
 from ui.category_sidebar import CategorySidebar
-from ui.program_grid import ProgramGrid
 from ui.device_connection_dialog import DeviceConnectionDialog
+from ui.program_grid import ProgramGrid
 from utils.app_finder import AppFinder
 
 # Setup translations
