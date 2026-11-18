@@ -17,16 +17,11 @@ gi.require_version("Gtk", "4.0")
 from gi.repository import Gio
 
 # Setup translations
-try:
-    lang_translations = gettext.translation(
-        "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
-    )
-    lang_translations.install()
-    _ = lang_translations.gettext
-except Exception:
-    # Fallback if translation fails
-    def _(x):
-        return x
+lang_translations = gettext.translation(
+    "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
+)
+lang_translations.install()
+_ = lang_translations.gettext
 
 
 class AppFinder:
@@ -350,10 +345,10 @@ class AppFinder:
         # Find files in /usr/share/applications/bigcontrolcenter/
         if os.path.exists("/usr/share/applications/bigcontrolcenter/"):
             for file_path in glob.glob("/usr/share/applications/bigcontrolcenter/*"):
-                if os.path.isfile(file_path):
-                    # Check against exclusion patterns
-                    if not any(pattern in file_path for pattern in excluded_patterns):
-                        result.append(file_path)
+                if os.path.isfile(file_path) and not any(
+                    pattern in file_path for pattern in excluded_patterns
+                ):
+                    result.append(file_path)
 
         return result
 
