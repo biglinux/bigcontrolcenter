@@ -527,6 +527,10 @@ class AppFinder:
                 "app_categories": "System",
             },
             {
+                "app_id": "com.biglinux.BigStyle",
+                "app_categories": "Personalization",
+            },
+            {
                 "app_id": "firewall-config",
                 "app_name": _("Advanced Firewall Settings"),
                 "app_categories": "Network",
@@ -786,6 +790,10 @@ class AppFinder:
                 "app_categories": "Hardware",
             },
             {
+                "app_id": "kcm_krdpserver",
+                "app_categories": "Network",
+            },
+            {
                 "app_id": "kcm_kscreen",
                 "app_exec": "kcmshell6 kcm_nightlight kgamma kcm_kscreen kwinscreenedges",
                 "app_description": _(
@@ -849,6 +857,10 @@ class AppFinder:
                 "app_categories": "Personalization",
             },
             {
+                "app_id": "kcm_plasmakeyboard",
+                "app_categories": "Hardware",
+            },
+            {
                 "app_id": "kcm_plymouth",
                 "app_name": _("Boot Screen"),
                 "app_description": _(
@@ -909,6 +921,10 @@ class AppFinder:
                 "app_categories": "Multimedia",
             },
             {
+                "app_id": "kcm_spellchecking",
+                "app_categories": "Language",
+            },
+            {
                 "app_id": "kcm_splashscreen",
                 "app_description": _(
                     "Configure the splash screen shown while starting applications"
@@ -942,6 +958,10 @@ class AppFinder:
                 "app_description": _(
                     "Configure trash bin behavior and cleanup settings"
                 ),
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_updates",
                 "app_categories": "System",
             },
             {
