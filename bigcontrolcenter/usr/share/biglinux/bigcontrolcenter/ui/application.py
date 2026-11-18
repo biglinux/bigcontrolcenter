@@ -5,6 +5,7 @@ BigControlCenter - Application class
 import gi
 import gettext
 import json
+import logging
 import os
 from pathlib import Path
 
@@ -23,6 +24,8 @@ lang_translations = gettext.translation(
 )
 lang_translations.install()
 _ = lang_translations.gettext
+
+logger = logging.getLogger(__name__)
 
 
 class BigControlCenterApp(Adw.Application):
@@ -553,31 +556,48 @@ class BigControlCenterApp(Adw.Application):
         return None
 
     def load_config(self):
-        if os.path.exists(self.config_path):
-            with open(self.config_path, "r") as f:
-                self.config = json.load(f)
+        """Load the saved window state; an unreadable file only costs the saved size."""
+        try:
+            with open(self.config_path, encoding="utf-8") as f:
+                config = json.load(f)
+            if not isinstance(config, dict):
+                raise TypeError("not a JSON object")
+            if not all(
+                isinstance(config.get(key, 0), int) for key in ("width", "height")
+            ):
+                raise TypeError("width and height must be integers")
+        except FileNotFoundError:
+            return
+        except (OSError, ValueError, TypeError) as e:
+            logger.warning("Ignoring config %s: %s", self.config_path, e)
+            return
+        self.config = config
 
     def save_config(self):
         """Save window configuration to JSON file"""
+        maximized = self.window.is_maximized()
+        if not maximized:
+            width, height = self.window.get_default_size()
+            self.config["width"] = width
+            self.config["height"] = height
+        self.config["maximized"] = maximized
+
+        # A staging file renamed over the config keeps a crash from leaving it truncated.
+        staging_path = f"{self.config_path}.{os.getpid()}.tmp"
         try:
-            # Create config directory if it doesn't exist
             os.makedirs(self.config_dir, exist_ok=True)
-
-            # Get current window state
-            maximized = self.window.is_maximized()
-
-            if not maximized:
-                width, height = self.window.get_default_size()
-                self.config["width"] = width
-                self.config["height"] = height
-
-            self.config["maximized"] = maximized
-
-            # Save to file
-            with open(self.config_path, "w") as f:
+            config_name = os.path.basename(self.config_path)
+            for stale_path in Path(self.config_dir).glob(f"{config_name}.*.tmp"):
+                owner_pid = stale_path.name.removeprefix(f"{config_name}.")
+                owner_pid = owner_pid.removesuffix(".tmp")
+                if not os.path.exists(f"/proc/{owner_pid}"):
+                    stale_path.unlink(missing_ok=True)
+            with open(staging_path, "w", encoding="utf-8") as f:
                 json.dump(self.config, f, indent=2)
-        except Exception as e:
-            print(f"Error saving config: {e}")
+            os.replace(staging_path, self.config_path)
+        except OSError as e:
+            logger.warning("Error saving config: %s", e)
+            Path(staging_path).unlink(missing_ok=True)
 
     def on_window_close(self, window):
         """Save window configuration when closing"""
