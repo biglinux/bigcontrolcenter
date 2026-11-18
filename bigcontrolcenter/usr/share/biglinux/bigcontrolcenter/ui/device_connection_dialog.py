@@ -3,12 +3,13 @@ BigControlCenter - Device Connection Dialog
 Provides information about connecting Android or iOS devices via USB tethering
 """
 
-import gi
 import gettext
+
+import gi
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Adw
+from gi.repository import Adw, Gtk
 
 # Setup translations
 lang_translations = gettext.translation(

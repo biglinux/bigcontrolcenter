@@ -2,19 +2,21 @@
 BigControlCenter - Application class
 """
 
-import gi
 import gettext
 import json
+import logging
 import os
 from pathlib import Path
 
+import gi
+
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Gio, GLib, Adw, Gdk
+from gi.repository import Adw, Gdk, Gio, GLib, Gtk
 
 from ui.category_sidebar import CategorySidebar
-from ui.program_grid import ProgramGrid
 from ui.device_connection_dialog import DeviceConnectionDialog
+from ui.program_grid import ProgramGrid
 from utils.app_finder import AppFinder
 
 # Setup translations
@@ -23,6 +25,8 @@ lang_translations = gettext.translation(
 )
 lang_translations.install()
 _ = lang_translations.gettext
+
+logger = logging.getLogger(__name__)
 
 
 class BigControlCenterApp(Adw.Application):
@@ -39,7 +43,6 @@ class BigControlCenterApp(Adw.Application):
         self.programs = []
         self.filtered_programs = []
         self.current_category = "Star"
-        self.program_grid = None  # Initialize as None until created
 
         # Config file path
         self.config_dir = os.path.expanduser("~/.config/bigcontrolcenter")
@@ -209,7 +212,6 @@ class BigControlCenterApp(Adw.Application):
         # Create the program grid
         self.program_grid = ProgramGrid(self)
         content_toolbar_view.set_content(self.program_grid)
-        self.configure_program_grid_for_fixed_icons()
 
         # Create content page
         self.content_page = Adw.NavigationPage.new(content_toolbar_view, "Programs")
@@ -258,40 +260,19 @@ class BigControlCenterApp(Adw.Application):
             Gdk.KEY_Return,
             Gdk.KEY_space,
         ):
-            # Handle program navigation if we have a flow box
-            try:
-                if (
-                    hasattr(self.program_grid, "flow_box")
-                    and self.program_grid.flow_box
-                ):
-                    flow_box = self.program_grid.flow_box
+            flow_box = self.program_grid.flow_box
 
-                    # If Enter/Space and something is selected, activate it
-                    if keyval in (Gdk.KEY_Return, Gdk.KEY_space):
-                        try:
-                            child = self._get_selected_flow_child(flow_box)
-                            if child:
-                                # Manually call child's button click handler instead
-                                button = self._find_button_in_child(child)
-                                if button:
-                                    button.clicked()  # Emit clicked signal directly
-                                return True
-                        except Exception as e:
-                            print(f"Error activating flow box child: {e}")
+            # Enter/Space launches the focused program, or the first one
+            if keyval in (Gdk.KEY_Return, Gdk.KEY_space):
+                child = flow_box.get_focus_child() or flow_box.get_first_child()
+                if child:
+                    child.activate()
+                    return True
 
-                    # Arrow key navigation - always force selection and focus
-                    elif keyval in (
-                        Gdk.KEY_Up,
-                        Gdk.KEY_Down,
-                        Gdk.KEY_Left,
-                        Gdk.KEY_Right,
-                    ):
-                        # Simplify: just grab focus on the flow box and let GTK handle navigation
-                        flow_box.grab_focus()
-                        # Don't consume the event - let GTK's default handler manage navigation
-                        return False
-            except Exception as e:
-                print(f"Error in flow box navigation: {e}")
+            # Arrow keys move focus into the grid and let GTK navigate it
+            else:
+                flow_box.grab_focus()
+                return False
 
         # Skip if search is already focused
         if self.search_entry.has_focus():
@@ -310,10 +291,6 @@ class BigControlCenterApp(Adw.Application):
             Gdk.KEY_Escape,
             Gdk.KEY_Tab,
             Gdk.KEY_Return,
-            Gdk.KEY_Up,
-            Gdk.KEY_Down,
-            Gdk.KEY_Left,
-            Gdk.KEY_Right,
         ):
             return False
 
@@ -371,8 +348,7 @@ class BigControlCenterApp(Adw.Application):
                 if self.current_category in program.get("app_categories", "").split()
             ]
         self.filtered_programs.sort(key=lambda x: x["app_name"])
-        if self.program_grid:
-            self.program_grid.update_grid(self.filtered_programs)
+        self.program_grid.update_grid(self.filtered_programs)
         self.set_status_message("")
 
     def on_search_changed(self, search_entry):
@@ -388,15 +364,6 @@ class BigControlCenterApp(Adw.Application):
         for cat in self.category_sidebar.categories:
             if cat["name"] == category:
                 category_label = cat["label"]
-                if hasattr(cat, "button") and cat["button"] is not None:
-                    cat["button"].add_css_class("selected")
-                for other_cat in self.category_sidebar.categories:
-                    if (
-                        other_cat["name"] != category
-                        and hasattr(other_cat, "button")
-                        and other_cat["button"] is not None
-                    ):
-                        other_cat["button"].remove_css_class("selected")
                 break
         self.content_page.set_title(category_label)
         self.content_title.set_title(category_label)
@@ -427,7 +394,7 @@ class BigControlCenterApp(Adw.Application):
             elif app_exec == "#dialog-reset-display":
                 self.show_reset_display_dialog()
             else:
-                print(f"Special command: {app_exec}")
+                logger.warning("Unknown special command: %s", app_exec)
                 self.set_status_message(
                     _("Executing special command: {0}").format(app_exec)
                 )
@@ -437,7 +404,7 @@ class BigControlCenterApp(Adw.Application):
                 GLib.spawn_command_line_async(app_exec)
             except GLib.Error as e:
                 self.set_status_message(_("Error launching program: {0}").format(e))
-                print(f"Error running command: {e}")
+                logger.warning("Error running command %s: %s", app_exec, e)
 
     def show_android_usb_dialog(self):
         """Show dialog with Android USB tethering instructions"""
@@ -478,31 +445,6 @@ class BigControlCenterApp(Adw.Application):
             return
         self.window.close()
 
-    def configure_program_grid_for_fixed_icons(self):
-        """Configure the program grid to respect fixed icon sizes"""
-        if hasattr(self.program_grid, "flowbox"):
-            flowbox = self.program_grid.flowbox
-            flowbox.set_homogeneous(False)
-            flowbox.set_column_spacing(16)
-            flowbox.set_row_spacing(16)
-            flowbox.set_valign(Gtk.Align.START)
-            flowbox.set_halign(Gtk.Align.START)
-            flowbox.set_min_children_per_line(1)
-            flowbox.set_max_children_per_line(10)
-            self.window.connect("size-allocate", self._on_window_size_change)
-
-        def force_icon_size(widget):
-            if widget.has_css_class("program-icon-container"):
-                widget.set_size_request(64, 64)
-                return True
-            if isinstance(widget, Gtk.Box) or isinstance(widget, Gtk.FlowBox):
-                for child in widget:
-                    force_icon_size(child)
-            return False
-
-        if self.program_grid:
-            force_icon_size(self.program_grid)
-
     def on_about_action(self, action, param):
         """Show the About dialog for BigControlCenter"""
         about = Adw.AboutWindow.new()
@@ -517,82 +459,54 @@ class BigControlCenterApp(Adw.Application):
         about.set_developers([_("BigLinux Team")])
         about.present()
 
-    def _get_selected_flow_child(self, flow_box):
-        """Get the currently selected flow box child safely"""
-        try:
-            # In GTK4, selected_children are accessed differently
-            child = None
-
-            # Try to get the child that has focus
-            current = flow_box.get_first_child()
-            while current:
-                if current.has_focus():
-                    return current
-                current = current.get_next_sibling()
-
-            # If no child has focus, try selecting the first one
-            if flow_box.get_first_child():
-                return flow_box.get_first_child()
-
-        except Exception as e:
-            print(f"Error getting selected child: {e}")
-
-        return None
-
-    def _find_button_in_child(self, child):
-        """Find the button inside a flow box child"""
-        try:
-            # The child's child should be our button
-            if isinstance(child, Gtk.FlowBoxChild):
-                button = child.get_child()
-                if isinstance(button, Gtk.Button):
-                    return button
-        except Exception as e:
-            print(f"Error finding button in child: {e}")
-
-        return None
-
     def load_config(self):
-        if os.path.exists(self.config_path):
-            with open(self.config_path, "r") as f:
-                self.config = json.load(f)
+        """Load the saved window state; an unreadable file only costs the saved size."""
+        try:
+            with open(self.config_path, encoding="utf-8") as f:
+                config = json.load(f)
+            if not isinstance(config, dict):
+                raise TypeError("not a JSON object")
+            if not all(
+                isinstance(config.get(key, 0), int) for key in ("width", "height")
+            ):
+                raise TypeError("width and height must be integers")
+        except FileNotFoundError:
+            return
+        except (OSError, ValueError, TypeError) as e:
+            logger.warning("Ignoring config %s: %s", self.config_path, e)
+            return
+        self.config = config
 
     def save_config(self):
         """Save window configuration to JSON file"""
+        maximized = self.window.is_maximized()
+        if not maximized:
+            width, height = self.window.get_default_size()
+            self.config["width"] = width
+            self.config["height"] = height
+        self.config["maximized"] = maximized
+
+        # A staging file renamed over the config keeps a crash from leaving it truncated.
+        staging_path = f"{self.config_path}.{os.getpid()}.tmp"
         try:
-            # Create config directory if it doesn't exist
             os.makedirs(self.config_dir, exist_ok=True)
-
-            # Get current window state
-            maximized = self.window.is_maximized()
-
-            if not maximized:
-                width, height = self.window.get_default_size()
-                self.config["width"] = width
-                self.config["height"] = height
-
-            self.config["maximized"] = maximized
-
-            # Save to file
-            with open(self.config_path, "w") as f:
+            config_name = os.path.basename(self.config_path)
+            for stale_path in Path(self.config_dir).glob(f"{config_name}.*.tmp"):
+                owner_pid = stale_path.name.removeprefix(f"{config_name}.")
+                owner_pid = owner_pid.removesuffix(".tmp")
+                if not os.path.exists(f"/proc/{owner_pid}"):
+                    stale_path.unlink(missing_ok=True)
+            with open(staging_path, "w", encoding="utf-8") as f:
                 json.dump(self.config, f, indent=2)
-        except Exception as e:
-            print(f"Error saving config: {e}")
+            os.replace(staging_path, self.config_path)
+        except OSError as e:
+            logger.warning("Error saving config: %s", e)
+            Path(staging_path).unlink(missing_ok=True)
 
     def on_window_close(self, window):
         """Save window configuration when closing"""
         self.save_config()
         return False  # Allow the window to close
-
-    def _on_window_size_change(self, window, allocation):
-        """Update window size in config when size changes (if not maximized)"""
-        if not window.is_maximized():
-            width = allocation.get_width()
-            height = allocation.get_height()
-            if width > 0 and height > 0:
-                self.config["width"] = width
-                self.config["height"] = height
-                self.config["maximized"] = False
 
     # Add these new methods to handle button click and cursor changes
     def on_app_icon_clicked(self, button):

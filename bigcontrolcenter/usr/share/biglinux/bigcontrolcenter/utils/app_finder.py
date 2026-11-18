@@ -6,26 +6,22 @@ and generating program information similar to the original
 loop-search.sh and getappinfo.py scripts.
 """
 
+import gettext
+import glob
 import os
 import subprocess
-import glob
-import gettext
+
 import gi
 
 gi.require_version("Gtk", "4.0")
 from gi.repository import Gio
 
 # Setup translations
-try:
-    lang_translations = gettext.translation(
-        "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
-    )
-    lang_translations.install()
-    _ = lang_translations.gettext
-except Exception:
-    # Fallback if translation fails
-    def _(x):
-        return x
+lang_translations = gettext.translation(
+    "bigcontrolcenter", localedir="/usr/share/locale", fallback=True
+)
+lang_translations.install()
+_ = lang_translations.gettext
 
 
 class AppFinder:
@@ -57,14 +53,13 @@ class AppFinder:
             "kcm_kwintabbox",
             "kcm_kwintouchscreen",
         ]
-        
+
         if self.session_type == "x11":
             # In X11, exclude the non-_x11 versions
             return [f"{m}.desktop" for m in x11_modules]
         else:
             # In Wayland, exclude all _x11 variants
             return [f"{m}_x11.desktop" for m in x11_modules]
-
 
     def get_programs(self):
         """
@@ -305,6 +300,7 @@ class AppFinder:
             "kcm_mobile_power.desktop",
             "kcm_mobile_wifi.desktop",
             "kcm_mobile_hotspot.desktop",
+            "kcm_mobile_wired.desktop",
         ]
 
         # Add session-based exclusions (exclude _x11 in Wayland, exclude non-_x11 in X11)
@@ -333,6 +329,7 @@ class AppFinder:
             "qvidcap.desktop",
             "kdesettings",
             "lstopo.desktop",
+            "vim.desktop",
             "kdesystemsettings.desktop",
             "qv4l2.desktop",
             "org.gnome.baobab.desktop",
@@ -350,10 +347,10 @@ class AppFinder:
         # Find files in /usr/share/applications/bigcontrolcenter/
         if os.path.exists("/usr/share/applications/bigcontrolcenter/"):
             for file_path in glob.glob("/usr/share/applications/bigcontrolcenter/*"):
-                if os.path.isfile(file_path):
-                    # Check against exclusion patterns
-                    if not any(pattern in file_path for pattern in excluded_patterns):
-                        result.append(file_path)
+                if os.path.isfile(file_path) and not any(
+                    pattern in file_path for pattern in excluded_patterns
+                ):
+                    result.append(file_path)
 
         return result
 
@@ -397,91 +394,63 @@ class AppFinder:
         """
         Get application information for a desktop file using GIO
         """
+        # GIO refuses files it would not launch: no Type=Application, or a
+        # TryExec or Exec program that is not installed.
         try:
             app_info = Gio.DesktopAppInfo.new_from_filename(file_path)
-            if not app_info:
-                return None
-
-            # Get icon path
-            icon = app_info.get_icon()
-            icon_path = self._get_icon_path(icon) if icon else None
-
-            # Get executable with parameters - KEEP the parameters as in the JSON template
-            exec_field = app_info.get_string("Exec") or "null"
-            executable = exec_field.strip().split("%")[0]
-
-            # Get categories from desktop file - preserve original format
-            categories = app_info.get_categories() or "Other"
-
-            # Create info dictionary
-            info_dict = {
-                "app_id": app_id,
-                "app_name": app_info.get_display_name() or app_id,
-                "app_exec": executable,
-                "app_description": app_info.get_description(),  # Allow None/null values
-                "app_icon": icon_path or "",
-                "app_categories": categories,
-            }
-
-            # Apply replacements if available (this is crucial for matching expected output)
-            replacement = self._find_replacement(app_id)
-            if replacement:
-                for key in [
-                    "app_name",
-                    "app_exec",
-                    "app_description",
-                    "app_icon",
-                    "app_categories",
-                ]:
-                    if key in replacement:
-                        info_dict[key] = replacement[key]
-
-            return info_dict
-        except Exception as e:
-            print(f"Error processing {app_id}: {e}")
+        except TypeError:
             return None
 
-    def _get_icon_path(self, icon):
-        """Get path for an icon using GIO with progressive fallback strategy"""
-        if not icon:
-            return ""
+        # Get icon path
+        icon = app_info.get_icon()
+        icon_path = self._get_icon_path(icon) if icon else None
 
-        # If icon is a FileIcon (absolute path)
+        # Get executable with parameters - KEEP the parameters as in the JSON template
+        exec_field = app_info.get_string("Exec") or "null"
+        executable = exec_field.strip().split("%")[0]
+
+        # Get categories from desktop file - preserve original format
+        categories = app_info.get_categories() or "Other"
+
+        # Create info dictionary
+        info_dict = {
+            "app_id": app_id,
+            "app_name": app_info.get_display_name() or app_id,
+            "app_exec": executable,
+            "app_description": app_info.get_description(),  # Allow None/null values
+            "app_icon": icon_path or "",
+            "app_categories": categories,
+        }
+
+        # Apply replacements if available (this is crucial for matching expected output)
+        replacement = self._find_replacement(app_id)
+        if replacement:
+            for key in [
+                "app_name",
+                "app_exec",
+                "app_description",
+                "app_icon",
+                "app_categories",
+            ]:
+                if key in replacement:
+                    info_dict[key] = replacement[key]
+
+        return info_dict
+
+    def _get_icon_path(self, icon):
+        """Return the icon file path, or the first theme icon name for the system to look up"""
         if isinstance(icon, Gio.FileIcon):
             return icon.get_file().get_path()
 
-        # Get icon names
         if isinstance(icon, Gio.ThemedIcon):
             icon_names = icon.get_names()
         else:
-            # Convert icon to string as fallback
-            icon_str = icon.to_string()
-            if icon_str.startswith("/"):
-                return icon_str
-            icon_names = [icon_str]
+            icon_names = [icon.to_string() or ""]
 
-        # Try each icon name with progressive fallback
         for icon_name in icon_names:
-            if icon_name.startswith("/"):
-                # Absolute path
-                return icon_name
-
-            # First try using just the icon name - this is the key change
-            # that will let the system find icons in any theme first
             if icon_name:
-                # Return just the icon name to let the system handle theme lookup
                 return icon_name
 
-            # Progressive name simplification (remove parts from the end)
-            parts = icon_name.split("-")
-            for end in range(len(parts), 0, -1):
-                modified_name = "-".join(parts[:end])
-
-                # Return the simplified name if we found it
-                if modified_name:
-                    return modified_name
-
-        # If all else fails, return a default icon name
         return "application-default-icon"
 
     def _find_replacement(self, app_id):
@@ -558,6 +527,10 @@ class AppFinder:
                 "app_id": "cmake-gui",
                 "app_description": _("Cross-platform buildsystem"),
                 "app_categories": "System",
+            },
+            {
+                "app_id": "com.biglinux.BigStyle",
+                "app_categories": "Personalization",
             },
             {
                 "app_id": "firewall-config",
@@ -819,6 +792,10 @@ class AppFinder:
                 "app_categories": "Hardware",
             },
             {
+                "app_id": "kcm_krdpserver",
+                "app_categories": "Network",
+            },
+            {
                 "app_id": "kcm_kscreen",
                 "app_exec": "kcmshell6 kcm_nightlight kgamma kcm_kscreen kwinscreenedges",
                 "app_description": _(
@@ -882,6 +859,10 @@ class AppFinder:
                 "app_categories": "Personalization",
             },
             {
+                "app_id": "kcm_plasmakeyboard",
+                "app_categories": "Hardware",
+            },
+            {
                 "app_id": "kcm_plymouth",
                 "app_name": _("Boot Screen"),
                 "app_description": _(
@@ -942,6 +923,10 @@ class AppFinder:
                 "app_categories": "Multimedia",
             },
             {
+                "app_id": "kcm_spellchecking",
+                "app_categories": "Language",
+            },
+            {
                 "app_id": "kcm_splashscreen",
                 "app_description": _(
                     "Configure the splash screen shown while starting applications"
@@ -975,6 +960,10 @@ class AppFinder:
                 "app_description": _(
                     "Configure trash bin behavior and cleanup settings"
                 ),
+                "app_categories": "System",
+            },
+            {
+                "app_id": "kcm_updates",
                 "app_categories": "System",
             },
             {

@@ -2,13 +2,14 @@
 BigControlCenter - Category sidebar component
 """
 
-import gi
 import gettext
 import os
 
+import gi
+
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Pango, Gdk, Gio
+from gi.repository import Gio, Gtk, Pango
 
 # Setup translations
 lang_translations = gettext.translation(
@@ -47,7 +48,7 @@ class CategorySidebar(Gtk.Box):
             }
         """)
         Gtk.StyleContext.add_provider_for_display(
-            Gdk.Display.get_default(),
+            self.get_display(),
             css_provider,
             Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION,
         )

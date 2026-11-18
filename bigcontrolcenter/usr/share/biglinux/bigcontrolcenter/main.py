@@ -6,6 +6,7 @@ This is the main entry point for the BigControlCenter application.
 """
 
 import sys
+
 import gi
 
 gi.require_version("Gtk", "4.0")
